@@ -1,9 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-interface INoiseSource
+namespace Noise
 {
-    float[,] Noise2D(int width, int height);
-    float[,,] Noise3D(int width, int height, int depth);
+    public interface INoiseSource
+    {
+        float[,]    Noise2D(int width, int height);
+        float[,,]   Noise3D(int width, int height, int depth);
+    }
+
 }

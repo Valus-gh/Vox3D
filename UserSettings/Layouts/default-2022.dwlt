@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1696
     height: 1315
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Git for Unity
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 88
+  controlID: 89
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -167,7 +167,7 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 1295
-    height: 749
+    height: 796
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
@@ -191,9 +191,9 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 321
-    height: 749
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+    height: 796
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -217,9 +217,9 @@ MonoBehaviour:
     x: 321
     y: 0
     width: 974
-    height: 749
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+    height: 796
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -242,9 +242,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 749
+    y: 796
     width: 1295
-    height: 516
+    height: 469
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 16}
@@ -263,7 +263,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: InspectorWindow
+  m_Name: Window
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -272,14 +272,14 @@ MonoBehaviour:
     y: 0
     width: 401
     height: 1265
-  m_MinSize: {x: 276, y: 71}
+  m_MinSize: {x: 101, y: 121}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 18}
+  m_ActualView: {fileID: 12}
   m_Panes:
   - {fileID: 18}
   - {fileID: 12}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -314,7 +314,7 @@ MonoBehaviour:
     m_LastAppliedPresetName: Default
     m_SaveData: []
     m_OverlaysVisible: 1
-  progressMessageClearTime: 2194.6960055
+  progressMessageClearTime: -1
   notificationClearTime: -1
   timeSinceLastRotation: -1
   currentBranchAndRemoteHasUpdate: 0
@@ -383,13 +383,33 @@ MonoBehaviour:
         isContainer: 0
         isCollapsed: 0
         isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+      - path: dev-engine
+        label: dev-engine
+        level: 1
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
         isActive: 1
         treeIsCheckable: 0
         checkState: 0
-      selectedNode:
-        path: master
-        label: master
+      - path: dev-xml
+        label: dev-xml
         level: 1
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+      selectedNode:
+        path: 
+        label: 
+        level: 0
         isFolder: 0
         isContainer: 0
         isCollapsed: 0
@@ -463,6 +483,26 @@ MonoBehaviour:
         isActive: 0
         treeIsCheckable: 0
         checkState: 0
+      - path: origin/dev-engine
+        label: dev-engine
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+      - path: origin/dev-xml
+        label: dev-xml
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
       - path: origin/master
         label: master
         level: 2
@@ -487,17 +527,17 @@ MonoBehaviour:
     mode: 0
     newBranchName: 
     scroll: {x: 0, y: 0}
-    disableDelete: 0
-    disableCreate: 0
+    disableDelete: 1
+    disableCreate: 1
     lastLocalAndRemoteBranchListChangedEvent:
-      updatedTimeString: 2024-10-10T14:30:01.115+02:00
+      updatedTimeString: 2024-10-11T10:41:55.421+02:00
       cacheType: 2
     lastCurrentBranchAndRemoteChange:
-      updatedTimeString: 2024-10-10T14:30:01.350+02:00
+      updatedTimeString: 2024-10-11T10:41:55.441+02:00
       cacheType: 1
     currentBranch:
-      name: dev
-      tracking: origin/dev
+      name: dev-engine
+      tracking: origin/dev-engine
     currentRemote:
       name: origin
       url: https://github.com/Valus-gh/Vox3D
@@ -511,8 +551,16 @@ MonoBehaviour:
       tracking: origin/master
     - name: dev
       tracking: origin/dev
+    - name: dev-engine
+      tracking: origin/dev-engine
+    - name: dev-xml
+      tracking: origin/dev-xml
     remoteBranches:
     - name: origin/dev
+      tracking: '[None]'
+    - name: origin/dev-engine
+      tracking: '[None]'
+    - name: origin/dev-xml
       tracking: '[None]'
     - name: origin/master
       tracking: '[None]'
@@ -522,7 +570,7 @@ MonoBehaviour:
     currentLocksHasUpdate: 0
     commitBody: 
     commitMessage: 
-    currentBranch: dev
+    currentBranch: dev-engine
     treeScroll: {x: 0, y: 0}
     treeChanges:
       assets:
@@ -581,10 +629,10 @@ MonoBehaviour:
     gitStatusEntries: []
     changedFilesText: No changed files
     lastCurrentBranchChangedEvent:
-      updatedTimeString: 2024-10-10T14:30:01.350+02:00
+      updatedTimeString: 2024-10-11T10:41:55.441+02:00
       cacheType: 1
     lastStatusEntriesChangedEvent:
-      updatedTimeString: 2024-10-10T14:32:31.450+02:00
+      updatedTimeString: 2024-10-11T10:44:09.186+02:00
       cacheType: 6
     lastLocksChangedEvent:
       updatedTimeString: 0001-01-01T00:00:00.000+00:00
@@ -593,6 +641,229 @@ MonoBehaviour:
     currentLogHasUpdate: 0
     currentTrackingStatusHasUpdate: 0
     logEntries:
+    - commitID: 5887186bbb158875ea15b870cac1377fdc0c3195
+      mergeA: 
+      mergeB: 
+      authorName: Valus-gh
+      authorEmail: simone.belingheri25@gmail.com
+      commitEmail: simone.belingheri25@gmail.com
+      commitName: Valus-gh
+      summary: Added Chunk, World, HeightMap classes
+      description: Added Chunk, World, HeightMap classes
+      timeString: 2024-10-11T10:41:37.000+02:00
+      commitTimeString: 2024-10-11T10:41:37.000+02:00
+      changes:
+      - path: .gitignore
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\.gitignore
+        projectPath: .gitignore
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\Model\Chunk.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Model\Chunk.cs
+        projectPath: Assets\Vox3D\Engine\Model\Chunk.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\Model\Chunk.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Model\Chunk.cs.meta
+        projectPath: Assets\Vox3D\Engine\Model\Chunk.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\Model\HeightMap.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Model\HeightMap.cs
+        projectPath: Assets\Vox3D\Engine\Model\HeightMap.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\Model\HeightMap.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Model\HeightMap.cs.meta
+        projectPath: Assets\Vox3D\Engine\Model\HeightMap.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\Model\Voxel.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Model\Voxel.cs
+        projectPath: Assets\Vox3D\Engine\Model\Voxel.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\Model\World.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Model\World.cs
+        projectPath: Assets\Vox3D\Engine\Model\World.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\Model\World.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Model\World.cs.meta
+        projectPath: Assets\Vox3D\Engine\Model\World.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\Model\WorldProperties.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Model\WorldProperties.cs
+        projectPath: Assets\Vox3D\Engine\Model\WorldProperties.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+    - commitID: ad3c90904f33c16086a39199219c4aa854f19f3e
+      mergeA: 
+      mergeB: 
+      authorName: Valus-gh
+      authorEmail: simone.belingheri25@gmail.com
+      commitEmail: simone.belingheri25@gmail.com
+      commitName: Valus-gh
+      summary: Revert "Added Chunk, World classes. Added empty HeightMap class"
+      description: This reverts commit 2ae96f697b0b5d96d26dd3f32aa49adde90c379b.
+      timeString: 2024-10-11T10:38:59.000+02:00
+      commitTimeString: 2024-10-11T10:38:59.000+02:00
+      changes:
+      - path: .gitignore
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\.gitignore
+        projectPath: .gitignore
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+    - commitID: 2ae96f697b0b5d96d26dd3f32aa49adde90c379b
+      mergeA: 
+      mergeB: 
+      authorName: Valus-gh
+      authorEmail: simone.belingheri25@gmail.com
+      commitEmail: simone.belingheri25@gmail.com
+      commitName: Valus-gh
+      summary: Added Chunk, World classes. Added empty HeightMap class
+      description: Added Chunk, World classes. Added empty HeightMap class
+      timeString: 2024-10-11T10:38:40.000+02:00
+      commitTimeString: 2024-10-11T10:38:40.000+02:00
+      changes:
+      - path: .gitignore
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\.gitignore
+        projectPath: .gitignore
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+    - commitID: 16a73005c8d63bf40371eb9f7a9e14fc23a37150
+      mergeA: 
+      mergeB: 
+      authorName: Valus-gh
+      authorEmail: simone.belingheri25@gmail.com
+      commitEmail: simone.belingheri25@gmail.com
+      commitName: Valus-gh
+      summary: Added Noise package, Voxel, Worldproperties
+      description: Added simplex and an interface for creating noise generators.
+        Added the Voxel and Worldpropertiesclasses in the main engine.
+      timeString: 2024-10-10T20:44:32.000+02:00
+      commitTimeString: 2024-10-10T20:44:32.000+02:00
+      changes:
+      - path: Assets\Vox3D\Engine.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine.meta
+        projectPath: Assets\Vox3D\Engine.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\Model.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Model.meta
+        projectPath: Assets\Vox3D\Engine\Model.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\Model\Voxel.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Model\Voxel.cs
+        projectPath: Assets\Vox3D\Engine\Model\Voxel.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\Model\Voxel.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Model\Voxel.cs.meta
+        projectPath: Assets\Vox3D\Engine\Model\Voxel.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\Model\WorldProperties.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Model\WorldProperties.cs
+        projectPath: Assets\Vox3D\Engine\Model\WorldProperties.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\Model\WorldProperties.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Model\WorldProperties.cs.meta
+        projectPath: Assets\Vox3D\Engine\Model\WorldProperties.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Noise.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Noise.meta
+        projectPath: Assets\Vox3D\Noise.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Noise\INoiseSource.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Noise\INoiseSource.cs
+        projectPath: Assets\Vox3D\Noise\INoiseSource.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Noise\INoiseSource.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Noise\INoiseSource.cs.meta
+        projectPath: Assets\Vox3D\Noise\INoiseSource.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Noise\Simplex.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Noise\Simplex.meta
+        projectPath: Assets\Vox3D\Noise\Simplex.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Noise\Simplex\SimplexNoise.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Noise\Simplex\SimplexNoise.cs
+        projectPath: Assets\Vox3D\Noise\Simplex\SimplexNoise.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Noise\Simplex\SimplexNoise.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Noise\Simplex\SimplexNoise.cs.meta
+        projectPath: Assets\Vox3D\Noise\Simplex\SimplexNoise.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Noise\SimplexNoiseSource.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Noise\SimplexNoiseSource.cs
+        projectPath: Assets\Vox3D\Noise\SimplexNoiseSource.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Noise\SimplexNoiseSource.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Noise\SimplexNoiseSource.cs.meta
+        projectPath: Assets\Vox3D\Noise\SimplexNoiseSource.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+    - commitID: 830984a52b45ddd141ef8264e4d7a2c784faeb57
+      mergeA: 
+      mergeB: 
+      authorName: Valus-gh
+      authorEmail: simone.belingheri25@gmail.com
+      commitEmail: simone.belingheri25@gmail.com
+      commitName: Valus-gh
+      summary: Added Base Module Folder
+      description: Added Base Module Folder
+      timeString: 2024-10-10T14:42:24.000+02:00
+      commitTimeString: 2024-10-10T14:42:24.000+02:00
+      changes:
+      - path: Assets\Vox3D.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D.meta
+        projectPath: Assets\Vox3D.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: UserSettings\Layouts\default-2022.dwlt
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\Layouts\default-2022.dwlt
+        projectPath: UserSettings\Layouts\default-2022.dwlt
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
     - commitID: deefd9dd3787247beecb970a191bad79cff902b1
       mergeA: 
       mergeB: 
@@ -829,14 +1100,237 @@ MonoBehaviour:
         workTreeStatus: 0
     statusAhead: 0
     lastLogChangedEvent:
-      updatedTimeString: 0001-01-01T00:00:00.000+00:00
+      updatedTimeString: 2024-10-11T10:41:55.434+02:00
       cacheType: 3
     lastTrackingStatusChangedEvent:
-      updatedTimeString: 2024-10-10T14:30:01.616+02:00
+      updatedTimeString: 2024-10-11T10:42:07.587+02:00
       cacheType: 5
     historyControl:
       scroll: {x: 0, y: 0}
       entries:
+      - commitID: 5887186bbb158875ea15b870cac1377fdc0c3195
+        mergeA: 
+        mergeB: 
+        authorName: Valus-gh
+        authorEmail: simone.belingheri25@gmail.com
+        commitEmail: simone.belingheri25@gmail.com
+        commitName: Valus-gh
+        summary: Added Chunk, World, HeightMap classes
+        description: Added Chunk, World, HeightMap classes
+        timeString: 2024-10-11T10:41:37.000+02:00
+        commitTimeString: 2024-10-11T10:41:37.000+02:00
+        changes:
+        - path: .gitignore
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\.gitignore
+          projectPath: .gitignore
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\Model\Chunk.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Model\Chunk.cs
+          projectPath: Assets\Vox3D\Engine\Model\Chunk.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\Model\Chunk.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Model\Chunk.cs.meta
+          projectPath: Assets\Vox3D\Engine\Model\Chunk.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\Model\HeightMap.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Model\HeightMap.cs
+          projectPath: Assets\Vox3D\Engine\Model\HeightMap.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\Model\HeightMap.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Model\HeightMap.cs.meta
+          projectPath: Assets\Vox3D\Engine\Model\HeightMap.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\Model\Voxel.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Model\Voxel.cs
+          projectPath: Assets\Vox3D\Engine\Model\Voxel.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\Model\World.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Model\World.cs
+          projectPath: Assets\Vox3D\Engine\Model\World.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\Model\World.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Model\World.cs.meta
+          projectPath: Assets\Vox3D\Engine\Model\World.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\Model\WorldProperties.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Model\WorldProperties.cs
+          projectPath: Assets\Vox3D\Engine\Model\WorldProperties.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - commitID: ad3c90904f33c16086a39199219c4aa854f19f3e
+        mergeA: 
+        mergeB: 
+        authorName: Valus-gh
+        authorEmail: simone.belingheri25@gmail.com
+        commitEmail: simone.belingheri25@gmail.com
+        commitName: Valus-gh
+        summary: Revert "Added Chunk, World classes. Added empty HeightMap class"
+        description: This reverts commit 2ae96f697b0b5d96d26dd3f32aa49adde90c379b.
+        timeString: 2024-10-11T10:38:59.000+02:00
+        commitTimeString: 2024-10-11T10:38:59.000+02:00
+        changes:
+        - path: .gitignore
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\.gitignore
+          projectPath: .gitignore
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - commitID: 2ae96f697b0b5d96d26dd3f32aa49adde90c379b
+        mergeA: 
+        mergeB: 
+        authorName: Valus-gh
+        authorEmail: simone.belingheri25@gmail.com
+        commitEmail: simone.belingheri25@gmail.com
+        commitName: Valus-gh
+        summary: Added Chunk, World classes. Added empty HeightMap class
+        description: Added Chunk, World classes. Added empty HeightMap class
+        timeString: 2024-10-11T10:38:40.000+02:00
+        commitTimeString: 2024-10-11T10:38:40.000+02:00
+        changes:
+        - path: .gitignore
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\.gitignore
+          projectPath: .gitignore
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - commitID: 16a73005c8d63bf40371eb9f7a9e14fc23a37150
+        mergeA: 
+        mergeB: 
+        authorName: Valus-gh
+        authorEmail: simone.belingheri25@gmail.com
+        commitEmail: simone.belingheri25@gmail.com
+        commitName: Valus-gh
+        summary: Added Noise package, Voxel, Worldproperties
+        description: Added simplex and an interface for creating noise generators.
+          Added the Voxel and Worldpropertiesclasses in the main engine.
+        timeString: 2024-10-10T20:44:32.000+02:00
+        commitTimeString: 2024-10-10T20:44:32.000+02:00
+        changes:
+        - path: Assets\Vox3D\Engine.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine.meta
+          projectPath: Assets\Vox3D\Engine.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\Model.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Model.meta
+          projectPath: Assets\Vox3D\Engine\Model.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\Model\Voxel.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Model\Voxel.cs
+          projectPath: Assets\Vox3D\Engine\Model\Voxel.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\Model\Voxel.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Model\Voxel.cs.meta
+          projectPath: Assets\Vox3D\Engine\Model\Voxel.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\Model\WorldProperties.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Model\WorldProperties.cs
+          projectPath: Assets\Vox3D\Engine\Model\WorldProperties.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\Model\WorldProperties.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Model\WorldProperties.cs.meta
+          projectPath: Assets\Vox3D\Engine\Model\WorldProperties.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Noise.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Noise.meta
+          projectPath: Assets\Vox3D\Noise.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Noise\INoiseSource.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Noise\INoiseSource.cs
+          projectPath: Assets\Vox3D\Noise\INoiseSource.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Noise\INoiseSource.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Noise\INoiseSource.cs.meta
+          projectPath: Assets\Vox3D\Noise\INoiseSource.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Noise\Simplex.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Noise\Simplex.meta
+          projectPath: Assets\Vox3D\Noise\Simplex.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Noise\Simplex\SimplexNoise.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Noise\Simplex\SimplexNoise.cs
+          projectPath: Assets\Vox3D\Noise\Simplex\SimplexNoise.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Noise\Simplex\SimplexNoise.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Noise\Simplex\SimplexNoise.cs.meta
+          projectPath: Assets\Vox3D\Noise\Simplex\SimplexNoise.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Noise\SimplexNoiseSource.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Noise\SimplexNoiseSource.cs
+          projectPath: Assets\Vox3D\Noise\SimplexNoiseSource.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Noise\SimplexNoiseSource.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Noise\SimplexNoiseSource.cs.meta
+          projectPath: Assets\Vox3D\Noise\SimplexNoiseSource.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+      - commitID: 830984a52b45ddd141ef8264e4d7a2c784faeb57
+        mergeA: 
+        mergeB: 
+        authorName: Valus-gh
+        authorEmail: simone.belingheri25@gmail.com
+        commitEmail: simone.belingheri25@gmail.com
+        commitName: Valus-gh
+        summary: Added Base Module Folder
+        description: Added Base Module Folder
+        timeString: 2024-10-10T14:42:24.000+02:00
+        commitTimeString: 2024-10-10T14:42:24.000+02:00
+        changes:
+        - path: Assets\Vox3D.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D.meta
+          projectPath: Assets\Vox3D.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: UserSettings\Layouts\default-2022.dwlt
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\Layouts\default-2022.dwlt
+          projectPath: UserSettings\Layouts\default-2022.dwlt
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
       - commitID: deefd9dd3787247beecb970a191bad79cff902b1
         mergeA: 
         mergeB: 
@@ -1072,37 +1566,73 @@ MonoBehaviour:
           indexStatus: 4
           workTreeStatus: 0
       statusAhead: 0
-      selectedIndex: 1
+      selectedIndex: 0
     selectedEntry:
-      commitID: b9cb5e8d0f3a14c5997d3a35daa9756e59ec9dca
+      commitID: 5887186bbb158875ea15b870cac1377fdc0c3195
       mergeA: 
       mergeB: 
       authorName: Valus-gh
       authorEmail: simone.belingheri25@gmail.com
       commitEmail: simone.belingheri25@gmail.com
       commitName: Valus-gh
-      summary: Initial commit
-      description: 
-      timeString: 2024-10-10T14:21:48.000+02:00
-      commitTimeString: 2024-10-10T14:21:48.000+02:00
+      summary: Added Chunk, World, HeightMap classes
+      description: Added Chunk, World, HeightMap classes
+      timeString: 2024-10-11T10:41:37.000+02:00
+      commitTimeString: 2024-10-11T10:41:37.000+02:00
       changes:
-      - path: .gitattributes
-        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\.gitattributes
-        projectPath: .gitattributes
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
       - path: .gitignore
         fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\.gitignore
         projectPath: .gitignore
         originalPath: 
-        indexStatus: 4
+        indexStatus: 3
         workTreeStatus: 0
-      - path: Assets\.gitignore
-        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\.gitignore
-        projectPath: Assets\.gitignore
+      - path: Assets\Vox3D\Engine\Model\Chunk.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Model\Chunk.cs
+        projectPath: Assets\Vox3D\Engine\Model\Chunk.cs
         originalPath: 
         indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\Model\Chunk.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Model\Chunk.cs.meta
+        projectPath: Assets\Vox3D\Engine\Model\Chunk.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\Model\HeightMap.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Model\HeightMap.cs
+        projectPath: Assets\Vox3D\Engine\Model\HeightMap.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\Model\HeightMap.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Model\HeightMap.cs.meta
+        projectPath: Assets\Vox3D\Engine\Model\HeightMap.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\Model\Voxel.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Model\Voxel.cs
+        projectPath: Assets\Vox3D\Engine\Model\Voxel.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\Model\World.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Model\World.cs
+        projectPath: Assets\Vox3D\Engine\Model\World.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\Model\World.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Model\World.cs.meta
+        projectPath: Assets\Vox3D\Engine\Model\World.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\Model\WorldProperties.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Model\WorldProperties.cs
+        projectPath: Assets\Vox3D\Engine\Model\WorldProperties.cs
+        originalPath: 
+        indexStatus: 3
         workTreeStatus: 0
     treeChanges:
       assets:
@@ -1111,10 +1641,67 @@ MonoBehaviour:
       folders:
         keys:
         - Assets
+        - Assets\Vox3D
+        - Assets\Vox3D\Engine
+        - Assets\Vox3D\Engine\Model
         values:
         - path: Assets
           label: Assets
           level: 0
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 0
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Vox3D
+          label: Vox3D
+          level: 1
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 0
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Vox3D\Engine
+          label: Engine
+          level: 2
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 0
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\Model
+          label: Model
+          level: 3
           isFolder: 1
           isContainer: 0
           isCollapsed: 0
@@ -1158,24 +1745,6 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
-      - path: .gitattributes
-        label: .gitattributes
-        level: 0
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: .gitattributes
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\.gitattributes
-          projectPath: .gitattributes
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
       - path: .gitignore
         label: .gitignore
         level: 0
@@ -1192,7 +1761,7 @@ MonoBehaviour:
           fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\.gitignore
           projectPath: .gitignore
           originalPath: 
-          indexStatus: 4
+          indexStatus: 3
           workTreeStatus: 0
       - path: Assets
         label: Assets
@@ -1212,9 +1781,81 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
-      - path: Assets\.gitignore
-        label: .gitignore
+      - path: Assets\Vox3D
+        label: Vox3D
         level: 1
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets\Vox3D\Engine
+        label: Engine
+        level: 2
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\Model
+        label: Model
+        level: 3
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\Model\Chunk.cs
+        label: Chunk.cs
+        level: 4
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Vox3D\Engine\Model\Chunk.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Model\Chunk.cs
+          projectPath: Assets\Vox3D\Engine\Model\Chunk.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\Model\Chunk.cs.meta
+        label: Chunk.cs.meta
+        level: 5
         isFolder: 0
         isContainer: 0
         isCollapsed: 0
@@ -1224,11 +1865,119 @@ MonoBehaviour:
         checkState: 0
         isLocked: 0
         gitStatusEntry:
-          path: Assets\.gitignore
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\.gitignore
-          projectPath: Assets\.gitignore
+          path: Assets\Vox3D\Engine\Model\Chunk.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Model\Chunk.cs.meta
+          projectPath: Assets\Vox3D\Engine\Model\Chunk.cs.meta
           originalPath: 
           indexStatus: 4
+          workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\Model\HeightMap.cs
+        label: HeightMap.cs
+        level: 4
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Vox3D\Engine\Model\HeightMap.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Model\HeightMap.cs
+          projectPath: Assets\Vox3D\Engine\Model\HeightMap.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\Model\HeightMap.cs.meta
+        label: HeightMap.cs.meta
+        level: 5
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Vox3D\Engine\Model\HeightMap.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Model\HeightMap.cs.meta
+          projectPath: Assets\Vox3D\Engine\Model\HeightMap.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\Model\Voxel.cs
+        label: Voxel.cs
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Vox3D\Engine\Model\Voxel.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Model\Voxel.cs
+          projectPath: Assets\Vox3D\Engine\Model\Voxel.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\Model\World.cs
+        label: World.cs
+        level: 4
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Vox3D\Engine\Model\World.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Model\World.cs
+          projectPath: Assets\Vox3D\Engine\Model\World.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\Model\World.cs.meta
+        label: World.cs.meta
+        level: 5
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Vox3D\Engine\Model\World.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Model\World.cs.meta
+          projectPath: Assets\Vox3D\Engine\Model\World.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\Model\WorldProperties.cs
+        label: WorldProperties.cs
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Vox3D\Engine\Model\WorldProperties.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Model\WorldProperties.cs
+          projectPath: Assets\Vox3D\Engine\Model\WorldProperties.cs
+          originalPath: 
+          indexStatus: 3
           workTreeStatus: 0
       selectedNode:
         path: 
@@ -1261,7 +2010,7 @@ MonoBehaviour:
       installSettingsHidden: 0
     hasRemote: 1
     lastCurrentRemoteChangedEvent:
-      updatedTimeString: 2024-10-10T14:27:34.108+02:00
+      updatedTimeString: 2024-10-11T10:41:55.441+02:00
       cacheType: 1
     newRepositoryRemoteUrl: https://github.com/Valus-gh/Vox3D
     repositoryRemoteName: origin
@@ -1274,7 +2023,7 @@ MonoBehaviour:
       newGitEmail: simone.belingheri25@gmail.com
       needsSaving: 0
       lastCheckUserChangedEvent:
-        updatedTimeString: 2024-10-10T14:19:04.669+02:00
+        updatedTimeString: 2024-10-11T10:41:59.524+02:00
         cacheType: 8
       configSettingsHidden: 0
     repositorySettingsHidden: 0
@@ -1307,13 +2056,13 @@ MonoBehaviour:
         gitFileStatus: 0
         lockedAt: 1 gen 0001, 01:00
     lastCurrentRemoteChangedEvent:
-      updatedTimeString: 2024-10-10T14:30:01.350+02:00
+      updatedTimeString: 2024-10-11T10:41:55.441+02:00
       cacheType: 1
     lastLocksChangedEvent:
-      updatedTimeString: 0001-01-01T00:00:00.000+00:00
+      updatedTimeString: 2024-10-11T10:41:35.190+02:00
       cacheType: 7
     lastStatusEntriesChangedEvent:
-      updatedTimeString: 2024-10-10T14:29:48.596+02:00
+      updatedTimeString: 2024-10-11T10:42:07.570+02:00
       cacheType: 6
     lockedFiles: []
     gitStatusEntries: []
@@ -1328,14 +2077,14 @@ MonoBehaviour:
       m_Tooltip: 
   hasRemote: 1
   currentRemoteName: origin
-  currentBranch: dev
+  currentBranch: dev-engine
   currentRemoteUrl: https://github.com/Valus-gh/Vox3D
   statusAhead: 0
   statusBehind: 0
   hasItemsToCommit: 0
   isTrackingRemoteBranch: 1
   currentBranchContent:
-    m_Text: dev
+    m_Text: dev-engine
     m_Image: {fileID: 0}
     m_Tooltip: Active branch
   currentRemoteUrlContent:
@@ -1343,13 +2092,13 @@ MonoBehaviour:
     m_Image: {fileID: 0}
     m_Tooltip: Url of the origin remote
   lastCurrentBranchAndRemoteChangedEvent:
-    updatedTimeString: 2024-10-10T14:30:01.350+02:00
+    updatedTimeString: 2024-10-11T10:41:55.441+02:00
     cacheType: 1
   lastTrackingStatusChangedEvent:
-    updatedTimeString: 2024-10-10T14:32:31.495+02:00
+    updatedTimeString: 2024-10-11T10:44:09.203+02:00
     cacheType: 5
   lastStatusEntriesChangedEvent:
-    updatedTimeString: 2024-10-10T14:32:31.450+02:00
+    updatedTimeString: 2024-10-11T10:44:09.186+02:00
     cacheType: 6
   pullButtonContent:
     m_Text: Pull
@@ -1367,8 +2116,8 @@ MonoBehaviour:
     m_Text: Fetch
     m_Image: {fileID: 0}
     m_Tooltip: 
-  repositoryProgressValue: 1
-  repositoryProgressMessage: Pushed
+  repositoryProgressValue: 0
+  repositoryProgressMessage: 
   appManagerProgressValue: 1
   appManagerProgressMessage: 
   primaryConnectionUsername: 
@@ -1395,7 +2144,7 @@ MonoBehaviour:
     x: 2048
     y: 98
     width: 972
-    height: 728
+    height: 775
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1410,7 +2159,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: -174, y: -26}
+      snapOffset: {x: -179, y: -26}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 3
       id: Tool Settings
@@ -1817,7 +2566,7 @@ MonoBehaviour:
     x: 1727
     y: 98
     width: 320
-    height: 728
+    height: 775
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1831,9 +2580,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 4c640000
-      m_LastClickedID: 25676
-      m_ExpandedIDs: 24c5ffff18fbffff
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 2efbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1976,9 +2725,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 1727
-    y: 847
+    y: 894
     width: 1294
-    height: 495
+    height: 448
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -2000,7 +2749,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -2008,16 +2757,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 51
   m_LastFolders:
-  - Assets/Scenes
+  - Assets
   m_LastFoldersGridSize: 51
   m_LastProjectPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 521e0000
-    m_LastClickedID: 7762
-    m_ExpandedIDs: 00000000ce59000000ca9a3b
+    m_SelectedIDs: 305c0000
+    m_LastClickedID: 23600
+    m_ExpandedIDs: 00000000305c0000325c0000345c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2033,7 +2782,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 10}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -2045,7 +2794,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 
+    m_ExpandedIDs: 00000000305c0000325c0000345c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2072,7 +2821,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -2122,9 +2871,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 1727
-    y: 847
+    y: 894
     width: 1294
-    height: 495
+    height: 448
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
