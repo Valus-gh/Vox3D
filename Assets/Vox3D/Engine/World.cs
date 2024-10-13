@@ -67,9 +67,13 @@ namespace Vox3D
                         chunk.ChunkSize = ChunkSize;
                         chunk.VoxelSize = VoxelSize;
                         chunk.Voxels    = new Voxel[ChunkSize, ChunkSize, ChunkSize];
+                        chunk.Vertices  = new List<Vector3>();
+                        chunk.Triangles = new List<int>();
+                        chunk.Uvs       = new List<Vector2>();
 
                         // Create voxels within the new chunk. No geometry.
                         chunk.PopulateChunk();
+                        chunk.GenerateMesh_Greedy();
 
                         Chunks.Add(chunkPosition, chunk);
                     }

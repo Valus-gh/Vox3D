@@ -1,5 +1,7 @@
 using System.Collections.Generic;
+using Unity.Collections;
 using UnityEngine;
+using Unity.Jobs;
 
 namespace Vox3D
 {
@@ -17,9 +19,12 @@ namespace Vox3D
         private MeshCollider    _meshCollider;
         private MeshRenderer    _meshRenderer;
 
-        public int ChunkSize    { get => _chunkSize; set => _chunkSize = value; }
-        public int VoxelSize    { get => _voxelSize; set => _voxelSize = value; }
-        public Voxel[,,] Voxels { get => _voxels; set => _voxels = value; }
+        public int ChunkSize            { get => _chunkSize; set => _chunkSize = value; }
+        public int VoxelSize            { get => _voxelSize; set => _voxelSize = value; }
+        public Voxel[,,] Voxels         { get => _voxels; set => _voxels = value; }
+        public List<Vector3> Vertices   { get => _vertices; set => _vertices = value; }
+        public List<int> Triangles      { get => _triangles; set => _triangles = value; }
+        public List<Vector2> Uvs        { get => _uvs; set => _uvs = value; }
 
         public Chunk()
         {
@@ -56,6 +61,48 @@ namespace Vox3D
                     }
                 }
             }
+        }
+
+        public void GenerateMesh_Greedy()
+        {
+            var nVoxelsInChunk = ChunkSize * ChunkSize * ChunkSize;
+            
+            var voxelsCopy = new NativeArray<(Vector3, Voxel)>(nVoxelsInChunk, Allocator.TempJob);
+            var voxelsCopyIndex = 0;
+
+            for (int x = 0; x < ChunkSize; x++)
+            {
+                for (int y = 0; y < ChunkSize; y++)
+                {
+                    for (int z = 0; z < ChunkSize; z++)
+                    {
+                        voxelsCopy[voxelsCopyIndex++] = (new Vector3(x, y, z), Voxels[x, y, z]);
+                    }
+                }
+            }
+
+            var verticesCopy    = new NativeList<Vector3>(Vertices.Capacity, Allocator.TempJob);
+            var trianglesCopy   = new NativeList<int>(Triangles.Capacity, Allocator.TempJob);
+            var uvsCopy         = new NativeList<Vector2>(Uvs.Capacity, Allocator.TempJob);
+
+            var job = new GreedyMeshingJob
+            {
+                voxels      = voxelsCopy,
+                vertices    = verticesCopy,
+                indices     = trianglesCopy,
+                uv          = uvsCopy
+            };
+
+            //var handle = job.Schedule(nVoxelsInChunk, 16);
+            //handle.Complete();
+
+            job.Run(nVoxelsInChunk);
+
+            verticesCopy.Dispose();
+            trianglesCopy.Dispose();
+            uvsCopy.Dispose();
+            voxelsCopy.Dispose();
+
         }
 
     }

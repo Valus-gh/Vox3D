@@ -2,7 +2,10 @@ using UnityEngine;
 
 namespace Vox3D
 {
-    public class Voxel
+    /// <summary>
+    /// Struct is required by NativeArray. Reference types are not allowed.
+    /// </summary>
+    public struct Voxel
     {
         public enum VoxelType
         {
@@ -23,9 +26,9 @@ namespace Vox3D
 
         public Voxel(VoxelType type, Vector3 position, bool isActive)
         {
-            this.Type = type;
-            this.Position = position;
-            this.IsActive = isActive;
+            this._type      = type;
+            this._position  = position;
+            this._isActive  = isActive;
         }
     }
 
