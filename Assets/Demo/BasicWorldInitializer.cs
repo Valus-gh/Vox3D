@@ -10,7 +10,7 @@ namespace Demo
     public class BasicWorldInitializer : MonoBehaviour
     {
 
-        private WorldProperties properties;
+        private Vox3DProperties properties;
         private World world;
 
         public int worldSize;
@@ -24,7 +24,7 @@ namespace Demo
         // Start is called before the first frame update
         void Start()
         {
-            properties = WorldProperties.Instance();
+            properties = Vox3DProperties.Instance();
             properties.WorldSize = worldSize;
             properties.ChunkSize = chunkSize;
             properties.VoxelSize = voxelSize;
@@ -43,6 +43,9 @@ namespace Demo
             World world = worldObject.AddComponent<World>();
 
             world.HeightMap = map;
+
+            properties.World = world;
+            properties.VoxelDefaultMaterial = Resources.Load("DefaultMaterial", typeof(Material)) as Material;
 
         }
 

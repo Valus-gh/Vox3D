@@ -151,9 +151,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a21882bafd24ff49a9dea948021258f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  worldSize: 4
+  worldSize: 2
   chunkSize: 16
-  voxelSize: 2
+  voxelSize: 1
   noiseSeed: 1111
   heightCutoff: 0.012
   noiseScale: 0.04

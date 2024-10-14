@@ -22,7 +22,7 @@ namespace Vox3D
 
         private void Start()
         {
-            var properties = WorldProperties.Instance();
+            var properties = Vox3DProperties.Instance();
 
             if (!properties.IsReady())
             {
@@ -63,26 +63,68 @@ namespace Vox3D
                         chunkObject.transform.position  = chunkPosition;
                         chunkObject.transform.parent    = this.transform;
 
-                        Chunk chunk     = chunkObject.AddComponent<Chunk>();
-                        chunk.ChunkSize = ChunkSize;
-                        chunk.VoxelSize = VoxelSize;
-                        chunk.Voxels    = new Voxel[ChunkSize, ChunkSize, ChunkSize];
-                        chunk.Vertices  = new List<Vector3>();
-                        chunk.Triangles = new List<int>();
-                        chunk.Uvs       = new List<Vector2>();
+                        Chunk chunk         = chunkObject.AddComponent<Chunk>();
+
+                        chunk.MeshFilter    = chunkObject.AddComponent<MeshFilter>();
+                        chunk.MeshRenderer  = chunkObject.AddComponent<MeshRenderer>();
+                        chunk.MeshCollider  = chunkObject.AddComponent<MeshCollider>();
+
+                        chunk.ChunkSize     = ChunkSize;
+                        chunk.VoxelSize     = VoxelSize;
+                        chunk.Voxels        = new Voxel[ChunkSize, ChunkSize, ChunkSize];
+
+                        chunk.Vertices      = new List<Vector3>();
+                        chunk.Indices       = new List<int>();
+                        chunk.Uvs           = new List<Vector2>();
 
                         // Create voxels within the new chunk. No geometry.
                         chunk.PopulateChunk();
-                        chunk.GenerateMesh_Greedy();
 
                         Chunks.Add(chunkPosition, chunk);
+
                     }
                 }
             }
+
+            GenerateGeometry();
+
         }
+
+        public void GenerateGeometry()
+        {
+            Debug.Log("GENERATING WORLD GEOMETRY " + name);
+
+            foreach(KeyValuePair<Vector3, Chunk> pair in Chunks)
+            {
+                pair.Value.GenerateGeometry_Greedy();
+            }
+
+        }
+
+        public Chunk GetChunkAt(Vector3 worldSpaceChunkPosition)
+        {
+            // Calculate the chunk's precise position by eliminating floating point values
+            Vector3Int chunkCoordinates = new Vector3Int(
+                Mathf.FloorToInt(worldSpaceChunkPosition.x / (ChunkSize * VoxelSize)) * (ChunkSize * VoxelSize),
+                Mathf.FloorToInt(worldSpaceChunkPosition.y / (ChunkSize * VoxelSize)) * (ChunkSize * VoxelSize),
+                Mathf.FloorToInt(worldSpaceChunkPosition.z / (ChunkSize * VoxelSize)) * (ChunkSize * VoxelSize)
+            );
+
+            // Retrieve and return the chunk at the calculated position within the dictionary
+            if (Chunks.TryGetValue(chunkCoordinates, out Chunk chunk))
+            {
+                return chunk;
+            }
+
+            // Return null if no chunk exists at the position
+            return null;
+        }
+
+
 
     }
 
 }
+
 
 // TODO write methods to generate/refresh geometry and colliders
