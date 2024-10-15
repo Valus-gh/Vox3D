@@ -101,13 +101,19 @@ namespace Vox3D
 
         }
 
-        public Chunk GetChunkAt(Vector3 worldSpaceChunkPosition)
+        /// <summary>
+        /// Checks whether point is within a chunk.
+        /// If it is, the chunk is returned.
+        /// </summary>
+        /// <param name="point">point in world space</param>
+        /// <returns></returns>
+        public Chunk GetChunkAt(Vector3 point)
         {
             // Calculate the chunk's precise position by eliminating floating point values
             Vector3Int chunkCoordinates = new Vector3Int(
-                Mathf.FloorToInt(worldSpaceChunkPosition.x / (ChunkSize * VoxelSize)) * (ChunkSize * VoxelSize),
-                Mathf.FloorToInt(worldSpaceChunkPosition.y / (ChunkSize * VoxelSize)) * (ChunkSize * VoxelSize),
-                Mathf.FloorToInt(worldSpaceChunkPosition.z / (ChunkSize * VoxelSize)) * (ChunkSize * VoxelSize)
+                Mathf.FloorToInt(point.x / (ChunkSize * VoxelSize)) * (ChunkSize * VoxelSize),
+                Mathf.FloorToInt(point.y / (ChunkSize * VoxelSize)) * (ChunkSize * VoxelSize),
+                Mathf.FloorToInt(point.z / (ChunkSize * VoxelSize)) * (ChunkSize * VoxelSize)
             );
 
             // Retrieve and return the chunk at the calculated position within the dictionary
@@ -119,8 +125,6 @@ namespace Vox3D
             // Return null if no chunk exists at the position
             return null;
         }
-
-
 
     }
 

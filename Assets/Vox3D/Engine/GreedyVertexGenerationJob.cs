@@ -5,6 +5,13 @@ using UnityEngine;
 
 namespace Vox3D
 {
+    /// <summary>
+    /// Execute parallelizes the generation of mesh vertices for all voxels in a chunk
+    /// Each thread instance has a set range of voxels it works on.
+    /// Rather than generating a cube, a voxel is treated as a set of 6 faces.
+    /// A face is only generated when it considered visible. 
+    /// It needs to be at the edge of both a chunk and the world.
+    /// </summary>
     public struct GreedyVertexGeneratorJob : IJobParallelFor
     {
         [ReadOnly]
@@ -36,7 +43,6 @@ namespace Vox3D
 
         public void Execute(int index)
         {
-            // Debug.Log($"{index} - Voxel{voxels[index].Item1} + Chunk at: {chunk}");
 
             int x = (int)voxels[index].Item1.x;
             int y = (int)voxels[index].Item1.y;
@@ -49,13 +55,14 @@ namespace Vox3D
                 bool[] faces = new bool[6];
 
                 // Check visibility for each face
-                faces[0] = IsFaceVisible(x, y + 1, z); // Top
-                faces[1] = IsFaceVisible(x, y - 1, z); // Bottom
-                faces[2] = IsFaceVisible(x - 1, y, z); // Left
-                faces[3] = IsFaceVisible(x + 1, y, z); // Right
-                faces[4] = IsFaceVisible(x, y, z + 1); // Front
-                faces[5] = IsFaceVisible(x, y, z - 1); // Back
+                faces[0] = IsFaceVisible(x, y + 1, z, index); // Top
+                faces[1] = IsFaceVisible(x, y - 1, z, index); // Bottom
+                faces[2] = IsFaceVisible(x - 1, y, z, index); // Left
+                faces[3] = IsFaceVisible(x + 1, y, z, index); // Right
+                faces[4] = IsFaceVisible(x, y, z + 1, index); // Front
+                faces[5] = IsFaceVisible(x, y, z - 1, index); // Back
 
+                // For any face that was marked as visible, generate its vertices
                 for (int i = 0; i < faces.Length; i++)
                     if (faces[i]) GenerateFace(x, y, z, i, index);
 
@@ -63,11 +70,92 @@ namespace Vox3D
 
         }
 
-        private bool IsFaceVisible(int x, int y, int z)
+        private bool IsFaceVisible(int x, int y, int z, int index)
         {
-            return true;
+            return IsFaceVisibleInChunk(x, y, z, index)
+                && IsFaceVisibleInWorld(x, y, z, index);
         }
 
+        /// <summary>
+        /// Given the position of the neighboring voxel, check whether it is outside of the chunk's bounds.
+        /// If it is, then it shouldn't exist. Therefore, the current face is visible within the chunk.
+        /// </summary>
+        /// <param name="x"></param>
+        /// <param name="y"></param>
+        /// <param name="z"></param>
+        /// <param name="index"></param>
+        /// <returns></returns>
+        private bool IsFaceVisibleInChunk(int x, int y, int z, int index)
+        {
+            var chunkSize = Vox3DProperties.Instance().ChunkSize;
+
+            if (x < 0 || x >= chunkSize
+                || y < 0 || y >= chunkSize
+                || z < 0 || z >= chunkSize) return true;
+
+            return !voxels[index].Item2.IsActive;
+        }
+
+        /// <summary>
+        /// Given the position of the neighboring voxel, check whether it belongs to another chunk.
+        /// If it doesn't, the current face is visible within the world.
+        /// If it does, check whether the voxel at the neighboring position is active.
+        /// </summary>
+        /// <param name="x"></param>
+        /// <param name="y"></param>
+        /// <param name="z"></param>
+        /// <param name="index"></param>
+        /// <returns></returns>
+        private bool IsFaceVisibleInWorld(int x, int y, int z, int index)
+        {
+            var properties = Vox3DProperties.Instance();
+
+            // Position of the adjacent voxel in world space. Takes into consideration the size of the voxels.
+            Vector3 voxelWorldPosition = chunk + (new Vector3(x, y, z) * properties.VoxelSize);
+
+            Chunk neighbor = properties.World.GetChunkAt(voxelWorldPosition);
+
+            // If there is no neighbor in this direction, the face is visible
+            if (neighbor is null) return true;
+
+            // If there is a neighbor, check whether the adjacent voxel within it is active
+
+            var voxelSize = properties.VoxelSize;
+            var chunkSize = properties.ChunkSize;
+
+            // This operation is done in GetChunkAt(), but needs to be repeated as we dont have access to Transforms
+            // in threads other then the Main thread handled by Unity.
+
+            Vector3Int neighborPosition = new Vector3Int(
+                Mathf.FloorToInt(voxelWorldPosition.x / (chunkSize * voxelSize)) * (chunkSize * voxelSize),
+                Mathf.FloorToInt(voxelWorldPosition.y / (chunkSize * voxelSize)) * (chunkSize * voxelSize),
+                Mathf.FloorToInt(voxelWorldPosition.z / (chunkSize * voxelSize)) * (chunkSize * voxelSize)
+            );
+
+            Vector3 voxelChunkPosition = voxelWorldPosition - neighborPosition;
+
+            int xNeighbor = Mathf.RoundToInt(voxelChunkPosition.x) / voxelSize;
+            int yNeighbor = Mathf.RoundToInt(voxelChunkPosition.y) / voxelSize;
+            int zNeighbor = Mathf.RoundToInt(voxelChunkPosition.z) / voxelSize;
+
+            // If the position of the voxel within the neighboring chunk is valid, check if it is active
+            if (xNeighbor < 0 || xNeighbor >= chunkSize
+                || yNeighbor < 0 || yNeighbor >= chunkSize
+                || zNeighbor < 0 || zNeighbor >= chunkSize) return neighbor.Voxels[xNeighbor, yNeighbor, zNeighbor].IsActive;
+
+            return false;
+
+        }
+
+        /// <summary>
+        /// Generates the basic vertex geometry and uv coordinates for a given face. 
+        /// If a face is generated, its respective valid flag is set to true.
+        /// </summary>
+        /// <param name="x"></param>
+        /// <param name="y"></param>
+        /// <param name="z"></param>
+        /// <param name="faceIndex"></param>
+        /// <param name="voxelIndex"></param>
         private void GenerateFace(int x, int y, int z, int faceIndex, int voxelIndex)
         {
             var voxelSize = Vox3DProperties.Instance().VoxelSize;
