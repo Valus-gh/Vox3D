@@ -30,6 +30,11 @@ namespace Vox3D
             this._position  = position;
             this._isActive  = isActive;
         }
+
+        public override string ToString()
+        {
+            return $"Type: {_type}\nPosition: {_position}\nIsActive: {_isActive}";
+        }
     }
 
 }

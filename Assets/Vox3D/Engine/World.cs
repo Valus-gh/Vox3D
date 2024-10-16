@@ -126,6 +126,17 @@ namespace Vox3D
             return null;
         }
 
+        public void PurgeWorld()
+        {
+            foreach (KeyValuePair<Vector3, Chunk> pair in Chunks)
+            {
+                pair.Value.PurgeChunk();
+                Destroy(pair.Value.gameObject);
+            }
+
+            Chunks.Clear();
+        }
+
     }
 
 }

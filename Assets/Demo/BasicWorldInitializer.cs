@@ -34,8 +34,8 @@ namespace Demo
             int width = worldSize * chunkSize;
             int height = worldSize * chunkSize;
 
-            SimplexNoiseSource noiseSource = new SimplexNoiseSource(noiseSeed, heightCutoff, noiseScale);
-            HeightMap2D map = new HeightMap2D(width, height, noiseSource);
+            SimplexNoiseSource noiseSource = new SimplexNoiseSource(noiseSeed, noiseScale);
+            HeightMap2D map = new HeightMap2D(width, height, heightCutoff, noiseSource);
 
             // Create gameobject and attach script, then set map
 

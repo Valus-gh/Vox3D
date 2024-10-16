@@ -19,19 +19,16 @@ namespace Vox3D
         private MeshCollider    _meshCollider;
         private MeshRenderer    _meshRenderer;
 
-        public int ChunkSize            { get => _chunkSize; set => _chunkSize = value; }
-        public int VoxelSize            { get => _voxelSize; set => _voxelSize = value; }
-        public Voxel[,,] Voxels         { get => _voxels; set => _voxels = value; }
-        public List<Vector3> Vertices   { get => _vertices; set => _vertices = value; }
-        public List<int> Indices        { get => _indices; set => _indices = value; }
-        public List<Vector2> Uvs        { get => _uvs; set => _uvs = value; }
-        public MeshFilter MeshFilter { get => _meshFilter; set => _meshFilter = value; }
-        public MeshCollider MeshCollider { get => _meshCollider; set => _meshCollider = value; }
-        public MeshRenderer MeshRenderer { get => _meshRenderer; set => _meshRenderer = value; }
+        public int ChunkSize                { get => _chunkSize; set => _chunkSize = value; }
+        public int VoxelSize                { get => _voxelSize; set => _voxelSize = value; }
+        public Voxel[,,] Voxels             { get => _voxels; set => _voxels = value; }
+        public List<Vector3> Vertices       { get => _vertices; set => _vertices = value; }
+        public List<int> Indices            { get => _indices; set => _indices = value; }
+        public List<Vector2> Uvs            { get => _uvs; set => _uvs = value; }
+        public MeshFilter MeshFilter        { get => _meshFilter; set => _meshFilter = value; }
+        public MeshCollider MeshCollider    { get => _meshCollider; set => _meshCollider = value; }
+        public MeshRenderer MeshRenderer    { get => _meshRenderer; set => _meshRenderer = value; }
 
-        public Chunk()
-        {
-        }
         public Chunk(int chunkSize, int voxelSize)
         {
             _chunkSize = chunkSize;
@@ -42,21 +39,36 @@ namespace Vox3D
         {
             Debug.Log("POPULATING CHUNK " + name);
 
+            var nVoxelsInChunk  = ChunkSize * ChunkSize * ChunkSize;
+            var voxelsData      = new NativeArray<Voxel>(nVoxelsInChunk, Allocator.TempJob);
+
+            VoxelGenerationJob job = new VoxelGenerationJob
+            {
+                voxels          = voxelsData,
+                chunkSize       = ChunkSize,
+                voxelSize       = VoxelSize,
+                chunkPosition   = transform.position
+            };
+
+            var handle = job.Schedule(nVoxelsInChunk, 16);
+            handle.Complete();
+
             for (int x = 0; x < ChunkSize; x++)
             {
                 for (int y = 0; y < ChunkSize; y++)
                 {
                     for (int z = 0; z < ChunkSize; z++)
                     {
-                        // Position the voxel by using an offset from the origin of the chunk, scaled by the VoxelSize
-                        Vector3 voxelPosition   = transform.position + (new Vector3(x, y, z) * VoxelSize);
+                        int voxelIndex  = x * ChunkSize * ChunkSize + y * ChunkSize + z;
+                        Voxel voxel     = voxelsData[voxelIndex];
 
-                        // Use default voxel type for now
-                        Voxel.VoxelType type    = Voxel.VoxelType.Grass;
-                        Voxels[x, y, z]         = new Voxel(Voxel.VoxelType.Grass, voxelPosition, type != Voxel.VoxelType.Air);
+                        Voxels[x, y, z] = new Voxel(voxel.Type, voxel.Position, voxel.IsActive);
                     }
                 }
             }
+
+            voxelsData.Dispose();
+
         }
 
         public void GenerateGeometry_Greedy()
@@ -96,19 +108,18 @@ namespace Vox3D
                 facesBack       = facesBack,
                 chunk           = transform.position
             };
-
+            
             var handle = job.Schedule(nVoxelsInChunk, 16);
-            handle.Complete();
-
-            //job.Run(nVoxelsInChunk);
-
+            
             // Refresh geometry buffers
 
             Vertices.Clear();
             Indices.Clear();
             Uvs.Clear();
 
-            for(int i = 0; i < nVoxelsInChunk; i++)
+            handle.Complete();
+
+            for (int i = 0; i < nVoxelsInChunk; i++)
             {
                 GreedyVertexGeneratorJob.VoxelFace face;
 
@@ -169,7 +180,7 @@ namespace Vox3D
             }
 
             Mesh mesh = MeshFilter.mesh;
-            mesh.indexFormat = UnityEngine.Rendering.IndexFormat.UInt32;
+            //mesh.indexFormat = UnityEngine.Rendering.IndexFormat.UInt32;
 
             if (mesh is null) mesh = new Mesh();
 
@@ -192,6 +203,17 @@ namespace Vox3D
             facesBack.Dispose();
             voxelsCopy.Dispose();
 
+        }
+
+        public void PurgeChunk()
+        {
+            System.Array.Clear(Voxels, 0, Voxels.Length);
+            Vertices.Clear();
+            Indices.Clear();
+            Uvs.Clear();
+
+            _meshFilter.sharedMesh.Clear();
+            _meshCollider.sharedMesh.Clear();
         }
 
     }

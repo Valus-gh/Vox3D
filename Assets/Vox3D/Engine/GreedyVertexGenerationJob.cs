@@ -5,6 +5,8 @@ using UnityEngine;
 
 namespace Vox3D
 {
+    // TODO replace calls to Vox3DProperties with parameters passed to the Job
+
     /// <summary>
     /// Execute parallelizes the generation of mesh vertices for all voxels in a chunk
     /// Each thread instance has a set range of voxels it works on.
@@ -55,12 +57,12 @@ namespace Vox3D
                 bool[] faces = new bool[6];
 
                 // Check visibility for each face
-                faces[0] = IsFaceVisible(x, y + 1, z, index); // Top
-                faces[1] = IsFaceVisible(x, y - 1, z, index); // Bottom
-                faces[2] = IsFaceVisible(x - 1, y, z, index); // Left
-                faces[3] = IsFaceVisible(x + 1, y, z, index); // Right
-                faces[4] = IsFaceVisible(x, y, z + 1, index); // Front
-                faces[5] = IsFaceVisible(x, y, z - 1, index); // Back
+                faces[0] = IsFaceVisible(x, y + 1, z); // Top
+                faces[1] = IsFaceVisible(x, y - 1, z); // Bottom
+                faces[2] = IsFaceVisible(x - 1, y, z); // Left
+                faces[3] = IsFaceVisible(x + 1, y, z); // Right
+                faces[4] = IsFaceVisible(x, y, z + 1); // Front
+                faces[5] = IsFaceVisible(x, y, z - 1); // Back
 
                 // For any face that was marked as visible, generate its vertices
                 for (int i = 0; i < faces.Length; i++)
@@ -70,10 +72,10 @@ namespace Vox3D
 
         }
 
-        private bool IsFaceVisible(int x, int y, int z, int index)
+        private bool IsFaceVisible(int x, int y, int z)
         {
-            return IsFaceVisibleInChunk(x, y, z, index)
-                && IsFaceVisibleInWorld(x, y, z, index);
+            return IsFaceVisibleInChunk(x, y, z)
+                && IsFaceVisibleInWorld(x, y, z);
         }
 
         /// <summary>
@@ -85,13 +87,15 @@ namespace Vox3D
         /// <param name="z"></param>
         /// <param name="index"></param>
         /// <returns></returns>
-        private bool IsFaceVisibleInChunk(int x, int y, int z, int index)
+        private bool IsFaceVisibleInChunk(int x, int y, int z)
         {
             var chunkSize = Vox3DProperties.Instance().ChunkSize;
 
             if (x < 0 || x >= chunkSize
                 || y < 0 || y >= chunkSize
                 || z < 0 || z >= chunkSize) return true;
+            
+            int index = x * chunkSize * chunkSize + y * chunkSize + z;
 
             return !voxels[index].Item2.IsActive;
         }
@@ -106,7 +110,7 @@ namespace Vox3D
         /// <param name="z"></param>
         /// <param name="index"></param>
         /// <returns></returns>
-        private bool IsFaceVisibleInWorld(int x, int y, int z, int index)
+        private bool IsFaceVisibleInWorld(int x, int y, int z)
         {
             var properties = Vox3DProperties.Instance();
 
@@ -125,28 +129,29 @@ namespace Vox3D
 
             // This operation is done in GetChunkAt(), but needs to be repeated as we dont have access to Transforms
             // in threads other then the Main thread handled by Unity.
-
+            
             Vector3Int neighborPosition = new Vector3Int(
                 Mathf.FloorToInt(voxelWorldPosition.x / (chunkSize * voxelSize)) * (chunkSize * voxelSize),
                 Mathf.FloorToInt(voxelWorldPosition.y / (chunkSize * voxelSize)) * (chunkSize * voxelSize),
                 Mathf.FloorToInt(voxelWorldPosition.z / (chunkSize * voxelSize)) * (chunkSize * voxelSize)
             );
 
-            Vector3 voxelChunkPosition = voxelWorldPosition - neighborPosition;
 
+            Vector3 voxelChunkPosition = voxelWorldPosition - neighborPosition;
+            
             int xNeighbor = Mathf.RoundToInt(voxelChunkPosition.x) / voxelSize;
             int yNeighbor = Mathf.RoundToInt(voxelChunkPosition.y) / voxelSize;
             int zNeighbor = Mathf.RoundToInt(voxelChunkPosition.z) / voxelSize;
 
             // If the position of the voxel within the neighboring chunk is valid, check if it is active
-            if (xNeighbor < 0 || xNeighbor >= chunkSize
-                || yNeighbor < 0 || yNeighbor >= chunkSize
-                || zNeighbor < 0 || zNeighbor >= chunkSize) return neighbor.Voxels[xNeighbor, yNeighbor, zNeighbor].IsActive;
+            if (xNeighbor >= 0 && xNeighbor < chunkSize
+                && yNeighbor >= 0 && yNeighbor < chunkSize
+                && zNeighbor >= 0 && zNeighbor < chunkSize) return !neighbor.Voxels[xNeighbor, yNeighbor, zNeighbor].IsActive;
 
             return false;
 
         }
-
+        
         /// <summary>
         /// Generates the basic vertex geometry and uv coordinates for a given face. 
         /// If a face is generated, its respective valid flag is set to true.
@@ -270,6 +275,8 @@ namespace Vox3D
             }
 
         }
+
+        
     }
 
 }
