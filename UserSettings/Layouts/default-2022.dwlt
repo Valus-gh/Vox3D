@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 3440
     height: 1357
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Git for Unity
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 160
+  controlID: 83
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -167,7 +167,7 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 3130
-    height: 1182
+    height: 1145
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
@@ -191,7 +191,7 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 222
-    height: 1182
+    height: 1145
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 13}
@@ -217,7 +217,7 @@ MonoBehaviour:
     x: 222
     y: 0
     width: 2908
-    height: 1182
+    height: 1145
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 14}
@@ -242,11 +242,11 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 1182
+    y: 1145
     width: 3130
-    height: 125
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
+    height: 162
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 12}
@@ -263,7 +263,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: InspectorWindow
+  m_Name: Window
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -272,14 +272,14 @@ MonoBehaviour:
     y: 0
     width: 310
     height: 1307
-  m_MinSize: {x: 276, y: 71}
+  m_MinSize: {x: 101, y: 121}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 17}
+  m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 17}
   - {fileID: 18}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -449,7 +449,7 @@ MonoBehaviour:
     x: 0
     y: 73
     width: 221
-    height: 1161
+    height: 1124
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -463,9 +463,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: e8600000
       m_LastClickedID: 0
-      m_ExpandedIDs: 5e74fdff0403feff2afbffff
+      m_ExpandedIDs: 2afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -512,7 +512,7 @@ MonoBehaviour:
     x: 222
     y: 73
     width: 2906
-    height: 1161
+    height: 1124
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -832,9 +832,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 6.125734, y: 28.636902, z: 13.275883}
+    m_Target: {x: 3.1228893, y: 48.010246, z: 26.629725}
     speed: 2
-    m_Value: {x: 6.125734, y: 28.636902, z: 13.275883}
+    m_Value: {x: 3.1228893, y: 48.010246, z: 26.629725}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 2
@@ -880,13 +880,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.009842332, y: -0.90461797, z: 0.42566547, w: -0.020872787}
+    m_Target: {x: -0.006160297, y: -0.98930943, z: 0.13922225, w: -0.04363255}
     speed: 2
-    m_Value: {x: -0.009842051, y: -0.9045921, z: 0.42565328, w: -0.020872189}
+    m_Value: {x: -0.006160119, y: -0.9892809, z: 0.13921823, w: -0.04363129}
   m_Size:
-    m_Target: 13.856406
+    m_Target: 13.232868
     speed: 2
-    m_Value: 13.856406
+    m_Value: 13.232868
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -934,7 +934,7 @@ MonoBehaviour:
     x: 222
     y: 73
     width: 2906
-    height: 1161
+    height: 1124
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -951,7 +951,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 2906, y: 1140}
+  m_TargetSize: {x: 2906, y: 1103}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -968,8 +968,8 @@ MonoBehaviour:
     vZoomLockedByDefault: 0
     m_HBaseRangeMin: -1453
     m_HBaseRangeMax: 1453
-    m_VBaseRangeMin: -570
-    m_VBaseRangeMax: 570
+    m_VBaseRangeMin: -551.5
+    m_VBaseRangeMax: 551.5
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -988,9 +988,9 @@ MonoBehaviour:
       x: 0
       y: 21
       width: 2906
-      height: 1140
+      height: 1103
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 1453, y: 570}
+    m_Translation: {x: 1453, y: 551.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -998,12 +998,12 @@ MonoBehaviour:
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
       x: -1453
-      y: -570
+      y: -551.5
       width: 2906
-      height: 1140
+      height: 1103
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 2906, y: 1161}
+  m_LastWindowPixelSize: {x: 2906, y: 1124}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -1030,9 +1030,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 1255
+    y: 1218
     width: 3129
-    height: 104
+    height: 141
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1110,9 +1110,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2562
+    x: 3130
     y: 73
-    width: 877
+    width: 309
     height: 1286
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -1124,14 +1124,14 @@ MonoBehaviour:
     m_LastAppliedPresetName: Default
     m_SaveData: []
     m_OverlaysVisible: 1
-  progressMessageClearTime: 32.2045867
+  progressMessageClearTime: 3863.058008
   notificationClearTime: -1
   timeSinceLastRotation: -1
   currentBranchAndRemoteHasUpdate: 0
   currentTrackingStatusHasUpdate: 0
   currentStatusEntriesHasUpdate: 0
   repositoryProgressHasUpdate: 0
-  appManagerProgressHasUpdate: 1
+  appManagerProgressHasUpdate: 0
   changeTab: 3
   activeTab: 3
   initProjectView:
@@ -1376,475 +1376,19 @@ MonoBehaviour:
       tracking: '[None]'
   changesView:
     currentBranchHasUpdate: 0
-    currentStatusEntriesHasUpdate: 1
-    currentLocksHasUpdate: 1
+    currentStatusEntriesHasUpdate: 0
+    currentLocksHasUpdate: 0
     commitBody: 
     commitMessage: 
     currentBranch: dev-engine
     treeScroll: {x: 0, y: 0}
     treeChanges:
       assets:
-        keys:
-        - 00000000000000001000000000000000
-        - e22e02f3cb0264641a58dd60dc4642b8
-        - 5a21882bafd24ff49a9dea948021258f
-        - af0f8f165285a0141b0ef33c03a3be25
-        - 0dee623914f96654eb2827e602bd416d
-        - 9fc0d4010bbf28b4594072e72b8655ab
-        - e23d1dc591a92b74aa2aa0937b4cedcb
-        - 4ca99e5400706654f933a370ab5545e9
-        - 4631f0cc11c4eac4fa52ed8493f50b52
-        - 969b0dd04d445f942990f5e1c7a0563f
-        - 0624b9ee961583346bbc2e900e7ca828
-        - 237892ffc6935e041993be61079a2a4c
-        - 271100e069b3aaf42ae3cd7cb1e534a2
-        - 9c330e8461a84e64693f311022dc96ab
-        - 8cd9dacc087a546409a2cc48786d79e6
-        - c27b157765662c546928f4648f10ec76
-        values:
-        - path: Assets
-          label: Assets
-          level: 0
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Demo
-          label: Demo
-          level: 1
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Demo\BasicWorldInitializer.cs
-          label: BasicWorldInitializer.cs
-          level: 2
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Demo\BasicWorldInitializer.cs
-            fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Demo\BasicWorldInitializer.cs
-            projectPath: Assets\Demo\BasicWorldInitializer.cs
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 3
-        - path: Assets\Demo\SettingsGUI.cs
-          label: SettingsGUI.cs
-          level: 2
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Demo\SettingsGUI.cs
-            fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Demo\SettingsGUI.cs
-            projectPath: Assets\Demo\SettingsGUI.cs
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 3
-        - path: Assets\Scenes
-          label: Scenes
-          level: 1
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Scenes\SampleScene.unity
-          label: SampleScene.unity
-          level: 2
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Scenes\SampleScene.unity
-            fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\SampleScene.unity
-            projectPath: Assets\Scenes\SampleScene.unity
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 3
-        - path: Assets\Vox3D
-          label: Vox3D
-          level: 1
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Vox3D\Engine
-          label: Engine
-          level: 2
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Vox3D\Engine\Chunk.cs
-          label: Chunk.cs
-          level: 3
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Vox3D\Engine\Chunk.cs
-            fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Chunk.cs
-            projectPath: Assets\Vox3D\Engine\Chunk.cs
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 3
-        - path: Assets\Vox3D\Engine\GreedyVertexGenerationJob.cs
-          label: GreedyVertexGenerationJob.cs
-          level: 3
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Vox3D\Engine\GreedyVertexGenerationJob.cs
-            fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\GreedyVertexGenerationJob.cs
-            projectPath: Assets\Vox3D\Engine\GreedyVertexGenerationJob.cs
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 3
-        - path: Assets\Vox3D\Engine\HeightMap2D.cs
-          label: HeightMap2D.cs
-          level: 3
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Vox3D\Engine\HeightMap2D.cs
-            fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\HeightMap2D.cs
-            projectPath: Assets\Vox3D\Engine\HeightMap2D.cs
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 3
-        - path: Assets\Vox3D\Engine\Voxel.cs
-          label: Voxel.cs
-          level: 3
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Vox3D\Engine\Voxel.cs
-            fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Voxel.cs
-            projectPath: Assets\Vox3D\Engine\Voxel.cs
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 3
-        - path: Assets\Vox3D\Engine\VoxelGenerationJob.cs
-          label: VoxelGenerationJob.cs
-          level: 3
-          isFolder: 0
-          isContainer: 1
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Vox3D\Engine\VoxelGenerationJob.cs
-            fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\VoxelGenerationJob.cs
-            projectPath: Assets\Vox3D\Engine\VoxelGenerationJob.cs
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: Assets\Vox3D\Engine\World.cs
-          label: World.cs
-          level: 3
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Vox3D\Engine\World.cs
-            fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\World.cs
-            projectPath: Assets\Vox3D\Engine\World.cs
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 3
-        - path: Assets\Vox3D\Noise
-          label: Noise
-          level: 2
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Vox3D\Noise\SimplexNoiseSource.cs
-          label: SimplexNoiseSource.cs
-          level: 3
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Vox3D\Noise\SimplexNoiseSource.cs
-            fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Noise\SimplexNoiseSource.cs
-            projectPath: Assets\Vox3D\Noise\SimplexNoiseSource.cs
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 3
+        keys: []
+        values: []
       folders:
-        keys:
-        - Assets
-        - Assets\Demo
-        - Assets\Scenes
-        - Assets\Vox3D
-        - Assets\Vox3D\Engine
-        - Assets\Vox3D\Noise
-        - UserSettings
-        - UserSettings\Layouts
-        values:
-        - path: Assets
-          label: Assets
-          level: 0
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Demo
-          label: Demo
-          level: 1
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Scenes
-          label: Scenes
-          level: 1
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Vox3D
-          label: Vox3D
-          level: 1
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Vox3D\Engine
-          label: Engine
-          level: 2
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Vox3D\Noise
-          label: Noise
-          level: 2
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: UserSettings
-          label: UserSettings
-          level: 0
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: UserSettings\Layouts
-          label: Layouts
-          level: 1
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
+        keys: []
+        values: []
       checkedFileNodes:
         keys: []
         values: []
@@ -1873,366 +1417,6 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
-      - path: Assets
-        label: Assets
-        level: 0
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets\Demo
-        label: Demo
-        level: 1
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets\Demo\BasicWorldInitializer.cs
-        label: BasicWorldInitializer.cs
-        level: 2
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Demo\BasicWorldInitializer.cs
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Demo\BasicWorldInitializer.cs
-          projectPath: Assets\Demo\BasicWorldInitializer.cs
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 3
-      - path: Assets\Demo\SettingsGUI.cs
-        label: SettingsGUI.cs
-        level: 2
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Demo\SettingsGUI.cs
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Demo\SettingsGUI.cs
-          projectPath: Assets\Demo\SettingsGUI.cs
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 3
-      - path: Assets\Scenes
-        label: Scenes
-        level: 1
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets\Scenes\SampleScene.unity
-        label: SampleScene.unity
-        level: 2
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Scenes\SampleScene.unity
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\SampleScene.unity
-          projectPath: Assets\Scenes\SampleScene.unity
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 3
-      - path: Assets\Vox3D
-        label: Vox3D
-        level: 1
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets\Vox3D\Engine
-        label: Engine
-        level: 2
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets\Vox3D\Engine\Chunk.cs
-        label: Chunk.cs
-        level: 3
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Vox3D\Engine\Chunk.cs
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Chunk.cs
-          projectPath: Assets\Vox3D\Engine\Chunk.cs
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 3
-      - path: Assets\Vox3D\Engine\GreedyVertexGenerationJob.cs
-        label: GreedyVertexGenerationJob.cs
-        level: 3
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Vox3D\Engine\GreedyVertexGenerationJob.cs
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\GreedyVertexGenerationJob.cs
-          projectPath: Assets\Vox3D\Engine\GreedyVertexGenerationJob.cs
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 3
-      - path: Assets\Vox3D\Engine\HeightMap2D.cs
-        label: HeightMap2D.cs
-        level: 3
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Vox3D\Engine\HeightMap2D.cs
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\HeightMap2D.cs
-          projectPath: Assets\Vox3D\Engine\HeightMap2D.cs
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 3
-      - path: Assets\Vox3D\Engine\Voxel.cs
-        label: Voxel.cs
-        level: 3
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Vox3D\Engine\Voxel.cs
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Voxel.cs
-          projectPath: Assets\Vox3D\Engine\Voxel.cs
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 3
-      - path: Assets\Vox3D\Engine\VoxelGenerationJob.cs
-        label: VoxelGenerationJob.cs
-        level: 3
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Vox3D\Engine\VoxelGenerationJob.cs
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\VoxelGenerationJob.cs
-          projectPath: Assets\Vox3D\Engine\VoxelGenerationJob.cs
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Vox3D\Engine\VoxelGenerationJob.cs.meta
-        label: VoxelGenerationJob.cs.meta
-        level: 4
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Vox3D\Engine\VoxelGenerationJob.cs.meta
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\VoxelGenerationJob.cs.meta
-          projectPath: Assets\Vox3D\Engine\VoxelGenerationJob.cs.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Vox3D\Engine\World.cs
-        label: World.cs
-        level: 3
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Vox3D\Engine\World.cs
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\World.cs
-          projectPath: Assets\Vox3D\Engine\World.cs
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 3
-      - path: Assets\Vox3D\Noise
-        label: Noise
-        level: 2
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets\Vox3D\Noise\SimplexNoiseSource.cs
-        label: SimplexNoiseSource.cs
-        level: 3
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Vox3D\Noise\SimplexNoiseSource.cs
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Noise\SimplexNoiseSource.cs
-          projectPath: Assets\Vox3D\Noise\SimplexNoiseSource.cs
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 3
-      - path: UserSettings
-        label: UserSettings
-        level: 0
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: UserSettings\Layouts
-        label: Layouts
-        level: 1
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: UserSettings\Layouts\default-2022.dwlt
-        label: default-2022.dwlt
-        level: 2
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: UserSettings\Layouts\default-2022.dwlt
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\Layouts\default-2022.dwlt
-          projectPath: UserSettings\Layouts\default-2022.dwlt
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 3
       selectedNode:
         path: 
         label: 
@@ -2252,88 +1436,16 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
-    gitStatusEntries:
-    - path: Assets\Demo\BasicWorldInitializer.cs
-      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Demo\BasicWorldInitializer.cs
-      projectPath: Assets\Demo\BasicWorldInitializer.cs
-      originalPath: 
-      indexStatus: 0
-      workTreeStatus: 3
-    - path: Assets\Demo\SettingsGUI.cs
-      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Demo\SettingsGUI.cs
-      projectPath: Assets\Demo\SettingsGUI.cs
-      originalPath: 
-      indexStatus: 0
-      workTreeStatus: 3
-    - path: Assets\Scenes\SampleScene.unity
-      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\SampleScene.unity
-      projectPath: Assets\Scenes\SampleScene.unity
-      originalPath: 
-      indexStatus: 0
-      workTreeStatus: 3
-    - path: Assets\Vox3D\Engine\Chunk.cs
-      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Chunk.cs
-      projectPath: Assets\Vox3D\Engine\Chunk.cs
-      originalPath: 
-      indexStatus: 0
-      workTreeStatus: 3
-    - path: Assets\Vox3D\Engine\GreedyVertexGenerationJob.cs
-      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\GreedyVertexGenerationJob.cs
-      projectPath: Assets\Vox3D\Engine\GreedyVertexGenerationJob.cs
-      originalPath: 
-      indexStatus: 0
-      workTreeStatus: 3
-    - path: Assets\Vox3D\Engine\HeightMap2D.cs
-      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\HeightMap2D.cs
-      projectPath: Assets\Vox3D\Engine\HeightMap2D.cs
-      originalPath: 
-      indexStatus: 0
-      workTreeStatus: 3
-    - path: Assets\Vox3D\Engine\Voxel.cs
-      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Voxel.cs
-      projectPath: Assets\Vox3D\Engine\Voxel.cs
-      originalPath: 
-      indexStatus: 0
-      workTreeStatus: 3
-    - path: Assets\Vox3D\Engine\VoxelGenerationJob.cs
-      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\VoxelGenerationJob.cs
-      projectPath: Assets\Vox3D\Engine\VoxelGenerationJob.cs
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Vox3D\Engine\VoxelGenerationJob.cs.meta
-      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\VoxelGenerationJob.cs.meta
-      projectPath: Assets\Vox3D\Engine\VoxelGenerationJob.cs.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Vox3D\Engine\World.cs
-      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\World.cs
-      projectPath: Assets\Vox3D\Engine\World.cs
-      originalPath: 
-      indexStatus: 0
-      workTreeStatus: 3
-    - path: Assets\Vox3D\Noise\SimplexNoiseSource.cs
-      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Noise\SimplexNoiseSource.cs
-      projectPath: Assets\Vox3D\Noise\SimplexNoiseSource.cs
-      originalPath: 
-      indexStatus: 0
-      workTreeStatus: 3
-    - path: UserSettings\Layouts\default-2022.dwlt
-      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\Layouts\default-2022.dwlt
-      projectPath: UserSettings\Layouts\default-2022.dwlt
-      originalPath: 
-      indexStatus: 0
-      workTreeStatus: 3
-    changedFilesText: 12 changed files
+    gitStatusEntries: []
+    changedFilesText: No changed files
     lastCurrentBranchChangedEvent:
-      updatedTimeString: 2024-10-16T13:22:23.328+02:00
+      updatedTimeString: 2024-10-16T15:05:35.382+02:00
       cacheType: 1
     lastStatusEntriesChangedEvent:
-      updatedTimeString: 2024-10-16T14:00:48.077+02:00
+      updatedTimeString: 2024-10-16T15:05:26.299+02:00
       cacheType: 6
     lastLocksChangedEvent:
-      updatedTimeString: 2024-10-16T14:00:16.110+02:00
+      updatedTimeString: 0001-01-01T00:00:00.000+00:00
       cacheType: 7
   historyView:
     currentLogHasUpdate: 0
@@ -4857,7 +3969,7 @@ MonoBehaviour:
   currentRemoteUrl: https://github.com/Valus-gh/Vox3D
   statusAhead: 0
   statusBehind: 0
-  hasItemsToCommit: 1
+  hasItemsToCommit: 0
   isTrackingRemoteBranch: 1
   currentBranchContent:
     m_Text: dev-engine
@@ -4868,13 +3980,13 @@ MonoBehaviour:
     m_Image: {fileID: 0}
     m_Tooltip: Url of the origin remote
   lastCurrentBranchAndRemoteChangedEvent:
-    updatedTimeString: 2024-10-16T13:22:23.328+02:00
+    updatedTimeString: 2024-10-16T15:05:35.382+02:00
     cacheType: 1
   lastTrackingStatusChangedEvent:
-    updatedTimeString: 2024-10-16T13:22:27.658+02:00
+    updatedTimeString: 2024-10-16T15:05:35.709+02:00
     cacheType: 5
   lastStatusEntriesChangedEvent:
-    updatedTimeString: 2024-10-16T13:22:27.651+02:00
+    updatedTimeString: 2024-10-16T15:05:26.299+02:00
     cacheType: 6
   pullButtonContent:
     m_Text: Pull
@@ -4893,7 +4005,7 @@ MonoBehaviour:
     m_Image: {fileID: 0}
     m_Tooltip: 
   repositoryProgressValue: 1
-  repositoryProgressMessage: 
+  repositoryProgressMessage: Pushed
   appManagerProgressValue: 1
   appManagerProgressMessage: 
   primaryConnectionUsername: 
