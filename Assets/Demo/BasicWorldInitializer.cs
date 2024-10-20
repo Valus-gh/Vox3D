@@ -34,7 +34,11 @@ namespace Demo
             int width = worldSize * chunkSize;
             int height = worldSize * chunkSize;
 
-            SimplexNoiseSource noiseSource = new SimplexNoiseSource(noiseSeed, noiseScale);
+            PerlinProperties props = new PerlinProperties(
+                seed: noiseSeed,
+                frequency: noiseScale);
+
+            SimplexNoiseSource noiseSource = new SimplexNoiseSource(props);
             HeightMap2D map = new HeightMap2D(width, height, heightCutoff, noiseSource);
 
             // Create gameobject and attach script, then set map

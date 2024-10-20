@@ -10,13 +10,13 @@ namespace Vox3D
     /// </summary>
     public class Vox3DProperties
     {
-        private static Vox3DProperties _instance;
+        private static Vox3DProperties _Instance;
         public static Vox3DProperties Instance()
         {
-            if (_instance is null)
-                _instance = new Vox3DProperties();
+            if (_Instance is null)
+                _Instance = new Vox3DProperties();
 
-            return _instance;
+            return _Instance;
         }
 
         private int         _worldSize = -1; // How many chunks for each axis in a world

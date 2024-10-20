@@ -152,11 +152,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a21882bafd24ff49a9dea948021258f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  worldSize: 8
+  worldSize: 4
   chunkSize: 16
   voxelSize: 1
   noiseSeed: 1111
-  heightCutoff: 0.2
+  heightCutoff: 15
   noiseScale: 0.02
 --- !u!4 &421704384
 Transform:
@@ -185,12 +185,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af0f8f165285a0141b0ef33c03a3be25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wsDefault: 2
-  csDefault: 16
-  vsDefault: 1
-  noiseSeed: 1111
-  noiseScale: 0.012
-  maxHeight: 0.2
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0

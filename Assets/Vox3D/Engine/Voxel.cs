@@ -16,24 +16,24 @@ namespace Vox3D
             Snow,
         }
 
-        private VoxelType   _type;
-        private Vector3     _position;
-        private bool        _isActive;
+        private VoxelType   _Type;
+        private Vector3     _Position;
+        private bool        _IsActive;
 
-        public VoxelType Type   { get => _type; set => _type = value; }
-        public Vector3 Position { get => _position; set => _position = value; }
-        public bool IsActive    { get => _isActive; set => _isActive = value; }
+        public VoxelType Type   { get => _Type; set => _Type = value; }
+        public Vector3 Position { get => _Position; set => _Position = value; }
+        public bool IsActive    { get => _IsActive; set => _IsActive = value; }
 
         public Voxel(VoxelType type, Vector3 position, bool isActive)
         {
-            this._type      = type;
-            this._position  = position;
-            this._isActive  = isActive;
+            this._Type      = type;
+            this._Position  = position;
+            this._IsActive  = isActive;
         }
 
         public override string ToString()
         {
-            return $"Type: {_type}\nPosition: {_position}\nIsActive: {_isActive}";
+            return $"Type: {_Type}\nPosition: {_Position}\nIsActive: {_IsActive}";
         }
     }
 

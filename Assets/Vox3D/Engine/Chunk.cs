@@ -7,32 +7,32 @@ namespace Vox3D
 {
     public class Chunk : MonoBehaviour
     {
-        private int             _chunkSize;     // Property taken from WorldProperties. We save it locally to avoid continuous Instance calls
-        private int             _voxelSize;     // Property taken from WorldProperties. We save it locally to avoid continuous Instance calls
-        private Voxel[,,]       _voxels;        // Voxels within this chunk. These are only Voxel objects, no geometry
+        private int             _ChunkSize;     // Property taken from WorldProperties. We save it locally to avoid continuous Instance calls
+        private int             _VoxelSize;     // Property taken from WorldProperties. We save it locally to avoid continuous Instance calls
+        private Voxel[,,]       _Voxels;        // Voxels within this chunk. These are only Voxel objects, no geometry
 
-        private List<Vector3>   _vertices;      // Holds the geometry vertices for this chunk
-        private List<int>       _indices;     // Holds the indices for both triangles of each voxel face
-        private List<Vector2>   _uvs;           // Holds uv coordinates for each voxel face
+        private List<Vector3>   _Vertices;      // Holds the geometry vertices for this chunk
+        private List<int>       _Indices;       // Holds the indices for both triangles of each voxel face
+        private List<Vector2>   _Uvs;           // Holds uv coordinates for each voxel face
 
-        private MeshFilter      _meshFilter;
-        private MeshCollider    _meshCollider;
-        private MeshRenderer    _meshRenderer;
+        private MeshFilter      _MeshFilter;
+        private MeshCollider    _MeshCollider;
+        private MeshRenderer    _MeshRenderer;
 
-        public int ChunkSize                { get => _chunkSize; set => _chunkSize = value; }
-        public int VoxelSize                { get => _voxelSize; set => _voxelSize = value; }
-        public Voxel[,,] Voxels             { get => _voxels; set => _voxels = value; }
-        public List<Vector3> Vertices       { get => _vertices; set => _vertices = value; }
-        public List<int> Indices            { get => _indices; set => _indices = value; }
-        public List<Vector2> Uvs            { get => _uvs; set => _uvs = value; }
-        public MeshFilter MeshFilter        { get => _meshFilter; set => _meshFilter = value; }
-        public MeshCollider MeshCollider    { get => _meshCollider; set => _meshCollider = value; }
-        public MeshRenderer MeshRenderer    { get => _meshRenderer; set => _meshRenderer = value; }
+        public int ChunkSize                { get => _ChunkSize; set => _ChunkSize = value; }
+        public int VoxelSize                { get => _VoxelSize; set => _VoxelSize = value; }
+        public Voxel[,,] Voxels             { get => _Voxels; set => _Voxels = value; }
+        public List<Vector3> Vertices       { get => _Vertices; set => _Vertices = value; }
+        public List<int> Indices            { get => _Indices; set => _Indices = value; }
+        public List<Vector2> Uvs            { get => _Uvs; set => _Uvs = value; }
+        public MeshFilter MeshFilter        { get => _MeshFilter; set => _MeshFilter = value; }
+        public MeshCollider MeshCollider    { get => _MeshCollider; set => _MeshCollider = value; }
+        public MeshRenderer MeshRenderer    { get => _MeshRenderer; set => _MeshRenderer = value; }
 
         public Chunk(int chunkSize, int voxelSize)
         {
-            _chunkSize = chunkSize;
-            _voxelSize = voxelSize;
+            _ChunkSize = chunkSize;
+            _VoxelSize = voxelSize;
         }
 
         public void PopulateChunk()
@@ -44,10 +44,10 @@ namespace Vox3D
 
             VoxelGenerationJob job = new VoxelGenerationJob
             {
-                voxels          = voxelsData,
-                chunkSize       = ChunkSize,
-                voxelSize       = VoxelSize,
-                chunkPosition   = transform.position
+                Voxels          = voxelsData,
+                ChunkSize       = ChunkSize,
+                VoxelSize       = VoxelSize,
+                ChunkPosition   = transform.position
             };
 
             var handle = job.Schedule(nVoxelsInChunk, 16);
@@ -99,14 +99,14 @@ namespace Vox3D
 
             var job = new GreedyVertexGeneratorJob
             {
-                voxels          = voxelsCopy,
-                facesTop        = facesTop,
-                facesBottom     = facesBottom,
-                facesLeft       = facesLeft,
-                facesRight      = facesRight,
-                facesFront      = facesFront,
-                facesBack       = facesBack,
-                chunk           = transform.position
+                Voxels          = voxelsCopy,
+                FacesTop        = facesTop,
+                FacesBottom     = facesBottom,
+                FacesLeft       = facesLeft,
+                FacesRight      = facesRight,
+                FacesFront      = facesFront,
+                FacesBack       = facesBack,
+                Chunk           = transform.position
             };
             
             var handle = job.Schedule(nVoxelsInChunk, 16);
@@ -212,10 +212,11 @@ namespace Vox3D
             Indices.Clear();
             Uvs.Clear();
 
-            _meshFilter.sharedMesh.Clear();
-            _meshCollider.sharedMesh.Clear();
+            _MeshFilter.sharedMesh.Clear();
+            _MeshCollider.sharedMesh.Clear();
         }
 
     }
 
 }
+// TODO modularize vertex building to very small functions that can be called from outside

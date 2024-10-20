@@ -4,29 +4,26 @@ namespace Noise
 {
     public class SimplexNoiseSource : INoiseSource
     {
-        private int     _Seed;          // Seed for noise generation. If reused, leads to repetition.
-        private float   _Scale;         // Scale parameter in simplex, used to determine noise resolution.
+        private PerlinProperties _Properties;
 
-        public SimplexNoiseSource(int seed, float scale)
+        public SimplexNoiseSource(PerlinProperties properties)
         {
-            Seed = seed;
-            Scale = scale;
-
-            SimplexNoise.SimplexNoise.Seed = seed;
+            Properties = properties;
         }
 
-        public int Seed             { get => _Seed; set => _Seed = value; }
-        public float Scale          { get => _Scale; set => _Scale = value; }
+        public PerlinProperties Properties  { get => _Properties; set => _Properties = value; }
 
         public float[,] Noise2D(int width, int height)
         {
-            return SimplexNoise.SimplexNoise.Calc2D(width, height, Scale);
+            // TODO use new parameters to get a better noise output
+            return SimplexNoise.SimplexNoise.Calc2D(width, height, Properties.Frequency);
         }
 
         public float[,,] Noise3D(int width, int height, int depth)
         {
             throw new System.NotImplementedException();
         }
+
     }
 
 }

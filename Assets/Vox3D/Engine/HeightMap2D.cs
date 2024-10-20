@@ -5,30 +5,51 @@ namespace Vox3D
 {
     public class HeightMap2D
     {
-        private INoiseSource    _source;
-        private float[,]        _map;
-        private float           _maxHeight;
+        private INoiseSource    _Source;
+        private float[,]        _Map;
+        private float           _MaxHeight;
+        private int             _Width;
+        private int             _Height;
 
-        public INoiseSource Source  { get => _source; private set => _source = value; }
-        public float[,] Map         { get => _map; private set => _map = value; }
-        public float MaxHeight      { get => _maxHeight; set => _maxHeight = value; }
+        public INoiseSource Source  { get => _Source; private set => _Source = value; }
+        public float[,] Map         { get => _Map; private set => _Map = value; }
+        public float MaxHeight      { get => _MaxHeight; set => _MaxHeight = value; }
+        public int Width            { get => _Width; set => _Width = value; }
+        public int Height           { get => _Height; set => _Height = value; }
 
         public HeightMap2D(int width, int height, float maxHeight, INoiseSource source)
         {
-            Source = source;
-            _maxHeight = maxHeight;
+            Source      = source;
+            _MaxHeight  = maxHeight;
 
             Debug.Log($"GENERATING HeightMap2D[{width}, {height}]");
-            Map = source.Noise2D(width, height);
+
+            Map = Source.Noise2D(width, height);
+        }
+
+        public void Remap()
+        {
+            Map = null;
+            Map = Source.Noise2D(_Width, _Height);
+        }
+
+        public void Remap(int width, int height, float maxHeight)
+        {
+            _MaxHeight  = maxHeight;
+            _Width      = width;
+            _Height     = height;
+
+            Map = null;
+            Map = Source.Noise2D(width, height);
         }
 
         public float ValueAt(float x, float y)
         {
-            int mapX = (int)x % _map.GetLength(0);
-            int mapY = (int)y % _map.GetLength(1);
+            int mapX = (int)x % _Map.GetLength(0);
+            int mapY = (int)y % _Map.GetLength(1);
 
-            if (mapX >= 0 && mapX < _map.GetLength(0) &&
-                mapY >= 0 && mapY < _map.GetLength(1))
+            if (mapX >= 0 && mapX < _Map.GetLength(0) &&
+                mapY >= 0 && mapY < _Map.GetLength(1))
                 return Map[mapX, mapY];
             else
                 return 0; // Index out of bounds, default value.

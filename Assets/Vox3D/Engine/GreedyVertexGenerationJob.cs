@@ -17,16 +17,16 @@ namespace Vox3D
     public struct GreedyVertexGeneratorJob : IJobParallelFor
     {
         [ReadOnly]
-        public NativeArray<(Vector3, Voxel)>    voxels;
+        public NativeArray<(Vector3, Voxel)>    Voxels;
 
-        public NativeArray<VoxelFace>           facesTop;
-        public NativeArray<VoxelFace>           facesBottom;
-        public NativeArray<VoxelFace>           facesLeft;
-        public NativeArray<VoxelFace>           facesRight;
-        public NativeArray<VoxelFace>           facesFront;
-        public NativeArray<VoxelFace>           facesBack;
+        public NativeArray<VoxelFace>           FacesTop;
+        public NativeArray<VoxelFace>           FacesBottom;
+        public NativeArray<VoxelFace>           FacesLeft;
+        public NativeArray<VoxelFace>           FacesRight;
+        public NativeArray<VoxelFace>           FacesFront;
+        public NativeArray<VoxelFace>           FacesBack;
 
-        public Vector3                          chunk;
+        public Vector3                          Chunk;
 
         public struct VoxelFace
         {
@@ -46,11 +46,11 @@ namespace Vox3D
         public void Execute(int index)
         {
 
-            int x = (int)voxels[index].Item1.x;
-            int y = (int)voxels[index].Item1.y;
-            int z = (int)voxels[index].Item1.z;
+            int x = (int)Voxels[index].Item1.x;
+            int y = (int)Voxels[index].Item1.y;
+            int z = (int)Voxels[index].Item1.z;
 
-            Voxel voxel = voxels[index].Item2;
+            Voxel voxel = Voxels[index].Item2;
 
             if (voxel.IsActive)
             {
@@ -97,7 +97,7 @@ namespace Vox3D
             
             int index = x * chunkSize * chunkSize + y * chunkSize + z;
 
-            return !voxels[index].Item2.IsActive;
+            return !Voxels[index].Item2.IsActive;
         }
 
         /// <summary>
@@ -115,7 +115,7 @@ namespace Vox3D
             var properties = Vox3DProperties.Instance();
 
             // Position of the adjacent voxel in world space. Takes into consideration the size of the voxels.
-            Vector3 voxelWorldPosition = chunk + (new Vector3(x, y, z) * properties.VoxelSize);
+            Vector3 voxelWorldPosition = Chunk + (new Vector3(x, y, z) * properties.VoxelSize);
 
             Chunk neighbor = properties.World.GetChunkAt(voxelWorldPosition);
 
@@ -174,7 +174,7 @@ namespace Vox3D
             switch (faceIndex)
             {
                 case 0: // Top
-                    face = facesTop[voxelIndex];
+                    face = FacesTop[voxelIndex];
 
                     face.a = new Vector3(x, y + offset, z);
                     face.b = new Vector3(x, y + offset, z + offset);
@@ -186,11 +186,11 @@ namespace Vox3D
                     face.uvD = new Vector2(0, 1);
 
                     face.valid = true;
-                    facesTop[voxelIndex] = face;
+                    FacesTop[voxelIndex] = face;
                     break;
 
                 case 1: // Bottom
-                    face = facesBottom[voxelIndex];
+                    face = FacesBottom[voxelIndex];
 
                     face.a = new Vector3(x, y, z);
                     face.b = new Vector3(x + offset, y, z);
@@ -202,11 +202,11 @@ namespace Vox3D
                     face.uvD = new Vector2(1, 0);
 
                     face.valid = true;
-                    facesBottom[voxelIndex] = face;
+                    FacesBottom[voxelIndex] = face;
                     break;
 
                 case 2: // Left
-                    face = facesLeft[voxelIndex];
+                    face = FacesLeft[voxelIndex];
 
                     face.a = new Vector3(x, y, z);
                     face.b = new Vector3(x, y, z + offset);
@@ -218,11 +218,11 @@ namespace Vox3D
                     face.uvD = new Vector2(0, 1);
 
                     face.valid = true;
-                    facesLeft[voxelIndex] = face;
+                    FacesLeft[voxelIndex] = face;
                     break;
 
                 case 3: // Right
-                    face = facesRight[voxelIndex];
+                    face = FacesRight[voxelIndex];
 
                     face.a = new Vector3(x + offset, y, z + offset);
                     face.b = new Vector3(x + offset, y, z);
@@ -234,11 +234,11 @@ namespace Vox3D
                     face.uvD = new Vector2(1, 0);
 
                     face.valid = true;
-                    facesRight[voxelIndex] = face;
+                    FacesRight[voxelIndex] = face;
                     break;
 
                 case 4: // Front
-                    face = facesFront[voxelIndex];
+                    face = FacesFront[voxelIndex];
 
                     face.a = new Vector3(x, y, z + offset);
                     face.b = new Vector3(x + offset, y, z + offset);
@@ -250,11 +250,11 @@ namespace Vox3D
                     face.uvD = new Vector2(1, 1);
 
                     face.valid = true;
-                    facesFront[voxelIndex] = face;
+                    FacesFront[voxelIndex] = face;
                     break;
 
                 case 5: // Back
-                    face = facesBack[voxelIndex];
+                    face = FacesBack[voxelIndex];
 
                     face.a = new Vector3(x + offset, y, z);
                     face.b = new Vector3(x, y, z);
@@ -266,7 +266,7 @@ namespace Vox3D
                     face.uvD = new Vector2(0, 0);
 
                     face.valid = true;
-                    facesBack[voxelIndex] = face;
+                    FacesBack[voxelIndex] = face;
                     break;
 
                 default:

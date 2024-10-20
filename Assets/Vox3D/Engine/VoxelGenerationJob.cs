@@ -6,19 +6,19 @@ namespace Vox3D
 {
     public struct VoxelGenerationJob : IJobParallelFor
     {
-        public NativeArray<Voxel>   voxels;
-        public int                  chunkSize;
-        public int                  voxelSize;
-        public Vector3              chunkPosition;
+        public NativeArray<Voxel>   Voxels;
+        public int                  ChunkSize;
+        public int                  VoxelSize;
+        public Vector3              ChunkPosition;
 
     public void Execute(int index)
         {
-            int z = index % chunkSize;
-            int y = (index / chunkSize) % chunkSize;
-            int x = (index / chunkSize) / chunkSize;
+            int z = index % ChunkSize;
+            int y = (index / ChunkSize) % ChunkSize;
+            int x = (index / ChunkSize) / ChunkSize;
 
-            Vector3 voxelWorldPosition = chunkPosition + (new Vector3(x, y, z) * voxelSize);
-            Vector3 voxelWorldPositionNoSize = (chunkPosition / voxelSize) + new Vector3(x, y, z);
+            Vector3 voxelWorldPosition = ChunkPosition + (new Vector3(x, y, z) * VoxelSize);
+            Vector3 voxelWorldPositionNoSize = (ChunkPosition / VoxelSize) + new Vector3(x, y, z);
 
             // Calculate noise
             var map = Vox3DProperties.Instance().World.HeightMap;
@@ -30,7 +30,7 @@ namespace Vox3D
             // Set voxel properties
             Voxel.VoxelType type = (voxelWorldPosition.y <= height) ? Voxel.VoxelType.Grass : Voxel.VoxelType.Air;
 
-            voxels[index] = new Voxel(type, voxelWorldPosition, type != Voxel.VoxelType.Air);
+            Voxels[index] = new Voxel(type, voxelWorldPosition, type != Voxel.VoxelType.Air);
         }
     }
 
