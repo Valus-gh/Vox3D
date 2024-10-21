@@ -10,37 +10,25 @@ namespace Vox3D
     /// </summary>
     public class Vox3DProperties
     {
-        private static Vox3DProperties _Instance;
-        public static Vox3DProperties Instance()
+        private int         _WorldSize; // How many chunks for each axis in a world
+        private int         _ChunkSize; // How many voxels for each axis in a chunk
+        private int         _VoxelSize; // The size of the edges of the voxels
+
+        private Material    _VoxelDefaultMaterial;
+        public Vox3DProperties(int worldSize, int chunkSize, int voxelSize)
         {
-            if (_Instance is null)
-                _Instance = new Vox3DProperties();
-
-            return _Instance;
+            _WorldSize = worldSize;
+            _ChunkSize = chunkSize;
+            _VoxelSize = voxelSize;
         }
-
-        private int         _worldSize = -1; // How many chunks for each axis in a world
-        private int         _chunkSize = -1; // How many voxels for each axis in a chunk
-        private int         _voxelSize = -1; // The size of the edges of the voxels
-
-        private World       _world;
-
-        private Material    _voxelDefaultMaterial;
-
-        public int WorldSize    { get => _worldSize; set => _worldSize = value; }
-        public int ChunkSize    { get => _chunkSize; set => _chunkSize = value; }
-        public int VoxelSize    { get => _voxelSize; set => _voxelSize = value; }
-        public World World      { get => _world; set => _world = value; }
-        public Material VoxelDefaultMaterial { get => _voxelDefaultMaterial; set => _voxelDefaultMaterial = value; }
+        public int WorldSize    { get => _WorldSize; set => _WorldSize = value; }
+        public int ChunkSize    { get => _ChunkSize; set => _ChunkSize = value; }
+        public int VoxelSize    { get => _VoxelSize; set => _VoxelSize = value; }
+        public Material VoxelDefaultMaterial { get => _VoxelDefaultMaterial; set => _VoxelDefaultMaterial = value; }
 
         public void LoadFromXML(string pathToXml)
         {
             // TODO Get Properties from XML Parser to fill an object when this is created
-        }
-
-        public bool IsReady()
-        {
-            return _worldSize >= 0 || _chunkSize >= 0 || _voxelSize >= 0;
         }
 
     }

@@ -21,16 +21,16 @@ namespace Vox3D
             Vector3 voxelWorldPositionNoSize = (ChunkPosition / VoxelSize) + new Vector3(x, y, z);
 
             // Calculate noise
-            var map = Vox3DProperties.Instance().World.HeightMap;
+            var map = Vox3DManager.Instance().World.HeightMap;
 
             float noise     = map.ValueAt(voxelWorldPositionNoSize.x, voxelWorldPositionNoSize.z);
-            //noise           = (noise + 1) / 2;
             float height    = noise * map.MaxHeight;
 
             // Set voxel properties
             Voxel.VoxelType type = (voxelWorldPosition.y <= height) ? Voxel.VoxelType.Grass : Voxel.VoxelType.Air;
 
             Voxels[index] = new Voxel(type, voxelWorldPosition, type != Voxel.VoxelType.Air);
+            
         }
     }
 

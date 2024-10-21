@@ -17,10 +17,7 @@ namespace Noise
 
         public float[,] Noise2D(int width, int height)
         {
-            // TODO use new parameters to get a better noise output
             float[,] elevation = new float[width, height];
-
-            //e = SimplexNoise.SimplexNoise.Calc2D(width, height, Properties.Frequency);
 
             if(_Properties.Amplitude.Length == 0)
             {

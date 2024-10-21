@@ -28,15 +28,9 @@ namespace Demo
         // Start is called before the first frame update
         void Start()
         {
-            properties = Vox3DProperties.Instance();
-            properties.WorldSize = worldSize;
-            properties.ChunkSize = chunkSize;
-            properties.VoxelSize = voxelSize;
-
-            // Create map from simplex
-
-            int width = worldSize * chunkSize;
-            int height = worldSize * chunkSize;
+            var manager = Vox3DManager.Instance();
+            manager.Properties = new Vox3DProperties(worldSize, chunkSize, voxelSize);
+            manager.Properties.VoxelDefaultMaterial = Resources.Load("DefaultMaterial", typeof(Material)) as Material;
 
             PerlinProperties props = new PerlinProperties(
                 seed: noiseSeed,
@@ -47,17 +41,14 @@ namespace Demo
                 );
 
             SimplexNoiseSource noiseSource = new SimplexNoiseSource(props);
-            HeightMap2D map = new HeightMap2D(width, height, maxHeight, noiseSource);
 
-            // Create gameobject and attach script, then set map
+            manager.NoiseSource = noiseSource;
+            manager.World = Vox3DManager.MakeWorld();
+            manager.World.HeightMap.MaxHeight = maxHeight;
 
-            GameObject worldObject = new GameObject($"World_{width}x{height}");
-            World world = worldObject.AddComponent<World>();
-
-            world.HeightMap = map;
-
-            properties.World = world;
-            properties.VoxelDefaultMaterial = Resources.Load("DefaultMaterial", typeof(Material)) as Material;
+            manager.World.PopulateWorld();
+            manager.World.PopulateChunks();
+            manager.World.GenerateGeometry();
 
         }
 

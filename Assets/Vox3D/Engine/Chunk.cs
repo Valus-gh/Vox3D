@@ -29,16 +29,8 @@ namespace Vox3D
         public MeshCollider MeshCollider    { get => _MeshCollider; set => _MeshCollider = value; }
         public MeshRenderer MeshRenderer    { get => _MeshRenderer; set => _MeshRenderer = value; }
 
-        public Chunk(int chunkSize, int voxelSize)
-        {
-            _ChunkSize = chunkSize;
-            _VoxelSize = voxelSize;
-        }
-
         public void PopulateChunk()
         {
-            Debug.Log("POPULATING CHUNK " + name);
-
             var nVoxelsInChunk  = ChunkSize * ChunkSize * ChunkSize;
             var voxelsData      = new NativeArray<Voxel>(nVoxelsInChunk, Allocator.TempJob);
 
@@ -193,7 +185,7 @@ namespace Vox3D
 
             MeshFilter.mesh         = mesh;
             MeshCollider.sharedMesh = mesh;
-            MeshRenderer.material   = Vox3DProperties.Instance().VoxelDefaultMaterial;
+            MeshRenderer.material   = Vox3DManager.Instance().Properties.VoxelDefaultMaterial;
 
             facesTop.Dispose();
             facesBottom.Dispose();

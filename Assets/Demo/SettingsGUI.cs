@@ -16,6 +16,7 @@ public class SettingsGUI : MonoBehaviour
 
     void OnGUI()
     {
+        /*
         if (init is false)
         {
 
@@ -52,13 +53,13 @@ public class SettingsGUI : MonoBehaviour
         if(GUI.Button(new Rect(20, 253, 200, 20), "Refresh Map & Geometry"))
         {
             RefreshHeightmap();
-        }
+        }*/
 
     }
 
     private void RefreshGeometry()
     {
-        var prop = Vox3D.Vox3DProperties.Instance();
+        /*var prop = Vox3D.Vox3DProperties.Instance();
         prop.WorldSize = (int)wsDefault;
         prop.ChunkSize = (int)csDefault;
         prop.VoxelSize = (int)vsDefault;
@@ -69,11 +70,12 @@ public class SettingsGUI : MonoBehaviour
 
         prop.World.PurgeWorld();
         prop.World.PopulateWorld();
+        */
     }
 
     private void RefreshHeightmap()
     {
-        var prop = Vox3D.Vox3DProperties.Instance();
+        /*var prop = Vox3D.Vox3DProperties.Instance();
 
         prop.WorldSize = (int)wsDefault;
         prop.ChunkSize = (int)csDefault;
@@ -90,6 +92,6 @@ public class SettingsGUI : MonoBehaviour
 
         prop.World.HeightMap.Remap(width, height, float.Parse(maxHeight, CultureInfo.InvariantCulture));
 
-        RefreshGeometry();
+        RefreshGeometry();*/
     }
 }
