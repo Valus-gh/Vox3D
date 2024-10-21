@@ -20,17 +20,19 @@ namespace Vox3D {
         }
 
         private Vox3DProperties     _Properties;
-        private SimplexNoiseSource  _NoiseSource;
+        private SimplexNoiseSource  _HNoiseSource;
+        private SimplexNoiseSource  _MNoiseSource;
         private World               _World;
         public Vox3DProperties Properties       { get => _Properties; set => _Properties = value; }
-        public SimplexNoiseSource NoiseSource   { get => _NoiseSource; set => _NoiseSource = value; }
+        public SimplexNoiseSource HNoiseSource  { get => _HNoiseSource; set => _HNoiseSource = value; }
+        public SimplexNoiseSource MNoiseSource  { get => _MNoiseSource; set => _MNoiseSource = value; }
         public World World                      { get => _World; set => _World = value; }
 
         public static World MakeWorld()
         {
             var manager     = Instance();
             var properties  = manager.Properties;
-            var noiseSource = manager.NoiseSource;
+            var noiseSource = manager.HNoiseSource;
 
             GameObject worldObject  = new GameObject($"World_{properties.WorldSize}_{properties.ChunkSize}_{properties.VoxelSize}");
             World world             = worldObject.AddComponent<World>();

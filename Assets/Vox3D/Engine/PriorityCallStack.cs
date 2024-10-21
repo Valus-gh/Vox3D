@@ -17,9 +17,8 @@ public class PriorityCallStack : MonoBehaviour
         return _Instance;
     }
 
-    private List<(Action, uint)> _ActionList = new List<(Action, uint)>();
-
-    private Stack<Action> _ToInvoke = new Stack<Action>();
+    private List<(Action, uint)>    _ActionList = new List<(Action, uint)>();
+    private Stack<Action>           _ToInvoke   = new Stack<Action>();
 
     void Update()
     {
