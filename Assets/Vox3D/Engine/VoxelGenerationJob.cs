@@ -24,7 +24,7 @@ namespace Vox3D
             var map = Vox3DProperties.Instance().World.HeightMap;
 
             float noise     = map.ValueAt(voxelWorldPositionNoSize.x, voxelWorldPositionNoSize.z);
-            noise           = (noise + 1) / 2;
+            //noise           = (noise + 1) / 2;
             float height    = noise * map.MaxHeight;
 
             // Set voxel properties

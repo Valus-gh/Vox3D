@@ -27,8 +27,6 @@ public class SettingsGUI : MonoBehaviour
             var source = (Noise.SimplexNoiseSource)prop.World.HeightMap.Source;
             var noiseProps = source.Properties;
             noiseSeed = $"{noiseProps.Seed}";
-            noiseFrequency = $"{noiseProps.Frequency}";
-            noiseFrequency = noiseFrequency.Replace(',', '.');
             maxHeight = $"{prop.World.HeightMap.MaxHeight}";
 
             init = true;
@@ -48,13 +46,10 @@ public class SettingsGUI : MonoBehaviour
         GUI.Label(new Rect(20, 195, 100, 23), $"Seed: ");
         noiseSeed = GUI.TextField(new Rect(57, 195, 80, 23), noiseSeed);
 
-        GUI.Label(new Rect(20, 223, 100, 56), $"Frequency: ");
-        noiseFrequency = GUI.TextField(new Rect(88, 223, 80, 23), noiseFrequency);
+        GUI.Label(new Rect(20, 223, 100, 62), $"Max Height: ");
+        maxHeight = GUI.TextField(new Rect(94, 223, 80, 23), maxHeight);
 
-        GUI.Label(new Rect(20, 251, 100, 62), $"Max Height: ");
-        maxHeight = GUI.TextField(new Rect(94, 251, 80, 23), maxHeight);
-
-        if(GUI.Button(new Rect(20, 281, 200, 20), "Refresh Map & Geometry"))
+        if(GUI.Button(new Rect(20, 253, 200, 20), "Refresh Map & Geometry"))
         {
             RefreshHeightmap();
         }
@@ -86,11 +81,11 @@ public class SettingsGUI : MonoBehaviour
         int width = prop.WorldSize * prop.ChunkSize;
         int height = prop.WorldSize * prop.ChunkSize;
 
-        PerlinProperties props = new PerlinProperties(
-            seed: int.Parse(noiseSeed, CultureInfo.InvariantCulture),
-            frequency: float.Parse(noiseFrequency, CultureInfo.InvariantCulture));
-
         var source = (Noise.SimplexNoiseSource)prop.World.HeightMap.Source;
+
+        var props = source.Properties;
+        props.Seed = int.Parse(noiseSeed, CultureInfo.InvariantCulture);
+
         source.Properties = props;
 
         prop.World.HeightMap.Remap(width, height, float.Parse(maxHeight, CultureInfo.InvariantCulture));

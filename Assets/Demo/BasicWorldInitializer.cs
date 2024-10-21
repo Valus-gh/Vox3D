@@ -17,9 +17,13 @@ namespace Demo
         public int chunkSize;
         public int voxelSize;
 
+        public float maxHeight;
+
         public int noiseSeed;
-        public float heightCutoff;
-        public float noiseScale;
+        public float noiseGain;
+        public float noiseRedistribution;
+        public float reshapingFactor;
+        public bool reshape;
 
         // Start is called before the first frame update
         void Start()
@@ -36,10 +40,14 @@ namespace Demo
 
             PerlinProperties props = new PerlinProperties(
                 seed: noiseSeed,
-                frequency: noiseScale);
+                gain: noiseGain,
+                redistribution: noiseRedistribution,
+                doReshape: reshape,
+                shapingFactor: reshapingFactor
+                );
 
             SimplexNoiseSource noiseSource = new SimplexNoiseSource(props);
-            HeightMap2D map = new HeightMap2D(width, height, heightCutoff, noiseSource);
+            HeightMap2D map = new HeightMap2D(width, height, maxHeight, noiseSource);
 
             // Create gameobject and attach script, then set map
 
