@@ -15,6 +15,7 @@ namespace Vox3D
         private int         _VoxelSize; // The size of the edges of the voxels
 
         private Material    _VoxelDefaultMaterial;
+        private Texture2D   _BiomeLookupTexture;
         public Vox3DProperties()
         {
 
@@ -29,6 +30,8 @@ namespace Vox3D
         public int ChunkSize                    { get => _ChunkSize; set => _ChunkSize = value; }
         public int VoxelSize                    { get => _VoxelSize; set => _VoxelSize = value; }
         public Material VoxelDefaultMaterial    { get => _VoxelDefaultMaterial; set => _VoxelDefaultMaterial = value; }
+        public Texture2D BiomeLookupTexture     { get => _BiomeLookupTexture; set => _BiomeLookupTexture = value; }
+
         public void LoadFromXML(string pathToXml)
         {
             // TODO Get Properties from XML Parser to fill an object when this is created

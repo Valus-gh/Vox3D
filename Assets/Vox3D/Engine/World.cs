@@ -112,6 +112,7 @@ namespace Vox3D
                         chunk.Vertices      = new List<Vector3>();
                         chunk.Indices       = new List<int>();
                         chunk.Uvs           = new List<Vector2>();
+                        chunk.Colors        = new List<Color32>();
 
                         Chunks.Add(chunkPosition, chunk);
 

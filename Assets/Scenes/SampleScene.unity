@@ -161,6 +161,7 @@ MonoBehaviour:
   noiseRedistribution: 1
   reshapingFactor: 0.3
   reshape: 1
+  biomeTex: {fileID: 2800000, guid: 6ead1351aa99fca4ea42fa8a93cac70f, type: 3}
 --- !u!4 &421704384
 Transform:
   m_ObjectHideFlags: 0

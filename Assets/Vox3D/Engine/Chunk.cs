@@ -14,6 +14,7 @@ namespace Vox3D
         private List<Vector3>   _Vertices;      // Holds the geometry vertices for this chunk
         private List<int>       _Indices;       // Holds the indices for both triangles of each voxel face
         private List<Vector2>   _Uvs;           // Holds uv coordinates for each voxel face
+        private List<Color32>   _Colors;           // Holds uv coordinates for each voxel face
 
         private MeshFilter      _MeshFilter;
         private MeshCollider    _MeshCollider;
@@ -28,14 +29,22 @@ namespace Vox3D
         public MeshFilter MeshFilter        { get => _MeshFilter; set => _MeshFilter = value; }
         public MeshCollider MeshCollider    { get => _MeshCollider; set => _MeshCollider = value; }
         public MeshRenderer MeshRenderer    { get => _MeshRenderer; set => _MeshRenderer = value; }
+        public List<Color32> Colors         { get => _Colors; set => _Colors = value; }
 
         public void PopulateChunk()
         {
             var nVoxelsInChunk  = ChunkSize * ChunkSize * ChunkSize;
             var voxelsData      = new NativeArray<Voxel>(nVoxelsInChunk, Allocator.TempJob);
 
+            var biomeTex            = Vox3DManager.Instance().Properties.BiomeLookupTexture;
+            var biomeTexData        = new NativeArray<Color32>(biomeTex.GetPixels32().Length, Allocator.TempJob);
+            biomeTexData.CopyFrom(biomeTex.GetPixels32());
+
             VoxelGenerationJob job = new VoxelGenerationJob
             {
+                BiomeTexture    = biomeTexData,
+                TextureWidth    = biomeTex.width,
+                TextureHeight   = biomeTex.height,
                 Voxels          = voxelsData,
                 ChunkSize       = ChunkSize,
                 VoxelSize       = VoxelSize,
@@ -54,12 +63,13 @@ namespace Vox3D
                         int voxelIndex  = x * ChunkSize * ChunkSize + y * ChunkSize + z;
                         Voxel voxel     = voxelsData[voxelIndex];
 
-                        Voxels[x, y, z] = new Voxel(voxel.Type, voxel.Position, voxel.IsActive);
+                        Voxels[x, y, z] = new Voxel(voxel.Type, voxel.Position, voxel.IsActive, voxel.Color);
                     }
                 }
             }
 
             voxelsData.Dispose();
+            biomeTexData.Dispose();
 
         }
 
@@ -165,6 +175,12 @@ namespace Vox3D
                         Uvs.Add(face.uvB);
                         Uvs.Add(face.uvC);
                         Uvs.Add(face.uvD);
+
+                        Colors.Add(face.color);
+                        Colors.Add(face.color);
+                        Colors.Add(face.color);
+                        Colors.Add(face.color);
+
                     }
 
                 }
@@ -180,6 +196,7 @@ namespace Vox3D
             mesh.vertices       = Vertices.ToArray();
             mesh.triangles      = Indices.ToArray();
             mesh.uv             = Uvs.ToArray();
+            mesh.colors32       = Colors.ToArray();
 
             mesh.RecalculateNormals();
 

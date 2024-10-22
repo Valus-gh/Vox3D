@@ -12,7 +12,7 @@ public class SettingsGUI : MonoBehaviour
     private string noiseFrequency;
     private string maxHeight;
 
-    private bool init = false;
+    //private bool init = false;
 
     void OnGUI()
     {

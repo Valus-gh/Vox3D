@@ -6,10 +6,15 @@ namespace Vox3D
 {
     public struct VoxelGenerationJob : IJobParallelFor
     {
-        public NativeArray<Voxel>   Voxels;
-        public int                  ChunkSize;
-        public int                  VoxelSize;
-        public Vector3              ChunkPosition;
+        [ReadOnly]
+        public NativeArray<Color32>     BiomeTexture;
+        public int                      TextureWidth;
+        public int                      TextureHeight;
+
+        public NativeArray<Voxel>       Voxels;
+        public int                      ChunkSize;
+        public int                      VoxelSize;
+        public Vector3                  ChunkPosition;
 
     public void Execute(int index)
         {
@@ -21,16 +26,23 @@ namespace Vox3D
             Vector3 voxelWorldPositionNoSize = (ChunkPosition / VoxelSize) + new Vector3(x, y, z);
 
             // Calculate noise
-            var map = Vox3DManager.Instance().World.HeightMap;
+            var hMap = Vox3DManager.Instance().World.HeightMap;
+            var mMap = Vox3DManager.Instance().World.MoistureMap;
 
-            float noise     = map.ValueAt(voxelWorldPositionNoSize.x, voxelWorldPositionNoSize.z);
-            float height    = noise * map.MaxHeight;
+            float hNoise = hMap.ValueAt(voxelWorldPositionNoSize.x, voxelWorldPositionNoSize.z);
+            float mNoise = mMap.ValueAt(voxelWorldPositionNoSize.y, voxelWorldPositionNoSize.z);
+
+            // Find voxel color by using the biome lookup texture, with elevation and moisture as indices
+            int colorY = (int) Mathf.Floor(hNoise * TextureHeight);
+            int colorX = (int) Mathf.Floor(mNoise * TextureWidth);
+
+            Color32 voxelColor  = BiomeTexture[colorX * TextureHeight + colorY];
+            float elevation     = hNoise * hMap.MaxHeight;
 
             // Set voxel properties
-            Voxel.VoxelType type = (voxelWorldPosition.y <= height) ? Voxel.VoxelType.Grass : Voxel.VoxelType.Air;
+            Voxel.VoxelType type = (voxelWorldPosition.y <= elevation) ? Voxel.VoxelType.Solid : Voxel.VoxelType.Air;
 
-            Voxels[index] = new Voxel(type, voxelWorldPosition, type != Voxel.VoxelType.Air);
-            
+            Voxels[index] = new Voxel(type, voxelWorldPosition, type != Voxel.VoxelType.Air, voxelColor);
         }
     }
 

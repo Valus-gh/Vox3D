@@ -38,6 +38,8 @@ namespace Vox3D
             public Vector2 uvC;
             public Vector2 uvD;
 
+            public Color32 color;
+
             public bool valid;
         }
 
@@ -168,6 +170,7 @@ namespace Vox3D
             int offset = voxelSize;
 
             VoxelFace face;
+            face.color = Voxels[voxelIndex].Item2.Color;
 
             switch (faceIndex)
             {
