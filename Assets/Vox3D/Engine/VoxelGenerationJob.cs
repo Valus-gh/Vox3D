@@ -30,14 +30,16 @@ namespace Vox3D
             var mMap = Vox3DManager.Instance().World.MoistureMap;
 
             float hNoise = hMap.ValueAt(voxelWorldPositionNoSize.x, voxelWorldPositionNoSize.z);
-            float mNoise = mMap.ValueAt(voxelWorldPositionNoSize.y, voxelWorldPositionNoSize.z);
+            float mNoise = mMap.ValueAt(voxelWorldPositionNoSize.x, voxelWorldPositionNoSize.z);
 
             // Find voxel color by using the biome lookup texture, with elevation and moisture as indices
             int colorY = (int) Mathf.Floor(hNoise * TextureHeight);
             int colorX = (int) Mathf.Floor(mNoise * TextureWidth);
 
-            Color32 voxelColor  = BiomeTexture[colorX * TextureHeight + colorY];
-            float elevation     = hNoise * hMap.MaxHeight;
+            // Texture is passed as an array, and must be navigated row by row from bottom to top
+            Color voxelColor = BiomeTexture[colorY * TextureHeight + colorX];
+
+            float elevation = hNoise * hMap.MaxHeight;
 
             // Set voxel properties
             Voxel.VoxelType type = (voxelWorldPosition.y <= elevation) ? Voxel.VoxelType.Solid : Voxel.VoxelType.Air;

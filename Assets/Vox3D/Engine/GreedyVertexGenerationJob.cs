@@ -170,7 +170,6 @@ namespace Vox3D
             int offset = voxelSize;
 
             VoxelFace face;
-            face.color = Voxels[voxelIndex].Item2.Color;
 
             switch (faceIndex)
             {
@@ -187,6 +186,7 @@ namespace Vox3D
                     face.uvD = new Vector2(0, 1);
 
                     face.valid = true;
+                    face.color = Voxels[voxelIndex].Item2.Color;
                     FacesTop[voxelIndex] = face;
                     break;
 
@@ -203,6 +203,7 @@ namespace Vox3D
                     face.uvD = new Vector2(1, 0);
 
                     face.valid = true;
+                    face.color = Voxels[voxelIndex].Item2.Color;
                     FacesBottom[voxelIndex] = face;
                     break;
 
@@ -219,6 +220,7 @@ namespace Vox3D
                     face.uvD = new Vector2(0, 1);
 
                     face.valid = true;
+                    face.color = Voxels[voxelIndex].Item2.Color;
                     FacesLeft[voxelIndex] = face;
                     break;
 
@@ -235,6 +237,7 @@ namespace Vox3D
                     face.uvD = new Vector2(1, 0);
 
                     face.valid = true;
+                    face.color = Voxels[voxelIndex].Item2.Color;
                     FacesRight[voxelIndex] = face;
                     break;
 
@@ -251,6 +254,7 @@ namespace Vox3D
                     face.uvD = new Vector2(1, 1);
 
                     face.valid = true;
+                    face.color = Voxels[voxelIndex].Item2.Color;
                     FacesFront[voxelIndex] = face;
                     break;
 
@@ -267,6 +271,7 @@ namespace Vox3D
                     face.uvD = new Vector2(0, 0);
 
                     face.valid = true;
+                    face.color = Voxels[voxelIndex].Item2.Color;
                     FacesBack[voxelIndex] = face;
                     break;
 

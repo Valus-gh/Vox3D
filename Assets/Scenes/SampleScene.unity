@@ -153,15 +153,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   worldSize: 8
-  chunkSize: 16
+  chunkSize: 32
   voxelSize: 1
-  maxHeight: 40
-  noiseSeed: 1111
-  noiseGain: 0.5
-  noiseRedistribution: 1
-  reshapingFactor: 0.3
+  maxHeight: 100
+  seedHeight: 1234
+  gainHeight: 0.5
+  redistributionHeight: 3
+  reshapeFactorHeight: 0.2
+  seedMoisture: 1234
+  gainMoisture: 0.5
+  redistributionMoisture: 3
+  reshapeFactorMoisture: 0.2
   reshape: 1
-  biomeTex: {fileID: 2800000, guid: 6ead1351aa99fca4ea42fa8a93cac70f, type: 3}
 --- !u!4 &421704384
 Transform:
   m_ObjectHideFlags: 0

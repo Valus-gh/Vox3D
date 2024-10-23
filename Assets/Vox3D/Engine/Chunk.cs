@@ -76,7 +76,7 @@ namespace Vox3D
         public void GenerateGeometry_Greedy()
         {
             var nVoxelsInChunk  = ChunkSize * ChunkSize * ChunkSize;
-            var voxelsCopy      = new NativeArray<(Vector3, Voxel)>(nVoxelsInChunk, Allocator.TempJob);
+            var voxelsData      = new NativeArray<(Vector3, Voxel)>(nVoxelsInChunk, Allocator.TempJob);
 
             // Six faces for each voxel
             var facesTop        = new NativeArray<GreedyVertexGeneratorJob.VoxelFace>(nVoxelsInChunk, Allocator.TempJob);
@@ -94,14 +94,14 @@ namespace Vox3D
                 {
                     for (int z = 0; z < ChunkSize; z++)
                     {
-                        voxelsCopy[copyIndex++] = (new Vector3(x, y, z), Voxels[x, y, z]);
+                        voxelsData[copyIndex++] = (new Vector3(x, y, z), Voxels[x, y, z]);
                     }
                 }
             }
 
             var job = new GreedyVertexGeneratorJob
             {
-                Voxels          = voxelsCopy,
+                Voxels          = voxelsData,
                 FacesTop        = facesTop,
                 FacesBottom     = facesBottom,
                 FacesLeft       = facesLeft,
@@ -118,6 +118,7 @@ namespace Vox3D
             Vertices.Clear();
             Indices.Clear();
             Uvs.Clear();
+            Colors.Clear();
 
             handle.Complete();
 
@@ -210,7 +211,7 @@ namespace Vox3D
             facesRight.Dispose();
             facesFront.Dispose();
             facesBack.Dispose();
-            voxelsCopy.Dispose();
+            voxelsData.Dispose();
 
         }
 

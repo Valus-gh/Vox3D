@@ -22,10 +22,14 @@ namespace Demo
 
         public float maxHeight;//TODO to Vox3dProperties
 
-        public int noiseSeed;//TODO to Vox3dProperties
-        public float noiseGain;//TODO to Vox3dProperties
-        public float noiseRedistribution;//TODO to Vox3dProperties
-        public float reshapingFactor;//TODO to Vox3dProperties
+        public int seedHeight;//TODO to Vox3dProperties
+        public float gainHeight;//TODO to Vox3dProperties
+        public float redistributionHeight;//TODO to Vox3dProperties
+        public float reshapeFactorHeight;//TODO to Vox3dProperties
+        public int seedMoisture;//TODO to Vox3dProperties
+        public float gainMoisture;//TODO to Vox3dProperties
+        public float redistributionMoisture;//TODO to Vox3dProperties
+        public float reshapeFactorMoisture;//TODO to Vox3dProperties
         public bool reshape;//TODO to Vox3dProperties
 
         // Start is called before the first frame update
@@ -33,25 +37,36 @@ namespace Demo
         {
             var manager = Vox3DManager.Instance();
             manager.Properties = new Vox3DProperties(worldSize, chunkSize, voxelSize);
-            manager.Properties.VoxelDefaultMaterial = Resources.Load("DefaultMaterial", typeof(Material)) as Material; //TODO to Vox3dProperties
-            manager.Properties.BiomeLookupTexture = Resources.Load("biome-lookup-128x128", typeof(Material)) as Texture2D; //TODO to Vox3dProperties
+            manager.Properties.VoxelDefaultMaterial = Resources.Load("VoxelVertexColorMaterial", typeof(Material)) as Material; //TODO to Vox3dProperties
+            manager.Properties.BiomeLookupTexture = Resources.Load("biome-lookup-128x128", typeof(Texture2D)) as Texture2D; //TODO to Vox3dProperties
 
-            PerlinProperties props = new PerlinProperties(
-                seed: noiseSeed,
-                gain: noiseGain,
-                redistribution: noiseRedistribution,
+            PerlinProperties propsH = new PerlinProperties(
+                seed: seedHeight,
+                gain: gainHeight,
+                redistribution: redistributionHeight,
                 doReshape: reshape,
-                shapingFactor: reshapingFactor
-                );
+                shapingFactor: reshapeFactorHeight
+            );
 
-            SimplexNoiseSource noiseSourceHeight = new SimplexNoiseSource(props);
-            SimplexNoiseSource noiseSourceMoisture = new SimplexNoiseSource(props);
+            PerlinProperties propsM = new PerlinProperties(
+                seed: seedMoisture,
+                gain: gainMoisture,
+                redistribution: redistributionMoisture,
+                doReshape: reshape,
+                shapingFactor: reshapeFactorMoisture
+            );
+
+            SimplexNoiseSource noiseSourceHeight = new SimplexNoiseSource(propsH);
+            SimplexNoiseSource noiseSourceMoisture = new SimplexNoiseSource(propsM);
 
             manager.HNoiseSource = noiseSourceHeight;
             manager.MNoiseSource = noiseSourceMoisture;
             manager.World = Vox3DManager.MakeWorld();
             manager.World.HeightMap.MaxHeight = maxHeight;
             manager.World.MoistureMap.MaxHeight = maxHeight;
+
+            manager.World.HeightMap.BakeTexture("Elevation");
+            manager.World.MoistureMap.BakeTexture("Moisture");
 
             manager.World.PopulateWorld();
             manager.World.PopulateChunks();
