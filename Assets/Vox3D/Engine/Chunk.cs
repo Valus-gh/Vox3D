@@ -14,7 +14,7 @@ namespace Vox3D
         private List<Vector3>   _Vertices;      // Holds the geometry vertices for this chunk
         private List<int>       _Indices;       // Holds the indices for both triangles of each voxel face
         private List<Vector2>   _Uvs;           // Holds uv coordinates for each voxel face
-        private List<Color32>   _Colors;           // Holds uv coordinates for each voxel face
+        private List<Color32>   _Colors;        // Holds uv coordinates for each voxel face
 
         private MeshFilter      _MeshFilter;
         private MeshCollider    _MeshCollider;
@@ -33,11 +33,20 @@ namespace Vox3D
 
         public void PopulateChunk()
         {
+            if(transform.position.y > Vox3DManager.Instance().World.HeightMap.MaxValue * Vox3DManager.Instance().World.HeightMap.MaxHeight)
+            {
+
+                Debug.Log($"Chunk out of Elevation bounds. Chunk {name} will be removed from world.");
+                Vox3DManager.Instance().World.DeleteChunk(this);
+                PurgeChunk();
+                return;
+            }
+
             var nVoxelsInChunk  = ChunkSize * ChunkSize * ChunkSize;
             var voxelsData      = new NativeArray<Voxel>(nVoxelsInChunk, Allocator.TempJob);
 
-            var biomeTex            = Vox3DManager.Instance().Properties.BiomeLookupTexture;
-            var biomeTexData        = new NativeArray<Color32>(biomeTex.GetPixels32().Length, Allocator.TempJob);
+            var biomeTex        = Vox3DManager.Instance().Properties.BiomeLookupTexture;
+            var biomeTexData    = new NativeArray<Color32>(biomeTex.GetPixels32().Length, Allocator.TempJob);
             biomeTexData.CopyFrom(biomeTex.GetPixels32());
 
             VoxelGenerationJob job = new VoxelGenerationJob
@@ -221,9 +230,6 @@ namespace Vox3D
             Vertices.Clear();
             Indices.Clear();
             Uvs.Clear();
-
-            _MeshFilter.sharedMesh.Clear();
-            _MeshCollider.sharedMesh.Clear();
         }
 
     }

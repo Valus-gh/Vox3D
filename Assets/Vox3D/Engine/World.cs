@@ -129,16 +129,20 @@ namespace Vox3D
                 return;
             }
 
-            foreach (var entry in Chunks)
+            foreach (KeyValuePair<Vector3, Chunk> pair in Chunks)
             {
-                PriorityCallStack.Instance().Push(() => entry.Value.PopulateChunk(), 0);
+                PriorityCallStack.Instance().Push(() => {
+                    if (Chunks.ContainsKey(pair.Key)) pair.Value.PopulateChunk();
+                }, 0);
             }
         }
         public void GenerateGeometry()
         {
             foreach (KeyValuePair<Vector3, Chunk> pair in Chunks)
             {
-                PriorityCallStack.Instance().Push(() => pair.Value.GenerateGeometry_Greedy(), 0);
+                PriorityCallStack.Instance().Push(() => {
+                    if (Chunks.ContainsKey(pair.Key)) pair.Value.GenerateGeometry_Greedy();
+                }, 0);
             }
 
         }
@@ -190,6 +194,26 @@ namespace Vox3D
             return null;
         }
 
+        public void DeleteChunk(Vector3 position)
+        {
+            Chunks.Remove(position);
+            Chunks.TryGetValue(position, out Chunk chunk);
+            if(chunk is not null) 
+                Destroy(chunk.gameObject);
+        }
+
+        public void DeleteChunk(Chunk chunk)
+        {
+            foreach(var pair in Chunks)
+            {
+                if (pair.Value.GetInstanceID() == chunk.GetInstanceID())
+                {
+                    Chunks.Remove(pair.Key);
+                    Destroy(pair.Value.gameObject);
+                    break;
+                }
+            }
+        }
 
     }
 

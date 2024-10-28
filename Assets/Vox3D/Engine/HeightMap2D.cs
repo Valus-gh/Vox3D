@@ -13,12 +13,17 @@ namespace Vox3D
         private int             _Width;
         private int             _Height;
         private Texture2D       _Texture;
+        private float           _MaxValue;
+        private float           _MinValue;
+
         public INoiseSource Source  { get => _Source; private set => _Source = value; }
         public float[,] Map         { get => _Map; private set => _Map = value; }
         public float MaxHeight      { get => _MaxHeight; set => _MaxHeight = value; }
         public int Width            { get => _Width; set => _Width = value; }
         public int Height           { get => _Height; set => _Height = value; }
         public Texture2D Texture    { get => _Texture; private set => _Texture = value; }
+        public float MaxValue       { get => _MaxValue; private set => _MaxValue = value; }
+        public float MinValue       { get => _MinValue; private set => _MinValue = value; }
 
         public HeightMap2D(int width, int height, float maxHeight, INoiseSource source)
         {
@@ -30,12 +35,14 @@ namespace Vox3D
             Debug.Log($"GENERATING HeightMap2D[{width}, {height}]");
 
             Map = Source.Noise2D(width, height);
+            FindExtremes();
         }
 
         public void Remap()
         {
             Map = null;
             Map = Source.Noise2D(_Width, _Height);
+            FindExtremes();
         }
 
         public void Remap(int width, int height, float maxHeight)
@@ -46,6 +53,7 @@ namespace Vox3D
 
             Map = null;
             Map = Source.Noise2D(width, height);
+            FindExtremes();
         }
 
         public float ValueAt(float x, float y)
@@ -80,6 +88,18 @@ namespace Vox3D
                 }
             }
             File.WriteAllBytes(Path.Combine(Application.persistentDataPath, _Texture.name + ".png"), _Texture.EncodeToPNG());
+        }
+
+        private void FindExtremes()
+        {
+            for(int x = 0; x < Width; x++)
+            {
+                for(int y = 0; y < Height; y++)
+                {
+                    if(Map[x, y] > _MaxValue) _MaxValue = Map[x, y];
+                    if(Map[x, y] < _MinValue) _MinValue = Map[x, y];
+                }
+            }
         }
 
     }

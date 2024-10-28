@@ -160,7 +160,7 @@ MonoBehaviour:
   gainHeight: 0.5
   redistributionHeight: 3
   reshapeFactorHeight: 0.2
-  seedMoisture: 1234
+  seedMoisture: 4231
   gainMoisture: 0.5
   redistributionMoisture: 3
   reshapeFactorMoisture: 0.2

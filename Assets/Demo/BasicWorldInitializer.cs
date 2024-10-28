@@ -38,7 +38,7 @@ namespace Demo
             var manager = Vox3DManager.Instance();
             manager.Properties = new Vox3DProperties(worldSize, chunkSize, voxelSize);
             manager.Properties.VoxelDefaultMaterial = Resources.Load("VoxelVertexColorMaterial", typeof(Material)) as Material; //TODO to Vox3dProperties
-            manager.Properties.BiomeLookupTexture = Resources.Load("biome-lookup-128x128", typeof(Texture2D)) as Texture2D; //TODO to Vox3dProperties
+            manager.Properties.BiomeLookupTexture = Resources.Load("biome-lookup-gradient-4", typeof(Texture2D)) as Texture2D; //TODO to Vox3dProperties
 
             PerlinProperties propsH = new PerlinProperties(
                 seed: seedHeight,
