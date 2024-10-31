@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 421704384}
   - component: {fileID: 421704383}
   - component: {fileID: 421704385}
+  - component: {fileID: 421704386}
   m_Layer: 0
   m_Name: BasicDemo
   m_TagString: Untagged
@@ -153,17 +154,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   worldSize: 8
-  chunkSize: 32
+  chunkSize: 16
   voxelSize: 1
   maxHeight: 100
   seedHeight: 1234
   gainHeight: 0.5
   redistributionHeight: 3
-  reshapeFactorHeight: 0.2
-  seedMoisture: 4231
-  gainMoisture: 0.5
+  reshapeFactorHeight: 0.3
+  seedMoisture: 4321
+  gainMoisture: 1
   redistributionMoisture: 3
-  reshapeFactorMoisture: 0.2
+  reshapeFactorMoisture: 0.3
   reshape: 1
 --- !u!4 &421704384
 Transform:
@@ -192,6 +193,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af0f8f165285a0141b0ef33c03a3be25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &421704386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 421704382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ea32fe0bf1357b479a71984b258c71e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 5
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0

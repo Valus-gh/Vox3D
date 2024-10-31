@@ -122,8 +122,6 @@ namespace Vox3D
             
             var handle = job.Schedule(nVoxelsInChunk, 16);
             
-            // Refresh geometry buffers
-
             Vertices.Clear();
             Indices.Clear();
             Uvs.Clear();
@@ -198,7 +196,6 @@ namespace Vox3D
             }
 
             Mesh mesh = MeshFilter.mesh;
-            //mesh.indexFormat = UnityEngine.Rendering.IndexFormat.UInt32;
 
             if (mesh is null) mesh = new Mesh();
 
@@ -230,6 +227,24 @@ namespace Vox3D
             Vertices.Clear();
             Indices.Clear();
             Uvs.Clear();
+        }
+
+        public void OnCollisionEnter(Collision collision)
+        {
+            ContactPoint[] points = new ContactPoint[1];
+            if(collision.GetContacts(points) > 0)
+            {
+                foreach(var point in points)
+                {
+                    Debug.Log($"CHUNK {name} - COLLISION AT POINT: {point.point}");
+                }
+
+                // Call ChunkCollisionHandler
+                
+
+            }
+
+
         }
 
     }

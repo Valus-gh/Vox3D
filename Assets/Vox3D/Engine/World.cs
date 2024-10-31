@@ -114,6 +114,8 @@ namespace Vox3D
                         chunk.Uvs           = new List<Vector2>();
                         chunk.Colors        = new List<Color32>();
 
+                        chunk.tag           = "Chunk";
+
                         Chunks.Add(chunkPosition, chunk);
 
                     }
