@@ -36,7 +36,7 @@ namespace Vox3D
             if(transform.position.y > Vox3DManager.Instance().World.HeightMap.MaxValue * Vox3DManager.Instance().World.HeightMap.MaxHeight)
             {
 
-                Debug.Log($"Chunk out of Elevation bounds. Chunk {name} will be removed from world.");
+                //Debug.Log($"Chunk out of Elevation bounds. Chunk {name} will be removed from world.");
                 Vox3DManager.Instance().World.DeleteChunk(this);
                 PurgeChunk();
                 return;
@@ -57,7 +57,7 @@ namespace Vox3D
                 Voxels          = voxelsData,
                 ChunkSize       = ChunkSize,
                 VoxelSize       = VoxelSize,
-                ChunkPosition   = transform.position
+                ChunkPosition   = transform.localPosition
             };
 
             var handle = job.Schedule(nVoxelsInChunk, 16);

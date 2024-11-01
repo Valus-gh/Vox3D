@@ -71,7 +71,7 @@ namespace Vox3D.Parallel
                     Voxels          = tracker.voxels,
                     ChunkSize       = chunkSize,
                     VoxelSize       = voxelSize,
-                    ChunkPosition   = tracker.Chunk.transform.position
+                    ChunkPosition   = tracker.Chunk.transform.localPosition
                 };
 
                 tracker.Job = job.Schedule(nVoxelsInChunk, 16);
