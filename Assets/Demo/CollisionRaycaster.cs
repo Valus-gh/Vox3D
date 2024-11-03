@@ -20,24 +20,20 @@ namespace Demo
                 Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
                 RaycastHit hit;
 
-                if (Physics.Raycast(ray, out hit, 500.0f))
+                if (Physics.Raycast(ray, out hit, 500.0f, LayerMask.GetMask("Default")))
                 {
                     Debug.Log($"Ray hit at distance {hit.distance}");
                     Debug.Log($"Ray hit chunk {hit.collider.GetComponentInParent<Vox3D.Chunk>().name}");
 
-                    float eradius = 10.0f;
                     float offset = Vox3D.Vox3DManager.Instance().Properties.VoxelSize;
-                    Vox3D.ChunkCollisionHandler.Instance().CollisionSphere(hit.point, eradius, offset);
+                    Vox3D.ChunkCollisionHandler.Instance().CollisionSphere(hit.point, radius, offset);
 
                     _hit = hit;
                     _offset = offset;
 
                 }
-                else
-                {
-                    Debug.Log("Ray missed");
-                }
-
+                else Debug.Log("Ray missed");
+                
             }
         }
 

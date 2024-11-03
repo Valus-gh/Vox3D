@@ -70,7 +70,7 @@ namespace Demo
 
             manager.World.PopulateWorld();
             manager.World.PopulateChunks();
-            manager.World.GenerateGeometry();
+            PriorityCallStack.Instance().Push(() => manager.World.GenerateGeometry(), 60);
 
         }
 

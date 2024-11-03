@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using Unity.Collections;
 using UnityEngine;
 using Unity.Jobs;
+using Vox3D.Parallel;
 
 namespace Vox3D
 {
@@ -20,19 +21,23 @@ namespace Vox3D
         private MeshCollider    _MeshCollider;
         private MeshRenderer    _MeshRenderer;
 
-        public int ChunkSize                { get => _ChunkSize; set => _ChunkSize = value; }
-        public int VoxelSize                { get => _VoxelSize; set => _VoxelSize = value; }
-        public Voxel[,,] Voxels             { get => _Voxels; set => _Voxels = value; }
-        public List<Vector3> Vertices       { get => _Vertices; set => _Vertices = value; }
-        public List<int> Indices            { get => _Indices; set => _Indices = value; }
-        public List<Vector2> Uvs            { get => _Uvs; set => _Uvs = value; }
-        public MeshFilter MeshFilter        { get => _MeshFilter; set => _MeshFilter = value; }
-        public MeshCollider MeshCollider    { get => _MeshCollider; set => _MeshCollider = value; }
-        public MeshRenderer MeshRenderer    { get => _MeshRenderer; set => _MeshRenderer = value; }
-        public List<Color32> Colors         { get => _Colors; set => _Colors = value; }
+        private MeshCollider    _ChunkDestructionCollider;
+
+        public int ChunkSize                            { get => _ChunkSize; set => _ChunkSize = value; }
+        public int VoxelSize                            { get => _VoxelSize; set => _VoxelSize = value; }
+        public Voxel[,,] Voxels                         { get => _Voxels; set => _Voxels = value; }
+        public List<Vector3> Vertices                   { get => _Vertices; set => _Vertices = value; }
+        public List<int> Indices                        { get => _Indices; set => _Indices = value; }
+        public List<Vector2> Uvs                        { get => _Uvs; set => _Uvs = value; }
+        public MeshFilter MeshFilter                    { get => _MeshFilter; set => _MeshFilter = value; }
+        public MeshCollider MeshCollider                { get => _MeshCollider; set => _MeshCollider = value; }
+        public MeshRenderer MeshRenderer                { get => _MeshRenderer; set => _MeshRenderer = value; }
+        public List<Color32> Colors                     { get => _Colors; set => _Colors = value; }
+        public MeshCollider ChunkDestructionCollider    { get => _ChunkDestructionCollider; set => _ChunkDestructionCollider = value; }
 
         public void PopulateChunk()
         {
+            // If the chunk is above the world's maximum height, there is no need to keep it in memory
             if(transform.position.y > Vox3DManager.Instance().World.HeightMap.MaxValue * Vox3DManager.Instance().World.HeightMap.MaxHeight)
             {
 
@@ -42,43 +47,7 @@ namespace Vox3D
                 return;
             }
 
-            var nVoxelsInChunk  = ChunkSize * ChunkSize * ChunkSize;
-            var voxelsData      = new NativeArray<Voxel>(nVoxelsInChunk, Allocator.TempJob);
-
-            var biomeTex        = Vox3DManager.Instance().Properties.BiomeLookupTexture;
-            var biomeTexData    = new NativeArray<Color32>(biomeTex.GetPixels32().Length, Allocator.TempJob);
-            biomeTexData.CopyFrom(biomeTex.GetPixels32());
-
-            VoxelGenerationJob job = new VoxelGenerationJob
-            {
-                BiomeTexture    = biomeTexData,
-                TextureWidth    = biomeTex.width,
-                TextureHeight   = biomeTex.height,
-                Voxels          = voxelsData,
-                ChunkSize       = ChunkSize,
-                VoxelSize       = VoxelSize,
-                ChunkPosition   = transform.localPosition
-            };
-
-            var handle = job.Schedule(nVoxelsInChunk, 16);
-            handle.Complete();
-
-            for (int x = 0; x < ChunkSize; x++)
-            {
-                for (int y = 0; y < ChunkSize; y++)
-                {
-                    for (int z = 0; z < ChunkSize; z++)
-                    {
-                        int voxelIndex  = x * ChunkSize * ChunkSize + y * ChunkSize + z;
-                        Voxel voxel     = voxelsData[voxelIndex];
-
-                        Voxels[x, y, z] = new Voxel(voxel.Type, voxel.Position, voxel.IsActive, voxel.Color);
-                    }
-                }
-            }
-
-            voxelsData.Dispose();
-            biomeTexData.Dispose();
+            ParallelVoxelBuilder.Instance().Build(this);
 
         }
 
@@ -207,9 +176,11 @@ namespace Vox3D
 
             mesh.RecalculateNormals();
 
-            MeshFilter.mesh         = mesh;
-            MeshCollider.sharedMesh = mesh;
-            MeshRenderer.material   = Vox3DManager.Instance().Properties.VoxelDefaultMaterial;
+            MeshFilter.mesh     = mesh;
+
+            if (mesh.vertices.Length > 0) MeshCollider.sharedMesh = mesh;
+
+            MeshRenderer.material = Vox3DManager.Instance().Properties.VoxelDefaultMaterial;
 
             facesTop.Dispose();
             facesBottom.Dispose();
@@ -227,6 +198,44 @@ namespace Vox3D
             Vertices.Clear();
             Indices.Clear();
             Uvs.Clear();
+        }
+
+        public static Mesh DefaultChunkColliderMesh(int chunkSize)
+        {
+            Mesh mesh = new Mesh();
+
+            int VoxelSize = Vox3DManager.Instance().Properties.VoxelSize;
+
+            Vector3[] vertices = {
+                new Vector3 (0, 0, 0) * chunkSize * VoxelSize,
+                new Vector3 (1, 0, 0) * chunkSize * VoxelSize,
+                new Vector3 (1, 1, 0) * chunkSize * VoxelSize,
+                new Vector3 (0, 1, 0) * chunkSize * VoxelSize,
+                new Vector3 (0, 1, 1) * chunkSize * VoxelSize,
+                new Vector3 (1, 1, 1) * chunkSize * VoxelSize,
+                new Vector3 (1, 0, 1) * chunkSize * VoxelSize,
+                new Vector3 (0, 0, 1) * chunkSize * VoxelSize,
+            };
+
+            int[] triangles = {
+                0, 2, 1, //face front
+	            0, 3, 2,
+                2, 3, 4, //face top
+	            2, 4, 5,
+                1, 2, 5, //face right
+	            1, 5, 6,
+                0, 7, 4, //face left
+	            0, 4, 3,
+                5, 4, 7, //face back
+	            5, 7, 6,
+                0, 6, 7, //face bottom
+	            0, 1, 6
+            };
+
+            mesh.vertices = vertices;
+            mesh.triangles = triangles;
+
+            return mesh;
         }
 
         public void OnCollisionEnter(Collision collision)

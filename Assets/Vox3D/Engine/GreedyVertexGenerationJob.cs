@@ -193,6 +193,10 @@ namespace Vox3D
                 case 1: // Bottom
                     face = FacesBottom[voxelIndex];
 
+                    // Do not generate bottom faces if the voxel is the floor of the world
+                    if (Voxels[voxelIndex].Item2.Position.y == 0.0f)
+                        break;
+
                     face.a = new Vector3(x, y, z);
                     face.b = new Vector3(x + offset, y, z);
                     face.c = new Vector3(x + offset, y, z + offset);

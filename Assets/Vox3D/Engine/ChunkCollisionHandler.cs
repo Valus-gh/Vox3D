@@ -17,56 +17,121 @@ namespace Vox3D {
             return _Instance;
         }
 
+        /// <summary>
+        /// Checks the world against two spheres. 
+        /// The first represents the explosion radius passed as parameter.
+        /// Voxels within this sphere are considered to be destroyed, therefore become inactive and their type becomes Air.
+        /// The second sphere is used to populate the voxels nearby the explosion, so there are no holes in the world's mesh.
+        /// All voxels outside of the explosion and within the larger sphere are set to active, and later become part of the mesh.
+        /// </summary>
+        /// <param name="point"></param>
+        /// <param name="radius"></param>
+        /// <param name="radiusOffset"></param>
         public void CollisionSphere(Vector3 point, float radius, float radiusOffset)
         {
 
             // Explosion radius sphere
-            Collider[] innerColliders = Physics.OverlapSphere(point, radius);
+            Collider[] innerColliders = Physics.OverlapSphere(point, radius, LayerMask.GetMask("ChunkDestructionLayer"));
 
             if (innerColliders.Length == 0) return;
 
             // Voxel creation sphere
-            Collider[] outerColliders = Physics.OverlapSphere(point, radius + radiusOffset);
+            Collider[] outerColliders = Physics.OverlapSphere(point, radius + radiusOffset, LayerMask.GetMask("ChunkDestructionLayer"));
 
             // Filter colliders that are not from chunks
-
             List<Collider> innerChunkColliders = new List<Collider>();
             List<Collider> outerChunkColliders = new List<Collider>();
 
             foreach (var c in innerColliders) 
-                if (c.gameObject.tag.Equals("Chunk"))
+                if (c.transform.parent.tag.Equals("Chunk"))
                     innerChunkColliders.Add(c);
 
             foreach (var c in outerColliders)
-                if (c.gameObject.tag.Equals("Chunk"))
+                if (c.transform.parent.gameObject.tag.Equals("Chunk"))
                     outerChunkColliders.Add(c);
 
-            // Find affected voxels
-
-            List<Voxel> destroyedVoxels = new List<Voxel>();
-            List<Voxel> createdVoxels = new List<Voxel>();
+            // Find index of affected voxels
+            List<(int, Vector3)> innerVoxels = new List<(int, Vector3)>();
+            List<(int, Vector3)> allVoxels   = new List<(int, Vector3)>();
 
             // Find voxels within explosion radius
             foreach(var c in innerChunkColliders)
-                destroyedVoxels.AddRange(FindImpactedVoxels(c.GetComponentInParent<Chunk>(), point, radius));
+                innerVoxels.AddRange(FindImpactedVoxels(c.GetComponentInParent<Chunk>(), point, radius));
 
             // Find voxels within creation radius
             foreach (var c in outerChunkColliders)
-                createdVoxels.AddRange(FindImpactedVoxels(c.GetComponentInParent<Chunk>(), point, radius + radiusOffset));
+                allVoxels.AddRange(FindImpactedVoxels(c.GetComponentInParent<Chunk>(), point, radius + radiusOffset));
 
             // Destroy voxels impacted by explosion
-            destroyedVoxels.ForEach((v) => v.IsActive = false);
+            innerChunkColliders.ForEach((collider) =>
+            {
+                Chunk chunk = collider.GetComponentInParent<Chunk>();
+
+                innerVoxels.ForEach((pair) => {
+
+                    if (pair.Item1 == chunk.GetInstanceID())
+                    {
+                        // Find impacted voxel in chunk
+                        Vector3 index   = pair.Item2;
+                        Voxel voxel     = chunk.Voxels[(int)index.x, (int)index.y, (int)index.z];
+
+                        // Set to inactive, and make sure it is recognized as air in subsequent explosions
+                        voxel.IsActive  = false;
+                        voxel.Type      = Voxel.VoxelType.Air;
+
+                        // If the chunk is correct, copy the new voxel values in the chunk's voxels
+                        chunk.Voxels[(int)index.x, (int)index.y, (int)index.z] = new Voxel(voxel.Type, voxel.Position, voxel.IsActive, voxel.Color);
+                    }
+
+                });
+            });
+
 
             // Create voxels at the bounds of the explosion
-            createdVoxels.Except(destroyedVoxels).ToList().ForEach((v) => v.IsActive = true);
+            List<(int, Vector3)> outerVoxels = allVoxels.Except(innerVoxels).ToList();
+
+            outerChunkColliders.ForEach((collider) =>
+            {
+                Chunk chunk = collider.GetComponentInParent<Chunk>();
+
+                outerVoxels.ForEach((pair) => {
+
+                    if (pair.Item1 == chunk.GetInstanceID())
+                    {
+                        // Find impacted voxel in chunk
+                        Vector3 index   = pair.Item2;
+                        Voxel voxel     = chunk.Voxels[(int)index.x, (int)index.y, (int)index.z];
+
+                        // Only set to Active if the voxel is supposed to be solid
+                        if(voxel.Type != Voxel.VoxelType.Air) voxel.IsActive = true;
+
+                        // If the chunk is correct, copy the new voxel values in the chunk's voxels
+                        chunk.Voxels[(int)index.x, (int)index.y, (int)index.z] = new Voxel(voxel.Type, voxel.Position, voxel.IsActive, voxel.Color);
+                    }
+
+                });
+            });
 
             // Fire Chunk recreation method
+            outerChunkColliders.ForEach((c) => 
+                PriorityCallStack.Instance().Push(() => {
+                    c.GetComponentInParent<Chunk>().GenerateGeometry_Greedy();
+                }, 0));
 
         }
 
-        private List<Voxel> FindImpactedVoxels(Chunk chunk, Vector3 point, float radius)
+        /// <summary>
+        /// Checks the given chunk's voxels against a sphere passed as a center and a point.
+        /// The voxels which have their centroid within the sphere have their index added to the returned list.
+        /// Given that voxels are structs and are passed by values, we return the chunk's ID and the voxel indices, rather than copies of the objects.
+        /// </summary>
+        /// <param name="chunk"></param>
+        /// <param name="point"></param>
+        /// <param name="radius"></param>
+        /// <returns></returns>
+        private List<(int, Vector3)> FindImpactedVoxels(Chunk chunk, Vector3 point, float radius)
         {
-            List<Voxel> impactedVoxels = new List<Voxel>();
+            List<(int, Vector3)> impactedVoxels = new List<(int, Vector3)>();
             Voxel[,,] voxels = chunk.Voxels;
 
             // Find the extremes of the sphere
@@ -98,7 +163,7 @@ namespace Vox3D {
                         var voxelCenter         = voxelInChunkSpace + (new Vector3(chunk.VoxelSize, chunk.VoxelSize, chunk.VoxelSize) / 2.0f);
 
                         if(Vector3.Distance(voxelCenter, impactPointChunkSpace) <= radius && voxels[x, y, z].Type != Voxel.VoxelType.Air) 
-                            impactedVoxels.Add(voxels[x, y, z]);
+                            impactedVoxels.Add((chunk.GetInstanceID(), new Vector3(x, y, z)));
                     }
                 }
             }
