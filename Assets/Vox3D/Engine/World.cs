@@ -61,10 +61,12 @@ namespace Vox3D
             int height  = WorldSize * ChunkSize;
 
             var hSource = manager.HNoiseSource;
-            HeightMap   = new HeightMap2D(width, height, 0.0f, hSource); 
-
+            HeightMap   = new HeightMap2D(width, height, 0.0f, hSource);
+            HeightMap.Normalize();
+            
             var mSource = manager.MNoiseSource;
             MoistureMap = new HeightMap2D(width, height, 0.0f, mSource);
+            MoistureMap.Normalize();
 
             Initialized = true;
 

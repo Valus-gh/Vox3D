@@ -38,7 +38,7 @@ namespace Vox3D
         public void PopulateChunk()
         {
             // If the chunk is above the world's maximum height, there is no need to keep it in memory
-            if(transform.position.y > Vox3DManager.Instance().World.HeightMap.MaxValue * Vox3DManager.Instance().World.HeightMap.MaxHeight)
+            if(transform.position.y > Vox3DManager.Instance().World.HeightMap.MaxHeight)
             {
 
                 //Debug.Log($"Chunk out of Elevation bounds. Chunk {name} will be removed from world.");

@@ -153,11 +153,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a21882bafd24ff49a9dea948021258f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  worldSize: 8
+  worldSize: 16
   chunkSize: 16
   voxelSize: 1
-  maxHeight: 100
-  seedHeight: 1234
+  maxHeight: 50
+  seedHeight: 1111
   gainHeight: 0.5
   redistributionHeight: 3
   reshapeFactorHeight: 0.3

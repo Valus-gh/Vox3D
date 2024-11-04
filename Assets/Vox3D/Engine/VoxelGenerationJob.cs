@@ -22,8 +22,8 @@ namespace Vox3D
             int y = (index / ChunkSize) % ChunkSize;
             int x = (index / ChunkSize) / ChunkSize;
 
-            Vector3 voxelWorldPosition = ChunkPosition + (new Vector3(x, y, z) * VoxelSize);
-            Vector3 voxelWorldPositionNoSize = (ChunkPosition / VoxelSize) + new Vector3(x, y, z);
+            Vector3 voxelWorldPosition          = ChunkPosition + (new Vector3(x, y, z) * VoxelSize);
+            Vector3 voxelWorldPositionNoSize    = (ChunkPosition / VoxelSize) + new Vector3(x, y, z);
 
             // Calculate noise
             var hMap = Vox3DManager.Instance().World.HeightMap;
@@ -33,17 +33,19 @@ namespace Vox3D
             float mNoise = mMap.ValueAt(voxelWorldPositionNoSize.x, voxelWorldPositionNoSize.z);
 
             // Find voxel color by using the biome lookup texture, with elevation and moisture as indices
-            int colorY = (int) Mathf.Floor(hNoise * TextureHeight);
-            int colorX = (int) Mathf.Floor(mNoise * TextureWidth);
+            int colorY = (int) Mathf.Floor(hNoise * (TextureHeight - 1));
+            int colorX = (int) Mathf.Floor(mNoise * (TextureWidth - 1));
 
             // Texture is passed as an array, and must be navigated row by row from bottom to top
             Color voxelColor = BiomeTexture[colorY * TextureHeight + colorX];
+
+            if (hNoise == 1.0f) 
+                Debug.Log("1");
 
             float elevation = hNoise * hMap.MaxHeight;
 
             // Set voxel properties
             Voxel.VoxelType type = (voxelWorldPosition.y <= elevation) ? Voxel.VoxelType.Solid : Voxel.VoxelType.Air;
-
             Voxels[index] = new Voxel(type, voxelWorldPosition, type != Voxel.VoxelType.Air, voxelColor);
         }
     }

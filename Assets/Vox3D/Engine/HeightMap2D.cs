@@ -56,6 +56,16 @@ namespace Vox3D
             FindExtremes();
         }
 
+        public void Normalize()
+        {
+            var min = MinValue;
+            var max = MaxValue;
+
+            for(int x = 0; x < _Width; x++)
+                for(int y = 0; y < _Height; y++)
+                    Map[x, y] = (Map[x, y] - min) / (max - min);
+        }
+
         public float ValueAt(float x, float y)
         {
             if (x < 0 || y >= _Map.GetLength(0))
