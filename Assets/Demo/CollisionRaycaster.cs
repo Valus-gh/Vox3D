@@ -40,10 +40,10 @@ namespace Demo
         public void OnDrawGizmos()
         {
             Gizmos.color = Color.red;
-            Gizmos.DrawWireSphere(_hit.point, radius);
+            //Gizmos.DrawWireSphere(_hit.point, radius);
 
             Gizmos.color = Color.green;
-            Gizmos.DrawWireSphere(_hit.point, radius + _offset);
+            //Gizmos.DrawWireSphere(_hit.point, radius + _offset);
         }
 
     }
