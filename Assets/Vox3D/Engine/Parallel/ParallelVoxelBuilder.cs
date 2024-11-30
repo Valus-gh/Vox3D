@@ -68,6 +68,7 @@ namespace Vox3D.Parallel
                     BiomeTexture    = tracker.colors,
                     TextureWidth    = biomeTex.width,
                     TextureHeight   = biomeTex.height,
+                    WaterLevel      = Vox3DManager.Instance().Properties.WaterLevel,
                     Voxels          = tracker.voxels,
                     ChunkSize       = chunkSize,
                     VoxelSize       = voxelSize,

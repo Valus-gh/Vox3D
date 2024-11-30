@@ -10,6 +10,7 @@ namespace Vox3D
         public NativeArray<Color32>     BiomeTexture;
         public int                      TextureWidth;
         public int                      TextureHeight;
+        public float                    WaterLevel;
 
         public NativeArray<Voxel>       Voxels;
         public int                      ChunkSize;
@@ -39,13 +40,14 @@ namespace Vox3D
             // Texture is passed as an array, and must be navigated row by row from bottom to top
             Color voxelColor = BiomeTexture[colorY * TextureHeight + colorX];
 
-            if (hNoise == 1.0f) 
-                Debug.Log("1");
-
             float elevation = hNoise * hMap.MaxHeight;
 
+            Voxel.VoxelType type = Voxel.VoxelType.Air;
+
+            if (voxelWorldPosition.y <= elevation)          type = Voxel.VoxelType.Solid;
+            if (voxelWorldPosition.y <= WaterLevel * hMap.MaxHeight)   type = Voxel.VoxelType.Water;
+
             // Set voxel properties
-            Voxel.VoxelType type = (voxelWorldPosition.y <= elevation) ? Voxel.VoxelType.Solid : Voxel.VoxelType.Air;
             Voxels[index] = new Voxel(type, voxelWorldPosition, type != Voxel.VoxelType.Air, voxelColor);
         }
     }

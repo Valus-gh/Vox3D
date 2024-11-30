@@ -21,6 +21,7 @@ namespace Vox3D
 
         private Material    _VoxelDefaultMaterial;
         private Texture2D   _BiomeLookupTexture;
+        private float       _WaterLevel;
         public Vox3DProperties()
         {
 
@@ -36,6 +37,7 @@ namespace Vox3D
         public int VoxelSize                    { get => _VoxelSize; set => _VoxelSize = value; }
         public Material VoxelDefaultMaterial    { get => _VoxelDefaultMaterial; set => _VoxelDefaultMaterial = value; }
         public Texture2D BiomeLookupTexture     { get => _BiomeLookupTexture; set => _BiomeLookupTexture = value; }
+        public float WaterLevel                 { get => _WaterLevel; set => _WaterLevel = value; }
 
         public void LoadFromXML(string pathToXml)
         {

@@ -30,6 +30,8 @@ namespace Vox3D {
         public void CollisionSphere(Vector3 point, float radius, float radiusOffset)
         {
 
+            // Add water collision check
+
             // Explosion radius sphere
             Collider[] innerColliders = Physics.OverlapSphere(point, radius, LayerMask.GetMask("ChunkDestructionLayer"));
 

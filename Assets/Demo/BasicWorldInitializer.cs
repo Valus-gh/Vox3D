@@ -21,6 +21,7 @@ namespace Demo
         public int voxelSize;//TODO to Vox3dProperties
 
         public float maxHeight;//TODO to Vox3dProperties
+        public float waterLevel;
 
         public int seedHeight;//TODO to Vox3dProperties
         public float gainHeight;//TODO to Vox3dProperties
@@ -39,6 +40,7 @@ namespace Demo
             manager.Properties = new Vox3DProperties(worldSize, chunkSize, voxelSize);
             manager.Properties.VoxelDefaultMaterial = Resources.Load("VoxelVertexColorMaterial", typeof(Material)) as Material; //TODO to Vox3dProperties
             manager.Properties.BiomeLookupTexture = Resources.Load("biome-lookup-128x128", typeof(Texture2D)) as Texture2D; //TODO to Vox3dProperties
+            manager.Properties.WaterLevel = waterLevel;
 
             PerlinProperties propsH = new PerlinProperties(
                 seed: seedHeight,

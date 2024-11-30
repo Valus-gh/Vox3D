@@ -11,6 +11,7 @@ namespace Vox3D
         {
             Air,
             Solid,
+            Water,
         }
 
         private Color32     _Color;
