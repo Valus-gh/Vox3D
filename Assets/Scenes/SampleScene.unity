@@ -157,7 +157,7 @@ MonoBehaviour:
   chunkSize: 16
   voxelSize: 1
   maxHeight: 50
-  waterLevel: 0.1
+  waterLevel: 0.95
   seedHeight: 1111
   gainHeight: 0.5
   redistributionHeight: 3
