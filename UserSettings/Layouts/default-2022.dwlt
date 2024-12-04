@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: 1727
+    x: 17
     y: 67
-    width: 1696
+    width: 1692
     height: 1316
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Git for Unity
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -44,7 +44,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1696
+    width: 1692
     height: 1316
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -69,7 +69,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1696
+    width: 1692
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -91,7 +91,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 1296
-    width: 1696
+    width: 1692
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -114,7 +114,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
-    width: 1696
+    width: 1692
     height: 1266
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
@@ -140,7 +140,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1348
+    width: 1048
     height: 1266
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
@@ -166,7 +166,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1348
+    width: 1048
     height: 964
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
@@ -190,7 +190,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 305
+    width: 237
     height: 964
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
@@ -214,9 +214,9 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 305
+    x: 237
     y: 0
-    width: 1043
+    width: 811
     height: 964
   m_MinSize: {x: 102, y: 121}
   m_MaxSize: {x: 4002, y: 4021}
@@ -236,23 +236,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
+  m_Name: ConsoleWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
     y: 964
-    width: 1348
+    width: 1048
     height: 302
-  m_MinSize: {x: 231, y: 271}
-  m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 13}
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 13}
   - {fileID: 16}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -263,23 +263,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: InspectorWindow
+  m_Name: Window
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1348
+    x: 1048
     y: 0
-    width: 348
+    width: 644
     height: 1266
-  m_MinSize: {x: 276, y: 71}
+  m_MinSize: {x: 101, y: 121}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 17}
+  m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 17}
   - {fileID: 18}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -300,9 +300,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2032
+    x: 254
     y: 97
-    width: 1041
+    width: 809
     height: 943
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -696,9 +696,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1727
+    x: 17
     y: 1061
-    width: 1347
+    width: 1047
     height: 281
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -738,7 +738,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 16610000
     m_LastClickedID: 24854
-    m_ExpandedIDs: 00000000046100000661000000ca9a3b
+    m_ExpandedIDs: 0000000004610000066100001a61000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -791,8 +791,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
+    m_SelectedInstanceIDs: 32620000
+    m_LastClickedInstanceID: 25138
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
@@ -842,9 +842,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1727
+    x: 17
     y: 97
-    width: 304
+    width: 236
     height: 943
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -859,9 +859,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: be600000
-      m_LastClickedID: 24766
-      m_ExpandedIDs: 2afbffff
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: cceefdff8eeffdff1ef6ffff1cf7ffff2afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -905,9 +905,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2032
+    x: 254
     y: 97
-    width: 1041
+    width: 809
     height: 943
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -925,7 +925,7 @@ MonoBehaviour:
   m_ShowGizmos: 1
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 1041, y: 922}
+  m_TargetSize: {x: 809, y: 922}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -940,8 +940,8 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -520.5
-    m_HBaseRangeMax: 520.5
+    m_HBaseRangeMin: -404.5
+    m_HBaseRangeMax: 404.5
     m_VBaseRangeMin: -461
     m_VBaseRangeMax: 461
     m_HAllowExceedBaseRangeMin: 1
@@ -961,23 +961,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 1041
+      width: 809
       height: 922
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 520.5, y: 461}
+    m_Translation: {x: 404.5, y: 461}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -520.5
+      x: -404.5
       y: -461
-      width: 1041
+      width: 809
       height: 922
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 1041, y: 943}
+  m_LastWindowPixelSize: {x: 809, y: 943}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -1003,10 +1003,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 0
-    y: 1175
-    width: 3038
-    height: 184
+    x: 17
+    y: 1061
+    width: 1047
+    height: 281
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1037,9 +1037,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 3075
+    x: 1065
     y: 97
-    width: 347
+    width: 643
     height: 1245
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -1084,10 +1084,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 3039
-    y: 73
-    width: 400
-    height: 1286
+    x: 1065
+    y: 97
+    width: 643
+    height: 1245
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1098,16 +1098,16 @@ MonoBehaviour:
     m_LastAppliedPresetName: Default
     m_SaveData: []
     m_OverlaysVisible: 1
-  progressMessageClearTime: 349.7937924
+  progressMessageClearTime: 5593.7063003
   notificationClearTime: -1
   timeSinceLastRotation: -1
   currentBranchAndRemoteHasUpdate: 0
-  currentTrackingStatusHasUpdate: 1
-  currentStatusEntriesHasUpdate: 1
-  repositoryProgressHasUpdate: 1
-  appManagerProgressHasUpdate: 1
-  changeTab: 4
-  activeTab: 4
+  currentTrackingStatusHasUpdate: 0
+  currentStatusEntriesHasUpdate: 0
+  repositoryProgressHasUpdate: 0
+  appManagerProgressHasUpdate: 0
+  changeTab: 3
+  activeTab: 3
   initProjectView:
     hasCompletedInitialCheck: 1
     isUserDataPresent: 1
@@ -1167,7 +1167,7 @@ MonoBehaviour:
         isContainer: 0
         isCollapsed: 0
         isHidden: 0
-        isActive: 0
+        isActive: 1
         treeIsCheckable: 0
         checkState: 0
       - path: dev-destruction
@@ -1190,6 +1190,16 @@ MonoBehaviour:
         isActive: 0
         treeIsCheckable: 0
         checkState: 0
+      - path: dev-json
+        label: dev-json
+        level: 1
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
       - path: dev-water
         label: dev-water
         level: 1
@@ -1197,18 +1207,18 @@ MonoBehaviour:
         isContainer: 0
         isCollapsed: 0
         isHidden: 0
-        isActive: 1
+        isActive: 0
         treeIsCheckable: 0
         checkState: 0
       selectedNode:
-        path: dev-water
-        label: dev-water
+        path: dev-json
+        label: dev-json
         level: 1
         isFolder: 0
         isContainer: 0
         isCollapsed: 0
         isHidden: 0
-        isActive: 1
+        isActive: 0
         treeIsCheckable: 0
         checkState: 0
     treeRemotes:
@@ -1297,6 +1307,26 @@ MonoBehaviour:
         isActive: 0
         treeIsCheckable: 0
         checkState: 0
+      - path: origin/dev-json
+        label: dev-json
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+      - path: origin/dev-water
+        label: dev-water
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
       - path: origin/master
         label: master
         level: 2
@@ -1321,17 +1351,17 @@ MonoBehaviour:
     mode: 0
     newBranchName: 
     scroll: {x: 0, y: 0}
-    disableDelete: 1
+    disableDelete: 0
     disableCreate: 0
     lastLocalAndRemoteBranchListChangedEvent:
-      updatedTimeString: 2024-11-26T08:45:36.691+01:00
+      updatedTimeString: 2024-11-30T11:29:24.008+01:00
       cacheType: 2
     lastCurrentBranchAndRemoteChange:
-      updatedTimeString: 2024-11-26T08:45:38.949+01:00
+      updatedTimeString: 2024-11-30T11:29:24.292+01:00
       cacheType: 1
     currentBranch:
-      name: dev-water
-      tracking: 
+      name: dev
+      tracking: origin/dev
     currentRemote:
       name: origin
       url: https://github.com/Valus-gh/Vox3D
@@ -1349,14 +1379,20 @@ MonoBehaviour:
       tracking: origin/dev-destruction
     - name: dev-engine
       tracking: origin/dev-engine
+    - name: dev-json
+      tracking: origin/dev-json
     - name: dev-water
-      tracking: 
+      tracking: origin/dev-water
     remoteBranches:
     - name: origin/dev
       tracking: '[None]'
     - name: origin/dev-destruction
       tracking: '[None]'
     - name: origin/dev-engine
+      tracking: '[None]'
+    - name: origin/dev-json
+      tracking: '[None]'
+    - name: origin/dev-water
       tracking: '[None]'
     - name: origin/master
       tracking: '[None]'
@@ -1366,7 +1402,7 @@ MonoBehaviour:
     currentLocksHasUpdate: 0
     commitBody: 
     commitMessage: 
-    currentBranch: dev-destruction
+    currentBranch: dev
     treeScroll: {x: 0, y: 0}
     treeChanges:
       assets:
@@ -1425,18 +1461,1091 @@ MonoBehaviour:
     gitStatusEntries: []
     changedFilesText: No changed files
     lastCurrentBranchChangedEvent:
-      updatedTimeString: 2024-11-24T16:25:21.242+01:00
+      updatedTimeString: 2024-11-30T11:29:51.983+01:00
       cacheType: 1
     lastStatusEntriesChangedEvent:
-      updatedTimeString: 2024-11-24T16:27:53.612+01:00
+      updatedTimeString: 2024-11-30T11:29:05.966+01:00
       cacheType: 6
     lastLocksChangedEvent:
-      updatedTimeString: 2024-11-24T16:26:38.268+01:00
+      updatedTimeString: 2024-11-30T11:28:32.310+01:00
       cacheType: 7
   historyView:
     currentLogHasUpdate: 0
     currentTrackingStatusHasUpdate: 0
     logEntries:
+    - commitID: 9b77209f47828daeacc8de7ba3e0f87e767d0c66
+      mergeA: 
+      mergeB: 
+      authorName: Valus-gh
+      authorEmail: simone.belingheri25@gmail.com
+      commitEmail: simone.belingheri25@gmail.com
+      commitName: Valus-gh
+      summary: Added Config file (JSON format) to replace unity-side serialized fields.
+        Added JSON Importer to deserialzize file.
+      description: Added Config file (JSON format) to replace unity-side serialized
+        fields. Added JSON Importer to deserialzize file.
+      timeString: 2024-11-30T11:28:27.000+01:00
+      commitTimeString: 2024-11-30T11:28:27.000+01:00
+      changes:
+      - path: Assets\Demo\BasicWorldInitializer.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Demo\BasicWorldInitializer.cs
+        projectPath: Assets\Demo\BasicWorldInitializer.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Resources\config.json
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\config.json
+        projectPath: Assets\Resources\config.json
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Resources\config.json.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\config.json.meta
+        projectPath: Assets\Resources\config.json.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Scenes\SampleScene.unity
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\SampleScene.unity
+        projectPath: Assets\Scenes\SampleScene.unity
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Json.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Json.meta
+        projectPath: Assets\Vox3D\Json.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Json\JsonImporter.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Json\JsonImporter.cs
+        projectPath: Assets\Vox3D\Json\JsonImporter.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Json\JsonImporter.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Json\JsonImporter.cs.meta
+        projectPath: Assets\Vox3D\Json\JsonImporter.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Json\JsonSerializer.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Json\JsonSerializer.cs
+        projectPath: Assets\Vox3D\Json\JsonSerializer.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Json\JsonSerializer.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Json\JsonSerializer.cs.meta
+        projectPath: Assets\Vox3D\Json\JsonSerializer.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Json\Vox3DModel.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Json\Vox3DModel.cs
+        projectPath: Assets\Vox3D\Json\Vox3DModel.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Json\Vox3DModel.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Json\Vox3DModel.cs.meta
+        projectPath: Assets\Vox3D\Json\Vox3DModel.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+    - commitID: f318c91dcd2d4f71d8bc03f7acb6030fa4f231b2
+      mergeA: 
+      mergeB: 
+      authorName: Valus-gh
+      authorEmail: simone.belingheri25@gmail.com
+      commitEmail: simone.belingheri25@gmail.com
+      commitName: Valus-gh
+      summary: Leveled water voxels based on input parameter
+      description: Leveled water voxels based on input parameter
+      timeString: 2024-11-30T10:00:13.000+01:00
+      commitTimeString: 2024-11-30T10:00:13.000+01:00
+      changes:
+      - path: Assets\Demo\BasicWorldInitializer.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Demo\BasicWorldInitializer.cs
+        projectPath: Assets\Demo\BasicWorldInitializer.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Resources\biome-lookup-gradient-2.png
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\biome-lookup-gradient-2.png
+        projectPath: Assets\Resources\biome-lookup-gradient-2.png
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: Assets\Resources\biome-lookup-gradient-2.png.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\biome-lookup-gradient-2.png.meta
+        projectPath: Assets\Resources\biome-lookup-gradient-2.png.meta
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: Assets\Resources\biome-lookup-gradient-3.png
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\biome-lookup-gradient-3.png
+        projectPath: Assets\Resources\biome-lookup-gradient-3.png
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: Assets\Resources\biome-lookup-gradient-3.png.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\biome-lookup-gradient-3.png.meta
+        projectPath: Assets\Resources\biome-lookup-gradient-3.png.meta
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: Assets\Resources\biome-lookup-gradient.png
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\biome-lookup-gradient.png
+        projectPath: Assets\Resources\biome-lookup-gradient.png
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: Assets\Resources\biome-lookup-gradient.png.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\biome-lookup-gradient.png.meta
+        projectPath: Assets\Resources\biome-lookup-gradient.png.meta
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: Assets\Scenes\SampleScene.unity
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\SampleScene.unity
+        projectPath: Assets\Scenes\SampleScene.unity
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\ChunkCollisionHandler.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\ChunkCollisionHandler.cs
+        projectPath: Assets\Vox3D\Engine\ChunkCollisionHandler.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\Parallel\ParallelVoxelBuilder.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Parallel\ParallelVoxelBuilder.cs
+        projectPath: Assets\Vox3D\Engine\Parallel\ParallelVoxelBuilder.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\Vox3DProperties.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Vox3DProperties.cs
+        projectPath: Assets\Vox3D\Engine\Vox3DProperties.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\Voxel.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Voxel.cs
+        projectPath: Assets\Vox3D\Engine\Voxel.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\VoxelGenerationJob.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\VoxelGenerationJob.cs
+        projectPath: Assets\Vox3D\Engine\VoxelGenerationJob.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: UserSettings\Layouts\default-2022.dwlt
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\Layouts\default-2022.dwlt
+        projectPath: UserSettings\Layouts\default-2022.dwlt
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+    - commitID: 86126b1d1a9f937e36064f473cc59c67a8ec2ff4
+      mergeA: 
+      mergeB: 
+      authorName: Valus-gh
+      authorEmail: simone.belingheri25@gmail.com
+      commitEmail: simone.belingheri25@gmail.com
+      commitName: Valus-gh
+      summary: Pre-merge commit
+      description: Pre-merge commit
+      timeString: 2024-11-24T16:27:51.000+01:00
+      commitTimeString: 2024-11-24T16:27:51.000+01:00
+      changes:
+      - path: Assets\Demo\CollisionRaycaster.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Demo\CollisionRaycaster.cs
+        projectPath: Assets\Demo\CollisionRaycaster.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Scenes\SampleScene.unity
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\SampleScene.unity
+        projectPath: Assets\Scenes\SampleScene.unity
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: UserSettings\Layouts\default-2022.dwlt
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\Layouts\default-2022.dwlt
+        projectPath: UserSettings\Layouts\default-2022.dwlt
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+    - commitID: 32a5e190c63a0a6415e8824ad432a1acaad71fa1
+      mergeA: 
+      mergeB: 
+      authorName: Valus-gh
+      authorEmail: simone.belingheri25@gmail.com
+      commitEmail: simone.belingheri25@gmail.com
+      commitName: Valus-gh
+      summary: Normalized heightmaps to [0,1]
+      description: Normalized heightmaps to [0,1]
+      timeString: 2024-11-04T09:51:39.000+01:00
+      commitTimeString: 2024-11-04T09:51:39.000+01:00
+      changes:
+      - path: Assets\Demo\BasicWorldInitializer.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Demo\BasicWorldInitializer.cs
+        projectPath: Assets\Demo\BasicWorldInitializer.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Scenes\SampleScene.unity
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\SampleScene.unity
+        projectPath: Assets\Scenes\SampleScene.unity
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\Chunk.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Chunk.cs
+        projectPath: Assets\Vox3D\Engine\Chunk.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\HeightMap2D.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\HeightMap2D.cs
+        projectPath: Assets\Vox3D\Engine\HeightMap2D.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\VoxelGenerationJob.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\VoxelGenerationJob.cs
+        projectPath: Assets\Vox3D\Engine\VoxelGenerationJob.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\World.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\World.cs
+        projectPath: Assets\Vox3D\Engine\World.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: UserSettings\Layouts\default-2022.dwlt
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\Layouts\default-2022.dwlt
+        projectPath: UserSettings\Layouts\default-2022.dwlt
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+    - commitID: 3cff772e351f4f75a1d937372dd7924ce16e0643
+      mergeA: 
+      mergeB: 
+      authorName: Valus-gh
+      authorEmail: simone.belingheri25@gmail.com
+      commitEmail: simone.belingheri25@gmail.com
+      commitName: Valus-gh
+      summary: Added Voxel Destruction Logic, ChunkDestructionCollider. Moved Voxel
+        creation startup from Chunk to ParallelVoxelBuilder
+      description: Added Voxel Destruction Logic, ChunkDestructionCollider. Moved
+        Voxel creation startup from Chunk to ParallelVoxelBuilder.
+      timeString: 2024-11-03T14:07:33.000+01:00
+      commitTimeString: 2024-11-03T14:07:33.000+01:00
+      changes:
+      - path: Assets\Demo\BasicWorldInitializer.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Demo\BasicWorldInitializer.cs
+        projectPath: Assets\Demo\BasicWorldInitializer.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Demo\CollisionRaycaster.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Demo\CollisionRaycaster.cs
+        projectPath: Assets\Demo\CollisionRaycaster.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\Chunk.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Chunk.cs
+        projectPath: Assets\Vox3D\Engine\Chunk.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\ChunkCollisionHandler.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\ChunkCollisionHandler.cs
+        projectPath: Assets\Vox3D\Engine\ChunkCollisionHandler.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\GreedyVertexGenerationJob.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\GreedyVertexGenerationJob.cs
+        projectPath: Assets\Vox3D\Engine\GreedyVertexGenerationJob.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\Parallel\ParallelGreedyMeshBuilder.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Parallel\ParallelGreedyMeshBuilder.cs
+        projectPath: Assets\Vox3D\Engine\Parallel\ParallelGreedyMeshBuilder.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\Parallel\ParallelGreedyMeshBuilder.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Parallel\ParallelGreedyMeshBuilder.cs.meta
+        projectPath: Assets\Vox3D\Engine\Parallel\ParallelGreedyMeshBuilder.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\Parallel\ParallelVoxelBuilder.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Parallel\ParallelVoxelBuilder.cs
+        projectPath: Assets\Vox3D\Engine\Parallel\ParallelVoxelBuilder.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\Vox3DProperties.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Vox3DProperties.cs
+        projectPath: Assets\Vox3D\Engine\Vox3DProperties.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: ProjectSettings\DynamicsManager.asset
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\ProjectSettings\DynamicsManager.asset
+        projectPath: ProjectSettings\DynamicsManager.asset
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: ProjectSettings\TagManager.asset
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\ProjectSettings\TagManager.asset
+        projectPath: ProjectSettings\TagManager.asset
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: UserSettings\Layouts\default-2022.dwlt
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\Layouts\default-2022.dwlt
+        projectPath: UserSettings\Layouts\default-2022.dwlt
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+    - commitID: 87aec821ca6ee97e0547c6bf83a1209d3798fff7
+      mergeA: 
+      mergeB: 
+      authorName: Valus-gh
+      authorEmail: simone.belingheri25@gmail.com
+      commitEmail: simone.belingheri25@gmail.com
+      commitName: Valus-gh
+      summary: Added sphere collision logic
+      description: Added sphere collision logic
+      timeString: 2024-11-01T09:50:21.000+01:00
+      commitTimeString: 2024-11-01T09:50:21.000+01:00
+      changes:
+      - path: Assets\Vox3D\Engine\Chunk.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Chunk.cs
+        projectPath: Assets\Vox3D\Engine\Chunk.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\ChunkCollisionHandler.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\ChunkCollisionHandler.cs
+        projectPath: Assets\Vox3D\Engine\ChunkCollisionHandler.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\Parallel\ParallelVoxelBuilder.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Parallel\ParallelVoxelBuilder.cs
+        projectPath: Assets\Vox3D\Engine\Parallel\ParallelVoxelBuilder.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: ProjectSettings\TagManager.asset
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\ProjectSettings\TagManager.asset
+        projectPath: ProjectSettings\TagManager.asset
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: UserSettings\Layouts\default-2022.dwlt
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\Layouts\default-2022.dwlt
+        projectPath: UserSettings\Layouts\default-2022.dwlt
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+    - commitID: d26e65453701c592ae2fd1c5cc898bb742cfcaf0
+      mergeA: 
+      mergeB: 
+      authorName: Valus-gh
+      authorEmail: simone.belingheri25@gmail.com
+      commitEmail: simone.belingheri25@gmail.com
+      commitName: Valus-gh
+      summary: Added ChunkCollisionHandler, Raycaster demo
+      description: Added ChunkCollisionHandler, Raycaster demo
+      timeString: 2024-10-31T09:31:13.000+01:00
+      commitTimeString: 2024-10-31T09:31:13.000+01:00
+      changes:
+      - path: Assets\Demo\CollisionRaycaster.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Demo\CollisionRaycaster.cs
+        projectPath: Assets\Demo\CollisionRaycaster.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Demo\CollisionRaycaster.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Demo\CollisionRaycaster.cs.meta
+        projectPath: Assets\Demo\CollisionRaycaster.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Scenes\SampleScene.unity
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\SampleScene.unity
+        projectPath: Assets\Scenes\SampleScene.unity
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\Chunk.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Chunk.cs
+        projectPath: Assets\Vox3D\Engine\Chunk.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\ChunkCollisionHandler.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\ChunkCollisionHandler.cs
+        projectPath: Assets\Vox3D\Engine\ChunkCollisionHandler.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\ChunkCollisionHandler.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\ChunkCollisionHandler.cs.meta
+        projectPath: Assets\Vox3D\Engine\ChunkCollisionHandler.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\World.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\World.cs
+        projectPath: Assets\Vox3D\Engine\World.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+    - commitID: f883299096ce75dde23f32d1bc5ac8fb4138c58b
+      mergeA: 
+      mergeB: 
+      authorName: Valus-gh
+      authorEmail: simone.belingheri25@gmail.com
+      commitEmail: simone.belingheri25@gmail.com
+      commitName: Valus-gh
+      summary: Added ChunkMesh, ParallelVoxelBuilder.
+      description: Added ChunkMesh, ParallelVoxelBuilder.
+      timeString: 2024-10-28T21:32:35.000+01:00
+      commitTimeString: 2024-10-28T21:32:35.000+01:00
+      changes:
+      - path: Assets\Demo\BasicWorldInitializer.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Demo\BasicWorldInitializer.cs
+        projectPath: Assets\Demo\BasicWorldInitializer.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Resources\DefaultMaterial.mat
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\DefaultMaterial.mat
+        projectPath: Assets\Resources\DefaultMaterial.mat
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: Assets\Scenes\SampleScene.unity
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\SampleScene.unity
+        projectPath: Assets\Scenes\SampleScene.unity
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\Chunk.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Chunk.cs
+        projectPath: Assets\Vox3D\Engine\Chunk.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\ChunkMesh.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\ChunkMesh.cs
+        projectPath: Assets\Vox3D\Engine\ChunkMesh.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\ChunkMesh.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\ChunkMesh.cs.meta
+        projectPath: Assets\Vox3D\Engine\ChunkMesh.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\HeightMap2D.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\HeightMap2D.cs
+        projectPath: Assets\Vox3D\Engine\HeightMap2D.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\Parallel.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Parallel.meta
+        projectPath: Assets\Vox3D\Engine\Parallel.meta
+        originalPath: Assets\Resources\DefaultMaterial.mat.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\Parallel\ParallelVoxelBuilder.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Parallel\ParallelVoxelBuilder.cs
+        projectPath: Assets\Vox3D\Engine\Parallel\ParallelVoxelBuilder.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\Parallel\ParallelVoxelBuilder.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Parallel\ParallelVoxelBuilder.cs.meta
+        projectPath: Assets\Vox3D\Engine\Parallel\ParallelVoxelBuilder.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\PriorityCallStack.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\PriorityCallStack.cs
+        projectPath: Assets\Vox3D\Engine\PriorityCallStack.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\World.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\World.cs
+        projectPath: Assets\Vox3D\Engine\World.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: UserSettings\Layouts\default-2022.dwlt
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\Layouts\default-2022.dwlt
+        projectPath: UserSettings\Layouts\default-2022.dwlt
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+    - commitID: 578efb3b0612964a32ad72b95eb613219f1eb901
+      mergeA: 
+      mergeB: 
+      authorName: Valus-gh
+      authorEmail: simone.belingheri25@gmail.com
+      commitEmail: simone.belingheri25@gmail.com
+      commitName: Valus-gh
+      summary: Added different biome textures, biome shader.
+      description: Added different biome textures, biome shader.
+      timeString: 2024-10-23T16:04:23.000+02:00
+      commitTimeString: 2024-10-23T16:04:23.000+02:00
+      changes:
+      - path: Assets\Demo\BasicWorldInitializer.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Demo\BasicWorldInitializer.cs
+        projectPath: Assets\Demo\BasicWorldInitializer.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Resources\VoxelVertexColorMaterial.mat
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\VoxelVertexColorMaterial.mat
+        projectPath: Assets\Resources\VoxelVertexColorMaterial.mat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Resources\VoxelVertexColorMaterial.mat.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\VoxelVertexColorMaterial.mat.meta
+        projectPath: Assets\Resources\VoxelVertexColorMaterial.mat.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Resources\biome-lookup-128x128.png
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\biome-lookup-128x128.png
+        projectPath: Assets\Resources\biome-lookup-128x128.png
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Resources\biome-lookup-gradient-2.png
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\biome-lookup-gradient-2.png
+        projectPath: Assets\Resources\biome-lookup-gradient-2.png
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Resources\biome-lookup-gradient-2.png.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\biome-lookup-gradient-2.png.meta
+        projectPath: Assets\Resources\biome-lookup-gradient-2.png.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Resources\biome-lookup-gradient-3.png
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\biome-lookup-gradient-3.png
+        projectPath: Assets\Resources\biome-lookup-gradient-3.png
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Resources\biome-lookup-gradient-3.png.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\biome-lookup-gradient-3.png.meta
+        projectPath: Assets\Resources\biome-lookup-gradient-3.png.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Resources\biome-lookup-gradient-4.png
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\biome-lookup-gradient-4.png
+        projectPath: Assets\Resources\biome-lookup-gradient-4.png
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Resources\biome-lookup-gradient-4.png.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\biome-lookup-gradient-4.png.meta
+        projectPath: Assets\Resources\biome-lookup-gradient-4.png.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Resources\biome-lookup-gradient.png
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\biome-lookup-gradient.png
+        projectPath: Assets\Resources\biome-lookup-gradient.png
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Resources\biome-lookup-gradient.png.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\biome-lookup-gradient.png.meta
+        projectPath: Assets\Resources\biome-lookup-gradient.png.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Scenes\SampleScene.unity
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\SampleScene.unity
+        projectPath: Assets\Scenes\SampleScene.unity
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\Chunk.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Chunk.cs
+        projectPath: Assets\Vox3D\Engine\Chunk.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\GreedyVertexGenerationJob.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\GreedyVertexGenerationJob.cs
+        projectPath: Assets\Vox3D\Engine\GreedyVertexGenerationJob.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\HeightMap2D.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\HeightMap2D.cs
+        projectPath: Assets\Vox3D\Engine\HeightMap2D.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\VoxelGenerationJob.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\VoxelGenerationJob.cs
+        projectPath: Assets\Vox3D\Engine\VoxelGenerationJob.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Shaders\VoxelColorShader.shader
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Shaders\VoxelColorShader.shader
+        projectPath: Assets\Vox3D\Shaders\VoxelColorShader.shader
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Shaders\VoxelColorShader.shader.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Shaders\VoxelColorShader.shader.meta
+        projectPath: Assets\Vox3D\Shaders\VoxelColorShader.shader.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: UserSettings\Layouts\default-2022.dwlt
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\Layouts\default-2022.dwlt
+        projectPath: UserSettings\Layouts\default-2022.dwlt
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+    - commitID: 939dea45b8317c6b5f7d10dbf9369ac58b7fde20
+      mergeA: 
+      mergeB: 
+      authorName: Valus-gh
+      authorEmail: simone.belingheri25@gmail.com
+      commitEmail: simone.belingheri25@gmail.com
+      commitName: Valus-gh
+      summary: Added basic logic for biome lookup.
+      description: Added basic logic for biome lookup.
+      timeString: 2024-10-22T20:21:47.000+02:00
+      commitTimeString: 2024-10-22T20:21:47.000+02:00
+      changes:
+      - path: Assets\Demo\BasicWorldInitializer.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Demo\BasicWorldInitializer.cs
+        projectPath: Assets\Demo\BasicWorldInitializer.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Demo\SettingsGUI.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Demo\SettingsGUI.cs
+        projectPath: Assets\Demo\SettingsGUI.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Resources\DefaultMaterial.mat
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\DefaultMaterial.mat
+        projectPath: Assets\Resources\DefaultMaterial.mat
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Resources\biome-lookup-128x128.png
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\biome-lookup-128x128.png
+        projectPath: Assets\Resources\biome-lookup-128x128.png
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Resources\biome-lookup-128x128.png.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\biome-lookup-128x128.png.meta
+        projectPath: Assets\Resources\biome-lookup-128x128.png.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Scenes\SampleScene.unity
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\SampleScene.unity
+        projectPath: Assets\Scenes\SampleScene.unity
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\Chunk.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Chunk.cs
+        projectPath: Assets\Vox3D\Engine\Chunk.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\GreedyVertexGenerationJob.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\GreedyVertexGenerationJob.cs
+        projectPath: Assets\Vox3D\Engine\GreedyVertexGenerationJob.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\Vox3DProperties.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Vox3DProperties.cs
+        projectPath: Assets\Vox3D\Engine\Vox3DProperties.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\Voxel.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Voxel.cs
+        projectPath: Assets\Vox3D\Engine\Voxel.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\VoxelGenerationJob.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\VoxelGenerationJob.cs
+        projectPath: Assets\Vox3D\Engine\VoxelGenerationJob.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\World.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\World.cs
+        projectPath: Assets\Vox3D\Engine\World.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Shaders.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Shaders.meta
+        projectPath: Assets\Vox3D\Shaders.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: UserSettings\Layouts\default-2022.dwlt
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\Layouts\default-2022.dwlt
+        projectPath: UserSettings\Layouts\default-2022.dwlt
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+    - commitID: f508971b30c4d95a3886f45f06b0b615f6c7f591
+      mergeA: 
+      mergeB: 
+      authorName: Valus-gh
+      authorEmail: simone.belingheri25@gmail.com
+      commitEmail: simone.belingheri25@gmail.com
+      commitName: Valus-gh
+      summary: Added MoistureMap in world.
+      description: Added MoistureMap in world.
+      timeString: 2024-10-21T21:30:59.000+02:00
+      commitTimeString: 2024-10-21T21:30:59.000+02:00
+      changes:
+      - path: Assets\Demo\BasicWorldInitializer.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Demo\BasicWorldInitializer.cs
+        projectPath: Assets\Demo\BasicWorldInitializer.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\PriorityCallStack.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\PriorityCallStack.cs
+        projectPath: Assets\Vox3D\Engine\PriorityCallStack.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\Vox3DManager.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Vox3DManager.cs
+        projectPath: Assets\Vox3D\Engine\Vox3DManager.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\Vox3DProperties.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Vox3DProperties.cs
+        projectPath: Assets\Vox3D\Engine\Vox3DProperties.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\World.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\World.cs
+        projectPath: Assets\Vox3D\Engine\World.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+    - commitID: 21a6d14d9d93668de130f81e6fc934b03dfbf34e
+      mergeA: 
+      mergeB: 
+      authorName: Valus-gh
+      authorEmail: simone.belingheri25@gmail.com
+      commitEmail: simone.belingheri25@gmail.com
+      commitName: Valus-gh
+      summary: Added PriorityCallStack, Initializable. Refactored World class.
+      description: Added PriorityCallStack, Initializable. Refactored World class.
+      timeString: 2024-10-21T21:07:59.000+02:00
+      commitTimeString: 2024-10-21T21:07:59.000+02:00
+      changes:
+      - path: Assets\Demo\BasicWorldInitializer.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Demo\BasicWorldInitializer.cs
+        projectPath: Assets\Demo\BasicWorldInitializer.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Demo\SettingsGUI.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Demo\SettingsGUI.cs
+        projectPath: Assets\Demo\SettingsGUI.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Scenes\SampleScene.unity
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\SampleScene.unity
+        projectPath: Assets\Scenes\SampleScene.unity
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\Chunk.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Chunk.cs
+        projectPath: Assets\Vox3D\Engine\Chunk.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\GreedyVertexGenerationJob.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\GreedyVertexGenerationJob.cs
+        projectPath: Assets\Vox3D\Engine\GreedyVertexGenerationJob.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\IInitializable.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\IInitializable.cs
+        projectPath: Assets\Vox3D\Engine\IInitializable.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\IInitializable.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\IInitializable.cs.meta
+        projectPath: Assets\Vox3D\Engine\IInitializable.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\PriorityCallStack.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\PriorityCallStack.cs
+        projectPath: Assets\Vox3D\Engine\PriorityCallStack.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\PriorityCallStack.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\PriorityCallStack.cs.meta
+        projectPath: Assets\Vox3D\Engine\PriorityCallStack.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\Vox3DManager.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Vox3DManager.cs
+        projectPath: Assets\Vox3D\Engine\Vox3DManager.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\Vox3DManager.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Vox3DManager.cs.meta
+        projectPath: Assets\Vox3D\Engine\Vox3DManager.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\Vox3DProperties.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Vox3DProperties.cs
+        projectPath: Assets\Vox3D\Engine\Vox3DProperties.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\VoxelGenerationJob.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\VoxelGenerationJob.cs
+        projectPath: Assets\Vox3D\Engine\VoxelGenerationJob.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\World.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\World.cs
+        projectPath: Assets\Vox3D\Engine\World.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Noise\SimplexNoiseSource.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Noise\SimplexNoiseSource.cs
+        projectPath: Assets\Vox3D\Noise\SimplexNoiseSource.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: UserSettings\Layouts\default-2022.dwlt
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\Layouts\default-2022.dwlt
+        projectPath: UserSettings\Layouts\default-2022.dwlt
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+    - commitID: d31bd566770061a54f5e4cd28e498bfe94036504
+      mergeA: 
+      mergeB: 
+      authorName: Valus-gh
+      authorEmail: simone.belingheri25@gmail.com
+      commitEmail: simone.belingheri25@gmail.com
+      commitName: Valus-gh
+      summary: Used new parameters in Noise2D(). GUI not done yet.
+      description: Used new parameters in Noise2D(). GUI not done yet.
+      timeString: 2024-10-21T12:09:09.000+02:00
+      commitTimeString: 2024-10-21T12:09:09.000+02:00
+      changes:
+      - path: Assets\Demo\BasicWorldInitializer.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Demo\BasicWorldInitializer.cs
+        projectPath: Assets\Demo\BasicWorldInitializer.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Demo\SettingsGUI.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Demo\SettingsGUI.cs
+        projectPath: Assets\Demo\SettingsGUI.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Scenes\SampleScene.unity
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\SampleScene.unity
+        projectPath: Assets\Scenes\SampleScene.unity
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\VoxelGenerationJob.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\VoxelGenerationJob.cs
+        projectPath: Assets\Vox3D\Engine\VoxelGenerationJob.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Noise\PerlinProperties.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Noise\PerlinProperties.cs
+        projectPath: Assets\Vox3D\Noise\PerlinProperties.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Noise\Simplex\SimplexNoise.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Noise\Simplex\SimplexNoise.cs
+        projectPath: Assets\Vox3D\Noise\Simplex\SimplexNoise.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Noise\SimplexNoiseSource.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Noise\SimplexNoiseSource.cs
+        projectPath: Assets\Vox3D\Noise\SimplexNoiseSource.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: UserSettings\Layouts\default-2022.dwlt
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\Layouts\default-2022.dwlt
+        projectPath: UserSettings\Layouts\default-2022.dwlt
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+    - commitID: 99457f348db5c9c6604b507cdbb7ec6ad949b4df
+      mergeA: 
+      mergeB: 
+      authorName: Valus-gh
+      authorEmail: simone.belingheri25@gmail.com
+      commitEmail: simone.belingheri25@gmail.com
+      commitName: Valus-gh
+      summary: Updated Noise Generation, HeightMap.
+      description: Added PerlinProperties struct containing all that is necessary
+        to get a more realistic noise generation. Refactored UI.
+      timeString: 2024-10-21T01:31:26.000+02:00
+      commitTimeString: 2024-10-21T01:31:26.000+02:00
+      changes:
+      - path: Assets\Demo\BasicWorldInitializer.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Demo\BasicWorldInitializer.cs
+        projectPath: Assets\Demo\BasicWorldInitializer.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Demo\SettingsGUI.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Demo\SettingsGUI.cs
+        projectPath: Assets\Demo\SettingsGUI.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Scenes\SampleScene.unity
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\SampleScene.unity
+        projectPath: Assets\Scenes\SampleScene.unity
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\Chunk.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Chunk.cs
+        projectPath: Assets\Vox3D\Engine\Chunk.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\GreedyVertexGenerationJob.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\GreedyVertexGenerationJob.cs
+        projectPath: Assets\Vox3D\Engine\GreedyVertexGenerationJob.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\HeightMap2D.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\HeightMap2D.cs
+        projectPath: Assets\Vox3D\Engine\HeightMap2D.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\Vox3DProperties.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Vox3DProperties.cs
+        projectPath: Assets\Vox3D\Engine\Vox3DProperties.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\Voxel.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Voxel.cs
+        projectPath: Assets\Vox3D\Engine\Voxel.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\VoxelGenerationJob.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\VoxelGenerationJob.cs
+        projectPath: Assets\Vox3D\Engine\VoxelGenerationJob.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Engine\World.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\World.cs
+        projectPath: Assets\Vox3D\Engine\World.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Noise\PerlinProperties.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Noise\PerlinProperties.cs
+        projectPath: Assets\Vox3D\Noise\PerlinProperties.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Noise\PerlinProperties.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Noise\PerlinProperties.cs.meta
+        projectPath: Assets\Vox3D\Noise\PerlinProperties.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Noise\Simplex\SimplexNoise.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Noise\Simplex\SimplexNoise.cs
+        projectPath: Assets\Vox3D\Noise\Simplex\SimplexNoise.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Noise\SimplexNoiseSource.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Noise\SimplexNoiseSource.cs
+        projectPath: Assets\Vox3D\Noise\SimplexNoiseSource.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: UserSettings\Layouts\default-2022.dwlt
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\Layouts\default-2022.dwlt
+        projectPath: UserSettings\Layouts\default-2022.dwlt
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
     - commitID: dc5a6f2f9b39308fe9b64bb3f8d98f0df8dd5604
       mergeA: 
       mergeB: 
@@ -2400,14 +3509,1087 @@ MonoBehaviour:
         workTreeStatus: 0
     statusAhead: 0
     lastLogChangedEvent:
-      updatedTimeString: 2024-10-20T20:00:42.095+02:00
+      updatedTimeString: 2024-11-30T11:29:24.613+01:00
       cacheType: 3
     lastTrackingStatusChangedEvent:
-      updatedTimeString: 2024-10-20T20:00:41.795+02:00
+      updatedTimeString: 2024-11-30T11:29:24.601+01:00
       cacheType: 5
     historyControl:
       scroll: {x: 0, y: 0}
       entries:
+      - commitID: 9b77209f47828daeacc8de7ba3e0f87e767d0c66
+        mergeA: 
+        mergeB: 
+        authorName: Valus-gh
+        authorEmail: simone.belingheri25@gmail.com
+        commitEmail: simone.belingheri25@gmail.com
+        commitName: Valus-gh
+        summary: Added Config file (JSON format) to replace unity-side serialized
+          fields. Added JSON Importer to deserialzize file.
+        description: Added Config file (JSON format) to replace unity-side serialized
+          fields. Added JSON Importer to deserialzize file.
+        timeString: 2024-11-30T11:28:27.000+01:00
+        commitTimeString: 2024-11-30T11:28:27.000+01:00
+        changes:
+        - path: Assets\Demo\BasicWorldInitializer.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Demo\BasicWorldInitializer.cs
+          projectPath: Assets\Demo\BasicWorldInitializer.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Resources\config.json
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\config.json
+          projectPath: Assets\Resources\config.json
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Resources\config.json.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\config.json.meta
+          projectPath: Assets\Resources\config.json.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Scenes\SampleScene.unity
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\SampleScene.unity
+          projectPath: Assets\Scenes\SampleScene.unity
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Json.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Json.meta
+          projectPath: Assets\Vox3D\Json.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Json\JsonImporter.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Json\JsonImporter.cs
+          projectPath: Assets\Vox3D\Json\JsonImporter.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Json\JsonImporter.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Json\JsonImporter.cs.meta
+          projectPath: Assets\Vox3D\Json\JsonImporter.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Json\JsonSerializer.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Json\JsonSerializer.cs
+          projectPath: Assets\Vox3D\Json\JsonSerializer.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Json\JsonSerializer.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Json\JsonSerializer.cs.meta
+          projectPath: Assets\Vox3D\Json\JsonSerializer.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Json\Vox3DModel.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Json\Vox3DModel.cs
+          projectPath: Assets\Vox3D\Json\Vox3DModel.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Json\Vox3DModel.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Json\Vox3DModel.cs.meta
+          projectPath: Assets\Vox3D\Json\Vox3DModel.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+      - commitID: f318c91dcd2d4f71d8bc03f7acb6030fa4f231b2
+        mergeA: 
+        mergeB: 
+        authorName: Valus-gh
+        authorEmail: simone.belingheri25@gmail.com
+        commitEmail: simone.belingheri25@gmail.com
+        commitName: Valus-gh
+        summary: Leveled water voxels based on input parameter
+        description: Leveled water voxels based on input parameter
+        timeString: 2024-11-30T10:00:13.000+01:00
+        commitTimeString: 2024-11-30T10:00:13.000+01:00
+        changes:
+        - path: Assets\Demo\BasicWorldInitializer.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Demo\BasicWorldInitializer.cs
+          projectPath: Assets\Demo\BasicWorldInitializer.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Resources\biome-lookup-gradient-2.png
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\biome-lookup-gradient-2.png
+          projectPath: Assets\Resources\biome-lookup-gradient-2.png
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+        - path: Assets\Resources\biome-lookup-gradient-2.png.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\biome-lookup-gradient-2.png.meta
+          projectPath: Assets\Resources\biome-lookup-gradient-2.png.meta
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+        - path: Assets\Resources\biome-lookup-gradient-3.png
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\biome-lookup-gradient-3.png
+          projectPath: Assets\Resources\biome-lookup-gradient-3.png
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+        - path: Assets\Resources\biome-lookup-gradient-3.png.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\biome-lookup-gradient-3.png.meta
+          projectPath: Assets\Resources\biome-lookup-gradient-3.png.meta
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+        - path: Assets\Resources\biome-lookup-gradient.png
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\biome-lookup-gradient.png
+          projectPath: Assets\Resources\biome-lookup-gradient.png
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+        - path: Assets\Resources\biome-lookup-gradient.png.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\biome-lookup-gradient.png.meta
+          projectPath: Assets\Resources\biome-lookup-gradient.png.meta
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+        - path: Assets\Scenes\SampleScene.unity
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\SampleScene.unity
+          projectPath: Assets\Scenes\SampleScene.unity
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\ChunkCollisionHandler.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\ChunkCollisionHandler.cs
+          projectPath: Assets\Vox3D\Engine\ChunkCollisionHandler.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\Parallel\ParallelVoxelBuilder.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Parallel\ParallelVoxelBuilder.cs
+          projectPath: Assets\Vox3D\Engine\Parallel\ParallelVoxelBuilder.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\Vox3DProperties.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Vox3DProperties.cs
+          projectPath: Assets\Vox3D\Engine\Vox3DProperties.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\Voxel.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Voxel.cs
+          projectPath: Assets\Vox3D\Engine\Voxel.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\VoxelGenerationJob.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\VoxelGenerationJob.cs
+          projectPath: Assets\Vox3D\Engine\VoxelGenerationJob.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: UserSettings\Layouts\default-2022.dwlt
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\Layouts\default-2022.dwlt
+          projectPath: UserSettings\Layouts\default-2022.dwlt
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - commitID: 86126b1d1a9f937e36064f473cc59c67a8ec2ff4
+        mergeA: 
+        mergeB: 
+        authorName: Valus-gh
+        authorEmail: simone.belingheri25@gmail.com
+        commitEmail: simone.belingheri25@gmail.com
+        commitName: Valus-gh
+        summary: Pre-merge commit
+        description: Pre-merge commit
+        timeString: 2024-11-24T16:27:51.000+01:00
+        commitTimeString: 2024-11-24T16:27:51.000+01:00
+        changes:
+        - path: Assets\Demo\CollisionRaycaster.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Demo\CollisionRaycaster.cs
+          projectPath: Assets\Demo\CollisionRaycaster.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Scenes\SampleScene.unity
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\SampleScene.unity
+          projectPath: Assets\Scenes\SampleScene.unity
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: UserSettings\Layouts\default-2022.dwlt
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\Layouts\default-2022.dwlt
+          projectPath: UserSettings\Layouts\default-2022.dwlt
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - commitID: 32a5e190c63a0a6415e8824ad432a1acaad71fa1
+        mergeA: 
+        mergeB: 
+        authorName: Valus-gh
+        authorEmail: simone.belingheri25@gmail.com
+        commitEmail: simone.belingheri25@gmail.com
+        commitName: Valus-gh
+        summary: Normalized heightmaps to [0,1]
+        description: Normalized heightmaps to [0,1]
+        timeString: 2024-11-04T09:51:39.000+01:00
+        commitTimeString: 2024-11-04T09:51:39.000+01:00
+        changes:
+        - path: Assets\Demo\BasicWorldInitializer.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Demo\BasicWorldInitializer.cs
+          projectPath: Assets\Demo\BasicWorldInitializer.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Scenes\SampleScene.unity
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\SampleScene.unity
+          projectPath: Assets\Scenes\SampleScene.unity
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\Chunk.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Chunk.cs
+          projectPath: Assets\Vox3D\Engine\Chunk.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\HeightMap2D.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\HeightMap2D.cs
+          projectPath: Assets\Vox3D\Engine\HeightMap2D.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\VoxelGenerationJob.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\VoxelGenerationJob.cs
+          projectPath: Assets\Vox3D\Engine\VoxelGenerationJob.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\World.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\World.cs
+          projectPath: Assets\Vox3D\Engine\World.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: UserSettings\Layouts\default-2022.dwlt
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\Layouts\default-2022.dwlt
+          projectPath: UserSettings\Layouts\default-2022.dwlt
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - commitID: 3cff772e351f4f75a1d937372dd7924ce16e0643
+        mergeA: 
+        mergeB: 
+        authorName: Valus-gh
+        authorEmail: simone.belingheri25@gmail.com
+        commitEmail: simone.belingheri25@gmail.com
+        commitName: Valus-gh
+        summary: Added Voxel Destruction Logic, ChunkDestructionCollider. Moved Voxel
+          creation startup from Chunk to ParallelVoxelBuilder
+        description: Added Voxel Destruction Logic, ChunkDestructionCollider. Moved
+          Voxel creation startup from Chunk to ParallelVoxelBuilder.
+        timeString: 2024-11-03T14:07:33.000+01:00
+        commitTimeString: 2024-11-03T14:07:33.000+01:00
+        changes:
+        - path: Assets\Demo\BasicWorldInitializer.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Demo\BasicWorldInitializer.cs
+          projectPath: Assets\Demo\BasicWorldInitializer.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Demo\CollisionRaycaster.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Demo\CollisionRaycaster.cs
+          projectPath: Assets\Demo\CollisionRaycaster.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\Chunk.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Chunk.cs
+          projectPath: Assets\Vox3D\Engine\Chunk.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\ChunkCollisionHandler.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\ChunkCollisionHandler.cs
+          projectPath: Assets\Vox3D\Engine\ChunkCollisionHandler.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\GreedyVertexGenerationJob.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\GreedyVertexGenerationJob.cs
+          projectPath: Assets\Vox3D\Engine\GreedyVertexGenerationJob.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\Parallel\ParallelGreedyMeshBuilder.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Parallel\ParallelGreedyMeshBuilder.cs
+          projectPath: Assets\Vox3D\Engine\Parallel\ParallelGreedyMeshBuilder.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\Parallel\ParallelGreedyMeshBuilder.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Parallel\ParallelGreedyMeshBuilder.cs.meta
+          projectPath: Assets\Vox3D\Engine\Parallel\ParallelGreedyMeshBuilder.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\Parallel\ParallelVoxelBuilder.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Parallel\ParallelVoxelBuilder.cs
+          projectPath: Assets\Vox3D\Engine\Parallel\ParallelVoxelBuilder.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\Vox3DProperties.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Vox3DProperties.cs
+          projectPath: Assets\Vox3D\Engine\Vox3DProperties.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: ProjectSettings\DynamicsManager.asset
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\ProjectSettings\DynamicsManager.asset
+          projectPath: ProjectSettings\DynamicsManager.asset
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: ProjectSettings\TagManager.asset
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\ProjectSettings\TagManager.asset
+          projectPath: ProjectSettings\TagManager.asset
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: UserSettings\Layouts\default-2022.dwlt
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\Layouts\default-2022.dwlt
+          projectPath: UserSettings\Layouts\default-2022.dwlt
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - commitID: 87aec821ca6ee97e0547c6bf83a1209d3798fff7
+        mergeA: 
+        mergeB: 
+        authorName: Valus-gh
+        authorEmail: simone.belingheri25@gmail.com
+        commitEmail: simone.belingheri25@gmail.com
+        commitName: Valus-gh
+        summary: Added sphere collision logic
+        description: Added sphere collision logic
+        timeString: 2024-11-01T09:50:21.000+01:00
+        commitTimeString: 2024-11-01T09:50:21.000+01:00
+        changes:
+        - path: Assets\Vox3D\Engine\Chunk.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Chunk.cs
+          projectPath: Assets\Vox3D\Engine\Chunk.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\ChunkCollisionHandler.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\ChunkCollisionHandler.cs
+          projectPath: Assets\Vox3D\Engine\ChunkCollisionHandler.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\Parallel\ParallelVoxelBuilder.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Parallel\ParallelVoxelBuilder.cs
+          projectPath: Assets\Vox3D\Engine\Parallel\ParallelVoxelBuilder.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: ProjectSettings\TagManager.asset
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\ProjectSettings\TagManager.asset
+          projectPath: ProjectSettings\TagManager.asset
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: UserSettings\Layouts\default-2022.dwlt
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\Layouts\default-2022.dwlt
+          projectPath: UserSettings\Layouts\default-2022.dwlt
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - commitID: d26e65453701c592ae2fd1c5cc898bb742cfcaf0
+        mergeA: 
+        mergeB: 
+        authorName: Valus-gh
+        authorEmail: simone.belingheri25@gmail.com
+        commitEmail: simone.belingheri25@gmail.com
+        commitName: Valus-gh
+        summary: Added ChunkCollisionHandler, Raycaster demo
+        description: Added ChunkCollisionHandler, Raycaster demo
+        timeString: 2024-10-31T09:31:13.000+01:00
+        commitTimeString: 2024-10-31T09:31:13.000+01:00
+        changes:
+        - path: Assets\Demo\CollisionRaycaster.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Demo\CollisionRaycaster.cs
+          projectPath: Assets\Demo\CollisionRaycaster.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Demo\CollisionRaycaster.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Demo\CollisionRaycaster.cs.meta
+          projectPath: Assets\Demo\CollisionRaycaster.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Scenes\SampleScene.unity
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\SampleScene.unity
+          projectPath: Assets\Scenes\SampleScene.unity
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\Chunk.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Chunk.cs
+          projectPath: Assets\Vox3D\Engine\Chunk.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\ChunkCollisionHandler.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\ChunkCollisionHandler.cs
+          projectPath: Assets\Vox3D\Engine\ChunkCollisionHandler.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\ChunkCollisionHandler.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\ChunkCollisionHandler.cs.meta
+          projectPath: Assets\Vox3D\Engine\ChunkCollisionHandler.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\World.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\World.cs
+          projectPath: Assets\Vox3D\Engine\World.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - commitID: f883299096ce75dde23f32d1bc5ac8fb4138c58b
+        mergeA: 
+        mergeB: 
+        authorName: Valus-gh
+        authorEmail: simone.belingheri25@gmail.com
+        commitEmail: simone.belingheri25@gmail.com
+        commitName: Valus-gh
+        summary: Added ChunkMesh, ParallelVoxelBuilder.
+        description: Added ChunkMesh, ParallelVoxelBuilder.
+        timeString: 2024-10-28T21:32:35.000+01:00
+        commitTimeString: 2024-10-28T21:32:35.000+01:00
+        changes:
+        - path: Assets\Demo\BasicWorldInitializer.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Demo\BasicWorldInitializer.cs
+          projectPath: Assets\Demo\BasicWorldInitializer.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Resources\DefaultMaterial.mat
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\DefaultMaterial.mat
+          projectPath: Assets\Resources\DefaultMaterial.mat
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+        - path: Assets\Scenes\SampleScene.unity
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\SampleScene.unity
+          projectPath: Assets\Scenes\SampleScene.unity
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\Chunk.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Chunk.cs
+          projectPath: Assets\Vox3D\Engine\Chunk.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\ChunkMesh.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\ChunkMesh.cs
+          projectPath: Assets\Vox3D\Engine\ChunkMesh.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\ChunkMesh.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\ChunkMesh.cs.meta
+          projectPath: Assets\Vox3D\Engine\ChunkMesh.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\HeightMap2D.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\HeightMap2D.cs
+          projectPath: Assets\Vox3D\Engine\HeightMap2D.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\Parallel.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Parallel.meta
+          projectPath: Assets\Vox3D\Engine\Parallel.meta
+          originalPath: Assets\Resources\DefaultMaterial.mat.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\Parallel\ParallelVoxelBuilder.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Parallel\ParallelVoxelBuilder.cs
+          projectPath: Assets\Vox3D\Engine\Parallel\ParallelVoxelBuilder.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\Parallel\ParallelVoxelBuilder.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Parallel\ParallelVoxelBuilder.cs.meta
+          projectPath: Assets\Vox3D\Engine\Parallel\ParallelVoxelBuilder.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\PriorityCallStack.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\PriorityCallStack.cs
+          projectPath: Assets\Vox3D\Engine\PriorityCallStack.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\World.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\World.cs
+          projectPath: Assets\Vox3D\Engine\World.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: UserSettings\Layouts\default-2022.dwlt
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\Layouts\default-2022.dwlt
+          projectPath: UserSettings\Layouts\default-2022.dwlt
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - commitID: 578efb3b0612964a32ad72b95eb613219f1eb901
+        mergeA: 
+        mergeB: 
+        authorName: Valus-gh
+        authorEmail: simone.belingheri25@gmail.com
+        commitEmail: simone.belingheri25@gmail.com
+        commitName: Valus-gh
+        summary: Added different biome textures, biome shader.
+        description: Added different biome textures, biome shader.
+        timeString: 2024-10-23T16:04:23.000+02:00
+        commitTimeString: 2024-10-23T16:04:23.000+02:00
+        changes:
+        - path: Assets\Demo\BasicWorldInitializer.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Demo\BasicWorldInitializer.cs
+          projectPath: Assets\Demo\BasicWorldInitializer.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Resources\VoxelVertexColorMaterial.mat
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\VoxelVertexColorMaterial.mat
+          projectPath: Assets\Resources\VoxelVertexColorMaterial.mat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Resources\VoxelVertexColorMaterial.mat.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\VoxelVertexColorMaterial.mat.meta
+          projectPath: Assets\Resources\VoxelVertexColorMaterial.mat.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Resources\biome-lookup-128x128.png
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\biome-lookup-128x128.png
+          projectPath: Assets\Resources\biome-lookup-128x128.png
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Resources\biome-lookup-gradient-2.png
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\biome-lookup-gradient-2.png
+          projectPath: Assets\Resources\biome-lookup-gradient-2.png
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Resources\biome-lookup-gradient-2.png.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\biome-lookup-gradient-2.png.meta
+          projectPath: Assets\Resources\biome-lookup-gradient-2.png.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Resources\biome-lookup-gradient-3.png
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\biome-lookup-gradient-3.png
+          projectPath: Assets\Resources\biome-lookup-gradient-3.png
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Resources\biome-lookup-gradient-3.png.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\biome-lookup-gradient-3.png.meta
+          projectPath: Assets\Resources\biome-lookup-gradient-3.png.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Resources\biome-lookup-gradient-4.png
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\biome-lookup-gradient-4.png
+          projectPath: Assets\Resources\biome-lookup-gradient-4.png
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Resources\biome-lookup-gradient-4.png.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\biome-lookup-gradient-4.png.meta
+          projectPath: Assets\Resources\biome-lookup-gradient-4.png.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Resources\biome-lookup-gradient.png
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\biome-lookup-gradient.png
+          projectPath: Assets\Resources\biome-lookup-gradient.png
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Resources\biome-lookup-gradient.png.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\biome-lookup-gradient.png.meta
+          projectPath: Assets\Resources\biome-lookup-gradient.png.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Scenes\SampleScene.unity
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\SampleScene.unity
+          projectPath: Assets\Scenes\SampleScene.unity
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\Chunk.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Chunk.cs
+          projectPath: Assets\Vox3D\Engine\Chunk.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\GreedyVertexGenerationJob.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\GreedyVertexGenerationJob.cs
+          projectPath: Assets\Vox3D\Engine\GreedyVertexGenerationJob.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\HeightMap2D.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\HeightMap2D.cs
+          projectPath: Assets\Vox3D\Engine\HeightMap2D.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\VoxelGenerationJob.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\VoxelGenerationJob.cs
+          projectPath: Assets\Vox3D\Engine\VoxelGenerationJob.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Shaders\VoxelColorShader.shader
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Shaders\VoxelColorShader.shader
+          projectPath: Assets\Vox3D\Shaders\VoxelColorShader.shader
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Shaders\VoxelColorShader.shader.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Shaders\VoxelColorShader.shader.meta
+          projectPath: Assets\Vox3D\Shaders\VoxelColorShader.shader.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: UserSettings\Layouts\default-2022.dwlt
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\Layouts\default-2022.dwlt
+          projectPath: UserSettings\Layouts\default-2022.dwlt
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - commitID: 939dea45b8317c6b5f7d10dbf9369ac58b7fde20
+        mergeA: 
+        mergeB: 
+        authorName: Valus-gh
+        authorEmail: simone.belingheri25@gmail.com
+        commitEmail: simone.belingheri25@gmail.com
+        commitName: Valus-gh
+        summary: Added basic logic for biome lookup.
+        description: Added basic logic for biome lookup.
+        timeString: 2024-10-22T20:21:47.000+02:00
+        commitTimeString: 2024-10-22T20:21:47.000+02:00
+        changes:
+        - path: Assets\Demo\BasicWorldInitializer.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Demo\BasicWorldInitializer.cs
+          projectPath: Assets\Demo\BasicWorldInitializer.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Demo\SettingsGUI.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Demo\SettingsGUI.cs
+          projectPath: Assets\Demo\SettingsGUI.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Resources\DefaultMaterial.mat
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\DefaultMaterial.mat
+          projectPath: Assets\Resources\DefaultMaterial.mat
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Resources\biome-lookup-128x128.png
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\biome-lookup-128x128.png
+          projectPath: Assets\Resources\biome-lookup-128x128.png
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Resources\biome-lookup-128x128.png.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\biome-lookup-128x128.png.meta
+          projectPath: Assets\Resources\biome-lookup-128x128.png.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Scenes\SampleScene.unity
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\SampleScene.unity
+          projectPath: Assets\Scenes\SampleScene.unity
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\Chunk.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Chunk.cs
+          projectPath: Assets\Vox3D\Engine\Chunk.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\GreedyVertexGenerationJob.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\GreedyVertexGenerationJob.cs
+          projectPath: Assets\Vox3D\Engine\GreedyVertexGenerationJob.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\Vox3DProperties.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Vox3DProperties.cs
+          projectPath: Assets\Vox3D\Engine\Vox3DProperties.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\Voxel.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Voxel.cs
+          projectPath: Assets\Vox3D\Engine\Voxel.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\VoxelGenerationJob.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\VoxelGenerationJob.cs
+          projectPath: Assets\Vox3D\Engine\VoxelGenerationJob.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\World.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\World.cs
+          projectPath: Assets\Vox3D\Engine\World.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Shaders.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Shaders.meta
+          projectPath: Assets\Vox3D\Shaders.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: UserSettings\Layouts\default-2022.dwlt
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\Layouts\default-2022.dwlt
+          projectPath: UserSettings\Layouts\default-2022.dwlt
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - commitID: f508971b30c4d95a3886f45f06b0b615f6c7f591
+        mergeA: 
+        mergeB: 
+        authorName: Valus-gh
+        authorEmail: simone.belingheri25@gmail.com
+        commitEmail: simone.belingheri25@gmail.com
+        commitName: Valus-gh
+        summary: Added MoistureMap in world.
+        description: Added MoistureMap in world.
+        timeString: 2024-10-21T21:30:59.000+02:00
+        commitTimeString: 2024-10-21T21:30:59.000+02:00
+        changes:
+        - path: Assets\Demo\BasicWorldInitializer.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Demo\BasicWorldInitializer.cs
+          projectPath: Assets\Demo\BasicWorldInitializer.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\PriorityCallStack.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\PriorityCallStack.cs
+          projectPath: Assets\Vox3D\Engine\PriorityCallStack.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\Vox3DManager.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Vox3DManager.cs
+          projectPath: Assets\Vox3D\Engine\Vox3DManager.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\Vox3DProperties.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Vox3DProperties.cs
+          projectPath: Assets\Vox3D\Engine\Vox3DProperties.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\World.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\World.cs
+          projectPath: Assets\Vox3D\Engine\World.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - commitID: 21a6d14d9d93668de130f81e6fc934b03dfbf34e
+        mergeA: 
+        mergeB: 
+        authorName: Valus-gh
+        authorEmail: simone.belingheri25@gmail.com
+        commitEmail: simone.belingheri25@gmail.com
+        commitName: Valus-gh
+        summary: Added PriorityCallStack, Initializable. Refactored World class.
+        description: Added PriorityCallStack, Initializable. Refactored World class.
+        timeString: 2024-10-21T21:07:59.000+02:00
+        commitTimeString: 2024-10-21T21:07:59.000+02:00
+        changes:
+        - path: Assets\Demo\BasicWorldInitializer.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Demo\BasicWorldInitializer.cs
+          projectPath: Assets\Demo\BasicWorldInitializer.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Demo\SettingsGUI.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Demo\SettingsGUI.cs
+          projectPath: Assets\Demo\SettingsGUI.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Scenes\SampleScene.unity
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\SampleScene.unity
+          projectPath: Assets\Scenes\SampleScene.unity
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\Chunk.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Chunk.cs
+          projectPath: Assets\Vox3D\Engine\Chunk.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\GreedyVertexGenerationJob.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\GreedyVertexGenerationJob.cs
+          projectPath: Assets\Vox3D\Engine\GreedyVertexGenerationJob.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\IInitializable.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\IInitializable.cs
+          projectPath: Assets\Vox3D\Engine\IInitializable.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\IInitializable.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\IInitializable.cs.meta
+          projectPath: Assets\Vox3D\Engine\IInitializable.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\PriorityCallStack.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\PriorityCallStack.cs
+          projectPath: Assets\Vox3D\Engine\PriorityCallStack.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\PriorityCallStack.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\PriorityCallStack.cs.meta
+          projectPath: Assets\Vox3D\Engine\PriorityCallStack.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\Vox3DManager.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Vox3DManager.cs
+          projectPath: Assets\Vox3D\Engine\Vox3DManager.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\Vox3DManager.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Vox3DManager.cs.meta
+          projectPath: Assets\Vox3D\Engine\Vox3DManager.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\Vox3DProperties.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Vox3DProperties.cs
+          projectPath: Assets\Vox3D\Engine\Vox3DProperties.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\VoxelGenerationJob.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\VoxelGenerationJob.cs
+          projectPath: Assets\Vox3D\Engine\VoxelGenerationJob.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\World.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\World.cs
+          projectPath: Assets\Vox3D\Engine\World.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Noise\SimplexNoiseSource.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Noise\SimplexNoiseSource.cs
+          projectPath: Assets\Vox3D\Noise\SimplexNoiseSource.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: UserSettings\Layouts\default-2022.dwlt
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\Layouts\default-2022.dwlt
+          projectPath: UserSettings\Layouts\default-2022.dwlt
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - commitID: d31bd566770061a54f5e4cd28e498bfe94036504
+        mergeA: 
+        mergeB: 
+        authorName: Valus-gh
+        authorEmail: simone.belingheri25@gmail.com
+        commitEmail: simone.belingheri25@gmail.com
+        commitName: Valus-gh
+        summary: Used new parameters in Noise2D(). GUI not done yet.
+        description: Used new parameters in Noise2D(). GUI not done yet.
+        timeString: 2024-10-21T12:09:09.000+02:00
+        commitTimeString: 2024-10-21T12:09:09.000+02:00
+        changes:
+        - path: Assets\Demo\BasicWorldInitializer.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Demo\BasicWorldInitializer.cs
+          projectPath: Assets\Demo\BasicWorldInitializer.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Demo\SettingsGUI.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Demo\SettingsGUI.cs
+          projectPath: Assets\Demo\SettingsGUI.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Scenes\SampleScene.unity
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\SampleScene.unity
+          projectPath: Assets\Scenes\SampleScene.unity
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\VoxelGenerationJob.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\VoxelGenerationJob.cs
+          projectPath: Assets\Vox3D\Engine\VoxelGenerationJob.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Noise\PerlinProperties.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Noise\PerlinProperties.cs
+          projectPath: Assets\Vox3D\Noise\PerlinProperties.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Noise\Simplex\SimplexNoise.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Noise\Simplex\SimplexNoise.cs
+          projectPath: Assets\Vox3D\Noise\Simplex\SimplexNoise.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Noise\SimplexNoiseSource.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Noise\SimplexNoiseSource.cs
+          projectPath: Assets\Vox3D\Noise\SimplexNoiseSource.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: UserSettings\Layouts\default-2022.dwlt
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\Layouts\default-2022.dwlt
+          projectPath: UserSettings\Layouts\default-2022.dwlt
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - commitID: 99457f348db5c9c6604b507cdbb7ec6ad949b4df
+        mergeA: 
+        mergeB: 
+        authorName: Valus-gh
+        authorEmail: simone.belingheri25@gmail.com
+        commitEmail: simone.belingheri25@gmail.com
+        commitName: Valus-gh
+        summary: Updated Noise Generation, HeightMap.
+        description: Added PerlinProperties struct containing all that is necessary
+          to get a more realistic noise generation. Refactored UI.
+        timeString: 2024-10-21T01:31:26.000+02:00
+        commitTimeString: 2024-10-21T01:31:26.000+02:00
+        changes:
+        - path: Assets\Demo\BasicWorldInitializer.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Demo\BasicWorldInitializer.cs
+          projectPath: Assets\Demo\BasicWorldInitializer.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Demo\SettingsGUI.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Demo\SettingsGUI.cs
+          projectPath: Assets\Demo\SettingsGUI.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Scenes\SampleScene.unity
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\SampleScene.unity
+          projectPath: Assets\Scenes\SampleScene.unity
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\Chunk.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Chunk.cs
+          projectPath: Assets\Vox3D\Engine\Chunk.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\GreedyVertexGenerationJob.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\GreedyVertexGenerationJob.cs
+          projectPath: Assets\Vox3D\Engine\GreedyVertexGenerationJob.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\HeightMap2D.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\HeightMap2D.cs
+          projectPath: Assets\Vox3D\Engine\HeightMap2D.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\Vox3DProperties.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Vox3DProperties.cs
+          projectPath: Assets\Vox3D\Engine\Vox3DProperties.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\Voxel.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\Voxel.cs
+          projectPath: Assets\Vox3D\Engine\Voxel.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\VoxelGenerationJob.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\VoxelGenerationJob.cs
+          projectPath: Assets\Vox3D\Engine\VoxelGenerationJob.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Engine\World.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Engine\World.cs
+          projectPath: Assets\Vox3D\Engine\World.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Noise\PerlinProperties.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Noise\PerlinProperties.cs
+          projectPath: Assets\Vox3D\Noise\PerlinProperties.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Noise\PerlinProperties.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Noise\PerlinProperties.cs.meta
+          projectPath: Assets\Vox3D\Noise\PerlinProperties.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Noise\Simplex\SimplexNoise.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Noise\Simplex\SimplexNoise.cs
+          projectPath: Assets\Vox3D\Noise\Simplex\SimplexNoise.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Noise\SimplexNoiseSource.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Noise\SimplexNoiseSource.cs
+          projectPath: Assets\Vox3D\Noise\SimplexNoiseSource.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: UserSettings\Layouts\default-2022.dwlt
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\Layouts\default-2022.dwlt
+          projectPath: UserSettings\Layouts\default-2022.dwlt
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
       - commitID: dc5a6f2f9b39308fe9b64bb3f8d98f0df8dd5604
         mergeA: 
         mergeB: 
@@ -4128,13 +6310,13 @@ MonoBehaviour:
         gitFileStatus: 0
         lockedAt: 1 gen 0001, 01:00
     lastCurrentRemoteChangedEvent:
-      updatedTimeString: 2024-10-19T22:15:44.817+02:00
+      updatedTimeString: 2024-11-30T11:29:24.292+01:00
       cacheType: 1
     lastLocksChangedEvent:
-      updatedTimeString: 0001-01-01T00:00:00.000+00:00
+      updatedTimeString: 2024-11-30T11:28:32.310+01:00
       cacheType: 7
     lastStatusEntriesChangedEvent:
-      updatedTimeString: 0001-01-01T00:00:00.000+00:00
+      updatedTimeString: 2024-11-30T11:29:05.966+01:00
       cacheType: 6
     lockedFiles: []
     gitStatusEntries: []
@@ -4149,14 +6331,14 @@ MonoBehaviour:
       m_Tooltip: 
   hasRemote: 1
   currentRemoteName: origin
-  currentBranch: dev-water
+  currentBranch: dev
   currentRemoteUrl: https://github.com/Valus-gh/Vox3D
   statusAhead: 0
   statusBehind: 0
   hasItemsToCommit: 0
-  isTrackingRemoteBranch: 0
+  isTrackingRemoteBranch: 1
   currentBranchContent:
-    m_Text: dev-water
+    m_Text: dev
     m_Image: {fileID: 0}
     m_Tooltip: Active branch
   currentRemoteUrlContent:
@@ -4164,13 +6346,13 @@ MonoBehaviour:
     m_Image: {fileID: 0}
     m_Tooltip: Url of the origin remote
   lastCurrentBranchAndRemoteChangedEvent:
-    updatedTimeString: 2024-11-24T16:29:36.970+01:00
+    updatedTimeString: 2024-11-30T11:29:51.983+01:00
     cacheType: 1
   lastTrackingStatusChangedEvent:
-    updatedTimeString: 2024-11-24T16:54:29.926+01:00
+    updatedTimeString: 2024-11-30T11:29:24.601+01:00
     cacheType: 5
   lastStatusEntriesChangedEvent:
-    updatedTimeString: 2024-11-24T16:54:29.912+01:00
+    updatedTimeString: 2024-11-30T11:29:05.966+01:00
     cacheType: 6
   pullButtonContent:
     m_Text: Pull
@@ -4189,7 +6371,7 @@ MonoBehaviour:
     m_Image: {fileID: 0}
     m_Tooltip: 
   repositoryProgressValue: 1
-  repositoryProgressMessage: Pushed
+  repositoryProgressMessage: 
   appManagerProgressValue: 1
   appManagerProgressMessage: 
   primaryConnectionUsername: 
