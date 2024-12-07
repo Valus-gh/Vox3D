@@ -18,20 +18,20 @@ public class Projectile : MonoBehaviour
             Debug.LogWarning($"Projectle {name} has no RigidBody");
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void Aim()
     {
-        Quaternion lookTowardsTrajectory = Quaternion.LookRotation(new Vector3(_Trajectory.DirectionXZ.x, 0.0f, _Trajectory.DirectionXZ.y));
-        Quaternion angleRotation = Quaternion.AngleAxis(360.0f - _Trajectory.Angle, new Vector3(1.0f, 0.0f, 0.0f));
+        Quaternion lookTowardsTrajectory    = Quaternion.LookRotation(new Vector3(_Trajectory.DirectionXZ.x, 0.0f, _Trajectory.DirectionXZ.y));
+        Quaternion angleRotation            = Quaternion.AngleAxis(360.0f - _Trajectory.Angle, new Vector3(1.0f, 0.0f, 0.0f));
 
         transform.rotation = lookTowardsTrajectory * angleRotation;
     }
+    public void Aim(Trajectory trajectory)
+    {
+        Quaternion lookTowardsTrajectory    = Quaternion.LookRotation(new Vector3(trajectory.DirectionXZ.x, 0.0f, trajectory.DirectionXZ.y));
+        Quaternion angleRotation            = Quaternion.AngleAxis(360.0f - trajectory.Angle, new Vector3(1.0f, 0.0f, 0.0f));
 
+        transform.rotation = lookTowardsTrajectory * angleRotation;
+    }
     public void Fire()
     {
         if(_ProjectileBody is not null)

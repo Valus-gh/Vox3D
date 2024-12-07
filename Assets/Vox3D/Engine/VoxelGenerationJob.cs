@@ -44,8 +44,8 @@ namespace Vox3D
 
             Voxel.VoxelType type = Voxel.VoxelType.Air;
 
-            if (voxelWorldPosition.y <= elevation)          type = Voxel.VoxelType.Solid;
-            if (voxelWorldPosition.y <= WaterLevel * hMap.MaxHeight)   type = Voxel.VoxelType.Water;
+            if (voxelWorldPosition.y <= elevation)                      type = Voxel.VoxelType.Solid;
+            if (voxelWorldPosition.y <= WaterLevel * hMap.MaxHeight)    type = Voxel.VoxelType.Water;
 
             // Set voxel properties
             Voxels[index] = new Voxel(type, voxelWorldPosition, type != Voxel.VoxelType.Air, voxelColor);

@@ -15,6 +15,7 @@ namespace Demo
         // TODO Separate job start and job end.
         private Vox3DProperties properties;
         private World world;
+        public GameObject tower;
 
         // Start is called before the first frame update
         void Start()
@@ -59,6 +60,12 @@ namespace Demo
             manager.World.PopulateWorld();
             manager.World.PopulateChunks();
             PriorityCallStack.Instance().Push(() => manager.World.GenerateGeometry(), 60);
+            
+            PriorityCallStack.Instance().Push(() => {
+                List<Vector3> locations = new List<Vector3>();
+                locations = TowerLocator.GenerateTowerLocations(manager.World, 4);
+                locations.ForEach((l) => Instantiate(tower, l, Quaternion.identity, this.transform));
+            }, 300);
 
         }
 
