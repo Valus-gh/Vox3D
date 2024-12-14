@@ -1,4 +1,4 @@
-Shader "Custom/VoxelColorShader"
+Shader "Vox3D/VoxelColorShader"
 {
     Properties
     {

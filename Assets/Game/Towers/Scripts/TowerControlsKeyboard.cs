@@ -16,7 +16,7 @@ public class TowerControlsKeyboard : MonoBehaviour
         {
             _TowerTrajectory.DirectionXZ = Vector3.one;
             _TowerTrajectory.Angle = 45.0f;
-            _TowerTrajectory.Speed = 50.0f;
+            _TowerTrajectory.Speed = 30.0f;
 
             Projectile.Trajectory = _TowerTrajectory;
         }
@@ -40,25 +40,25 @@ public class TowerControlsKeyboard : MonoBehaviour
             }
         }
 
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.Keypad6))
         {
             transform.Rotate(new Vector3(0.0f, 1.0f * 0.5f,  0.0f));
             _TowerTrajectory.DirectionXZ = new Vector2(transform.right.x, transform.right.z);
         }
 
-        if (Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.Keypad4))
         {
             transform.Rotate(new Vector3(0.0f, -1.0f * 0.5f, 0.0f));
             _TowerTrajectory.DirectionXZ = new Vector2(transform.right.x, transform.right.z);
         }
 
-        if (Input.GetKey(KeyCode.UpArrow))
+        if (Input.GetKey(KeyCode.Keypad8))
         {
             _TowerTrajectory.Angle += 1.0f * 0.5f;
             Debug.Log(_TowerTrajectory.Angle);
         }
 
-        if (Input.GetKey(KeyCode.DownArrow))
+        if (Input.GetKey(KeyCode.Keypad2))
         {
             _TowerTrajectory.Angle -= 1.0f * 0.5f;
             Debug.Log(_TowerTrajectory.Angle);

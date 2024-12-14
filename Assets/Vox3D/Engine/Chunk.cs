@@ -169,10 +169,10 @@ namespace Vox3D
             if (mesh is null) mesh = new Mesh();
 
             mesh.Clear();
-            mesh.vertices       = Vertices.ToArray();
-            mesh.triangles      = Indices.ToArray();
-            mesh.uv             = Uvs.ToArray();
-            mesh.colors32       = Colors.ToArray();
+            mesh.SetVertices(Vertices);
+            mesh.SetTriangles(Indices, 0);
+            mesh.SetUVs(0, Uvs);
+            mesh.SetColors(Colors);
 
             mesh.RecalculateNormals();
 
