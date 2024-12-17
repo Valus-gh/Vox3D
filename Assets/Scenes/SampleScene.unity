@@ -156,7 +156,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tower: {fileID: 8830847873192687137, guid: 63bb630879d2dbc4c8f6034be9e1d85f, type: 3}
   material: {fileID: 2100000, guid: 0e5e7e227adfa224388331084037a9b6, type: 2}
-  FowManager: {fileID: 6873540978994564944, guid: 559b1d5f85ddf684785f8c2d60b5c6ec, type: 3}
+  fowManager: {fileID: 6873540978994564944, guid: 559b1d5f85ddf684785f8c2d60b5c6ec, type: 3}
 --- !u!4 &421704384
 Transform:
   m_ObjectHideFlags: 0

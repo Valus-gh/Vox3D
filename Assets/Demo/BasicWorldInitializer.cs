@@ -17,7 +17,8 @@ namespace Demo
         private World world;
         public GameObject tower;
         public Material material;
-        public GameObject FowManager;
+        public GameObject fowManager;
+
 
         // Start is called before the first frame update
         void Start()
@@ -79,23 +80,19 @@ namespace Demo
             //######################## INSTANTIATE FOG ########################//
 
             PriorityCallStack.Instance().Push(() => {
-                var fog = FowManager.GetComponent<FischlWorks_FogWar.csFogWar>();
 
-                var midPointPosition = (manager.World.WorldSize * manager.World.ChunkSize * manager.World.VoxelSize) / 2.0f;
-                fog._LevelMidPoint.transform.position = manager.World.transform.position + new Vector3(midPointPosition, 0.0f, midPointPosition);
+                var fow = Instantiate(fowManager);
+                fow.GetComponent<FischlWorks_FogWar.csFogWar>().AddFogRevealer(new FischlWorks_FogWar.csFogWar.FogRevealer(GameObject.Find("Tower_Simple").transform, 50, true));
 
-                var projector = fog.GetComponentInChildren<Projector>();
-                projector.transform.position = new Vector3(0.0f, manager.World.HeightMap.MaxHeight * manager.World.VoxelSize, 0.0f);
-                projector.orthographicSize = midPointPosition * 2.0f;
+                var fowInstance = fow.GetComponent<FowManager>();
 
-                var fogManager = Instantiate(FowManager);
+                foreach(Chunk c in manager.World.Chunks.Values)
+                {
+                    fowInstance.ApplyToChunk(c);
+                }
 
-                fogManager.GetComponentInChildren<FischlWorks_FogWar.csFogWar>().AddFogRevealer(new FischlWorks_FogWar.csFogWar.FogRevealer(GameObject.Find("Tower_Simple").transform, 50, true));
+            }, 350);
 
-            }, 400);
-
-
-            
             //######################## INSTANTIATE FOG ########################//
 
         }

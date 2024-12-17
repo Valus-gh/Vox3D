@@ -264,6 +264,7 @@ namespace FischlWorks_FogWar
 
         public LevelData levelData { get; private set; } = new LevelData();
         public Texture2D FogPlaneTextureLerpTarget { get => fogPlaneTextureLerpTarget; set => fogPlaneTextureLerpTarget = value; }
+        public Texture2D FogPlaneTextureLerpBuffer { get => fogPlaneTextureLerpBuffer; set => fogPlaneTextureLerpBuffer = value; }
 
         // The primitive plane which will act as a mesh for rendering the fog with
         private GameObject fogPlane = null;
@@ -377,6 +378,8 @@ namespace FischlWorks_FogWar
         {
             fogPlane = GameObject.CreatePrimitive(PrimitiveType.Plane);
 
+            fogPlane.SetActive(false);
+
             fogPlane.name = "[RUNTIME] Fog_Plane";
 
             fogPlane.transform.position = new Vector3(
@@ -390,15 +393,15 @@ namespace FischlWorks_FogWar
                 (levelDimensionY * unitScale) / 10.0f);
 
             FogPlaneTextureLerpTarget = new Texture2D(levelDimensionX, levelDimensionY);
-            fogPlaneTextureLerpBuffer = new Texture2D(levelDimensionX, levelDimensionY);
+            FogPlaneTextureLerpBuffer = new Texture2D(levelDimensionX, levelDimensionY);
 
-            fogPlaneTextureLerpBuffer.wrapMode = TextureWrapMode.Clamp;
+            FogPlaneTextureLerpBuffer.wrapMode = TextureWrapMode.Clamp;
 
-            fogPlaneTextureLerpBuffer.filterMode = FilterMode.Bilinear;
+            FogPlaneTextureLerpBuffer.filterMode = FilterMode.Bilinear;
 
             fogPlane.GetComponent<MeshRenderer>().material = new Material(fogPlaneMaterial);
 
-            fogPlane.GetComponent<MeshRenderer>().material.SetTexture("_MainTex", fogPlaneTextureLerpBuffer);
+            fogPlane.GetComponent<MeshRenderer>().material.SetTexture("_MainTex", FogPlaneTextureLerpBuffer);
 
             fogPlane.GetComponent<MeshCollider>().enabled = false;
         }
@@ -409,7 +412,7 @@ namespace FischlWorks_FogWar
         {
             UpdateFogField();
 
-            Graphics.CopyTexture(FogPlaneTextureLerpTarget, fogPlaneTextureLerpBuffer);
+            Graphics.CopyTexture(FogPlaneTextureLerpTarget, FogPlaneTextureLerpBuffer);
         }
 
 
@@ -483,7 +486,7 @@ namespace FischlWorks_FogWar
         // Doing shader business on the script, if we pull this out as a shader pass, same operations must be repeated
         private void UpdateFogPlaneTextureBuffer()
         {
-            Color[] bufferPixels = fogPlaneTextureLerpBuffer.GetPixels();
+            Color[] bufferPixels = FogPlaneTextureLerpBuffer.GetPixels();
             Color[] targetPixels = FogPlaneTextureLerpTarget.GetPixels();
 
             if (bufferPixels.Length != targetPixels.Length)
@@ -497,9 +500,9 @@ namespace FischlWorks_FogWar
                 bufferPixels[i] = Color.Lerp(bufferPixels[i], targetPixels[i], fogLerpSpeed * Time.deltaTime);
             }
             
-            fogPlaneTextureLerpBuffer.SetPixels(bufferPixels);
+            FogPlaneTextureLerpBuffer.SetPixels(bufferPixels);
 
-            fogPlaneTextureLerpBuffer.Apply();
+            FogPlaneTextureLerpBuffer.Apply();
         }
 
 

@@ -1,70 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3514626927628239794
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4393746132789544377}
-  - component: {fileID: 2691829948576320089}
-  - component: {fileID: 3552809592784089511}
-  m_Layer: 0
-  m_Name: FoWProjector
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4393746132789544377
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3514626927628239794}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 100, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 5223040587361897456}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!119 &2691829948576320089
-Projector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3514626927628239794}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_NearClipPlane: 0.1
-  m_FarClipPlane: 500
-  m_FieldOfView: 45
-  m_AspectRatio: 1
-  m_Orthographic: 1
-  m_OrthographicSize: 256
-  m_Material: {fileID: 0}
-  m_IgnoreLayers:
-    serializedVersion: 2
-    m_Bits: 119
---- !u!114 &3552809592784089511
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3514626927628239794}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71b34dcd25b77b4419a44f7e7a2d4958, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  projector: {fileID: 2691829948576320089}
 --- !u!1 &6873540978994564944
 GameObject:
   m_ObjectHideFlags: 0
@@ -75,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5223040587361897456}
   - component: {fileID: 814747630190439377}
+  - component: {fileID: 3921236805498920749}
   m_Layer: 0
   m_Name: FoWManager
   m_TagString: Untagged
@@ -94,8 +30,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 4393746132789544377}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &814747630190439377
@@ -116,7 +51,7 @@ MonoBehaviour:
   fogPlaneHeight: 1
   fogPlaneMaterial: {fileID: 2100000, guid: 36b93ac6fcf129c449491654e397fe4a, type: 2}
   fogColor: {r: 0.019607844, g: 0.05882353, b: 0.09803922, a: 1}
-  fogPlaneAlpha: 1
+  fogPlaneAlpha: 0.78
   fogLerpSpeed: 2.5
   keepRevealedTiles: 1
   revealedTileOpacity: 0.5
@@ -137,3 +72,18 @@ MonoBehaviour:
   ignoreTriggers: 1
   drawGizmos: 0
   LogOutOfRange: 0
+--- !u!114 &3921236805498920749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6873540978994564944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2bf1fcf2ac73ac4f9e8d6d91f7c1b39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Fog: {fileID: 814747630190439377}
+  FogTexture: {fileID: 0}
+  FogVertexColorMaterial: {fileID: 2100000, guid: 001f7680465462b45a98f4c099ce7e57, type: 2}

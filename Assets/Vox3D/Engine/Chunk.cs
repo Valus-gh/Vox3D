@@ -176,7 +176,7 @@ namespace Vox3D
 
             mesh.RecalculateNormals();
 
-            MeshFilter.mesh     = mesh;
+            MeshFilter.mesh = mesh;
 
             if (mesh.vertices.Length > 0) MeshCollider.sharedMesh = mesh;
 
