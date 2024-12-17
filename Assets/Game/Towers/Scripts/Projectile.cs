@@ -1,22 +1,20 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody))]
+[RequireComponent(typeof(Blast))]
 public class Projectile : MonoBehaviour
 {
     [SerializeReference]
     private Rigidbody   _ProjectileBody; 
+
+    [SerializeReference]
+    private Blast       _Blast;
+
     private Trajectory  _Trajectory;
 
     public Rigidbody    ProjectileBody { get => _ProjectileBody; set => _ProjectileBody = value; }
     public Trajectory   Trajectory { get => _Trajectory; set => _Trajectory = value; }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        if (_ProjectileBody is null)
-            Debug.LogWarning($"Projectle {name} has no RigidBody");
-    }
+    public Blast        Blast { get => _Blast; set => _Blast = value; }
 
     public void Aim()
     {
@@ -39,4 +37,9 @@ public class Projectile : MonoBehaviour
             _ProjectileBody.velocity = _Trajectory.Speed * transform.forward;
         }
     }
+    public void OnCollisionEnter(Collision collision)
+    {
+        Blast.Trigger(collision);
+    }
+
 }

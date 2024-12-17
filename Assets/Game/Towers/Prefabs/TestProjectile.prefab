@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6073918316147373659}
   - component: {fileID: 6194175346381814970}
   - component: {fileID: 5691520044650881529}
+  - component: {fileID: 2850351601065030233}
   - component: {fileID: 4139354093846511397}
   - component: {fileID: 4696604930209983687}
   m_Layer: 0
@@ -135,6 +136,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &2850351601065030233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730608478589156964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 167179bf5992df1488528f1ab302a92d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &4139354093846511397
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -148,6 +161,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ProjectileBody: {fileID: 5691520044650881529}
+  _Blast: {fileID: 0}
 --- !u!114 &4696604930209983687
 MonoBehaviour:
   m_ObjectHideFlags: 0
