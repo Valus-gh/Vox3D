@@ -117,6 +117,7 @@ namespace Vox3D
                         chunk.Colors        = new List<Color32>();
 
                         chunk.tag           = "Chunk";
+                        chunk.MeshRenderer.material = Vox3DManager.Instance().Properties.VoxelDefaultMaterial;
 
                         Chunks.Add(chunkPosition, chunk);
 

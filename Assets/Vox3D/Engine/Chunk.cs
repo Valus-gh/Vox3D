@@ -180,8 +180,6 @@ namespace Vox3D
 
             if (mesh.vertices.Length > 0) MeshCollider.sharedMesh = mesh;
 
-            MeshRenderer.material = Vox3DManager.Instance().Properties.VoxelDefaultMaterial;
-
             facesTop.Dispose();
             facesBottom.Dispose();
             facesLeft.Dispose();
@@ -247,10 +245,6 @@ namespace Vox3D
                 {
                     Debug.Log($"CHUNK {name} - COLLISION AT POINT: {point.point}");
                 }
-
-                // Call ChunkCollisionHandler
-                
-
             }
 
 

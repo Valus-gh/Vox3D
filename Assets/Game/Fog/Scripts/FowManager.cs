@@ -31,6 +31,8 @@ public class FowManager : MonoBehaviour
         var midPointPosition = (manager.World.WorldSize * manager.World.ChunkSize * manager.World.VoxelSize) / 2.0f;
         Fog._LevelMidPoint.transform.position = manager.World.transform.position + new Vector3(midPointPosition, 0.0f, midPointPosition);
 
+        Fog.unitScale = manager.World.VoxelSize;
+
     }
 
     // Update is called once per frame

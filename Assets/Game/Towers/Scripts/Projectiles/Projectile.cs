@@ -1,20 +1,22 @@
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
-[RequireComponent(typeof(Blast))]
 public class Projectile : MonoBehaviour
 {
     [SerializeReference]
-    private Rigidbody   _ProjectileBody; 
-
-    [SerializeReference]
-    private Blast       _Blast;
+    private Rigidbody   _ProjectileBody;
 
     private Trajectory  _Trajectory;
+    private Blast       _Blast;
 
     public Rigidbody    ProjectileBody { get => _ProjectileBody; set => _ProjectileBody = value; }
     public Trajectory   Trajectory { get => _Trajectory; set => _Trajectory = value; }
     public Blast        Blast { get => _Blast; set => _Blast = value; }
+
+    public void Start()
+    {
+        _Blast = new BasicBlast(5, 2);
+    }
 
     public void Aim()
     {
@@ -29,6 +31,8 @@ public class Projectile : MonoBehaviour
         Quaternion angleRotation            = Quaternion.AngleAxis(360.0f - trajectory.Angle, new Vector3(1.0f, 0.0f, 0.0f));
 
         transform.rotation = lookTowardsTrajectory * angleRotation;
+
+        _Trajectory = trajectory;
     }
     public void Fire()
     {
@@ -39,7 +43,8 @@ public class Projectile : MonoBehaviour
     }
     public void OnCollisionEnter(Collision collision)
     {
-        Blast.Trigger(collision);
+        _Blast.Trigger(collision);
+        Destroy(gameObject);
     }
 
 }

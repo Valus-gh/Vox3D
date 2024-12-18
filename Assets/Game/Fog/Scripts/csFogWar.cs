@@ -240,7 +240,7 @@ namespace FischlWorks_FogWar
         [Tooltip("If you need more than 128 units, consider using raycasting-based fog modules instead.")]
         private int levelDimensionY = 11;
         [SerializeField]
-        private float unitScale = 1;
+        public float unitScale = 1;
         public float _UnitScale => unitScale;
         [SerializeField]
         private float scanSpacingPerUnit = 0.25f;

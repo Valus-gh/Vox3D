@@ -29,13 +29,13 @@ namespace Vox3D {
         /// <param name="radiusOffset"></param>
         public void CollisionSphere(Vector3 point, float radius, float radiusOffset)
         {
-
-            // Add water collision check
+            // TODO Add water collision check
 
             // Explosion radius sphere
             Collider[] innerColliders = Physics.OverlapSphere(point, radius, LayerMask.GetMask("ChunkDestructionLayer"));
 
-            if (innerColliders.Length == 0) return;
+            if (innerColliders.Length == 0) 
+                return;
 
             // Voxel creation sphere
             Collider[] outerColliders = Physics.OverlapSphere(point, radius + radiusOffset, LayerMask.GetMask("ChunkDestructionLayer"));
@@ -125,7 +125,7 @@ namespace Vox3D {
         /// <summary>
         /// Checks the given chunk's voxels against a sphere passed as a center and a point.
         /// The voxels which have their centroid within the sphere have their index added to the returned list.
-        /// Given that voxels are structs and are passed by values, we return the chunk's ID and the voxel indices, rather than copies of the objects.
+        /// Given that voxels are structs and are passed by values, we return the chunk's ID and the voxel indices, rather than the voxels themselves.
         /// </summary>
         /// <param name="chunk"></param>
         /// <param name="point"></param>
@@ -139,9 +139,9 @@ namespace Vox3D {
             // Find the extremes of the sphere
             var impactPointChunkSpace = chunk.transform.InverseTransformPoint(point);
 
-            Vector2 xBounds = new Vector2(Mathf.Floor(impactPointChunkSpace.x - radius), Mathf.Ceil(impactPointChunkSpace.x + radius));
-            Vector2 yBounds = new Vector2(Mathf.Floor(impactPointChunkSpace.y - radius), Mathf.Ceil(impactPointChunkSpace.y + radius));
-            Vector2 zBounds = new Vector2(Mathf.Floor(impactPointChunkSpace.z - radius), Mathf.Ceil(impactPointChunkSpace.z + radius));
+            Vector2 xBounds = new Vector2(Mathf.Floor(impactPointChunkSpace.x - radius), Mathf.Ceil(impactPointChunkSpace.x + radius)) / chunk.VoxelSize;
+            Vector2 yBounds = new Vector2(Mathf.Floor(impactPointChunkSpace.y - radius), Mathf.Ceil(impactPointChunkSpace.y + radius)) / chunk.VoxelSize;
+            Vector2 zBounds = new Vector2(Mathf.Floor(impactPointChunkSpace.z - radius), Mathf.Ceil(impactPointChunkSpace.z + radius)) / chunk.VoxelSize;
 
             // Clamp extremes to the chunk's size
 
@@ -155,7 +155,7 @@ namespace Vox3D {
             if (zBounds.y > chunk.ChunkSize)    zBounds.y = chunk.ChunkSize;
 
             // Identify voxels within explosion "bounding box", and check if they are within the explosion radius.
-            for(int x = (int)xBounds.x; x < xBounds.y; x++)
+            for (int x = (int)xBounds.x; x < xBounds.y; x++)
             {
                 for(int y = (int)yBounds.x; y < yBounds.y; y++)
                 {
@@ -170,11 +170,8 @@ namespace Vox3D {
                 }
             }
 
-            Debug.Log($"Chunk {chunk.name} has {impactedVoxels.Count} impacted voxels:");
-
             return impactedVoxels;
         }
-
 
     }
 
