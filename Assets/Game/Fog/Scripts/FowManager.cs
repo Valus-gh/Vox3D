@@ -14,6 +14,8 @@ public class FowManager : MonoBehaviour
     public Texture2D    FogTexture;
     public Material     FogVertexColorMaterial;
 
+    public List<csFogWar.FogRevealer> FogRevealers;
+
     // Start is called before the first frame update
     void Start()
     {

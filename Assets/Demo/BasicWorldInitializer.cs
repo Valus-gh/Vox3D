@@ -71,7 +71,7 @@ namespace Demo
             
             PriorityCallStack.Instance().Push(() => {
                 List<Vector3> locations = new List<Vector3>();
-                locations = TowerLocator.GenerateTowerLocations(manager.World, 1);
+                locations = TowerLocator.GenerateTowerLocations(manager.World, 4);
                 locations.ForEach((l) => Instantiate(tower, l, Quaternion.identity, this.transform));
             }, 300);
 
@@ -82,7 +82,7 @@ namespace Demo
             PriorityCallStack.Instance().Push(() => {
 
                 var fow = Instantiate(fowManager);
-                fow.GetComponent<FischlWorks_FogWar.csFogWar>().AddFogRevealer(new FischlWorks_FogWar.csFogWar.FogRevealer(GameObject.Find("Tower_Simple").transform, 50, true));
+                fow.GetComponent<FischlWorks_FogWar.csFogWar>().AddFogRevealer(new FischlWorks_FogWar.csFogWar.FogRevealer(GameObject.Find("Tower_Simple").transform, 15, true));
 
                 var fowInstance = fow.GetComponent<FowManager>();
 
@@ -90,6 +90,8 @@ namespace Demo
                 {
                     fowInstance.ApplyToChunk(c);
                 }
+
+                GetComponent<FindProjectiles>().Fow = fow.GetComponent<FischlWorks_FogWar.csFogWar>();
 
             }, 350);
 

@@ -7,6 +7,8 @@ public class TowerControlsKeyboard : MonoBehaviour
     public Projectile    Projectile;
     private Trajectory  _TowerTrajectory;
 
+    public KeyCode fireCode = KeyCode.Space;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +27,7 @@ public class TowerControlsKeyboard : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(fireCode))
         {
             if (Projectile is not null) { 
 
