@@ -10,7 +10,7 @@ namespace Vox3D {
     public class Vox3DManager
     {
 
-        private static Vox3DManager _Instance;
+        /*private static Vox3DManager _Instance;
         public static Vox3DManager Instance()
         {
             if (_Instance is null)
@@ -36,11 +36,12 @@ namespace Vox3D {
 
             GameObject worldObject  = new GameObject($"World_{properties.WorldSize}_{properties.ChunkSize}_{properties.VoxelSize}");
             World world             = worldObject.AddComponent<World>();
+            world.ID                = System.Guid.NewGuid().ToString();
 
             if (world.TryInitialize()) return world;
 
             return null;
-        }
+        }*/
 
     }
 

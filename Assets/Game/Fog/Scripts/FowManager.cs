@@ -15,7 +15,7 @@ public class FowManager : MonoBehaviour
     public Material     FogVertexColorMaterial;
 
     // Start is called before the first frame update
-    void Start()
+    /*void Start()
     {
         Fog         = GetComponent<csFogWar>();
         FogTexture  = Fog.FogPlaneTextureLerpTarget;
@@ -48,5 +48,5 @@ public class FowManager : MonoBehaviour
         chunk.MeshRenderer.material = FogVertexColorMaterial;
         chunk.MeshFilter.sharedMesh.SetColors(colors);
     }
-
+    */
 }

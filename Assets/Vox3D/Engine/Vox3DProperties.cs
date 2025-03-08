@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Noise;
 
 namespace Vox3D
 {
@@ -22,6 +23,9 @@ namespace Vox3D
         private Material    _VoxelDefaultMaterial;
         private Texture2D   _BiomeLookupTexture;
         private float       _WaterLevel;
+
+        private SimplexNoiseSource _HNoiseSource;
+        private SimplexNoiseSource _MNoiseSource;
         public Vox3DProperties()
         {
 
@@ -38,6 +42,8 @@ namespace Vox3D
         public Material VoxelDefaultMaterial    { get => _VoxelDefaultMaterial; set => _VoxelDefaultMaterial = value; }
         public Texture2D BiomeLookupTexture     { get => _BiomeLookupTexture; set => _BiomeLookupTexture = value; }
         public float WaterLevel                 { get => _WaterLevel; set => _WaterLevel = value; }
+        public SimplexNoiseSource HNoiseSource  { get => _HNoiseSource; set => _HNoiseSource = value; }
+        public SimplexNoiseSource MNoiseSource  { get => _MNoiseSource; set => _MNoiseSource = value; }
 
         public void LoadFromXML(string pathToXml)
         {

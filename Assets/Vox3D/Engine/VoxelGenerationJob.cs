@@ -1,11 +1,14 @@
 using UnityEngine;
 using Unity.Jobs;
 using Unity.Collections;
+using System.Text;
 
 namespace Vox3D
 {
     public struct VoxelGenerationJob : IJobParallelFor
     {
+        public NativeArray<byte> WorldID;
+
         [ReadOnly]
         public NativeArray<Color32>     BiomeTexture;
         public int                      TextureWidth;
@@ -27,8 +30,18 @@ namespace Vox3D
             Vector3 voxelWorldPositionNoSize    = (ChunkPosition / VoxelSize) + new Vector3(x, y, z);
 
             // Calculate noise
-            var hMap = Vox3DManager.Instance().World.HeightMap;
-            var mMap = Vox3DManager.Instance().World.MoistureMap;
+
+            var world = Vox3DEngine.GetWorld(Encoding.ASCII.GetString(WorldID));
+
+            if(world is null)
+            {
+                Debug.LogError($"World {WorldID} could not be found. Voxel Generation failed.");
+                return;
+            }
+
+            //TODO GET WORLD BY USING WORLDID
+            var hMap = world.HeightMap;
+            var mMap = world.MoistureMap;
 
             float hNoise = hMap.ValueAt(voxelWorldPositionNoSize.x, voxelWorldPositionNoSize.z);
             float mNoise = mMap.ValueAt(voxelWorldPositionNoSize.x, voxelWorldPositionNoSize.z);

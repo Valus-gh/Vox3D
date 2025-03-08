@@ -11,7 +11,7 @@ public class TowerLocator
         List<Vector3> locations     = new List<Vector3>();
         List<Vector3> usedChunks    = new List<Vector3>();
 
-        if (world is null || !world.Initialized) 
+        if (world is null) 
             return null;
 
         var chunks  = world.Chunks;
@@ -25,7 +25,7 @@ public class TowerLocator
 
             do {
 
-                chunkIndex = RandomChunk(chunks, world.WorldSize, world.ChunkSize, world.VoxelSize);
+                chunkIndex = RandomChunk(chunks, world.Properties.WorldSize, world.Properties.ChunkSize, world.Properties.VoxelSize);
 
             } while (usedChunks.Contains(chunkIndex));
 
@@ -41,12 +41,12 @@ public class TowerLocator
                 continue;
             }
             
-            locations.Add(chunkIndex + (voxelIndex * world.VoxelSize));
+            locations.Add(chunkIndex + (voxelIndex * world.Properties.VoxelSize));
             
         }
 
         Debug.Log("Chunks:");
-        usedChunks.ForEach(x => Debug.Log(x / world.ChunkSize));
+        usedChunks.ForEach(x => Debug.Log(x / world.Properties.ChunkSize));
         Debug.Log("Voxels:");
         locations.ForEach(x => Debug.Log(x));
 

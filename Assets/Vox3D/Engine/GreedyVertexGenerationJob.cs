@@ -1,10 +1,12 @@
 using System.Collections;
+using System.Text;
 using Unity.Collections;
 using Unity.Jobs;
 using UnityEngine;
 
 namespace Vox3D
 {
+
     /// <summary>
     /// Execute parallelizes the generation of mesh vertices for all voxels in a chunk
     /// Each thread instance has a set range of voxels it works on.
@@ -14,6 +16,11 @@ namespace Vox3D
     /// </summary>
     public struct GreedyVertexGeneratorJob : IJobParallelFor
     {
+        public NativeArray<byte>                WorldID;
+
+        public int                              ChunkSize;
+        public int                              VoxelSize;
+
         [ReadOnly]
         public NativeArray<(Vector3, Voxel)>    Voxels;
 
@@ -89,7 +96,7 @@ namespace Vox3D
         /// <returns></returns>
         private bool IsFaceVisibleInChunk(int x, int y, int z)
         {
-            var chunkSize = Vox3DManager.Instance().Properties.ChunkSize;
+            var chunkSize = ChunkSize;
 
             if (x < 0 || x >= chunkSize
                 || y < 0 || y >= chunkSize
@@ -112,20 +119,28 @@ namespace Vox3D
         /// <returns></returns>
         private bool IsFaceVisibleInWorld(int x, int y, int z)
         {
-            var manager = Vox3DManager.Instance();
-
             // Position of the adjacent voxel in world space. Takes into consideration the size of the voxels.
-            Vector3 voxelWorldPosition = Chunk + (new Vector3(x, y, z) * manager.Properties.VoxelSize);
+            Vector3 voxelWorldPosition = Chunk + (new Vector3(x, y, z) * VoxelSize);
 
-            Chunk neighbor = manager.World.GetChunkAt(voxelWorldPosition);
+            //TODO SEARCH VOX3DENGINE FOR THE WORLD CORRESPONDING TO WorldID
+
+            var world = Vox3DEngine.GetWorld(Encoding.ASCII.GetString(WorldID));
+
+            if (world is null)
+            {
+                Debug.LogError($"World {WorldID} could not be found. Voxel Generation failed.");
+                return false;
+            }
+
+            Chunk neighbor = world.GetChunkAt(voxelWorldPosition);
 
             // If there is no neighbor in this direction, the face is visible
             if (neighbor is null) return true;
 
             // If there is a neighbor, check whether the adjacent voxel within it is active
 
-            var voxelSize = manager.Properties.VoxelSize;
-            var chunkSize = manager.Properties.ChunkSize;
+            var voxelSize = VoxelSize;
+            var chunkSize = ChunkSize;
 
             // This operation is done in GetChunkAt(), but needs to be repeated as we dont have access to Transforms
             // in threads other then the Main thread handled by Unity.
@@ -163,7 +178,7 @@ namespace Vox3D
         /// <param name="voxelIndex"></param>
         private void GenerateFace(int x, int y, int z, int faceIndex, int voxelIndex)
         {
-            var voxelSize = Vox3DManager.Instance().Properties.VoxelSize;
+            var voxelSize = VoxelSize;
             x *= voxelSize;
             y *= voxelSize;
             z *= voxelSize;

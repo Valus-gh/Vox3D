@@ -3,11 +3,14 @@ using Unity.Collections;
 using UnityEngine;
 using Unity.Jobs;
 using Vox3D.Parallel;
+using System.Text;
 
 namespace Vox3D
 {
     public class Chunk : MonoBehaviour
     {
+        private World           _ParentWorld;
+
         private int             _ChunkSize;     // Property taken from WorldProperties. We save it locally to avoid continuous Instance calls
         private int             _VoxelSize;     // Property taken from WorldProperties. We save it locally to avoid continuous Instance calls
         private Voxel[,,]       _Voxels;        // Voxels within this chunk. These are only Voxel objects, no geometry
@@ -34,15 +37,15 @@ namespace Vox3D
         public MeshRenderer MeshRenderer                { get => _MeshRenderer; set => _MeshRenderer = value; }
         public List<Color32> Colors                     { get => _Colors; set => _Colors = value; }
         public MeshCollider ChunkDestructionCollider    { get => _ChunkDestructionCollider; set => _ChunkDestructionCollider = value; }
+        public World ParentWorld                        { get => _ParentWorld; set => _ParentWorld = value; }
 
         public void PopulateChunk()
         {
             // If the chunk is above the world's maximum height, there is no need to keep it in memory
-            if(transform.position.y > Vox3DManager.Instance().World.HeightMap.MaxHeight)
+            if(transform.position.y > ParentWorld.HeightMap.MaxHeight)
             {
-
                 //Debug.Log($"Chunk out of Elevation bounds. Chunk {name} will be removed from world.");
-                Vox3DManager.Instance().World.DeleteChunk(this);
+                ParentWorld.DeleteChunk(this);
                 PurgeChunk();
                 return;
             }
@@ -77,8 +80,14 @@ namespace Vox3D
                 }
             }
 
+            var idBytes = Encoding.ASCII.GetBytes(ParentWorld.ID);
+            var idArray = new NativeArray<byte>(idBytes, Allocator.TempJob);
+
             var job = new GreedyVertexGeneratorJob
             {
+                WorldID         = idArray,
+                ChunkSize       = ChunkSize,
+                VoxelSize       = VoxelSize,
                 Voxels          = voxelsData,
                 FacesTop        = facesTop,
                 FacesBottom     = facesBottom,
@@ -187,7 +196,7 @@ namespace Vox3D
             facesFront.Dispose();
             facesBack.Dispose();
             voxelsData.Dispose();
-
+            idArray.Dispose();
         }
 
         public void PurgeChunk()
@@ -198,21 +207,22 @@ namespace Vox3D
             Uvs.Clear();
         }
 
-        public static Mesh DefaultChunkColliderMesh(int chunkSize)
+        public static Mesh DefaultChunkColliderMesh(Vox3DProperties properties)
         {
             Mesh mesh = new Mesh();
 
-            int VoxelSize = Vox3DManager.Instance().Properties.VoxelSize;
+            int ChunkSize = properties.ChunkSize;
+            int VoxelSize = properties.VoxelSize;
 
             Vector3[] vertices = {
-                new Vector3 (0, 0, 0) * chunkSize * VoxelSize,
-                new Vector3 (1, 0, 0) * chunkSize * VoxelSize,
-                new Vector3 (1, 1, 0) * chunkSize * VoxelSize,
-                new Vector3 (0, 1, 0) * chunkSize * VoxelSize,
-                new Vector3 (0, 1, 1) * chunkSize * VoxelSize,
-                new Vector3 (1, 1, 1) * chunkSize * VoxelSize,
-                new Vector3 (1, 0, 1) * chunkSize * VoxelSize,
-                new Vector3 (0, 0, 1) * chunkSize * VoxelSize,
+                new Vector3 (0, 0, 0) * ChunkSize * VoxelSize,
+                new Vector3 (1, 0, 0) * ChunkSize * VoxelSize,
+                new Vector3 (1, 1, 0) * ChunkSize * VoxelSize,
+                new Vector3 (0, 1, 0) * ChunkSize * VoxelSize,
+                new Vector3 (0, 1, 1) * ChunkSize * VoxelSize,
+                new Vector3 (1, 1, 1) * ChunkSize * VoxelSize,
+                new Vector3 (1, 0, 1) * ChunkSize * VoxelSize,
+                new Vector3 (0, 0, 1) * ChunkSize * VoxelSize,
             };
 
             int[] triangles = {

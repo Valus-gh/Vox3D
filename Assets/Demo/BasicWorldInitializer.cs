@@ -13,10 +13,7 @@ namespace Demo
         // TODO Move Material loading to Properties. 
         // TODO Write Shader using mesh vertex colors. 
         // TODO Separate job start and job end.
-        private Vox3DProperties properties;
-        private World world;
         public GameObject tower;
-        public Material material;
         public GameObject fowManager;
 
 
@@ -26,74 +23,44 @@ namespace Demo
 
             //######################## IMPORT FROM JSON ########################//
 
-            var model = Vox3D.JSON.JsonImporter.FromJSON("config");
+            var world = Vox3DEngine.FromJSON("config", true);
 
-            var manager = Vox3DManager.Instance();
-            manager.Properties = new Vox3DProperties(model.World.WorldSize, model.World.ChunkSize, model.World.VoxelSize);
-            manager.Properties.VoxelDefaultMaterial = material;
-            manager.Properties.BiomeLookupTexture = Resources.Load("biome-lookup-128x128", typeof(Texture2D)) as Texture2D; //TODO to Vox3dProperties
-            manager.Properties.WaterLevel = model.World.WaterHeight;
-            PerlinProperties propsH = new PerlinProperties(
-                seed: model.HeightMap.Seed,
-                gain: model.HeightMap.Gain,
-                redistribution: model.HeightMap.Redistribution,
-                doReshape: model.HeightMap.Reshape,
-                shapingFactor: model.HeightMap.ReshapeFactor
-            );
-
-            PerlinProperties propsM = new PerlinProperties(
-                seed: model.MoistureMap.Seed,
-                gain: model.MoistureMap.Gain,
-                redistribution: model.MoistureMap.Redistribution,
-                doReshape: model.MoistureMap.Reshape,
-                shapingFactor: model.MoistureMap.ReshapeFactor
-            );
-
-            SimplexNoiseSource noiseSourceHeight = new SimplexNoiseSource(propsH);
-            SimplexNoiseSource noiseSourceMoisture = new SimplexNoiseSource(propsM);
-
-            manager.HNoiseSource = noiseSourceHeight;
-            manager.MNoiseSource = noiseSourceMoisture;
-            manager.World = Vox3DManager.MakeWorld();
-            manager.World.HeightMap.MaxHeight = model.World.TerrainHeight;
-            manager.World.MoistureMap.MaxHeight = model.World.TerrainHeight;
-
-            manager.World.HeightMap.BakeTexture("Elevation");
-            manager.World.MoistureMap.BakeTexture("Moisture");
+            world.HeightMap.BakeTexture("Elevation");
+            world.MoistureMap.BakeTexture("Moisture");
 
             //######################## IMPORT FROM JSON ########################//
 
             //######################## INSTANTIATE WORLD ########################//
 
-            manager.World.PopulateWorld();
-            manager.World.PopulateChunks();
-            PriorityCallStack.Instance().Push(() => manager.World.GenerateGeometry(), 60);
+            world.PopulateWorld();
+            world.PopulateChunks();
+            PriorityCallStack.Instance().Push(() => world.GenerateGeometry(), 60);
             
             PriorityCallStack.Instance().Push(() => {
                 List<Vector3> locations = new List<Vector3>();
-                locations = TowerLocator.GenerateTowerLocations(manager.World, 4);
+                locations = TowerLocator.GenerateTowerLocations(world, 4);
                 locations.ForEach((l) => Instantiate(tower, l, Quaternion.identity, this.transform));
             }, 300);
 
             //######################## INSTANTIATE WORLD ########################//
 
             //######################## INSTANTIATE FOG ########################//
-
+            /*
             PriorityCallStack.Instance().Push(() => {
 
-                fowManager.GetComponent<FischlWorks_FogWar.csFogWar>().unitScale = manager.World.VoxelSize;
+                fowManager.GetComponent<FischlWorks_FogWar.csFogWar>().unitScale = world.Properties.VoxelSize;
                 var fow = Instantiate(fowManager);
                 var tower = GameObject.Find("Tower_Simple");
                 var towers = GameObject.FindObjectsByType<TowerControlsKeyboard>(FindObjectsSortMode.None);
                 foreach(var t in towers)
                 {
-                    t.transform.parent.localScale = Vector3.one * (0.5f * manager.World.VoxelSize);
+                    t.transform.parent.localScale = Vector3.one * (0.5f * world.Properties.VoxelSize);
                 }
                 fow.GetComponent<FischlWorks_FogWar.csFogWar>().AddFogRevealer(new FischlWorks_FogWar.csFogWar.FogRevealer(tower.transform, 10, true));
 
                 var fowInstance = fow.GetComponent<FowManager>();
 
-                foreach(Chunk c in manager.World.Chunks.Values)
+                foreach(Chunk c in world.Chunks.Values)
                 {
                     fowInstance.ApplyToChunk(c);
                 }
@@ -101,7 +68,7 @@ namespace Demo
                 GetComponent<FindProjectiles>().Fow = fow.GetComponent<FischlWorks_FogWar.csFogWar>();
 
             }, 350);
-
+            */
             //######################## INSTANTIATE FOG ########################//
 
         }

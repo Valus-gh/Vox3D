@@ -3,6 +3,7 @@ using UnityEngine;
 
 using Unity.Jobs;
 using Unity.Collections;
+using System.Text;
 
 namespace Vox3D.Parallel
 {
@@ -17,7 +18,7 @@ namespace Vox3D.Parallel
 
             public NativeArray<Voxel>   voxels;
             public NativeArray<Color32> colors;
-
+            public NativeArray<byte>    worldId;
         }
 
         private static ParallelVoxelBuilder _Instance;
@@ -59,16 +60,20 @@ namespace Vox3D.Parallel
                 var nVoxelsInChunk  = chunkSize * chunkSize * chunkSize;
                 tracker.voxels      = new NativeArray<Voxel>(nVoxelsInChunk, Allocator.Persistent);
 
-                var biomeTex        = Vox3DManager.Instance().Properties.BiomeLookupTexture;
+                var biomeTex        = tracker.Chunk.ParentWorld.Properties.BiomeLookupTexture;
                 tracker.colors      = new NativeArray<Color32>(biomeTex.GetPixels32().Length, Allocator.Persistent);
                 tracker.colors.CopyFrom(biomeTex.GetPixels32());
 
+                var idBytes         = Encoding.ASCII.GetBytes(tracker.Chunk.ParentWorld.ID);
+                tracker.worldId     = new NativeArray<byte>(idBytes, Allocator.TempJob);
+
                 VoxelGenerationJob job = new VoxelGenerationJob
                 {
+                    WorldID         = tracker.worldId,
                     BiomeTexture    = tracker.colors,
                     TextureWidth    = biomeTex.width,
                     TextureHeight   = biomeTex.height,
-                    WaterLevel      = Vox3DManager.Instance().Properties.WaterLevel,
+                    WaterLevel      = tracker.Chunk.ParentWorld.Properties.WaterLevel,
                     Voxels          = tracker.voxels,
                     ChunkSize       = chunkSize,
                     VoxelSize       = voxelSize,
@@ -106,6 +111,7 @@ namespace Vox3D.Parallel
 
                 tracker.voxels.Dispose();
                 tracker.colors.Dispose();
+                tracker.worldId.Dispose();
 
                 GameObject destructionColliderObject = new GameObject(
                                                     $"ChunkDestructionCollider_" +
@@ -117,11 +123,11 @@ namespace Vox3D.Parallel
                 destructionColliderObject.layer = LayerMask.NameToLayer("ChunkDestructionLayer");
 
                 tracker.Chunk.ChunkDestructionCollider = destructionColliderObject.AddComponent<MeshCollider>();
-                tracker.Chunk.ChunkDestructionCollider.sharedMesh = Chunk.DefaultChunkColliderMesh(chunkSize);
+                tracker.Chunk.ChunkDestructionCollider.sharedMesh = Chunk.DefaultChunkColliderMesh(tracker.Chunk.ParentWorld.Properties);
 
                 if (!IsChunkSolid)
                 {
-                    Vox3DManager.Instance().World.DeleteChunk(tracker.Chunk);
+                    tracker.Chunk.ParentWorld.DeleteChunk(tracker.Chunk);
                     tracker.Chunk.PurgeChunk();
                 }
 

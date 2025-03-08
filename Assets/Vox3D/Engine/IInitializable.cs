@@ -1,4 +1,4 @@
 public interface IInitializable
 {
-    public bool TryInitialize();
+    public bool GenerateMaps();
 }

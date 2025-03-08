@@ -10,6 +10,7 @@ namespace Demo
         private RaycastHit _hit;
         public float radius;
         private float _offset;
+        public Vox3D.World world;
 
         // Update is called once per frame
         void Update()
@@ -25,7 +26,7 @@ namespace Demo
                     Debug.Log($"Ray hit at distance {hit.distance}");
                     Debug.Log($"Ray hit chunk {hit.collider.GetComponentInParent<Vox3D.Chunk>().name}");
 
-                    float offset = Vox3D.Vox3DManager.Instance().Properties.VoxelSize;
+                    float offset = world.Properties.VoxelSize;
                     Vox3D.ChunkCollisionHandler.Instance().CollisionSphere(hit.point, radius, offset);
 
                     _hit = hit;
