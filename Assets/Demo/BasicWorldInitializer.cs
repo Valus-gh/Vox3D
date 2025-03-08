@@ -81,8 +81,15 @@ namespace Demo
 
             PriorityCallStack.Instance().Push(() => {
 
+                fowManager.GetComponent<FischlWorks_FogWar.csFogWar>().unitScale = manager.World.VoxelSize;
                 var fow = Instantiate(fowManager);
-                fow.GetComponent<FischlWorks_FogWar.csFogWar>().AddFogRevealer(new FischlWorks_FogWar.csFogWar.FogRevealer(GameObject.Find("Tower_Simple").transform, 15, true));
+                var tower = GameObject.Find("Tower_Simple");
+                var towers = GameObject.FindObjectsByType<TowerControlsKeyboard>(FindObjectsSortMode.None);
+                foreach(var t in towers)
+                {
+                    t.transform.parent.localScale = Vector3.one * (0.5f * manager.World.VoxelSize);
+                }
+                fow.GetComponent<FischlWorks_FogWar.csFogWar>().AddFogRevealer(new FischlWorks_FogWar.csFogWar.FogRevealer(tower.transform, 10, true));
 
                 var fowInstance = fow.GetComponent<FowManager>();
 

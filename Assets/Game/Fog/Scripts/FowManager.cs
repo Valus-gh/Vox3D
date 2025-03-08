@@ -14,8 +14,6 @@ public class FowManager : MonoBehaviour
     public Texture2D    FogTexture;
     public Material     FogVertexColorMaterial;
 
-    public List<csFogWar.FogRevealer> FogRevealers;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -32,8 +30,6 @@ public class FowManager : MonoBehaviour
 
         var midPointPosition = (manager.World.WorldSize * manager.World.ChunkSize * manager.World.VoxelSize) / 2.0f;
         Fog._LevelMidPoint.transform.position = manager.World.transform.position + new Vector3(midPointPosition, 0.0f, midPointPosition);
-
-        Fog.unitScale = manager.World.VoxelSize;
 
     }
 
