@@ -7,11 +7,11 @@ using FischlWorks_FogWar;
 public class RemoveOnDestroy : MonoBehaviour
 {
     public csFogWar Fow;
-    public csFogWar.FogRevealer rev;
+    public csFogWar.FogRevealer revealer;
 
     public void OnDestroy()
     {
-        Fow.RemoveFogRevealer(Fow._FogRevealers.IndexOf(rev));
+        Fow.RemoveFogRevealer(Fow._FogRevealers.IndexOf(revealer));
     }
 
 }

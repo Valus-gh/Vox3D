@@ -97,6 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Projectile: {fileID: 4139354093846511397, guid: 1ff5a27e6a80a864f9975c9a4a44813c, type: 3}
+  fireCode: 32
 --- !u!1 &8830847873192687137
 GameObject:
   m_ObjectHideFlags: 0
@@ -107,6 +108,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9043457447548839052}
   - component: {fileID: 1907101551115336614}
+  - component: {fileID: -7674143976246808925}
   m_Layer: 0
   m_Name: Tower
   m_TagString: Untagged
@@ -142,9 +144,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 985add12ee4836e40b7241671b1d892c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fogWar: {fileID: 814747630190439377, guid: 559b1d5f85ddf684785f8c2d60b5c6ec, type: 3}
+  fogWar: {fileID: 0}
   visibility: 0
   additionalRadius: 0
+--- !u!114 &-7674143976246808925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8830847873192687137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fe3a05bf7d28444f8542f0efe33d823, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ID: 0
+  Radius: 15
+  Revealing: 0
 --- !u!1001 &558010530376783286
 PrefabInstance:
   m_ObjectHideFlags: 0

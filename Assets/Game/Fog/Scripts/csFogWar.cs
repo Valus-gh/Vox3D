@@ -31,6 +31,7 @@ namespace FischlWorks_FogWar
     /// Various public interfaces related to FogRevealer's FOV are also available.
     public class csFogWar : MonoBehaviour
     {
+
         /// A class for storing the base level data.
         /// 
         /// This class is later serialized into Json format.\n
@@ -281,6 +282,17 @@ namespace FischlWorks_FogWar
 
         private void Start()
         {
+            var World = transform.parent.GetComponent<Vox3D.World>();
+
+            var levelSize = World.Properties.WorldSize * World.Properties.ChunkSize * World.Properties.VoxelSize;
+            levelDimensionX = levelSize;
+            levelDimensionY = levelSize;
+
+            unitScale = World.Properties.VoxelSize;
+
+            var midPoint = (World.Properties.WorldSize * World.Properties.ChunkSize * World.Properties.VoxelSize) / 2.0f;
+            _LevelMidPoint.transform.position = World.transform.position + new Vector3(midPoint, 0.0f, midPoint);
+
             CheckProperties();
 
             InitializeVariables();
@@ -310,7 +322,6 @@ namespace FischlWorks_FogWar
             // This is needed because we do not update the fog when there's no unit-scale movement of each fogRevealer
             ForceUpdateFog();
         }
-
 
 
         private void Update()

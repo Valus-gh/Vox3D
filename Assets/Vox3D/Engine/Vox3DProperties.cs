@@ -6,10 +6,6 @@ using Noise;
 namespace Vox3D
 {
 
-    // TODO Normalize heightmap to [0,1]
-    // TODO Switch voxel generation to ParallelVoxelBuilder
-    // TODO Try very large world
-    // 
     /// <summary>
     /// There is only once instance of this class at runtime. 
     /// Holds the global world properties used by most classes within the engine.
