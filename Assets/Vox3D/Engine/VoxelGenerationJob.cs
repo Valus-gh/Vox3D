@@ -39,7 +39,6 @@ namespace Vox3D
                 return;
             }
 
-            //TODO GET WORLD BY USING WORLDID
             var hMap = world.HeightMap;
             var mMap = world.MoistureMap;
 

@@ -122,8 +122,6 @@ namespace Vox3D
             // Position of the adjacent voxel in world space. Takes into consideration the size of the voxels.
             Vector3 voxelWorldPosition = Chunk + (new Vector3(x, y, z) * VoxelSize);
 
-            //TODO SEARCH VOX3DENGINE FOR THE WORLD CORRESPONDING TO WorldID
-
             var world = Vox3DEngine.GetWorld(Encoding.ASCII.GetString(WorldID));
 
             if (world is null)

@@ -41,11 +41,6 @@ namespace Vox3D
         public SimplexNoiseSource HNoiseSource  { get => _HNoiseSource; set => _HNoiseSource = value; }
         public SimplexNoiseSource MNoiseSource  { get => _MNoiseSource; set => _MNoiseSource = value; }
 
-        public void LoadFromXML(string pathToXml)
-        {
-            // TODO Get Properties from XML Parser to fill an object when this is created
-        }
-
     }
 
 }

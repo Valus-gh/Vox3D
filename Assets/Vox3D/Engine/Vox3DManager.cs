@@ -4,8 +4,6 @@ using UnityEngine;
 
 using Noise;
 
-// TODO add moisture map to world, try to make shader with different biomes
-
 namespace Vox3D {
     public class Vox3DManager
     {

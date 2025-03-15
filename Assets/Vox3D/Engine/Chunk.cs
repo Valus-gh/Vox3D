@@ -263,4 +263,3 @@ namespace Vox3D
     }
 
 }
-// TODO modularize vertex building to very small functions that can be called from outside
