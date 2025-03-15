@@ -4,7 +4,7 @@ using Unity.Collections;
 using Unity.Jobs;
 using UnityEngine;
 
-namespace Vox3D
+namespace Vox3D.Engine
 {
 
     /// <summary>

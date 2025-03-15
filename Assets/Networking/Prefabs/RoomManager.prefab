@@ -96,6 +96,6 @@ MonoBehaviour:
   minPlayers: 1
   roomPlayerPrefab: {fileID: 0}
   RoomScene: Assets/Scenes/ServerStartScene.unity
-  GameplayScene: Assets/Scenes/SampleScene.unity
+  GameplayScene: 
   _allPlayersReady: 0
   clientIndex: 0

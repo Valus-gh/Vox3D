@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Vox3D
+namespace Vox3D.Engine
 { 
     public class World : MonoBehaviour
     {

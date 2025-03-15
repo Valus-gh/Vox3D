@@ -2,10 +2,10 @@ using System.Collections.Generic;
 using Unity.Collections;
 using UnityEngine;
 using Unity.Jobs;
-using Vox3D.Parallel;
+using Vox3D.Engine.Parallel;
 using System.Text;
 
-namespace Vox3D
+namespace Vox3D.Engine
 {
     public class Chunk : MonoBehaviour
     {

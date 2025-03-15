@@ -1,9 +1,10 @@
-using Noise;
 using System.IO;
 using UnityEditor;
 using UnityEngine;
 
-namespace Vox3D
+using Vox3D.Noise;
+
+namespace Vox3D.Engine
 {
     public class HeightMap2D
     {

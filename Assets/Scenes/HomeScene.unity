@@ -96,7 +96,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 7879635082ec61645897007a43743cc2, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -541,12 +541,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 927840575}
     - target: {fileID: 6777337099079815810, guid: 2dd6dba4ab316a942b20519e8f93f92b, type: 3}
+      propertyPath: ConfigPath
+      value: config
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777337099079815810, guid: 2dd6dba4ab316a942b20519e8f93f92b, type: 3}
       propertyPath: playerPrefab
       value: 
       objectReference: {fileID: 1015187265060089438, guid: 04914aa2dacafd541a1924c8a40d7470, type: 3}
     - target: {fileID: 6777337099079815810, guid: 2dd6dba4ab316a942b20519e8f93f92b, type: 3}
       propertyPath: GameplayScene
-      value: Assets/Scenes/Vox3DScene.unity
+      value: Assets/Scenes/Vox3DSceneMultiplayer.unity
       objectReference: {fileID: 0}
     - target: {fileID: 6777337099079815810, guid: 2dd6dba4ab316a942b20519e8f93f92b, type: 3}
       propertyPath: roomPlayerPrefab

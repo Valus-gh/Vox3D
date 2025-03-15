@@ -1,6 +1,8 @@
-using Noise;
+using Vox3D.Noise;
 using System.Collections.Generic;
 using UnityEngine;
+
+using Vox3D.Engine;
 
 namespace Vox3D {
 

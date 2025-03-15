@@ -282,7 +282,7 @@ namespace FischlWorks_FogWar
 
         private void Start()
         {
-            var World = transform.parent.GetComponent<Vox3D.World>();
+            var World = transform.parent.GetComponent<Vox3D.Engine.World>();
 
             var levelSize = World.Properties.WorldSize * World.Properties.ChunkSize * World.Properties.VoxelSize;
             levelDimensionX = levelSize;

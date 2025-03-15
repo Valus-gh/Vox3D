@@ -1,6 +1,6 @@
 using UnityEngine;
 
-using Vox3D;
+using Vox3D.Engine;
 using FischlWorks_FogWar;
 using System.Collections.Generic;
 

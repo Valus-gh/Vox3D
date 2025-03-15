@@ -1,9 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Noise;
+using Vox3D.Noise;
 
-namespace Vox3D
+namespace Vox3D.Engine
 {
 
     /// <summary>

@@ -13,6 +13,6 @@ public class BasicBlast : Blast
 
     public override void Trigger(Collision collision)
     {
-        Vox3D.ChunkCollisionHandler.Instance().CollisionSphere(collision.contacts[0].point, _Radius, _RadiusOffset);
+        Vox3D.Engine.ChunkCollisionHandler.Instance().CollisionSphere(collision.contacts[0].point, _Radius, _RadiusOffset);
     }
 }

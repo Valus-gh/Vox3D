@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-using Vox3D;
+using Vox3D.Engine;
 
 public class TowerLocator
 {

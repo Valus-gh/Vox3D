@@ -2,8 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-using Vox3D;
-using Noise;
+using Vox3D.Engine;
+using Vox3D.Noise;
 
 namespace Demo
 {
@@ -21,7 +21,7 @@ namespace Demo
 
             //######################## IMPORT FROM JSON ########################//
 
-            var world = Vox3DEngine.FromJSON("config", true);
+            var world = Vox3D.Vox3DEngine.FromJSON("config", true);
 
             world.HeightMap.BakeTexture("Elevation");
             world.MoistureMap.BakeTexture("Moisture");

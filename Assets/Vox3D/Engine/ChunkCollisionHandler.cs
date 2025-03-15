@@ -4,7 +4,8 @@ using UnityEngine;
 
 using System.Linq;
 
-namespace Vox3D {
+namespace Vox3D.Engine 
+{
 
     public class ChunkCollisionHandler
     {

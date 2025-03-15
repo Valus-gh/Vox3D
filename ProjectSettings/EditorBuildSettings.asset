@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/HomeScene.unity
     guid: 977e669ff50b37c4c8116ab3b5508cd8
+  - enabled: 1
+    path: Assets/Scenes/Vox3DSceneMultiplayer.unity
+    guid: aec3074bcf5bece42881ef8a135c4a68
   m_configObjects: {}

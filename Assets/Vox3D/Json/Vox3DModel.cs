@@ -12,6 +12,7 @@ namespace Vox3D.JSON {
             public float    TerrainHeight;
             public float    WaterHeight;
 
+            public WorldModel() { }
             public WorldModel(int worldSize, int chunkSize, int voxelSize, float terrainHeight, float waterHeight)
             {
                 WorldSize = worldSize;
@@ -31,6 +32,7 @@ namespace Vox3D.JSON {
             public bool     Reshape;
             public float    ReshapeFactor;
 
+            public NoiseModel() { }
             public NoiseModel(string noiseType, int seed, float gain, float redistribution, bool reshape, float reshapeFactor)
             {
                 NoiseType = noiseType;
@@ -47,6 +49,7 @@ namespace Vox3D.JSON {
             public string   Material;
             public string   BiomeLookup;
 
+            public ShadingModel() { }
             public ShadingModel(string material, string biomeLookup)
             {
                 Material = material;

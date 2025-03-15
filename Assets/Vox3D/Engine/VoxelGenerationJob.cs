@@ -3,7 +3,7 @@ using Unity.Jobs;
 using Unity.Collections;
 using System.Text;
 
-namespace Vox3D
+namespace Vox3D.Engine
 {
     public struct VoxelGenerationJob : IJobParallelFor
     {

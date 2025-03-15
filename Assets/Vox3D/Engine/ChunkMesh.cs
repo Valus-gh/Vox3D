@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Vox3D
+namespace Vox3D.Engine
 {
-
+    //TODO USE CHUNKMESH INSTEAD OF DIRECT FIELDS IN CHUNK
     public class ChunkMesh
     {
         private Mesh _Mesh;

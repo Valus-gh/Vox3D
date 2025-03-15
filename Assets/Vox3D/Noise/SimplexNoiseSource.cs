@@ -1,8 +1,6 @@
 using UnityEngine;
 
-using Simplex;
-
-namespace Noise
+namespace Vox3D.Noise
 {
     public class SimplexNoiseSource : INoiseSource
     {

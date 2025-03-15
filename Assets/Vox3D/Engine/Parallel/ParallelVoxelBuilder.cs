@@ -5,7 +5,7 @@ using Unity.Jobs;
 using Unity.Collections;
 using System.Text;
 
-namespace Vox3D.Parallel
+namespace Vox3D.Engine.Parallel
 {
 
     public class ParallelVoxelBuilder
@@ -65,7 +65,7 @@ namespace Vox3D.Parallel
                 tracker.colors.CopyFrom(biomeTex.GetPixels32());
 
                 var idBytes         = Encoding.ASCII.GetBytes(tracker.Chunk.ParentWorld.ID);
-                tracker.worldId     = new NativeArray<byte>(idBytes, Allocator.TempJob);
+                tracker.worldId     = new NativeArray<byte>(idBytes, Allocator.Persistent);
 
                 VoxelGenerationJob job = new VoxelGenerationJob
                 {

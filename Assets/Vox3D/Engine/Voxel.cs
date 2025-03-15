@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Vox3D
+namespace Vox3D.Engine
 {
     /// <summary>
     /// Struct is required by NativeArray. Reference types are not allowed.

@@ -1,4 +1,4 @@
-namespace Noise
+namespace Vox3D.Noise
 {
     public interface INoiseSource
     {

@@ -2,54 +2,58 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PriorityCallStack : MonoBehaviour
+namespace Vox3D.Engine
 {
-
-    private static PriorityCallStack _Instance;
-    public static PriorityCallStack Instance()
+    public class PriorityCallStack : MonoBehaviour
     {
-        if (_Instance is null)
+
+        private static PriorityCallStack _Instance;
+        public static PriorityCallStack Instance()
         {
-            GameObject stackObject = new GameObject("PriorityCallStackHelper");
-            _Instance = stackObject.AddComponent<PriorityCallStack>();
-        }
-        return _Instance;
-    }
-
-    private List<(Action, uint)>    _ActionList = new List<(Action, uint)>();
-    private Stack<Action>           _ToInvoke   = new Stack<Action>();
-
-    void Update()
-    {
-        UpdateStack();
-        InvokeThisFrame();
-    }
-
-    private void InvokeThisFrame()
-    {
-        for(int i = 0; i < _ToInvoke.Count; i++)
-        {
-            var action = _ToInvoke.Pop();
-            action.Invoke();
-        }
-    }
-
-    private void UpdateStack()
-    {
-        for(var i = _ActionList.Count - 1; i >= 0; i--)
-        {
-            if(_ActionList[i].Item2 == 0)
+            if (_Instance is null)
             {
-                _ToInvoke.Push(_ActionList[i].Item1);
-                _ActionList.RemoveAt(i);
+                GameObject stackObject = new GameObject("PriorityCallStackHelper");
+                _Instance = stackObject.AddComponent<PriorityCallStack>();
             }
-            else _ActionList[i] = (_ActionList[i].Item1, _ActionList[i].Item2 - 1);
+            return _Instance;
         }
-    }
 
-    public void Push(Action action, uint delay)
-    {
-        _ActionList.Add((action, delay));
+        private List<(Action, uint)> _ActionList = new List<(Action, uint)>();
+        private Stack<Action> _ToInvoke = new Stack<Action>();
+
+        void Update()
+        {
+            UpdateStack();
+            InvokeThisFrame();
+        }
+
+        private void InvokeThisFrame()
+        {
+            for (int i = 0; i < _ToInvoke.Count; i++)
+            {
+                var action = _ToInvoke.Pop();
+                action.Invoke();
+            }
+        }
+
+        private void UpdateStack()
+        {
+            for (var i = _ActionList.Count - 1; i >= 0; i--)
+            {
+                if (_ActionList[i].Item2 == 0)
+                {
+                    _ToInvoke.Push(_ActionList[i].Item1);
+                    _ActionList.RemoveAt(i);
+                }
+                else _ActionList[i] = (_ActionList[i].Item1, _ActionList[i].Item2 - 1);
+            }
+        }
+
+        public void Push(Action action, uint delay)
+        {
+            _ActionList.Add((action, delay));
+        }
+
     }
 
 }

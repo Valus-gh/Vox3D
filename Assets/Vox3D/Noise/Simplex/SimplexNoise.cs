@@ -6,7 +6,7 @@
 
 using System;
 
-namespace Simplex
+namespace Vox3D.Noise
 {
     /// <summary>
     /// Implementation of the Perlin simplex noise, an improved Perlin noise algorithm.
