@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
 
 using Vox3D;
@@ -27,11 +26,22 @@ namespace Game
 
                 var instances = FindObjectsOfType<GameManager>();
 
-                if (instances.Length == 0) return null;
-                else _Instance = instances[0];
+                if (instances.Length > 0)
+                {
+                    Debug.LogWarning($"Multiple instances ({instances.Length}) were found for GameManager Singleton. The first instance will be returned."); ;
 
-                return _Instance;
-                
+                    if (instances.Length > 1)
+                    {
+                        for (int i = 1; i < instances.Length; i++)
+                            Destroy(instances[i]);
+                    }
+
+                    return _Instance = instances[0];
+
+                }
+
+                return _Instance = new GameObject("PlayerMediator").AddComponent<GameManager>();
+
             }
 
         }
@@ -39,17 +49,7 @@ namespace Game
         #endregion
 
         [System.NonSerialized]
-        public World            World;
-        public List<GameObject> Towers;
-        public Vox3DModel       Model;
-        public string           ConfigPath;
-
-        public bool             HasLoaded;
-
-        private void Awake()
-        {
-            DontDestroyOnLoad(this);
-        }
+        public World World;
 
         // Start is called before the first frame update
         void Start()
@@ -60,18 +60,17 @@ namespace Game
         // Update is called once per frame
         void Update()
         {
-            if(World is not null) HasLoaded = World.ChunksReady;
+
         }
 
-        public void LoadWorldFromModel()
+        public void LoadWorldFromModel(Vox3DModel model)
         {
-            Model = JsonImporter.FromJSON(ConfigPath);
-            World = Vox3DEngine.FromModel(Model);
+            World = Vox3DEngine.FromModel(model);
             World.PopulateWorld();
             World.PopulateChunks();
             PriorityCallStack.Instance().Push(() => World.GenerateGeometry(), 60);
+            Debug.Log($"World {World.name} loaded.");
         }
-
 
     }
 

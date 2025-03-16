@@ -1,10 +1,10 @@
 namespace Vox3D.JSON {
 
     [System.Serializable]
-    public struct Vox3DModel
+    public class Vox3DModel
     {
         [System.Serializable]
-        public struct WorldModel
+        public class WorldModel
         {
             public int      WorldSize;
             public int      ChunkSize;
@@ -12,6 +12,7 @@ namespace Vox3D.JSON {
             public float    TerrainHeight;
             public float    WaterHeight;
 
+            public WorldModel() { }
             public WorldModel(int worldSize, int chunkSize, int voxelSize, float terrainHeight, float waterHeight)
             {
                 WorldSize = worldSize;
@@ -22,7 +23,7 @@ namespace Vox3D.JSON {
             }
         }
         [System.Serializable]
-        public struct NoiseModel
+        public class NoiseModel
         {
             public string   NoiseType;
             public int      Seed;
@@ -31,7 +32,7 @@ namespace Vox3D.JSON {
             public bool     Reshape;
             public float    ReshapeFactor;
 
-
+            public NoiseModel() { }
             public NoiseModel(string noiseType, int seed, float gain, float redistribution, bool reshape, float reshapeFactor)
             {
                 NoiseType = noiseType;
@@ -43,11 +44,12 @@ namespace Vox3D.JSON {
             }
         }
         [System.Serializable]
-        public struct ShadingModel
+        public class ShadingModel
         {
             public string   Material;
             public string   BiomeLookup;
 
+            public ShadingModel() { }
             public ShadingModel(string material, string biomeLookup)
             {
                 Material = material;
@@ -60,21 +62,6 @@ namespace Vox3D.JSON {
         public NoiseModel   MoistureMap;
         public ShadingModel Shading;
 
-        public Vox3DModel(WorldModel world, NoiseModel heightMap, NoiseModel moistureMap, ShadingModel shading)
-        {
-            World = world;
-            HeightMap = heightMap;
-            MoistureMap = moistureMap;
-            Shading = shading;
-        }
-
-        public override string ToString()
-        {
-            return
-                $"{World.WorldSize}-{World.WorldSize}-{World.WorldSize}\n" +
-                $"{HeightMap.Redistribution}-{HeightMap.Gain}-{HeightMap.NoiseType}-{HeightMap.Seed}\n" +
-                $"{MoistureMap.Redistribution}-{MoistureMap.Gain}-{MoistureMap.NoiseType}-{MoistureMap.Seed}\n";
-        }
     }
 
 }
