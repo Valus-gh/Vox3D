@@ -1,5 +1,6 @@
 using UnityEngine;
 using Mirror;
+using Vox3D;
 
 /*
 	Documentation: https://mirror-networking.gitbook.io/docs/components/network-room-manager
@@ -19,7 +20,7 @@ namespace Vox3D.Networking
     /// It requires that the NetworkRoomPlayer component be on the room player objects.
     /// NetworkRoomManager is derived from NetworkManager, and so it implements many of the virtual functions provided by the NetworkManager class.
     /// </summary>
-    public class Vox3DNetRoomManager : NetworkRoomManager
+    public class NetworkRoomManagerV3D : NetworkRoomManager
     {
 
         #region Custom Additions
@@ -29,11 +30,12 @@ namespace Vox3D.Networking
 
         #endregion  
 
+        //public GameObject ModelHolder;
 
 
         // Overrides the base singleton so we don't
         // have to cast to this type everywhere.
-        public static new Vox3DNetRoomManager singleton => (Vox3DNetRoomManager)NetworkRoomManager.singleton;
+        public static new NetworkRoomManagerV3D singleton => (NetworkRoomManagerV3D)NetworkRoomManager.singleton;
 
         #region Server Callbacks
 
@@ -119,8 +121,8 @@ namespace Vox3D.Networking
         /// <returns>False to not allow this player to replace the room player.</returns>
         public override bool OnRoomServerSceneLoadedForPlayer(NetworkConnectionToClient conn, GameObject roomPlayer, GameObject gamePlayer)
         {
-            // When player has loaded the gameplay scene, load world
-            PlayerMediator.Instance.RpcLoadWorldFromModel();
+
+            roomPlayer.GetComponent<NetworkRoomPlayerV3D>().RpcLoadWorld(conn);
 
             return base.OnRoomServerSceneLoadedForPlayer(conn, roomPlayer, gamePlayer);
         }
@@ -139,13 +141,9 @@ namespace Vox3D.Networking
         /// </summary>
         public override void OnRoomServerPlayersReady()
         {
-            NetworkServer.Spawn(PlayerMediator.Instance.gameObject);
+            var holder = Instantiate(spawnPrefabs[0]);
 
-            // Pass players to singleton that sends vox3dmodel
-            foreach (var p in pendingPlayers)
-                PlayerMediator.Instance.AddPlayer(p.roomPlayer.GetComponent<NetworkRoomPlayer>());
-
-            PlayerMediator.Instance.LoadModel(ConfigPath);
+            NetworkServer.Spawn(holder);
 
             base.OnRoomServerPlayersReady();
 

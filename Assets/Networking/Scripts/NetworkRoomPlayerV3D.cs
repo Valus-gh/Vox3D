@@ -15,8 +15,21 @@ namespace Vox3D.Networking
     /// This component holds basic room player data required for the room to function.
     /// Game specific data for room players can be put in other components on the RoomPrefab or in scripts derived from NetworkRoomPlayer.
     /// </summary>
-    public class Vox3DNetRoomPlayer : NetworkRoomPlayer
+    public class NetworkRoomPlayerV3D : NetworkRoomPlayer
     {
+
+        [TargetRpc]
+        public void RpcLoadWorld(NetworkConnectionToClient conn)
+        {
+            var model = FindObjectOfType<ModelHolder>().Model;
+            var world = Vox3DEngine.FromModel(model);
+
+            world.PopulateWorld();
+            world.PopulateChunks();
+            Vox3D.Engine.PriorityCallStack.Instance().Push(() => world.GenerateGeometry(), 60);
+
+        }
+
         #region Start & Stop Callbacks
 
         /// <summary>

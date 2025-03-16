@@ -94,8 +94,9 @@ MonoBehaviour:
   timeInterpolationGui: 0
   showRoomGUI: 1
   minPlayers: 1
-  roomPlayerPrefab: {fileID: 0}
+  roomPlayerPrefab: {fileID: 134942649211952732, guid: fe99961614341a64cb936228b5c5057f, type: 3}
   RoomScene: Assets/Scenes/ServerStartScene.unity
   GameplayScene: 
   _allPlayersReady: 0
   clientIndex: 0
+  ConfigPath: 

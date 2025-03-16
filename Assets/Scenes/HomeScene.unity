@@ -545,9 +545,17 @@ PrefabInstance:
       value: config
       objectReference: {fileID: 0}
     - target: {fileID: 6777337099079815810, guid: 2dd6dba4ab316a942b20519e8f93f92b, type: 3}
+      propertyPath: minPlayers
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777337099079815810, guid: 2dd6dba4ab316a942b20519e8f93f92b, type: 3}
+      propertyPath: ModelHolder
+      value: 
+      objectReference: {fileID: 4712648783597667638, guid: 0264e2b6f79842442bdce7764d04d053, type: 3}
+    - target: {fileID: 6777337099079815810, guid: 2dd6dba4ab316a942b20519e8f93f92b, type: 3}
       propertyPath: playerPrefab
       value: 
-      objectReference: {fileID: 1015187265060089438, guid: 04914aa2dacafd541a1924c8a40d7470, type: 3}
+      objectReference: {fileID: 1588750985201798, guid: fe99961614341a64cb936228b5c5057f, type: 3}
     - target: {fileID: 6777337099079815810, guid: 2dd6dba4ab316a942b20519e8f93f92b, type: 3}
       propertyPath: GameplayScene
       value: Assets/Scenes/Vox3DSceneMultiplayer.unity
@@ -555,7 +563,15 @@ PrefabInstance:
     - target: {fileID: 6777337099079815810, guid: 2dd6dba4ab316a942b20519e8f93f92b, type: 3}
       propertyPath: roomPlayerPrefab
       value: 
-      objectReference: {fileID: 4397827361035910030, guid: 04914aa2dacafd541a1924c8a40d7470, type: 3}
+      objectReference: {fileID: 134942649211952732, guid: fe99961614341a64cb936228b5c5057f, type: 3}
+    - target: {fileID: 6777337099079815810, guid: 2dd6dba4ab316a942b20519e8f93f92b, type: 3}
+      propertyPath: spawnPrefabs.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777337099079815810, guid: 2dd6dba4ab316a942b20519e8f93f92b, type: 3}
+      propertyPath: spawnPrefabs.Array.data[0]
+      value: 
+      objectReference: {fileID: 4712648783597667638, guid: 0264e2b6f79842442bdce7764d04d053, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
