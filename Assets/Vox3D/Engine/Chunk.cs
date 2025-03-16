@@ -11,6 +11,8 @@ namespace Vox3D.Engine
     {
         private World           _ParentWorld;
 
+        private bool            _VoxelsReady;
+
         private int             _ChunkSize;     // Property taken from WorldProperties. We save it locally to avoid continuous Instance calls
         private int             _VoxelSize;     // Property taken from WorldProperties. We save it locally to avoid continuous Instance calls
         private Voxel[,,]       _Voxels;        // Voxels within this chunk. These are only Voxel objects, no geometry
@@ -38,6 +40,7 @@ namespace Vox3D.Engine
         public List<Color32> Colors                     { get => _Colors; set => _Colors = value; }
         public MeshCollider ChunkDestructionCollider    { get => _ChunkDestructionCollider; set => _ChunkDestructionCollider = value; }
         public World ParentWorld                        { get => _ParentWorld; set => _ParentWorld = value; }
+        public bool VoxelsReady                         { get => _VoxelsReady; set => _VoxelsReady = value; }
 
         public void PopulateChunk()
         {

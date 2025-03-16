@@ -8,6 +8,8 @@ namespace Vox3D.Engine
     {
         private string _ID;
 
+        private bool _ChunksReady;
+
         private Vox3DProperties _Properties;
 
         private Dictionary<Vector3, Chunk> _Chunks; // Dictionary holding chunks. Uses their world-space position as key, in order to easily reference them
@@ -20,6 +22,22 @@ namespace Vox3D.Engine
         public HeightMap2D MoistureMap              { get => _MoistureMap; set => _MoistureMap = value; }
         public Vox3DProperties Properties           { get => _Properties; set => _Properties = value; }
         public string ID                            { get => _ID; set => _ID = value; }
+        public bool ChunksReady                     { get => _ChunksReady; set => _ChunksReady = value; }
+
+        private void Update()
+        {
+            if (!ChunksReady)
+            {
+                int readyCount = 0;
+
+                foreach (Chunk chunk in _Chunks.Values) 
+                    if(chunk.VoxelsReady) 
+                        readyCount++;
+
+                if (readyCount == Chunks.Count)
+                    ChunksReady = true;
+            }
+        }
 
         /// <summary>
         /// Method used to set basic parameters for world and heightmap generation. 

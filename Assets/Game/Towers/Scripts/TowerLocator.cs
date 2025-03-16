@@ -4,17 +4,18 @@ using UnityEngine;
 
 using Vox3D.Engine;
 
-public class TowerLocator
+public static class TowerLocator
 {
-    public static List<Vector3> GenerateTowerLocations(World world, int towers)
+    private static List<Vector3> usedChunks = new List<Vector3>();
+
+    public static List<Vector3> GenerateTowerLocations(World world, int towers, bool placeAtChunkCenter = false)
     {
-        List<Vector3> locations     = new List<Vector3>();
-        List<Vector3> usedChunks    = new List<Vector3>();
+        List<Vector3> locations = new List<Vector3>();
 
         if (world is null) 
             return null;
 
-        var chunks  = world.Chunks;
+        var chunks = world.Chunks;
 
         if (chunks.Count == 0)
             return null;
@@ -24,7 +25,7 @@ public class TowerLocator
             Vector3 chunkIndex = new Vector3();
 
             do {
-
+                
                 chunkIndex = RandomChunk(chunks, world.Properties.WorldSize, world.Properties.ChunkSize, world.Properties.VoxelSize);
 
             } while (usedChunks.Contains(chunkIndex));
@@ -34,7 +35,10 @@ public class TowerLocator
             Chunk chunk; 
             chunks.TryGetValue(chunkIndex, out chunk);
 
-            Vector3 voxelIndex = RandomVoxel(chunk.Voxels, chunk.ChunkSize);
+            Vector3 voxelIndex = (!placeAtChunkCenter) 
+                ? RandomVoxel(chunk.Voxels, chunk.ChunkSize)
+                : CenterVoxel(chunk.Voxels, chunk.ChunkSize);
+
             if (voxelIndex == new Vector3(-1, -1, -1))
             {
                 i--;
@@ -45,10 +49,12 @@ public class TowerLocator
             
         }
 
+        /*
         Debug.Log("Chunks:");
         usedChunks.ForEach(x => Debug.Log(x / world.Properties.ChunkSize));
         Debug.Log("Voxels:");
         locations.ForEach(x => Debug.Log(x));
+        */
 
         return locations;
     }
@@ -110,6 +116,27 @@ public class TowerLocator
 
         return voxelIndex;
 
+    }
+
+    private static Vector3 CenterVoxel(Voxel[,,] voxels, int chunkSize)
+    {
+        int voxelX = chunkSize / 2;
+        int voxelZ = chunkSize / 2;
+
+        Vector3 voxelIndex = new Vector3(voxelX, 0, voxelZ);
+
+        for (int j = 0; j < chunkSize; j++)
+        {
+            voxelIndex.y = j;
+
+            if (voxels[(int)voxelIndex.x, (int)voxelIndex.y, (int)voxelIndex.z].Type == Voxel.VoxelType.Air)
+            {
+                voxelIndex.y--;
+                break;
+            }
+        }
+
+        return voxelIndex;
     }
 
 }

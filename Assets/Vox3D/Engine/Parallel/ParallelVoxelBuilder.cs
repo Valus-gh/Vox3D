@@ -12,7 +12,6 @@ namespace Vox3D.Engine.Parallel
     {
         private class VoxelJobTracker
         {
-            public bool         Complete;
             public JobHandle    Job;
             public Chunk        Chunk;
 
@@ -130,6 +129,8 @@ namespace Vox3D.Engine.Parallel
                     tracker.Chunk.ParentWorld.DeleteChunk(tracker.Chunk);
                     tracker.Chunk.PurgeChunk();
                 }
+
+                tracker.Chunk.VoxelsReady = true;
 
             }, 30);
 

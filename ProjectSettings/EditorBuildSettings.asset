@@ -5,15 +5,15 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Vox3DScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Scenes/ServerStartScene.unity
-    guid: ae871e2b0f680a440924f0b93a9c8573
-  - enabled: 1
     path: Assets/Scenes/HomeScene.unity
     guid: 977e669ff50b37c4c8116ab3b5508cd8
+  - enabled: 1
+    path: Assets/Scenes/ServerStartScene.unity
+    guid: ae871e2b0f680a440924f0b93a9c8573
   - enabled: 1
     path: Assets/Scenes/Vox3DSceneMultiplayer.unity
     guid: aec3074bcf5bece42881ef8a135c4a68
