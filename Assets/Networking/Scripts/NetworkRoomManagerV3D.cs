@@ -1,6 +1,7 @@
 using UnityEngine;
 using Mirror;
 using Vox3D;
+using System.Collections.Generic;
 
 /*
 	Documentation: https://mirror-networking.gitbook.io/docs/components/network-room-manager
@@ -30,12 +31,16 @@ namespace Vox3D.Networking
 
         #endregion  
 
-        //public GameObject ModelHolder;
+        private List<Vector3>       _TowerPositions;
+        private int                 _CurrentTowerIndex = 0;
+
 
 
         // Overrides the base singleton so we don't
         // have to cast to this type everywhere.
         public static new NetworkRoomManagerV3D singleton => (NetworkRoomManagerV3D)NetworkRoomManager.singleton;
+
+        public List<Vector3> TowerPositions { get => _TowerPositions; set => _TowerPositions = value; }
 
         #region Server Callbacks
 
@@ -122,7 +127,17 @@ namespace Vox3D.Networking
         public override bool OnRoomServerSceneLoadedForPlayer(NetworkConnectionToClient conn, GameObject roomPlayer, GameObject gamePlayer)
         {
 
+            //if(_TowerPositions is null) 
+            //    _TowerPositions = TowerLocator.GenerateTowerLocations(_World, minPlayers);
+
             roomPlayer.GetComponent<NetworkRoomPlayerV3D>().RpcLoadWorld(conn);
+
+            var tower = Instantiate(spawnPrefabs[1]);
+            tower.GetComponent<PlayerTower>().PlayerID = conn.identity.netId;
+
+            NetworkServer.Spawn(tower);
+
+            roomPlayer.GetComponent<NetworkRoomPlayerV3D>().RpcFetchPlayerTower(conn, conn.identity.netId);
 
             return base.OnRoomServerSceneLoadedForPlayer(conn, roomPlayer, gamePlayer);
         }

@@ -1,5 +1,6 @@
 using UnityEngine;
 using Mirror;
+using System.Collections.Generic;
 
 /*
 	Documentation: https://mirror-networking.gitbook.io/docs/components/network-room-player
@@ -18,16 +19,60 @@ namespace Vox3D.Networking
     public class NetworkRoomPlayerV3D : NetworkRoomPlayer
     {
 
+        public GameObject               Tower;
+        public Vox3D.JSON.Vox3DModel    Model;
+        public Vox3D.Engine.World       World;
+
         [TargetRpc]
         public void RpcLoadWorld(NetworkConnectionToClient conn)
         {
-            var model = FindObjectOfType<ModelHolder>().Model;
-            var world = Vox3DEngine.FromModel(model);
+            Model = FindObjectOfType<ModelHolder>().Model;
+            World = Vox3DEngine.FromModel(Model);
 
-            world.PopulateWorld();
-            world.PopulateChunks();
-            Vox3D.Engine.PriorityCallStack.Instance().Push(() => world.GenerateGeometry(), 60);
+            World.PopulateWorld();
+            World.PopulateChunks();
+            Vox3D.Engine.PriorityCallStack.Instance().Push(() => World.GenerateGeometry(), 60);
 
+        }
+
+        [TargetRpc]
+        public void RpcFetchPlayerTower(NetworkConnectionToClient conn, uint netId)
+        {
+            // look for tower
+            var towers =  FindObjectsOfType<PlayerTower>();
+
+            foreach (var tower in towers)
+            {
+                if (tower.PlayerID == netId)
+                {
+                    Tower = tower.gameObject;
+                    Vox3D.Engine.PriorityCallStack.Instance().Push(() =>
+                    {
+
+                        var manager = NetworkRoomManagerV3D.singleton;
+                        if (manager.TowerPositions is null)
+                            manager.TowerPositions = TowerLocator.GenerateTowerLocations(World, manager.minPlayers);
+
+                        CmdGenerateTowerLocations(manager.TowerPositions);
+
+                    }, 60);
+                    
+                }
+            }
+        }
+
+        [Command]
+        public void CmdGenerateTowerLocations(List<Vector3> towerPositions)
+        {
+            if(NetworkRoomManagerV3D.singleton.TowerPositions is null)
+                NetworkRoomManagerV3D.singleton.TowerPositions = towerPositions;
+
+            var towers = FindObjectsOfType<PlayerTower>();
+            if (towers.Length == NetworkRoomManagerV3D.singleton.minPlayers)
+            {
+                for (int i = 0; i < towers.Length; i++)
+                    towers[i].transform.localPosition = NetworkRoomManagerV3D.singleton.TowerPositions[i];
+            }
         }
 
         #region Start & Stop Callbacks

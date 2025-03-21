@@ -21,7 +21,7 @@ public class TowerLocator
 
         for(int i = 0; i < towers; i++)
         {
-            Vector3 chunkIndex = new Vector3();
+            Vector3 chunkIndex;
 
             do {
 
@@ -44,11 +44,6 @@ public class TowerLocator
             locations.Add(chunkIndex + (voxelIndex * world.Properties.VoxelSize));
             
         }
-
-        Debug.Log("Chunks:");
-        usedChunks.ForEach(x => Debug.Log(x / world.Properties.ChunkSize));
-        Debug.Log("Voxels:");
-        locations.ForEach(x => Debug.Log(x));
 
         return locations;
     }
