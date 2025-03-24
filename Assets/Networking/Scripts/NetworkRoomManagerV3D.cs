@@ -32,9 +32,6 @@ namespace Vox3D.Networking
         #endregion  
 
         private List<Vector3>       _TowerPositions;
-        private int                 _CurrentTowerIndex = 0;
-
-
 
         // Overrides the base singleton so we don't
         // have to cast to this type everywhere.

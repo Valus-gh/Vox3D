@@ -8,5 +8,20 @@ public class PlayerTower : NetworkBehaviour
 {
     [SyncVar]
     public uint PlayerID;
+    public bool CanFire = false;
+
+    private TowerControlsMultiplayer TowerControls;
+
+    public void Start()
+    {
+        TowerControls = GetComponentInChildren<TowerControlsMultiplayer>();
+    }
+
+    public void Update()
+    {
+        if(CanFire && !TowerControls.enabled)
+            TowerControls.enabled = true;
+    }
+
 
 }

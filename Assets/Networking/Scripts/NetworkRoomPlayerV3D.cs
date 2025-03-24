@@ -2,6 +2,8 @@ using UnityEngine;
 using Mirror;
 using System.Collections.Generic;
 
+using FischlWorks_FogWar;
+
 /*
 	Documentation: https://mirror-networking.gitbook.io/docs/components/network-room-player
 	API Reference: https://mirror-networking.com/docs/api/Mirror.NetworkRoomPlayer.html
@@ -38,13 +40,17 @@ namespace Vox3D.Networking
         [TargetRpc]
         public void RpcFetchPlayerTower(NetworkConnectionToClient conn, uint netId)
         {
-            // look for tower
             var towers =  FindObjectsOfType<PlayerTower>();
 
             foreach (var tower in towers)
             {
-                if (tower.PlayerID == netId)
+
+                tower.transform.parent = World.transform;
+
+                if(tower.PlayerID == netId)
                 {
+                    tower.CanFire = true;
+
                     Tower = tower.gameObject;
                     Vox3D.Engine.PriorityCallStack.Instance().Push(() =>
                     {
@@ -53,16 +59,31 @@ namespace Vox3D.Networking
                         if (manager.TowerPositions is null)
                             manager.TowerPositions = TowerLocator.GenerateTowerLocations(World, manager.minPlayers);
 
-                        CmdGenerateTowerLocations(manager.TowerPositions);
+                        CmdGenerateTowerLocations(manager.TowerPositions, World.Properties.VoxelSize);
+
+                        // Instantiate FogInjector for current world
+                        GameObject.Find("FogManager").GetComponent<FogManager>().AttachFoW(World);
+
+                        // Deactivate FogVisibilityAgent on tower
+                        Tower.AddComponent<FoWRevealer>().Radius = 7;
 
                     }, 60);
-                    
+
                 }
+                else
+                {
+                    Vox3D.Engine.PriorityCallStack.Instance().Push(() =>
+                    {
+                        Tower.GetComponentInChildren<csFogVisibilityAgent>().enabled = true;
+                    }, 60);
+
+                }
+
             }
         }
 
         [Command]
-        public void CmdGenerateTowerLocations(List<Vector3> towerPositions)
+        public void CmdGenerateTowerLocations(List<Vector3> towerPositions, int voxelSize)
         {
             if(NetworkRoomManagerV3D.singleton.TowerPositions is null)
                 NetworkRoomManagerV3D.singleton.TowerPositions = towerPositions;
@@ -71,7 +92,10 @@ namespace Vox3D.Networking
             if (towers.Length == NetworkRoomManagerV3D.singleton.minPlayers)
             {
                 for (int i = 0; i < towers.Length; i++)
-                    towers[i].transform.localPosition = NetworkRoomManagerV3D.singleton.TowerPositions[i];
+                {
+                    towers[i].transform.localPosition   = NetworkRoomManagerV3D.singleton.TowerPositions[i];
+                    towers[i].transform.localScale      = Vector3.one * (0.5f * voxelSize);
+                }
             }
         }
 

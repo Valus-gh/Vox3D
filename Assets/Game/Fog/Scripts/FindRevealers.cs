@@ -14,11 +14,11 @@ public class FindRevealers : MonoBehaviour
     {
         if (GetComponent<FogInjector>() is not null)
         {
-            var objects = FindObjectsByType<FoWRevealer>(FindObjectsSortMode.None);
+            var revealers = FindObjectsByType<FoWRevealer>(FindObjectsSortMode.None);
 
-            if (objects is not null)
+            if (revealers is not null)
             {
-                foreach (var obj in objects)
+                foreach (var obj in revealers)
                 {
                     if (!ids.Contains(obj.GetInstanceID()) && !obj.Revealing)
                     {

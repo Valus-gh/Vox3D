@@ -33,7 +33,7 @@ namespace FischlWorks_FogWar
     public class csFogVisibilityAgent : MonoBehaviour
     {
         [SerializeField]
-        private csFogWar fogWar = null;
+        public csFogWar fogWar = null;
 
         [SerializeField]
         private bool visibility = false;
