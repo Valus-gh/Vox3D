@@ -31,6 +31,7 @@ namespace Vox3D.Networking
 
         #endregion  
 
+        public uint PlayerID;
         private List<Vector3>       _TowerPositions;
 
         // Overrides the base singleton so we don't
@@ -123,18 +124,14 @@ namespace Vox3D.Networking
         /// <returns>False to not allow this player to replace the room player.</returns>
         public override bool OnRoomServerSceneLoadedForPlayer(NetworkConnectionToClient conn, GameObject roomPlayer, GameObject gamePlayer)
         {
-
-            //if(_TowerPositions is null) 
-            //    _TowerPositions = TowerLocator.GenerateTowerLocations(_World, minPlayers);
-
             roomPlayer.GetComponent<NetworkRoomPlayerV3D>().RpcLoadWorld(conn);
 
             var tower = Instantiate(spawnPrefabs[1]);
-            tower.GetComponent<PlayerTower>().PlayerID = conn.identity.netId;
+            tower.GetComponent<OwnedBy>().OwnerID = roomPlayer.GetComponent<NetworkIdentity>().netId;
 
             NetworkServer.Spawn(tower);
 
-            roomPlayer.GetComponent<NetworkRoomPlayerV3D>().RpcFetchPlayerTower(conn, conn.identity.netId);
+            roomPlayer.GetComponent<NetworkRoomPlayerV3D>().RpcFetchPlayerTower(conn);
 
             return base.OnRoomServerSceneLoadedForPlayer(conn, roomPlayer, gamePlayer);
         }

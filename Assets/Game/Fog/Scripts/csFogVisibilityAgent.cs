@@ -69,6 +69,21 @@ namespace FischlWorks_FogWar
 
         private void Update()
         {
+
+            if(fogWar == null)
+            {
+                try
+                {
+                    fogWar = FindObjectOfType<csFogWar>();
+                }
+                catch
+                {
+                    Debug.LogErrorFormat("Failed to fetch csFogWar component. " +
+                        "Please rename the gameobject that the module is attachted to as \"FogWar\", " +
+                        "or change the implementation located in the csFogVisibilityAgent.cs script.");
+                }
+            }
+
             if (fogWar == null || fogWar.CheckWorldGridRange(transform.position) == false)
             {
                 return;

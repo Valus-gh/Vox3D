@@ -113,6 +113,7 @@ GameObject:
   - component: {fileID: 8275935267410078594}
   - component: {fileID: 5451292886178453159}
   - component: {fileID: 5549846751092056302}
+  - component: {fileID: -8966936453061607023}
   m_Layer: 0
   m_Name: PlayerTower
   m_TagString: Untagged
@@ -202,8 +203,23 @@ MonoBehaviour:
   syncDirection: 0
   syncMode: 0
   syncInterval: 0
-  PlayerID: 0
   CanFire: 0
+--- !u!114 &-8966936453061607023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5538335371431196392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33224cbd0b50f444aac440abd43338da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncDirection: 0
+  syncMode: 0
+  syncInterval: 0
+  OwnerID: 0
 --- !u!1001 &7476691115868023927
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -218,7 +234,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1907101551115336614, guid: 63bb630879d2dbc4c8f6034be9e1d85f, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8830847873192687137, guid: 63bb630879d2dbc4c8f6034be9e1d85f, type: 3}
       propertyPath: m_Name

@@ -6,8 +6,7 @@ using Mirror;
 
 public class PlayerTower : NetworkBehaviour
 {
-    [SyncVar]
-    public uint PlayerID;
+
     public bool CanFire = false;
 
     private TowerControlsMultiplayer TowerControls;
@@ -19,7 +18,7 @@ public class PlayerTower : NetworkBehaviour
 
     public void Update()
     {
-        if(CanFire && !TowerControls.enabled)
+        if(!TowerControls.enabled && CanFire)
             TowerControls.enabled = true;
     }
 

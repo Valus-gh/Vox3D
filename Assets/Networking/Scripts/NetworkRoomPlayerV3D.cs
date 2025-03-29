@@ -28,6 +28,8 @@ namespace Vox3D.Networking
         [TargetRpc]
         public void RpcLoadWorld(NetworkConnectionToClient conn)
         {
+            NetworkRoomManagerV3D.singleton.PlayerID = netId;
+
             Model = FindObjectOfType<ModelHolder>().Model;
             World = Vox3DEngine.FromModel(Model);
 
@@ -38,7 +40,7 @@ namespace Vox3D.Networking
         }
 
         [TargetRpc]
-        public void RpcFetchPlayerTower(NetworkConnectionToClient conn, uint netId)
+        public void RpcFetchPlayerTower(NetworkConnectionToClient conn)
         {
             var towers =  FindObjectsOfType<PlayerTower>();
 
@@ -47,7 +49,7 @@ namespace Vox3D.Networking
 
                 tower.transform.parent = World.transform;
 
-                if(tower.PlayerID == netId)
+                if(tower.GetComponent<OwnedBy>().OwnerID == NetworkRoomManagerV3D.singleton.PlayerID)
                 {
                     tower.CanFire = true;
 
@@ -70,15 +72,6 @@ namespace Vox3D.Networking
                     }, 60);
 
                 }
-                else
-                {
-                    Vox3D.Engine.PriorityCallStack.Instance().Push(() =>
-                    {
-                        Tower.GetComponentInChildren<csFogVisibilityAgent>().enabled = true;
-                    }, 60);
-
-                }
-
             }
         }
 

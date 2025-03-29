@@ -4,57 +4,62 @@ using UnityEngine;
 
 using Mirror;
 
-public class TowerControlsMultiplayerKeyboard : TowerControlsMultiplayer
+namespace Vox3D.Networking
 {
-
-    // Update is called once per frame
-    void Update()
+    public class TowerControlsMultiplayerKeyboard : TowerControlsMultiplayer
     {
-        if (Input.GetKeyDown(fireCode))
+
+        // Update is called once per frame
+        void Update()
         {
-            if (Projectile is not null)
+            if (Input.GetKeyDown(fireCode))
             {
-                CmdFireProjectile(TowerTrajectory);
+                if (Projectile is not null)
+                {
+                    CmdFireProjectile(TowerTrajectory, NetworkRoomManagerV3D.singleton.PlayerID);
+                }
+            }
+
+            if (Input.GetKey(KeyCode.Keypad6))
+            {
+                transform.Rotate(new Vector3(0.0f, 1.0f * 0.5f, 0.0f));
+                TowerTrajectory.DirectionXZ = new Vector2(transform.right.x, transform.right.z);
+            }
+
+            if (Input.GetKey(KeyCode.Keypad4))
+            {
+                transform.Rotate(new Vector3(0.0f, -1.0f * 0.5f, 0.0f));
+                TowerTrajectory.DirectionXZ = new Vector2(transform.right.x, transform.right.z);
+            }
+
+            if (Input.GetKey(KeyCode.Keypad8))
+            {
+                TowerTrajectory.Angle += 1.0f * 0.5f;
+                Debug.Log(TowerTrajectory.Angle);
+            }
+
+            if (Input.GetKey(KeyCode.Keypad2))
+            {
+                TowerTrajectory.Angle -= 1.0f * 0.5f;
+                Debug.Log(TowerTrajectory.Angle);
             }
         }
 
-        if (Input.GetKey(KeyCode.Keypad6))
+
+        [Command(requiresAuthority = false)]
+        public void CmdFireProjectile(Trajectory trajectory, uint ownerID)
         {
-            transform.Rotate(new Vector3(0.0f, 1.0f * 0.5f, 0.0f));
-            TowerTrajectory.DirectionXZ = new Vector2(transform.right.x, transform.right.z);
+            Debug.Log($"Firing Projectile {Projectile.name}");
+
+            var instance = Instantiate(Projectile, transform.position, transform.rotation, null);
+
+            instance.GetComponent<OwnedBy>().OwnerID = ownerID;
+
+            instance.Trajectory = trajectory;
+            instance.Aim();
+            instance.Fire();
+
+            NetworkServer.Spawn(instance.gameObject);
         }
-
-        if (Input.GetKey(KeyCode.Keypad4))
-        {
-            transform.Rotate(new Vector3(0.0f, -1.0f * 0.5f, 0.0f));
-            TowerTrajectory.DirectionXZ = new Vector2(transform.right.x, transform.right.z);
-        }
-
-        if (Input.GetKey(KeyCode.Keypad8))
-        {
-            TowerTrajectory.Angle += 1.0f * 0.5f;
-            Debug.Log(TowerTrajectory.Angle);
-        }
-
-        if (Input.GetKey(KeyCode.Keypad2))
-        {
-            TowerTrajectory.Angle -= 1.0f * 0.5f;
-            Debug.Log(TowerTrajectory.Angle);
-        }
-    }
-
-
-    [Command(requiresAuthority = false)]
-    public void CmdFireProjectile(Trajectory trajectory)
-    {
-        Debug.Log($"Firing Projectile {Projectile.name}");
-
-        var instance = Instantiate(Projectile, transform.position, transform.rotation, null);
-
-        instance.Trajectory = trajectory;
-        instance.Aim();
-        instance.Fire();
-
-        NetworkServer.Spawn(instance.gameObject);
     }
 }
