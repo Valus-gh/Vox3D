@@ -4,23 +4,29 @@ using UnityEngine;
 
 using Mirror;
 
-public class PlayerTower : NetworkBehaviour
+namespace Vox3D.Networking
 {
-
-    public bool CanFire = false;
-
-    private TowerControlsMultiplayer TowerControls;
-
-    public void Start()
+    public class PlayerTower : NetworkBehaviour
     {
-        TowerControls = GetComponentInChildren<TowerControlsMultiplayer>();
-    }
 
-    public void Update()
-    {
-        if(!TowerControls.enabled && CanFire)
-            TowerControls.enabled = true;
-    }
+        public bool CanFire = false;
 
+        private TowerControlsMultiplayer _TowerControls;
+
+        public TowerControlsMultiplayer TowerControls { get => _TowerControls; private set => _TowerControls = value; }
+
+        public void Start()
+        {
+            TowerControls = GetComponentInChildren<TowerControlsMultiplayer>();
+        }
+
+        public void Update()
+        {
+            if (!TowerControls.enabled && CanFire)
+                TowerControls.enabled = true;
+        }
+
+
+    }
 
 }

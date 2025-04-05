@@ -16,7 +16,7 @@ namespace Vox3D.Networking
             {
                 if (Projectile is not null)
                 {
-                    CmdFireProjectile(TowerTrajectory, NetworkRoomManagerV3D.singleton.PlayerID);
+                    RelayTrajectory(TowerTrajectory, NetworkRoomManagerV3D.singleton.PlayerID);
                 }
             }
 
@@ -46,20 +46,6 @@ namespace Vox3D.Networking
         }
 
 
-        [Command(requiresAuthority = false)]
-        public void CmdFireProjectile(Trajectory trajectory, uint ownerID)
-        {
-            Debug.Log($"Firing Projectile {Projectile.name}");
-
-            var instance = Instantiate(Projectile, transform.position, transform.rotation, null);
-
-            instance.GetComponent<OwnedBy>().OwnerID = ownerID;
-
-            instance.Trajectory = trajectory;
-            instance.Aim();
-            instance.Fire();
-
-            NetworkServer.Spawn(instance.gameObject);
-        }
+        
     }
 }

@@ -32,7 +32,7 @@ namespace Vox3D.Networking
         #endregion  
 
         public uint PlayerID;
-        private List<Vector3>       _TowerPositions;
+        private List<Vector3> _TowerPositions;
 
         // Overrides the base singleton so we don't
         // have to cast to this type everywhere.
@@ -124,14 +124,13 @@ namespace Vox3D.Networking
         /// <returns>False to not allow this player to replace the room player.</returns>
         public override bool OnRoomServerSceneLoadedForPlayer(NetworkConnectionToClient conn, GameObject roomPlayer, GameObject gamePlayer)
         {
-            roomPlayer.GetComponent<NetworkRoomPlayerV3D>().RpcLoadWorld(conn);
+            if (FindObjectOfType<StageManager>() is null)
+            {
+                var stageManager = Instantiate(spawnPrefabs[3]);
+                NetworkServer.Spawn(stageManager);
+            }
 
-            var tower = Instantiate(spawnPrefabs[1]);
-            tower.GetComponent<OwnedBy>().OwnerID = roomPlayer.GetComponent<NetworkIdentity>().netId;
-
-            NetworkServer.Spawn(tower);
-
-            roomPlayer.GetComponent<NetworkRoomPlayerV3D>().RpcFetchPlayerTower(conn);
+            FindObjectOfType<StageManager>().RegisterPlayer(roomPlayer);
 
             return base.OnRoomServerSceneLoadedForPlayer(conn, roomPlayer, gamePlayer);
         }

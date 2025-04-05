@@ -9,6 +9,8 @@ using FischlWorks_FogWar;
 	API Reference: https://mirror-networking.com/docs/api/Mirror.NetworkRoomPlayer.html
 */
 
+//TODO: merge game and networking folders
+
 namespace Vox3D.Networking
 {
 
@@ -25,8 +27,9 @@ namespace Vox3D.Networking
         public Vox3D.JSON.Vox3DModel    Model;
         public Vox3D.Engine.World       World;
 
+
         [TargetRpc]
-        public void RpcLoadWorld(NetworkConnectionToClient conn)
+        public void RpcLoadWorld()
         {
             NetworkRoomManagerV3D.singleton.PlayerID = netId;
 
@@ -40,9 +43,9 @@ namespace Vox3D.Networking
         }
 
         [TargetRpc]
-        public void RpcFetchPlayerTower(NetworkConnectionToClient conn)
+        public void RpcFetchPlayerTower()
         {
-            var towers =  FindObjectsOfType<PlayerTower>();
+            var towers = FindObjectsOfType<PlayerTower>();
 
             foreach (var tower in towers)
             {
