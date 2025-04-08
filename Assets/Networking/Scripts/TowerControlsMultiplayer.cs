@@ -26,6 +26,8 @@ namespace Vox3D.Networking
                 TowerTrajectory.Angle = 45.0f;
                 TowerTrajectory.Speed = 30.0f;
 
+                transform.Rotate(new Vector3(0.0f, 0.0f, TowerTrajectory.Angle));
+
                 Projectile.Trajectory = TowerTrajectory;
             }
         }

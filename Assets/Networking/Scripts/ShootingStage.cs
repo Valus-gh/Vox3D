@@ -27,6 +27,9 @@ namespace Vox3D.Networking
 
                 _Towers.Add(ownerID, tower);
             }
+
+            RpcToggleAimingArrows();
+
         }
 
         private Dictionary<uint, Trajectory> _ConfirmedTrajectories = new Dictionary<uint, Trajectory>();
@@ -36,6 +39,18 @@ namespace Vox3D.Networking
         {
             if(_ConfirmedTrajectories.Count < Players.Count)
                 _ConfirmedTrajectories.Add(ownerID, trajectory);
+        }
+
+        [ClientRpc]
+        private void RpcToggleAimingArrows()
+        {
+            var arrows = FindObjectsByType<AimingArrow>(FindObjectsInactive.Include, FindObjectsSortMode.None);
+
+            foreach(var arrow in arrows)
+            {
+                Debug.Log("arrow --->" + arrow);
+                arrow.gameObject.SetActive(!arrow.gameObject.activeSelf);
+            }
         }
 
         private void FireProjectiles()
@@ -65,6 +80,8 @@ namespace Vox3D.Networking
                     FireProjectiles();
 
                     IsComplete = true;
+
+                    RpcToggleAimingArrows();
                 }
             }
         }
