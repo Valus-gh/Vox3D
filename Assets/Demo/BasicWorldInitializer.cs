@@ -5,6 +5,8 @@ using UnityEngine;
 using Vox3D.Engine;
 using Vox3D.Noise;
 
+using Game;
+
 namespace Demo
 {
     public class BasicWorldInitializer : MonoBehaviour
