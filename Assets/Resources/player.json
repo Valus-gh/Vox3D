@@ -1,0 +1,9 @@
+{
+  "Players": [
+    {
+      "Name": "Basic",
+      "BaseHitpoints": 100,
+      "HitpointMultiplier": 1.0
+    }
+  ]
+}

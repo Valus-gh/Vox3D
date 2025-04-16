@@ -7,6 +7,7 @@ using Mirror;
 using Game.Interaction;
 using Game.Weapons;
 using Game.Utilities;
+using Game.Networking;
 
 namespace Game.Stages 
 {
@@ -45,6 +46,26 @@ namespace Game.Stages
                 _ConfirmedTrajectories.Add(ownerID, trajectory);
         }
 
+        [Command(requiresAuthority = false)]
+        public void CmdTestTowerCollision(Vector3 center, float radius, float damage)
+        {
+            Collider[] colliders = Physics.OverlapSphere(center, radius, LayerMask.GetMask("Player"));
+
+            if (colliders.Length == 0)
+                return;
+
+            foreach (var c in colliders)
+            {
+                var player = c.GetComponentInParent<PlayerTower>().Player;
+                player.CurrentHitpoints -= damage;
+
+                if (player.CurrentHitpoints <= 0)
+                {
+                    //Fire player gameover event
+                }
+            }
+        }
+
         [ClientRpc]
         private void RpcToggleAimingArrows()
         {
@@ -52,8 +73,8 @@ namespace Game.Stages
 
             foreach(var arrow in arrows)
             {
-                Debug.Log("arrow --->" + arrow);
-                arrow.gameObject.SetActive(!arrow.gameObject.activeSelf);
+                if (arrow.GetComponentInParent<OwnedBy>().OwnerID == NetworkRoomManagerV3D.singleton.PlayerID)
+                    arrow.gameObject.SetActive(!arrow.gameObject.activeSelf);
             }
         }
 
@@ -83,7 +104,7 @@ namespace Game.Stages
                     Debug.Log("ALL PLAYERS CONFIRMED THEIR TRAJECTORY. FIRING PROJECTILES.");
                     FireProjectiles();
 
-                    IsComplete = true;
+                    //IsComplete = true;
 
                     RpcToggleAimingArrows();
                 }

@@ -87,6 +87,7 @@ namespace Vox3D.Engine
                     }
 
                 });
+
             });
 
 
@@ -113,6 +114,12 @@ namespace Vox3D.Engine
                     }
 
                 });
+
+                /*if (innerVoxels.Count == 0)
+                {
+                    chunk.ParentWorld.DeleteChunk(chunk);
+                    outerChunkColliders.Remove(collider);
+                }*/
             });
 
             // Fire Chunk recreation method
@@ -145,7 +152,7 @@ namespace Vox3D.Engine
             Vector2 zBounds = new Vector2(Mathf.Floor(impactPointChunkSpace.z - radius), Mathf.Ceil(impactPointChunkSpace.z + radius)) / chunk.VoxelSize;
 
             // Clamp extremes to the chunk's size
-
+             
             if (xBounds.x < 0.0f)               xBounds.x = 0.0f;
             if (xBounds.y > chunk.ChunkSize)    xBounds.y = chunk.ChunkSize;
 

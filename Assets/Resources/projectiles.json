@@ -6,6 +6,7 @@
       "Blast": {
         "Radius": 5,
         "RadiusOffset": 2,
+        "Damage": 30,
         "Scatter": false
       }
     },
@@ -15,6 +16,7 @@
       "Blast": {
         "Radius": 50,
         "RadiusOffset": 2,
+        "Damage": 30,
         "Scatter": false
       }
     },
@@ -36,6 +38,7 @@
       "Blast": {
         "Radius": 3,
         "RadiusOffset": 2,
+        "Damage": 10,
         "Scatter": false
       }
     }

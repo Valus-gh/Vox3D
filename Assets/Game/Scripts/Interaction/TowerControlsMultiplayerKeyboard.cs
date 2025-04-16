@@ -39,14 +39,12 @@ namespace Game.Interaction
             {
                 transform.Rotate(new Vector3(0.0f, 0.0f, 1.0f * 0.5f));
                 TowerTrajectory.Angle += 1.0f * 0.5f;
-                Debug.Log(TowerTrajectory.Angle);
             }
 
             if (Input.GetKey(KeyCode.Keypad2))
             {
                 transform.Rotate(new Vector3(0.0f, 0.0f, -1.0f * 0.5f));
                 TowerTrajectory.Angle -= 1.0f * 0.5f;
-                Debug.Log(TowerTrajectory.Angle);
             }
         }
 

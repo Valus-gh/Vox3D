@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using Vox3D;
 using Game.Fog;
 using Game.Utilities;
+using Game.Resources;
 
 /*
 	Documentation: https://mirror-networking.gitbook.io/docs/components/network-room-player
@@ -22,13 +23,25 @@ namespace Game.Networking
     /// This component holds basic room player data required for the room to function.
     /// Game specific data for room players can be put in other components on the RoomPrefab or in scripts derived from NetworkRoomPlayer.
     /// </summary>
+    [RequireComponent(typeof(Player))]
     public class NetworkRoomPlayerV3D : NetworkRoomPlayer
     {
 
-        public GameObject               Tower;
         public Vox3D.JSON.Vox3DModel    Model;
         public Vox3D.Engine.World       World;
 
+        private Player                  _Player;
+
+        public Player Player
+        {
+            get
+            {
+                if (_Player is null)
+                    _Player = gameObject.GetComponent<Player>();
+                
+                return _Player;  
+            }
+        }
 
         [TargetRpc]
         public void RpcLoadWorld()
@@ -44,6 +57,13 @@ namespace Game.Networking
 
         }
 
+        [Command]
+        public void CmdInitializePlayer()
+        {
+            //hardcoded to be the basic type of player
+            Player.Populate("Basic", ResourceImporter<PlayerResources>.FromJSON("player"));
+        }
+
         [TargetRpc]
         public void RpcFetchPlayerTower()
         {
@@ -56,11 +76,13 @@ namespace Game.Networking
 
                 if(tower.GetComponent<OwnedBy>().OwnerID == NetworkRoomManagerV3D.singleton.PlayerID)
                 {
-                    tower.CanFire = true;
 
-                    Tower = tower.gameObject;
+                    Player.Tower = tower;
+                    tower.Player = Player;
+
                     Vox3D.Engine.PriorityCallStack.Instance().Push(() =>
                     {
+                        tower.CanFire = true;
 
                         var manager = NetworkRoomManagerV3D.singleton;
                         if (manager.TowerPositions is null)
@@ -68,11 +90,11 @@ namespace Game.Networking
 
                         CmdGenerateTowerLocations(manager.TowerPositions, World.Properties.VoxelSize);
 
+                        // Deactivate FogVisibilityAgent on tower
+                        Player.Tower.gameObject.AddComponent<FoWRevealer>().Radius = 7;
+
                         // Instantiate FogInjector for current world
                         GameObject.Find("FogManager").GetComponent<FogManager>().AttachFoW(World);
-
-                        // Deactivate FogVisibilityAgent on tower
-                        Tower.AddComponent<FoWRevealer>().Radius = 7;
 
                     }, 60);
 

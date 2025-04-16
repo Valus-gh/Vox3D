@@ -48,7 +48,7 @@ namespace Game.Weapons
         }
         public void OnCollisionEnter(Collision collision)
         {
-            _Blast.Trigger(collision);
+             _Blast.Trigger(collision);
             Destroy(gameObject);
         }
 

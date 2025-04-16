@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4817109203880908}
   - component: {fileID: 114387717104821018}
   - component: {fileID: 134942649211952732}
+  - component: {fileID: 3040024026057338311}
   m_Layer: 0
   m_Name: RoomPlayer
   m_TagString: Untagged
@@ -68,3 +69,42 @@ MonoBehaviour:
   showRoomGUI: 1
   readyToBegin: 0
   index: 0
+  Tower: {fileID: 0}
+  Model:
+    World:
+      WorldSize: 0
+      ChunkSize: 0
+      VoxelSize: 0
+      TerrainHeight: 0
+      WaterHeight: 0
+    HeightMap:
+      NoiseType: 
+      Seed: 0
+      Gain: 0
+      Redistribution: 0
+      Reshape: 0
+      ReshapeFactor: 0
+    MoistureMap:
+      NoiseType: 
+      Seed: 0
+      Gain: 0
+      Redistribution: 0
+      Reshape: 0
+      ReshapeFactor: 0
+    Shading:
+      Material: 
+      BiomeLookup: 
+  World: {fileID: 0}
+  Player: {fileID: 0}
+--- !u!114 &3040024026057338311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1588750985201798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24a7a990d6ba0bd4ba485d7f25711056, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

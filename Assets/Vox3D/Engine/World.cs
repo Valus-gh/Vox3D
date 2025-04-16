@@ -162,8 +162,11 @@ namespace Vox3D.Engine
         {
             Chunks.Remove(position);
             Chunks.TryGetValue(position, out Chunk chunk);
-            if(chunk is not null) 
+            if(chunk is not null)
+            {
+                chunk.PurgeChunk();
                 Destroy(chunk.gameObject);
+            }
         }
 
         public void DeleteChunk(Chunk chunk)
@@ -172,6 +175,7 @@ namespace Vox3D.Engine
             {
                 if (pair.Value.GetInstanceID() == chunk.GetInstanceID())
                 {
+                    chunk.PurgeChunk();
                     Chunks.Remove(pair.Key);
                     Destroy(pair.Value.gameObject);
                     break;

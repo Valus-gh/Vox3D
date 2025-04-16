@@ -23,11 +23,6 @@ namespace Game.Resources
 
         public ProjectileModel[] Projectiles;
 
-        public static ProjectileResources FromJSON(string path)
-        {
-            return Vox3D.JSON.JsonImporter<ProjectileResources>.FromJSON(path);
-        }
-
     }
 
 }

@@ -6,21 +6,21 @@ using Mirror;
 
 using Game.Networking;
 using Game.Utilities;
+using Game.Resources;
 
 namespace Game.Stages
 {
 
     public class ConnectionStage : GameStage
     {
+        public  override void Initialize()
+        {
+            //throw new System.NotImplementedException();
+        }
+
         public override void Deinitialize()
         {
             throw new System.NotImplementedException();
-        }
-
-        public override void Initialize()
-        {
-            // Fetch Projectile Data
-            //var projectiles = ProjectileResources.FromJSON("projectiles");
         }
 
         protected override void Run()
@@ -33,6 +33,7 @@ namespace Game.Stages
                 playerTower.GetComponent<OwnedBy>().OwnerID = player.GetComponent<NetworkIdentity>().netId;
                 NetworkServer.Spawn(playerTower);
 
+                player.GetComponent<NetworkRoomPlayerV3D>().CmdInitializePlayer();
                 player.GetComponent<NetworkRoomPlayerV3D>().RpcFetchPlayerTower();
             }
 

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1892174121918499067}
   - component: {fileID: 9058401540937783249}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Tower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59,7 +59,7 @@ GameObject:
   - component: {fileID: 4454890061413199535}
   - component: {fileID: 4019223363891982555}
   - component: {fileID: 7479157704763445995}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: FiringSpot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -152,7 +152,8 @@ GameObject:
   - component: {fileID: 1389381834363390255}
   - component: {fileID: 5424569066046521165}
   - component: {fileID: 497581144411003987}
-  m_Layer: 0
+  - component: {fileID: 7813259913324466377}
+  m_Layer: 3
   m_Name: Tower_Simple
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -232,6 +233,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4385874364523960140}
   m_Mesh: {fileID: 5478381191519786382, guid: 4c1da92a0aba9ab4c95f406033c5c43d, type: 3}
+--- !u!65 &7813259913324466377
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4385874364523960140}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 1
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 6, y: 6.0000014, z: 7.2000017}
+  m_Center: {x: 0.020430207, y: -0.007347824, z: 1.9215059}
 --- !u!1 &5538335371431196392
 GameObject:
   m_ObjectHideFlags: 0
@@ -245,7 +267,7 @@ GameObject:
   - component: {fileID: 5451292886178453159}
   - component: {fileID: 5549846751092056302}
   - component: {fileID: -8966936453061607023}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PlayerTower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -403,6 +425,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tower_Window_Small_On (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7739439521426905757, guid: c7b72ccd4c9cf1841934d625173d9f28, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -465,6 +491,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tower_Window_Small_On
       objectReference: {fileID: 0}
+    - target: {fileID: 7739439521426905757, guid: c7b72ccd4c9cf1841934d625173d9f28, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -486,6 +516,10 @@ PrefabInstance:
     - target: {fileID: 6308185926293396856, guid: 8fab446fa28face4da67329f02a6d2e3, type: 3}
       propertyPath: m_Name
       value: AimingArrow
+      objectReference: {fileID: 0}
+    - target: {fileID: 6308185926293396856, guid: 8fab446fa28face4da67329f02a6d2e3, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6308185926293396856, guid: 8fab446fa28face4da67329f02a6d2e3, type: 3}
       propertyPath: m_IsActive
@@ -601,6 +635,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tower_Window_Small_On (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7739439521426905757, guid: c7b72ccd4c9cf1841934d625173d9f28, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -662,6 +700,10 @@ PrefabInstance:
     - target: {fileID: -5030742349234789044, guid: 05808960d0e7b89468d7e17afea63009, type: 3}
       propertyPath: m_Name
       value: Tower_Window_Large_On (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: -5030742349234789044, guid: 05808960d0e7b89468d7e17afea63009, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -725,6 +767,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tower_Door
       objectReference: {fileID: 0}
+    - target: {fileID: 1194818810788391955, guid: 827d50083d8d8884490c51b6876fa54a, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -787,6 +833,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tower_Window_Small_On (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7739439521426905757, guid: c7b72ccd4c9cf1841934d625173d9f28, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -848,6 +898,10 @@ PrefabInstance:
     - target: {fileID: -5030742349234789044, guid: 05808960d0e7b89468d7e17afea63009, type: 3}
       propertyPath: m_Name
       value: Tower_Window_Large_On
+      objectReference: {fileID: 0}
+    - target: {fileID: -5030742349234789044, guid: 05808960d0e7b89468d7e17afea63009, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
