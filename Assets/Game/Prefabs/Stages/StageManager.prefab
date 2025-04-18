@@ -51,8 +51,7 @@ MonoBehaviour:
   syncMode: 0
   syncInterval: 0
   _Players: []
-  ConnectionStage: {fileID: -945833657254082202}
-  ShootingStage: {fileID: -5652156399681621843}
+  _LoadingScreen_Prefab: {fileID: 7784034614045418041, guid: 1f8178a7613cd2840a99661ba306d30d, type: 3}
 --- !u!114 &8287544316987983804
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -86,6 +85,7 @@ MonoBehaviour:
   syncMode: 0
   syncInterval: 0
   IsRunning: 0
+  IsComplete: 0
 --- !u!114 &-5652156399681621843
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -102,3 +102,4 @@ MonoBehaviour:
   syncMode: 0
   syncInterval: 0
   IsRunning: 0
+  IsComplete: 0

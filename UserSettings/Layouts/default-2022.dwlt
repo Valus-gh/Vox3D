@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 45
+  controlID: 91
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 46
+  controlID: 55
   draggingID: 0
 --- !u!114 &7
 MonoBehaviour:
@@ -263,7 +263,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: InspectorWindow
+  m_Name: Window
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -272,14 +272,14 @@ MonoBehaviour:
     y: 0
     width: 349
     height: 1266
-  m_MinSize: {x: 276, y: 71}
+  m_MinSize: {x: 101, y: 121}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 17}
+  m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 17}
   - {fileID: 18}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -351,23 +351,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: e025fdff
-      m_LastClickedID: 0
-      m_ExpandedIDs: 9a23fdffe454fdff6a55fdff4a7afdffd07afdff2ef1fdff92f1fdffb4f1fdffa214feff9c3ffeff2240feffd865feff548bfeff8ab1feff10b2feffa6d8feffb2fcfeff38fdfeff4423ffffca23ffffa042ffff424fffffc84fffff2afbfffff4ffffff
+      m_SelectedIDs: 28fbffff
+      m_LastClickedID: -1240
+      m_ExpandedIDs: c683feff2084feff2c84feff4e84feff7cf3feff8ec7ffffe6c7fffff2c7ffff14c8ffff2afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: Tower_Simple
+        m_OriginalName: Tower_Simple
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: 31426
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 8}
       m_SearchString: 
@@ -720,9 +720,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 129.64868, y: -21.462307, z: 61.41296}
+    m_Target: {x: 59.010216, y: 50.539246, z: 80.99632}
     speed: 2
-    m_Value: {x: 129.64868, y: -21.462307, z: 61.41296}
+    m_Value: {x: 59.010216, y: 50.539246, z: 80.99632}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -768,13 +768,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.25301993, y: -0.3474468, z: 0.09812287, w: -0.8976399}
+    m_Target: {x: -0.32181612, y: -0.30235875, z: 0.10945254, w: -0.8905939}
     speed: 2
-    m_Value: {x: -0.25300428, y: -0.3474253, z: 0.0981168, w: -0.8975843}
+    m_Value: {x: -0.3217962, y: -0.30234003, z: 0.109445766, w: -0.8905388}
   m_Size:
-    m_Target: 47.094585
+    m_Target: 2.7820876
     speed: 2
-    m_Value: 47.094585
+    m_Value: 2.7820876
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -942,7 +942,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Vox3D/Engine
+    - Assets/Resources
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -950,16 +950,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Vox3D/Engine
+  - Assets/Resources
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 230}
-    m_SelectedIDs: 787d0000
-    m_LastClickedID: 32120
-    m_ExpandedIDs: 00000000287300002a7300002c7300002e73000030730000327300003473000036730000387300003a7300003c7300003e73000040730000427300004473000046730000487300004a7300004c7300008a7300008c7300009a73000000ca9a3b
+    scrollPos: {x: 0, y: 310}
+    m_SelectedIDs: a0730000
+    m_LastClickedID: 29600
+    m_ExpandedIDs: 00000000327300003473000036730000387300003a7300003c7300003e73000040730000427300004473000046730000487300004a7300004c7300004e73000050730000527300005473000056730000587300005a730000a873000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -987,7 +987,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000287300002a7300002c7300002e73000030730000327300003473000036730000387300003a7300003c7300003e73000040730000427300004473000046730000487300004a7300004c730000
+    m_ExpandedIDs: 00000000327300003473000036730000387300003a7300003c7300003e73000040730000427300004473000046730000487300004a7300004c7300004e73000050730000527300005473000056730000587300005a730000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1012,8 +1012,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
+    m_SelectedInstanceIDs: 28fbffff
+    m_LastClickedInstanceID: -1240
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
@@ -1124,14 +1124,14 @@ MonoBehaviour:
     m_LastAppliedPresetName: Default
     m_SaveData: []
     m_OverlaysVisible: 1
-  progressMessageClearTime: -1
+  progressMessageClearTime: 4975.0890204
   notificationClearTime: -1
   timeSinceLastRotation: -1
   currentBranchAndRemoteHasUpdate: 0
   currentTrackingStatusHasUpdate: 0
-  currentStatusEntriesHasUpdate: 1
-  repositoryProgressHasUpdate: 1
-  appManagerProgressHasUpdate: 1
+  currentStatusEntriesHasUpdate: 0
+  repositoryProgressHasUpdate: 0
+  appManagerProgressHasUpdate: 0
   changeTab: 3
   activeTab: 3
   initProjectView:
@@ -1519,286 +1519,20 @@ MonoBehaviour:
     - name: origin/master
       tracking: '[None]'
   changesView:
-    currentBranchHasUpdate: 1
-    currentStatusEntriesHasUpdate: 1
-    currentLocksHasUpdate: 1
+    currentBranchHasUpdate: 0
+    currentStatusEntriesHasUpdate: 0
+    currentLocksHasUpdate: 0
     commitBody: 
     commitMessage: 
     currentBranch: dev-mirror
     treeScroll: {x: 0, y: 0}
     treeChanges:
       assets:
-        keys:
-        - 00000000000000001000000000000000
-        - 5ad94459fc745ed43945b0761fcaee5c
-        - 01c283d1b029d0e42a0e21f3909672f0
-        - 8bae6860163f38a48beb6485240ef4fb
-        - 764e1fa860d0b524e9fed8271c5b4bab
-        - 0dee623914f96654eb2827e602bd416d
-        - 977e669ff50b37c4c8116ab3b5508cd8
-        values:
-        - path: Assets
-          label: Assets
-          level: 0
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Game
-          label: Game
-          level: 1
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Game\Scripts
-          label: Scripts
-          level: 2
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Game\Scripts\Stages
-          label: Stages
-          level: 3
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Game\Scripts\Stages\ShootingStage.cs
-          label: ShootingStage.cs
-          level: 4
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Game\Scripts\Stages\ShootingStage.cs
-            fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\ShootingStage.cs
-            projectPath: Assets\Game\Scripts\Stages\ShootingStage.cs
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 3
-        - path: Assets\Scenes
-          label: Scenes
-          level: 1
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Scenes\HomeScene.unity
-          label: HomeScene.unity
-          level: 2
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Scenes\HomeScene.unity
-            fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\HomeScene.unity
-            projectPath: Assets\Scenes\HomeScene.unity
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 3
+        keys: []
+        values: []
       folders:
-        keys:
-        - Assets
-        - Assets\Game
-        - Assets\Game\Scripts
-        - Assets\Game\Scripts\Stages
-        - Assets\Scenes
-        - UserSettings
-        - UserSettings\Layouts
-        values:
-        - path: Assets
-          label: Assets
-          level: 0
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Game
-          label: Game
-          level: 1
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Game\Scripts
-          label: Scripts
-          level: 2
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Game\Scripts\Stages
-          label: Stages
-          level: 3
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Scenes
-          label: Scenes
-          level: 1
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: UserSettings
-          label: UserSettings
-          level: 0
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: UserSettings\Layouts
-          label: Layouts
-          level: 1
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
+        keys: []
+        values: []
       checkedFileNodes:
         keys: []
         values: []
@@ -1827,186 +1561,6 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
-      - path: Assets
-        label: Assets
-        level: 0
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets\Game
-        label: Game
-        level: 1
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets\Game\Scripts
-        label: Scripts
-        level: 2
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets\Game\Scripts\Stages
-        label: Stages
-        level: 3
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets\Game\Scripts\Stages\ShootingStage.cs
-        label: ShootingStage.cs
-        level: 4
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Game\Scripts\Stages\ShootingStage.cs
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\ShootingStage.cs
-          projectPath: Assets\Game\Scripts\Stages\ShootingStage.cs
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 3
-      - path: Assets\Scenes
-        label: Scenes
-        level: 1
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets\Scenes\HomeScene.unity
-        label: HomeScene.unity
-        level: 2
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Scenes\HomeScene.unity
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\HomeScene.unity
-          projectPath: Assets\Scenes\HomeScene.unity
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 3
-      - path: UserSettings
-        label: UserSettings
-        level: 0
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: UserSettings\Layouts
-        label: Layouts
-        level: 1
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: UserSettings\Layouts\default-2022.dwlt
-        label: default-2022.dwlt
-        level: 2
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: UserSettings\Layouts\default-2022.dwlt
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\Layouts\default-2022.dwlt
-          projectPath: UserSettings\Layouts\default-2022.dwlt
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 3
       selectedNode:
         path: 
         label: 
@@ -2026,39 +1580,1520 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
-    gitStatusEntries:
-    - path: Assets\Game\Scripts\Stages\ShootingStage.cs
-      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\ShootingStage.cs
-      projectPath: Assets\Game\Scripts\Stages\ShootingStage.cs
-      originalPath: 
-      indexStatus: 0
-      workTreeStatus: 3
-    - path: Assets\Scenes\HomeScene.unity
-      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\HomeScene.unity
-      projectPath: Assets\Scenes\HomeScene.unity
-      originalPath: 
-      indexStatus: 0
-      workTreeStatus: 3
-    - path: UserSettings\Layouts\default-2022.dwlt
-      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\Layouts\default-2022.dwlt
-      projectPath: UserSettings\Layouts\default-2022.dwlt
-      originalPath: 
-      indexStatus: 0
-      workTreeStatus: 3
-    changedFilesText: 3 changed files
+    gitStatusEntries: []
+    changedFilesText: No changed files
     lastCurrentBranchChangedEvent:
-      updatedTimeString: 2025-04-15T14:51:28.272+02:00
+      updatedTimeString: 2025-04-16T16:07:59.533+02:00
       cacheType: 1
     lastStatusEntriesChangedEvent:
-      updatedTimeString: 0001-01-01T00:00:00.000+00:00
+      updatedTimeString: 2025-04-16T16:07:49.295+02:00
       cacheType: 6
     lastLocksChangedEvent:
-      updatedTimeString: 0001-01-01T00:00:00.000+00:00
+      updatedTimeString: 2025-04-16T16:06:26.489+02:00
       cacheType: 7
   historyView:
     currentLogHasUpdate: 0
     currentTrackingStatusHasUpdate: 0
     logEntries:
+    - commitID: 53d6ee72ae58b2780ad41ae3612ecd51a88307e4
+      mergeA: 
+      mergeB: 
+      authorName: Valus-gh
+      authorEmail: simone.belingheri25@gmail.com
+      commitEmail: simone.belingheri25@gmail.com
+      commitName: Valus-gh
+      summary: Fixed Projectile import from json. Refactored namespace and folder
+        structure.
+      description: Fixed Projectile import from json. Refactored namespace and folder
+        structure.
+      timeString: 2025-04-12T11:46:47.000+02:00
+      commitTimeString: 2025-04-12T11:46:47.000+02:00
+      changes:
+      - path: Assets\Demo\BasicWorldInitializer.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Demo\BasicWorldInitializer.cs
+        projectPath: Assets\Demo\BasicWorldInitializer.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Demo\ProjectileTestDemo.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Demo\ProjectileTestDemo.cs
+        projectPath: Assets\Demo\ProjectileTestDemo.cs
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: Assets\Demo\ProjectileTestDemo.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Demo\ProjectileTestDemo.cs.meta
+        projectPath: Assets\Demo\ProjectileTestDemo.cs.meta
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: Assets\Demo\SettingsGUI.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Demo\SettingsGUI.cs
+        projectPath: Assets\Demo\SettingsGUI.cs
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: Assets\Demo\SettingsGUI.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Demo\SettingsGUI.cs.meta
+        projectPath: Assets\Demo\SettingsGUI.cs.meta
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: Assets\Demo\TowerLocationTest.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Demo\TowerLocationTest.cs
+        projectPath: Assets\Demo\TowerLocationTest.cs
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: Assets\Game\Fog\Scripts\FoWRevealer.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Fog\Scripts\FoWRevealer.cs
+        projectPath: Assets\Game\Fog\Scripts\FoWRevealer.cs
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: Assets\Game\Fog\Scripts\FogInjector.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Fog\Scripts\FogInjector.cs
+        projectPath: Assets\Game\Fog\Scripts\FogInjector.cs
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: Assets\Game\Fog\Scripts\FogManager.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Fog\Scripts\FogManager.cs
+        projectPath: Assets\Game\Fog\Scripts\FogManager.cs
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: Assets\Game\Fog\Scripts\RemoveOnDestroy.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Fog\Scripts\RemoveOnDestroy.cs
+        projectPath: Assets\Game\Fog\Scripts\RemoveOnDestroy.cs
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: Assets\Game\Fog\Scripts\TakeMaterialInstance.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Fog\Scripts\TakeMaterialInstance.cs
+        projectPath: Assets\Game\Fog\Scripts\TakeMaterialInstance.cs
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: Assets\Game\Fog\Scripts\TakeMaterialInstance.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Fog\Scripts\TakeMaterialInstance.cs.meta
+        projectPath: Assets\Game\Fog\Scripts\TakeMaterialInstance.cs.meta
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: Assets\Game\Prefabs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs.meta
+        projectPath: Assets\Game\Prefabs.meta
+        originalPath: Assets\Game\Fog\Prefabs.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Prefabs\Fog.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Fog.meta
+        projectPath: Assets\Game\Prefabs\Fog.meta
+        originalPath: Assets\Game\Fog.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Prefabs\Fog\FischlWorks.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Fog\FischlWorks.meta
+        projectPath: Assets\Game\Prefabs\Fog\FischlWorks.meta
+        originalPath: Assets\Game\Fog\Scripts.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Prefabs\Fog\FischlWorks\FogPlane.mat
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Fog\FischlWorks\FogPlane.mat
+        projectPath: Assets\Game\Prefabs\Fog\FischlWorks\FogPlane.mat
+        originalPath: Assets\Game\Fog\Prefabs\FogPlane.mat
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Prefabs\Fog\FischlWorks\FogPlane.mat.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Fog\FischlWorks\FogPlane.mat.meta
+        projectPath: Assets\Game\Prefabs\Fog\FischlWorks\FogPlane.mat.meta
+        originalPath: Assets\Game\Fog\Prefabs\FogPlane.mat.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Prefabs\Fog\FischlWorks\FogPlane.shader
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Fog\FischlWorks\FogPlane.shader
+        projectPath: Assets\Game\Prefabs\Fog\FischlWorks\FogPlane.shader
+        originalPath: Assets\Game\Fog\Prefabs\FogPlane.shader
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Prefabs\Fog\FischlWorks\FogPlane.shader.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Fog\FischlWorks\FogPlane.shader.meta
+        projectPath: Assets\Game\Prefabs\Fog\FischlWorks\FogPlane.shader.meta
+        originalPath: Assets\Game\Fog\Prefabs\FogPlane.shader.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Prefabs\Fog\FogInjector.prefab
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Fog\FogInjector.prefab
+        projectPath: Assets\Game\Prefabs\Fog\FogInjector.prefab
+        originalPath: Assets\Game\Fog\Prefabs\FogInjector.prefab
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Prefabs\Fog\FogInjector.prefab.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Fog\FogInjector.prefab.meta
+        projectPath: Assets\Game\Prefabs\Fog\FogInjector.prefab.meta
+        originalPath: Assets\Game\Fog\Prefabs\FogInjector.prefab.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Prefabs\Fog\FogManager.prefab
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Fog\FogManager.prefab
+        projectPath: Assets\Game\Prefabs\Fog\FogManager.prefab
+        originalPath: Assets\Game\Fog\Prefabs\FogManager.prefab
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Prefabs\Fog\FogManager.prefab.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Fog\FogManager.prefab.meta
+        projectPath: Assets\Game\Prefabs\Fog\FogManager.prefab.meta
+        originalPath: Assets\Game\Fog\Prefabs\FogManager.prefab.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Prefabs\Fog\FogVertexColor.shadergraph
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Fog\FogVertexColor.shadergraph
+        projectPath: Assets\Game\Prefabs\Fog\FogVertexColor.shadergraph
+        originalPath: Assets\Game\Fog\Prefabs\FogVertexColor.shadergraph
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Prefabs\Fog\FogVertexColor.shadergraph.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Fog\FogVertexColor.shadergraph.meta
+        projectPath: Assets\Game\Prefabs\Fog\FogVertexColor.shadergraph.meta
+        originalPath: Assets\Game\Fog\Prefabs\FogVertexColor.shadergraph.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Prefabs\Fog\FogVertexColorMaterial.mat
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Fog\FogVertexColorMaterial.mat
+        projectPath: Assets\Game\Prefabs\Fog\FogVertexColorMaterial.mat
+        originalPath: Assets\Game\Fog\Prefabs\FogVertexColorMaterial.mat
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Prefabs\Fog\FogVertexColorMaterial.mat.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Fog\FogVertexColorMaterial.mat.meta
+        projectPath: Assets\Game\Prefabs\Fog\FogVertexColorMaterial.mat.meta
+        originalPath: Assets\Game\Fog\Prefabs\FogVertexColorMaterial.mat.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Prefabs\Fog\MidPoint.prefab
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Fog\MidPoint.prefab
+        projectPath: Assets\Game\Prefabs\Fog\MidPoint.prefab
+        originalPath: Assets\Game\Fog\Prefabs\MidPoint.prefab
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Prefabs\Fog\MidPoint.prefab.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Fog\MidPoint.prefab.meta
+        projectPath: Assets\Game\Prefabs\Fog\MidPoint.prefab.meta
+        originalPath: Assets\Game\Fog\Prefabs\MidPoint.prefab.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Prefabs\Interaction.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Interaction.meta
+        projectPath: Assets\Game\Prefabs\Interaction.meta
+        originalPath: Assets\Game\Towers.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Prefabs\Interaction\AimingArrow.prefab
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Interaction\AimingArrow.prefab
+        projectPath: Assets\Game\Prefabs\Interaction\AimingArrow.prefab
+        originalPath: Assets\Game\Towers\Prefabs\AimingArrow.prefab
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Prefabs\Interaction\AimingArrow.prefab.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Interaction\AimingArrow.prefab.meta
+        projectPath: Assets\Game\Prefabs\Interaction\AimingArrow.prefab.meta
+        originalPath: Assets\Game\Towers\Prefabs\AimingArrow.prefab.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Prefabs\Networking.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Networking.meta
+        projectPath: Assets\Game\Prefabs\Networking.meta
+        originalPath: Assets\Networking.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Prefabs\Networking\RoomManager.prefab
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Networking\RoomManager.prefab
+        projectPath: Assets\Game\Prefabs\Networking\RoomManager.prefab
+        originalPath: Assets\Networking\Prefabs\RoomManager.prefab
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Prefabs\Networking\RoomManager.prefab.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Networking\RoomManager.prefab.meta
+        projectPath: Assets\Game\Prefabs\Networking\RoomManager.prefab.meta
+        originalPath: Assets\Networking\Prefabs\RoomManager.prefab.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Prefabs\Networking\RoomPlayer.prefab
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Networking\RoomPlayer.prefab
+        projectPath: Assets\Game\Prefabs\Networking\RoomPlayer.prefab
+        originalPath: Assets\Networking\Prefabs\RoomPlayer.prefab
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Prefabs\Networking\RoomPlayer.prefab.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Networking\RoomPlayer.prefab.meta
+        projectPath: Assets\Game\Prefabs\Networking\RoomPlayer.prefab.meta
+        originalPath: Assets\Networking\Prefabs\RoomPlayer.prefab.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Prefabs\PlayerTower.prefab
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\PlayerTower.prefab
+        projectPath: Assets\Game\Prefabs\PlayerTower.prefab
+        originalPath: Assets\Game\Towers\Prefabs\Tower.prefab
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Prefabs\PlayerTower.prefab.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\PlayerTower.prefab.meta
+        projectPath: Assets\Game\Prefabs\PlayerTower.prefab.meta
+        originalPath: Assets\Networking\Prefabs\PlayerTower.prefab.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Prefabs\Stages.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Stages.meta
+        projectPath: Assets\Game\Prefabs\Stages.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Prefabs\Stages\StageManager.prefab
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Stages\StageManager.prefab
+        projectPath: Assets\Game\Prefabs\Stages\StageManager.prefab
+        originalPath: Assets\Networking\Prefabs\StageManager.prefab
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Prefabs\Stages\StageManager.prefab.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Stages\StageManager.prefab.meta
+        projectPath: Assets\Game\Prefabs\Stages\StageManager.prefab.meta
+        originalPath: Assets\Networking\Prefabs\StageManager.prefab.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Prefabs\Utilities.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Utilities.meta
+        projectPath: Assets\Game\Prefabs\Utilities.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Prefabs\Utilities\ModelHolder.prefab
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Utilities\ModelHolder.prefab
+        projectPath: Assets\Game\Prefabs\Utilities\ModelHolder.prefab
+        originalPath: Assets\Networking\Prefabs\ModelHolder.prefab
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Prefabs\Utilities\ModelHolder.prefab.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Utilities\ModelHolder.prefab.meta
+        projectPath: Assets\Game\Prefabs\Utilities\ModelHolder.prefab.meta
+        originalPath: Assets\Networking\Prefabs\ModelHolder.prefab.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Prefabs\Weapons.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Weapons.meta
+        projectPath: Assets\Game\Prefabs\Weapons.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Prefabs\Weapons\TestProjectile.prefab
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Weapons\TestProjectile.prefab
+        projectPath: Assets\Game\Prefabs\Weapons\TestProjectile.prefab
+        originalPath: Assets\Networking\Prefabs\TestProjectile.prefab
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Prefabs\Weapons\TestProjectile.prefab.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Weapons\TestProjectile.prefab.meta
+        projectPath: Assets\Game\Prefabs\Weapons\TestProjectile.prefab.meta
+        originalPath: Assets\Networking\Prefabs\TestProjectile.prefab.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts.meta
+        projectPath: Assets\Game\Scripts.meta
+        originalPath: Assets\Game\Towers\Scripts.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Fog.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Fog.meta
+        projectPath: Assets\Game\Scripts\Fog.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Fog\FindRevealers.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Fog\FindRevealers.cs
+        projectPath: Assets\Game\Scripts\Fog\FindRevealers.cs
+        originalPath: Assets\Networking\Scripts\FindRevealers.cs
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Fog\FindRevealers.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Fog\FindRevealers.cs.meta
+        projectPath: Assets\Game\Scripts\Fog\FindRevealers.cs.meta
+        originalPath: Assets\Networking\Scripts\FindRevealers.cs.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Fog\FischlWorks.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Fog\FischlWorks.meta
+        projectPath: Assets\Game\Scripts\Fog\FischlWorks.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Fog\FischlWorks\Shadowcaster.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Fog\FischlWorks\Shadowcaster.cs
+        projectPath: Assets\Game\Scripts\Fog\FischlWorks\Shadowcaster.cs
+        originalPath: Assets\Game\Fog\Scripts\Shadowcaster.cs
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Fog\FischlWorks\Shadowcaster.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Fog\FischlWorks\Shadowcaster.cs.meta
+        projectPath: Assets\Game\Scripts\Fog\FischlWorks\Shadowcaster.cs.meta
+        originalPath: Assets\Game\Fog\Scripts\Shadowcaster.cs.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Fog\FischlWorks\csFogVisibilityAgent.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Fog\FischlWorks\csFogVisibilityAgent.cs
+        projectPath: Assets\Game\Scripts\Fog\FischlWorks\csFogVisibilityAgent.cs
+        originalPath: Assets\Game\Fog\Scripts\csFogVisibilityAgent.cs
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Fog\FischlWorks\csFogVisibilityAgent.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Fog\FischlWorks\csFogVisibilityAgent.cs.meta
+        projectPath: Assets\Game\Scripts\Fog\FischlWorks\csFogVisibilityAgent.cs.meta
+        originalPath: Assets\Game\Fog\Scripts\csFogVisibilityAgent.cs.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Fog\FischlWorks\csFogWar.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Fog\FischlWorks\csFogWar.cs
+        projectPath: Assets\Game\Scripts\Fog\FischlWorks\csFogWar.cs
+        originalPath: Assets\Game\Fog\Scripts\csFogWar.cs
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Fog\FischlWorks\csFogWar.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Fog\FischlWorks\csFogWar.cs.meta
+        projectPath: Assets\Game\Scripts\Fog\FischlWorks\csFogWar.cs.meta
+        originalPath: Assets\Game\Fog\Scripts\csFogWar.cs.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Fog\FoWRevealer.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Fog\FoWRevealer.cs
+        projectPath: Assets\Game\Scripts\Fog\FoWRevealer.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Fog\FoWRevealer.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Fog\FoWRevealer.cs.meta
+        projectPath: Assets\Game\Scripts\Fog\FoWRevealer.cs.meta
+        originalPath: Assets\Game\Fog\Scripts\FoWRevealer.cs.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Fog\FogInjector.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Fog\FogInjector.cs
+        projectPath: Assets\Game\Scripts\Fog\FogInjector.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Fog\FogInjector.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Fog\FogInjector.cs.meta
+        projectPath: Assets\Game\Scripts\Fog\FogInjector.cs.meta
+        originalPath: Assets\Game\Fog\Scripts\FogInjector.cs.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Fog\FogManager.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Fog\FogManager.cs
+        projectPath: Assets\Game\Scripts\Fog\FogManager.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Fog\FogManager.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Fog\FogManager.cs.meta
+        projectPath: Assets\Game\Scripts\Fog\FogManager.cs.meta
+        originalPath: Assets\Game\Fog\Scripts\FogManager.cs.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Fog\RemoveOnDestroy.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Fog\RemoveOnDestroy.cs
+        projectPath: Assets\Game\Scripts\Fog\RemoveOnDestroy.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Fog\RemoveOnDestroy.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Fog\RemoveOnDestroy.cs.meta
+        projectPath: Assets\Game\Scripts\Fog\RemoveOnDestroy.cs.meta
+        originalPath: Assets\Game\Fog\Scripts\RemoveOnDestroy.cs.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\GameResources.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\GameResources.meta
+        projectPath: Assets\Game\Scripts\GameResources.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\GameResources\ProjectileResources.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\GameResources\ProjectileResources.cs
+        projectPath: Assets\Game\Scripts\GameResources\ProjectileResources.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\GameResources\ProjectileResources.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\GameResources\ProjectileResources.cs.meta
+        projectPath: Assets\Game\Scripts\GameResources\ProjectileResources.cs.meta
+        originalPath: Assets\Demo\TowerLocationTest.cs.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Interaction.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction.meta
+        projectPath: Assets\Game\Scripts\Interaction.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Interaction\AimingArrow.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\AimingArrow.cs
+        projectPath: Assets\Game\Scripts\Interaction\AimingArrow.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Interaction\AimingArrow.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\AimingArrow.cs.meta
+        projectPath: Assets\Game\Scripts\Interaction\AimingArrow.cs.meta
+        originalPath: Assets\Game\Towers\Scripts\AimingArrow.cs.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Interaction\PlayerControls.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\PlayerControls.cs
+        projectPath: Assets\Game\Scripts\Interaction\PlayerControls.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Interaction\PlayerControls.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\PlayerControls.cs.meta
+        projectPath: Assets\Game\Scripts\Interaction\PlayerControls.cs.meta
+        originalPath: Assets\Game\Towers\Scripts\TowerControls.cs.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Interaction\PlayerControlsKeyboard.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\PlayerControlsKeyboard.cs
+        projectPath: Assets\Game\Scripts\Interaction\PlayerControlsKeyboard.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Interaction\PlayerControlsKeyboard.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\PlayerControlsKeyboard.cs.meta
+        projectPath: Assets\Game\Scripts\Interaction\PlayerControlsKeyboard.cs.meta
+        originalPath: Assets\Game\Towers\Scripts\TowerControlsKeyboard.cs.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Interaction\TowerControlsMultiplayer.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\TowerControlsMultiplayer.cs
+        projectPath: Assets\Game\Scripts\Interaction\TowerControlsMultiplayer.cs
+        originalPath: Assets\Networking\Scripts\TowerControlsMultiplayer.cs
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Interaction\TowerControlsMultiplayer.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\TowerControlsMultiplayer.cs.meta
+        projectPath: Assets\Game\Scripts\Interaction\TowerControlsMultiplayer.cs.meta
+        originalPath: Assets\Networking\Scripts\TowerControlsMultiplayer.cs.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Interaction\TowerControlsMultiplayerKeyboard.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\TowerControlsMultiplayerKeyboard.cs
+        projectPath: Assets\Game\Scripts\Interaction\TowerControlsMultiplayerKeyboard.cs
+        originalPath: Assets\Networking\Scripts\TowerControlsMultiplayerKeyboard.cs
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Interaction\TowerControlsMultiplayerKeyboard.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\TowerControlsMultiplayerKeyboard.cs.meta
+        projectPath: Assets\Game\Scripts\Interaction\TowerControlsMultiplayerKeyboard.cs.meta
+        originalPath: Assets\Networking\Scripts\TowerControlsMultiplayerKeyboard.cs.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Networking.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Networking.meta
+        projectPath: Assets\Game\Scripts\Networking.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Networking\NetworkRoomManagerV3D.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Networking\NetworkRoomManagerV3D.cs
+        projectPath: Assets\Game\Scripts\Networking\NetworkRoomManagerV3D.cs
+        originalPath: Assets\Networking\Scripts\NetworkRoomManagerV3D.cs
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Networking\NetworkRoomManagerV3D.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Networking\NetworkRoomManagerV3D.cs.meta
+        projectPath: Assets\Game\Scripts\Networking\NetworkRoomManagerV3D.cs.meta
+        originalPath: Assets\Networking\Scripts\NetworkRoomManagerV3D.cs.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Networking\NetworkRoomPlayerV3D.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Networking\NetworkRoomPlayerV3D.cs
+        projectPath: Assets\Game\Scripts\Networking\NetworkRoomPlayerV3D.cs
+        originalPath: Assets\Networking\Scripts\NetworkRoomPlayerV3D.cs
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Networking\NetworkRoomPlayerV3D.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Networking\NetworkRoomPlayerV3D.cs.meta
+        projectPath: Assets\Game\Scripts\Networking\NetworkRoomPlayerV3D.cs.meta
+        originalPath: Assets\Networking\Scripts\NetworkRoomPlayerV3D.cs.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\PlayerTower.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\PlayerTower.cs
+        projectPath: Assets\Game\Scripts\PlayerTower.cs
+        originalPath: Assets\Networking\Scripts\PlayerTower.cs
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\PlayerTower.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\PlayerTower.cs.meta
+        projectPath: Assets\Game\Scripts\PlayerTower.cs.meta
+        originalPath: Assets\Networking\Scripts\PlayerTower.cs.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Stages.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages.meta
+        projectPath: Assets\Game\Scripts\Stages.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Stages\ConnectionStage.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\ConnectionStage.cs
+        projectPath: Assets\Game\Scripts\Stages\ConnectionStage.cs
+        originalPath: Assets\Networking\Scripts\ConnectionStage.cs
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Stages\ConnectionStage.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\ConnectionStage.cs.meta
+        projectPath: Assets\Game\Scripts\Stages\ConnectionStage.cs.meta
+        originalPath: Assets\Networking\Scripts\ConnectionStage.cs.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Stages\GameStage.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\GameStage.cs
+        projectPath: Assets\Game\Scripts\Stages\GameStage.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Stages\GameStage.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\GameStage.cs.meta
+        projectPath: Assets\Game\Scripts\Stages\GameStage.cs.meta
+        originalPath: Assets\Networking\Scripts\GameStage.cs.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Stages\ShootingStage.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\ShootingStage.cs
+        projectPath: Assets\Game\Scripts\Stages\ShootingStage.cs
+        originalPath: Assets\Networking\Scripts\ShootingStage.cs
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Stages\ShootingStage.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\ShootingStage.cs.meta
+        projectPath: Assets\Game\Scripts\Stages\ShootingStage.cs.meta
+        originalPath: Assets\Networking\Scripts\ShootingStage.cs.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Stages\StageManager.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\StageManager.cs
+        projectPath: Assets\Game\Scripts\Stages\StageManager.cs
+        originalPath: Assets\Networking\Scripts\StageManager.cs
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Stages\StageManager.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\StageManager.cs.meta
+        projectPath: Assets\Game\Scripts\Stages\StageManager.cs.meta
+        originalPath: Assets\Networking\Scripts\StageManager.cs.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\TowerLocator.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\TowerLocator.cs
+        projectPath: Assets\Game\Scripts\TowerLocator.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\TowerLocator.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\TowerLocator.cs.meta
+        projectPath: Assets\Game\Scripts\TowerLocator.cs.meta
+        originalPath: Assets\Game\Towers\Scripts\TowerLocator.cs.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Utilities.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Utilities.meta
+        projectPath: Assets\Game\Scripts\Utilities.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Utilities\DestroyAfterInterval.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Utilities\DestroyAfterInterval.cs
+        projectPath: Assets\Game\Scripts\Utilities\DestroyAfterInterval.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Utilities\DestroyAfterInterval.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Utilities\DestroyAfterInterval.cs.meta
+        projectPath: Assets\Game\Scripts\Utilities\DestroyAfterInterval.cs.meta
+        originalPath: Assets\Game\Towers\Scripts\Projectiles\DestroyAfterInterval.cs.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Utilities\ModelHolder.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Utilities\ModelHolder.cs
+        projectPath: Assets\Game\Scripts\Utilities\ModelHolder.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Utilities\ModelHolder.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Utilities\ModelHolder.cs.meta
+        projectPath: Assets\Game\Scripts\Utilities\ModelHolder.cs.meta
+        originalPath: Assets\Networking\Scripts\ModelHolder.cs.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Utilities\OwnedBy.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Utilities\OwnedBy.cs
+        projectPath: Assets\Game\Scripts\Utilities\OwnedBy.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Utilities\OwnedBy.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Utilities\OwnedBy.cs.meta
+        projectPath: Assets\Game\Scripts\Utilities\OwnedBy.cs.meta
+        originalPath: Assets\Networking\Scripts\OwnedBy.cs.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Weapons.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Weapons.meta
+        projectPath: Assets\Game\Scripts\Weapons.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Weapons\Blast.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Weapons\Blast.cs
+        projectPath: Assets\Game\Scripts\Weapons\Blast.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Weapons\Blast.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Weapons\Blast.cs.meta
+        projectPath: Assets\Game\Scripts\Weapons\Blast.cs.meta
+        originalPath: Assets\Game\Towers\Scripts\Blasts\Blast.cs.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Weapons\Projectile.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Weapons\Projectile.cs
+        projectPath: Assets\Game\Scripts\Weapons\Projectile.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Weapons\Projectile.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Weapons\Projectile.cs.meta
+        projectPath: Assets\Game\Scripts\Weapons\Projectile.cs.meta
+        originalPath: Assets\Game\Towers\Scripts\Projectiles\Projectile.cs.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Weapons\Trajectory.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Weapons\Trajectory.cs
+        projectPath: Assets\Game\Scripts\Weapons\Trajectory.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Weapons\Trajectory.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Weapons\Trajectory.cs.meta
+        projectPath: Assets\Game\Scripts\Weapons\Trajectory.cs.meta
+        originalPath: Assets\Game\Towers\Scripts\Projectiles\Trajectory.cs.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Towers\Prefabs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Towers\Prefabs.meta
+        projectPath: Assets\Game\Towers\Prefabs.meta
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: Assets\Game\Towers\Prefabs\TestProjectile.prefab
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Towers\Prefabs\TestProjectile.prefab
+        projectPath: Assets\Game\Towers\Prefabs\TestProjectile.prefab
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: Assets\Game\Towers\Prefabs\Tower.prefab.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Towers\Prefabs\Tower.prefab.meta
+        projectPath: Assets\Game\Towers\Prefabs\Tower.prefab.meta
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: Assets\Game\Towers\Scripts\AimingArrow.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Towers\Scripts\AimingArrow.cs
+        projectPath: Assets\Game\Towers\Scripts\AimingArrow.cs
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: Assets\Game\Towers\Scripts\Blasts.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Towers\Scripts\Blasts.meta
+        projectPath: Assets\Game\Towers\Scripts\Blasts.meta
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: Assets\Game\Towers\Scripts\Blasts\BasicBlast.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Towers\Scripts\Blasts\BasicBlast.cs
+        projectPath: Assets\Game\Towers\Scripts\Blasts\BasicBlast.cs
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: Assets\Game\Towers\Scripts\Blasts\BasicBlast.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Towers\Scripts\Blasts\BasicBlast.cs.meta
+        projectPath: Assets\Game\Towers\Scripts\Blasts\BasicBlast.cs.meta
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: Assets\Game\Towers\Scripts\Blasts\Blast.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Towers\Scripts\Blasts\Blast.cs
+        projectPath: Assets\Game\Towers\Scripts\Blasts\Blast.cs
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: Assets\Game\Towers\Scripts\Projectiles.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Towers\Scripts\Projectiles.meta
+        projectPath: Assets\Game\Towers\Scripts\Projectiles.meta
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: Assets\Game\Towers\Scripts\Projectiles\DestroyAfterInterval.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Towers\Scripts\Projectiles\DestroyAfterInterval.cs
+        projectPath: Assets\Game\Towers\Scripts\Projectiles\DestroyAfterInterval.cs
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: Assets\Game\Towers\Scripts\Projectiles\Projectile.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Towers\Scripts\Projectiles\Projectile.cs
+        projectPath: Assets\Game\Towers\Scripts\Projectiles\Projectile.cs
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: Assets\Game\Towers\Scripts\Projectiles\Trajectory.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Towers\Scripts\Projectiles\Trajectory.cs
+        projectPath: Assets\Game\Towers\Scripts\Projectiles\Trajectory.cs
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: Assets\Game\Towers\Scripts\TowerControls.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Towers\Scripts\TowerControls.cs
+        projectPath: Assets\Game\Towers\Scripts\TowerControls.cs
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: Assets\Game\Towers\Scripts\TowerControlsKeyboard.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Towers\Scripts\TowerControlsKeyboard.cs
+        projectPath: Assets\Game\Towers\Scripts\TowerControlsKeyboard.cs
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: Assets\Game\Towers\Scripts\TowerLocator.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Towers\Scripts\TowerLocator.cs
+        projectPath: Assets\Game\Towers\Scripts\TowerLocator.cs
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: Assets\Networking\Prefabs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Prefabs.meta
+        projectPath: Assets\Networking\Prefabs.meta
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: Assets\Networking\Prefabs\PlayerTower.prefab
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Prefabs\PlayerTower.prefab
+        projectPath: Assets\Networking\Prefabs\PlayerTower.prefab
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: Assets\Networking\Scripts.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts.meta
+        projectPath: Assets\Networking\Scripts.meta
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: Assets\Networking\Scripts\GameStage.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\GameStage.cs
+        projectPath: Assets\Networking\Scripts\GameStage.cs
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: Assets\Networking\Scripts\ModelHolder.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\ModelHolder.cs
+        projectPath: Assets\Networking\Scripts\ModelHolder.cs
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: Assets\Networking\Scripts\OwnedBy.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\OwnedBy.cs
+        projectPath: Assets\Networking\Scripts\OwnedBy.cs
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: Assets\Resources\projectiles.json
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\projectiles.json
+        projectPath: Assets\Resources\projectiles.json
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Resources\projectiles.json.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\projectiles.json.meta
+        projectPath: Assets\Resources\projectiles.json.meta
+        originalPath: Assets\Game\Towers\Prefabs\TestProjectile.prefab.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Json\JsonImporter.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Json\JsonImporter.cs
+        projectPath: Assets\Vox3D\Json\JsonImporter.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Vox3D\Vox3DEngine.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Vox3DEngine.cs
+        projectPath: Assets\Vox3D\Vox3DEngine.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: UserSettings\Layouts\default-2022.dwlt
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\Layouts\default-2022.dwlt
+        projectPath: UserSettings\Layouts\default-2022.dwlt
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+    - commitID: 988b8a5de0ec9e49a93a04f398badcaf6c3ba4a9
+      mergeA: 
+      mergeB: 
+      authorName: Valus-gh
+      authorEmail: simone.belingheri25@gmail.com
+      commitEmail: simone.belingheri25@gmail.com
+      commitName: Valus-gh
+      summary: Added aiming arrow to towers.
+      description: Added aiming arrow to towers.
+      timeString: 2025-04-08T22:32:04.000+02:00
+      commitTimeString: 2025-04-08T22:32:04.000+02:00
+      changes:
+      - path: Assets\Game\Imports\AimingArrowMaterial.mat
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Imports\AimingArrowMaterial.mat
+        projectPath: Assets\Game\Imports\AimingArrowMaterial.mat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Imports\AimingArrowMaterial.mat.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Imports\AimingArrowMaterial.mat.meta
+        projectPath: Assets\Game\Imports\AimingArrowMaterial.mat.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Imports\Arrow.blend
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Imports\Arrow.blend
+        projectPath: Assets\Game\Imports\Arrow.blend
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Imports\Arrow.blend.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Imports\Arrow.blend.meta
+        projectPath: Assets\Game\Imports\Arrow.blend.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Towers\Prefabs\AimingArrow.prefab
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Towers\Prefabs\AimingArrow.prefab
+        projectPath: Assets\Game\Towers\Prefabs\AimingArrow.prefab
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Towers\Prefabs\AimingArrow.prefab.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Towers\Prefabs\AimingArrow.prefab.meta
+        projectPath: Assets\Game\Towers\Prefabs\AimingArrow.prefab.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Towers\Prefabs\Tower.prefab
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Towers\Prefabs\Tower.prefab
+        projectPath: Assets\Game\Towers\Prefabs\Tower.prefab
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Game\Towers\Scripts\AimingArrow.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Towers\Scripts\AimingArrow.cs
+        projectPath: Assets\Game\Towers\Scripts\AimingArrow.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Towers\Scripts\AimingArrow.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Towers\Scripts\AimingArrow.cs.meta
+        projectPath: Assets\Game\Towers\Scripts\AimingArrow.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Networking\Prefabs\PlayerTower.prefab
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Prefabs\PlayerTower.prefab
+        projectPath: Assets\Networking\Prefabs\PlayerTower.prefab
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Networking\Scripts\ShootingStage.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\ShootingStage.cs
+        projectPath: Assets\Networking\Scripts\ShootingStage.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Networking\Scripts\TowerControlsMultiplayer.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\TowerControlsMultiplayer.cs
+        projectPath: Assets\Networking\Scripts\TowerControlsMultiplayer.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Networking\Scripts\TowerControlsMultiplayerKeyboard.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\TowerControlsMultiplayerKeyboard.cs
+        projectPath: Assets\Networking\Scripts\TowerControlsMultiplayerKeyboard.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Scenes\HomeScene.unity
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\HomeScene.unity
+        projectPath: Assets\Scenes\HomeScene.unity
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: UserSettings\Layouts\default-2022.dwlt
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\Layouts\default-2022.dwlt
+        projectPath: UserSettings\Layouts\default-2022.dwlt
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+    - commitID: 6c68a6e59150cfbcf449f6b6f85d8d800160cf3f
+      mergeA: 
+      mergeB: 
+      authorName: Valus-gh
+      authorEmail: simone.belingheri25@gmail.com
+      commitEmail: simone.belingheri25@gmail.com
+      commitName: Valus-gh
+      summary: Added Connection Stage, Shooting Stage
+      description: Added Connection Stage, Shooting Stage. Add WaitingForPlayers
+        graphci next, followed by arrow showing trajectory
+      timeString: 2025-04-05T11:54:18.000+02:00
+      commitTimeString: 2025-04-05T11:54:18.000+02:00
+      changes:
+      - path: Assets\Networking\Prefabs\StageManager.prefab
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Prefabs\StageManager.prefab
+        projectPath: Assets\Networking\Prefabs\StageManager.prefab
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Networking\Prefabs\StageManager.prefab.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Prefabs\StageManager.prefab.meta
+        projectPath: Assets\Networking\Prefabs\StageManager.prefab.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Networking\Scripts\ConnectionStage.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\ConnectionStage.cs
+        projectPath: Assets\Networking\Scripts\ConnectionStage.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Networking\Scripts\ConnectionStage.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\ConnectionStage.cs.meta
+        projectPath: Assets\Networking\Scripts\ConnectionStage.cs.meta
+        originalPath: Assets\loadnewscenetest.cs.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Networking\Scripts\GameStage.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\GameStage.cs
+        projectPath: Assets\Networking\Scripts\GameStage.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Networking\Scripts\GameStage.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\GameStage.cs.meta
+        projectPath: Assets\Networking\Scripts\GameStage.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Networking\Scripts\NetworkRoomManagerV3D.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\NetworkRoomManagerV3D.cs
+        projectPath: Assets\Networking\Scripts\NetworkRoomManagerV3D.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Networking\Scripts\NetworkRoomPlayerV3D.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\NetworkRoomPlayerV3D.cs
+        projectPath: Assets\Networking\Scripts\NetworkRoomPlayerV3D.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Networking\Scripts\PlayerTower.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\PlayerTower.cs
+        projectPath: Assets\Networking\Scripts\PlayerTower.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Networking\Scripts\ShootingStage.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\ShootingStage.cs
+        projectPath: Assets\Networking\Scripts\ShootingStage.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Networking\Scripts\ShootingStage.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\ShootingStage.cs.meta
+        projectPath: Assets\Networking\Scripts\ShootingStage.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Networking\Scripts\StageManager.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\StageManager.cs
+        projectPath: Assets\Networking\Scripts\StageManager.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Networking\Scripts\StageManager.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\StageManager.cs.meta
+        projectPath: Assets\Networking\Scripts\StageManager.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Networking\Scripts\TowerControlsMultiplayer.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\TowerControlsMultiplayer.cs
+        projectPath: Assets\Networking\Scripts\TowerControlsMultiplayer.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Networking\Scripts\TowerControlsMultiplayerKeyboard.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\TowerControlsMultiplayerKeyboard.cs
+        projectPath: Assets\Networking\Scripts\TowerControlsMultiplayerKeyboard.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Scenes\HomeScene.unity
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\HomeScene.unity
+        projectPath: Assets\Scenes\HomeScene.unity
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\loadnewscenetest.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\loadnewscenetest.cs
+        projectPath: Assets\loadnewscenetest.cs
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: UserSettings\Layouts\default-2022.dwlt
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\Layouts\default-2022.dwlt
+        projectPath: UserSettings\Layouts\default-2022.dwlt
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+    - commitID: 8f8064f9bcbc82546ec3b92e3bede30a7566d643
+      mergeA: 
+      mergeB: 
+      authorName: Valus-gh
+      authorEmail: simone.belingheri25@gmail.com
+      commitEmail: simone.belingheri25@gmail.com
+      commitName: Valus-gh
+      summary: Projectiles and towers are now only visible to their owner.
+      description: Projectiles and towers are now only visible to their owner.
+      timeString: 2025-03-29T10:55:52.000+01:00
+      commitTimeString: 2025-03-29T10:55:52.000+01:00
+      changes:
+      - path: Assets\Game\Fog\Scripts\FindRevealers.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Fog\Scripts\FindRevealers.cs
+        projectPath: Assets\Game\Fog\Scripts\FindRevealers.cs
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: Assets\Game\Fog\Scripts\csFogVisibilityAgent.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Fog\Scripts\csFogVisibilityAgent.cs
+        projectPath: Assets\Game\Fog\Scripts\csFogVisibilityAgent.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Networking\Prefabs\PlayerTower.prefab
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Prefabs\PlayerTower.prefab
+        projectPath: Assets\Networking\Prefabs\PlayerTower.prefab
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Networking\Prefabs\TestProjectile.prefab
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Prefabs\TestProjectile.prefab
+        projectPath: Assets\Networking\Prefabs\TestProjectile.prefab
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Networking\Scripts\FindRevealers.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\FindRevealers.cs
+        projectPath: Assets\Networking\Scripts\FindRevealers.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Networking\Scripts\FindRevealers.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\FindRevealers.cs.meta
+        projectPath: Assets\Networking\Scripts\FindRevealers.cs.meta
+        originalPath: Assets\Game\Fog\Scripts\FindRevealers.cs.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Networking\Scripts\NetworkRoomManagerV3D.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\NetworkRoomManagerV3D.cs
+        projectPath: Assets\Networking\Scripts\NetworkRoomManagerV3D.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Networking\Scripts\NetworkRoomPlayerV3D.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\NetworkRoomPlayerV3D.cs
+        projectPath: Assets\Networking\Scripts\NetworkRoomPlayerV3D.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Networking\Scripts\OwnedBy.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\OwnedBy.cs
+        projectPath: Assets\Networking\Scripts\OwnedBy.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Networking\Scripts\OwnedBy.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\OwnedBy.cs.meta
+        projectPath: Assets\Networking\Scripts\OwnedBy.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Networking\Scripts\PlayerTower.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\PlayerTower.cs
+        projectPath: Assets\Networking\Scripts\PlayerTower.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Networking\Scripts\TowerControlsMultiplayerKeyboard.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\TowerControlsMultiplayerKeyboard.cs
+        projectPath: Assets\Networking\Scripts\TowerControlsMultiplayerKeyboard.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: UserSettings\Layouts\default-2022.dwlt
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\Layouts\default-2022.dwlt
+        projectPath: UserSettings\Layouts\default-2022.dwlt
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+    - commitID: 9870a797744f286be6374e6d4d908c5f2fede7ba
+      mergeA: 
+      mergeB: 
+      authorName: Valus-gh
+      authorEmail: simone.belingheri25@gmail.com
+      commitEmail: simone.belingheri25@gmail.com
+      commitName: Valus-gh
+      summary: Added FoW for everything except projectiles.
+      description: Added FoW for everything except projectiles. Towers are now hidden
+        if they do not belong to local player. Projectiles are synced but not properly
+        interactin with FoW.
+      timeString: 2025-03-24T12:53:06.000+01:00
+      commitTimeString: 2025-03-24T12:53:06.000+01:00
+      changes:
+      - path: Assets\Demo\BasicWorldInitializer.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Demo\BasicWorldInitializer.cs
+        projectPath: Assets\Demo\BasicWorldInitializer.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Game\Fog\Scripts\FindRevealers.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Fog\Scripts\FindRevealers.cs
+        projectPath: Assets\Game\Fog\Scripts\FindRevealers.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Game\Fog\Scripts\csFogVisibilityAgent.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Fog\Scripts\csFogVisibilityAgent.cs
+        projectPath: Assets\Game\Fog\Scripts\csFogVisibilityAgent.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Game\Towers\Scripts\TowerControls.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Towers\Scripts\TowerControls.cs
+        projectPath: Assets\Game\Towers\Scripts\TowerControls.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Towers\Scripts\TowerControls.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Towers\Scripts\TowerControls.cs.meta
+        projectPath: Assets\Game\Towers\Scripts\TowerControls.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Towers\Scripts\TowerControlsKeyboard.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Towers\Scripts\TowerControlsKeyboard.cs
+        projectPath: Assets\Game\Towers\Scripts\TowerControlsKeyboard.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Networking\Prefabs\PlayerTower.prefab
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Prefabs\PlayerTower.prefab
+        projectPath: Assets\Networking\Prefabs\PlayerTower.prefab
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Networking\Prefabs\TestProjectile.prefab
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Prefabs\TestProjectile.prefab
+        projectPath: Assets\Networking\Prefabs\TestProjectile.prefab
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Networking\Prefabs\TestProjectile.prefab.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Prefabs\TestProjectile.prefab.meta
+        projectPath: Assets\Networking\Prefabs\TestProjectile.prefab.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Networking\Scripts\NetworkRoomManagerV3D.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\NetworkRoomManagerV3D.cs
+        projectPath: Assets\Networking\Scripts\NetworkRoomManagerV3D.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Networking\Scripts\NetworkRoomPlayerV3D.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\NetworkRoomPlayerV3D.cs
+        projectPath: Assets\Networking\Scripts\NetworkRoomPlayerV3D.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Networking\Scripts\PlayerTower.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\PlayerTower.cs
+        projectPath: Assets\Networking\Scripts\PlayerTower.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Networking\Scripts\TowerControlsMultiplayer.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\TowerControlsMultiplayer.cs
+        projectPath: Assets\Networking\Scripts\TowerControlsMultiplayer.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Networking\Scripts\TowerControlsMultiplayer.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\TowerControlsMultiplayer.cs.meta
+        projectPath: Assets\Networking\Scripts\TowerControlsMultiplayer.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Networking\Scripts\TowerControlsMultiplayerKeyboard.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\TowerControlsMultiplayerKeyboard.cs
+        projectPath: Assets\Networking\Scripts\TowerControlsMultiplayerKeyboard.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Networking\Scripts\TowerControlsMultiplayerKeyboard.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\TowerControlsMultiplayerKeyboard.cs.meta
+        projectPath: Assets\Networking\Scripts\TowerControlsMultiplayerKeyboard.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Scenes\HomeScene.unity
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\HomeScene.unity
+        projectPath: Assets\Scenes\HomeScene.unity
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Scenes\Vox3DSceneMultiplayer.unity
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\Vox3DSceneMultiplayer.unity
+        projectPath: Assets\Scenes\Vox3DSceneMultiplayer.unity
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+    - commitID: 2e89a1d04dd147d4735baf042a4290eb4ff0a85e
+      mergeA: 
+      mergeB: 
+      authorName: Valus-gh
+      authorEmail: simone.belingheri25@gmail.com
+      commitEmail: simone.belingheri25@gmail.com
+      commitName: Valus-gh
+      summary: Generated Towers and reflected locations.
+      description: Generated Towers and reflected locations.
+      timeString: 2025-03-21T21:06:02.000+01:00
+      commitTimeString: 2025-03-21T21:06:02.000+01:00
+      changes:
+      - path: Assets\Game\Towers\Prefabs\Tower.prefab
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Towers\Prefabs\Tower.prefab
+        projectPath: Assets\Game\Towers\Prefabs\Tower.prefab
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Game\Towers\Scripts\TowerLocator.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Towers\Scripts\TowerLocator.cs
+        projectPath: Assets\Game\Towers\Scripts\TowerLocator.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Networking\Prefabs\PlayerMediator.prefab
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Prefabs\PlayerMediator.prefab
+        projectPath: Assets\Networking\Prefabs\PlayerMediator.prefab
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: Assets\Networking\Prefabs\PlayerTower.prefab
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Prefabs\PlayerTower.prefab
+        projectPath: Assets\Networking\Prefabs\PlayerTower.prefab
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Networking\Prefabs\PlayerTower.prefab.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Prefabs\PlayerTower.prefab.meta
+        projectPath: Assets\Networking\Prefabs\PlayerTower.prefab.meta
+        originalPath: Assets\Networking\Prefabs\PlayerMediator.prefab.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Networking\Prefabs\RoomManager.prefab
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Prefabs\RoomManager.prefab
+        projectPath: Assets\Networking\Prefabs\RoomManager.prefab
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Networking\Scripts\NetworkRoomManagerV3D.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\NetworkRoomManagerV3D.cs
+        projectPath: Assets\Networking\Scripts\NetworkRoomManagerV3D.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Networking\Scripts\NetworkRoomPlayerV3D.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\NetworkRoomPlayerV3D.cs
+        projectPath: Assets\Networking\Scripts\NetworkRoomPlayerV3D.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Networking\Scripts\PlayerTower.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\PlayerTower.cs
+        projectPath: Assets\Networking\Scripts\PlayerTower.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Networking\Scripts\PlayerTower.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\PlayerTower.cs.meta
+        projectPath: Assets\Networking\Scripts\PlayerTower.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Scenes\HomeScene.unity
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\HomeScene.unity
+        projectPath: Assets\Scenes\HomeScene.unity
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: UserSettings\Layouts\default-2022.dwlt
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\Layouts\default-2022.dwlt
+        projectPath: UserSettings\Layouts\default-2022.dwlt
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+    - commitID: 3e178bfddcf1a68af25d350586c0b894421600d7
+      mergeA: 
+      mergeB: 
+      authorName: Valus-gh
+      authorEmail: simone.belingheri25@gmail.com
+      commitEmail: simone.belingheri25@gmail.com
+      commitName: Valus-gh
+      summary: Generated World on multiple clients
+      description: Generated World on multiple clients
+      timeString: 2025-03-16T20:17:16.000+01:00
+      commitTimeString: 2025-03-16T20:17:16.000+01:00
+      changes:
+      - path: Assets\Game\GameManager.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\GameManager.cs
+        projectPath: Assets\Game\GameManager.cs
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: Assets\Game\GameManager.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\GameManager.cs.meta
+        projectPath: Assets\Game\GameManager.cs.meta
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: Assets\Game\GameManager.prefab
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\GameManager.prefab
+        projectPath: Assets\Game\GameManager.prefab
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: Assets\Mirror\Examples\Room\Prefabs\RoomPlayer.prefab
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Mirror\Examples\Room\Prefabs\RoomPlayer.prefab
+        projectPath: Assets\Mirror\Examples\Room\Prefabs\RoomPlayer.prefab
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Networking\Prefabs\ModelHolder.prefab
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Prefabs\ModelHolder.prefab
+        projectPath: Assets\Networking\Prefabs\ModelHolder.prefab
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Networking\Prefabs\ModelHolder.prefab.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Prefabs\ModelHolder.prefab.meta
+        projectPath: Assets\Networking\Prefabs\ModelHolder.prefab.meta
+        originalPath: Assets\Game\GameManager.prefab.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Networking\Prefabs\RoomManager.prefab
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Prefabs\RoomManager.prefab
+        projectPath: Assets\Networking\Prefabs\RoomManager.prefab
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Networking\Prefabs\RoomPlayer.prefab
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Prefabs\RoomPlayer.prefab
+        projectPath: Assets\Networking\Prefabs\RoomPlayer.prefab
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Networking\Prefabs\RoomPlayer.prefab.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Prefabs\RoomPlayer.prefab.meta
+        projectPath: Assets\Networking\Prefabs\RoomPlayer.prefab.meta
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Networking\Scripts\ModelHolder.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\ModelHolder.cs
+        projectPath: Assets\Networking\Scripts\ModelHolder.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Networking\Scripts\ModelHolder.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\ModelHolder.cs.meta
+        projectPath: Assets\Networking\Scripts\ModelHolder.cs.meta
+        originalPath: Assets\Networking\Scripts\PlayerMediator.cs.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Networking\Scripts\NetworkRoomManagerV3D.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\NetworkRoomManagerV3D.cs
+        projectPath: Assets\Networking\Scripts\NetworkRoomManagerV3D.cs
+        originalPath: Assets\Networking\Scripts\Vox3DNetRoomManager.cs
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Networking\Scripts\NetworkRoomManagerV3D.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\NetworkRoomManagerV3D.cs.meta
+        projectPath: Assets\Networking\Scripts\NetworkRoomManagerV3D.cs.meta
+        originalPath: Assets\Networking\Scripts\Vox3DNetRoomManager.cs.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Networking\Scripts\NetworkRoomPlayerV3D.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\NetworkRoomPlayerV3D.cs
+        projectPath: Assets\Networking\Scripts\NetworkRoomPlayerV3D.cs
+        originalPath: Assets\Networking\Scripts\Vox3DNetRoomPlayer.cs
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Networking\Scripts\NetworkRoomPlayerV3D.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\NetworkRoomPlayerV3D.cs.meta
+        projectPath: Assets\Networking\Scripts\NetworkRoomPlayerV3D.cs.meta
+        originalPath: Assets\Networking\Scripts\Vox3DNetRoomPlayer.cs.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Networking\Scripts\PlayerMediator.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\PlayerMediator.cs
+        projectPath: Assets\Networking\Scripts\PlayerMediator.cs
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: Assets\Scenes\HomeScene.unity
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\HomeScene.unity
+        projectPath: Assets\Scenes\HomeScene.unity
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Scenes\Vox3DSceneMultiplayer.unity
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\Vox3DSceneMultiplayer.unity
+        projectPath: Assets\Scenes\Vox3DSceneMultiplayer.unity
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: ProjectSettings\EditorBuildSettings.asset
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\ProjectSettings\EditorBuildSettings.asset
+        projectPath: ProjectSettings\EditorBuildSettings.asset
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: UserSettings\EditorUserSettings.asset
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\EditorUserSettings.asset
+        projectPath: UserSettings\EditorUserSettings.asset
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
     - commitID: 2d56cc48a57b07a817cf64747b458402378b6c08
       mergeA: 
       mergeB: 
@@ -48394,16 +49429,1515 @@ MonoBehaviour:
         originalPath: 
         indexStatus: 4
         workTreeStatus: 0
-    statusAhead: 1
+    statusAhead: 0
     lastLogChangedEvent:
-      updatedTimeString: 2025-03-16T18:45:52.548+01:00
+      updatedTimeString: 0001-01-01T00:00:00.000+00:00
       cacheType: 3
     lastTrackingStatusChangedEvent:
-      updatedTimeString: 2025-03-16T18:45:53.868+01:00
+      updatedTimeString: 0001-01-01T00:00:00.000+00:00
       cacheType: 5
     historyControl:
-      scroll: {x: 0, y: 40}
+      scroll: {x: 0, y: 0}
       entries:
+      - commitID: 53d6ee72ae58b2780ad41ae3612ecd51a88307e4
+        mergeA: 
+        mergeB: 
+        authorName: Valus-gh
+        authorEmail: simone.belingheri25@gmail.com
+        commitEmail: simone.belingheri25@gmail.com
+        commitName: Valus-gh
+        summary: Fixed Projectile import from json. Refactored namespace and folder
+          structure.
+        description: Fixed Projectile import from json. Refactored namespace and
+          folder structure.
+        timeString: 2025-04-12T11:46:47.000+02:00
+        commitTimeString: 2025-04-12T11:46:47.000+02:00
+        changes:
+        - path: Assets\Demo\BasicWorldInitializer.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Demo\BasicWorldInitializer.cs
+          projectPath: Assets\Demo\BasicWorldInitializer.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Demo\ProjectileTestDemo.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Demo\ProjectileTestDemo.cs
+          projectPath: Assets\Demo\ProjectileTestDemo.cs
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+        - path: Assets\Demo\ProjectileTestDemo.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Demo\ProjectileTestDemo.cs.meta
+          projectPath: Assets\Demo\ProjectileTestDemo.cs.meta
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+        - path: Assets\Demo\SettingsGUI.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Demo\SettingsGUI.cs
+          projectPath: Assets\Demo\SettingsGUI.cs
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+        - path: Assets\Demo\SettingsGUI.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Demo\SettingsGUI.cs.meta
+          projectPath: Assets\Demo\SettingsGUI.cs.meta
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+        - path: Assets\Demo\TowerLocationTest.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Demo\TowerLocationTest.cs
+          projectPath: Assets\Demo\TowerLocationTest.cs
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+        - path: Assets\Game\Fog\Scripts\FoWRevealer.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Fog\Scripts\FoWRevealer.cs
+          projectPath: Assets\Game\Fog\Scripts\FoWRevealer.cs
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+        - path: Assets\Game\Fog\Scripts\FogInjector.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Fog\Scripts\FogInjector.cs
+          projectPath: Assets\Game\Fog\Scripts\FogInjector.cs
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+        - path: Assets\Game\Fog\Scripts\FogManager.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Fog\Scripts\FogManager.cs
+          projectPath: Assets\Game\Fog\Scripts\FogManager.cs
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+        - path: Assets\Game\Fog\Scripts\RemoveOnDestroy.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Fog\Scripts\RemoveOnDestroy.cs
+          projectPath: Assets\Game\Fog\Scripts\RemoveOnDestroy.cs
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+        - path: Assets\Game\Fog\Scripts\TakeMaterialInstance.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Fog\Scripts\TakeMaterialInstance.cs
+          projectPath: Assets\Game\Fog\Scripts\TakeMaterialInstance.cs
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+        - path: Assets\Game\Fog\Scripts\TakeMaterialInstance.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Fog\Scripts\TakeMaterialInstance.cs.meta
+          projectPath: Assets\Game\Fog\Scripts\TakeMaterialInstance.cs.meta
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+        - path: Assets\Game\Prefabs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs.meta
+          projectPath: Assets\Game\Prefabs.meta
+          originalPath: Assets\Game\Fog\Prefabs.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Prefabs\Fog.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Fog.meta
+          projectPath: Assets\Game\Prefabs\Fog.meta
+          originalPath: Assets\Game\Fog.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Prefabs\Fog\FischlWorks.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Fog\FischlWorks.meta
+          projectPath: Assets\Game\Prefabs\Fog\FischlWorks.meta
+          originalPath: Assets\Game\Fog\Scripts.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Prefabs\Fog\FischlWorks\FogPlane.mat
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Fog\FischlWorks\FogPlane.mat
+          projectPath: Assets\Game\Prefabs\Fog\FischlWorks\FogPlane.mat
+          originalPath: Assets\Game\Fog\Prefabs\FogPlane.mat
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Prefabs\Fog\FischlWorks\FogPlane.mat.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Fog\FischlWorks\FogPlane.mat.meta
+          projectPath: Assets\Game\Prefabs\Fog\FischlWorks\FogPlane.mat.meta
+          originalPath: Assets\Game\Fog\Prefabs\FogPlane.mat.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Prefabs\Fog\FischlWorks\FogPlane.shader
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Fog\FischlWorks\FogPlane.shader
+          projectPath: Assets\Game\Prefabs\Fog\FischlWorks\FogPlane.shader
+          originalPath: Assets\Game\Fog\Prefabs\FogPlane.shader
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Prefabs\Fog\FischlWorks\FogPlane.shader.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Fog\FischlWorks\FogPlane.shader.meta
+          projectPath: Assets\Game\Prefabs\Fog\FischlWorks\FogPlane.shader.meta
+          originalPath: Assets\Game\Fog\Prefabs\FogPlane.shader.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Prefabs\Fog\FogInjector.prefab
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Fog\FogInjector.prefab
+          projectPath: Assets\Game\Prefabs\Fog\FogInjector.prefab
+          originalPath: Assets\Game\Fog\Prefabs\FogInjector.prefab
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Prefabs\Fog\FogInjector.prefab.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Fog\FogInjector.prefab.meta
+          projectPath: Assets\Game\Prefabs\Fog\FogInjector.prefab.meta
+          originalPath: Assets\Game\Fog\Prefabs\FogInjector.prefab.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Prefabs\Fog\FogManager.prefab
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Fog\FogManager.prefab
+          projectPath: Assets\Game\Prefabs\Fog\FogManager.prefab
+          originalPath: Assets\Game\Fog\Prefabs\FogManager.prefab
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Prefabs\Fog\FogManager.prefab.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Fog\FogManager.prefab.meta
+          projectPath: Assets\Game\Prefabs\Fog\FogManager.prefab.meta
+          originalPath: Assets\Game\Fog\Prefabs\FogManager.prefab.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Prefabs\Fog\FogVertexColor.shadergraph
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Fog\FogVertexColor.shadergraph
+          projectPath: Assets\Game\Prefabs\Fog\FogVertexColor.shadergraph
+          originalPath: Assets\Game\Fog\Prefabs\FogVertexColor.shadergraph
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Prefabs\Fog\FogVertexColor.shadergraph.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Fog\FogVertexColor.shadergraph.meta
+          projectPath: Assets\Game\Prefabs\Fog\FogVertexColor.shadergraph.meta
+          originalPath: Assets\Game\Fog\Prefabs\FogVertexColor.shadergraph.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Prefabs\Fog\FogVertexColorMaterial.mat
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Fog\FogVertexColorMaterial.mat
+          projectPath: Assets\Game\Prefabs\Fog\FogVertexColorMaterial.mat
+          originalPath: Assets\Game\Fog\Prefabs\FogVertexColorMaterial.mat
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Prefabs\Fog\FogVertexColorMaterial.mat.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Fog\FogVertexColorMaterial.mat.meta
+          projectPath: Assets\Game\Prefabs\Fog\FogVertexColorMaterial.mat.meta
+          originalPath: Assets\Game\Fog\Prefabs\FogVertexColorMaterial.mat.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Prefabs\Fog\MidPoint.prefab
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Fog\MidPoint.prefab
+          projectPath: Assets\Game\Prefabs\Fog\MidPoint.prefab
+          originalPath: Assets\Game\Fog\Prefabs\MidPoint.prefab
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Prefabs\Fog\MidPoint.prefab.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Fog\MidPoint.prefab.meta
+          projectPath: Assets\Game\Prefabs\Fog\MidPoint.prefab.meta
+          originalPath: Assets\Game\Fog\Prefabs\MidPoint.prefab.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Prefabs\Interaction.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Interaction.meta
+          projectPath: Assets\Game\Prefabs\Interaction.meta
+          originalPath: Assets\Game\Towers.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Prefabs\Interaction\AimingArrow.prefab
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Interaction\AimingArrow.prefab
+          projectPath: Assets\Game\Prefabs\Interaction\AimingArrow.prefab
+          originalPath: Assets\Game\Towers\Prefabs\AimingArrow.prefab
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Prefabs\Interaction\AimingArrow.prefab.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Interaction\AimingArrow.prefab.meta
+          projectPath: Assets\Game\Prefabs\Interaction\AimingArrow.prefab.meta
+          originalPath: Assets\Game\Towers\Prefabs\AimingArrow.prefab.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Prefabs\Networking.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Networking.meta
+          projectPath: Assets\Game\Prefabs\Networking.meta
+          originalPath: Assets\Networking.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Prefabs\Networking\RoomManager.prefab
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Networking\RoomManager.prefab
+          projectPath: Assets\Game\Prefabs\Networking\RoomManager.prefab
+          originalPath: Assets\Networking\Prefabs\RoomManager.prefab
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Prefabs\Networking\RoomManager.prefab.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Networking\RoomManager.prefab.meta
+          projectPath: Assets\Game\Prefabs\Networking\RoomManager.prefab.meta
+          originalPath: Assets\Networking\Prefabs\RoomManager.prefab.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Prefabs\Networking\RoomPlayer.prefab
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Networking\RoomPlayer.prefab
+          projectPath: Assets\Game\Prefabs\Networking\RoomPlayer.prefab
+          originalPath: Assets\Networking\Prefabs\RoomPlayer.prefab
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Prefabs\Networking\RoomPlayer.prefab.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Networking\RoomPlayer.prefab.meta
+          projectPath: Assets\Game\Prefabs\Networking\RoomPlayer.prefab.meta
+          originalPath: Assets\Networking\Prefabs\RoomPlayer.prefab.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Prefabs\PlayerTower.prefab
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\PlayerTower.prefab
+          projectPath: Assets\Game\Prefabs\PlayerTower.prefab
+          originalPath: Assets\Game\Towers\Prefabs\Tower.prefab
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Prefabs\PlayerTower.prefab.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\PlayerTower.prefab.meta
+          projectPath: Assets\Game\Prefabs\PlayerTower.prefab.meta
+          originalPath: Assets\Networking\Prefabs\PlayerTower.prefab.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Prefabs\Stages.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Stages.meta
+          projectPath: Assets\Game\Prefabs\Stages.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\Prefabs\Stages\StageManager.prefab
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Stages\StageManager.prefab
+          projectPath: Assets\Game\Prefabs\Stages\StageManager.prefab
+          originalPath: Assets\Networking\Prefabs\StageManager.prefab
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Prefabs\Stages\StageManager.prefab.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Stages\StageManager.prefab.meta
+          projectPath: Assets\Game\Prefabs\Stages\StageManager.prefab.meta
+          originalPath: Assets\Networking\Prefabs\StageManager.prefab.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Prefabs\Utilities.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Utilities.meta
+          projectPath: Assets\Game\Prefabs\Utilities.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\Prefabs\Utilities\ModelHolder.prefab
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Utilities\ModelHolder.prefab
+          projectPath: Assets\Game\Prefabs\Utilities\ModelHolder.prefab
+          originalPath: Assets\Networking\Prefabs\ModelHolder.prefab
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Prefabs\Utilities\ModelHolder.prefab.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Utilities\ModelHolder.prefab.meta
+          projectPath: Assets\Game\Prefabs\Utilities\ModelHolder.prefab.meta
+          originalPath: Assets\Networking\Prefabs\ModelHolder.prefab.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Prefabs\Weapons.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Weapons.meta
+          projectPath: Assets\Game\Prefabs\Weapons.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\Prefabs\Weapons\TestProjectile.prefab
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Weapons\TestProjectile.prefab
+          projectPath: Assets\Game\Prefabs\Weapons\TestProjectile.prefab
+          originalPath: Assets\Networking\Prefabs\TestProjectile.prefab
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Prefabs\Weapons\TestProjectile.prefab.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Weapons\TestProjectile.prefab.meta
+          projectPath: Assets\Game\Prefabs\Weapons\TestProjectile.prefab.meta
+          originalPath: Assets\Networking\Prefabs\TestProjectile.prefab.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts.meta
+          projectPath: Assets\Game\Scripts.meta
+          originalPath: Assets\Game\Towers\Scripts.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Fog.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Fog.meta
+          projectPath: Assets\Game\Scripts\Fog.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Fog\FindRevealers.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Fog\FindRevealers.cs
+          projectPath: Assets\Game\Scripts\Fog\FindRevealers.cs
+          originalPath: Assets\Networking\Scripts\FindRevealers.cs
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Fog\FindRevealers.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Fog\FindRevealers.cs.meta
+          projectPath: Assets\Game\Scripts\Fog\FindRevealers.cs.meta
+          originalPath: Assets\Networking\Scripts\FindRevealers.cs.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Fog\FischlWorks.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Fog\FischlWorks.meta
+          projectPath: Assets\Game\Scripts\Fog\FischlWorks.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Fog\FischlWorks\Shadowcaster.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Fog\FischlWorks\Shadowcaster.cs
+          projectPath: Assets\Game\Scripts\Fog\FischlWorks\Shadowcaster.cs
+          originalPath: Assets\Game\Fog\Scripts\Shadowcaster.cs
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Fog\FischlWorks\Shadowcaster.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Fog\FischlWorks\Shadowcaster.cs.meta
+          projectPath: Assets\Game\Scripts\Fog\FischlWorks\Shadowcaster.cs.meta
+          originalPath: Assets\Game\Fog\Scripts\Shadowcaster.cs.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Fog\FischlWorks\csFogVisibilityAgent.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Fog\FischlWorks\csFogVisibilityAgent.cs
+          projectPath: Assets\Game\Scripts\Fog\FischlWorks\csFogVisibilityAgent.cs
+          originalPath: Assets\Game\Fog\Scripts\csFogVisibilityAgent.cs
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Fog\FischlWorks\csFogVisibilityAgent.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Fog\FischlWorks\csFogVisibilityAgent.cs.meta
+          projectPath: Assets\Game\Scripts\Fog\FischlWorks\csFogVisibilityAgent.cs.meta
+          originalPath: Assets\Game\Fog\Scripts\csFogVisibilityAgent.cs.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Fog\FischlWorks\csFogWar.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Fog\FischlWorks\csFogWar.cs
+          projectPath: Assets\Game\Scripts\Fog\FischlWorks\csFogWar.cs
+          originalPath: Assets\Game\Fog\Scripts\csFogWar.cs
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Fog\FischlWorks\csFogWar.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Fog\FischlWorks\csFogWar.cs.meta
+          projectPath: Assets\Game\Scripts\Fog\FischlWorks\csFogWar.cs.meta
+          originalPath: Assets\Game\Fog\Scripts\csFogWar.cs.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Fog\FoWRevealer.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Fog\FoWRevealer.cs
+          projectPath: Assets\Game\Scripts\Fog\FoWRevealer.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Fog\FoWRevealer.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Fog\FoWRevealer.cs.meta
+          projectPath: Assets\Game\Scripts\Fog\FoWRevealer.cs.meta
+          originalPath: Assets\Game\Fog\Scripts\FoWRevealer.cs.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Fog\FogInjector.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Fog\FogInjector.cs
+          projectPath: Assets\Game\Scripts\Fog\FogInjector.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Fog\FogInjector.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Fog\FogInjector.cs.meta
+          projectPath: Assets\Game\Scripts\Fog\FogInjector.cs.meta
+          originalPath: Assets\Game\Fog\Scripts\FogInjector.cs.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Fog\FogManager.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Fog\FogManager.cs
+          projectPath: Assets\Game\Scripts\Fog\FogManager.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Fog\FogManager.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Fog\FogManager.cs.meta
+          projectPath: Assets\Game\Scripts\Fog\FogManager.cs.meta
+          originalPath: Assets\Game\Fog\Scripts\FogManager.cs.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Fog\RemoveOnDestroy.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Fog\RemoveOnDestroy.cs
+          projectPath: Assets\Game\Scripts\Fog\RemoveOnDestroy.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Fog\RemoveOnDestroy.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Fog\RemoveOnDestroy.cs.meta
+          projectPath: Assets\Game\Scripts\Fog\RemoveOnDestroy.cs.meta
+          originalPath: Assets\Game\Fog\Scripts\RemoveOnDestroy.cs.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\GameResources.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\GameResources.meta
+          projectPath: Assets\Game\Scripts\GameResources.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\GameResources\ProjectileResources.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\GameResources\ProjectileResources.cs
+          projectPath: Assets\Game\Scripts\GameResources\ProjectileResources.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\GameResources\ProjectileResources.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\GameResources\ProjectileResources.cs.meta
+          projectPath: Assets\Game\Scripts\GameResources\ProjectileResources.cs.meta
+          originalPath: Assets\Demo\TowerLocationTest.cs.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Interaction.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction.meta
+          projectPath: Assets\Game\Scripts\Interaction.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Interaction\AimingArrow.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\AimingArrow.cs
+          projectPath: Assets\Game\Scripts\Interaction\AimingArrow.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Interaction\AimingArrow.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\AimingArrow.cs.meta
+          projectPath: Assets\Game\Scripts\Interaction\AimingArrow.cs.meta
+          originalPath: Assets\Game\Towers\Scripts\AimingArrow.cs.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Interaction\PlayerControls.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\PlayerControls.cs
+          projectPath: Assets\Game\Scripts\Interaction\PlayerControls.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Interaction\PlayerControls.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\PlayerControls.cs.meta
+          projectPath: Assets\Game\Scripts\Interaction\PlayerControls.cs.meta
+          originalPath: Assets\Game\Towers\Scripts\TowerControls.cs.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Interaction\PlayerControlsKeyboard.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\PlayerControlsKeyboard.cs
+          projectPath: Assets\Game\Scripts\Interaction\PlayerControlsKeyboard.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Interaction\PlayerControlsKeyboard.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\PlayerControlsKeyboard.cs.meta
+          projectPath: Assets\Game\Scripts\Interaction\PlayerControlsKeyboard.cs.meta
+          originalPath: Assets\Game\Towers\Scripts\TowerControlsKeyboard.cs.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Interaction\TowerControlsMultiplayer.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\TowerControlsMultiplayer.cs
+          projectPath: Assets\Game\Scripts\Interaction\TowerControlsMultiplayer.cs
+          originalPath: Assets\Networking\Scripts\TowerControlsMultiplayer.cs
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Interaction\TowerControlsMultiplayer.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\TowerControlsMultiplayer.cs.meta
+          projectPath: Assets\Game\Scripts\Interaction\TowerControlsMultiplayer.cs.meta
+          originalPath: Assets\Networking\Scripts\TowerControlsMultiplayer.cs.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Interaction\TowerControlsMultiplayerKeyboard.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\TowerControlsMultiplayerKeyboard.cs
+          projectPath: Assets\Game\Scripts\Interaction\TowerControlsMultiplayerKeyboard.cs
+          originalPath: Assets\Networking\Scripts\TowerControlsMultiplayerKeyboard.cs
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Interaction\TowerControlsMultiplayerKeyboard.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\TowerControlsMultiplayerKeyboard.cs.meta
+          projectPath: Assets\Game\Scripts\Interaction\TowerControlsMultiplayerKeyboard.cs.meta
+          originalPath: Assets\Networking\Scripts\TowerControlsMultiplayerKeyboard.cs.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Networking.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Networking.meta
+          projectPath: Assets\Game\Scripts\Networking.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Networking\NetworkRoomManagerV3D.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Networking\NetworkRoomManagerV3D.cs
+          projectPath: Assets\Game\Scripts\Networking\NetworkRoomManagerV3D.cs
+          originalPath: Assets\Networking\Scripts\NetworkRoomManagerV3D.cs
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Networking\NetworkRoomManagerV3D.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Networking\NetworkRoomManagerV3D.cs.meta
+          projectPath: Assets\Game\Scripts\Networking\NetworkRoomManagerV3D.cs.meta
+          originalPath: Assets\Networking\Scripts\NetworkRoomManagerV3D.cs.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Networking\NetworkRoomPlayerV3D.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Networking\NetworkRoomPlayerV3D.cs
+          projectPath: Assets\Game\Scripts\Networking\NetworkRoomPlayerV3D.cs
+          originalPath: Assets\Networking\Scripts\NetworkRoomPlayerV3D.cs
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Networking\NetworkRoomPlayerV3D.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Networking\NetworkRoomPlayerV3D.cs.meta
+          projectPath: Assets\Game\Scripts\Networking\NetworkRoomPlayerV3D.cs.meta
+          originalPath: Assets\Networking\Scripts\NetworkRoomPlayerV3D.cs.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\PlayerTower.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\PlayerTower.cs
+          projectPath: Assets\Game\Scripts\PlayerTower.cs
+          originalPath: Assets\Networking\Scripts\PlayerTower.cs
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\PlayerTower.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\PlayerTower.cs.meta
+          projectPath: Assets\Game\Scripts\PlayerTower.cs.meta
+          originalPath: Assets\Networking\Scripts\PlayerTower.cs.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Stages.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages.meta
+          projectPath: Assets\Game\Scripts\Stages.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Stages\ConnectionStage.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\ConnectionStage.cs
+          projectPath: Assets\Game\Scripts\Stages\ConnectionStage.cs
+          originalPath: Assets\Networking\Scripts\ConnectionStage.cs
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Stages\ConnectionStage.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\ConnectionStage.cs.meta
+          projectPath: Assets\Game\Scripts\Stages\ConnectionStage.cs.meta
+          originalPath: Assets\Networking\Scripts\ConnectionStage.cs.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Stages\GameStage.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\GameStage.cs
+          projectPath: Assets\Game\Scripts\Stages\GameStage.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Stages\GameStage.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\GameStage.cs.meta
+          projectPath: Assets\Game\Scripts\Stages\GameStage.cs.meta
+          originalPath: Assets\Networking\Scripts\GameStage.cs.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Stages\ShootingStage.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\ShootingStage.cs
+          projectPath: Assets\Game\Scripts\Stages\ShootingStage.cs
+          originalPath: Assets\Networking\Scripts\ShootingStage.cs
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Stages\ShootingStage.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\ShootingStage.cs.meta
+          projectPath: Assets\Game\Scripts\Stages\ShootingStage.cs.meta
+          originalPath: Assets\Networking\Scripts\ShootingStage.cs.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Stages\StageManager.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\StageManager.cs
+          projectPath: Assets\Game\Scripts\Stages\StageManager.cs
+          originalPath: Assets\Networking\Scripts\StageManager.cs
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Stages\StageManager.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\StageManager.cs.meta
+          projectPath: Assets\Game\Scripts\Stages\StageManager.cs.meta
+          originalPath: Assets\Networking\Scripts\StageManager.cs.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\TowerLocator.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\TowerLocator.cs
+          projectPath: Assets\Game\Scripts\TowerLocator.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\TowerLocator.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\TowerLocator.cs.meta
+          projectPath: Assets\Game\Scripts\TowerLocator.cs.meta
+          originalPath: Assets\Game\Towers\Scripts\TowerLocator.cs.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Utilities.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Utilities.meta
+          projectPath: Assets\Game\Scripts\Utilities.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Utilities\DestroyAfterInterval.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Utilities\DestroyAfterInterval.cs
+          projectPath: Assets\Game\Scripts\Utilities\DestroyAfterInterval.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Utilities\DestroyAfterInterval.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Utilities\DestroyAfterInterval.cs.meta
+          projectPath: Assets\Game\Scripts\Utilities\DestroyAfterInterval.cs.meta
+          originalPath: Assets\Game\Towers\Scripts\Projectiles\DestroyAfterInterval.cs.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Utilities\ModelHolder.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Utilities\ModelHolder.cs
+          projectPath: Assets\Game\Scripts\Utilities\ModelHolder.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Utilities\ModelHolder.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Utilities\ModelHolder.cs.meta
+          projectPath: Assets\Game\Scripts\Utilities\ModelHolder.cs.meta
+          originalPath: Assets\Networking\Scripts\ModelHolder.cs.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Utilities\OwnedBy.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Utilities\OwnedBy.cs
+          projectPath: Assets\Game\Scripts\Utilities\OwnedBy.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Utilities\OwnedBy.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Utilities\OwnedBy.cs.meta
+          projectPath: Assets\Game\Scripts\Utilities\OwnedBy.cs.meta
+          originalPath: Assets\Networking\Scripts\OwnedBy.cs.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Weapons.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Weapons.meta
+          projectPath: Assets\Game\Scripts\Weapons.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Weapons\Blast.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Weapons\Blast.cs
+          projectPath: Assets\Game\Scripts\Weapons\Blast.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Weapons\Blast.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Weapons\Blast.cs.meta
+          projectPath: Assets\Game\Scripts\Weapons\Blast.cs.meta
+          originalPath: Assets\Game\Towers\Scripts\Blasts\Blast.cs.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Weapons\Projectile.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Weapons\Projectile.cs
+          projectPath: Assets\Game\Scripts\Weapons\Projectile.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Weapons\Projectile.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Weapons\Projectile.cs.meta
+          projectPath: Assets\Game\Scripts\Weapons\Projectile.cs.meta
+          originalPath: Assets\Game\Towers\Scripts\Projectiles\Projectile.cs.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Weapons\Trajectory.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Weapons\Trajectory.cs
+          projectPath: Assets\Game\Scripts\Weapons\Trajectory.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Weapons\Trajectory.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Weapons\Trajectory.cs.meta
+          projectPath: Assets\Game\Scripts\Weapons\Trajectory.cs.meta
+          originalPath: Assets\Game\Towers\Scripts\Projectiles\Trajectory.cs.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Towers\Prefabs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Towers\Prefabs.meta
+          projectPath: Assets\Game\Towers\Prefabs.meta
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+        - path: Assets\Game\Towers\Prefabs\TestProjectile.prefab
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Towers\Prefabs\TestProjectile.prefab
+          projectPath: Assets\Game\Towers\Prefabs\TestProjectile.prefab
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+        - path: Assets\Game\Towers\Prefabs\Tower.prefab.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Towers\Prefabs\Tower.prefab.meta
+          projectPath: Assets\Game\Towers\Prefabs\Tower.prefab.meta
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+        - path: Assets\Game\Towers\Scripts\AimingArrow.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Towers\Scripts\AimingArrow.cs
+          projectPath: Assets\Game\Towers\Scripts\AimingArrow.cs
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+        - path: Assets\Game\Towers\Scripts\Blasts.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Towers\Scripts\Blasts.meta
+          projectPath: Assets\Game\Towers\Scripts\Blasts.meta
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+        - path: Assets\Game\Towers\Scripts\Blasts\BasicBlast.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Towers\Scripts\Blasts\BasicBlast.cs
+          projectPath: Assets\Game\Towers\Scripts\Blasts\BasicBlast.cs
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+        - path: Assets\Game\Towers\Scripts\Blasts\BasicBlast.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Towers\Scripts\Blasts\BasicBlast.cs.meta
+          projectPath: Assets\Game\Towers\Scripts\Blasts\BasicBlast.cs.meta
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+        - path: Assets\Game\Towers\Scripts\Blasts\Blast.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Towers\Scripts\Blasts\Blast.cs
+          projectPath: Assets\Game\Towers\Scripts\Blasts\Blast.cs
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+        - path: Assets\Game\Towers\Scripts\Projectiles.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Towers\Scripts\Projectiles.meta
+          projectPath: Assets\Game\Towers\Scripts\Projectiles.meta
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+        - path: Assets\Game\Towers\Scripts\Projectiles\DestroyAfterInterval.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Towers\Scripts\Projectiles\DestroyAfterInterval.cs
+          projectPath: Assets\Game\Towers\Scripts\Projectiles\DestroyAfterInterval.cs
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+        - path: Assets\Game\Towers\Scripts\Projectiles\Projectile.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Towers\Scripts\Projectiles\Projectile.cs
+          projectPath: Assets\Game\Towers\Scripts\Projectiles\Projectile.cs
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+        - path: Assets\Game\Towers\Scripts\Projectiles\Trajectory.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Towers\Scripts\Projectiles\Trajectory.cs
+          projectPath: Assets\Game\Towers\Scripts\Projectiles\Trajectory.cs
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+        - path: Assets\Game\Towers\Scripts\TowerControls.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Towers\Scripts\TowerControls.cs
+          projectPath: Assets\Game\Towers\Scripts\TowerControls.cs
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+        - path: Assets\Game\Towers\Scripts\TowerControlsKeyboard.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Towers\Scripts\TowerControlsKeyboard.cs
+          projectPath: Assets\Game\Towers\Scripts\TowerControlsKeyboard.cs
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+        - path: Assets\Game\Towers\Scripts\TowerLocator.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Towers\Scripts\TowerLocator.cs
+          projectPath: Assets\Game\Towers\Scripts\TowerLocator.cs
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+        - path: Assets\Networking\Prefabs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Prefabs.meta
+          projectPath: Assets\Networking\Prefabs.meta
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+        - path: Assets\Networking\Prefabs\PlayerTower.prefab
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Prefabs\PlayerTower.prefab
+          projectPath: Assets\Networking\Prefabs\PlayerTower.prefab
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+        - path: Assets\Networking\Scripts.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts.meta
+          projectPath: Assets\Networking\Scripts.meta
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+        - path: Assets\Networking\Scripts\GameStage.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\GameStage.cs
+          projectPath: Assets\Networking\Scripts\GameStage.cs
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+        - path: Assets\Networking\Scripts\ModelHolder.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\ModelHolder.cs
+          projectPath: Assets\Networking\Scripts\ModelHolder.cs
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+        - path: Assets\Networking\Scripts\OwnedBy.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\OwnedBy.cs
+          projectPath: Assets\Networking\Scripts\OwnedBy.cs
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+        - path: Assets\Resources\projectiles.json
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\projectiles.json
+          projectPath: Assets\Resources\projectiles.json
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Resources\projectiles.json.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\projectiles.json.meta
+          projectPath: Assets\Resources\projectiles.json.meta
+          originalPath: Assets\Game\Towers\Prefabs\TestProjectile.prefab.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Json\JsonImporter.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Json\JsonImporter.cs
+          projectPath: Assets\Vox3D\Json\JsonImporter.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Vox3D\Vox3DEngine.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Vox3D\Vox3DEngine.cs
+          projectPath: Assets\Vox3D\Vox3DEngine.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: UserSettings\Layouts\default-2022.dwlt
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\Layouts\default-2022.dwlt
+          projectPath: UserSettings\Layouts\default-2022.dwlt
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - commitID: 988b8a5de0ec9e49a93a04f398badcaf6c3ba4a9
+        mergeA: 
+        mergeB: 
+        authorName: Valus-gh
+        authorEmail: simone.belingheri25@gmail.com
+        commitEmail: simone.belingheri25@gmail.com
+        commitName: Valus-gh
+        summary: Added aiming arrow to towers.
+        description: Added aiming arrow to towers.
+        timeString: 2025-04-08T22:32:04.000+02:00
+        commitTimeString: 2025-04-08T22:32:04.000+02:00
+        changes:
+        - path: Assets\Game\Imports\AimingArrowMaterial.mat
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Imports\AimingArrowMaterial.mat
+          projectPath: Assets\Game\Imports\AimingArrowMaterial.mat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\Imports\AimingArrowMaterial.mat.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Imports\AimingArrowMaterial.mat.meta
+          projectPath: Assets\Game\Imports\AimingArrowMaterial.mat.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\Imports\Arrow.blend
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Imports\Arrow.blend
+          projectPath: Assets\Game\Imports\Arrow.blend
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\Imports\Arrow.blend.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Imports\Arrow.blend.meta
+          projectPath: Assets\Game\Imports\Arrow.blend.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\Towers\Prefabs\AimingArrow.prefab
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Towers\Prefabs\AimingArrow.prefab
+          projectPath: Assets\Game\Towers\Prefabs\AimingArrow.prefab
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\Towers\Prefabs\AimingArrow.prefab.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Towers\Prefabs\AimingArrow.prefab.meta
+          projectPath: Assets\Game\Towers\Prefabs\AimingArrow.prefab.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\Towers\Prefabs\Tower.prefab
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Towers\Prefabs\Tower.prefab
+          projectPath: Assets\Game\Towers\Prefabs\Tower.prefab
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Game\Towers\Scripts\AimingArrow.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Towers\Scripts\AimingArrow.cs
+          projectPath: Assets\Game\Towers\Scripts\AimingArrow.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\Towers\Scripts\AimingArrow.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Towers\Scripts\AimingArrow.cs.meta
+          projectPath: Assets\Game\Towers\Scripts\AimingArrow.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Networking\Prefabs\PlayerTower.prefab
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Prefabs\PlayerTower.prefab
+          projectPath: Assets\Networking\Prefabs\PlayerTower.prefab
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Networking\Scripts\ShootingStage.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\ShootingStage.cs
+          projectPath: Assets\Networking\Scripts\ShootingStage.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Networking\Scripts\TowerControlsMultiplayer.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\TowerControlsMultiplayer.cs
+          projectPath: Assets\Networking\Scripts\TowerControlsMultiplayer.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Networking\Scripts\TowerControlsMultiplayerKeyboard.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\TowerControlsMultiplayerKeyboard.cs
+          projectPath: Assets\Networking\Scripts\TowerControlsMultiplayerKeyboard.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Scenes\HomeScene.unity
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\HomeScene.unity
+          projectPath: Assets\Scenes\HomeScene.unity
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: UserSettings\Layouts\default-2022.dwlt
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\Layouts\default-2022.dwlt
+          projectPath: UserSettings\Layouts\default-2022.dwlt
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - commitID: 6c68a6e59150cfbcf449f6b6f85d8d800160cf3f
+        mergeA: 
+        mergeB: 
+        authorName: Valus-gh
+        authorEmail: simone.belingheri25@gmail.com
+        commitEmail: simone.belingheri25@gmail.com
+        commitName: Valus-gh
+        summary: Added Connection Stage, Shooting Stage
+        description: Added Connection Stage, Shooting Stage. Add WaitingForPlayers
+          graphci next, followed by arrow showing trajectory
+        timeString: 2025-04-05T11:54:18.000+02:00
+        commitTimeString: 2025-04-05T11:54:18.000+02:00
+        changes:
+        - path: Assets\Networking\Prefabs\StageManager.prefab
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Prefabs\StageManager.prefab
+          projectPath: Assets\Networking\Prefabs\StageManager.prefab
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Networking\Prefabs\StageManager.prefab.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Prefabs\StageManager.prefab.meta
+          projectPath: Assets\Networking\Prefabs\StageManager.prefab.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Networking\Scripts\ConnectionStage.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\ConnectionStage.cs
+          projectPath: Assets\Networking\Scripts\ConnectionStage.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Networking\Scripts\ConnectionStage.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\ConnectionStage.cs.meta
+          projectPath: Assets\Networking\Scripts\ConnectionStage.cs.meta
+          originalPath: Assets\loadnewscenetest.cs.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Networking\Scripts\GameStage.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\GameStage.cs
+          projectPath: Assets\Networking\Scripts\GameStage.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Networking\Scripts\GameStage.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\GameStage.cs.meta
+          projectPath: Assets\Networking\Scripts\GameStage.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Networking\Scripts\NetworkRoomManagerV3D.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\NetworkRoomManagerV3D.cs
+          projectPath: Assets\Networking\Scripts\NetworkRoomManagerV3D.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Networking\Scripts\NetworkRoomPlayerV3D.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\NetworkRoomPlayerV3D.cs
+          projectPath: Assets\Networking\Scripts\NetworkRoomPlayerV3D.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Networking\Scripts\PlayerTower.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\PlayerTower.cs
+          projectPath: Assets\Networking\Scripts\PlayerTower.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Networking\Scripts\ShootingStage.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\ShootingStage.cs
+          projectPath: Assets\Networking\Scripts\ShootingStage.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Networking\Scripts\ShootingStage.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\ShootingStage.cs.meta
+          projectPath: Assets\Networking\Scripts\ShootingStage.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Networking\Scripts\StageManager.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\StageManager.cs
+          projectPath: Assets\Networking\Scripts\StageManager.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Networking\Scripts\StageManager.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\StageManager.cs.meta
+          projectPath: Assets\Networking\Scripts\StageManager.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Networking\Scripts\TowerControlsMultiplayer.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\TowerControlsMultiplayer.cs
+          projectPath: Assets\Networking\Scripts\TowerControlsMultiplayer.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Networking\Scripts\TowerControlsMultiplayerKeyboard.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\TowerControlsMultiplayerKeyboard.cs
+          projectPath: Assets\Networking\Scripts\TowerControlsMultiplayerKeyboard.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Scenes\HomeScene.unity
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\HomeScene.unity
+          projectPath: Assets\Scenes\HomeScene.unity
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\loadnewscenetest.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\loadnewscenetest.cs
+          projectPath: Assets\loadnewscenetest.cs
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+        - path: UserSettings\Layouts\default-2022.dwlt
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\Layouts\default-2022.dwlt
+          projectPath: UserSettings\Layouts\default-2022.dwlt
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - commitID: 8f8064f9bcbc82546ec3b92e3bede30a7566d643
+        mergeA: 
+        mergeB: 
+        authorName: Valus-gh
+        authorEmail: simone.belingheri25@gmail.com
+        commitEmail: simone.belingheri25@gmail.com
+        commitName: Valus-gh
+        summary: Projectiles and towers are now only visible to their owner.
+        description: Projectiles and towers are now only visible to their owner.
+        timeString: 2025-03-29T10:55:52.000+01:00
+        commitTimeString: 2025-03-29T10:55:52.000+01:00
+        changes:
+        - path: Assets\Game\Fog\Scripts\FindRevealers.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Fog\Scripts\FindRevealers.cs
+          projectPath: Assets\Game\Fog\Scripts\FindRevealers.cs
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+        - path: Assets\Game\Fog\Scripts\csFogVisibilityAgent.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Fog\Scripts\csFogVisibilityAgent.cs
+          projectPath: Assets\Game\Fog\Scripts\csFogVisibilityAgent.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Networking\Prefabs\PlayerTower.prefab
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Prefabs\PlayerTower.prefab
+          projectPath: Assets\Networking\Prefabs\PlayerTower.prefab
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Networking\Prefabs\TestProjectile.prefab
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Prefabs\TestProjectile.prefab
+          projectPath: Assets\Networking\Prefabs\TestProjectile.prefab
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Networking\Scripts\FindRevealers.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\FindRevealers.cs
+          projectPath: Assets\Networking\Scripts\FindRevealers.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Networking\Scripts\FindRevealers.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\FindRevealers.cs.meta
+          projectPath: Assets\Networking\Scripts\FindRevealers.cs.meta
+          originalPath: Assets\Game\Fog\Scripts\FindRevealers.cs.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Networking\Scripts\NetworkRoomManagerV3D.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\NetworkRoomManagerV3D.cs
+          projectPath: Assets\Networking\Scripts\NetworkRoomManagerV3D.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Networking\Scripts\NetworkRoomPlayerV3D.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\NetworkRoomPlayerV3D.cs
+          projectPath: Assets\Networking\Scripts\NetworkRoomPlayerV3D.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Networking\Scripts\OwnedBy.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\OwnedBy.cs
+          projectPath: Assets\Networking\Scripts\OwnedBy.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Networking\Scripts\OwnedBy.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\OwnedBy.cs.meta
+          projectPath: Assets\Networking\Scripts\OwnedBy.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Networking\Scripts\PlayerTower.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\PlayerTower.cs
+          projectPath: Assets\Networking\Scripts\PlayerTower.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Networking\Scripts\TowerControlsMultiplayerKeyboard.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\TowerControlsMultiplayerKeyboard.cs
+          projectPath: Assets\Networking\Scripts\TowerControlsMultiplayerKeyboard.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: UserSettings\Layouts\default-2022.dwlt
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\Layouts\default-2022.dwlt
+          projectPath: UserSettings\Layouts\default-2022.dwlt
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - commitID: 9870a797744f286be6374e6d4d908c5f2fede7ba
+        mergeA: 
+        mergeB: 
+        authorName: Valus-gh
+        authorEmail: simone.belingheri25@gmail.com
+        commitEmail: simone.belingheri25@gmail.com
+        commitName: Valus-gh
+        summary: Added FoW for everything except projectiles.
+        description: Added FoW for everything except projectiles. Towers are now
+          hidden if they do not belong to local player. Projectiles are synced but
+          not properly interactin with FoW.
+        timeString: 2025-03-24T12:53:06.000+01:00
+        commitTimeString: 2025-03-24T12:53:06.000+01:00
+        changes:
+        - path: Assets\Demo\BasicWorldInitializer.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Demo\BasicWorldInitializer.cs
+          projectPath: Assets\Demo\BasicWorldInitializer.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Game\Fog\Scripts\FindRevealers.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Fog\Scripts\FindRevealers.cs
+          projectPath: Assets\Game\Fog\Scripts\FindRevealers.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Game\Fog\Scripts\csFogVisibilityAgent.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Fog\Scripts\csFogVisibilityAgent.cs
+          projectPath: Assets\Game\Fog\Scripts\csFogVisibilityAgent.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Game\Towers\Scripts\TowerControls.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Towers\Scripts\TowerControls.cs
+          projectPath: Assets\Game\Towers\Scripts\TowerControls.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\Towers\Scripts\TowerControls.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Towers\Scripts\TowerControls.cs.meta
+          projectPath: Assets\Game\Towers\Scripts\TowerControls.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\Towers\Scripts\TowerControlsKeyboard.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Towers\Scripts\TowerControlsKeyboard.cs
+          projectPath: Assets\Game\Towers\Scripts\TowerControlsKeyboard.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Networking\Prefabs\PlayerTower.prefab
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Prefabs\PlayerTower.prefab
+          projectPath: Assets\Networking\Prefabs\PlayerTower.prefab
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Networking\Prefabs\TestProjectile.prefab
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Prefabs\TestProjectile.prefab
+          projectPath: Assets\Networking\Prefabs\TestProjectile.prefab
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Networking\Prefabs\TestProjectile.prefab.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Prefabs\TestProjectile.prefab.meta
+          projectPath: Assets\Networking\Prefabs\TestProjectile.prefab.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Networking\Scripts\NetworkRoomManagerV3D.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\NetworkRoomManagerV3D.cs
+          projectPath: Assets\Networking\Scripts\NetworkRoomManagerV3D.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Networking\Scripts\NetworkRoomPlayerV3D.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\NetworkRoomPlayerV3D.cs
+          projectPath: Assets\Networking\Scripts\NetworkRoomPlayerV3D.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Networking\Scripts\PlayerTower.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\PlayerTower.cs
+          projectPath: Assets\Networking\Scripts\PlayerTower.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Networking\Scripts\TowerControlsMultiplayer.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\TowerControlsMultiplayer.cs
+          projectPath: Assets\Networking\Scripts\TowerControlsMultiplayer.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Networking\Scripts\TowerControlsMultiplayer.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\TowerControlsMultiplayer.cs.meta
+          projectPath: Assets\Networking\Scripts\TowerControlsMultiplayer.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Networking\Scripts\TowerControlsMultiplayerKeyboard.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\TowerControlsMultiplayerKeyboard.cs
+          projectPath: Assets\Networking\Scripts\TowerControlsMultiplayerKeyboard.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Networking\Scripts\TowerControlsMultiplayerKeyboard.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\TowerControlsMultiplayerKeyboard.cs.meta
+          projectPath: Assets\Networking\Scripts\TowerControlsMultiplayerKeyboard.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Scenes\HomeScene.unity
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\HomeScene.unity
+          projectPath: Assets\Scenes\HomeScene.unity
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Scenes\Vox3DSceneMultiplayer.unity
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\Vox3DSceneMultiplayer.unity
+          projectPath: Assets\Scenes\Vox3DSceneMultiplayer.unity
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - commitID: 2e89a1d04dd147d4735baf042a4290eb4ff0a85e
+        mergeA: 
+        mergeB: 
+        authorName: Valus-gh
+        authorEmail: simone.belingheri25@gmail.com
+        commitEmail: simone.belingheri25@gmail.com
+        commitName: Valus-gh
+        summary: Generated Towers and reflected locations.
+        description: Generated Towers and reflected locations.
+        timeString: 2025-03-21T21:06:02.000+01:00
+        commitTimeString: 2025-03-21T21:06:02.000+01:00
+        changes:
+        - path: Assets\Game\Towers\Prefabs\Tower.prefab
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Towers\Prefabs\Tower.prefab
+          projectPath: Assets\Game\Towers\Prefabs\Tower.prefab
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Game\Towers\Scripts\TowerLocator.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Towers\Scripts\TowerLocator.cs
+          projectPath: Assets\Game\Towers\Scripts\TowerLocator.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Networking\Prefabs\PlayerMediator.prefab
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Prefabs\PlayerMediator.prefab
+          projectPath: Assets\Networking\Prefabs\PlayerMediator.prefab
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+        - path: Assets\Networking\Prefabs\PlayerTower.prefab
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Prefabs\PlayerTower.prefab
+          projectPath: Assets\Networking\Prefabs\PlayerTower.prefab
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Networking\Prefabs\PlayerTower.prefab.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Prefabs\PlayerTower.prefab.meta
+          projectPath: Assets\Networking\Prefabs\PlayerTower.prefab.meta
+          originalPath: Assets\Networking\Prefabs\PlayerMediator.prefab.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Networking\Prefabs\RoomManager.prefab
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Prefabs\RoomManager.prefab
+          projectPath: Assets\Networking\Prefabs\RoomManager.prefab
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Networking\Scripts\NetworkRoomManagerV3D.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\NetworkRoomManagerV3D.cs
+          projectPath: Assets\Networking\Scripts\NetworkRoomManagerV3D.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Networking\Scripts\NetworkRoomPlayerV3D.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\NetworkRoomPlayerV3D.cs
+          projectPath: Assets\Networking\Scripts\NetworkRoomPlayerV3D.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Networking\Scripts\PlayerTower.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\PlayerTower.cs
+          projectPath: Assets\Networking\Scripts\PlayerTower.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Networking\Scripts\PlayerTower.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\PlayerTower.cs.meta
+          projectPath: Assets\Networking\Scripts\PlayerTower.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Scenes\HomeScene.unity
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\HomeScene.unity
+          projectPath: Assets\Scenes\HomeScene.unity
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: UserSettings\Layouts\default-2022.dwlt
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\Layouts\default-2022.dwlt
+          projectPath: UserSettings\Layouts\default-2022.dwlt
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - commitID: 3e178bfddcf1a68af25d350586c0b894421600d7
+        mergeA: 
+        mergeB: 
+        authorName: Valus-gh
+        authorEmail: simone.belingheri25@gmail.com
+        commitEmail: simone.belingheri25@gmail.com
+        commitName: Valus-gh
+        summary: Generated World on multiple clients
+        description: Generated World on multiple clients
+        timeString: 2025-03-16T20:17:16.000+01:00
+        commitTimeString: 2025-03-16T20:17:16.000+01:00
+        changes:
+        - path: Assets\Game\GameManager.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\GameManager.cs
+          projectPath: Assets\Game\GameManager.cs
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+        - path: Assets\Game\GameManager.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\GameManager.cs.meta
+          projectPath: Assets\Game\GameManager.cs.meta
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+        - path: Assets\Game\GameManager.prefab
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\GameManager.prefab
+          projectPath: Assets\Game\GameManager.prefab
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+        - path: Assets\Mirror\Examples\Room\Prefabs\RoomPlayer.prefab
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Mirror\Examples\Room\Prefabs\RoomPlayer.prefab
+          projectPath: Assets\Mirror\Examples\Room\Prefabs\RoomPlayer.prefab
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Networking\Prefabs\ModelHolder.prefab
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Prefabs\ModelHolder.prefab
+          projectPath: Assets\Networking\Prefabs\ModelHolder.prefab
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Networking\Prefabs\ModelHolder.prefab.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Prefabs\ModelHolder.prefab.meta
+          projectPath: Assets\Networking\Prefabs\ModelHolder.prefab.meta
+          originalPath: Assets\Game\GameManager.prefab.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Networking\Prefabs\RoomManager.prefab
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Prefabs\RoomManager.prefab
+          projectPath: Assets\Networking\Prefabs\RoomManager.prefab
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Networking\Prefabs\RoomPlayer.prefab
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Prefabs\RoomPlayer.prefab
+          projectPath: Assets\Networking\Prefabs\RoomPlayer.prefab
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Networking\Prefabs\RoomPlayer.prefab.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Prefabs\RoomPlayer.prefab.meta
+          projectPath: Assets\Networking\Prefabs\RoomPlayer.prefab.meta
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Networking\Scripts\ModelHolder.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\ModelHolder.cs
+          projectPath: Assets\Networking\Scripts\ModelHolder.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Networking\Scripts\ModelHolder.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\ModelHolder.cs.meta
+          projectPath: Assets\Networking\Scripts\ModelHolder.cs.meta
+          originalPath: Assets\Networking\Scripts\PlayerMediator.cs.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Networking\Scripts\NetworkRoomManagerV3D.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\NetworkRoomManagerV3D.cs
+          projectPath: Assets\Networking\Scripts\NetworkRoomManagerV3D.cs
+          originalPath: Assets\Networking\Scripts\Vox3DNetRoomManager.cs
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Networking\Scripts\NetworkRoomManagerV3D.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\NetworkRoomManagerV3D.cs.meta
+          projectPath: Assets\Networking\Scripts\NetworkRoomManagerV3D.cs.meta
+          originalPath: Assets\Networking\Scripts\Vox3DNetRoomManager.cs.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Networking\Scripts\NetworkRoomPlayerV3D.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\NetworkRoomPlayerV3D.cs
+          projectPath: Assets\Networking\Scripts\NetworkRoomPlayerV3D.cs
+          originalPath: Assets\Networking\Scripts\Vox3DNetRoomPlayer.cs
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Networking\Scripts\NetworkRoomPlayerV3D.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\NetworkRoomPlayerV3D.cs.meta
+          projectPath: Assets\Networking\Scripts\NetworkRoomPlayerV3D.cs.meta
+          originalPath: Assets\Networking\Scripts\Vox3DNetRoomPlayer.cs.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Networking\Scripts\PlayerMediator.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Networking\Scripts\PlayerMediator.cs
+          projectPath: Assets\Networking\Scripts\PlayerMediator.cs
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+        - path: Assets\Scenes\HomeScene.unity
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\HomeScene.unity
+          projectPath: Assets\Scenes\HomeScene.unity
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Scenes\Vox3DSceneMultiplayer.unity
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\Vox3DSceneMultiplayer.unity
+          projectPath: Assets\Scenes\Vox3DSceneMultiplayer.unity
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: ProjectSettings\EditorBuildSettings.asset
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\ProjectSettings\EditorBuildSettings.asset
+          projectPath: ProjectSettings\EditorBuildSettings.asset
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: UserSettings\EditorUserSettings.asset
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\EditorUserSettings.asset
+          projectPath: UserSettings\EditorUserSettings.asset
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
       - commitID: 2d56cc48a57b07a817cf64747b458402378b6c08
         mergeA: 
         mergeB: 
@@ -94748,8 +97282,8 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 4
           workTreeStatus: 0
-      statusAhead: 1
-      selectedIndex: 1
+      statusAhead: 0
+      selectedIndex: 8
     selectedEntry:
       commitID: 1535d029d96071b3ad36d8d0ccb689e609801549
       mergeA: 
@@ -160285,7 +162819,7 @@ MonoBehaviour:
   currentRemoteUrl: https://github.com/Valus-gh/Vox3D
   statusAhead: 0
   statusBehind: 0
-  hasItemsToCommit: 1
+  hasItemsToCommit: 0
   isTrackingRemoteBranch: 1
   currentBranchContent:
     m_Text: dev-mirror
@@ -160296,13 +162830,13 @@ MonoBehaviour:
     m_Image: {fileID: 0}
     m_Tooltip: Url of the origin remote
   lastCurrentBranchAndRemoteChangedEvent:
-    updatedTimeString: 2025-04-14T10:25:43.569+02:00
+    updatedTimeString: 2025-04-16T16:07:59.533+02:00
     cacheType: 1
   lastTrackingStatusChangedEvent:
-    updatedTimeString: 2025-04-14T10:25:43.551+02:00
+    updatedTimeString: 2025-04-16T16:08:00.767+02:00
     cacheType: 5
   lastStatusEntriesChangedEvent:
-    updatedTimeString: 2025-04-14T10:30:53.174+02:00
+    updatedTimeString: 2025-04-16T16:07:49.295+02:00
     cacheType: 6
   pullButtonContent:
     m_Text: Pull
@@ -160320,8 +162854,8 @@ MonoBehaviour:
     m_Text: Fetch
     m_Image: {fileID: 0}
     m_Tooltip: 
-  repositoryProgressValue: 0
-  repositoryProgressMessage: 
+  repositoryProgressValue: 1
+  repositoryProgressMessage: Pushed
   appManagerProgressValue: 1
   appManagerProgressMessage: 
   primaryConnectionUsername: 

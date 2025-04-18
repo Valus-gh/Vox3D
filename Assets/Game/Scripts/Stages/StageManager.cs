@@ -21,6 +21,10 @@ namespace Game.Stages
             else Debug.LogWarning($"Player {player} already registered");
         }
 
+        [SerializeField]
+        private GameObject _LoadingScreen_Prefab;
+        private GameObject _LoadingScreen_Instance;
+
         private GameStage _ConnectionStage;
         private GameStage _ShootingStage;
 
@@ -41,6 +45,8 @@ namespace Game.Stages
             // All players have finished loading gameplay scene
             if (_Players.Count == NetworkRoomManagerV3D.singleton.minPlayers)
             {
+
+                //SetLoadingScreen(true);
 
                 //Create substages and fill with lobby players
                 if (_ConnectionStage is null)
@@ -65,6 +71,16 @@ namespace Game.Stages
                 }
 
             }
+        }
+
+        public void SetLoadingScreen(bool active)
+        {
+            if (_LoadingScreen_Instance is null)
+            {
+                _LoadingScreen_Instance = Instantiate(_LoadingScreen_Prefab);
+            }
+
+            _LoadingScreen_Instance.SetActive(active);
         }
 
     }
