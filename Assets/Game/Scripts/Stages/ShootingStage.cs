@@ -16,11 +16,6 @@ namespace Game.Stages
 
         private Dictionary<uint, PlayerTower> _Towers;
 
-        public override void Deinitialize()
-        {
-            throw new System.NotImplementedException();
-        }
-
         public override void Initialize()
         {
             _Towers = new Dictionary<uint, PlayerTower>();
@@ -35,6 +30,11 @@ namespace Game.Stages
 
             RpcToggleAimingArrows();
 
+        }
+
+        public override void Deinitialize()
+        {
+            throw new System.NotImplementedException();
         }
 
         private Dictionary<uint, Trajectory> _ConfirmedTrajectories = new Dictionary<uint, Trajectory>();

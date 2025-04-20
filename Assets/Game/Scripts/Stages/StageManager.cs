@@ -33,20 +33,12 @@ namespace Game.Stages
             DontDestroyOnLoad(this);
         }
 
-        // Start is called before the first frame update
-        void Start()
-        {
-
-        }
-
         // Update is called once per frame
         void Update()
         {
             // All players have finished loading gameplay scene
             if (_Players.Count == NetworkRoomManagerV3D.singleton.minPlayers)
             {
-
-                //SetLoadingScreen(true);
 
                 //Create substages and fill with lobby players
                 if (_ConnectionStage is null)
@@ -61,6 +53,7 @@ namespace Game.Stages
                     }
                 }
 
+
                 if (_ShootingStage is null && _ConnectionStage.IsComplete)
                 {
                     _ShootingStage = GetComponent<ShootingStage>();
@@ -68,16 +61,19 @@ namespace Game.Stages
 
                     _ShootingStage.Initialize();
                     _ShootingStage.IsRunning = true;
+
+                    ToggleLoadingScreen(false);
+
                 }
 
             }
         }
 
-        public void SetLoadingScreen(bool active)
+        public void ToggleLoadingScreen(bool active)
         {
             if (_LoadingScreen_Instance is null)
             {
-                _LoadingScreen_Instance = Instantiate(_LoadingScreen_Prefab);
+                _LoadingScreen_Instance = Instantiate(_LoadingScreen_Prefab, this.transform);
             }
 
             _LoadingScreen_Instance.SetActive(active);

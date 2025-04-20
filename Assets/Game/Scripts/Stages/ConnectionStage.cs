@@ -13,6 +13,8 @@ namespace Game.Stages
 
     public class ConnectionStage : GameStage
     {
+        private bool _Loading = false;
+
         public  override void Initialize()
         {
             //throw new System.NotImplementedException();
@@ -25,20 +27,29 @@ namespace Game.Stages
 
         protected override void Run()
         {
-            foreach (var player in Players)
+
+            if(_Loading is false && IsComplete is false)
             {
-                player.GetComponent<NetworkRoomPlayerV3D>().RpcLoadWorld();
+                _Loading = true;
 
-                var playerTower = Instantiate(NetworkRoomManagerV3D.singleton.spawnPrefabs[1]);
-                playerTower.GetComponent<OwnedBy>().OwnerID = player.GetComponent<NetworkIdentity>().netId;
-                NetworkServer.Spawn(playerTower);
+                foreach (var player in Players)
+                {
+                    player.GetComponent<NetworkRoomPlayerV3D>().RpcLoadWorld();
 
-                player.GetComponent<NetworkRoomPlayerV3D>().CmdInitializePlayer();
-                player.GetComponent<NetworkRoomPlayerV3D>().RpcFetchPlayerTower();
+                    var playerTower = Instantiate(NetworkRoomManagerV3D.singleton.spawnPrefabs[1]);
+                    playerTower.GetComponent<OwnedBy>().OwnerID = player.GetComponent<NetworkIdentity>().netId;
+                    NetworkServer.Spawn(playerTower);
+
+                    player.GetComponent<NetworkRoomPlayerV3D>().CmdInitializePlayer();
+                    player.GetComponent<NetworkRoomPlayerV3D>().RpcFetchPlayerTower();
+                }
             }
 
-            IsRunning = false;
-            IsComplete = true;
+            if(NetworkRoomManagerV3D.singleton.TowerPositions is not null)
+            {
+                IsRunning = false;
+                IsComplete = true;
+            }
         }
 
     }
