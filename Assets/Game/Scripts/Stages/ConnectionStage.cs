@@ -10,7 +10,6 @@ using Game.Resources;
 
 namespace Game.Stages
 {
-
     public class ConnectionStage : GameStage
     {
         private bool _Loading = false;

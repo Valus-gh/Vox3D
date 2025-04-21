@@ -5,6 +5,7 @@ using UnityEngine;
 using Mirror;
 
 using Game.Networking;
+using Game.Utilities;
 
 namespace Game.Stages 
 { 
@@ -28,9 +29,17 @@ namespace Game.Stages
         private GameStage _ConnectionStage;
         private GameStage _ShootingStage;
 
+        private StageQueue _Stages;
+
         private void Awake()
         {
             DontDestroyOnLoad(this);
+        }
+
+        void Start()
+        {
+            _Stages = new StageQueue(1);
+            _Stages.Enqueue(GetComponent<ShootingStage>());
         }
 
         // Update is called once per frame
