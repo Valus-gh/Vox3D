@@ -139,7 +139,7 @@ MonoBehaviour:
   syncDirection: 0
   syncMode: 0
   syncInterval: 0
-  Projectile: {fileID: 4139354093846511397, guid: 377840d9eb0fe1e468505a2709221a79, type: 3}
+  _Projectile: {fileID: 4139354093846511397, guid: 377840d9eb0fe1e468505a2709221a79, type: 3}
   fireCode: 32
 --- !u!1 &4385874364523960140
 GameObject:

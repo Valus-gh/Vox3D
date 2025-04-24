@@ -8,28 +8,40 @@ using Game.Interaction;
 using Game.Weapons;
 using Game.Utilities;
 using Game.Networking;
+using Game.Resources;
 
 namespace Game.Stages 
 {
     public class ShootingStage : GameStage
     {
-
         private Dictionary<uint, PlayerTower> _Towers;
+        private ProjectileResources _Projectiles;
 
         public override void Initialize()
         {
-            _Towers = new Dictionary<uint, PlayerTower>();
-            var towers = FindObjectsOfType<PlayerTower>();
-
-            foreach (var tower in towers)
+            if (!IsInitialized)
             {
-                var ownerID = tower.GetComponent<OwnedBy>().OwnerID;
+                _Projectiles = Vox3D.JSON.JsonImporter<ProjectileResources>.FromJSON("projectiles");
 
-                _Towers.Add(ownerID, tower);
+                _Towers = new Dictionary<uint, PlayerTower>();
+                var towers = FindObjectsOfType<PlayerTower>();
+
+                foreach (var tower in towers)
+                {
+                    for(int i = 0; i < _Projectiles.Projectiles.Length; i++)
+                        if (_Projectiles.Projectiles[i].Name == "Basic")
+                            tower.TowerControls.Projectile.FromModel(_Projectiles.Projectiles[i]);
+
+                    var ownerID = tower.GetComponent<OwnedBy>().OwnerID;
+
+                    _Towers.Add(ownerID, tower);
+                }
+
+
+                IsInitialized = true;
             }
 
             RpcToggleAimingArrows();
-
         }
 
         public override void Deinitialize()
@@ -104,7 +116,7 @@ namespace Game.Stages
                     Debug.Log("ALL PLAYERS CONFIRMED THEIR TRAJECTORY. FIRING PROJECTILES.");
                     FireProjectiles();
 
-                    //IsComplete = true;
+                    IsComplete = true;
 
                     RpcToggleAimingArrows();
                 }

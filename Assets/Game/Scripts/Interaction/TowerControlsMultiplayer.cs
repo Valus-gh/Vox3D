@@ -14,10 +14,12 @@ namespace Game.Interaction
     public class TowerControlsMultiplayer : NetworkBehaviour
     {
         [SerializeField]
-        protected Projectile Projectile;
+        private Projectile _Projectile;
         protected Trajectory TowerTrajectory;
 
         public KeyCode fireCode = KeyCode.Space;
+
+        public Projectile Projectile { get => _Projectile; set => _Projectile = value; }
 
         // Start is called before the first frame update
         void Start()

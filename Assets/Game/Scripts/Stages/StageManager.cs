@@ -23,14 +23,14 @@ namespace Game.Stages
         }
 
         [SerializeField]
-        private GameObject _LoadingScreen_Prefab;
-        private GameObject _LoadingScreen_Instance;
+        private GameObject  _LoadingScreen_Prefab;
+        private GameObject  _LoadingScreen_Instance;
 
-        private GameStage _ConnectionStage;
-        private GameStage _ShootingStage;
+        private GameStage   _ConnectionStage;
 
-        private StageQueue _Stages;
-
+        private StageQueue  _Stages;
+        private GameStage   _CurrentStage;
+        
         private void Awake()
         {
             DontDestroyOnLoad(this);
@@ -48,33 +48,27 @@ namespace Game.Stages
             // All players have finished loading gameplay scene
             if (_Players.Count == NetworkRoomManagerV3D.singleton.minPlayers)
             {
-
                 //Create substages and fill with lobby players
                 if (_ConnectionStage is null)
                 {
                     _ConnectionStage = GetComponent<ConnectionStage>();
                     _ConnectionStage.Players = _Players;
 
+                    _Stages.Initialize(_Players);
+
                     if (isServer)
                     {
                         _ConnectionStage.Initialize();
                         _ConnectionStage.IsRunning = true;
+                        _CurrentStage = _ConnectionStage;
                     }
                 }
 
-
-                if (_ShootingStage is null && _ConnectionStage.IsComplete)
+                if (_CurrentStage.IsComplete)
                 {
-                    _ShootingStage = GetComponent<ShootingStage>();
-                    _ShootingStage.Players = _Players;
-
-                    _ShootingStage.Initialize();
-                    _ShootingStage.IsRunning = true;
-
+                    _CurrentStage = _Stages.Advance();
                     ToggleLoadingScreen(false);
-
                 }
-
             }
         }
 

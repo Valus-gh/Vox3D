@@ -11,9 +11,9 @@ namespace Game.Stages
 
         private List<GameObject> _Players;
 
-        public bool IsRunning = false;
-
-        public bool IsComplete = false;
+        public bool IsInitialized   = false;
+        public bool IsRunning       = false;
+        public bool IsComplete      = false;
 
         public List<GameObject> Players { get => _Players; set => _Players = value; }
 

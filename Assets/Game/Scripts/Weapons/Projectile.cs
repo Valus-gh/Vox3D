@@ -1,4 +1,5 @@
 using UnityEngine;
+using static Game.Resources.ProjectileResources;
 
 namespace Game.Weapons
 {
@@ -46,6 +47,13 @@ namespace Game.Weapons
                 _ProjectileBody.velocity = _Trajectory.Speed * transform.forward;
             }
         }
+
+        public void FromModel(ProjectileModel model)
+        {
+            _Trajectory.Speed = model.Speed;
+            _Blast = model.Blast;
+        }
+
         public void OnCollisionEnter(Collision collision)
         {
              _Blast.Trigger(collision);

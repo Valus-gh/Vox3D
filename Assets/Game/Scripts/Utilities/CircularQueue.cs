@@ -4,10 +4,10 @@ namespace Game.Utilities
     public class CircularQueue<T>
         where T : class
     {
-        private readonly T[] _Items;
-        private int _Front;
-        private int _Back;
-        private int _Count;
+        protected readonly T[]  _Items;
+        protected int           _Front;
+        protected int           _Back;
+        protected int           _Count;
         public int Count { get { return _Count; } }
 
         public CircularQueue(int size)
