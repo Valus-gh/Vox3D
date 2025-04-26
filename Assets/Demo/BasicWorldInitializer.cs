@@ -5,6 +5,8 @@ using UnityEngine;
 using Vox3D.Engine;
 using Vox3D.Noise;
 
+using Game;
+
 namespace Demo
 {
     public class BasicWorldInitializer : MonoBehaviour
@@ -44,7 +46,7 @@ namespace Demo
 
             //######################## INSTANTIATE FOG ########################//
             
-            PriorityCallStack.Instance().Push(() => {
+          /*  PriorityCallStack.Instance().Push(() => {
 
                 var tower = GameObject.Find("Tower_Simple");
                 var towers = GameObject.FindObjectsByType<TowerControlsKeyboard>(FindObjectsSortMode.None);
@@ -55,7 +57,7 @@ namespace Demo
 
                 GameObject.Find("FogManager").GetComponent<FogManager>().AttachFoW(world);
 
-            }, 350);
+            }, 350);*/
             
             //######################## INSTANTIATE FOG ########################//
 

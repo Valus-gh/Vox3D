@@ -1,0 +1,46 @@
+{
+  "Projectiles": [
+    {
+      "Name": "Basic",
+      "Speed": 30,
+      "Blast": {
+        "Radius": 5,
+        "RadiusOffset": 2,
+        "Damage": 30,
+        "Scatter": false
+      }
+    },
+    {
+      "Name": "Nuke",
+      "Speed": 15,
+      "Blast": {
+        "Radius": 50,
+        "RadiusOffset": 2,
+        "Damage": 30,
+        "Scatter": false
+      }
+    },
+    {
+      "Name": "Spread",
+      "Speed": 30,
+      "Blast": {
+        "Scatter": true,
+        "ScatterOnImpact": true,
+        "ScatterAngle": 45,
+        "ScatterAmount": 10,
+        "ScatterBehaviour": "Regular",
+        "Child": "Tiny"
+      }
+    },
+    {
+      "Name": "Tiny",
+      "Speed": 50,
+      "Blast": {
+        "Radius": 3,
+        "RadiusOffset": 2,
+        "Damage": 10,
+        "Scatter": false
+      }
+    }
+  ]
+}

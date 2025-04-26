@@ -4,14 +4,14 @@ using UnityEngine;
 
 namespace Vox3D.JSON
 {
-    public class JsonImporter : MonoBehaviour
+    public class JsonImporter<T>
     {
-        public static Vox3DModel FromJSON(string path)
+        public static T FromJSON(string path)
         {
             TextAsset json = Resources.Load(path, typeof(TextAsset)) as TextAsset;
-            return JsonUtility.FromJson<Vox3DModel>(json.text);
+            return JsonUtility.FromJson<T>(json.text);
         }
-        public static string JSONToString(Vox3DModel model)
+        public static string JSONToString(T model)
         {
             return JSONToString(model);
         }

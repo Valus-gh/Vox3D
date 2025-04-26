@@ -22,7 +22,7 @@ namespace Vox3D {
 
         public static World FromJSON(string path, bool generateMaps = false)
         {
-            var model = Vox3D.JSON.JsonImporter.FromJSON(path);       
+            var model = Vox3D.JSON.JsonImporter<JSON.Vox3DModel>.FromJSON(path);       
 
             return FromModel(model, generateMaps);
         }

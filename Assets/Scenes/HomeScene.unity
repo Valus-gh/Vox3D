@@ -214,40 +214,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &927840571 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4851493396406051301, guid: 2dd6dba4ab316a942b20519e8f93f92b, type: 3}
-  m_PrefabInstance: {fileID: 5411617867288444313}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &927840575
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 927840571}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b0fecffa3f624585964b0d0eb21b18e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  port: 7777
-  DualMode: 1
-  NoDelay: 1
-  Interval: 10
-  Timeout: 10000
-  RecvBufferSize: 7361536
-  SendBufferSize: 7361536
-  FastResend: 2
-  ReceiveWindowSize: 4096
-  SendWindowSize: 4096
-  MaxRetransmit: 40
-  MaximizeSocketBuffers: 1
-  ReliableMaxMessageSize: 297433
-  UnreliableMaxMessageSize: 1194
-  debugLog: 0
-  statisticsGUI: 0
-  statisticsLog: 0
 --- !u!1 &1731053859
 GameObject:
   m_ObjectHideFlags: 0
@@ -537,32 +503,29 @@ PrefabInstance:
       value: RoomManager
       objectReference: {fileID: 0}
     - target: {fileID: 6777337099079815810, guid: 2dd6dba4ab316a942b20519e8f93f92b, type: 3}
-      propertyPath: transport
-      value: 
-      objectReference: {fileID: 927840575}
-    - target: {fileID: 6777337099079815810, guid: 2dd6dba4ab316a942b20519e8f93f92b, type: 3}
-      propertyPath: ConfigPath
-      value: config
+      propertyPath: minPlayers
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6777337099079815810, guid: 2dd6dba4ab316a942b20519e8f93f92b, type: 3}
-      propertyPath: playerPrefab
-      value: 
-      objectReference: {fileID: 1015187265060089438, guid: 04914aa2dacafd541a1924c8a40d7470, type: 3}
-    - target: {fileID: 6777337099079815810, guid: 2dd6dba4ab316a942b20519e8f93f92b, type: 3}
-      propertyPath: GameplayScene
-      value: Assets/Scenes/Vox3DSceneMultiplayer.unity
+      propertyPath: spawnPrefabs.Array.size
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6777337099079815810, guid: 2dd6dba4ab316a942b20519e8f93f92b, type: 3}
-      propertyPath: roomPlayerPrefab
+      propertyPath: spawnPrefabs.Array.data[2]
       value: 
-      objectReference: {fileID: 4397827361035910030, guid: 04914aa2dacafd541a1924c8a40d7470, type: 3}
+      objectReference: {fileID: 1730608478589156964, guid: 377840d9eb0fe1e468505a2709221a79, type: 3}
+    - target: {fileID: 6777337099079815810, guid: 2dd6dba4ab316a942b20519e8f93f92b, type: 3}
+      propertyPath: spawnPrefabs.Array.data[3]
+      value: 
+      objectReference: {fileID: 6827980584035153928, guid: d26609e89acee7d48bad5958e15fc1cc, type: 3}
+    - target: {fileID: 6777337099079815810, guid: 2dd6dba4ab316a942b20519e8f93f92b, type: 3}
+      propertyPath: spawnPrefabs.Array.data[4]
+      value: 
+      objectReference: {fileID: 1512224174081764721, guid: 9e7b04c2e2729f04e88e7b9e54fbfa0d, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4851493396406051301, guid: 2dd6dba4ab316a942b20519e8f93f92b, type: 3}
-      insertIndex: 2
-      addedObject: {fileID: 927840575}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dd6dba4ab316a942b20519e8f93f92b, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

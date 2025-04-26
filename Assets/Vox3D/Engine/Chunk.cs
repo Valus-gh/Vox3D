@@ -246,19 +246,19 @@ namespace Vox3D.Engine
             return mesh;
         }
 
-        public void OnCollisionEnter(Collision collision)
+        /*public void OnCollisionEnter(Collision collision)
         {
             ContactPoint[] points = new ContactPoint[1];
             if(collision.GetContacts(points) > 0)
             {
                 foreach(var point in points)
                 {
-                    Debug.Log($"CHUNK {name} - COLLISION AT POINT: {point.point}");
+                     Debug.Log($"CHUNK {name} - COLLISION AT POINT: {point.point}");
                 }
             }
 
 
-        }
+        }*/
 
     }
 
