@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="weapom-selection-button" src="project://database/Assets/Game/UI/weapom-selection-button.uxml?fileID=9197481963319205126&amp;guid=4d005ac8f050bc545a75c1a715f8a5d0&amp;type=3#weapom-selection-button" />
+    <ui:Box style="height: 700px; width: 750px; background-color: rgba(109, 144, 147, 0.61);">
+        <ui:Label tabindex="-1" text="Weapon Selection" parse-escape-sequences="true" display-tooltip-when-elided="true" name="weapon-selection-label" style="-unity-text-align: middle-center; font-size: 25px; -unity-font-style: bold; -unity-font-definition: url(&quot;project://database/Assets/Mirror/Hosting/Edgegap/Editor/Fonts/Spartan-Regular%20SDF.asset?fileID=11400000&amp;guid=8b0fb2c68be09174f8ea5057b27a545c&amp;type=2#Spartan-Regular SDF&quot;); -unity-font: initial;" />
+        <ui:ScrollView scroll-deceleration-rate="0,135" elasticity="0,1" style="height: auto; min-height: auto; position: relative; flex-direction: row;">
+            <ui:Instance template="weapom-selection-button" name="weapom-selection-button" style="justify-content: flex-start; align-items: center; align-self: flex-start;" />
+        </ui:ScrollView>
+    </ui:Box>
+</ui:UXML>
