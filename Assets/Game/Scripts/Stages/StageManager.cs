@@ -39,6 +39,7 @@ namespace Game.Stages
         void Start()
         {
             _Stages = new StageQueue(1);
+            _Stages.Enqueue(GetComponent<SelectionStage>());
             _Stages.Enqueue(GetComponent<ShootingStage>());
         }
 

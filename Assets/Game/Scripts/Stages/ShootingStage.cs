@@ -15,22 +15,22 @@ namespace Game.Stages
     public class ShootingStage : GameStage
     {
         private Dictionary<uint, PlayerTower> _Towers;
-        private ProjectileResources _Projectiles;
+        private ProjectileResources _ProjectileTemplates;
 
         public override void Initialize()
         {
             if (!IsInitialized)
             {
-                _Projectiles = Vox3D.JSON.JsonImporter<ProjectileResources>.FromJSON("projectiles");
+                _ProjectileTemplates = Vox3D.JSON.JsonImporter<ProjectileResources>.FromJSON("projectiles");
 
                 _Towers = new Dictionary<uint, PlayerTower>();
                 var towers = FindObjectsOfType<PlayerTower>();
 
                 foreach (var tower in towers)
                 {
-                    for(int i = 0; i < _Projectiles.Projectiles.Length; i++)
-                        if (_Projectiles.Projectiles[i].Name == "Basic")
-                            tower.TowerControls.Projectile.FromModel(_Projectiles.Projectiles[i]);
+                    for(int i = 0; i < _ProjectileTemplates.Projectiles.Length; i++)
+                        if (_ProjectileTemplates.Projectiles[i].Name == "Basic")
+                            tower.TowerControls.Projectile.FromModel(_ProjectileTemplates.Projectiles[i]);
 
                     var ownerID = tower.GetComponent<OwnedBy>().OwnerID;
 

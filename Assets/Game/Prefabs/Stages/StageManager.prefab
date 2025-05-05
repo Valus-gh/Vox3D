@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 391866226907739487}
   - component: {fileID: 8287544316987983804}
   - component: {fileID: -945833657254082202}
+  - component: {fileID: 5464661084114887398}
   - component: {fileID: -5652156399681621843}
   m_Layer: 0
   m_Name: StageManager
@@ -84,8 +85,28 @@ MonoBehaviour:
   syncDirection: 0
   syncMode: 0
   syncInterval: 0
+  IsInitialized: 0
   IsRunning: 0
   IsComplete: 0
+--- !u!114 &5464661084114887398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6827980584035153928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c787b05dadbbfa24ca5f3545168e2ffe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncDirection: 0
+  syncMode: 0
+  syncInterval: 0
+  IsInitialized: 0
+  IsRunning: 0
+  IsComplete: 0
+  _SelectionStageHUD: {fileID: 8763892396544024635, guid: ca10d3e5570333144a339d6eaa965c50, type: 3}
 --- !u!114 &-5652156399681621843
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -101,5 +122,6 @@ MonoBehaviour:
   syncDirection: 0
   syncMode: 0
   syncInterval: 0
+  IsInitialized: 0
   IsRunning: 0
   IsComplete: 0
