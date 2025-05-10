@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="root-container" style="flex-grow: 1; position: relative; align-items: flex-start; align-self: auto; justify-content: center; width: 100%; height: 100%; display: flex; visibility: visible;">
+        <ui:Box name="weapon-selection-box" style="height: 700px; width: 750px; background-color: rgba(255, 255, 255, 0.32); align-items: stretch; position: relative; align-self: center; justify-content: flex-start; top: auto; bottom: auto; overflow: visible;">
+            <ui:Label tabindex="-1" text="Weapon Selection" parse-escape-sequences="true" display-tooltip-when-elided="true" name="weapon-selection-label" style="-unity-text-align: middle-center; font-size: 25px; -unity-font-style: bold; -unity-font-definition: url(&quot;project://database/Assets/Mirror/Hosting/Edgegap/Editor/Fonts/Spartan-Regular%20SDF.asset?fileID=11400000&amp;guid=8b0fb2c68be09174f8ea5057b27a545c&amp;type=2#Spartan-Regular SDF&quot;); -unity-font: initial; margin-top: 10px;" />
+            <ui:ScrollView scroll-deceleration-rate="0,135" elasticity="0,1" name="selection-button-scrollview" style="height: auto; min-height: auto; position: relative; flex-direction: row; align-items: auto; justify-content: flex-start; align-self: flex-start; flex-wrap: wrap; overflow: visible;">
+                <ui:GroupBox name="button-container" style="flex-direction: row; flex-wrap: wrap; align-items: flex-start; justify-content: space-around; align-self: auto; width: auto; height: 650px;" />
+            </ui:ScrollView>
+        </ui:Box>
+    </ui:VisualElement>
+</ui:UXML>

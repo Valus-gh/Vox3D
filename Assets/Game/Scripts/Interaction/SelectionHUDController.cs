@@ -4,6 +4,8 @@ using UnityEngine.UIElements;
 using Mirror;
 
 using Game.Resources;
+using Game.Stages;
+using Game.Networking;
 
 namespace Game.Interaction
 {
@@ -19,21 +21,26 @@ namespace Game.Interaction
         {
         }
         
+        public void ToggleDisplay(bool show)
+        {
+            GetComponent<UIDocument>().rootVisualElement.Q("root-container").visible = show;
+        }
+
         public void InitializeHUD(ProjectileResources resources)
         {
-            _WeaponSelectionButtonTemplate = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>("Assets/Game/UI/weapon-selection-button.uxml");
+            _WeaponSelectionButtonTemplate = UnityEngine.Resources.Load<VisualTreeAsset>("UI/weapon-selection-button");
             _ButtonContainer = GetComponent<UIDocument>().rootVisualElement.Q("button-container") as GroupBox;
 
             foreach(var item in resources.Projectiles)
             {
-                var weaponButton = _WeaponSelectionButtonTemplate.Instantiate();
+                var weaponButton    = _WeaponSelectionButtonTemplate.Instantiate();
                 
                 var nameLabel       = weaponButton.Q("name-label") as Label;
                 var costLabel       = weaponButton.Q("cost-label") as Label;
                 var damageLabel     = weaponButton?.Q("damage-label") as Label;
 
                 nameLabel.text      = item.Name;
-                costLabel.text      = "10";
+                costLabel.text      = "0";
                 damageLabel.text    = "Damage: " + item.Blast.Damage + ((item.Blast.Scatter) ? " x " + item.Blast.ScatterAmount : "");
 
                 if (item.Blast.Scatter)
@@ -62,7 +69,10 @@ namespace Game.Interaction
 
         private void ButtonPressed(ClickEvent evt)
         {
-            Debug.Log("Button Pressed");
+            var button = evt.target as Button;
+            var weaponName = (button.Q("name-label") as Label).text;
+            var weaponCost = (button.Q("cost-label") as Label).text;
+            FindObjectOfType<SelectionStage>().CmdConfirmPurchase(NetworkRoomManagerV3D.singleton.PlayerID, weaponName, uint.Parse(weaponCost));
         }
 
     }

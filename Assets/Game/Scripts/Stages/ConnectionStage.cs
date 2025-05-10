@@ -35,6 +35,8 @@ namespace Game.Stages
                 {
                     player.GetComponent<NetworkRoomPlayerV3D>().RpcLoadWorld();
 
+                    // TODO spawn multiple towers for each player
+
                     var playerTower = Instantiate(NetworkRoomManagerV3D.singleton.spawnPrefabs[1]);
                     playerTower.GetComponent<OwnedBy>().OwnerID = player.GetComponent<NetworkIdentity>().netId;
                     NetworkServer.Spawn(playerTower);

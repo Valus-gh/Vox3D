@@ -69,6 +69,8 @@ namespace Game.Networking
         {
             var towers = FindObjectsOfType<PlayerTower>();
 
+            //TODO fetch multiple towers for each player
+
             foreach (var tower in towers)
             {
 

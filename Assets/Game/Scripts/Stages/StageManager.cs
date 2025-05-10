@@ -59,7 +59,6 @@ namespace Game.Stages
 
                     if (isServer)
                     {
-                        _ConnectionStage.Initialize();
                         _ConnectionStage.IsRunning = true;
                         _CurrentStage = _ConnectionStage;
                     }
@@ -67,10 +66,16 @@ namespace Game.Stages
 
                 if (_CurrentStage.IsComplete)
                 {
-                    _CurrentStage = _Stages.Advance();
-                    ToggleLoadingScreen(false);
+                    if(isServer) 
+                        _CurrentStage = _Stages.Advance();
                 }
             }
+        }
+
+        [ClientRpc]
+        public void RpcToggleAllLoadingScreens(bool active)
+        {
+            ToggleLoadingScreen(active);
         }
 
         public void ToggleLoadingScreen(bool active)

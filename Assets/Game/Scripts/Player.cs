@@ -15,6 +15,10 @@ namespace Game
         private PlayerTower _Tower;
         public PlayerTower  Tower { get => _Tower; set => _Tower = value; }
 
+        [SerializeField]
+        private Inventory _Inventory;
+        public Inventory Inventory { get => _Inventory; set => _Inventory = value; }
+
         #region PlayerAttributes
 
         [SyncVar(hook = nameof(OnBaseHitpointsChanged))]

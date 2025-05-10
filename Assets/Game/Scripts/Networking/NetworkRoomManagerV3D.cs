@@ -131,7 +131,7 @@ namespace Game.Networking
                 NetworkServer.Spawn(stageManager);
             }
 
-            FindObjectOfType<StageManager>().ToggleLoadingScreen(true);
+            FindObjectOfType<StageManager>().RpcToggleAllLoadingScreens(true);
             FindObjectOfType<StageManager>().RegisterPlayer(roomPlayer);
 
             return base.OnRoomServerSceneLoadedForPlayer(conn, roomPlayer, gamePlayer);

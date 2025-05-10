@@ -37,7 +37,6 @@ namespace Game.Stages
                     _Towers.Add(ownerID, tower);
                 }
 
-
                 IsInitialized = true;
             }
 
