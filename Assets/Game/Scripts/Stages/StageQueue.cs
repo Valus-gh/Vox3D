@@ -24,7 +24,7 @@ namespace Game.Stages
 
         }
 
-        public void Start()
+        public GameStage Start()
         {
             // Interrupt current stage, reset index, start first stage
             Stop();
@@ -33,13 +33,17 @@ namespace Game.Stages
             _Items[_CurrentStage].Initialize();
             _Items[_CurrentStage].IsComplete = false;
             _Items[_CurrentStage].IsRunning = true;
+
+            return _Items[_CurrentStage];
         }
 
-        public void Stop()
+        public GameStage Stop()
         {
             // Interrupt current stage
             _Items[_CurrentStage].IsRunning = false;
             _Items[_CurrentStage].IsComplete = false;
+
+            return _Items[_CurrentStage];
         }
 
         public void Initialize(List<GameObject> players)

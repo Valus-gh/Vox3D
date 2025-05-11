@@ -139,7 +139,6 @@ MonoBehaviour:
   syncDirection: 0
   syncMode: 0
   syncInterval: 0
-  _Projectile: {fileID: 4139354093846511397, guid: 377840d9eb0fe1e468505a2709221a79, type: 3}
   fireCode: 32
 --- !u!1 &4385874364523960140
 GameObject:
@@ -357,6 +356,7 @@ MonoBehaviour:
   syncMode: 0
   syncInterval: 0
   CanFire: 0
+  _EquippedWeapon: {fileID: 4139354093846511397, guid: 377840d9eb0fe1e468505a2709221a79, type: 3}
 --- !u!114 &-8966936453061607023
 MonoBehaviour:
   m_ObjectHideFlags: 0

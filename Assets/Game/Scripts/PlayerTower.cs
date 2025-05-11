@@ -5,6 +5,7 @@ using UnityEngine;
 using Mirror;
 
 using Game.Interaction;
+using Game.Weapons;
 
 namespace Game
 {
@@ -16,9 +17,12 @@ namespace Game
 
         private TowerControlsMultiplayer _TowerControls;
 
+        [SerializeField]
+        private Projectile _EquippedWeapon;
+
         public Player Player { get => _Player; set => _Player = value; }
         public TowerControlsMultiplayer TowerControls { get => _TowerControls; private set => _TowerControls = value; }
-
+        public Projectile EquippedWeapon { get => _EquippedWeapon; set => _EquippedWeapon = value; }
 
         public void Start()
         {

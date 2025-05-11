@@ -6,6 +6,7 @@ using Mirror;
 using Game.Resources;
 using Game.Stages;
 using Game.Networking;
+using System.Collections.Generic;
 
 namespace Game.Interaction
 {
@@ -15,24 +16,27 @@ namespace Game.Interaction
     {
         private VisualTreeAsset _WeaponSelectionButtonTemplate;
 
-        private GroupBox _ButtonContainer;
+        private GroupBox    _ButtonContainer;
+        private Button      _ButtonFinished;
 
-        private void OnEnable()
-        {
-        }
-        
         public void ToggleDisplay(bool show)
         {
             GetComponent<UIDocument>().rootVisualElement.Q("root-container").visible = show;
+
+            List<Label> labels = GetComponent<UIDocument>().rootVisualElement.Query<Label>().ToList();
+            labels.ForEach(l => l.visible = show);
         }
 
         public void InitializeHUD(ProjectileResources resources)
         {
-            _WeaponSelectionButtonTemplate = UnityEngine.Resources.Load<VisualTreeAsset>("UI/weapon-selection-button");
+            _WeaponSelectionButtonTemplate = UnityEngine.Resources.Load<VisualTreeAsset>("UI/weapon-purchase-button");
             _ButtonContainer = GetComponent<UIDocument>().rootVisualElement.Q("button-container") as GroupBox;
+            _ButtonFinished = GetComponent<UIDocument>().rootVisualElement.Q("button-finished") as Button;
 
             foreach(var item in resources.Projectiles)
             {
+                if (item.Name == "Basic") continue;
+
                 var weaponButton    = _WeaponSelectionButtonTemplate.Instantiate();
                 
                 var nameLabel       = weaponButton.Q("name-label") as Label;
@@ -60,14 +64,17 @@ namespace Game.Interaction
                     damageLabel.text = "Damage: " + item.Blast.Damage;
                 }
 
-                weaponButton.RegisterCallback<ClickEvent>(ButtonPressed);
+                weaponButton.RegisterCallback<ClickEvent>(OnClickPurchase);
 
                 _ButtonContainer.Add(weaponButton);
 
             }
+
+            _ButtonFinished.RegisterCallback<ClickEvent>(OnClickStopBuying);
+
         }
 
-        private void ButtonPressed(ClickEvent evt)
+        private void OnClickPurchase(ClickEvent evt)
         {
             var button = evt.target as Button;
             var weaponName = (button.Q("name-label") as Label).text;
@@ -75,6 +82,15 @@ namespace Game.Interaction
             FindObjectOfType<SelectionStage>().CmdConfirmPurchase(NetworkRoomManagerV3D.singleton.PlayerID, weaponName, uint.Parse(weaponCost));
         }
 
+        private void OnClickStopBuying(ClickEvent evt)
+        {
+            //Display loading screen while waiting for other players
+            FindObjectOfType<StageManager>().ToggleLoadingScreen(true, "Waiting");
+
+            // Notify server that client is done buying
+            FindObjectOfType<SelectionStage>().CmdReadyToProceed();
+
+        }
     }
 
 }

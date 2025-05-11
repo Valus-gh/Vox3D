@@ -38,7 +38,7 @@ namespace Game.Stages
 
         void Start()
         {
-            _Stages = new StageQueue(1);
+            _Stages = new StageQueue(2);
             _Stages.Enqueue(GetComponent<SelectionStage>());
             _Stages.Enqueue(GetComponent<ShootingStage>());
         }
@@ -49,7 +49,7 @@ namespace Game.Stages
             // All players have finished loading gameplay scene
             if (_Players.Count == NetworkRoomManagerV3D.singleton.minPlayers)
             {
-                //Create substages and fill with lobby players
+                // First stage is always connectioon, and is only executed once at the very start.
                 if (_ConnectionStage is null)
                 {
                     _ConnectionStage = GetComponent<ConnectionStage>();
@@ -64,9 +64,15 @@ namespace Game.Stages
                     }
                 }
 
-                if (_CurrentStage.IsComplete)
+                // After connecting, the gameplay stagequeue begins playing
+                if(_CurrentStage == _ConnectionStage && _CurrentStage.IsComplete)
                 {
-                    if(isServer) 
+                    if (isServer)
+                        _CurrentStage = _Stages.Start();
+                }
+                else if (_CurrentStage.IsComplete)
+                {
+                    if (isServer)
                         _CurrentStage = _Stages.Advance();
                 }
             }
@@ -78,13 +84,14 @@ namespace Game.Stages
             ToggleLoadingScreen(active);
         }
 
-        public void ToggleLoadingScreen(bool active)
+        public void ToggleLoadingScreen(bool active, string text = "Loading")
         {
             if (_LoadingScreen_Instance is null)
             {
                 _LoadingScreen_Instance = Instantiate(_LoadingScreen_Prefab, this.transform);
             }
 
+            _LoadingScreen_Instance.GetComponentInChildren<TMPro.TextMeshProUGUI>().text = text;
             _LoadingScreen_Instance.SetActive(active);
         }
 

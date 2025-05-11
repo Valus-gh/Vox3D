@@ -23,17 +23,27 @@ namespace Game.Stages
             {
                 _ProjectileTemplates = Vox3D.JSON.JsonImporter<ProjectileResources>.FromJSON("projectiles");
 
+                foreach (var player in Players)
+                {
+                    player.GetComponent<Player>().Inventory.Projectiles.Add("Basic", 999);
+
+                    var playerEquippedWeapon = player.GetComponent<Player>().Tower.EquippedWeapon;
+                    for(int i = 0; i < _ProjectileTemplates.Projectiles.Length; i++)
+                    {
+                        if (_ProjectileTemplates.Projectiles[i].Name == "Basic")
+                        {
+                            playerEquippedWeapon.FromModel(_ProjectileTemplates.Projectiles[i]);
+                            break;
+                        }
+                    }
+                }
+
                 _Towers = new Dictionary<uint, PlayerTower>();
                 var towers = FindObjectsOfType<PlayerTower>();
 
                 foreach (var tower in towers)
                 {
-                    for(int i = 0; i < _ProjectileTemplates.Projectiles.Length; i++)
-                        if (_ProjectileTemplates.Projectiles[i].Name == "Basic")
-                            tower.TowerControls.Projectile.FromModel(_ProjectileTemplates.Projectiles[i]);
-
                     var ownerID = tower.GetComponent<OwnedBy>().OwnerID;
-
                     _Towers.Add(ownerID, tower);
                 }
 
@@ -98,7 +108,7 @@ namespace Game.Stages
 
                 if(tower is not null)
                 {
-                    tower.TowerControls.FireProjectile(trajectory, owner);
+                    tower.TowerControls.FireProjectileOnAllClients(trajectory, owner);
                 }
             }
 

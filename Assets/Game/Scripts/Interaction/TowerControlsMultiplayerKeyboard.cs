@@ -14,13 +14,9 @@ namespace Game.Interaction
         // Update is called once per frame
         void Update()
         {
-
             if (Input.GetKeyDown(fireCode))
             {
-                if (Projectile is not null)
-                {
-                    RelayTrajectory(TowerTrajectory, NetworkRoomManagerV3D.singleton.PlayerID);
-                }
+                RelayTrajectory(TowerTrajectory, NetworkRoomManagerV3D.singleton.PlayerID);
             }
 
             if (Input.GetKey(KeyCode.Keypad6))

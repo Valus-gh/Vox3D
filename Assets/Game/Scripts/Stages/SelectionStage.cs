@@ -54,8 +54,12 @@ namespace Game.Stages
         }
         protected override void Run()
         {
-            GetComponent<StageManager>().RpcToggleAllLoadingScreens(false);
-            RpcToggleHUD(true);
+            if(ReadyToProceed == 0)
+            {
+                GetComponent<StageManager>().RpcToggleAllLoadingScreens(false);
+                RpcToggleHUD(true);
+            }
+
         }
 
         [ClientRpc]
@@ -97,7 +101,7 @@ namespace Game.Stages
             }
         }
 
-        [Command]
+        [Command(requiresAuthority = false)]
         public void CmdReadyToProceed()
         {
             ReadyToProceed++;
