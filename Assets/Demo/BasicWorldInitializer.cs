@@ -11,10 +11,7 @@ namespace Demo
 {
     public class BasicWorldInitializer : MonoBehaviour
     {
-        // TODO Move Texture Loading to Properties.  
-        // TODO Move Material loading to Properties. 
-        // TODO Write Shader using mesh vertex colors. 
-        // TODO Separate job start and job end.
+
         public GameObject tower;
 
         // Start is called before the first frame update

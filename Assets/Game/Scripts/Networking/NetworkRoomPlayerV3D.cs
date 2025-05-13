@@ -12,8 +12,6 @@ using Game.Resources;
 	API Reference: https://mirror-networking.com/docs/api/Mirror.NetworkRoomPlayer.html
 */
 
-//TODO: merge game and networking folders
-
 namespace Game.Networking
 {
 

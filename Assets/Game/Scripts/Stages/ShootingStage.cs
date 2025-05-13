@@ -15,7 +15,13 @@ namespace Game.Stages
     public class ShootingStage : GameStage
     {
         private Dictionary<uint, PlayerTower> _Towers;
+        private Dictionary<uint, PlayerTower> _SelectedTowers;
+        
         private ProjectileResources _ProjectileTemplates;
+
+        [SerializeField]
+        private GameObject _WeaponBarHUD;
+        private GameObject _WeaponBarHUD_Instance;
 
         public override void Initialize()
         {

@@ -17,13 +17,6 @@ namespace Game.Weapons
         public Trajectory Trajectory { get => _Trajectory; set => _Trajectory = value; }
         public Blast Blast { get => _Blast; set => _Blast = value; }
 
-        public void Start()
-        {
-            _Blast = new Blast();
-            _Blast.Radius = 5;
-            _Blast.RadiusOffset = 2;
-        }
-
         public void Aim()
         {
             Quaternion lookTowardsTrajectory = Quaternion.LookRotation(new Vector3(_Trajectory.DirectionXZ.x, 0.0f, _Trajectory.DirectionXZ.y));

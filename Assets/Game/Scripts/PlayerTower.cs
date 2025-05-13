@@ -18,7 +18,7 @@ namespace Game
         private TowerControlsMultiplayer _TowerControls;
 
         [SerializeField]
-        private Projectile _EquippedWeapon;
+        private Projectile  _EquippedWeapon;
 
         public Player Player { get => _Player; set => _Player = value; }
         public TowerControlsMultiplayer TowerControls { get => _TowerControls; private set => _TowerControls = value; }

@@ -38,8 +38,8 @@ namespace Game.Interaction
 
             Debug.Log($"Firing Projectile {currentWeapon.name}");
 
-            // TODO extract instantiate function to Projectile, so it can be specified for each type
             var instance = Instantiate(currentWeapon, transform.position, transform.rotation, null);
+            instance.Blast = currentWeapon.Blast;
 
             instance.GetComponent<OwnedBy>().OwnerID = ownerID;
 
