@@ -71,6 +71,9 @@ namespace Game
         void OnCurrentHitpointsChanged(float oldValue, float newValue)
         {
             Debug.Log("CurrentHitpoints: " + CurrentHitpoints);
+
+            if (newValue <= 0)
+                Debug.Log("Player has lost all hitpoints. Send defeat event");
         }
         void OnBudgetChanged(uint oldValue, uint newValue)
         {

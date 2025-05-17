@@ -6,6 +6,7 @@ using Vox3D;
 using Game.Fog;
 using Game.Utilities;
 using Game.Resources;
+using Game.Stages;
 
 /*
 	Documentation: https://mirror-networking.gitbook.io/docs/components/network-room-player
@@ -95,6 +96,8 @@ namespace Game.Networking
 
                         // Instantiate FogInjector for current world
                         GameObject.Find("FogManager").GetComponent<FogManager>().AttachFoW(World);
+
+                        FindObjectOfType<StageManager>().GetComponent<ConnectionStage>().CmdConfirmPlayerReady();
 
                     }, 60);
 

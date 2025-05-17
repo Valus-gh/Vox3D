@@ -13,7 +13,7 @@ namespace Game.Stages
     public class ConnectionStage : GameStage
     {
         private bool _Loading = false;
-
+        private uint _PlayerObjectsReady = 0;
         public  override void Initialize()
         {
             //throw new System.NotImplementedException();
@@ -46,11 +46,17 @@ namespace Game.Stages
                 }
             }
 
-            if(NetworkRoomManagerV3D.singleton.TowerPositions is not null)
+            if(NetworkRoomManagerV3D.singleton.TowerPositions is not null && _PlayerObjectsReady == Players.Count)
             {
                 IsRunning = false;
                 IsComplete = true;
             }
+        }
+
+        [Command(requiresAuthority = false)]
+        public void CmdConfirmPlayerReady()
+        {
+            _PlayerObjectsReady++;
         }
 
     }

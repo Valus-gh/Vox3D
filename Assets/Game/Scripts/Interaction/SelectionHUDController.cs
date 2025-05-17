@@ -1,7 +1,5 @@
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.UIElements;
-using Mirror;
 
 using Game.Resources;
 using Game.Stages;
@@ -84,12 +82,12 @@ namespace Game.Interaction
 
         private void OnClickStopBuying(ClickEvent evt)
         {
-            //Display loading screen while waiting for other players
-            FindObjectOfType<StageManager>().ToggleLoadingScreen(true, "Waiting");
-
             // Notify server that client is done buying
             FindObjectOfType<SelectionStage>().CmdReadyToProceed();
+            FindObjectOfType<SelectionStage>().ToggleHUD(false);
 
+            //Display loading screen while waiting for other players
+            FindObjectOfType<StageManager>().ToggleLoadingScreen(true, "Waiting for your opponents...");
         }
     }
 

@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 105
+  controlID: 69
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 56
+  controlID: 70
   draggingID: 0
 --- !u!114 &7
 MonoBehaviour:
@@ -171,7 +171,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 47
+  controlID: 46
   draggingID: 0
 --- !u!114 &8
 MonoBehaviour:
@@ -209,7 +209,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: GameView
+  m_Name: SceneView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -218,15 +218,15 @@ MonoBehaviour:
     y: 0
     width: 1010
     height: 939
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 16}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
   - {fileID: 16}
   - {fileID: 12}
-  m_Selected: 1
-  m_LastSelected: 2
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -301,10 +301,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 351
-    y: 97
-    width: 1008
-    height: 918
+    x: 679
+    y: 73
+    width: 2051
+    height: 948
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -386,9 +386,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 34720000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: d8b8ffffe6b8fffffab8ffff2afbfffff4ffffff
+      m_ExpandedIDs: 2afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -901,7 +901,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -977,7 +977,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Resources/UI
+    - Assets/Game/Prefabs
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -985,16 +985,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Resources/UI
+  - Assets/Game/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 234}
-    m_SelectedIDs: 80740000
-    m_LastClickedID: 29824
-    m_ExpandedIDs: 000000001a7400001c7400001e74000020740000227400002474000026740000287400002a7400002c7400002e7400003274000034740000367400003a7400003c7400003e7400004074000042740000747400007c740000167500001875000000ca9a3b
+    scrollPos: {x: 0, y: 60}
+    m_SelectedIDs: 3c740000
+    m_LastClickedID: 29756
+    m_ExpandedIDs: 000000001a7400001c7400001e74000020740000227400002474000026740000287400002a7400002c7400002e74000030740000327400003474000036740000387400003a7400003c7400003e7400004074000042740000447400004674000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1022,7 +1022,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000001a7400001c7400001e74000020740000227400002474000026740000287400002a7400002c7400002e74000030740000327400003474000036740000387400003a7400003c7400003e7400004074000042740000
+    m_ExpandedIDs: 000000001a7400001c7400001e74000020740000227400002474000026740000287400002a7400002c7400002e74000030740000327400003474000036740000387400003a7400003c7400003e74000040740000427400004474000046740000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1066,7 +1066,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 9}
+      m_ClientGUIView: {fileID: 10}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -1159,7 +1159,7 @@ MonoBehaviour:
     m_LastAppliedPresetName: Default
     m_SaveData: []
     m_OverlaysVisible: 1
-  progressMessageClearTime: 6635.6757605
+  progressMessageClearTime: -1
   notificationClearTime: -1
   timeSinceLastRotation: -1
   currentBranchAndRemoteHasUpdate: 0
@@ -1594,18 +1594,442 @@ MonoBehaviour:
     gitStatusEntries: []
     changedFilesText: No changed files
     lastCurrentBranchChangedEvent:
-      updatedTimeString: 2025-05-11T11:49:51.220+02:00
+      updatedTimeString: 2025-05-13T10:50:00.755+02:00
       cacheType: 1
     lastStatusEntriesChangedEvent:
-      updatedTimeString: 2025-05-11T11:49:44.507+02:00
+      updatedTimeString: 2025-05-13T10:49:51.589+02:00
       cacheType: 6
     lastLocksChangedEvent:
-      updatedTimeString: 2025-05-11T11:48:07.319+02:00
+      updatedTimeString: 2025-05-13T10:48:08.458+02:00
       cacheType: 7
   historyView:
     currentLogHasUpdate: 0
     currentTrackingStatusHasUpdate: 0
     logEntries:
+    - commitID: 1a83e50dd71aa7cf81ab80d7149bf26171505455
+      mergeA: 
+      mergeB: 
+      authorName: Valus-gh
+      authorEmail: simone.belingheri25@gmail.com
+      commitEmail: simone.belingheri25@gmail.com
+      commitName: Valus-gh
+      summary: Added Basic projectile automatic purchase, removed from shop
+      description: Added Basic projectile automatic purchase, removed from shop.
+        Fixed StageQueue size
+      timeString: 2025-05-11T11:49:39.000+02:00
+      commitTimeString: 2025-05-11T11:49:39.000+02:00
+      changes:
+      - path: Assets\Game\Prefabs\PlayerTower.prefab
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\PlayerTower.prefab
+        projectPath: Assets\Game\Prefabs\PlayerTower.prefab
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Interaction\SelectionHUDController.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\SelectionHUDController.cs
+        projectPath: Assets\Game\Scripts\Interaction\SelectionHUDController.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Interaction\TowerControlsMultiplayer.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\TowerControlsMultiplayer.cs
+        projectPath: Assets\Game\Scripts\Interaction\TowerControlsMultiplayer.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Interaction\TowerControlsMultiplayerKeyboard.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\TowerControlsMultiplayerKeyboard.cs
+        projectPath: Assets\Game\Scripts\Interaction\TowerControlsMultiplayerKeyboard.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\PlayerTower.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\PlayerTower.cs
+        projectPath: Assets\Game\Scripts\PlayerTower.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Stages\SelectionStage.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\SelectionStage.cs
+        projectPath: Assets\Game\Scripts\Stages\SelectionStage.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Stages\ShootingStage.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\ShootingStage.cs
+        projectPath: Assets\Game\Scripts\Stages\ShootingStage.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Stages\StageManager.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\StageManager.cs
+        projectPath: Assets\Game\Scripts\Stages\StageManager.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Stages\StageQueue.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\StageQueue.cs
+        projectPath: Assets\Game\Scripts\Stages\StageQueue.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Resources\UI\SelectionStage_Tabview.uxml
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\SelectionStage_Tabview.uxml
+        projectPath: Assets\Resources\UI\SelectionStage_Tabview.uxml
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Resources\UI\weapon-purchase-button.uxml
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\weapon-purchase-button.uxml
+        projectPath: Assets\Resources\UI\weapon-purchase-button.uxml
+        originalPath: Assets\Resources\UI\weapon-selection-button.uxml
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Resources\UI\weapon-purchase-button.uxml.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\weapon-purchase-button.uxml.meta
+        projectPath: Assets\Resources\UI\weapon-purchase-button.uxml.meta
+        originalPath: Assets\Resources\UI\weapon-selection-button.uxml.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: UserSettings\Layouts\default-2022.dwlt
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\Layouts\default-2022.dwlt
+        projectPath: UserSettings\Layouts\default-2022.dwlt
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+    - commitID: c067cf9b73fe3cb20574629925672d1ae959a825
+      mergeA: 
+      mergeB: 
+      authorName: Valus-gh
+      authorEmail: simone.belingheri25@gmail.com
+      commitEmail: simone.belingheri25@gmail.com
+      commitName: Valus-gh
+      summary: Added Selection Stage Purchase Method. Centered HUD. Fixed Loading
+        Screen not deactivating on clients.
+      description: Added Selection Stage Purchase Method. Centered HUD. Fixed Loading
+        Screen not deactivating on clients. TODO projectile selection mechanics,
+        support for multiple towers.
+      timeString: 2025-05-10T12:18:53.000+02:00
+      commitTimeString: 2025-05-10T12:18:53.000+02:00
+      changes:
+      - path: Assets\Game\Prefabs\Networking\RoomPlayer.prefab
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Networking\RoomPlayer.prefab
+        projectPath: Assets\Game\Prefabs\Networking\RoomPlayer.prefab
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Interaction\SelectionHUDController.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\SelectionHUDController.cs
+        projectPath: Assets\Game\Scripts\Interaction\SelectionHUDController.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Inventory.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Inventory.cs
+        projectPath: Assets\Game\Scripts\Inventory.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Inventory.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Inventory.cs.meta
+        projectPath: Assets\Game\Scripts\Inventory.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Networking\NetworkRoomManagerV3D.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Networking\NetworkRoomManagerV3D.cs
+        projectPath: Assets\Game\Scripts\Networking\NetworkRoomManagerV3D.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Networking\NetworkRoomPlayerV3D.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Networking\NetworkRoomPlayerV3D.cs
+        projectPath: Assets\Game\Scripts\Networking\NetworkRoomPlayerV3D.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Player.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Player.cs
+        projectPath: Assets\Game\Scripts\Player.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Stages\ConnectionStage.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\ConnectionStage.cs
+        projectPath: Assets\Game\Scripts\Stages\ConnectionStage.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Stages\SelectionStage.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\SelectionStage.cs
+        projectPath: Assets\Game\Scripts\Stages\SelectionStage.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Stages\ShootingStage.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\ShootingStage.cs
+        projectPath: Assets\Game\Scripts\Stages\ShootingStage.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Stages\StageManager.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\StageManager.cs
+        projectPath: Assets\Game\Scripts\Stages\StageManager.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Game\UI\SelectionStage_Tabview.uxml
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\UI\SelectionStage_Tabview.uxml
+        projectPath: Assets\Game\UI\SelectionStage_Tabview.uxml
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: Assets\Resources\UI.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI.meta
+        projectPath: Assets\Resources\UI.meta
+        originalPath: Assets\Game\UI.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Resources\UI\SelectionStage_Tabview.uxml
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\SelectionStage_Tabview.uxml
+        projectPath: Assets\Resources\UI\SelectionStage_Tabview.uxml
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Resources\UI\SelectionStage_Tabview.uxml.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\SelectionStage_Tabview.uxml.meta
+        projectPath: Assets\Resources\UI\SelectionStage_Tabview.uxml.meta
+        originalPath: Assets\Game\UI\SelectionStage_Tabview.uxml.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Resources\UI\default-image.png
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\default-image.png
+        projectPath: Assets\Resources\UI\default-image.png
+        originalPath: Assets\Game\UI\default-image.png
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Resources\UI\default-image.png.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\default-image.png.meta
+        projectPath: Assets\Resources\UI\default-image.png.meta
+        originalPath: Assets\Game\UI\default-image.png.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Resources\UI\weapon-selection-button.uxml
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\weapon-selection-button.uxml
+        projectPath: Assets\Resources\UI\weapon-selection-button.uxml
+        originalPath: Assets\Game\UI\weapon-selection-button.uxml
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Resources\UI\weapon-selection-button.uxml.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\weapon-selection-button.uxml.meta
+        projectPath: Assets\Resources\UI\weapon-selection-button.uxml.meta
+        originalPath: Assets\Game\UI\weapon-selection-button.uxml.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: UserSettings\Layouts\default-2022.dwlt
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\Layouts\default-2022.dwlt
+        projectPath: UserSettings\Layouts\default-2022.dwlt
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+    - commitID: 0dd31829ff9046f3ca128fd9731f6f2e5fad64ef
+      mergeA: 
+      mergeB: 
+      authorName: Valus-gh
+      authorEmail: simone.belingheri25@gmail.com
+      commitEmail: simone.belingheri25@gmail.com
+      commitName: Valus-gh
+      summary: Added GroupBox to HUD, added SelectionStage
+      description: Added GroupBox to HUD, added SelectionStage
+      timeString: 2025-05-05T11:22:04.000+02:00
+      commitTimeString: 2025-05-05T11:22:04.000+02:00
+      changes:
+      - path: Assets\Game\Prefabs\Interaction\SelectionStageHUD.prefab
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Interaction\SelectionStageHUD.prefab
+        projectPath: Assets\Game\Prefabs\Interaction\SelectionStageHUD.prefab
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Prefabs\Interaction\SelectionStageHUD.prefab.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Interaction\SelectionStageHUD.prefab.meta
+        projectPath: Assets\Game\Prefabs\Interaction\SelectionStageHUD.prefab.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Prefabs\Stages\StageManager.prefab
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Stages\StageManager.prefab
+        projectPath: Assets\Game\Prefabs\Stages\StageManager.prefab
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Interaction\SelectionHUDController.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\SelectionHUDController.cs
+        projectPath: Assets\Game\Scripts\Interaction\SelectionHUDController.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Interaction\SelectionHUDController.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\SelectionHUDController.cs.meta
+        projectPath: Assets\Game\Scripts\Interaction\SelectionHUDController.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Stages\SelectionStage.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\SelectionStage.cs
+        projectPath: Assets\Game\Scripts\Stages\SelectionStage.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Stages\SelectionStage.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\SelectionStage.cs.meta
+        projectPath: Assets\Game\Scripts\Stages\SelectionStage.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Stages\ShootingStage.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\ShootingStage.cs
+        projectPath: Assets\Game\Scripts\Stages\ShootingStage.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Stages\StageManager.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\StageManager.cs
+        projectPath: Assets\Game\Scripts\Stages\StageManager.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Game\UI\SelectionStage_Tabview.uxml
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\UI\SelectionStage_Tabview.uxml
+        projectPath: Assets\Game\UI\SelectionStage_Tabview.uxml
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Game\UI\weapon-selection-button.uxml
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\UI\weapon-selection-button.uxml
+        projectPath: Assets\Game\UI\weapon-selection-button.uxml
+        originalPath: Assets\Game\UI\weapom-selection-button.uxml
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\UI\weapon-selection-button.uxml.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\UI\weapon-selection-button.uxml.meta
+        projectPath: Assets\Game\UI\weapon-selection-button.uxml.meta
+        originalPath: Assets\Game\UI\weapom-selection-button.uxml.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Scenes\HomeScene.unity
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\HomeScene.unity
+        projectPath: Assets\Scenes\HomeScene.unity
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\UI Toolkit\PanelSettings.asset
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\UI Toolkit\PanelSettings.asset
+        projectPath: Assets\UI Toolkit\PanelSettings.asset
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: UserSettings\Layouts\default-2022.dwlt
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\Layouts\default-2022.dwlt
+        projectPath: UserSettings\Layouts\default-2022.dwlt
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+    - commitID: e3c65009d2768782961b83fc432fc77426a3f516
+      mergeA: 
+      mergeB: 
+      authorName: Valus-gh
+      authorEmail: simone.belingheri25@gmail.com
+      commitEmail: simone.belingheri25@gmail.com
+      commitName: Valus-gh
+      summary: Created Basic Template for Weapon Selection Button - WIP
+      description: Created Basic Template for Weapon Selection Button - WIP
+      timeString: 2025-04-26T11:04:21.000+02:00
+      commitTimeString: 2025-04-26T11:04:21.000+02:00
+      changes:
+      - path: Assets\Game\UI.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\UI.meta
+        projectPath: Assets\Game\UI.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\UI\SelectionStage_Tabview.uxml
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\UI\SelectionStage_Tabview.uxml
+        projectPath: Assets\Game\UI\SelectionStage_Tabview.uxml
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\UI\SelectionStage_Tabview.uxml.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\UI\SelectionStage_Tabview.uxml.meta
+        projectPath: Assets\Game\UI\SelectionStage_Tabview.uxml.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\UI\default-image.png
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\UI\default-image.png
+        projectPath: Assets\Game\UI\default-image.png
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\UI\default-image.png.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\UI\default-image.png.meta
+        projectPath: Assets\Game\UI\default-image.png.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\UI\weapom-selection-button.uxml
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\UI\weapom-selection-button.uxml
+        projectPath: Assets\Game\UI\weapom-selection-button.uxml
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\UI\weapom-selection-button.uxml.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\UI\weapom-selection-button.uxml.meta
+        projectPath: Assets\Game\UI\weapom-selection-button.uxml.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Scenes\HomeScene.unity
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\HomeScene.unity
+        projectPath: Assets\Scenes\HomeScene.unity
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\UI Toolkit.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\UI Toolkit.meta
+        projectPath: Assets\UI Toolkit.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\UI Toolkit\PanelSettings.asset
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\UI Toolkit\PanelSettings.asset
+        projectPath: Assets\UI Toolkit\PanelSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\UI Toolkit\PanelSettings.asset.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\UI Toolkit\PanelSettings.asset.meta
+        projectPath: Assets\UI Toolkit\PanelSettings.asset.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\UI Toolkit\UnityThemes.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\UI Toolkit\UnityThemes.meta
+        projectPath: Assets\UI Toolkit\UnityThemes.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\UI Toolkit\UnityThemes\UnityDefaultRuntimeTheme.tss
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\UI Toolkit\UnityThemes\UnityDefaultRuntimeTheme.tss
+        projectPath: Assets\UI Toolkit\UnityThemes\UnityDefaultRuntimeTheme.tss
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\UI Toolkit\UnityThemes\UnityDefaultRuntimeTheme.tss.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\UI Toolkit\UnityThemes\UnityDefaultRuntimeTheme.tss.meta
+        projectPath: Assets\UI Toolkit\UnityThemes\UnityDefaultRuntimeTheme.tss.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
     - commitID: d238ca8ed358c8a19257e9dab54198829f0bbee3
       mergeA: 97ba383a8add18851e602ca7169b6024783ac0a8
       mergeB: c04fce2d3e354605951a6083bfd5e8275efc5c85
@@ -49930,14 +50354,438 @@ MonoBehaviour:
         workTreeStatus: 0
     statusAhead: 0
     lastLogChangedEvent:
-      updatedTimeString: 2025-04-26T09:55:15.212+02:00
+      updatedTimeString: 2025-05-13T10:48:06.599+02:00
       cacheType: 3
     lastTrackingStatusChangedEvent:
-      updatedTimeString: 2025-04-26T09:55:40.053+02:00
+      updatedTimeString: 2025-05-13T10:48:06.578+02:00
       cacheType: 5
     historyControl:
       scroll: {x: 0, y: 0}
       entries:
+      - commitID: 1a83e50dd71aa7cf81ab80d7149bf26171505455
+        mergeA: 
+        mergeB: 
+        authorName: Valus-gh
+        authorEmail: simone.belingheri25@gmail.com
+        commitEmail: simone.belingheri25@gmail.com
+        commitName: Valus-gh
+        summary: Added Basic projectile automatic purchase, removed from shop
+        description: Added Basic projectile automatic purchase, removed from shop.
+          Fixed StageQueue size
+        timeString: 2025-05-11T11:49:39.000+02:00
+        commitTimeString: 2025-05-11T11:49:39.000+02:00
+        changes:
+        - path: Assets\Game\Prefabs\PlayerTower.prefab
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\PlayerTower.prefab
+          projectPath: Assets\Game\Prefabs\PlayerTower.prefab
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Interaction\SelectionHUDController.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\SelectionHUDController.cs
+          projectPath: Assets\Game\Scripts\Interaction\SelectionHUDController.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Interaction\TowerControlsMultiplayer.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\TowerControlsMultiplayer.cs
+          projectPath: Assets\Game\Scripts\Interaction\TowerControlsMultiplayer.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Interaction\TowerControlsMultiplayerKeyboard.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\TowerControlsMultiplayerKeyboard.cs
+          projectPath: Assets\Game\Scripts\Interaction\TowerControlsMultiplayerKeyboard.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\PlayerTower.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\PlayerTower.cs
+          projectPath: Assets\Game\Scripts\PlayerTower.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Stages\SelectionStage.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\SelectionStage.cs
+          projectPath: Assets\Game\Scripts\Stages\SelectionStage.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Stages\ShootingStage.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\ShootingStage.cs
+          projectPath: Assets\Game\Scripts\Stages\ShootingStage.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Stages\StageManager.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\StageManager.cs
+          projectPath: Assets\Game\Scripts\Stages\StageManager.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Stages\StageQueue.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\StageQueue.cs
+          projectPath: Assets\Game\Scripts\Stages\StageQueue.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Resources\UI\SelectionStage_Tabview.uxml
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\SelectionStage_Tabview.uxml
+          projectPath: Assets\Resources\UI\SelectionStage_Tabview.uxml
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Resources\UI\weapon-purchase-button.uxml
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\weapon-purchase-button.uxml
+          projectPath: Assets\Resources\UI\weapon-purchase-button.uxml
+          originalPath: Assets\Resources\UI\weapon-selection-button.uxml
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Resources\UI\weapon-purchase-button.uxml.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\weapon-purchase-button.uxml.meta
+          projectPath: Assets\Resources\UI\weapon-purchase-button.uxml.meta
+          originalPath: Assets\Resources\UI\weapon-selection-button.uxml.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: UserSettings\Layouts\default-2022.dwlt
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\Layouts\default-2022.dwlt
+          projectPath: UserSettings\Layouts\default-2022.dwlt
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - commitID: c067cf9b73fe3cb20574629925672d1ae959a825
+        mergeA: 
+        mergeB: 
+        authorName: Valus-gh
+        authorEmail: simone.belingheri25@gmail.com
+        commitEmail: simone.belingheri25@gmail.com
+        commitName: Valus-gh
+        summary: Added Selection Stage Purchase Method. Centered HUD. Fixed Loading
+          Screen not deactivating on clients.
+        description: Added Selection Stage Purchase Method. Centered HUD. Fixed Loading
+          Screen not deactivating on clients. TODO projectile selection mechanics,
+          support for multiple towers.
+        timeString: 2025-05-10T12:18:53.000+02:00
+        commitTimeString: 2025-05-10T12:18:53.000+02:00
+        changes:
+        - path: Assets\Game\Prefabs\Networking\RoomPlayer.prefab
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Networking\RoomPlayer.prefab
+          projectPath: Assets\Game\Prefabs\Networking\RoomPlayer.prefab
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Interaction\SelectionHUDController.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\SelectionHUDController.cs
+          projectPath: Assets\Game\Scripts\Interaction\SelectionHUDController.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Inventory.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Inventory.cs
+          projectPath: Assets\Game\Scripts\Inventory.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Inventory.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Inventory.cs.meta
+          projectPath: Assets\Game\Scripts\Inventory.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Networking\NetworkRoomManagerV3D.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Networking\NetworkRoomManagerV3D.cs
+          projectPath: Assets\Game\Scripts\Networking\NetworkRoomManagerV3D.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Networking\NetworkRoomPlayerV3D.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Networking\NetworkRoomPlayerV3D.cs
+          projectPath: Assets\Game\Scripts\Networking\NetworkRoomPlayerV3D.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Player.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Player.cs
+          projectPath: Assets\Game\Scripts\Player.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Stages\ConnectionStage.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\ConnectionStage.cs
+          projectPath: Assets\Game\Scripts\Stages\ConnectionStage.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Stages\SelectionStage.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\SelectionStage.cs
+          projectPath: Assets\Game\Scripts\Stages\SelectionStage.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Stages\ShootingStage.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\ShootingStage.cs
+          projectPath: Assets\Game\Scripts\Stages\ShootingStage.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Stages\StageManager.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\StageManager.cs
+          projectPath: Assets\Game\Scripts\Stages\StageManager.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Game\UI\SelectionStage_Tabview.uxml
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\UI\SelectionStage_Tabview.uxml
+          projectPath: Assets\Game\UI\SelectionStage_Tabview.uxml
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+        - path: Assets\Resources\UI.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI.meta
+          projectPath: Assets\Resources\UI.meta
+          originalPath: Assets\Game\UI.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Resources\UI\SelectionStage_Tabview.uxml
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\SelectionStage_Tabview.uxml
+          projectPath: Assets\Resources\UI\SelectionStage_Tabview.uxml
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Resources\UI\SelectionStage_Tabview.uxml.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\SelectionStage_Tabview.uxml.meta
+          projectPath: Assets\Resources\UI\SelectionStage_Tabview.uxml.meta
+          originalPath: Assets\Game\UI\SelectionStage_Tabview.uxml.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Resources\UI\default-image.png
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\default-image.png
+          projectPath: Assets\Resources\UI\default-image.png
+          originalPath: Assets\Game\UI\default-image.png
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Resources\UI\default-image.png.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\default-image.png.meta
+          projectPath: Assets\Resources\UI\default-image.png.meta
+          originalPath: Assets\Game\UI\default-image.png.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Resources\UI\weapon-selection-button.uxml
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\weapon-selection-button.uxml
+          projectPath: Assets\Resources\UI\weapon-selection-button.uxml
+          originalPath: Assets\Game\UI\weapon-selection-button.uxml
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Resources\UI\weapon-selection-button.uxml.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\weapon-selection-button.uxml.meta
+          projectPath: Assets\Resources\UI\weapon-selection-button.uxml.meta
+          originalPath: Assets\Game\UI\weapon-selection-button.uxml.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: UserSettings\Layouts\default-2022.dwlt
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\Layouts\default-2022.dwlt
+          projectPath: UserSettings\Layouts\default-2022.dwlt
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - commitID: 0dd31829ff9046f3ca128fd9731f6f2e5fad64ef
+        mergeA: 
+        mergeB: 
+        authorName: Valus-gh
+        authorEmail: simone.belingheri25@gmail.com
+        commitEmail: simone.belingheri25@gmail.com
+        commitName: Valus-gh
+        summary: Added GroupBox to HUD, added SelectionStage
+        description: Added GroupBox to HUD, added SelectionStage
+        timeString: 2025-05-05T11:22:04.000+02:00
+        commitTimeString: 2025-05-05T11:22:04.000+02:00
+        changes:
+        - path: Assets\Game\Prefabs\Interaction\SelectionStageHUD.prefab
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Interaction\SelectionStageHUD.prefab
+          projectPath: Assets\Game\Prefabs\Interaction\SelectionStageHUD.prefab
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\Prefabs\Interaction\SelectionStageHUD.prefab.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Interaction\SelectionStageHUD.prefab.meta
+          projectPath: Assets\Game\Prefabs\Interaction\SelectionStageHUD.prefab.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\Prefabs\Stages\StageManager.prefab
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Stages\StageManager.prefab
+          projectPath: Assets\Game\Prefabs\Stages\StageManager.prefab
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Interaction\SelectionHUDController.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\SelectionHUDController.cs
+          projectPath: Assets\Game\Scripts\Interaction\SelectionHUDController.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Interaction\SelectionHUDController.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\SelectionHUDController.cs.meta
+          projectPath: Assets\Game\Scripts\Interaction\SelectionHUDController.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Stages\SelectionStage.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\SelectionStage.cs
+          projectPath: Assets\Game\Scripts\Stages\SelectionStage.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Stages\SelectionStage.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\SelectionStage.cs.meta
+          projectPath: Assets\Game\Scripts\Stages\SelectionStage.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Stages\ShootingStage.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\ShootingStage.cs
+          projectPath: Assets\Game\Scripts\Stages\ShootingStage.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Stages\StageManager.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\StageManager.cs
+          projectPath: Assets\Game\Scripts\Stages\StageManager.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Game\UI\SelectionStage_Tabview.uxml
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\UI\SelectionStage_Tabview.uxml
+          projectPath: Assets\Game\UI\SelectionStage_Tabview.uxml
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Game\UI\weapon-selection-button.uxml
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\UI\weapon-selection-button.uxml
+          projectPath: Assets\Game\UI\weapon-selection-button.uxml
+          originalPath: Assets\Game\UI\weapom-selection-button.uxml
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\UI\weapon-selection-button.uxml.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\UI\weapon-selection-button.uxml.meta
+          projectPath: Assets\Game\UI\weapon-selection-button.uxml.meta
+          originalPath: Assets\Game\UI\weapom-selection-button.uxml.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Scenes\HomeScene.unity
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\HomeScene.unity
+          projectPath: Assets\Scenes\HomeScene.unity
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\UI Toolkit\PanelSettings.asset
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\UI Toolkit\PanelSettings.asset
+          projectPath: Assets\UI Toolkit\PanelSettings.asset
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: UserSettings\Layouts\default-2022.dwlt
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\Layouts\default-2022.dwlt
+          projectPath: UserSettings\Layouts\default-2022.dwlt
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - commitID: e3c65009d2768782961b83fc432fc77426a3f516
+        mergeA: 
+        mergeB: 
+        authorName: Valus-gh
+        authorEmail: simone.belingheri25@gmail.com
+        commitEmail: simone.belingheri25@gmail.com
+        commitName: Valus-gh
+        summary: Created Basic Template for Weapon Selection Button - WIP
+        description: Created Basic Template for Weapon Selection Button - WIP
+        timeString: 2025-04-26T11:04:21.000+02:00
+        commitTimeString: 2025-04-26T11:04:21.000+02:00
+        changes:
+        - path: Assets\Game\UI.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\UI.meta
+          projectPath: Assets\Game\UI.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\UI\SelectionStage_Tabview.uxml
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\UI\SelectionStage_Tabview.uxml
+          projectPath: Assets\Game\UI\SelectionStage_Tabview.uxml
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\UI\SelectionStage_Tabview.uxml.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\UI\SelectionStage_Tabview.uxml.meta
+          projectPath: Assets\Game\UI\SelectionStage_Tabview.uxml.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\UI\default-image.png
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\UI\default-image.png
+          projectPath: Assets\Game\UI\default-image.png
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\UI\default-image.png.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\UI\default-image.png.meta
+          projectPath: Assets\Game\UI\default-image.png.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\UI\weapom-selection-button.uxml
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\UI\weapom-selection-button.uxml
+          projectPath: Assets\Game\UI\weapom-selection-button.uxml
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\UI\weapom-selection-button.uxml.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\UI\weapom-selection-button.uxml.meta
+          projectPath: Assets\Game\UI\weapom-selection-button.uxml.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Scenes\HomeScene.unity
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\HomeScene.unity
+          projectPath: Assets\Scenes\HomeScene.unity
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\UI Toolkit.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\UI Toolkit.meta
+          projectPath: Assets\UI Toolkit.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\UI Toolkit\PanelSettings.asset
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\UI Toolkit\PanelSettings.asset
+          projectPath: Assets\UI Toolkit\PanelSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\UI Toolkit\PanelSettings.asset.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\UI Toolkit\PanelSettings.asset.meta
+          projectPath: Assets\UI Toolkit\PanelSettings.asset.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\UI Toolkit\UnityThemes.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\UI Toolkit\UnityThemes.meta
+          projectPath: Assets\UI Toolkit\UnityThemes.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\UI Toolkit\UnityThemes\UnityDefaultRuntimeTheme.tss
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\UI Toolkit\UnityThemes\UnityDefaultRuntimeTheme.tss
+          projectPath: Assets\UI Toolkit\UnityThemes\UnityDefaultRuntimeTheme.tss
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\UI Toolkit\UnityThemes\UnityDefaultRuntimeTheme.tss.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\UI Toolkit\UnityThemes\UnityDefaultRuntimeTheme.tss.meta
+          projectPath: Assets\UI Toolkit\UnityThemes\UnityDefaultRuntimeTheme.tss.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
       - commitID: d238ca8ed358c8a19257e9dab54198829f0bbee3
         mergeA: 97ba383a8add18851e602ca7169b6024783ac0a8
         mergeB: c04fce2d3e354605951a6083bfd5e8275efc5c85
@@ -98269,28 +99117,297 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 4
           workTreeStatus: 0
-      statusAhead: 16
+      statusAhead: 0
       selectedIndex: 0
     selectedEntry:
-      commitID: d238ca8ed358c8a19257e9dab54198829f0bbee3
-      mergeA: 97ba383a8add18851e602ca7169b6024783ac0a8
-      mergeB: c04fce2d3e354605951a6083bfd5e8275efc5c85
+      commitID: 1a83e50dd71aa7cf81ab80d7149bf26171505455
+      mergeA: 
+      mergeB: 
       authorName: Valus-gh
       authorEmail: simone.belingheri25@gmail.com
       commitEmail: simone.belingheri25@gmail.com
       commitName: Valus-gh
-      summary: Merge branch 'dev-mirror' into dev
-      description: 
-      timeString: 2025-04-26T09:54:12.000+02:00
-      commitTimeString: 2025-04-26T09:54:12.000+02:00
-      changes: []
+      summary: Added Basic projectile automatic purchase, removed from shop
+      description: Added Basic projectile automatic purchase, removed from shop.
+        Fixed StageQueue size
+      timeString: 2025-05-11T11:49:39.000+02:00
+      commitTimeString: 2025-05-11T11:49:39.000+02:00
+      changes:
+      - path: Assets\Game\Prefabs\PlayerTower.prefab
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\PlayerTower.prefab
+        projectPath: Assets\Game\Prefabs\PlayerTower.prefab
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Interaction\SelectionHUDController.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\SelectionHUDController.cs
+        projectPath: Assets\Game\Scripts\Interaction\SelectionHUDController.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Interaction\TowerControlsMultiplayer.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\TowerControlsMultiplayer.cs
+        projectPath: Assets\Game\Scripts\Interaction\TowerControlsMultiplayer.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Interaction\TowerControlsMultiplayerKeyboard.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\TowerControlsMultiplayerKeyboard.cs
+        projectPath: Assets\Game\Scripts\Interaction\TowerControlsMultiplayerKeyboard.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\PlayerTower.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\PlayerTower.cs
+        projectPath: Assets\Game\Scripts\PlayerTower.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Stages\SelectionStage.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\SelectionStage.cs
+        projectPath: Assets\Game\Scripts\Stages\SelectionStage.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Stages\ShootingStage.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\ShootingStage.cs
+        projectPath: Assets\Game\Scripts\Stages\ShootingStage.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Stages\StageManager.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\StageManager.cs
+        projectPath: Assets\Game\Scripts\Stages\StageManager.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Stages\StageQueue.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\StageQueue.cs
+        projectPath: Assets\Game\Scripts\Stages\StageQueue.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Resources\UI\SelectionStage_Tabview.uxml
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\SelectionStage_Tabview.uxml
+        projectPath: Assets\Resources\UI\SelectionStage_Tabview.uxml
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Resources\UI\weapon-purchase-button.uxml
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\weapon-purchase-button.uxml
+        projectPath: Assets\Resources\UI\weapon-purchase-button.uxml
+        originalPath: Assets\Resources\UI\weapon-selection-button.uxml
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Resources\UI\weapon-purchase-button.uxml.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\weapon-purchase-button.uxml.meta
+        projectPath: Assets\Resources\UI\weapon-purchase-button.uxml.meta
+        originalPath: Assets\Resources\UI\weapon-selection-button.uxml.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: UserSettings\Layouts\default-2022.dwlt
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\Layouts\default-2022.dwlt
+        projectPath: UserSettings\Layouts\default-2022.dwlt
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
     treeChanges:
       assets:
         keys: []
         values: []
       folders:
-        keys: []
-        values: []
+        keys:
+        - Assets
+        - Assets\Game
+        - Assets\Game\Prefabs
+        - Assets\Game\Scripts
+        - Assets\Game\Scripts\Interaction
+        - Assets\Game\Scripts\Stages
+        - Assets\Resources
+        - Assets\Resources\UI
+        - UserSettings
+        - UserSettings\Layouts
+        values:
+        - path: Assets
+          label: Assets
+          level: 0
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 0
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Game
+          label: Game
+          level: 1
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 0
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Game\Prefabs
+          label: Prefabs
+          level: 2
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 0
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Game\Scripts
+          label: Scripts
+          level: 2
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 0
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Game\Scripts\Interaction
+          label: Interaction
+          level: 3
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 0
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Game\Scripts\Stages
+          label: Stages
+          level: 3
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 0
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Resources
+          label: Resources
+          level: 1
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 0
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Resources\UI
+          label: UI
+          level: 2
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 0
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: UserSettings
+          label: UserSettings
+          level: 0
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 0
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: UserSettings\Layouts
+          label: Layouts
+          level: 1
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 0
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
       checkedFileNodes:
         keys: []
         values: []
@@ -98318,6 +99435,420 @@ MonoBehaviour:
           projectPath: 
           originalPath: 
           indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets
+        label: Assets
+        level: 0
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets\Game
+        label: Game
+        level: 1
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets\Game\Prefabs
+        label: Prefabs
+        level: 2
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets\Game\Prefabs\PlayerTower.prefab
+        label: PlayerTower.prefab
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Game\Prefabs\PlayerTower.prefab
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\PlayerTower.prefab
+          projectPath: Assets\Game\Prefabs\PlayerTower.prefab
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - path: Assets\Game\Scripts
+        label: Scripts
+        level: 2
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets\Game\Scripts\Interaction
+        label: Interaction
+        level: 3
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets\Game\Scripts\Interaction\SelectionHUDController.cs
+        label: SelectionHUDController.cs
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Game\Scripts\Interaction\SelectionHUDController.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\SelectionHUDController.cs
+          projectPath: Assets\Game\Scripts\Interaction\SelectionHUDController.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - path: Assets\Game\Scripts\Interaction\TowerControlsMultiplayer.cs
+        label: TowerControlsMultiplayer.cs
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Game\Scripts\Interaction\TowerControlsMultiplayer.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\TowerControlsMultiplayer.cs
+          projectPath: Assets\Game\Scripts\Interaction\TowerControlsMultiplayer.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - path: Assets\Game\Scripts\Interaction\TowerControlsMultiplayerKeyboard.cs
+        label: TowerControlsMultiplayerKeyboard.cs
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Game\Scripts\Interaction\TowerControlsMultiplayerKeyboard.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\TowerControlsMultiplayerKeyboard.cs
+          projectPath: Assets\Game\Scripts\Interaction\TowerControlsMultiplayerKeyboard.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - path: Assets\Game\Scripts\PlayerTower.cs
+        label: PlayerTower.cs
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Game\Scripts\PlayerTower.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\PlayerTower.cs
+          projectPath: Assets\Game\Scripts\PlayerTower.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - path: Assets\Game\Scripts\Stages
+        label: Stages
+        level: 3
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets\Game\Scripts\Stages\SelectionStage.cs
+        label: SelectionStage.cs
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Game\Scripts\Stages\SelectionStage.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\SelectionStage.cs
+          projectPath: Assets\Game\Scripts\Stages\SelectionStage.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - path: Assets\Game\Scripts\Stages\ShootingStage.cs
+        label: ShootingStage.cs
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Game\Scripts\Stages\ShootingStage.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\ShootingStage.cs
+          projectPath: Assets\Game\Scripts\Stages\ShootingStage.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - path: Assets\Game\Scripts\Stages\StageManager.cs
+        label: StageManager.cs
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Game\Scripts\Stages\StageManager.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\StageManager.cs
+          projectPath: Assets\Game\Scripts\Stages\StageManager.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - path: Assets\Game\Scripts\Stages\StageQueue.cs
+        label: StageQueue.cs
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Game\Scripts\Stages\StageQueue.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\StageQueue.cs
+          projectPath: Assets\Game\Scripts\Stages\StageQueue.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - path: Assets\Resources
+        label: Resources
+        level: 1
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets\Resources\UI
+        label: UI
+        level: 2
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets\Resources\UI\SelectionStage_Tabview.uxml
+        label: SelectionStage_Tabview.uxml
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Resources\UI\SelectionStage_Tabview.uxml
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\SelectionStage_Tabview.uxml
+          projectPath: Assets\Resources\UI\SelectionStage_Tabview.uxml
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - path: Assets\Resources\UI\weapon-purchase-button.uxml
+        label: weapon-purchase-button.uxml
+        level: 3
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Resources\UI\weapon-purchase-button.uxml
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\weapon-purchase-button.uxml
+          projectPath: Assets\Resources\UI\weapon-purchase-button.uxml
+          originalPath: Assets\Resources\UI\weapon-selection-button.uxml
+          indexStatus: 6
+          workTreeStatus: 0
+      - path: Assets\Resources\UI\weapon-purchase-button.uxml.meta
+        label: weapon-purchase-button.uxml.meta
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Resources\UI\weapon-purchase-button.uxml.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\weapon-purchase-button.uxml.meta
+          projectPath: Assets\Resources\UI\weapon-purchase-button.uxml.meta
+          originalPath: Assets\Resources\UI\weapon-selection-button.uxml.meta
+          indexStatus: 6
+          workTreeStatus: 0
+      - path: UserSettings
+        label: UserSettings
+        level: 0
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: UserSettings\Layouts
+        label: Layouts
+        level: 1
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: UserSettings\Layouts\default-2022.dwlt
+        label: default-2022.dwlt
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: UserSettings\Layouts\default-2022.dwlt
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\Layouts\default-2022.dwlt
+          projectPath: UserSettings\Layouts\default-2022.dwlt
+          originalPath: 
+          indexStatus: 3
           workTreeStatus: 0
       selectedNode:
         path: 
@@ -98432,13 +99963,13 @@ MonoBehaviour:
     m_Image: {fileID: 0}
     m_Tooltip: Url of the origin remote
   lastCurrentBranchAndRemoteChangedEvent:
-    updatedTimeString: 2025-05-11T11:49:51.220+02:00
+    updatedTimeString: 2025-05-13T10:50:00.755+02:00
     cacheType: 1
   lastTrackingStatusChangedEvent:
-    updatedTimeString: 2025-05-11T11:49:52.503+02:00
+    updatedTimeString: 2025-05-13T10:50:00.686+02:00
     cacheType: 5
   lastStatusEntriesChangedEvent:
-    updatedTimeString: 2025-05-11T11:49:44.507+02:00
+    updatedTimeString: 2025-05-13T10:49:51.589+02:00
     cacheType: 6
   pullButtonContent:
     m_Text: Pull
@@ -98456,8 +99987,8 @@ MonoBehaviour:
     m_Text: Fetch
     m_Image: {fileID: 0}
     m_Tooltip: 
-  repositoryProgressValue: 1
-  repositoryProgressMessage: Pushed
+  repositoryProgressValue: 0
+  repositoryProgressMessage: 
   appManagerProgressValue: 1
   appManagerProgressMessage: 
   primaryConnectionUsername: 

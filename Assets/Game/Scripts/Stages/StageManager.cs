@@ -70,7 +70,7 @@ namespace Game.Stages
                     if (isServer)
                         _CurrentStage = _Stages.Start();
                 }
-                else if (_CurrentStage.IsComplete)
+                else if (_CurrentStage != _ConnectionStage && _CurrentStage.IsComplete)
                 {
                     if (isServer)
                         _CurrentStage = _Stages.Advance();

@@ -10,6 +10,8 @@ using Game.Utilities;
 using Game.Networking;
 using Game.Resources;
 
+//TODO tidy up order of RPCS AND CMDS
+
 namespace Game.Stages 
 {
     public class ShootingStage : GameStage
@@ -29,21 +31,6 @@ namespace Game.Stages
             {
                 _ProjectileTemplates = Vox3D.JSON.JsonImporter<ProjectileResources>.FromJSON("projectiles");
 
-                foreach (var player in Players)
-                {
-                    player.GetComponent<Player>().Inventory.Projectiles.Add("Basic", 999);
-
-                    var playerEquippedWeapon = player.GetComponent<Player>().Tower.EquippedWeapon;
-                    for(int i = 0; i < _ProjectileTemplates.Projectiles.Length; i++)
-                    {
-                        if (_ProjectileTemplates.Projectiles[i].Name == "Basic")
-                        {
-                            playerEquippedWeapon.FromModel(_ProjectileTemplates.Projectiles[i]);
-                            break;
-                        }
-                    }
-                }
-
                 _Towers = new Dictionary<uint, PlayerTower>();
                 var towers = FindObjectsOfType<PlayerTower>();
 
@@ -53,8 +40,34 @@ namespace Game.Stages
                     _Towers.Add(ownerID, tower);
                 }
 
+                foreach (var player in Players)
+                {
+                    foreach(var tower in _Towers)
+                    {
+                        if(player.GetComponent<Player>().netId == tower.Key)
+                        {
+                            player.GetComponent<Player>().Tower = tower.Value;
+                        }
+                    }
+
+                    var playerEquippedWeapon = player.GetComponent<Player>().Tower.EquippedWeapon;
+                    for (int i = 0; i < _ProjectileTemplates.Projectiles.Length; i++)
+                    {
+                        if (_ProjectileTemplates.Projectiles[i].Name == "Basic")
+                        {
+                            playerEquippedWeapon.FromModel(_ProjectileTemplates.Projectiles[i]);
+                            break;
+                        }
+                    }
+                }
+
+                // Instantiate and initialize HUD
+                LoadHUD();
+
                 IsInitialized = true;
             }
+
+            GetComponent<StageManager>().RpcToggleAllLoadingScreens(false);
 
             RpcToggleAimingArrows();
         }
@@ -85,12 +98,39 @@ namespace Game.Stages
             {
                 var player = c.GetComponentInParent<PlayerTower>().Player;
                 player.CurrentHitpoints -= damage;
-
-                if (player.CurrentHitpoints <= 0)
-                {
-                    //Fire player gameover event
-                }
             }
+        }
+
+        private void LoadHUD()
+        {
+            if (_WeaponBarHUD_Instance is not null) return;
+            if (_ProjectileTemplates is null)
+                _ProjectileTemplates = Vox3D.JSON.JsonImporter<ProjectileResources>.FromJSON("projectiles");
+
+            _WeaponBarHUD_Instance = Instantiate(_WeaponBarHUD, this.transform);
+            _WeaponBarHUD_Instance.GetComponent<WeaponBarHUDController>().InitializeHUD(_ProjectileTemplates);
+            _WeaponBarHUD_Instance.GetComponent<WeaponBarHUDController>().ToggleDisplay(false);
+        }
+
+        [ClientRpc]
+        public void RpcUpdateHUD()
+        {
+            LoadHUD();
+
+            foreach(var player in FindObjectsOfType<Player>())
+            {
+                if(player.netId == NetworkRoomManagerV3D.singleton.PlayerID)
+                {
+                    _WeaponBarHUD_Instance.GetComponent<WeaponBarHUDController>().UpdateHUD(player.Inventory);
+                }
+
+            }
+        }
+
+        [ClientRpc]
+        private void RpcToggleHUD(bool active)
+        {
+            _WeaponBarHUD_Instance.GetComponent<WeaponBarHUDController>().ToggleDisplay(active);
         }
 
         [ClientRpc]
@@ -125,15 +165,19 @@ namespace Game.Stages
         {
             if (!IsComplete)
             {
+                RpcUpdateHUD();
+                RpcToggleHUD(true);
+
                 // if all players confirmed a trajectory, shoot projectiles on all clients
                 if (_ConfirmedTrajectories.Count == Players.Count)
                 {
                     Debug.Log("ALL PLAYERS CONFIRMED THEIR TRAJECTORY. FIRING PROJECTILES.");
                     FireProjectiles();
 
-                    IsComplete = true;
-
                     RpcToggleAimingArrows();
+                    RpcToggleHUD(false);
+
+                    IsComplete = true;
                 }
             }
         }

@@ -17,7 +17,7 @@ namespace Game.Stages
 
         [SerializeField]
         private GameObject _SelectionStageHUD;
-        private GameObject _SelectionStageHUDInstance;
+        private GameObject _SelectionStageHUD_Instance;
 
         private ProjectileResources _ProjectileTemplates;
         private Dictionary<uint, PlayerTower> _Towers;
@@ -46,6 +46,9 @@ namespace Game.Stages
                 RpcLoadHUD();
             }
 
+            RpcToggleHUD(true);
+            GetComponent<StageManager>().RpcToggleAllLoadingScreens(false);
+
         }
 
         public override void Deinitialize()
@@ -54,23 +57,18 @@ namespace Game.Stages
         }
         protected override void Run()
         {
-            if(ReadyToProceed == 0)
-            {
-                GetComponent<StageManager>().RpcToggleAllLoadingScreens(false);
-                RpcToggleHUD(true);
-            }
-
+   
         }
 
         [ClientRpc]
         private void RpcLoadHUD() 
         {
-            if(_ProjectileTemplates is null)
+            if (_ProjectileTemplates is null)
                 _ProjectileTemplates = Vox3D.JSON.JsonImporter<ProjectileResources>.FromJSON("projectiles");
-
-            _SelectionStageHUDInstance = Instantiate(_SelectionStageHUD, this.transform);
-            _SelectionStageHUDInstance.GetComponent<SelectionHUDController>().InitializeHUD(_ProjectileTemplates);
-            _SelectionStageHUDInstance.GetComponent<SelectionHUDController>().ToggleDisplay(false);
+            
+            _SelectionStageHUD_Instance = Instantiate(_SelectionStageHUD, this.transform);
+            _SelectionStageHUD_Instance.GetComponent<SelectionHUDController>().InitializeHUD(_ProjectileTemplates);
+            _SelectionStageHUD_Instance.GetComponent<SelectionHUDController>().ToggleDisplay(false);
         }
 
         //TODO add cost to projectiles
@@ -108,15 +106,23 @@ namespace Game.Stages
 
             if (ReadyToProceed >= Players.Count)
             {
-                IsComplete = true;
                 RpcToggleHUD(false);
+
+                IsComplete = true;
+
+                GetComponent<StageManager>().RpcToggleAllLoadingScreens(true);
             }
         }
 
         [ClientRpc]
         private void RpcToggleHUD(bool active)
         {
-            _SelectionStageHUDInstance.GetComponent<SelectionHUDController>().ToggleDisplay(active);
+            ToggleHUD(active);
+        }
+
+        public void ToggleHUD(bool active)
+        {
+            _SelectionStageHUD_Instance.GetComponent<SelectionHUDController>().ToggleDisplay(active);
         }
     }
 
