@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: 17
+    x: 1727
     y: 67
-    width: 1692
+    width: 1696
     height: 1316
   m_ShowMode: 4
-  m_Title: Git for Unity
+  m_Title: Project
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -44,7 +44,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1692
+    width: 1696
     height: 1316
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -69,7 +69,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1692
+    width: 1696
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -91,7 +91,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 1296
-    width: 1692
+    width: 1696
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -114,12 +114,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
-    width: 1692
+    width: 1696
     height: 1266
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 69
+  controlID: 55
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -140,12 +140,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1344
+    width: 1207
     height: 1266
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 70
+  controlID: 56
   draggingID: 0
 --- !u!114 &7
 MonoBehaviour:
@@ -166,12 +166,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1344
-    height: 939
+    width: 1207
+    height: 905
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 46
+  controlID: 47
   draggingID: 0
 --- !u!114 &8
 MonoBehaviour:
@@ -190,10 +190,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 334
-    height: 939
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+    width: 300
+    height: 905
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -214,12 +214,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 334
+    x: 300
     y: 0
-    width: 1010
-    height: 939
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+    width: 907
+    height: 905
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -243,9 +243,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 939
-    width: 1344
-    height: 327
+    y: 905
+    width: 1207
+    height: 361
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 17}
@@ -269,12 +269,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1344
+    x: 1207
     y: 0
-    width: 348
+    width: 489
     height: 1266
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 18}
@@ -335,10 +335,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 17
-    y: 1036
-    width: 1343
-    height: 306
+    x: 1727
+    y: 1002
+    width: 1206
+    height: 340
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -369,10 +369,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 17
+    x: 1727
     y: 97
-    width: 333
-    height: 918
+    width: 299
+    height: 884
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -388,7 +388,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 2afbffff
+      m_ExpandedIDs: 3cc4f9ff8cc4f9fffac7f9ff04c8f9ff20c8f9ff70d0f9ffc0d0f9ff54d4f9ff62d4f9ff82d4f9ffd088fdff2089fdffb08cfdffba8cfdffd68cfdff1ccffefffacffeff2afbfffff4ffffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -432,10 +432,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 351
+    x: 2027
     y: 97
-    width: 1008
-    height: 918
+    width: 905
+    height: 884
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -755,9 +755,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.15769577, y: 2.6944828, z: 0.8201103}
+    m_Target: {x: 0, y: 0, z: 0}
     speed: 2
-    m_Value: {x: 0.15769577, y: 2.6944828, z: 0.8201103}
+    m_Value: {x: 0, y: 0, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -807,9 +807,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0.113973334, y: 0.34244472, z: -0.04212041, w: 0.93164784}
   m_Size:
-    m_Target: 35.773903
+    m_Target: 0.62361014
     speed: 2
-    m_Value: 35.773903
+    m_Value: 0.62361014
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -854,10 +854,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 351
+    x: 316
     y: 97
-    width: 1008
-    height: 918
+    width: 903
+    height: 884
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -874,7 +874,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 1008, y: 897}
+  m_TargetSize: {x: 903, y: 863}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -889,10 +889,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -504
-    m_HBaseRangeMax: 504
-    m_VBaseRangeMin: -448.5
-    m_VBaseRangeMax: 448.5
+    m_HBaseRangeMin: -451.5
+    m_HBaseRangeMax: 451.5
+    m_VBaseRangeMin: -431.5
+    m_VBaseRangeMax: 431.5
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -910,23 +910,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 1008
-      height: 897
+      width: 903
+      height: 863
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 504, y: 448.5}
+    m_Translation: {x: 451.5, y: 431.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -504
-      y: -448.5
-      width: 1008
-      height: 897
+      x: -451.5
+      y: -431.5
+      width: 903
+      height: 863
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 1008, y: 918}
+  m_LastWindowPixelSize: {x: 903, y: 884}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -952,10 +952,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 17
-    y: 1036
-    width: 1343
-    height: 306
+    x: 1727
+    y: 1002
+    width: 1206
+    height: 340
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -977,7 +977,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Game/Prefabs
+    - Assets/Game/Scripts/Stages
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -985,16 +985,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Game/Prefabs
+  - Assets/Game/Scripts/Stages
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 60}
-    m_SelectedIDs: 3c740000
-    m_LastClickedID: 29756
-    m_ExpandedIDs: 000000001a7400001c7400001e74000020740000227400002474000026740000287400002a7400002c7400002e74000030740000327400003474000036740000387400003a7400003c7400003e7400004074000042740000447400004674000000ca9a3b
+    scrollPos: {x: 0, y: 184}
+    m_SelectedIDs: 80740000
+    m_LastClickedID: 29824
+    m_ExpandedIDs: 000000002e74000030740000327400003474000036740000387400003a7400003c7400003e74000040740000427400004474000046740000487400004a7400004c7400004e740000507400005274000054740000587400005a74000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1022,7 +1022,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000001a7400001c7400001e74000020740000227400002474000026740000287400002a7400002c7400002e74000030740000327400003474000036740000387400003a7400003c7400003e74000040740000427400004474000046740000
+    m_ExpandedIDs: 000000002e74000030740000327400003474000036740000387400003a7400003c7400003e74000040740000427400004474000046740000487400004a7400004c7400004e74000050740000527400005474000056740000587400005a740000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1049,7 +1049,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c62300000000000030720000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1098,9 +1098,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1361
+    x: 2934
     y: 97
-    width: 347
+    width: 488
     height: 1245
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -1118,7 +1118,7 @@ MonoBehaviour:
     m_CachedPref: 156
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: -1
+  m_LastInspectedObjectInstanceID: -422924
   m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
@@ -1145,9 +1145,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1361
+    x: 2934
     y: 97
-    width: 347
+    width: 488
     height: 1245
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -1542,8 +1542,198 @@ MonoBehaviour:
         keys: []
         values: []
       folders:
-        keys: []
-        values: []
+        keys:
+        - Packages
+        - Packages\UnityFx.Outline
+        - Packages\UnityFx.Outline\Editor
+        - Packages\UnityFx.Outline\Editor\Scripts
+        - Packages\UnityFx.Outline\Runtime
+        - Packages\UnityFx.Outline\Runtime\Prefabs
+        - Packages\UnityFx.Outline\Runtime\Scripts
+        - Packages\UnityFx.Outline\Runtime\Scripts\Properties
+        - Packages\UnityFx.Outline\Runtime\Scripts\Rendering
+        - Packages\UnityFx.Outline\Runtime\Shaders
+        values:
+        - path: Packages
+          label: Packages
+          level: 0
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Packages\UnityFx.Outline
+          label: UnityFx.Outline
+          level: 1
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Editor
+          label: Editor
+          level: 2
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Editor\Scripts
+          label: Scripts
+          level: 3
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Runtime
+          label: Runtime
+          level: 2
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Runtime\Prefabs
+          label: Prefabs
+          level: 3
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Runtime\Scripts
+          label: Scripts
+          level: 3
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Runtime\Scripts\Properties
+          label: Properties
+          level: 4
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Runtime\Scripts\Rendering
+          label: Rendering
+          level: 4
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Runtime\Shaders
+          label: Shaders
+          level: 3
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
       checkedFileNodes:
         keys: []
         values: []
@@ -1572,6 +1762,1554 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
+      - path: Packages
+        label: Packages
+        level: 0
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Packages\UnityFx.Outline
+        label: UnityFx.Outline
+        level: 1
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\CHANGELOG.md
+        label: CHANGELOG.md
+        level: 2
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\CHANGELOG.md
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\CHANGELOG.md
+          projectPath: Packages\UnityFx.Outline\CHANGELOG.md
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\CHANGELOG.md.meta
+        label: CHANGELOG.md.meta
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\CHANGELOG.md.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\CHANGELOG.md.meta
+          projectPath: Packages\UnityFx.Outline\CHANGELOG.md.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\Editor.meta
+        label: Editor.meta
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\Editor.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor.meta
+          projectPath: Packages\UnityFx.Outline\Editor.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\Editor
+        label: Editor
+        level: 2
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Editor\Scripts.meta
+        label: Scripts.meta
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\Editor\Scripts.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\Scripts.meta
+          projectPath: Packages\UnityFx.Outline\Editor\Scripts.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\Editor\Scripts
+        label: Scripts
+        level: 3
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Editor\Scripts\OutlineBehaviourEditor.cs
+        label: OutlineBehaviourEditor.cs
+        level: 4
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\Editor\Scripts\OutlineBehaviourEditor.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\Scripts\OutlineBehaviourEditor.cs
+          projectPath: Packages\UnityFx.Outline\Editor\Scripts\OutlineBehaviourEditor.cs
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\Editor\Scripts\OutlineBehaviourEditor.cs.meta
+        label: OutlineBehaviourEditor.cs.meta
+        level: 5
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\Editor\Scripts\OutlineBehaviourEditor.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\Scripts\OutlineBehaviourEditor.cs.meta
+          projectPath: Packages\UnityFx.Outline\Editor\Scripts\OutlineBehaviourEditor.cs.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\Editor\Scripts\OutlineBuilderEditor.cs
+        label: OutlineBuilderEditor.cs
+        level: 4
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\Editor\Scripts\OutlineBuilderEditor.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\Scripts\OutlineBuilderEditor.cs
+          projectPath: Packages\UnityFx.Outline\Editor\Scripts\OutlineBuilderEditor.cs
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\Editor\Scripts\OutlineBuilderEditor.cs.meta
+        label: OutlineBuilderEditor.cs.meta
+        level: 5
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\Editor\Scripts\OutlineBuilderEditor.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\Scripts\OutlineBuilderEditor.cs.meta
+          projectPath: Packages\UnityFx.Outline\Editor\Scripts\OutlineBuilderEditor.cs.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\Editor\Scripts\OutlineEditorUtility.cs
+        label: OutlineEditorUtility.cs
+        level: 4
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\Editor\Scripts\OutlineEditorUtility.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\Scripts\OutlineEditorUtility.cs
+          projectPath: Packages\UnityFx.Outline\Editor\Scripts\OutlineEditorUtility.cs
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\Editor\Scripts\OutlineEditorUtility.cs.meta
+        label: OutlineEditorUtility.cs.meta
+        level: 5
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\Editor\Scripts\OutlineEditorUtility.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\Scripts\OutlineEditorUtility.cs.meta
+          projectPath: Packages\UnityFx.Outline\Editor\Scripts\OutlineEditorUtility.cs.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\Editor\Scripts\OutlineEffectEditor.cs
+        label: OutlineEffectEditor.cs
+        level: 4
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\Editor\Scripts\OutlineEffectEditor.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\Scripts\OutlineEffectEditor.cs
+          projectPath: Packages\UnityFx.Outline\Editor\Scripts\OutlineEffectEditor.cs
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\Editor\Scripts\OutlineEffectEditor.cs.meta
+        label: OutlineEffectEditor.cs.meta
+        level: 5
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\Editor\Scripts\OutlineEffectEditor.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\Scripts\OutlineEffectEditor.cs.meta
+          projectPath: Packages\UnityFx.Outline\Editor\Scripts\OutlineEffectEditor.cs.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\Editor\Scripts\OutlineLayerCollectionEditor.cs
+        label: OutlineLayerCollectionEditor.cs
+        level: 4
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\Editor\Scripts\OutlineLayerCollectionEditor.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\Scripts\OutlineLayerCollectionEditor.cs
+          projectPath: Packages\UnityFx.Outline\Editor\Scripts\OutlineLayerCollectionEditor.cs
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\Editor\Scripts\OutlineLayerCollectionEditor.cs.meta
+        label: OutlineLayerCollectionEditor.cs.meta
+        level: 5
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\Editor\Scripts\OutlineLayerCollectionEditor.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\Scripts\OutlineLayerCollectionEditor.cs.meta
+          projectPath: Packages\UnityFx.Outline\Editor\Scripts\OutlineLayerCollectionEditor.cs.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsEditor.cs
+        label: OutlineSettingsEditor.cs
+        level: 4
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsEditor.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsEditor.cs
+          projectPath: Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsEditor.cs
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsEditor.cs.meta
+        label: OutlineSettingsEditor.cs.meta
+        level: 5
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsEditor.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsEditor.cs.meta
+          projectPath: Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsEditor.cs.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsInstanceDrawer.cs
+        label: OutlineSettingsInstanceDrawer.cs
+        level: 4
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsInstanceDrawer.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsInstanceDrawer.cs
+          projectPath: Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsInstanceDrawer.cs
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsInstanceDrawer.cs.meta
+        label: OutlineSettingsInstanceDrawer.cs.meta
+        level: 5
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsInstanceDrawer.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsInstanceDrawer.cs.meta
+          projectPath: Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsInstanceDrawer.cs.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsWithLayerMaskDrawer.cs
+        label: OutlineSettingsWithLayerMaskDrawer.cs
+        level: 4
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsWithLayerMaskDrawer.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsWithLayerMaskDrawer.cs
+          projectPath: Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsWithLayerMaskDrawer.cs
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsWithLayerMaskDrawer.cs.meta
+        label: OutlineSettingsWithLayerMaskDrawer.cs.meta
+        level: 5
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsWithLayerMaskDrawer.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsWithLayerMaskDrawer.cs.meta
+          projectPath: Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsWithLayerMaskDrawer.cs.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\Editor\UnityFx.Outline.Editor.asmdef
+        label: UnityFx.Outline.Editor.asmdef
+        level: 3
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\Editor\UnityFx.Outline.Editor.asmdef
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\UnityFx.Outline.Editor.asmdef
+          projectPath: Packages\UnityFx.Outline\Editor\UnityFx.Outline.Editor.asmdef
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\Editor\UnityFx.Outline.Editor.asmdef.meta
+        label: UnityFx.Outline.Editor.asmdef.meta
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\Editor\UnityFx.Outline.Editor.asmdef.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\UnityFx.Outline.Editor.asmdef.meta
+          projectPath: Packages\UnityFx.Outline\Editor\UnityFx.Outline.Editor.asmdef.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\package.json
+        label: package.json
+        level: 2
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\package.json
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\package.json
+          projectPath: Packages\UnityFx.Outline\package.json
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\package.json.meta
+        label: package.json.meta
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\package.json.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\package.json.meta
+          projectPath: Packages\UnityFx.Outline\package.json.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\README.md
+        label: README.md
+        level: 2
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\README.md
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\README.md
+          projectPath: Packages\UnityFx.Outline\README.md
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\README.md.meta
+        label: README.md.meta
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\README.md.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\README.md.meta
+          projectPath: Packages\UnityFx.Outline\README.md.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\Runtime.meta
+        label: Runtime.meta
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\Runtime.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime.meta
+          projectPath: Packages\UnityFx.Outline\Runtime.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\Runtime
+        label: Runtime
+        level: 2
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Runtime\Prefabs.meta
+        label: Prefabs.meta
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\Runtime\Prefabs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Prefabs.meta
+          projectPath: Packages\UnityFx.Outline\Runtime\Prefabs.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\Runtime\Prefabs
+        label: Prefabs
+        level: 3
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Runtime\Prefabs\OutlineResources.asset
+        label: OutlineResources.asset
+        level: 4
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\Runtime\Prefabs\OutlineResources.asset
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Prefabs\OutlineResources.asset
+          projectPath: Packages\UnityFx.Outline\Runtime\Prefabs\OutlineResources.asset
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\Runtime\Prefabs\OutlineResources.asset.meta
+        label: OutlineResources.asset.meta
+        level: 5
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\Runtime\Prefabs\OutlineResources.asset.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Prefabs\OutlineResources.asset.meta
+          projectPath: Packages\UnityFx.Outline\Runtime\Prefabs\OutlineResources.asset.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\Runtime\Scripts.meta
+        label: Scripts.meta
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\Runtime\Scripts.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts.meta
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\Runtime\Scripts
+        label: Scripts
+        level: 3
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\IOutlineSettings.cs
+        label: IOutlineSettings.cs
+        level: 4
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\Runtime\Scripts\IOutlineSettings.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\IOutlineSettings.cs
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\IOutlineSettings.cs
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\IOutlineSettings.cs.meta
+        label: IOutlineSettings.cs.meta
+        level: 5
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\Runtime\Scripts\IOutlineSettings.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\IOutlineSettings.cs.meta
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\IOutlineSettings.cs.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineBehaviour.cs
+        label: OutlineBehaviour.cs
+        level: 4
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineBehaviour.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineBehaviour.cs
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineBehaviour.cs
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineBehaviour.cs.meta
+        label: OutlineBehaviour.cs.meta
+        level: 5
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineBehaviour.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineBehaviour.cs.meta
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineBehaviour.cs.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineBuilder.cs
+        label: OutlineBuilder.cs
+        level: 4
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineBuilder.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineBuilder.cs
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineBuilder.cs
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineBuilder.cs.meta
+        label: OutlineBuilder.cs.meta
+        level: 5
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineBuilder.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineBuilder.cs.meta
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineBuilder.cs.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineEffect.cs
+        label: OutlineEffect.cs
+        level: 4
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineEffect.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineEffect.cs
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineEffect.cs
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineEffect.cs.meta
+        label: OutlineEffect.cs.meta
+        level: 5
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineEffect.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineEffect.cs.meta
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineEffect.cs.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineFilterMode.cs
+        label: OutlineFilterMode.cs
+        level: 4
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineFilterMode.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineFilterMode.cs
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineFilterMode.cs
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineFilterMode.cs.meta
+        label: OutlineFilterMode.cs.meta
+        level: 5
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineFilterMode.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineFilterMode.cs.meta
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineFilterMode.cs.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineLayer.cs
+        label: OutlineLayer.cs
+        level: 4
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineLayer.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineLayer.cs
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineLayer.cs
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineLayer.cs.meta
+        label: OutlineLayer.cs.meta
+        level: 5
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineLayer.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineLayer.cs.meta
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineLayer.cs.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineLayerCollection.cs
+        label: OutlineLayerCollection.cs
+        level: 4
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineLayerCollection.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineLayerCollection.cs
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineLayerCollection.cs
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineLayerCollection.cs.meta
+        label: OutlineLayerCollection.cs.meta
+        level: 5
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineLayerCollection.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineLayerCollection.cs.meta
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineLayerCollection.cs.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineResources.cs
+        label: OutlineResources.cs
+        level: 4
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineResources.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineResources.cs
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineResources.cs
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineResources.cs.meta
+        label: OutlineResources.cs.meta
+        level: 5
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineResources.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineResources.cs.meta
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineResources.cs.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettings.cs
+        label: OutlineSettings.cs
+        level: 4
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettings.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettings.cs
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettings.cs
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettings.cs.meta
+        label: OutlineSettings.cs.meta
+        level: 5
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettings.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettings.cs.meta
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettings.cs.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsExtensions.cs
+        label: OutlineSettingsExtensions.cs
+        level: 4
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsExtensions.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsExtensions.cs
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsExtensions.cs
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsExtensions.cs.meta
+        label: OutlineSettingsExtensions.cs.meta
+        level: 5
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsExtensions.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsExtensions.cs.meta
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsExtensions.cs.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsInstance.cs
+        label: OutlineSettingsInstance.cs
+        level: 4
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsInstance.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsInstance.cs
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsInstance.cs
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsInstance.cs.meta
+        label: OutlineSettingsInstance.cs.meta
+        level: 5
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsInstance.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsInstance.cs.meta
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsInstance.cs.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsWithLayerMask.cs
+        label: OutlineSettingsWithLayerMask.cs
+        level: 4
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsWithLayerMask.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsWithLayerMask.cs
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsWithLayerMask.cs
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsWithLayerMask.cs.meta
+        label: OutlineSettingsWithLayerMask.cs.meta
+        level: 5
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsWithLayerMask.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsWithLayerMask.cs.meta
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsWithLayerMask.cs.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\Properties.meta
+        label: Properties.meta
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\Runtime\Scripts\Properties.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\Properties.meta
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\Properties.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\Properties
+        label: Properties
+        level: 4
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\Properties\AssemblyInfo.cs
+        label: AssemblyInfo.cs
+        level: 5
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\Runtime\Scripts\Properties\AssemblyInfo.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\Properties\AssemblyInfo.cs
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\Properties\AssemblyInfo.cs
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\Properties\AssemblyInfo.cs.meta
+        label: AssemblyInfo.cs.meta
+        level: 6
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\Runtime\Scripts\Properties\AssemblyInfo.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\Properties\AssemblyInfo.cs.meta
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\Properties\AssemblyInfo.cs.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\Properties\Startup.cs
+        label: Startup.cs
+        level: 5
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\Runtime\Scripts\Properties\Startup.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\Properties\Startup.cs
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\Properties\Startup.cs
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\Properties\Startup.cs.meta
+        label: Startup.cs.meta
+        level: 6
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\Runtime\Scripts\Properties\Startup.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\Properties\Startup.cs.meta
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\Properties\Startup.cs.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\Rendering.meta
+        label: Rendering.meta
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\Runtime\Scripts\Rendering.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\Rendering.meta
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\Rendering.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\Rendering
+        label: Rendering
+        level: 4
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderer.cs
+        label: OutlineRenderer.cs
+        level: 5
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderer.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderer.cs
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderer.cs
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderer.cs.meta
+        label: OutlineRenderer.cs.meta
+        level: 6
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderer.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderer.cs.meta
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderer.cs.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRendererCollection.cs
+        label: OutlineRendererCollection.cs
+        level: 5
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRendererCollection.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRendererCollection.cs
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRendererCollection.cs
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRendererCollection.cs.meta
+        label: OutlineRendererCollection.cs.meta
+        level: 6
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRendererCollection.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRendererCollection.cs.meta
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRendererCollection.cs.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderFlags.cs
+        label: OutlineRenderFlags.cs
+        level: 5
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderFlags.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderFlags.cs
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderFlags.cs
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderFlags.cs.meta
+        label: OutlineRenderFlags.cs.meta
+        level: 6
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderFlags.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderFlags.cs.meta
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderFlags.cs.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderObject.cs
+        label: OutlineRenderObject.cs
+        level: 5
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderObject.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderObject.cs
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderObject.cs
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderObject.cs.meta
+        label: OutlineRenderObject.cs.meta
+        level: 6
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderObject.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderObject.cs.meta
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderObject.cs.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\Runtime\Shaders.meta
+        label: Shaders.meta
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\Runtime\Shaders.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Shaders.meta
+          projectPath: Packages\UnityFx.Outline\Runtime\Shaders.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\Runtime\Shaders
+        label: Shaders
+        level: 3
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Runtime\Shaders\Outline.shader
+        label: Outline.shader
+        level: 4
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\Runtime\Shaders\Outline.shader
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Shaders\Outline.shader
+          projectPath: Packages\UnityFx.Outline\Runtime\Shaders\Outline.shader
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\Runtime\Shaders\Outline.shader.meta
+        label: Outline.shader.meta
+        level: 5
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\Runtime\Shaders\Outline.shader.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Shaders\Outline.shader.meta
+          projectPath: Packages\UnityFx.Outline\Runtime\Shaders\Outline.shader.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\Runtime\Shaders\OutlineColor.shader
+        label: OutlineColor.shader
+        level: 4
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\Runtime\Shaders\OutlineColor.shader
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Shaders\OutlineColor.shader
+          projectPath: Packages\UnityFx.Outline\Runtime\Shaders\OutlineColor.shader
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\Runtime\Shaders\OutlineColor.shader.meta
+        label: OutlineColor.shader.meta
+        level: 5
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\Runtime\Shaders\OutlineColor.shader.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Shaders\OutlineColor.shader.meta
+          projectPath: Packages\UnityFx.Outline\Runtime\Shaders\OutlineColor.shader.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\Runtime\UnityFx.Outline.asmdef
+        label: UnityFx.Outline.asmdef
+        level: 3
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\Runtime\UnityFx.Outline.asmdef
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\UnityFx.Outline.asmdef
+          projectPath: Packages\UnityFx.Outline\Runtime\UnityFx.Outline.asmdef
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Packages\UnityFx.Outline\Runtime\UnityFx.Outline.asmdef.meta
+        label: UnityFx.Outline.asmdef.meta
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Packages\UnityFx.Outline\Runtime\UnityFx.Outline.asmdef.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\UnityFx.Outline.asmdef.meta
+          projectPath: Packages\UnityFx.Outline\Runtime\UnityFx.Outline.asmdef.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
       selectedNode:
         path: 
         label: 
@@ -1591,16 +3329,472 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
-    gitStatusEntries: []
-    changedFilesText: No changed files
+    gitStatusEntries:
+    - path: Packages\UnityFx.Outline\CHANGELOG.md
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\CHANGELOG.md
+      projectPath: Packages\UnityFx.Outline\CHANGELOG.md
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\CHANGELOG.md.meta
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\CHANGELOG.md.meta
+      projectPath: Packages\UnityFx.Outline\CHANGELOG.md.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\Editor.meta
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor.meta
+      projectPath: Packages\UnityFx.Outline\Editor.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\Editor\Scripts.meta
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\Scripts.meta
+      projectPath: Packages\UnityFx.Outline\Editor\Scripts.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\Editor\Scripts\OutlineBehaviourEditor.cs
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\Scripts\OutlineBehaviourEditor.cs
+      projectPath: Packages\UnityFx.Outline\Editor\Scripts\OutlineBehaviourEditor.cs
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\Editor\Scripts\OutlineBehaviourEditor.cs.meta
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\Scripts\OutlineBehaviourEditor.cs.meta
+      projectPath: Packages\UnityFx.Outline\Editor\Scripts\OutlineBehaviourEditor.cs.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\Editor\Scripts\OutlineBuilderEditor.cs
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\Scripts\OutlineBuilderEditor.cs
+      projectPath: Packages\UnityFx.Outline\Editor\Scripts\OutlineBuilderEditor.cs
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\Editor\Scripts\OutlineBuilderEditor.cs.meta
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\Scripts\OutlineBuilderEditor.cs.meta
+      projectPath: Packages\UnityFx.Outline\Editor\Scripts\OutlineBuilderEditor.cs.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\Editor\Scripts\OutlineEditorUtility.cs
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\Scripts\OutlineEditorUtility.cs
+      projectPath: Packages\UnityFx.Outline\Editor\Scripts\OutlineEditorUtility.cs
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\Editor\Scripts\OutlineEditorUtility.cs.meta
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\Scripts\OutlineEditorUtility.cs.meta
+      projectPath: Packages\UnityFx.Outline\Editor\Scripts\OutlineEditorUtility.cs.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\Editor\Scripts\OutlineEffectEditor.cs
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\Scripts\OutlineEffectEditor.cs
+      projectPath: Packages\UnityFx.Outline\Editor\Scripts\OutlineEffectEditor.cs
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\Editor\Scripts\OutlineEffectEditor.cs.meta
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\Scripts\OutlineEffectEditor.cs.meta
+      projectPath: Packages\UnityFx.Outline\Editor\Scripts\OutlineEffectEditor.cs.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\Editor\Scripts\OutlineLayerCollectionEditor.cs
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\Scripts\OutlineLayerCollectionEditor.cs
+      projectPath: Packages\UnityFx.Outline\Editor\Scripts\OutlineLayerCollectionEditor.cs
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\Editor\Scripts\OutlineLayerCollectionEditor.cs.meta
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\Scripts\OutlineLayerCollectionEditor.cs.meta
+      projectPath: Packages\UnityFx.Outline\Editor\Scripts\OutlineLayerCollectionEditor.cs.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsEditor.cs
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsEditor.cs
+      projectPath: Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsEditor.cs
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsEditor.cs.meta
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsEditor.cs.meta
+      projectPath: Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsEditor.cs.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsInstanceDrawer.cs
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsInstanceDrawer.cs
+      projectPath: Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsInstanceDrawer.cs
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsInstanceDrawer.cs.meta
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsInstanceDrawer.cs.meta
+      projectPath: Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsInstanceDrawer.cs.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsWithLayerMaskDrawer.cs
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsWithLayerMaskDrawer.cs
+      projectPath: Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsWithLayerMaskDrawer.cs
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsWithLayerMaskDrawer.cs.meta
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsWithLayerMaskDrawer.cs.meta
+      projectPath: Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsWithLayerMaskDrawer.cs.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\Editor\UnityFx.Outline.Editor.asmdef
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\UnityFx.Outline.Editor.asmdef
+      projectPath: Packages\UnityFx.Outline\Editor\UnityFx.Outline.Editor.asmdef
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\Editor\UnityFx.Outline.Editor.asmdef.meta
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\UnityFx.Outline.Editor.asmdef.meta
+      projectPath: Packages\UnityFx.Outline\Editor\UnityFx.Outline.Editor.asmdef.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\package.json
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\package.json
+      projectPath: Packages\UnityFx.Outline\package.json
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\package.json.meta
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\package.json.meta
+      projectPath: Packages\UnityFx.Outline\package.json.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\README.md
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\README.md
+      projectPath: Packages\UnityFx.Outline\README.md
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\README.md.meta
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\README.md.meta
+      projectPath: Packages\UnityFx.Outline\README.md.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\Runtime.meta
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime.meta
+      projectPath: Packages\UnityFx.Outline\Runtime.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\Runtime\Prefabs.meta
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Prefabs.meta
+      projectPath: Packages\UnityFx.Outline\Runtime\Prefabs.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\Runtime\Prefabs\OutlineResources.asset
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Prefabs\OutlineResources.asset
+      projectPath: Packages\UnityFx.Outline\Runtime\Prefabs\OutlineResources.asset
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\Runtime\Prefabs\OutlineResources.asset.meta
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Prefabs\OutlineResources.asset.meta
+      projectPath: Packages\UnityFx.Outline\Runtime\Prefabs\OutlineResources.asset.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\Runtime\Scripts.meta
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts.meta
+      projectPath: Packages\UnityFx.Outline\Runtime\Scripts.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\Runtime\Scripts\IOutlineSettings.cs
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\IOutlineSettings.cs
+      projectPath: Packages\UnityFx.Outline\Runtime\Scripts\IOutlineSettings.cs
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\Runtime\Scripts\IOutlineSettings.cs.meta
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\IOutlineSettings.cs.meta
+      projectPath: Packages\UnityFx.Outline\Runtime\Scripts\IOutlineSettings.cs.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineBehaviour.cs
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineBehaviour.cs
+      projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineBehaviour.cs
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineBehaviour.cs.meta
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineBehaviour.cs.meta
+      projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineBehaviour.cs.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineBuilder.cs
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineBuilder.cs
+      projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineBuilder.cs
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineBuilder.cs.meta
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineBuilder.cs.meta
+      projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineBuilder.cs.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineEffect.cs
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineEffect.cs
+      projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineEffect.cs
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineEffect.cs.meta
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineEffect.cs.meta
+      projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineEffect.cs.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineFilterMode.cs
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineFilterMode.cs
+      projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineFilterMode.cs
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineFilterMode.cs.meta
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineFilterMode.cs.meta
+      projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineFilterMode.cs.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineLayer.cs
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineLayer.cs
+      projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineLayer.cs
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineLayer.cs.meta
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineLayer.cs.meta
+      projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineLayer.cs.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineLayerCollection.cs
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineLayerCollection.cs
+      projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineLayerCollection.cs
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineLayerCollection.cs.meta
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineLayerCollection.cs.meta
+      projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineLayerCollection.cs.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineResources.cs
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineResources.cs
+      projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineResources.cs
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineResources.cs.meta
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineResources.cs.meta
+      projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineResources.cs.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettings.cs
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettings.cs
+      projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettings.cs
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettings.cs.meta
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettings.cs.meta
+      projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettings.cs.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsExtensions.cs
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsExtensions.cs
+      projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsExtensions.cs
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsExtensions.cs.meta
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsExtensions.cs.meta
+      projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsExtensions.cs.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsInstance.cs
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsInstance.cs
+      projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsInstance.cs
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsInstance.cs.meta
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsInstance.cs.meta
+      projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsInstance.cs.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsWithLayerMask.cs
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsWithLayerMask.cs
+      projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsWithLayerMask.cs
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsWithLayerMask.cs.meta
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsWithLayerMask.cs.meta
+      projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsWithLayerMask.cs.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\Runtime\Scripts\Properties.meta
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\Properties.meta
+      projectPath: Packages\UnityFx.Outline\Runtime\Scripts\Properties.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\Runtime\Scripts\Properties\AssemblyInfo.cs
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\Properties\AssemblyInfo.cs
+      projectPath: Packages\UnityFx.Outline\Runtime\Scripts\Properties\AssemblyInfo.cs
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\Runtime\Scripts\Properties\AssemblyInfo.cs.meta
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\Properties\AssemblyInfo.cs.meta
+      projectPath: Packages\UnityFx.Outline\Runtime\Scripts\Properties\AssemblyInfo.cs.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\Runtime\Scripts\Properties\Startup.cs
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\Properties\Startup.cs
+      projectPath: Packages\UnityFx.Outline\Runtime\Scripts\Properties\Startup.cs
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\Runtime\Scripts\Properties\Startup.cs.meta
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\Properties\Startup.cs.meta
+      projectPath: Packages\UnityFx.Outline\Runtime\Scripts\Properties\Startup.cs.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\Runtime\Scripts\Rendering.meta
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\Rendering.meta
+      projectPath: Packages\UnityFx.Outline\Runtime\Scripts\Rendering.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderer.cs
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderer.cs
+      projectPath: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderer.cs
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderer.cs.meta
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderer.cs.meta
+      projectPath: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderer.cs.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRendererCollection.cs
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRendererCollection.cs
+      projectPath: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRendererCollection.cs
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRendererCollection.cs.meta
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRendererCollection.cs.meta
+      projectPath: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRendererCollection.cs.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderFlags.cs
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderFlags.cs
+      projectPath: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderFlags.cs
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderFlags.cs.meta
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderFlags.cs.meta
+      projectPath: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderFlags.cs.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderObject.cs
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderObject.cs
+      projectPath: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderObject.cs
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderObject.cs.meta
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderObject.cs.meta
+      projectPath: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderObject.cs.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\Runtime\Shaders.meta
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Shaders.meta
+      projectPath: Packages\UnityFx.Outline\Runtime\Shaders.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\Runtime\Shaders\Outline.shader
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Shaders\Outline.shader
+      projectPath: Packages\UnityFx.Outline\Runtime\Shaders\Outline.shader
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\Runtime\Shaders\Outline.shader.meta
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Shaders\Outline.shader.meta
+      projectPath: Packages\UnityFx.Outline\Runtime\Shaders\Outline.shader.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\Runtime\Shaders\OutlineColor.shader
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Shaders\OutlineColor.shader
+      projectPath: Packages\UnityFx.Outline\Runtime\Shaders\OutlineColor.shader
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\Runtime\Shaders\OutlineColor.shader.meta
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Shaders\OutlineColor.shader.meta
+      projectPath: Packages\UnityFx.Outline\Runtime\Shaders\OutlineColor.shader.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\Runtime\UnityFx.Outline.asmdef
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\UnityFx.Outline.asmdef
+      projectPath: Packages\UnityFx.Outline\Runtime\UnityFx.Outline.asmdef
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Packages\UnityFx.Outline\Runtime\UnityFx.Outline.asmdef.meta
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\UnityFx.Outline.asmdef.meta
+      projectPath: Packages\UnityFx.Outline\Runtime\UnityFx.Outline.asmdef.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    changedFilesText: 76 changed files
     lastCurrentBranchChangedEvent:
-      updatedTimeString: 2025-05-13T10:50:00.755+02:00
+      updatedTimeString: 2025-05-17T21:26:37.358+02:00
       cacheType: 1
     lastStatusEntriesChangedEvent:
-      updatedTimeString: 2025-05-13T10:49:51.589+02:00
+      updatedTimeString: 2025-05-17T21:33:39.736+02:00
       cacheType: 6
     lastLocksChangedEvent:
-      updatedTimeString: 2025-05-13T10:48:08.458+02:00
+      updatedTimeString: 2025-05-17T21:33:40.542+02:00
       cacheType: 7
   historyView:
     currentLogHasUpdate: 0
@@ -99952,7 +102146,7 @@ MonoBehaviour:
   currentRemoteUrl: https://github.com/Valus-gh/Vox3D
   statusAhead: 0
   statusBehind: 0
-  hasItemsToCommit: 0
+  hasItemsToCommit: 1
   isTrackingRemoteBranch: 1
   currentBranchContent:
     m_Text: dev-hud
@@ -99963,13 +102157,13 @@ MonoBehaviour:
     m_Image: {fileID: 0}
     m_Tooltip: Url of the origin remote
   lastCurrentBranchAndRemoteChangedEvent:
-    updatedTimeString: 2025-05-13T10:50:00.755+02:00
+    updatedTimeString: 2025-05-17T21:26:37.358+02:00
     cacheType: 1
   lastTrackingStatusChangedEvent:
-    updatedTimeString: 2025-05-13T10:50:00.686+02:00
+    updatedTimeString: 2025-05-17T21:33:39.783+02:00
     cacheType: 5
   lastStatusEntriesChangedEvent:
-    updatedTimeString: 2025-05-13T10:49:51.589+02:00
+    updatedTimeString: 2025-05-17T21:33:39.736+02:00
     cacheType: 6
   pullButtonContent:
     m_Text: Pull
