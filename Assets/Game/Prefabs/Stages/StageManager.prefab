@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: -945833657254082202}
   - component: {fileID: 5464661084114887398}
   - component: {fileID: -5652156399681621843}
+  - component: {fileID: 4828080692567637255}
   m_Layer: 0
   m_Name: StageManager
   m_TagString: Untagged
@@ -126,3 +127,16 @@ MonoBehaviour:
   IsRunning: 0
   IsComplete: 0
   _WeaponBarHUD: {fileID: 5871634898633904028, guid: e4e57c9b2a86e2b48b795b432a2cd5cc, type: 3}
+--- !u!114 &4828080692567637255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6827980584035153928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d798ed7e62c1f9459f623dae71110d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _OutlineResources: {fileID: 11400000, guid: d28e70f030b1a634db9a6a6d5478ef19, type: 2}

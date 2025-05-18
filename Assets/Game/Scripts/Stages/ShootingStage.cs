@@ -67,6 +67,7 @@ namespace Game.Stages
                 IsInitialized = true;
             }
 
+            GetComponent<TowerSelector_Click>().enabled = true;
             GetComponent<StageManager>().RpcToggleAllLoadingScreens(false);
 
             RpcToggleAimingArrows();
@@ -98,6 +99,23 @@ namespace Game.Stages
             {
                 var player = c.GetComponentInParent<PlayerTower>().Player;
                 player.CurrentHitpoints -= damage;
+            }
+        }
+
+        [Command(requiresAuthority = false)]
+        public void CmdSelectWeapon(string weaponName)
+        {
+            var currentTower = GetComponent<TowerSelector_Click>().SelectedTower;
+
+            if (currentTower is null) return;
+
+            for (int i = 0; i < _ProjectileTemplates.Projectiles.Length; i++)
+            {
+                if (_ProjectileTemplates.Projectiles[i].Name == weaponName)
+                {
+                    currentTower.EquippedWeapon.FromModel(_ProjectileTemplates.Projectiles[i]);
+                    break;
+                }
             }
         }
 
@@ -176,6 +194,8 @@ namespace Game.Stages
 
                     RpcToggleAimingArrows();
                     RpcToggleHUD(false);
+
+                    GetComponent<TowerSelector_Click>().enabled = false;
 
                     IsComplete = true;
                 }
