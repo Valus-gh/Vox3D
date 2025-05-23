@@ -24,20 +24,23 @@ namespace Game.Interaction
 
                 if (Physics.Raycast(ray, out hit, Mathf.Infinity, LayerMask.GetMask("Player")))
                 {
-                    var transform = hit.transform;
+                    var hitTransform = hit.transform;
 
-                    Debug.Log("ray hit " + transform.gameObject.name);
+                    Debug.Log("ray hit " + hitTransform.gameObject.name);
 
-                    if (IsTower(transform.gameObject) && IsOwnedByLocalPlayer(transform.gameObject))
+                    if (IsTower(hitTransform.gameObject) && IsOwnedByLocalPlayer(hitTransform.gameObject))
                     {
                         HighlightTower(false);
-                        SelectedTower = transform.gameObject.GetComponentInParent<PlayerTower>();
+                        SelectedTower = hitTransform.gameObject.GetComponentInParent<PlayerTower>();
+                        FindObjectOfType<WeaponBarHUDController>().ToggleClickable(true);
                         HighlightTower(true);
                     }
+
                 }
                 else
                 {
                     HighlightTower(false);
+                    FindObjectOfType<WeaponBarHUDController>().ToggleClickable(false);
                 }
             }
         }

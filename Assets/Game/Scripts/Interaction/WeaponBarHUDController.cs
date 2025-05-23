@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.UIElements;
 
 using Game.Resources;
+using Game.Stages;
 
 namespace Game.Interaction
 {
@@ -21,6 +22,19 @@ namespace Game.Interaction
             labels.ForEach(l => l.visible = show);
         }
 
+        public void ToggleClickable(bool clickable)
+        {
+            foreach(var button in _WeaponBarButtons)
+            {
+                button.style.opacity = (clickable) ? 1 : 0.5f;
+            }
+        }
+
+        public void ToggleClickable(VisualElement control, bool clickable)
+        {
+            control.style.opacity = (clickable) ? 1 : 0.5f;
+        }
+
         public void InitializeHUD(ProjectileResources resources)
         {
             _WeaponBarButtonTemplate = UnityEngine.Resources.Load<VisualTreeAsset>("UI/weapon-picker-button");
@@ -37,11 +51,10 @@ namespace Game.Interaction
                 nameLabel.text = item.Name;
                 ammoLabel.text = "0";
 
-                weaponButton.RegisterCallback<ClickEvent>(OnClickEquipWeapon);
-
                 _WeaponBarButtons.Add(weaponButton);
                 _WeaponBar.Add(weaponButton);
             }
+            ToggleClickable(false);
         }
 
         public void UpdateHUD(Inventory inventory)
@@ -65,7 +78,6 @@ namespace Game.Interaction
                         }else if (item.Value == 0 && ammoLabel.text != "0")
                         {
                             button.UnregisterCallback<ClickEvent>(OnClickEquipWeapon);
-
                         }
 
                         ammoLabel.text = item.Value.ToString();
@@ -77,7 +89,11 @@ namespace Game.Interaction
         private void OnClickEquipWeapon(ClickEvent evt)
         {
             // Equip weapon on given tower
-            Debug.Log("Clicked on weapon picker");
+            Debug.Log("Clicked on weapon picker - " + (evt.target as Button).name);
+
+            var nameLabel = (evt.target as Button).Q("weapon-name-label") as Label;
+
+            FindObjectOfType<ShootingStage>().Selectweapon(nameLabel.text);
         }
     }
 }

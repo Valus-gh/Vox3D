@@ -102,8 +102,7 @@ namespace Game.Stages
             }
         }
 
-        [Command(requiresAuthority = false)]
-        public void CmdSelectWeapon(string weaponName)
+        public void Selectweapon(string weaponName)
         {
             var currentTower = GetComponent<TowerSelector_Click>().SelectedTower;
 
@@ -141,7 +140,6 @@ namespace Game.Stages
                 {
                     _WeaponBarHUD_Instance.GetComponent<WeaponBarHUDController>().UpdateHUD(player.Inventory);
                 }
-
             }
         }
 
