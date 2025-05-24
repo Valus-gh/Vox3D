@@ -68,18 +68,19 @@ namespace Game.Networking
         {
             var towers = FindObjectsOfType<PlayerTower>();
 
-            //TODO fetch multiple towers for each player
+            Player.Towers = new List<PlayerTower>();
 
             foreach (var tower in towers)
             {
-
                 tower.transform.parent = World.transform;
 
                 if(tower.GetComponent<OwnedBy>().OwnerID == NetworkRoomManagerV3D.singleton.PlayerID)
                 {
-
-                    Player.Tower = tower;
+                    Player.Towers.Add(tower);
                     tower.Player = Player;
+
+                    tower.BaseHitpoints = tower.Player.BaseHitpoints / StageManager.TowersPerPlayer;
+                    tower.CurrentHitpoints = tower.BaseHitpoints;
 
                     Vox3D.Engine.PriorityCallStack.Instance().Push(() =>
                     {
@@ -87,20 +88,20 @@ namespace Game.Networking
 
                         var manager = NetworkRoomManagerV3D.singleton;
                         if (manager.TowerPositions is null)
-                            manager.TowerPositions = TowerLocator.GenerateTowerLocations(World, manager.minPlayers);
+                            manager.TowerPositions = TowerLocator.GenerateTowerLocations(World, manager.minPlayers * StageManager.TowersPerPlayer);
 
                         CmdGenerateTowerLocations(manager.TowerPositions, World.Properties.VoxelSize);
 
-                        // Deactivate FogVisibilityAgent on tower
-                        Player.Tower.gameObject.AddComponent<FoWRevealer>().Radius = 7;
+                        tower.gameObject.AddComponent<FoWRevealer>().Radius = 7;
 
-                        // Instantiate FogInjector for current world
-                        GameObject.Find("FogManager").GetComponent<FogManager>().AttachFoW(World);
+                        if (Player.Towers.Count == StageManager.TowersPerPlayer)
+                        {
+                            // Instantiate FogInjector for current world
+                            GameObject.Find("FogManager").GetComponent<FogManager>().AttachFoW(World);
 
-                        FindObjectOfType<StageManager>().GetComponent<ConnectionStage>().CmdConfirmPlayerReady();
-
+                            FindObjectOfType<StageManager>().GetComponent<ConnectionStage>().CmdConfirmPlayerReady();
+                        }
                     }, 60);
-
                 }
             }
         }
@@ -112,7 +113,7 @@ namespace Game.Networking
                 NetworkRoomManagerV3D.singleton.TowerPositions = towerPositions;
 
             var towers = FindObjectsOfType<PlayerTower>();
-            if (towers.Length == NetworkRoomManagerV3D.singleton.minPlayers)
+            if (towers.Length == NetworkRoomManagerV3D.singleton.minPlayers * StageManager.TowersPerPlayer)
             {
                 for (int i = 0; i < towers.Length; i++)
                 {

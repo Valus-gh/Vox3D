@@ -7,26 +7,36 @@ using Mirror;
 using Game.Interaction;
 using Game.Weapons;
 
+//TODO: extract health into interface
+
 namespace Game
 {
     public class PlayerTower : NetworkBehaviour
     {
+        private Player _Player;
+        [SyncVar(hook = nameof(OnBaseHitpointsChanged))]
+        private int _BaseHitpoints;
+        [SyncVar(hook = nameof(OnCurrentHitpointsChanged))]
+        private float _CurrentHitpoints;
+
+        [SyncVar]
+        public int TowerID;
+        private TowerControlsMultiplayer _TowerControls;
         public bool CanFire = false;
 
-        private Player _Player;
-
-        private TowerControlsMultiplayer _TowerControls;
-
         [SerializeField]
-        private Projectile  _EquippedWeapon;
+        private Projectile _EquippedWeapon;
 
         public Player Player { get => _Player; set => _Player = value; }
         public TowerControlsMultiplayer TowerControls { get => _TowerControls; private set => _TowerControls = value; }
+        public int BaseHitpoints { get => _BaseHitpoints; set => _BaseHitpoints = value; }
+        public float CurrentHitpoints { get => _CurrentHitpoints; set => _CurrentHitpoints = value; }
         public Projectile EquippedWeapon { get => _EquippedWeapon; set => _EquippedWeapon = value; }
 
         public void Start()
         {
             TowerControls = GetComponentInChildren<TowerControlsMultiplayer>();
+            TowerControls.Tower = this;
         }
 
         public void Update()
@@ -35,6 +45,17 @@ namespace Game
                 TowerControls.enabled = true;
         }
 
+        void OnBaseHitpointsChanged(int oldValue, int newValue)
+        {
+            Debug.Log("BaseHitpoints: " + BaseHitpoints);
+        }
+        void OnCurrentHitpointsChanged(float oldValue, float newValue)
+        {
+            Debug.Log("CurrentHitpoints: " + CurrentHitpoints);
+
+            if (newValue <= 0)
+                Debug.Log("Tower has lost all hitpoints. Send destruction event");
+        }
 
     }
 

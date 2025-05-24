@@ -16,9 +16,8 @@ namespace Game.Stages
 {
     public class ShootingStage : GameStage
     {
-        private Dictionary<uint, PlayerTower> _Towers;
-        private Dictionary<uint, PlayerTower> _SelectedTowers;
-        
+        private Dictionary<uint, List<PlayerTower>> _TowersByPlayer;
+
         private ProjectileResources _ProjectileTemplates;
 
         [SerializeField]
@@ -31,32 +30,43 @@ namespace Game.Stages
             {
                 _ProjectileTemplates = Vox3D.JSON.JsonImporter<ProjectileResources>.FromJSON("projectiles");
 
-                _Towers = new Dictionary<uint, PlayerTower>();
-                var towers = FindObjectsOfType<PlayerTower>();
+                _TowersByPlayer = new Dictionary<uint, List<PlayerTower>>();
+                var towersInScene = FindObjectsOfType<PlayerTower>();
 
-                foreach (var tower in towers)
+                foreach (var tower in towersInScene)
                 {
                     var ownerID = tower.GetComponent<OwnedBy>().OwnerID;
-                    _Towers.Add(ownerID, tower);
+
+                    if (!_TowersByPlayer.ContainsKey(ownerID))
+                    {
+                        _TowersByPlayer.Add(ownerID, new List<PlayerTower>());
+                    }
+
+                    _TowersByPlayer[ownerID].Add(tower);
                 }
 
                 foreach (var player in Players)
                 {
-                    foreach(var tower in _Towers)
+                    foreach(var towerList in _TowersByPlayer)
                     {
-                        if(player.GetComponent<Player>().netId == tower.Key)
+                        if(player.GetComponent<Player>().netId == towerList.Key)
                         {
-                            player.GetComponent<Player>().Tower = tower.Value;
+                            player.GetComponent<Player>().Towers = towerList.Value;
                         }
                     }
 
-                    var playerEquippedWeapon = player.GetComponent<Player>().Tower.EquippedWeapon;
-                    for (int i = 0; i < _ProjectileTemplates.Projectiles.Length; i++)
+                    // Equip basic projectile for all towers
+                    foreach(var tower in player.GetComponent<Player>().Towers)
                     {
-                        if (_ProjectileTemplates.Projectiles[i].Name == "Basic")
+                        var equipped = tower.EquippedWeapon;
+
+                        for (int i = 0; i < _ProjectileTemplates.Projectiles.Length; i++)
                         {
-                            playerEquippedWeapon.FromModel(_ProjectileTemplates.Projectiles[i]);
-                            break;
+                            if (_ProjectileTemplates.Projectiles[i].Name == "Basic")
+                            {
+                                equipped.FromModel(_ProjectileTemplates.Projectiles[i]);
+                                break;
+                            }
                         }
                     }
                 }
@@ -78,13 +88,24 @@ namespace Game.Stages
             throw new System.NotImplementedException();
         }
 
-        private Dictionary<uint, Trajectory> _ConfirmedTrajectories = new Dictionary<uint, Trajectory>();
+        private Dictionary<uint, List<(int, Trajectory)>> _ConfirmedTrajectories = new Dictionary<uint, List<(int, Trajectory)>>();
 
         [Command(requiresAuthority = false)]
-        public void CmdConfirmTrajectory(Trajectory trajectory, uint ownerID)
+        public void CmdConfirmTrajectory(Trajectory trajectory, int towerID, uint ownerID)
         {
-            if(_ConfirmedTrajectories.Count < Players.Count)
-                _ConfirmedTrajectories.Add(ownerID, trajectory);
+            if (!_ConfirmedTrajectories.ContainsKey(ownerID))
+            {
+                _ConfirmedTrajectories.Add(ownerID, new List<(int, Trajectory)>());
+            }
+
+            if (_ConfirmedTrajectories[ownerID].Count < StageManager.TowersPerPlayer)
+            {
+                // Check if towerID is already present
+                foreach(var element in _ConfirmedTrajectories[ownerID])
+                    if (element.Item1 == towerID) return;
+
+                _ConfirmedTrajectories[ownerID].Add((towerID, trajectory));
+            }
         }
 
         [Command(requiresAuthority = false)]
@@ -97,8 +118,21 @@ namespace Game.Stages
 
             foreach (var c in colliders)
             {
-                var player = c.GetComponentInParent<PlayerTower>().Player;
+                var tower = c.GetComponentInParent<PlayerTower>();
+                var player = tower.Player;
+                
+                tower.CurrentHitpoints -= damage;
                 player.CurrentHitpoints -= damage;
+
+                if(tower.CurrentHitpoints <= 0)
+                {
+                    //Fire tower destruction event
+                }
+
+                if(player.CurrentHitpoints <= 0)
+                {
+                    //Fire player defeat event
+                }
             }
         }
 
@@ -163,14 +197,17 @@ namespace Game.Stages
 
         private void FireProjectiles()
         {
-            foreach(var (owner, trajectory) in _ConfirmedTrajectories)
+            foreach(var (owner, trajectories) in _ConfirmedTrajectories)
             {
-                PlayerTower tower;
-                _Towers.TryGetValue(owner, out tower);
-
-                if(tower is not null)
+                foreach(var (tower, trajectory) in trajectories)
                 {
-                    tower.TowerControls.FireProjectileOnAllClients(trajectory, owner);
+                    foreach(var firingSpot in _TowersByPlayer[owner])
+                    {
+                        if(firingSpot.TowerID == tower)
+                        {
+                            firingSpot.GetComponentInChildren<TowerControlsMultiplayer>().FireProjectileOnAllClients(trajectory, owner);
+                        }
+                    }
                 }
             }
 
@@ -184,8 +221,13 @@ namespace Game.Stages
                 RpcUpdateHUD();
                 RpcToggleHUD(true);
 
+                int confirmedTrajectories = 0;
+
+                foreach(var (owner, trajectories) in _ConfirmedTrajectories)
+                    confirmedTrajectories += trajectories.Count;
+
                 // if all players confirmed a trajectory, shoot projectiles on all clients
-                if (_ConfirmedTrajectories.Count == Players.Count)
+                if (confirmedTrajectories == Players.Count * StageManager.TowersPerPlayer)
                 {
                     Debug.Log("ALL PLAYERS CONFIRMED THEIR TRAJECTORY. FIRING PROJECTILES.");
                     FireProjectiles();

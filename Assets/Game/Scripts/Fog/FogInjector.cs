@@ -48,6 +48,8 @@ namespace Game.Fog
 
             foreach (Chunk chunk in World.Chunks.Values)
             {
+                if (chunk.MeshFilter.sharedMesh is null) continue;
+
                 chunk.MeshFilter.sharedMesh.GetColors(colors);
                 chunk.MeshRenderer.material = FogVertexColorMaterial;
                 chunk.MeshFilter.sharedMesh.SetColors(colors);

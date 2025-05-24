@@ -8,8 +8,6 @@ using Game.Resources;
 using Game.Interaction;
 using Game.Utilities;
 
-//TODO use list <keyvaluepair> instead of dictionary to hold towers
-
 namespace Game.Stages
 {
     public class SelectionStage : GameStage
@@ -20,7 +18,7 @@ namespace Game.Stages
         private GameObject _SelectionStageHUD_Instance;
 
         private ProjectileResources _ProjectileTemplates;
-        private Dictionary<uint, PlayerTower> _Towers;
+        private Dictionary<uint, List<PlayerTower>> _TowersByPlayer;
 
         private int ReadyToProceed;
 
@@ -33,14 +31,21 @@ namespace Game.Stages
             {
                 _ProjectileTemplates = Vox3D.JSON.JsonImporter<ProjectileResources>.FromJSON("projectiles");
 
-                _Towers = new Dictionary<uint, PlayerTower>();
-                var towers = FindObjectsOfType<PlayerTower>();
+                _TowersByPlayer = new Dictionary<uint, List<PlayerTower>>();
+                var towersInScene = FindObjectsOfType<PlayerTower>();
 
-                foreach (var tower in towers)
+                foreach (var tower in towersInScene)
                 {
                     var ownerID = tower.GetComponent<OwnedBy>().OwnerID;
-                    _Towers.Add(ownerID, tower);
+
+                    if (!_TowersByPlayer.ContainsKey(ownerID))
+                    {
+                        _TowersByPlayer.Add(ownerID, new List<PlayerTower>());
+                    }
+
+                    _TowersByPlayer[ownerID].Add(tower);
                 }
+
                 IsInitialized = true;
 
                 RpcLoadHUD();

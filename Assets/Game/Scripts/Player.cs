@@ -12,8 +12,8 @@ namespace Game
     public class Player : NetworkBehaviour
     {
 
-        private PlayerTower _Tower;
-        public PlayerTower  Tower { get => _Tower; set => _Tower = value; }
+        private List<PlayerTower> _Towers;
+        public List<PlayerTower> Towers { get => _Towers; set => _Towers = value; }
 
         [SerializeField]
         private Inventory _Inventory;
@@ -22,7 +22,7 @@ namespace Game
         #region PlayerAttributes
 
         [SyncVar(hook = nameof(OnBaseHitpointsChanged))]
-        private uint    _BaseHitpoints;
+        private int    _BaseHitpoints;
 
         [SyncVar(hook = nameof(OnHitpointMultiplierChanged))]
         private float   _HitpointMultiplier;
@@ -34,13 +34,13 @@ namespace Game
         private float   _CurrentHitpoints;
 
         [SyncVar(hook = nameof(OnBudgetChanged))]
-        private uint    _Budget;
+        private int _Budget;
 
-        public uint     BaseHitpoints { get => _BaseHitpoints; set => _BaseHitpoints = value; }
+        public int BaseHitpoints { get => _BaseHitpoints; set => _BaseHitpoints = value; }
         public float    HitpointMultiplier { get => _HitpointMultiplier; set => _HitpointMultiplier = value; }
         public float    EffectiveHitpoints { get => _EffectiveHitpoints; set => _EffectiveHitpoints = value; }
         public float    CurrentHitpoints { get => _CurrentHitpoints; set => _CurrentHitpoints = value; }
-        public uint     Budget { get => _Budget; set => _Budget = value; }
+        public int Budget { get => _Budget; set => _Budget = value; }
 
         public void Populate(string name, PlayerResources resources)
         {
@@ -56,7 +56,7 @@ namespace Game
             }
         }
 
-        void OnBaseHitpointsChanged(uint oldValue, uint newValue)
+        void OnBaseHitpointsChanged(int oldValue, int newValue)
         {
             Debug.Log("BaseHitpoints: " + BaseHitpoints);
         }
@@ -75,7 +75,7 @@ namespace Game
             if (newValue <= 0)
                 Debug.Log("Player has lost all hitpoints. Send defeat event");
         }
-        void OnBudgetChanged(uint oldValue, uint newValue)
+        void OnBudgetChanged(int oldValue, int newValue)
         {
             Debug.Log("Budget: " + Budget);
         }

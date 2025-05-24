@@ -14,6 +14,7 @@ namespace Game.Interaction
     public class TowerControlsMultiplayer : NetworkBehaviour
     {
         protected Trajectory TowerTrajectory;
+        public PlayerTower Tower;
 
         public KeyCode fireCode = KeyCode.Space;
 
@@ -29,7 +30,7 @@ namespace Game.Interaction
 
         public void RelayTrajectory(Trajectory trajectory, uint ownerID)
         {
-            FindObjectOfType<ShootingStage>().CmdConfirmTrajectory(trajectory, ownerID);
+            FindObjectOfType<ShootingStage>().CmdConfirmTrajectory(trajectory, Tower.TowerID, ownerID);
         }
 
         public void FireProjectileOnAllClients(Trajectory trajectory, uint ownerID)

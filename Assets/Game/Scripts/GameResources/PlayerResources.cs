@@ -11,11 +11,11 @@ namespace Game.Resources
         public class PlayerModel
         {
             public string   Name;
-            public uint     BaseHitpoints;
+            public int      BaseHitpoints;
             public float    HitpointMultiplier;
 
             public PlayerModel() { }
-            public PlayerModel(string name, uint baseHitpoints, float hitpointMultiplier)
+            public PlayerModel(string name, int baseHitpoints, float hitpointMultiplier)
             {
                 Name = name;
                 BaseHitpoints = baseHitpoints;

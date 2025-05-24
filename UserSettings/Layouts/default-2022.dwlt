@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 102
+  controlID: 5871
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 46
+  controlID: 5811
   draggingID: 0
 --- !u!114 &7
 MonoBehaviour:
@@ -171,7 +171,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 47
+  controlID: 5812
   draggingID: 0
 --- !u!114 &8
 MonoBehaviour:
@@ -192,11 +192,11 @@ MonoBehaviour:
     y: 0
     width: 353
     height: 905
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 14}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 13}
   m_Panes:
-  - {fileID: 14}
+  - {fileID: 13}
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &9
@@ -209,7 +209,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: SceneView
+  m_Name: GameView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -222,11 +222,11 @@ MonoBehaviour:
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 15}
   m_Panes:
+  - {fileID: 14}
   - {fileID: 15}
   - {fileID: 16}
-  - {fileID: 12}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 2
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -246,12 +246,12 @@ MonoBehaviour:
     y: 905
     width: 1426
     height: 361
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 13}
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 12}
   m_Panes:
   - {fileID: 17}
-  - {fileID: 13}
+  - {fileID: 12}
   m_Selected: 1
   m_LastSelected: 0
 --- !u!114 &11
@@ -289,40 +289,6 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 13999, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: UI Builder
-    m_Image: {fileID: 8683992553321208622, guid: 0000000000000000d000000000000000, type: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 679
-    y: 73
-    width: 2051
-    height: 948
-  m_SerializedDataModeController:
-    m_DataMode: 0
-    m_PreferredDataMode: 0
-    m_SupportedDataModes: 
-    isAutomatic: 1
-  m_ViewDataDictionary: {fileID: 0}
-  m_OverlayCanvas:
-    m_LastAppliedPresetName: Default
-    m_SaveData: []
-    m_OverlaysVisible: 1
---- !u!114 &13
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12003, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
@@ -349,7 +315,7 @@ MonoBehaviour:
     m_LastAppliedPresetName: Default
     m_SaveData: []
     m_OverlaysVisible: 1
---- !u!114 &14
+--- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -388,7 +354,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 0a85feffe885feff14aafefff2aafeffe219ffff361affff3c1affff481affffc01affff663fffff4440ffff2864ffff7c64ffff8264ffff8e64ffff0665ffff4089ffff68d3ffff2afbfffff4ffffff
+      m_ExpandedIDs: d85bfcff1a5efcffb4e7feff92e8feff520dffff300efffffae8ffffdae9ffff26fbfffff4ffffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -412,7 +378,7 @@ MonoBehaviour:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
   m_WindowGUID: 4c969a2b90040154d917609493e03593
---- !u!114 &15
+--- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -805,7 +771,7 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0.3627454, y: 0.3232033, z: -0.1360616, w: 0.86346406}
     speed: 2
-    m_Value: {x: 0.36272228, y: 0.32318267, z: -0.13605292, w: 0.863409}
+    m_Value: {x: -0.3627454, y: -0.3232033, z: 0.1360616, w: -0.86346406}
   m_Size:
     m_Target: 14.021199
     speed: 2
@@ -834,7 +800,7 @@ MonoBehaviour:
   m_SceneVisActive: 1
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
---- !u!114 &16
+--- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -901,7 +867,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -932,6 +898,40 @@ MonoBehaviour:
   m_LowResolutionForAspectRatios: 01000000000000000000
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
+--- !u!114 &16
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 13999, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: UI Builder
+    m_Image: {fileID: 8683992553321208622, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 370
+    y: 97
+    width: 1071
+    height: 884
+  m_SerializedDataModeController:
+    m_DataMode: 0
+    m_PreferredDataMode: 0
+    m_SupportedDataModes: 
+    isAutomatic: 1
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+    m_OverlaysVisible: 1
 --- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -977,7 +977,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Packages/com.unityfx.outline/Runtime/Prefabs
+    - Assets/Game/Scripts/Interaction
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -985,16 +985,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Packages/com.unityfx.outline/Runtime/Prefabs
+  - Assets/Game/Scripts/Interaction
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 480}
-    m_SelectedIDs: a47c0000
-    m_LastClickedID: 31908
-    m_ExpandedIDs: 000000006a7400006c7400006e74000070740000727400007474000076740000787400007a7400007c7400007e74000080740000827400008474000086740000887400008a7400008c7400008e7400009274000094740000ea740000a27c000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 124}
+    m_SelectedIDs: d2740000
+    m_LastClickedID: 29906
+    m_ExpandedIDs: 000000006e74000070740000727400007474000076740000787400007a7400007c7400007e74000080740000827400008474000086740000887400008a7400008c7400008e74000090740000927400009474000096740000987400009a740000e274000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1022,7 +1022,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000006a7400006c7400006e74000070740000727400007474000076740000787400007a7400007c7400007e74000080740000827400008474000086740000887400008a7400008c7400008e740000907400009274000094740000
+    m_ExpandedIDs: 000000006e74000070740000727400007474000076740000787400007a7400007c7400007e74000080740000827400008474000086740000887400008a7400008c7400008e74000090740000927400009474000096740000987400009a740000e274000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1047,8 +1047,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
+    m_SelectedInstanceIDs: 7e520000
+    m_LastClickedInstanceID: 21118
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c62300000000000030720000
     m_RenameOverlay:
@@ -1159,7 +1159,7 @@ MonoBehaviour:
     m_LastAppliedPresetName: Default
     m_SaveData: []
     m_OverlaysVisible: 1
-  progressMessageClearTime: 4739.4308995
+  progressMessageClearTime: -1
   notificationClearTime: -1
   timeSinceLastRotation: -1
   currentBranchAndRemoteHasUpdate: 0
@@ -1258,7 +1258,7 @@ MonoBehaviour:
         isContainer: 0
         isCollapsed: 0
         isHidden: 0
-        isActive: 1
+        isActive: 0
         treeIsCheckable: 0
         checkState: 0
       - path: dev-json
@@ -1281,9 +1281,19 @@ MonoBehaviour:
         isActive: 0
         treeIsCheckable: 0
         checkState: 0
+      - path: dev-towers
+        label: dev-towers
+        level: 1
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 1
+        treeIsCheckable: 0
+        checkState: 0
       selectedNode:
-        path: dev-hud
-        label: dev-hud
+        path: dev-towers
+        label: dev-towers
         level: 1
         isFolder: 0
         isContainer: 0
@@ -1408,38 +1418,8 @@ MonoBehaviour:
         isActive: 0
         treeIsCheckable: 0
         checkState: 0
-      - path: origin/dev-refactor
-        label: dev-refactor
-        level: 2
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
       - path: origin/dev-towers
         label: dev-towers
-        level: 2
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-      - path: origin/dev-URP
-        label: dev-URP
-        level: 2
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-      - path: origin/dev-water
-        label: dev-water
         level: 2
         isFolder: 0
         isContainer: 0
@@ -1475,14 +1455,14 @@ MonoBehaviour:
     disableDelete: 1
     disableCreate: 0
     lastLocalAndRemoteBranchListChangedEvent:
-      updatedTimeString: 2025-04-26T09:56:41.156+02:00
+      updatedTimeString: 2025-05-23T11:40:58.154+02:00
       cacheType: 2
     lastCurrentBranchAndRemoteChange:
-      updatedTimeString: 2025-04-26T09:56:42.171+02:00
+      updatedTimeString: 2025-05-23T11:40:58.180+02:00
       cacheType: 1
     currentBranch:
-      name: dev-hud
-      tracking: origin/dev-hud
+      name: dev-towers
+      tracking: origin/dev-towers
     currentRemote:
       name: origin
       url: https://github.com/Valus-gh/Vox3D
@@ -1506,6 +1486,8 @@ MonoBehaviour:
       tracking: origin/dev-json
     - name: dev-mirror
       tracking: origin/dev-mirror
+    - name: dev-towers
+      tracking: origin/dev-towers
     remoteBranches:
     - name: origin/dev
       tracking: '[None]'
@@ -1519,13 +1501,7 @@ MonoBehaviour:
       tracking: '[None]'
     - name: origin/dev-mirror
       tracking: '[None]'
-    - name: origin/dev-refactor
-      tracking: '[None]'
     - name: origin/dev-towers
-      tracking: '[None]'
-    - name: origin/dev-URP
-      tracking: '[None]'
-    - name: origin/dev-water
       tracking: '[None]'
     - name: origin/master
       tracking: '[None]'
@@ -1535,15 +1511,376 @@ MonoBehaviour:
     currentLocksHasUpdate: 0
     commitBody: 
     commitMessage: 
-    currentBranch: dev-hud
+    currentBranch: dev-towers
     treeScroll: {x: 0, y: 0}
     treeChanges:
       assets:
-        keys: []
-        values: []
+        keys:
+        - 00000000000000001000000000000000
+        - 5ad94459fc745ed43945b0761fcaee5c
+        - 01c283d1b029d0e42a0e21f3909672f0
+        - af477961899bc67459a9c567a66cf123
+        - e67ccd8a322ee3f4496243532f3a1fb9
+        - b77988a8d3fee584eb0764b66526001e
+        - 8f092bf8f620d7c458abae5475f37c18
+        - 24a7a990d6ba0bd4ba485d7f25711056
+        - 8bae6860163f38a48beb6485240ef4fb
+        - 258eb49f5b0991342bf0b2eb92a21338
+        - c787b05dadbbfa24ca5f3545168e2ffe
+        - 764e1fa860d0b524e9fed8271c5b4bab
+        - 3c2d0dbb77d4ea94187f74165cfeec3d
+        values:
+        - path: Assets
+          label: Assets
+          level: 0
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Game
+          label: Game
+          level: 1
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Game\Scripts
+          label: Scripts
+          level: 2
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Game\Scripts\Interaction
+          label: Interaction
+          level: 3
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Game\Scripts\Interaction\TowerControlsMultiplayer.cs
+          label: TowerControlsMultiplayer.cs
+          level: 4
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Game\Scripts\Interaction\TowerControlsMultiplayer.cs
+            fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\TowerControlsMultiplayer.cs
+            projectPath: Assets\Game\Scripts\Interaction\TowerControlsMultiplayer.cs
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Assets\Game\Scripts\Networking
+          label: Networking
+          level: 3
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Game\Scripts\Networking\NetworkRoomPlayerV3D.cs
+          label: NetworkRoomPlayerV3D.cs
+          level: 4
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Game\Scripts\Networking\NetworkRoomPlayerV3D.cs
+            fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Networking\NetworkRoomPlayerV3D.cs
+            projectPath: Assets\Game\Scripts\Networking\NetworkRoomPlayerV3D.cs
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Assets\Game\Scripts\Player.cs
+          label: Player.cs
+          level: 3
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Game\Scripts\Player.cs
+            fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Player.cs
+            projectPath: Assets\Game\Scripts\Player.cs
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Assets\Game\Scripts\Stages
+          label: Stages
+          level: 3
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Game\Scripts\Stages\ConnectionStage.cs
+          label: ConnectionStage.cs
+          level: 4
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Game\Scripts\Stages\ConnectionStage.cs
+            fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\ConnectionStage.cs
+            projectPath: Assets\Game\Scripts\Stages\ConnectionStage.cs
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Assets\Game\Scripts\Stages\SelectionStage.cs
+          label: SelectionStage.cs
+          level: 4
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Game\Scripts\Stages\SelectionStage.cs
+            fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\SelectionStage.cs
+            projectPath: Assets\Game\Scripts\Stages\SelectionStage.cs
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Assets\Game\Scripts\Stages\ShootingStage.cs
+          label: ShootingStage.cs
+          level: 4
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Game\Scripts\Stages\ShootingStage.cs
+            fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\ShootingStage.cs
+            projectPath: Assets\Game\Scripts\Stages\ShootingStage.cs
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Assets\Game\Scripts\Stages\StageManager.cs
+          label: StageManager.cs
+          level: 4
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets\Game\Scripts\Stages\StageManager.cs
+            fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\StageManager.cs
+            projectPath: Assets\Game\Scripts\Stages\StageManager.cs
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
       folders:
-        keys: []
-        values: []
+        keys:
+        - Assets
+        - Assets\Game
+        - Assets\Game\Scripts
+        - Assets\Game\Scripts\Interaction
+        - Assets\Game\Scripts\Networking
+        - Assets\Game\Scripts\Stages
+        values:
+        - path: Assets
+          label: Assets
+          level: 0
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Game
+          label: Game
+          level: 1
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Game\Scripts
+          label: Scripts
+          level: 2
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Game\Scripts\Interaction
+          label: Interaction
+          level: 3
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Game\Scripts\Networking
+          label: Networking
+          level: 3
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Game\Scripts\Stages
+          label: Stages
+          level: 3
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
       checkedFileNodes:
         keys: []
         values: []
@@ -1572,6 +1909,240 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
+      - path: Assets
+        label: Assets
+        level: 0
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets\Game
+        label: Game
+        level: 1
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets\Game\Scripts
+        label: Scripts
+        level: 2
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets\Game\Scripts\Interaction
+        label: Interaction
+        level: 3
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets\Game\Scripts\Interaction\TowerControlsMultiplayer.cs
+        label: TowerControlsMultiplayer.cs
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Game\Scripts\Interaction\TowerControlsMultiplayer.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\TowerControlsMultiplayer.cs
+          projectPath: Assets\Game\Scripts\Interaction\TowerControlsMultiplayer.cs
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Assets\Game\Scripts\Networking
+        label: Networking
+        level: 3
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets\Game\Scripts\Networking\NetworkRoomPlayerV3D.cs
+        label: NetworkRoomPlayerV3D.cs
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Game\Scripts\Networking\NetworkRoomPlayerV3D.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Networking\NetworkRoomPlayerV3D.cs
+          projectPath: Assets\Game\Scripts\Networking\NetworkRoomPlayerV3D.cs
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Assets\Game\Scripts\Player.cs
+        label: Player.cs
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Game\Scripts\Player.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Player.cs
+          projectPath: Assets\Game\Scripts\Player.cs
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Assets\Game\Scripts\Stages
+        label: Stages
+        level: 3
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets\Game\Scripts\Stages\ConnectionStage.cs
+        label: ConnectionStage.cs
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Game\Scripts\Stages\ConnectionStage.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\ConnectionStage.cs
+          projectPath: Assets\Game\Scripts\Stages\ConnectionStage.cs
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Assets\Game\Scripts\Stages\SelectionStage.cs
+        label: SelectionStage.cs
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Game\Scripts\Stages\SelectionStage.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\SelectionStage.cs
+          projectPath: Assets\Game\Scripts\Stages\SelectionStage.cs
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Assets\Game\Scripts\Stages\ShootingStage.cs
+        label: ShootingStage.cs
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Game\Scripts\Stages\ShootingStage.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\ShootingStage.cs
+          projectPath: Assets\Game\Scripts\Stages\ShootingStage.cs
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Assets\Game\Scripts\Stages\StageManager.cs
+        label: StageManager.cs
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Game\Scripts\Stages\StageManager.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\StageManager.cs
+          projectPath: Assets\Game\Scripts\Stages\StageManager.cs
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
       selectedNode:
         path: 
         label: 
@@ -1591,21 +2162,993 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
-    gitStatusEntries: []
-    changedFilesText: No changed files
+    gitStatusEntries:
+    - path: Assets\Game\Scripts\Interaction\TowerControlsMultiplayer.cs
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\TowerControlsMultiplayer.cs
+      projectPath: Assets\Game\Scripts\Interaction\TowerControlsMultiplayer.cs
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Game\Scripts\Networking\NetworkRoomPlayerV3D.cs
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Networking\NetworkRoomPlayerV3D.cs
+      projectPath: Assets\Game\Scripts\Networking\NetworkRoomPlayerV3D.cs
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Game\Scripts\Player.cs
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Player.cs
+      projectPath: Assets\Game\Scripts\Player.cs
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Game\Scripts\Stages\ConnectionStage.cs
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\ConnectionStage.cs
+      projectPath: Assets\Game\Scripts\Stages\ConnectionStage.cs
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Game\Scripts\Stages\SelectionStage.cs
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\SelectionStage.cs
+      projectPath: Assets\Game\Scripts\Stages\SelectionStage.cs
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Game\Scripts\Stages\ShootingStage.cs
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\ShootingStage.cs
+      projectPath: Assets\Game\Scripts\Stages\ShootingStage.cs
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets\Game\Scripts\Stages\StageManager.cs
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\StageManager.cs
+      projectPath: Assets\Game\Scripts\Stages\StageManager.cs
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    changedFilesText: 7 changed files
     lastCurrentBranchChangedEvent:
-      updatedTimeString: 2025-05-18T11:08:32.363+02:00
+      updatedTimeString: 2025-05-23T11:40:58.180+02:00
       cacheType: 1
     lastStatusEntriesChangedEvent:
-      updatedTimeString: 2025-05-18T11:08:22.425+02:00
+      updatedTimeString: 2025-05-23T12:25:35.132+02:00
       cacheType: 6
     lastLocksChangedEvent:
-      updatedTimeString: 0001-01-01T00:00:00.000+00:00
+      updatedTimeString: 2025-05-23T12:24:51.574+02:00
       cacheType: 7
   historyView:
     currentLogHasUpdate: 0
     currentTrackingStatusHasUpdate: 0
     logEntries:
+    - commitID: 7a4f5a49ad88a5a251430a4fa67c73120ec494d1
+      mergeA: 
+      mergeB: 
+      authorName: Valus-gh
+      authorEmail: simone.belingheri25@gmail.com
+      commitEmail: simone.belingheri25@gmail.com
+      commitName: Valus-gh
+      summary: Pre-merge commit
+      description: Pre-merge commit - added link between hud controller and select
+        weapon method. Need to tell server to change weapon on its side.
+      timeString: 2025-05-23T11:32:34.000+02:00
+      commitTimeString: 2025-05-23T11:32:34.000+02:00
+      changes:
+      - path: Assets\Game\Prefabs\Stages\StageManager.prefab
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Stages\StageManager.prefab
+        projectPath: Assets\Game\Prefabs\Stages\StageManager.prefab
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Interaction\TowerSelector_Click.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\TowerSelector_Click.cs
+        projectPath: Assets\Game\Scripts\Interaction\TowerSelector_Click.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Interaction\WeaponBarHUDController.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\WeaponBarHUDController.cs
+        projectPath: Assets\Game\Scripts\Interaction\WeaponBarHUDController.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Stages\ShootingStage.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\ShootingStage.cs
+        projectPath: Assets\Game\Scripts\Stages\ShootingStage.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: ProjectSettings\ProjectSettings.asset
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\ProjectSettings\ProjectSettings.asset
+        projectPath: ProjectSettings\ProjectSettings.asset
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: UserSettings\Layouts\default-2022.dwlt
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\Layouts\default-2022.dwlt
+        projectPath: UserSettings\Layouts\default-2022.dwlt
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+    - commitID: 116b1efd6de9c42f52eed8e2fd810ffbc3f444f3
+      mergeA: 
+      mergeB: 
+      authorName: Valus-gh
+      authorEmail: simone.belingheri25@gmail.com
+      commitEmail: simone.belingheri25@gmail.com
+      commitName: Valus-gh
+      summary: Added TowerSelector, TowerSelector_:Click
+      description: Added TowerSelector, TowerSelector_:Click. Modified logic to select
+        weapon in shootingstage
+      timeString: 2025-05-18T11:08:18.000+02:00
+      commitTimeString: 2025-05-18T11:08:18.000+02:00
+      changes:
+      - path: Assets\Game\Prefabs\PlayerTower.prefab
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\PlayerTower.prefab
+        projectPath: Assets\Game\Prefabs\PlayerTower.prefab
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Game\Prefabs\Stages\StageManager.prefab
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Stages\StageManager.prefab
+        projectPath: Assets\Game\Prefabs\Stages\StageManager.prefab
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Interaction\TowerSelector.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\TowerSelector.cs
+        projectPath: Assets\Game\Scripts\Interaction\TowerSelector.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Interaction\TowerSelector.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\TowerSelector.cs.meta
+        projectPath: Assets\Game\Scripts\Interaction\TowerSelector.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Interaction\TowerSelector_Click.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\TowerSelector_Click.cs
+        projectPath: Assets\Game\Scripts\Interaction\TowerSelector_Click.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Stages\ShootingStage.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\ShootingStage.cs
+        projectPath: Assets\Game\Scripts\Stages\ShootingStage.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: ProjectSettings\TagManager.asset
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\ProjectSettings\TagManager.asset
+        projectPath: ProjectSettings\TagManager.asset
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: UserSettings\Layouts\default-2022.dwlt
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\Layouts\default-2022.dwlt
+        projectPath: UserSettings\Layouts\default-2022.dwlt
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+    - commitID: d3a2d89ab770c24b0e1d74d2bbe4088b6fff23de
+      mergeA: 
+      mergeB: 
+      authorName: Valus-gh
+      authorEmail: simone.belingheri25@gmail.com
+      commitEmail: simone.belingheri25@gmail.com
+      commitName: Valus-gh
+      summary: Added UnityFX.Outline for tower selection
+      description: Added UnityFX.Outline for tower selection
+      timeString: 2025-05-17T21:36:09.000+02:00
+      commitTimeString: 2025-05-17T21:36:09.000+02:00
+      changes:
+      - path: Packages\UnityFx.Outline\CHANGELOG.md
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\CHANGELOG.md
+        projectPath: Packages\UnityFx.Outline\CHANGELOG.md
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\CHANGELOG.md.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\CHANGELOG.md.meta
+        projectPath: Packages\UnityFx.Outline\CHANGELOG.md.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Editor.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor.meta
+        projectPath: Packages\UnityFx.Outline\Editor.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Editor\Scripts.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\Scripts.meta
+        projectPath: Packages\UnityFx.Outline\Editor\Scripts.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Editor\Scripts\OutlineBehaviourEditor.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\Scripts\OutlineBehaviourEditor.cs
+        projectPath: Packages\UnityFx.Outline\Editor\Scripts\OutlineBehaviourEditor.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Editor\Scripts\OutlineBehaviourEditor.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\Scripts\OutlineBehaviourEditor.cs.meta
+        projectPath: Packages\UnityFx.Outline\Editor\Scripts\OutlineBehaviourEditor.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Editor\Scripts\OutlineBuilderEditor.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\Scripts\OutlineBuilderEditor.cs
+        projectPath: Packages\UnityFx.Outline\Editor\Scripts\OutlineBuilderEditor.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Editor\Scripts\OutlineBuilderEditor.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\Scripts\OutlineBuilderEditor.cs.meta
+        projectPath: Packages\UnityFx.Outline\Editor\Scripts\OutlineBuilderEditor.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Editor\Scripts\OutlineEditorUtility.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\Scripts\OutlineEditorUtility.cs
+        projectPath: Packages\UnityFx.Outline\Editor\Scripts\OutlineEditorUtility.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Editor\Scripts\OutlineEditorUtility.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\Scripts\OutlineEditorUtility.cs.meta
+        projectPath: Packages\UnityFx.Outline\Editor\Scripts\OutlineEditorUtility.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Editor\Scripts\OutlineEffectEditor.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\Scripts\OutlineEffectEditor.cs
+        projectPath: Packages\UnityFx.Outline\Editor\Scripts\OutlineEffectEditor.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Editor\Scripts\OutlineEffectEditor.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\Scripts\OutlineEffectEditor.cs.meta
+        projectPath: Packages\UnityFx.Outline\Editor\Scripts\OutlineEffectEditor.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Editor\Scripts\OutlineLayerCollectionEditor.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\Scripts\OutlineLayerCollectionEditor.cs
+        projectPath: Packages\UnityFx.Outline\Editor\Scripts\OutlineLayerCollectionEditor.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Editor\Scripts\OutlineLayerCollectionEditor.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\Scripts\OutlineLayerCollectionEditor.cs.meta
+        projectPath: Packages\UnityFx.Outline\Editor\Scripts\OutlineLayerCollectionEditor.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsEditor.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsEditor.cs
+        projectPath: Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsEditor.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsEditor.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsEditor.cs.meta
+        projectPath: Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsEditor.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsInstanceDrawer.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsInstanceDrawer.cs
+        projectPath: Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsInstanceDrawer.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsInstanceDrawer.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsInstanceDrawer.cs.meta
+        projectPath: Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsInstanceDrawer.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsWithLayerMaskDrawer.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsWithLayerMaskDrawer.cs
+        projectPath: Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsWithLayerMaskDrawer.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsWithLayerMaskDrawer.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsWithLayerMaskDrawer.cs.meta
+        projectPath: Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsWithLayerMaskDrawer.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Editor\UnityFx.Outline.Editor.asmdef
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\UnityFx.Outline.Editor.asmdef
+        projectPath: Packages\UnityFx.Outline\Editor\UnityFx.Outline.Editor.asmdef
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Editor\UnityFx.Outline.Editor.asmdef.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\UnityFx.Outline.Editor.asmdef.meta
+        projectPath: Packages\UnityFx.Outline\Editor\UnityFx.Outline.Editor.asmdef.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\README.md
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\README.md
+        projectPath: Packages\UnityFx.Outline\README.md
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\README.md.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\README.md.meta
+        projectPath: Packages\UnityFx.Outline\README.md.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Runtime.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime.meta
+        projectPath: Packages\UnityFx.Outline\Runtime.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Runtime\Prefabs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Prefabs.meta
+        projectPath: Packages\UnityFx.Outline\Runtime\Prefabs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Runtime\Prefabs\OutlineResources.asset
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Prefabs\OutlineResources.asset
+        projectPath: Packages\UnityFx.Outline\Runtime\Prefabs\OutlineResources.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Runtime\Prefabs\OutlineResources.asset.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Prefabs\OutlineResources.asset.meta
+        projectPath: Packages\UnityFx.Outline\Runtime\Prefabs\OutlineResources.asset.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Runtime\Scripts.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts.meta
+        projectPath: Packages\UnityFx.Outline\Runtime\Scripts.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\IOutlineSettings.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\IOutlineSettings.cs
+        projectPath: Packages\UnityFx.Outline\Runtime\Scripts\IOutlineSettings.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\IOutlineSettings.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\IOutlineSettings.cs.meta
+        projectPath: Packages\UnityFx.Outline\Runtime\Scripts\IOutlineSettings.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineBehaviour.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineBehaviour.cs
+        projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineBehaviour.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineBehaviour.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineBehaviour.cs.meta
+        projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineBehaviour.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineBuilder.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineBuilder.cs
+        projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineBuilder.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineBuilder.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineBuilder.cs.meta
+        projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineBuilder.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineEffect.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineEffect.cs
+        projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineEffect.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineEffect.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineEffect.cs.meta
+        projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineEffect.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineFilterMode.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineFilterMode.cs
+        projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineFilterMode.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineFilterMode.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineFilterMode.cs.meta
+        projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineFilterMode.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineLayer.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineLayer.cs
+        projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineLayer.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineLayer.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineLayer.cs.meta
+        projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineLayer.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineLayerCollection.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineLayerCollection.cs
+        projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineLayerCollection.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineLayerCollection.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineLayerCollection.cs.meta
+        projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineLayerCollection.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineResources.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineResources.cs
+        projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineResources.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineResources.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineResources.cs.meta
+        projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineResources.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettings.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettings.cs
+        projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettings.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettings.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettings.cs.meta
+        projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettings.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsExtensions.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsExtensions.cs
+        projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsExtensions.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsExtensions.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsExtensions.cs.meta
+        projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsExtensions.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsInstance.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsInstance.cs
+        projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsInstance.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsInstance.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsInstance.cs.meta
+        projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsInstance.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsWithLayerMask.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsWithLayerMask.cs
+        projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsWithLayerMask.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsWithLayerMask.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsWithLayerMask.cs.meta
+        projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsWithLayerMask.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\Properties.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\Properties.meta
+        projectPath: Packages\UnityFx.Outline\Runtime\Scripts\Properties.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\Properties\AssemblyInfo.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\Properties\AssemblyInfo.cs
+        projectPath: Packages\UnityFx.Outline\Runtime\Scripts\Properties\AssemblyInfo.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\Properties\AssemblyInfo.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\Properties\AssemblyInfo.cs.meta
+        projectPath: Packages\UnityFx.Outline\Runtime\Scripts\Properties\AssemblyInfo.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\Properties\Startup.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\Properties\Startup.cs
+        projectPath: Packages\UnityFx.Outline\Runtime\Scripts\Properties\Startup.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\Properties\Startup.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\Properties\Startup.cs.meta
+        projectPath: Packages\UnityFx.Outline\Runtime\Scripts\Properties\Startup.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\Rendering.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\Rendering.meta
+        projectPath: Packages\UnityFx.Outline\Runtime\Scripts\Rendering.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderFlags.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderFlags.cs
+        projectPath: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderFlags.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderFlags.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderFlags.cs.meta
+        projectPath: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderFlags.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderObject.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderObject.cs
+        projectPath: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderObject.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderObject.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderObject.cs.meta
+        projectPath: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderObject.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderer.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderer.cs
+        projectPath: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderer.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderer.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderer.cs.meta
+        projectPath: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderer.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRendererCollection.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRendererCollection.cs
+        projectPath: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRendererCollection.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRendererCollection.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRendererCollection.cs.meta
+        projectPath: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRendererCollection.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Runtime\Shaders.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Shaders.meta
+        projectPath: Packages\UnityFx.Outline\Runtime\Shaders.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Runtime\Shaders\Outline.shader
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Shaders\Outline.shader
+        projectPath: Packages\UnityFx.Outline\Runtime\Shaders\Outline.shader
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Runtime\Shaders\Outline.shader.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Shaders\Outline.shader.meta
+        projectPath: Packages\UnityFx.Outline\Runtime\Shaders\Outline.shader.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Runtime\Shaders\OutlineColor.shader
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Shaders\OutlineColor.shader
+        projectPath: Packages\UnityFx.Outline\Runtime\Shaders\OutlineColor.shader
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Runtime\Shaders\OutlineColor.shader.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Shaders\OutlineColor.shader.meta
+        projectPath: Packages\UnityFx.Outline\Runtime\Shaders\OutlineColor.shader.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Runtime\UnityFx.Outline.asmdef
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\UnityFx.Outline.asmdef
+        projectPath: Packages\UnityFx.Outline\Runtime\UnityFx.Outline.asmdef
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\Runtime\UnityFx.Outline.asmdef.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\UnityFx.Outline.asmdef.meta
+        projectPath: Packages\UnityFx.Outline\Runtime\UnityFx.Outline.asmdef.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\package.json
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\package.json
+        projectPath: Packages\UnityFx.Outline\package.json
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\UnityFx.Outline\package.json.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\package.json.meta
+        projectPath: Packages\UnityFx.Outline\package.json.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\packages-lock.json
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\packages-lock.json
+        projectPath: Packages\packages-lock.json
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: UserSettings\Layouts\default-2022.dwlt
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\Layouts\default-2022.dwlt
+        projectPath: UserSettings\Layouts\default-2022.dwlt
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+    - commitID: b5664c8336c0050a71abc13f94cd3b0d6e1d9897
+      mergeA: 
+      mergeB: 
+      authorName: Valus-gh
+      authorEmail: simone.belingheri25@gmail.com
+      commitEmail: simone.belingheri25@gmail.com
+      commitName: Valus-gh
+      summary: Added WeaponBarHUDController code, added shooting stage code for showing
+        weapon bar
+      description: Added WeaponBarHUDController code, added shooting stage code for
+        showing weapon bar
+      timeString: 2025-05-17T21:21:33.000+02:00
+      commitTimeString: 2025-05-17T21:21:33.000+02:00
+      changes:
+      - path: Assets\Game\Prefabs\Interaction\WeaponBarHUD.prefab
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Interaction\WeaponBarHUD.prefab
+        projectPath: Assets\Game\Prefabs\Interaction\WeaponBarHUD.prefab
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Prefabs\Interaction\WeaponBarHUD.prefab.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Interaction\WeaponBarHUD.prefab.meta
+        projectPath: Assets\Game\Prefabs\Interaction\WeaponBarHUD.prefab.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Prefabs\Stages\StageManager.prefab
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Stages\StageManager.prefab
+        projectPath: Assets\Game\Prefabs\Stages\StageManager.prefab
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Game\Prefabs\Stages\StageTransition_Loading.prefab
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Stages\StageTransition_Loading.prefab
+        projectPath: Assets\Game\Prefabs\Stages\StageTransition_Loading.prefab
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Interaction\SelectionHUDController.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\SelectionHUDController.cs
+        projectPath: Assets\Game\Scripts\Interaction\SelectionHUDController.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Interaction\WeaponBarHUD.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\WeaponBarHUD.cs
+        projectPath: Assets\Game\Scripts\Interaction\WeaponBarHUD.cs
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Interaction\WeaponBarHUDController.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\WeaponBarHUDController.cs
+        projectPath: Assets\Game\Scripts\Interaction\WeaponBarHUDController.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Interaction\WeaponBarHUDController.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\WeaponBarHUDController.cs.meta
+        projectPath: Assets\Game\Scripts\Interaction\WeaponBarHUDController.cs.meta
+        originalPath: Assets\Game\Scripts\Interaction\WeaponBarHUD.cs.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Inventory.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Inventory.cs
+        projectPath: Assets\Game\Scripts\Inventory.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Networking\NetworkRoomPlayerV3D.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Networking\NetworkRoomPlayerV3D.cs
+        projectPath: Assets\Game\Scripts\Networking\NetworkRoomPlayerV3D.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Player.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Player.cs
+        projectPath: Assets\Game\Scripts\Player.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Stages\ConnectionStage.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\ConnectionStage.cs
+        projectPath: Assets\Game\Scripts\Stages\ConnectionStage.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Stages\SelectionStage.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\SelectionStage.cs
+        projectPath: Assets\Game\Scripts\Stages\SelectionStage.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Stages\ShootingStage.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\ShootingStage.cs
+        projectPath: Assets\Game\Scripts\Stages\ShootingStage.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Stages\StageManager.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\StageManager.cs
+        projectPath: Assets\Game\Scripts\Stages\StageManager.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Resources\UI\weapon-picker-bar.uxml
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\weapon-picker-bar.uxml
+        projectPath: Assets\Resources\UI\weapon-picker-bar.uxml
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Resources\UI\weapon-picker-button.uxml
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\weapon-picker-button.uxml
+        projectPath: Assets\Resources\UI\weapon-picker-button.uxml
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Scenes\HomeScene.unity
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\HomeScene.unity
+        projectPath: Assets\Scenes\HomeScene.unity
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: UserSettings\Layouts\default-2022.dwlt
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\Layouts\default-2022.dwlt
+        projectPath: UserSettings\Layouts\default-2022.dwlt
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+    - commitID: 1c6c2fc987c6ba3b7e7f834610bec7e2ecfb5d11
+      mergeA: 
+      mergeB: 
+      authorName: Valus-gh
+      authorEmail: simone.belingheri25@gmail.com
+      commitEmail: simone.belingheri25@gmail.com
+      commitName: Valus-gh
+      summary: Created WeaponBarHUD and WeaponBarButton. Added class stumps for both.
+        TODO spawn and hold multiple towers per player.
+      description: Created WeaponBarHUD and WeaponBarButton. Added class stumps for
+        both. TODO spawn and hold multiple towers per player.
+      timeString: 2025-05-13T10:49:46.000+02:00
+      commitTimeString: 2025-05-13T10:49:46.000+02:00
+      changes:
+      - path: Assets\Demo\BasicWorldInitializer.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Demo\BasicWorldInitializer.cs
+        projectPath: Assets\Demo\BasicWorldInitializer.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Interaction\TowerControlsMultiplayer.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\TowerControlsMultiplayer.cs
+        projectPath: Assets\Game\Scripts\Interaction\TowerControlsMultiplayer.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Interaction\TowerSelector_Click.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\TowerSelector_Click.cs
+        projectPath: Assets\Game\Scripts\Interaction\TowerSelector_Click.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Interaction\TowerSelector_Click.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\TowerSelector_Click.cs.meta
+        projectPath: Assets\Game\Scripts\Interaction\TowerSelector_Click.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Interaction\WeaponBarHUD.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\WeaponBarHUD.cs
+        projectPath: Assets\Game\Scripts\Interaction\WeaponBarHUD.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Interaction\WeaponBarHUD.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\WeaponBarHUD.cs.meta
+        projectPath: Assets\Game\Scripts\Interaction\WeaponBarHUD.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Networking\NetworkRoomPlayerV3D.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Networking\NetworkRoomPlayerV3D.cs
+        projectPath: Assets\Game\Scripts\Networking\NetworkRoomPlayerV3D.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\PlayerTower.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\PlayerTower.cs
+        projectPath: Assets\Game\Scripts\PlayerTower.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Stages\ShootingStage.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\ShootingStage.cs
+        projectPath: Assets\Game\Scripts\Stages\ShootingStage.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Weapons\Projectile.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Weapons\Projectile.cs
+        projectPath: Assets\Game\Scripts\Weapons\Projectile.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Resources\UI\weapon-picker-bar.uxml
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\weapon-picker-bar.uxml
+        projectPath: Assets\Resources\UI\weapon-picker-bar.uxml
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Resources\UI\weapon-picker-bar.uxml.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\weapon-picker-bar.uxml.meta
+        projectPath: Assets\Resources\UI\weapon-picker-bar.uxml.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Resources\UI\weapon-picker-button.uxml
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\weapon-picker-button.uxml
+        projectPath: Assets\Resources\UI\weapon-picker-button.uxml
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Resources\UI\weapon-picker-button.uxml.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\weapon-picker-button.uxml.meta
+        projectPath: Assets\Resources\UI\weapon-picker-button.uxml.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Resources\UI\weapon-purchase-button.uxml
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\weapon-purchase-button.uxml
+        projectPath: Assets\Resources\UI\weapon-purchase-button.uxml
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Resources\UI\weapon-purchase-hud.uxml
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\weapon-purchase-hud.uxml
+        projectPath: Assets\Resources\UI\weapon-purchase-hud.uxml
+        originalPath: Assets\Resources\UI\SelectionStage_Tabview.uxml
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Resources\UI\weapon-purchase-hud.uxml.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\weapon-purchase-hud.uxml.meta
+        projectPath: Assets\Resources\UI\weapon-purchase-hud.uxml.meta
+        originalPath: Assets\Resources\UI\SelectionStage_Tabview.uxml.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Scenes\HomeScene.unity
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\HomeScene.unity
+        projectPath: Assets\Scenes\HomeScene.unity
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: UIElementsSchema\GlobalNamespace.xsd
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UIElementsSchema\GlobalNamespace.xsd
+        projectPath: UIElementsSchema\GlobalNamespace.xsd
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: UIElementsSchema\UIElements.xsd
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UIElementsSchema\UIElements.xsd
+        projectPath: UIElementsSchema\UIElements.xsd
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: UIElementsSchema\Unity.Profiling.Editor.xsd
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UIElementsSchema\Unity.Profiling.Editor.xsd
+        projectPath: UIElementsSchema\Unity.Profiling.Editor.xsd
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: UIElementsSchema\Unity.UI.Builder.xsd
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UIElementsSchema\Unity.UI.Builder.xsd
+        projectPath: UIElementsSchema\Unity.UI.Builder.xsd
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: UIElementsSchema\UnityEditor.Experimental.GraphView.xsd
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UIElementsSchema\UnityEditor.Experimental.GraphView.xsd
+        projectPath: UIElementsSchema\UnityEditor.Experimental.GraphView.xsd
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: UIElementsSchema\UnityEditor.Overlays.xsd
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UIElementsSchema\UnityEditor.Overlays.xsd
+        projectPath: UIElementsSchema\UnityEditor.Overlays.xsd
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: UIElementsSchema\UnityEditor.PackageManager.UI.Internal.xsd
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UIElementsSchema\UnityEditor.PackageManager.UI.Internal.xsd
+        projectPath: UIElementsSchema\UnityEditor.PackageManager.UI.Internal.xsd
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: UIElementsSchema\UnityEditor.Rendering.LookDev.xsd
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UIElementsSchema\UnityEditor.Rendering.LookDev.xsd
+        projectPath: UIElementsSchema\UnityEditor.Rendering.LookDev.xsd
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: UIElementsSchema\UnityEditor.Search.xsd
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UIElementsSchema\UnityEditor.Search.xsd
+        projectPath: UIElementsSchema\UnityEditor.Search.xsd
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: UIElementsSchema\UnityEditor.ShaderGraph.Drawing.xsd
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UIElementsSchema\UnityEditor.ShaderGraph.Drawing.xsd
+        projectPath: UIElementsSchema\UnityEditor.ShaderGraph.Drawing.xsd
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: UIElementsSchema\UnityEditor.ShortcutManagement.xsd
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UIElementsSchema\UnityEditor.ShortcutManagement.xsd
+        projectPath: UIElementsSchema\UnityEditor.ShortcutManagement.xsd
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: UIElementsSchema\UnityEditor.UIElements.Debugger.xsd
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UIElementsSchema\UnityEditor.UIElements.Debugger.xsd
+        projectPath: UIElementsSchema\UnityEditor.UIElements.Debugger.xsd
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: UIElementsSchema\UnityEditor.UIElements.xsd
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UIElementsSchema\UnityEditor.UIElements.xsd
+        projectPath: UIElementsSchema\UnityEditor.UIElements.xsd
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: UIElementsSchema\UnityEngine.UIElements.xsd
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UIElementsSchema\UnityEngine.UIElements.xsd
+        projectPath: UIElementsSchema\UnityEngine.UIElements.xsd
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: UserSettings\Layouts\default-2022.dwlt
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\Layouts\default-2022.dwlt
+        projectPath: UserSettings\Layouts\default-2022.dwlt
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
     - commitID: 1a83e50dd71aa7cf81ab80d7149bf26171505455
       mergeA: 
       mergeB: 
@@ -50354,14 +51897,944 @@ MonoBehaviour:
         workTreeStatus: 0
     statusAhead: 0
     lastLogChangedEvent:
-      updatedTimeString: 2025-05-13T10:48:06.599+02:00
+      updatedTimeString: 2025-05-23T11:32:49.076+02:00
       cacheType: 3
     lastTrackingStatusChangedEvent:
-      updatedTimeString: 2025-05-13T10:48:06.578+02:00
+      updatedTimeString: 2025-05-23T11:32:49.060+02:00
       cacheType: 5
     historyControl:
-      scroll: {x: 0, y: 0}
+      scroll: {x: 0, y: 280}
       entries:
+      - commitID: 7a4f5a49ad88a5a251430a4fa67c73120ec494d1
+        mergeA: 
+        mergeB: 
+        authorName: Valus-gh
+        authorEmail: simone.belingheri25@gmail.com
+        commitEmail: simone.belingheri25@gmail.com
+        commitName: Valus-gh
+        summary: Pre-merge commit
+        description: Pre-merge commit - added link between hud controller and select
+          weapon method. Need to tell server to change weapon on its side.
+        timeString: 2025-05-23T11:32:34.000+02:00
+        commitTimeString: 2025-05-23T11:32:34.000+02:00
+        changes:
+        - path: Assets\Game\Prefabs\Stages\StageManager.prefab
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Stages\StageManager.prefab
+          projectPath: Assets\Game\Prefabs\Stages\StageManager.prefab
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Interaction\TowerSelector_Click.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\TowerSelector_Click.cs
+          projectPath: Assets\Game\Scripts\Interaction\TowerSelector_Click.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Interaction\WeaponBarHUDController.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\WeaponBarHUDController.cs
+          projectPath: Assets\Game\Scripts\Interaction\WeaponBarHUDController.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Stages\ShootingStage.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\ShootingStage.cs
+          projectPath: Assets\Game\Scripts\Stages\ShootingStage.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: ProjectSettings\ProjectSettings.asset
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\ProjectSettings\ProjectSettings.asset
+          projectPath: ProjectSettings\ProjectSettings.asset
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: UserSettings\Layouts\default-2022.dwlt
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\Layouts\default-2022.dwlt
+          projectPath: UserSettings\Layouts\default-2022.dwlt
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - commitID: 116b1efd6de9c42f52eed8e2fd810ffbc3f444f3
+        mergeA: 
+        mergeB: 
+        authorName: Valus-gh
+        authorEmail: simone.belingheri25@gmail.com
+        commitEmail: simone.belingheri25@gmail.com
+        commitName: Valus-gh
+        summary: Added TowerSelector, TowerSelector_:Click
+        description: Added TowerSelector, TowerSelector_:Click. Modified logic to
+          select weapon in shootingstage
+        timeString: 2025-05-18T11:08:18.000+02:00
+        commitTimeString: 2025-05-18T11:08:18.000+02:00
+        changes:
+        - path: Assets\Game\Prefabs\PlayerTower.prefab
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\PlayerTower.prefab
+          projectPath: Assets\Game\Prefabs\PlayerTower.prefab
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Game\Prefabs\Stages\StageManager.prefab
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Stages\StageManager.prefab
+          projectPath: Assets\Game\Prefabs\Stages\StageManager.prefab
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Interaction\TowerSelector.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\TowerSelector.cs
+          projectPath: Assets\Game\Scripts\Interaction\TowerSelector.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Interaction\TowerSelector.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\TowerSelector.cs.meta
+          projectPath: Assets\Game\Scripts\Interaction\TowerSelector.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Interaction\TowerSelector_Click.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\TowerSelector_Click.cs
+          projectPath: Assets\Game\Scripts\Interaction\TowerSelector_Click.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Stages\ShootingStage.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\ShootingStage.cs
+          projectPath: Assets\Game\Scripts\Stages\ShootingStage.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: ProjectSettings\TagManager.asset
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\ProjectSettings\TagManager.asset
+          projectPath: ProjectSettings\TagManager.asset
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: UserSettings\Layouts\default-2022.dwlt
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\Layouts\default-2022.dwlt
+          projectPath: UserSettings\Layouts\default-2022.dwlt
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - commitID: d3a2d89ab770c24b0e1d74d2bbe4088b6fff23de
+        mergeA: 
+        mergeB: 
+        authorName: Valus-gh
+        authorEmail: simone.belingheri25@gmail.com
+        commitEmail: simone.belingheri25@gmail.com
+        commitName: Valus-gh
+        summary: Added UnityFX.Outline for tower selection
+        description: Added UnityFX.Outline for tower selection
+        timeString: 2025-05-17T21:36:09.000+02:00
+        commitTimeString: 2025-05-17T21:36:09.000+02:00
+        changes:
+        - path: Packages\UnityFx.Outline\CHANGELOG.md
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\CHANGELOG.md
+          projectPath: Packages\UnityFx.Outline\CHANGELOG.md
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\CHANGELOG.md.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\CHANGELOG.md.meta
+          projectPath: Packages\UnityFx.Outline\CHANGELOG.md.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Editor.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor.meta
+          projectPath: Packages\UnityFx.Outline\Editor.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Editor\Scripts.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\Scripts.meta
+          projectPath: Packages\UnityFx.Outline\Editor\Scripts.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Editor\Scripts\OutlineBehaviourEditor.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\Scripts\OutlineBehaviourEditor.cs
+          projectPath: Packages\UnityFx.Outline\Editor\Scripts\OutlineBehaviourEditor.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Editor\Scripts\OutlineBehaviourEditor.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\Scripts\OutlineBehaviourEditor.cs.meta
+          projectPath: Packages\UnityFx.Outline\Editor\Scripts\OutlineBehaviourEditor.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Editor\Scripts\OutlineBuilderEditor.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\Scripts\OutlineBuilderEditor.cs
+          projectPath: Packages\UnityFx.Outline\Editor\Scripts\OutlineBuilderEditor.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Editor\Scripts\OutlineBuilderEditor.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\Scripts\OutlineBuilderEditor.cs.meta
+          projectPath: Packages\UnityFx.Outline\Editor\Scripts\OutlineBuilderEditor.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Editor\Scripts\OutlineEditorUtility.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\Scripts\OutlineEditorUtility.cs
+          projectPath: Packages\UnityFx.Outline\Editor\Scripts\OutlineEditorUtility.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Editor\Scripts\OutlineEditorUtility.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\Scripts\OutlineEditorUtility.cs.meta
+          projectPath: Packages\UnityFx.Outline\Editor\Scripts\OutlineEditorUtility.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Editor\Scripts\OutlineEffectEditor.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\Scripts\OutlineEffectEditor.cs
+          projectPath: Packages\UnityFx.Outline\Editor\Scripts\OutlineEffectEditor.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Editor\Scripts\OutlineEffectEditor.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\Scripts\OutlineEffectEditor.cs.meta
+          projectPath: Packages\UnityFx.Outline\Editor\Scripts\OutlineEffectEditor.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Editor\Scripts\OutlineLayerCollectionEditor.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\Scripts\OutlineLayerCollectionEditor.cs
+          projectPath: Packages\UnityFx.Outline\Editor\Scripts\OutlineLayerCollectionEditor.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Editor\Scripts\OutlineLayerCollectionEditor.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\Scripts\OutlineLayerCollectionEditor.cs.meta
+          projectPath: Packages\UnityFx.Outline\Editor\Scripts\OutlineLayerCollectionEditor.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsEditor.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsEditor.cs
+          projectPath: Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsEditor.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsEditor.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsEditor.cs.meta
+          projectPath: Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsEditor.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsInstanceDrawer.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsInstanceDrawer.cs
+          projectPath: Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsInstanceDrawer.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsInstanceDrawer.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsInstanceDrawer.cs.meta
+          projectPath: Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsInstanceDrawer.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsWithLayerMaskDrawer.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsWithLayerMaskDrawer.cs
+          projectPath: Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsWithLayerMaskDrawer.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsWithLayerMaskDrawer.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsWithLayerMaskDrawer.cs.meta
+          projectPath: Packages\UnityFx.Outline\Editor\Scripts\OutlineSettingsWithLayerMaskDrawer.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Editor\UnityFx.Outline.Editor.asmdef
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\UnityFx.Outline.Editor.asmdef
+          projectPath: Packages\UnityFx.Outline\Editor\UnityFx.Outline.Editor.asmdef
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Editor\UnityFx.Outline.Editor.asmdef.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Editor\UnityFx.Outline.Editor.asmdef.meta
+          projectPath: Packages\UnityFx.Outline\Editor\UnityFx.Outline.Editor.asmdef.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\README.md
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\README.md
+          projectPath: Packages\UnityFx.Outline\README.md
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\README.md.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\README.md.meta
+          projectPath: Packages\UnityFx.Outline\README.md.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Runtime.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime.meta
+          projectPath: Packages\UnityFx.Outline\Runtime.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Runtime\Prefabs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Prefabs.meta
+          projectPath: Packages\UnityFx.Outline\Runtime\Prefabs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Runtime\Prefabs\OutlineResources.asset
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Prefabs\OutlineResources.asset
+          projectPath: Packages\UnityFx.Outline\Runtime\Prefabs\OutlineResources.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Runtime\Prefabs\OutlineResources.asset.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Prefabs\OutlineResources.asset.meta
+          projectPath: Packages\UnityFx.Outline\Runtime\Prefabs\OutlineResources.asset.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Runtime\Scripts.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts.meta
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Runtime\Scripts\IOutlineSettings.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\IOutlineSettings.cs
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\IOutlineSettings.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Runtime\Scripts\IOutlineSettings.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\IOutlineSettings.cs.meta
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\IOutlineSettings.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineBehaviour.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineBehaviour.cs
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineBehaviour.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineBehaviour.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineBehaviour.cs.meta
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineBehaviour.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineBuilder.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineBuilder.cs
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineBuilder.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineBuilder.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineBuilder.cs.meta
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineBuilder.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineEffect.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineEffect.cs
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineEffect.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineEffect.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineEffect.cs.meta
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineEffect.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineFilterMode.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineFilterMode.cs
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineFilterMode.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineFilterMode.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineFilterMode.cs.meta
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineFilterMode.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineLayer.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineLayer.cs
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineLayer.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineLayer.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineLayer.cs.meta
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineLayer.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineLayerCollection.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineLayerCollection.cs
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineLayerCollection.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineLayerCollection.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineLayerCollection.cs.meta
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineLayerCollection.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineResources.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineResources.cs
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineResources.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineResources.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineResources.cs.meta
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineResources.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettings.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettings.cs
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettings.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettings.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettings.cs.meta
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettings.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsExtensions.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsExtensions.cs
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsExtensions.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsExtensions.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsExtensions.cs.meta
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsExtensions.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsInstance.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsInstance.cs
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsInstance.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsInstance.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsInstance.cs.meta
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsInstance.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsWithLayerMask.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsWithLayerMask.cs
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsWithLayerMask.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsWithLayerMask.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsWithLayerMask.cs.meta
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\OutlineSettingsWithLayerMask.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Runtime\Scripts\Properties.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\Properties.meta
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\Properties.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Runtime\Scripts\Properties\AssemblyInfo.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\Properties\AssemblyInfo.cs
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\Properties\AssemblyInfo.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Runtime\Scripts\Properties\AssemblyInfo.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\Properties\AssemblyInfo.cs.meta
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\Properties\AssemblyInfo.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Runtime\Scripts\Properties\Startup.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\Properties\Startup.cs
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\Properties\Startup.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Runtime\Scripts\Properties\Startup.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\Properties\Startup.cs.meta
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\Properties\Startup.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Runtime\Scripts\Rendering.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\Rendering.meta
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\Rendering.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderFlags.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderFlags.cs
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderFlags.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderFlags.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderFlags.cs.meta
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderFlags.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderObject.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderObject.cs
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderObject.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderObject.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderObject.cs.meta
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderObject.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderer.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderer.cs
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderer.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderer.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderer.cs.meta
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRenderer.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRendererCollection.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRendererCollection.cs
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRendererCollection.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRendererCollection.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRendererCollection.cs.meta
+          projectPath: Packages\UnityFx.Outline\Runtime\Scripts\Rendering\OutlineRendererCollection.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Runtime\Shaders.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Shaders.meta
+          projectPath: Packages\UnityFx.Outline\Runtime\Shaders.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Runtime\Shaders\Outline.shader
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Shaders\Outline.shader
+          projectPath: Packages\UnityFx.Outline\Runtime\Shaders\Outline.shader
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Runtime\Shaders\Outline.shader.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Shaders\Outline.shader.meta
+          projectPath: Packages\UnityFx.Outline\Runtime\Shaders\Outline.shader.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Runtime\Shaders\OutlineColor.shader
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Shaders\OutlineColor.shader
+          projectPath: Packages\UnityFx.Outline\Runtime\Shaders\OutlineColor.shader
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Runtime\Shaders\OutlineColor.shader.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\Shaders\OutlineColor.shader.meta
+          projectPath: Packages\UnityFx.Outline\Runtime\Shaders\OutlineColor.shader.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Runtime\UnityFx.Outline.asmdef
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\UnityFx.Outline.asmdef
+          projectPath: Packages\UnityFx.Outline\Runtime\UnityFx.Outline.asmdef
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\Runtime\UnityFx.Outline.asmdef.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\Runtime\UnityFx.Outline.asmdef.meta
+          projectPath: Packages\UnityFx.Outline\Runtime\UnityFx.Outline.asmdef.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\package.json
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\package.json
+          projectPath: Packages\UnityFx.Outline\package.json
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\UnityFx.Outline\package.json.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\UnityFx.Outline\package.json.meta
+          projectPath: Packages\UnityFx.Outline\package.json.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\packages-lock.json
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\packages-lock.json
+          projectPath: Packages\packages-lock.json
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: UserSettings\Layouts\default-2022.dwlt
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\Layouts\default-2022.dwlt
+          projectPath: UserSettings\Layouts\default-2022.dwlt
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - commitID: b5664c8336c0050a71abc13f94cd3b0d6e1d9897
+        mergeA: 
+        mergeB: 
+        authorName: Valus-gh
+        authorEmail: simone.belingheri25@gmail.com
+        commitEmail: simone.belingheri25@gmail.com
+        commitName: Valus-gh
+        summary: Added WeaponBarHUDController code, added shooting stage code for
+          showing weapon bar
+        description: Added WeaponBarHUDController code, added shooting stage code
+          for showing weapon bar
+        timeString: 2025-05-17T21:21:33.000+02:00
+        commitTimeString: 2025-05-17T21:21:33.000+02:00
+        changes:
+        - path: Assets\Game\Prefabs\Interaction\WeaponBarHUD.prefab
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Interaction\WeaponBarHUD.prefab
+          projectPath: Assets\Game\Prefabs\Interaction\WeaponBarHUD.prefab
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\Prefabs\Interaction\WeaponBarHUD.prefab.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Interaction\WeaponBarHUD.prefab.meta
+          projectPath: Assets\Game\Prefabs\Interaction\WeaponBarHUD.prefab.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\Prefabs\Stages\StageManager.prefab
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Stages\StageManager.prefab
+          projectPath: Assets\Game\Prefabs\Stages\StageManager.prefab
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Game\Prefabs\Stages\StageTransition_Loading.prefab
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Stages\StageTransition_Loading.prefab
+          projectPath: Assets\Game\Prefabs\Stages\StageTransition_Loading.prefab
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Interaction\SelectionHUDController.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\SelectionHUDController.cs
+          projectPath: Assets\Game\Scripts\Interaction\SelectionHUDController.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Interaction\WeaponBarHUD.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\WeaponBarHUD.cs
+          projectPath: Assets\Game\Scripts\Interaction\WeaponBarHUD.cs
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Interaction\WeaponBarHUDController.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\WeaponBarHUDController.cs
+          projectPath: Assets\Game\Scripts\Interaction\WeaponBarHUDController.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Interaction\WeaponBarHUDController.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\WeaponBarHUDController.cs.meta
+          projectPath: Assets\Game\Scripts\Interaction\WeaponBarHUDController.cs.meta
+          originalPath: Assets\Game\Scripts\Interaction\WeaponBarHUD.cs.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Inventory.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Inventory.cs
+          projectPath: Assets\Game\Scripts\Inventory.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Networking\NetworkRoomPlayerV3D.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Networking\NetworkRoomPlayerV3D.cs
+          projectPath: Assets\Game\Scripts\Networking\NetworkRoomPlayerV3D.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Player.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Player.cs
+          projectPath: Assets\Game\Scripts\Player.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Stages\ConnectionStage.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\ConnectionStage.cs
+          projectPath: Assets\Game\Scripts\Stages\ConnectionStage.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Stages\SelectionStage.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\SelectionStage.cs
+          projectPath: Assets\Game\Scripts\Stages\SelectionStage.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Stages\ShootingStage.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\ShootingStage.cs
+          projectPath: Assets\Game\Scripts\Stages\ShootingStage.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Stages\StageManager.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\StageManager.cs
+          projectPath: Assets\Game\Scripts\Stages\StageManager.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Resources\UI\weapon-picker-bar.uxml
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\weapon-picker-bar.uxml
+          projectPath: Assets\Resources\UI\weapon-picker-bar.uxml
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Resources\UI\weapon-picker-button.uxml
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\weapon-picker-button.uxml
+          projectPath: Assets\Resources\UI\weapon-picker-button.uxml
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Scenes\HomeScene.unity
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\HomeScene.unity
+          projectPath: Assets\Scenes\HomeScene.unity
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: UserSettings\Layouts\default-2022.dwlt
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\Layouts\default-2022.dwlt
+          projectPath: UserSettings\Layouts\default-2022.dwlt
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - commitID: 1c6c2fc987c6ba3b7e7f834610bec7e2ecfb5d11
+        mergeA: 
+        mergeB: 
+        authorName: Valus-gh
+        authorEmail: simone.belingheri25@gmail.com
+        commitEmail: simone.belingheri25@gmail.com
+        commitName: Valus-gh
+        summary: Created WeaponBarHUD and WeaponBarButton. Added class stumps for
+          both. TODO spawn and hold multiple towers per player.
+        description: Created WeaponBarHUD and WeaponBarButton. Added class stumps
+          for both. TODO spawn and hold multiple towers per player.
+        timeString: 2025-05-13T10:49:46.000+02:00
+        commitTimeString: 2025-05-13T10:49:46.000+02:00
+        changes:
+        - path: Assets\Demo\BasicWorldInitializer.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Demo\BasicWorldInitializer.cs
+          projectPath: Assets\Demo\BasicWorldInitializer.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Interaction\TowerControlsMultiplayer.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\TowerControlsMultiplayer.cs
+          projectPath: Assets\Game\Scripts\Interaction\TowerControlsMultiplayer.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Interaction\TowerSelector_Click.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\TowerSelector_Click.cs
+          projectPath: Assets\Game\Scripts\Interaction\TowerSelector_Click.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Interaction\TowerSelector_Click.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\TowerSelector_Click.cs.meta
+          projectPath: Assets\Game\Scripts\Interaction\TowerSelector_Click.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Interaction\WeaponBarHUD.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\WeaponBarHUD.cs
+          projectPath: Assets\Game\Scripts\Interaction\WeaponBarHUD.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Interaction\WeaponBarHUD.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\WeaponBarHUD.cs.meta
+          projectPath: Assets\Game\Scripts\Interaction\WeaponBarHUD.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Networking\NetworkRoomPlayerV3D.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Networking\NetworkRoomPlayerV3D.cs
+          projectPath: Assets\Game\Scripts\Networking\NetworkRoomPlayerV3D.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\PlayerTower.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\PlayerTower.cs
+          projectPath: Assets\Game\Scripts\PlayerTower.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Stages\ShootingStage.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\ShootingStage.cs
+          projectPath: Assets\Game\Scripts\Stages\ShootingStage.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Weapons\Projectile.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Weapons\Projectile.cs
+          projectPath: Assets\Game\Scripts\Weapons\Projectile.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Resources\UI\weapon-picker-bar.uxml
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\weapon-picker-bar.uxml
+          projectPath: Assets\Resources\UI\weapon-picker-bar.uxml
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Resources\UI\weapon-picker-bar.uxml.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\weapon-picker-bar.uxml.meta
+          projectPath: Assets\Resources\UI\weapon-picker-bar.uxml.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Resources\UI\weapon-picker-button.uxml
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\weapon-picker-button.uxml
+          projectPath: Assets\Resources\UI\weapon-picker-button.uxml
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Resources\UI\weapon-picker-button.uxml.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\weapon-picker-button.uxml.meta
+          projectPath: Assets\Resources\UI\weapon-picker-button.uxml.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Resources\UI\weapon-purchase-button.uxml
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\weapon-purchase-button.uxml
+          projectPath: Assets\Resources\UI\weapon-purchase-button.uxml
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Resources\UI\weapon-purchase-hud.uxml
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\weapon-purchase-hud.uxml
+          projectPath: Assets\Resources\UI\weapon-purchase-hud.uxml
+          originalPath: Assets\Resources\UI\SelectionStage_Tabview.uxml
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Resources\UI\weapon-purchase-hud.uxml.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\weapon-purchase-hud.uxml.meta
+          projectPath: Assets\Resources\UI\weapon-purchase-hud.uxml.meta
+          originalPath: Assets\Resources\UI\SelectionStage_Tabview.uxml.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Scenes\HomeScene.unity
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\HomeScene.unity
+          projectPath: Assets\Scenes\HomeScene.unity
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: UIElementsSchema\GlobalNamespace.xsd
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UIElementsSchema\GlobalNamespace.xsd
+          projectPath: UIElementsSchema\GlobalNamespace.xsd
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: UIElementsSchema\UIElements.xsd
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UIElementsSchema\UIElements.xsd
+          projectPath: UIElementsSchema\UIElements.xsd
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: UIElementsSchema\Unity.Profiling.Editor.xsd
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UIElementsSchema\Unity.Profiling.Editor.xsd
+          projectPath: UIElementsSchema\Unity.Profiling.Editor.xsd
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: UIElementsSchema\Unity.UI.Builder.xsd
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UIElementsSchema\Unity.UI.Builder.xsd
+          projectPath: UIElementsSchema\Unity.UI.Builder.xsd
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: UIElementsSchema\UnityEditor.Experimental.GraphView.xsd
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UIElementsSchema\UnityEditor.Experimental.GraphView.xsd
+          projectPath: UIElementsSchema\UnityEditor.Experimental.GraphView.xsd
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: UIElementsSchema\UnityEditor.Overlays.xsd
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UIElementsSchema\UnityEditor.Overlays.xsd
+          projectPath: UIElementsSchema\UnityEditor.Overlays.xsd
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: UIElementsSchema\UnityEditor.PackageManager.UI.Internal.xsd
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UIElementsSchema\UnityEditor.PackageManager.UI.Internal.xsd
+          projectPath: UIElementsSchema\UnityEditor.PackageManager.UI.Internal.xsd
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: UIElementsSchema\UnityEditor.Rendering.LookDev.xsd
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UIElementsSchema\UnityEditor.Rendering.LookDev.xsd
+          projectPath: UIElementsSchema\UnityEditor.Rendering.LookDev.xsd
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: UIElementsSchema\UnityEditor.Search.xsd
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UIElementsSchema\UnityEditor.Search.xsd
+          projectPath: UIElementsSchema\UnityEditor.Search.xsd
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: UIElementsSchema\UnityEditor.ShaderGraph.Drawing.xsd
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UIElementsSchema\UnityEditor.ShaderGraph.Drawing.xsd
+          projectPath: UIElementsSchema\UnityEditor.ShaderGraph.Drawing.xsd
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: UIElementsSchema\UnityEditor.ShortcutManagement.xsd
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UIElementsSchema\UnityEditor.ShortcutManagement.xsd
+          projectPath: UIElementsSchema\UnityEditor.ShortcutManagement.xsd
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: UIElementsSchema\UnityEditor.UIElements.Debugger.xsd
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UIElementsSchema\UnityEditor.UIElements.Debugger.xsd
+          projectPath: UIElementsSchema\UnityEditor.UIElements.Debugger.xsd
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: UIElementsSchema\UnityEditor.UIElements.xsd
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UIElementsSchema\UnityEditor.UIElements.xsd
+          projectPath: UIElementsSchema\UnityEditor.UIElements.xsd
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: UIElementsSchema\UnityEngine.UIElements.xsd
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UIElementsSchema\UnityEngine.UIElements.xsd
+          projectPath: UIElementsSchema\UnityEngine.UIElements.xsd
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: UserSettings\Layouts\default-2022.dwlt
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\Layouts\default-2022.dwlt
+          projectPath: UserSettings\Layouts\default-2022.dwlt
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
       - commitID: 1a83e50dd71aa7cf81ab80d7149bf26171505455
         mergeA: 
         mergeB: 
@@ -99118,20 +101591,20 @@ MonoBehaviour:
           indexStatus: 4
           workTreeStatus: 0
       statusAhead: 0
-      selectedIndex: 0
+      selectedIndex: 1
     selectedEntry:
-      commitID: 1a83e50dd71aa7cf81ab80d7149bf26171505455
+      commitID: 116b1efd6de9c42f52eed8e2fd810ffbc3f444f3
       mergeA: 
       mergeB: 
       authorName: Valus-gh
       authorEmail: simone.belingheri25@gmail.com
       commitEmail: simone.belingheri25@gmail.com
       commitName: Valus-gh
-      summary: Added Basic projectile automatic purchase, removed from shop
-      description: Added Basic projectile automatic purchase, removed from shop.
-        Fixed StageQueue size
-      timeString: 2025-05-11T11:49:39.000+02:00
-      commitTimeString: 2025-05-11T11:49:39.000+02:00
+      summary: Added TowerSelector, TowerSelector_:Click
+      description: Added TowerSelector, TowerSelector_:Click. Modified logic to select
+        weapon in shootingstage
+      timeString: 2025-05-18T11:08:18.000+02:00
+      commitTimeString: 2025-05-18T11:08:18.000+02:00
       changes:
       - path: Assets\Game\Prefabs\PlayerTower.prefab
         fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\PlayerTower.prefab
@@ -99139,33 +101612,27 @@ MonoBehaviour:
         originalPath: 
         indexStatus: 3
         workTreeStatus: 0
-      - path: Assets\Game\Scripts\Interaction\SelectionHUDController.cs
-        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\SelectionHUDController.cs
-        projectPath: Assets\Game\Scripts\Interaction\SelectionHUDController.cs
+      - path: Assets\Game\Prefabs\Stages\StageManager.prefab
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Stages\StageManager.prefab
+        projectPath: Assets\Game\Prefabs\Stages\StageManager.prefab
         originalPath: 
         indexStatus: 3
         workTreeStatus: 0
-      - path: Assets\Game\Scripts\Interaction\TowerControlsMultiplayer.cs
-        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\TowerControlsMultiplayer.cs
-        projectPath: Assets\Game\Scripts\Interaction\TowerControlsMultiplayer.cs
+      - path: Assets\Game\Scripts\Interaction\TowerSelector.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\TowerSelector.cs
+        projectPath: Assets\Game\Scripts\Interaction\TowerSelector.cs
         originalPath: 
-        indexStatus: 3
+        indexStatus: 4
         workTreeStatus: 0
-      - path: Assets\Game\Scripts\Interaction\TowerControlsMultiplayerKeyboard.cs
-        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\TowerControlsMultiplayerKeyboard.cs
-        projectPath: Assets\Game\Scripts\Interaction\TowerControlsMultiplayerKeyboard.cs
+      - path: Assets\Game\Scripts\Interaction\TowerSelector.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\TowerSelector.cs.meta
+        projectPath: Assets\Game\Scripts\Interaction\TowerSelector.cs.meta
         originalPath: 
-        indexStatus: 3
+        indexStatus: 4
         workTreeStatus: 0
-      - path: Assets\Game\Scripts\PlayerTower.cs
-        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\PlayerTower.cs
-        projectPath: Assets\Game\Scripts\PlayerTower.cs
-        originalPath: 
-        indexStatus: 3
-        workTreeStatus: 0
-      - path: Assets\Game\Scripts\Stages\SelectionStage.cs
-        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\SelectionStage.cs
-        projectPath: Assets\Game\Scripts\Stages\SelectionStage.cs
+      - path: Assets\Game\Scripts\Interaction\TowerSelector_Click.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\TowerSelector_Click.cs
+        projectPath: Assets\Game\Scripts\Interaction\TowerSelector_Click.cs
         originalPath: 
         indexStatus: 3
         workTreeStatus: 0
@@ -99175,35 +101642,11 @@ MonoBehaviour:
         originalPath: 
         indexStatus: 3
         workTreeStatus: 0
-      - path: Assets\Game\Scripts\Stages\StageManager.cs
-        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\StageManager.cs
-        projectPath: Assets\Game\Scripts\Stages\StageManager.cs
+      - path: ProjectSettings\TagManager.asset
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\ProjectSettings\TagManager.asset
+        projectPath: ProjectSettings\TagManager.asset
         originalPath: 
         indexStatus: 3
-        workTreeStatus: 0
-      - path: Assets\Game\Scripts\Stages\StageQueue.cs
-        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\StageQueue.cs
-        projectPath: Assets\Game\Scripts\Stages\StageQueue.cs
-        originalPath: 
-        indexStatus: 3
-        workTreeStatus: 0
-      - path: Assets\Resources\UI\SelectionStage_Tabview.uxml
-        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\SelectionStage_Tabview.uxml
-        projectPath: Assets\Resources\UI\SelectionStage_Tabview.uxml
-        originalPath: 
-        indexStatus: 3
-        workTreeStatus: 0
-      - path: Assets\Resources\UI\weapon-purchase-button.uxml
-        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\weapon-purchase-button.uxml
-        projectPath: Assets\Resources\UI\weapon-purchase-button.uxml
-        originalPath: Assets\Resources\UI\weapon-selection-button.uxml
-        indexStatus: 6
-        workTreeStatus: 0
-      - path: Assets\Resources\UI\weapon-purchase-button.uxml.meta
-        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\weapon-purchase-button.uxml.meta
-        projectPath: Assets\Resources\UI\weapon-purchase-button.uxml.meta
-        originalPath: Assets\Resources\UI\weapon-selection-button.uxml.meta
-        indexStatus: 6
         workTreeStatus: 0
       - path: UserSettings\Layouts\default-2022.dwlt
         fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\Layouts\default-2022.dwlt
@@ -99220,11 +101663,11 @@ MonoBehaviour:
         - Assets
         - Assets\Game
         - Assets\Game\Prefabs
+        - Assets\Game\Prefabs\Stages
         - Assets\Game\Scripts
         - Assets\Game\Scripts\Interaction
         - Assets\Game\Scripts\Stages
-        - Assets\Resources
-        - Assets\Resources\UI
+        - ProjectSettings
         - UserSettings
         - UserSettings\Layouts
         values:
@@ -99267,6 +101710,24 @@ MonoBehaviour:
         - path: Assets\Game\Prefabs
           label: Prefabs
           level: 2
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 0
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Game\Prefabs\Stages
+          label: Stages
+          level: 3
           isFolder: 1
           isContainer: 0
           isCollapsed: 0
@@ -99336,27 +101797,9 @@ MonoBehaviour:
             originalPath: 
             indexStatus: 0
             workTreeStatus: 0
-        - path: Assets\Resources
-          label: Resources
-          level: 1
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 0
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Resources\UI
-          label: UI
-          level: 2
+        - path: ProjectSettings
+          label: ProjectSettings
+          level: 0
           isFolder: 1
           isContainer: 0
           isCollapsed: 0
@@ -99508,6 +101951,42 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 3
           workTreeStatus: 0
+      - path: Assets\Game\Prefabs\Stages
+        label: Stages
+        level: 3
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets\Game\Prefabs\Stages\StageManager.prefab
+        label: StageManager.prefab
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Game\Prefabs\Stages\StageManager.prefab
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Stages\StageManager.prefab
+          projectPath: Assets\Game\Prefabs\Stages\StageManager.prefab
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
       - path: Assets\Game\Scripts
         label: Scripts
         level: 2
@@ -99544,8 +102023,44 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
-      - path: Assets\Game\Scripts\Interaction\SelectionHUDController.cs
-        label: SelectionHUDController.cs
+      - path: Assets\Game\Scripts\Interaction\TowerSelector.cs
+        label: TowerSelector.cs
+        level: 4
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Game\Scripts\Interaction\TowerSelector.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\TowerSelector.cs
+          projectPath: Assets\Game\Scripts\Interaction\TowerSelector.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+      - path: Assets\Game\Scripts\Interaction\TowerSelector.cs.meta
+        label: TowerSelector.cs.meta
+        level: 5
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Game\Scripts\Interaction\TowerSelector.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\TowerSelector.cs.meta
+          projectPath: Assets\Game\Scripts\Interaction\TowerSelector.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+      - path: Assets\Game\Scripts\Interaction\TowerSelector_Click.cs
+        label: TowerSelector_Click.cs
         level: 4
         isFolder: 0
         isContainer: 0
@@ -99556,63 +102071,9 @@ MonoBehaviour:
         checkState: 0
         isLocked: 0
         gitStatusEntry:
-          path: Assets\Game\Scripts\Interaction\SelectionHUDController.cs
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\SelectionHUDController.cs
-          projectPath: Assets\Game\Scripts\Interaction\SelectionHUDController.cs
-          originalPath: 
-          indexStatus: 3
-          workTreeStatus: 0
-      - path: Assets\Game\Scripts\Interaction\TowerControlsMultiplayer.cs
-        label: TowerControlsMultiplayer.cs
-        level: 4
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Game\Scripts\Interaction\TowerControlsMultiplayer.cs
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\TowerControlsMultiplayer.cs
-          projectPath: Assets\Game\Scripts\Interaction\TowerControlsMultiplayer.cs
-          originalPath: 
-          indexStatus: 3
-          workTreeStatus: 0
-      - path: Assets\Game\Scripts\Interaction\TowerControlsMultiplayerKeyboard.cs
-        label: TowerControlsMultiplayerKeyboard.cs
-        level: 4
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Game\Scripts\Interaction\TowerControlsMultiplayerKeyboard.cs
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\TowerControlsMultiplayerKeyboard.cs
-          projectPath: Assets\Game\Scripts\Interaction\TowerControlsMultiplayerKeyboard.cs
-          originalPath: 
-          indexStatus: 3
-          workTreeStatus: 0
-      - path: Assets\Game\Scripts\PlayerTower.cs
-        label: PlayerTower.cs
-        level: 3
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Game\Scripts\PlayerTower.cs
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\PlayerTower.cs
-          projectPath: Assets\Game\Scripts\PlayerTower.cs
+          path: Assets\Game\Scripts\Interaction\TowerSelector_Click.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\TowerSelector_Click.cs
+          projectPath: Assets\Game\Scripts\Interaction\TowerSelector_Click.cs
           originalPath: 
           indexStatus: 3
           workTreeStatus: 0
@@ -99634,24 +102095,6 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
-      - path: Assets\Game\Scripts\Stages\SelectionStage.cs
-        label: SelectionStage.cs
-        level: 4
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Game\Scripts\Stages\SelectionStage.cs
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\SelectionStage.cs
-          projectPath: Assets\Game\Scripts\Stages\SelectionStage.cs
-          originalPath: 
-          indexStatus: 3
-          workTreeStatus: 0
       - path: Assets\Game\Scripts\Stages\ShootingStage.cs
         label: ShootingStage.cs
         level: 4
@@ -99670,10 +102113,10 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 3
           workTreeStatus: 0
-      - path: Assets\Game\Scripts\Stages\StageManager.cs
-        label: StageManager.cs
-        level: 4
-        isFolder: 0
+      - path: ProjectSettings
+        label: ProjectSettings
+        level: 0
+        isFolder: 1
         isContainer: 0
         isCollapsed: 0
         isHidden: 0
@@ -99682,69 +102125,15 @@ MonoBehaviour:
         checkState: 0
         isLocked: 0
         gitStatusEntry:
-          path: Assets\Game\Scripts\Stages\StageManager.cs
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\StageManager.cs
-          projectPath: Assets\Game\Scripts\Stages\StageManager.cs
+          path: 
+          fullPath: 
+          projectPath: 
           originalPath: 
-          indexStatus: 3
+          indexStatus: 0
           workTreeStatus: 0
-      - path: Assets\Game\Scripts\Stages\StageQueue.cs
-        label: StageQueue.cs
-        level: 4
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Game\Scripts\Stages\StageQueue.cs
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\StageQueue.cs
-          projectPath: Assets\Game\Scripts\Stages\StageQueue.cs
-          originalPath: 
-          indexStatus: 3
-          workTreeStatus: 0
-      - path: Assets\Resources
-        label: Resources
+      - path: ProjectSettings\TagManager.asset
+        label: TagManager.asset
         level: 1
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets\Resources\UI
-        label: UI
-        level: 2
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets\Resources\UI\SelectionStage_Tabview.uxml
-        label: SelectionStage_Tabview.uxml
-        level: 3
         isFolder: 0
         isContainer: 0
         isCollapsed: 0
@@ -99754,47 +102143,11 @@ MonoBehaviour:
         checkState: 0
         isLocked: 0
         gitStatusEntry:
-          path: Assets\Resources\UI\SelectionStage_Tabview.uxml
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\SelectionStage_Tabview.uxml
-          projectPath: Assets\Resources\UI\SelectionStage_Tabview.uxml
+          path: ProjectSettings\TagManager.asset
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\ProjectSettings\TagManager.asset
+          projectPath: ProjectSettings\TagManager.asset
           originalPath: 
           indexStatus: 3
-          workTreeStatus: 0
-      - path: Assets\Resources\UI\weapon-purchase-button.uxml
-        label: weapon-purchase-button.uxml
-        level: 3
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Resources\UI\weapon-purchase-button.uxml
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\weapon-purchase-button.uxml
-          projectPath: Assets\Resources\UI\weapon-purchase-button.uxml
-          originalPath: Assets\Resources\UI\weapon-selection-button.uxml
-          indexStatus: 6
-          workTreeStatus: 0
-      - path: Assets\Resources\UI\weapon-purchase-button.uxml.meta
-        label: weapon-purchase-button.uxml.meta
-        level: 4
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Resources\UI\weapon-purchase-button.uxml.meta
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\weapon-purchase-button.uxml.meta
-          projectPath: Assets\Resources\UI\weapon-purchase-button.uxml.meta
-          originalPath: Assets\Resources\UI\weapon-selection-button.uxml.meta
-          indexStatus: 6
           workTreeStatus: 0
       - path: UserSettings
         label: UserSettings
@@ -99872,30 +102225,30 @@ MonoBehaviour:
     detailsScroll: {x: 0, y: 0}
   settingsView:
     gitPathView:
-      gitPath: 
-      gitLfsPath: 
+      gitPath: C:\Main\Development\Git\cmd\git.exe
+      gitLfsPath: C:\Main\Development\Git\cmd\git-lfs.exe
       errorMessage: 
       resetToBundled: 0
       resetToSystem: 0
       changingManually: 0
       installSettingsHidden: 0
-    hasRemote: 0
+    hasRemote: 1
     lastCurrentRemoteChangedEvent:
-      updatedTimeString: 
-      cacheType: 0
-    newRepositoryRemoteUrl: 
-    repositoryRemoteName: 
-    repositoryRemoteUrl: 
+      updatedTimeString: 2025-05-23T11:36:35.993+02:00
+      cacheType: 1
+    newRepositoryRemoteUrl: https://github.com/Valus-gh/Vox3D
+    repositoryRemoteName: origin
+    repositoryRemoteUrl: https://github.com/Valus-gh/Vox3D
     scroll: {x: 0, y: 0}
     userSettingsView:
-      gitName: 
-      gitEmail: 
-      newGitName: 
-      newGitEmail: 
+      gitName: Valus-gh
+      gitEmail: simone.belingheri25@gmail.com
+      newGitName: Valus-gh
+      newGitEmail: simone.belingheri25@gmail.com
       needsSaving: 0
       lastCheckUserChangedEvent:
-        updatedTimeString: 
-        cacheType: 0
+        updatedTimeString: 2025-05-23T11:37:39.248+02:00
+        cacheType: 8
       configSettingsHidden: 0
     repositorySettingsHidden: 0
     generalSettingsHidden: 0
@@ -99903,10 +102256,10 @@ MonoBehaviour:
     uiSceneSettingsHidden: 0
     uiProjectSettingsHidden: 0
   locksView:
-    currentRemoteHasUpdate: 0
+    currentRemoteHasUpdate: 1
     currentStatusEntriesHasUpdate: 0
     currentLocksHasUpdate: 0
-    keychainHasUpdate: 0
+    keychainHasUpdate: 1
     locksControl:
       scroll: {x: 0, y: 0}
       gitLockEntries: []
@@ -99925,16 +102278,16 @@ MonoBehaviour:
             email: 
           lockedAtString: 
         gitFileStatus: 0
-        lockedAt: 
+        lockedAt: 1 gen 0001, 01:00
     lastCurrentRemoteChangedEvent:
-      updatedTimeString: 
-      cacheType: 0
+      updatedTimeString: 2025-05-23T11:36:35.993+02:00
+      cacheType: 1
     lastLocksChangedEvent:
-      updatedTimeString: 
-      cacheType: 0
+      updatedTimeString: 0001-01-01T00:00:00.000+00:00
+      cacheType: 7
     lastStatusEntriesChangedEvent:
-      updatedTimeString: 
-      cacheType: 0
+      updatedTimeString: 2025-05-23T11:39:58.798+02:00
+      cacheType: 6
     lockedFiles: []
     gitStatusEntries: []
     currentUsername: 
@@ -99948,14 +102301,14 @@ MonoBehaviour:
       m_Tooltip: 
   hasRemote: 1
   currentRemoteName: origin
-  currentBranch: dev-hud
+  currentBranch: dev-towers
   currentRemoteUrl: https://github.com/Valus-gh/Vox3D
   statusAhead: 0
   statusBehind: 0
-  hasItemsToCommit: 0
+  hasItemsToCommit: 1
   isTrackingRemoteBranch: 1
   currentBranchContent:
-    m_Text: dev-hud
+    m_Text: dev-towers
     m_Image: {fileID: 0}
     m_Tooltip: Active branch
   currentRemoteUrlContent:
@@ -99963,13 +102316,13 @@ MonoBehaviour:
     m_Image: {fileID: 0}
     m_Tooltip: Url of the origin remote
   lastCurrentBranchAndRemoteChangedEvent:
-    updatedTimeString: 2025-05-18T11:08:32.363+02:00
+    updatedTimeString: 2025-05-23T11:40:58.180+02:00
     cacheType: 1
   lastTrackingStatusChangedEvent:
-    updatedTimeString: 2025-05-18T11:08:32.093+02:00
+    updatedTimeString: 2025-05-23T11:47:51.798+02:00
     cacheType: 5
   lastStatusEntriesChangedEvent:
-    updatedTimeString: 2025-05-18T11:08:22.425+02:00
+    updatedTimeString: 2025-05-23T12:25:35.132+02:00
     cacheType: 6
   pullButtonContent:
     m_Text: Pull
@@ -99987,8 +102340,8 @@ MonoBehaviour:
     m_Text: Fetch
     m_Image: {fileID: 0}
     m_Tooltip: 
-  repositoryProgressValue: 0.99935067
-  repositoryProgressMessage: Pushed
-  appManagerProgressValue: 1
+  repositoryProgressValue: 0
+  repositoryProgressMessage: 
+  appManagerProgressValue: 0
   appManagerProgressMessage: 
   primaryConnectionUsername: 

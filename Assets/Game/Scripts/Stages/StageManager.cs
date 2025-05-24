@@ -13,6 +13,8 @@ namespace Game.Stages
     public class StageManager : NetworkBehaviour
     {
 
+        public static int TowersPerPlayer = 2;
+
         [SerializeReference]
         private List<GameObject> _Players = new List<GameObject>();
 
@@ -55,6 +57,7 @@ namespace Game.Stages
                     _ConnectionStage = GetComponent<ConnectionStage>();
                     _ConnectionStage.Players = _Players;
 
+                    // This only populates the player lists for each stage atm
                     _Stages.Initialize(_Players);
 
                     if (isServer)
