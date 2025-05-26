@@ -1,7 +1,6 @@
 using UnityEngine;
 
 using Vox3D.Engine;
-using Game.Fog.FischlWorks;
 
 namespace Game.Fog
 {
@@ -10,8 +9,10 @@ namespace Game.Fog
         [SerializeField]
         private GameObject _InjectorPrefab;
 
+        private bool _Attached;
         public void AttachFoW(World world)
         {
+            if (_Attached) return;
             Instantiate(_InjectorPrefab, world.transform);
         }
 

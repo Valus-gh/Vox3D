@@ -45,7 +45,7 @@ namespace Game.Stages
                     }
 
                     player.GetComponent<NetworkRoomPlayerV3D>().CmdInitializePlayer();
-                    player.GetComponent<NetworkRoomPlayerV3D>().RpcFetchPlayerTower();
+                    player.GetComponent<NetworkRoomPlayerV3D>().RpcFetchPlayerTowers();
                 }
             }
 

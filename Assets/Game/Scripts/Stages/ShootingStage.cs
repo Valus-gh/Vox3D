@@ -77,7 +77,6 @@ namespace Game.Stages
                 IsInitialized = true;
             }
 
-            GetComponent<TowerSelector_Click>().enabled = true;
             GetComponent<StageManager>().RpcToggleAllLoadingScreens(false);
 
             RpcToggleAimingArrows();
@@ -154,6 +153,8 @@ namespace Game.Stages
 
         private void LoadHUD()
         {
+            GetComponent<TowerSelector_Click>().enabled = true;
+
             if (_WeaponBarHUD_Instance is not null) return;
             if (_ProjectileTemplates is null)
                 _ProjectileTemplates = Vox3D.JSON.JsonImporter<ProjectileResources>.FromJSON("projectiles");

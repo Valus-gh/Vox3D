@@ -64,7 +64,7 @@ namespace Game.Networking
         }
 
         [TargetRpc]
-        public void RpcFetchPlayerTower()
+        public void RpcFetchPlayerTowers()
         {
             var towers = FindObjectsOfType<PlayerTower>();
 
