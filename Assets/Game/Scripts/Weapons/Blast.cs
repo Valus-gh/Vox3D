@@ -48,15 +48,31 @@ namespace Game.Weapons
         {
             //TODO change logic to spawn additional projectiles when blast is of scatter type
 
-            // Only check for collisions if the impact does NOT spawn any additional projectiles
-            if (!Scatter)
+            if (Scatter)
             {
-                // Test terrain for collisions. Client side.
-                Vox3D.Engine.ChunkCollisionHandler.Instance().CollisionSphere(collision.contacts[0].point, Radius, RadiusOffset);
-
-                // Test towers for collisions. Server-side.
-                Object.FindObjectOfType<ShootingStage>().CmdTestTowerCollision(collision.contacts[0].point, Radius, Damage);
+                DoSpread();
+                return;
             }
+
+            // Only check for collisions if the impact does NOT spawn any additional projectiles
+            var particleSystemParent = GameObject.FindObjectOfType<ShootingStage>().ExplosionParticles;
+
+            var particleSystems = particleSystemParent.GetComponentsInChildren<ParticleSystem>();
+
+            Object.Instantiate(particleSystemParent, collision.contacts[0].point, Quaternion.identity, null);
+
+            foreach (var system in particleSystems)
+                system.Play();
+
+            // Test terrain for collisions. Client side.
+            Vox3D.Engine.ChunkCollisionHandler.Instance().CollisionSphere(collision.contacts[0].point, Radius, RadiusOffset);
+
+            // Test towers for collisions. Server-side.
+            Object.FindObjectOfType<ShootingStage>().CmdTestTowerCollision(collision.contacts[0].point, Radius, Damage);
+
+        }
+        private void DoSpread()
+        {
 
         }
     }

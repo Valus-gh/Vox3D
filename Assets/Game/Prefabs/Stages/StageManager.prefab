@@ -127,6 +127,7 @@ MonoBehaviour:
   IsInitialized: 0
   IsRunning: 0
   IsComplete: 0
+  ExplosionParticles: {fileID: 1040383921737882479, guid: 3f29e8bd643d01f488d2416ba902c8be, type: 3}
   _WeaponBarHUD: {fileID: 5871634898633904028, guid: e4e57c9b2a86e2b48b795b432a2cd5cc, type: 3}
 --- !u!114 &5791789843061540274
 MonoBehaviour:
@@ -140,6 +141,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34f5f2c1624936c4688f3a37736f0b5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  syncDirection: 0
+  syncMode: 0
+  syncInterval: 0
+  IsInitialized: 0
+  IsRunning: 0
+  IsComplete: 0
 --- !u!114 &4828080692567637255
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -16,14 +16,16 @@ namespace Game.Stages
 {
     public class ShootingStage : GameStage
     {
-        private Dictionary<uint, List<PlayerTower>> _TowersByPlayer;
+        [SerializeField] public GameObject ExplosionParticles;
 
+        private Dictionary<uint, List<PlayerTower>> _TowersByPlayer;
         private ProjectileResources _ProjectileTemplates;
 
         [SerializeField]
         private GameObject _WeaponBarHUD;
         private GameObject _WeaponBarHUD_Instance;
 
+        private bool _Shooting = false;
         public override void Initialize()
         {
             if (!IsInitialized)
@@ -198,6 +200,8 @@ namespace Game.Stages
 
         private void FireProjectiles()
         {
+            _Shooting = true;
+
             foreach(var (owner, trajectories) in _ConfirmedTrajectories)
             {
                 foreach(var (tower, trajectory) in trajectories)
@@ -213,11 +217,21 @@ namespace Game.Stages
             }
 
             _ConfirmedTrajectories.Clear();
+
+            StartCoroutine(CompleteStageInSeconds(10));
         }
        
+        private IEnumerator CompleteStageInSeconds(float delay)
+        {
+            yield return new WaitForSeconds(delay);
+
+            _Shooting = false;
+            IsComplete = true;
+        }
+
         protected override void Run()
         {
-            if (!IsComplete)
+            if (!IsComplete && !_Shooting)
             {
                 RpcUpdateHUD();
                 RpcToggleHUD(true);
@@ -237,8 +251,6 @@ namespace Game.Stages
                     RpcToggleHUD(false);
 
                     GetComponent<TowerSelector_Click>().enabled = false;
-
-                    IsComplete = true;
                 }
             }
         }
