@@ -28,6 +28,7 @@ namespace Game.Networking
 
         public Vox3D.JSON.Vox3DModel    Model;
         public Vox3D.Engine.World       World;
+        private bool                    _LoadingConfirmed = false;
 
         private Player                  _Player;
 
@@ -53,7 +54,18 @@ namespace Game.Networking
             World.PopulateWorld();
             World.PopulateChunks();
             Vox3D.Engine.PriorityCallStack.Instance().Push(() => World.GenerateGeometry(), 60);
+        }
 
+        [TargetRpc]
+        public void RpcCheckWorldLoading()
+        {
+            if (World is null || _LoadingConfirmed) return;
+
+            if (World.Loaded) 
+            {
+                _LoadingConfirmed = true;
+                FindObjectOfType<ConnectionStage>().CmdConfirmWorldLoaded();
+            }
         }
 
         [Command]
@@ -64,8 +76,17 @@ namespace Game.Networking
         }
 
         [TargetRpc]
+        public void RpcInitializePlayer()
+        {
+            Player.Populate("Basic", ResourceImporter<PlayerResources>.FromJSON("player"));
+            CmdInitializePlayer();
+        }
+
+        [TargetRpc]
         public void RpcFetchPlayerTowers()
         {
+            Debug.Log(netId);
+
             var towers = FindObjectsOfType<PlayerTower>();
 
             Player.Towers = new List<PlayerTower>();
@@ -74,40 +95,36 @@ namespace Game.Networking
             {
                 tower.transform.parent = World.transform;
 
-                if(tower.GetComponent<OwnedBy>().OwnerID == NetworkRoomManagerV3D.singleton.PlayerID)
+                if (tower.GetComponent<OwnedBy>().OwnerID == netId)
                 {
                     Player.Towers.Add(tower);
                     tower.Player = Player;
 
-                    tower.BaseHitpoints = tower.Player.BaseHitpoints / StageManager.TowersPerPlayer;
-                    tower.CurrentHitpoints = tower.BaseHitpoints;
+                    tower.CanFire = true;
 
-                    Vox3D.Engine.PriorityCallStack.Instance().Push(() =>
-                    {
-                        tower.CanFire = true;
-
-                        var manager = NetworkRoomManagerV3D.singleton;
-                        if (manager.TowerPositions is null)
-                            manager.TowerPositions = TowerLocator.GenerateTowerLocations(World, manager.minPlayers * StageManager.TowersPerPlayer);
-
-                        CmdGenerateTowerLocations(manager.TowerPositions, World.Properties.VoxelSize);
-
-                        tower.gameObject.AddComponent<FoWRevealer>().Radius = 7;
-
-                        if (Player.Towers.Count == StageManager.TowersPerPlayer)
-                        {
-                            // Instantiate FogInjector for current world
-                            GameObject.Find("FogManager").GetComponent<FogManager>().AttachFoW(World);
-
-                            FindObjectOfType<StageManager>().GetComponent<ConnectionStage>().CmdConfirmPlayerReady();
-                        }
-                    }, 60);
+                    tower.gameObject.AddComponent<FoWRevealer>().Radius = 7;
                 }
+            }
+
+            var manager = NetworkRoomManagerV3D.singleton;
+
+            if (manager.TowerPositions is null)
+                manager.TowerPositions = TowerLocator.GenerateTowerLocations(World, manager.minPlayers * StageManager.TowersPerPlayer);
+                
+            if (isServer)
+                CmdGenerateTowerLocations(manager.TowerPositions, World.Properties.VoxelSize, netId);
+
+            if (Player.Towers.Count == StageManager.TowersPerPlayer)
+            {
+                // Instantiate FogInjector for current world
+                GameObject.Find("FogManager").GetComponent<FogManager>().AttachFoW(World);
+
+                FindObjectOfType<StageManager>().GetComponent<ConnectionStage>().CmdConfirmPlayerReady();
             }
         }
 
-        [Command]
-        public void CmdGenerateTowerLocations(List<Vector3> towerPositions, int voxelSize)
+        [Command(requiresAuthority = false)]
+        public void CmdGenerateTowerLocations(List<Vector3> towerPositions, int voxelSize, uint netid)
         {
             if(NetworkRoomManagerV3D.singleton.TowerPositions is null)
                 NetworkRoomManagerV3D.singleton.TowerPositions = towerPositions;
@@ -117,6 +134,7 @@ namespace Game.Networking
             {
                 for (int i = 0; i < towers.Length; i++)
                 {
+                    Debug.Log($"Moving Tower {towers[i].TowerID} to position {NetworkRoomManagerV3D.singleton.TowerPositions[i]}. Function called by {netid}");
                     towers[i].transform.localPosition   = NetworkRoomManagerV3D.singleton.TowerPositions[i];
                     towers[i].transform.localScale      = Vector3.one * (0.5f * voxelSize);
                 }

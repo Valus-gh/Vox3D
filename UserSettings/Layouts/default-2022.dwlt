@@ -14,16 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: 0
-    y: 43
-    width: 3440
-    height: 1357
+    x: 17
+    y: 67
+    width: 1692
+    height: 1316
   m_ShowMode: 4
   m_Title: Console
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
-  m_Maximized: 1
+  m_Maximized: 0
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -44,8 +44,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 3440
-    height: 1357
+    width: 1692
+    height: 1316
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
@@ -69,7 +69,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 3440
+    width: 1692
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -90,8 +90,8 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 1337
-    width: 3440
+    y: 1296
+    width: 1692
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -114,12 +114,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
-    width: 3440
-    height: 1307
+    width: 1692
+    height: 1266
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 24472
+  controlID: 157
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -140,12 +140,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 2617
-    height: 1307
+    width: 1287
+    height: 1266
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 24412
+  controlID: 46
   draggingID: 0
 --- !u!114 &7
 MonoBehaviour:
@@ -166,12 +166,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 2617
-    height: 934
+    width: 1287
+    height: 905
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 24413
+  controlID: 47
   draggingID: 0
 --- !u!114 &8
 MonoBehaviour:
@@ -190,10 +190,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 649
-    height: 934
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+    width: 319
+    height: 905
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -214,10 +214,10 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 649
+    x: 319
     y: 0
-    width: 1968
-    height: 934
+    width: 968
+    height: 905
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 12}
@@ -243,11 +243,11 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 934
-    width: 2617
-    height: 373
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
+    y: 905
+    width: 1287
+    height: 361
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 16}
@@ -264,23 +264,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: Window
+  m_Name: InspectorWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 2617
+    x: 1287
     y: 0
-    width: 823
-    height: 1307
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 19}
+    width: 405
+    height: 1266
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
   - {fileID: 19}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -301,10 +301,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 649
-    y: 73
-    width: 1966
-    height: 913
+    x: 336
+    y: 97
+    width: 966
+    height: 884
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -318,28 +318,28 @@ MonoBehaviour:
   m_SerializedViewNames: []
   m_SerializedViewValues: []
   m_PlayModeViewName: GameView
-  m_ShowGizmos: 0
+  m_ShowGizmos: 1
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 1966, y: 892}
+  m_TargetSize: {x: 966, y: 863}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
   m_EnterPlayModeBehavior: 0
   m_UseMipMap: 0
   m_VSyncEnabled: 0
-  m_Gizmos: 0
-  m_Stats: 1
+  m_Gizmos: 1
+  m_Stats: 0
   m_SelectedSizes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -983
-    m_HBaseRangeMax: 983
-    m_VBaseRangeMin: -446
-    m_VBaseRangeMax: 446
+    m_HBaseRangeMin: -483
+    m_HBaseRangeMax: 483
+    m_VBaseRangeMin: -431.5
+    m_VBaseRangeMax: 431.5
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -357,23 +357,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 1966
-      height: 892
+      width: 966
+      height: 863
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 983, y: 446}
+    m_Translation: {x: 483, y: 431.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -983
-      y: -446
-      width: 1966
-      height: 892
+      x: -483
+      y: -431.5
+      width: 966
+      height: 863
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 1966, y: 913}
+  m_LastWindowPixelSize: {x: 966, y: 884}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -399,10 +399,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 0
-    y: 73
-    width: 648
-    height: 913
+    x: 17
+    y: 97
+    width: 318
+    height: 884
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -418,7 +418,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 2a14ffffca45ffff26fbffff
+      m_ExpandedIDs: de85f3ff2086f3ffc089f3ffca89f3ffe689f3ffd4fbf3ffc200f4ffce00f4ffc422f4ff4a23f4ffd6fdf5ff54fef5ff60bef8ffe6bef8ff74e6f8ffeee6f8ff8210f9fffc10f9ff3815f9ff4415f9ffd436f9ff4e37f9ffbe2ffcff4430fcff9cf2feff7609ffff8209ffffd609ffffdc09ffffe809fffff421ffff3e23ffffb2e9ffff06eaffffa6edffffb0edffffccedffff26fbfffff4ffffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -462,10 +462,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 649
-    y: 73
-    width: 1966
-    height: 913
+    x: 336
+    y: 97
+    width: 966
+    height: 884
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -785,9 +785,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.22679399, y: 3.4477038, z: -7.070674}
+    m_Target: {x: 55.609688, y: 29.795246, z: 45.525425}
     speed: 2
-    m_Value: {x: -0.22679399, y: 3.4477038, z: -7.070674}
+    m_Value: {x: 55.609688, y: 29.795246, z: 45.525425}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -833,13 +833,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.17196034, y: 0.0012071271, z: -0.00046593003, w: 0.9851683}
+    m_Target: {x: 0.55857885, y: 0.28545758, z: -0.21320203, w: 0.74912226}
     speed: 2
-    m_Value: {x: -0.17196032, y: -0.0012071271, z: 0.00046593, w: -0.9851682}
+    m_Value: {x: 0.55854094, y: 0.2854382, z: -0.21318758, w: 0.7490715}
   m_Size:
-    m_Target: 5.90626
+    m_Target: 40.417107
     speed: 2
-    m_Value: 5.90626
+    m_Value: 40.417107
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -918,10 +918,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 0
-    y: 1007
-    width: 2616
-    height: 352
+    x: 17
+    y: 1002
+    width: 1286
+    height: 340
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -943,7 +943,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Game/Scripts/Stages
+    - Assets/Game/Prefabs
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -951,16 +951,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Game/Scripts/Stages
+  - Assets/Game/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 112}
-    m_SelectedIDs: f0740000
-    m_LastClickedID: 29936
-    m_ExpandedIDs: 00000000727400007474000076740000787400007a7400007c7400007e74000080740000827400008474000086740000887400008a7400008c7400008e74000090740000927400009474000096740000987400009a7400009c7400009e740000a074000000ca9a3b
+    scrollPos: {x: 0, y: 128}
+    m_SelectedIDs: b8740000
+    m_LastClickedID: 29880
+    m_ExpandedIDs: 0000000096740000987400009a7400009c7400009e740000a0740000a2740000a4740000a6740000a8740000aa740000ac740000ae740000b0740000b2740000b4740000b6740000b8740000ba740000bc740000be740000c0740000c2740000c4740000f674000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -988,7 +988,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000727400007474000076740000787400007a7400007c7400007e74000080740000827400008474000086740000887400008a7400008c7400008e74000090740000927400009474000096740000987400009a7400009c7400009e740000a074000000ca9a3b
+    m_ExpandedIDs: 0000000096740000987400009a7400009c7400009e740000a0740000a2740000a4740000a6740000a8740000aa740000ac740000ae740000b0740000b2740000b4740000b6740000b8740000ba740000bc740000be740000c0740000c2740000c4740000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1015,7 +1015,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c62300003072000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1064,10 +1064,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 0
-    y: 1007
-    width: 2616
-    height: 352
+    x: 17
+    y: 1002
+    width: 1286
+    height: 340
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1098,10 +1098,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2617
-    y: 73
-    width: 822
-    height: 1286
+    x: 1304
+    y: 97
+    width: 404
+    height: 1245
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1159,14 +1159,14 @@ MonoBehaviour:
     m_LastAppliedPresetName: Default
     m_SaveData: []
     m_OverlaysVisible: 1
-  progressMessageClearTime: 6133.858845899999
+  progressMessageClearTime: -1
   notificationClearTime: -1
   timeSinceLastRotation: -1
   currentBranchAndRemoteHasUpdate: 0
-  currentTrackingStatusHasUpdate: 0
-  currentStatusEntriesHasUpdate: 0
-  repositoryProgressHasUpdate: 0
-  appManagerProgressHasUpdate: 0
+  currentTrackingStatusHasUpdate: 1
+  currentStatusEntriesHasUpdate: 1
+  repositoryProgressHasUpdate: 1
+  appManagerProgressHasUpdate: 1
   changeTab: 3
   activeTab: 3
   initProjectView:
@@ -1506,9 +1506,9 @@ MonoBehaviour:
     - name: origin/master
       tracking: '[None]'
   changesView:
-    currentBranchHasUpdate: 0
-    currentStatusEntriesHasUpdate: 0
-    currentLocksHasUpdate: 0
+    currentBranchHasUpdate: 1
+    currentStatusEntriesHasUpdate: 1
+    currentLocksHasUpdate: 1
     commitBody: 
     commitMessage: 
     currentBranch: dev-towers
@@ -1518,8 +1518,46 @@ MonoBehaviour:
         keys: []
         values: []
       folders:
-        keys: []
-        values: []
+        keys:
+        - UserSettings
+        - UserSettings\Layouts
+        values:
+        - path: UserSettings
+          label: UserSettings
+          level: 0
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: UserSettings\Layouts
+          label: Layouts
+          level: 1
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
       checkedFileNodes:
         keys: []
         values: []
@@ -1548,6 +1586,60 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
+      - path: UserSettings
+        label: UserSettings
+        level: 0
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: UserSettings\Layouts
+        label: Layouts
+        level: 1
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: UserSettings\Layouts\default-2022.dwlt
+        label: default-2022.dwlt
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: UserSettings\Layouts\default-2022.dwlt
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\Layouts\default-2022.dwlt
+          projectPath: UserSettings\Layouts\default-2022.dwlt
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
       selectedNode:
         path: 
         label: 
@@ -1567,16 +1659,22 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
-    gitStatusEntries: []
-    changedFilesText: No changed files
+    gitStatusEntries:
+    - path: UserSettings\Layouts\default-2022.dwlt
+      fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\Layouts\default-2022.dwlt
+      projectPath: UserSettings\Layouts\default-2022.dwlt
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    changedFilesText: 1 changed file
     lastCurrentBranchChangedEvent:
-      updatedTimeString: 2025-05-29T11:38:57.850+02:00
+      updatedTimeString: 2025-05-29T22:51:17.536+02:00
       cacheType: 1
     lastStatusEntriesChangedEvent:
-      updatedTimeString: 2025-05-29T11:38:49.859+02:00
+      updatedTimeString: 2025-05-29T22:52:30.449+02:00
       cacheType: 6
     lastLocksChangedEvent:
-      updatedTimeString: 2025-05-29T11:37:40.508+02:00
+      updatedTimeString: 2025-05-29T22:52:27.933+02:00
       cacheType: 7
   historyView:
     currentLogHasUpdate: 0
@@ -102005,7 +102103,7 @@ MonoBehaviour:
   currentRemoteUrl: https://github.com/Valus-gh/Vox3D
   statusAhead: 0
   statusBehind: 0
-  hasItemsToCommit: 0
+  hasItemsToCommit: 1
   isTrackingRemoteBranch: 1
   currentBranchContent:
     m_Text: dev-towers
@@ -102016,13 +102114,13 @@ MonoBehaviour:
     m_Image: {fileID: 0}
     m_Tooltip: Url of the origin remote
   lastCurrentBranchAndRemoteChangedEvent:
-    updatedTimeString: 2025-05-29T11:38:57.850+02:00
+    updatedTimeString: 2025-05-29T18:48:32.025+02:00
     cacheType: 1
   lastTrackingStatusChangedEvent:
-    updatedTimeString: 2025-05-29T11:38:59.091+02:00
+    updatedTimeString: 2025-05-29T18:49:09.640+02:00
     cacheType: 5
   lastStatusEntriesChangedEvent:
-    updatedTimeString: 2025-05-29T11:38:49.859+02:00
+    updatedTimeString: 2025-05-29T18:49:09.624+02:00
     cacheType: 6
   pullButtonContent:
     m_Text: Pull
@@ -102040,8 +102138,8 @@ MonoBehaviour:
     m_Text: Fetch
     m_Image: {fileID: 0}
     m_Tooltip: 
-  repositoryProgressValue: 1
-  repositoryProgressMessage: Pushed
+  repositoryProgressValue: 0
+  repositoryProgressMessage: 
   appManagerProgressValue: 0
   appManagerProgressMessage: 
   primaryConnectionUsername: 

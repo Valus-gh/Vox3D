@@ -119,21 +119,12 @@ namespace Game.Stages
 
             foreach (var c in colliders)
             {
-                var tower = c.GetComponentInParent<PlayerTower>();
-                var player = tower.Player;
-                
-                tower.CurrentHitpoints -= damage;
-                player.CurrentHitpoints -= damage;
+                var ownerID = c.GetComponentInParent<OwnedBy>().OwnerID;
 
-                if(tower.CurrentHitpoints <= 0)
-                {
-                    //Fire tower destruction event
-                }
+                var damagedPlayer = Players.Find((p) => p.GetComponent<Player>().netId == ownerID).GetComponent<Player>();
+                damagedPlayer.CurrentHitpoints -= damage;
 
-                if(player.CurrentHitpoints <= 0)
-                {
-                    //Fire player defeat event
-                }
+                damagedPlayer.RpcDamageTowerWithId(c.GetComponentInParent<PlayerTower>().TowerID, damage);
             }
         }
 

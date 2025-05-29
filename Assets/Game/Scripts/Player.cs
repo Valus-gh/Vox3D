@@ -80,6 +80,12 @@ namespace Game
             Debug.Log("Budget: " + Budget);
         }
 
+        [TargetRpc]
+        public void RpcDamageTowerWithId(int towerID, float damage)
+        {
+            _Towers.Find((t) => t.TowerID == towerID).CurrentHitpoints -= damage;
+        }
+
         #endregion
 
     }

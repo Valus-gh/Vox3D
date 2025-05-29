@@ -26,6 +26,8 @@ namespace Vox3D.Engine
 
         private MeshCollider    _ChunkDestructionCollider;
 
+        private bool            _Loaded;
+
         public int ChunkSize                            { get => _ChunkSize; set => _ChunkSize = value; }
         public int VoxelSize                            { get => _VoxelSize; set => _VoxelSize = value; }
         public Voxel[,,] Voxels                         { get => _Voxels; set => _Voxels = value; }
@@ -38,6 +40,7 @@ namespace Vox3D.Engine
         public List<Color32> Colors                     { get => _Colors; set => _Colors = value; }
         public MeshCollider ChunkDestructionCollider    { get => _ChunkDestructionCollider; set => _ChunkDestructionCollider = value; }
         public World ParentWorld                        { get => _ParentWorld; set => _ParentWorld = value; }
+        public bool Loaded                              { get => _Loaded; set => _Loaded = value; }
 
         public void PopulateChunk()
         {
@@ -51,7 +54,6 @@ namespace Vox3D.Engine
             }
 
             ParallelVoxelBuilder.Instance().Build(this);
-
         }
 
         public void GenerateGeometry_Greedy()
@@ -197,6 +199,9 @@ namespace Vox3D.Engine
             facesBack.Dispose();
             voxelsData.Dispose();
             idArray.Dispose();
+
+            _Loaded = true;
+            _ParentWorld.CheckIfLoaded();
         }
 
         public void PurgeChunk()
