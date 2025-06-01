@@ -7,6 +7,7 @@ using Mirror;
 using Game.Networking;
 using Game.Utilities;
 using Game.Resources;
+using Game.Weapons;
 
 namespace Game.Stages
 {
@@ -57,7 +58,6 @@ namespace Game.Stages
                         var tower = Instantiate(NetworkRoomManagerV3D.singleton.spawnPrefabs[1]);
 
                         tower.GetComponent<OwnedBy>().OwnerID = player.GetComponent<NetworkIdentity>().netId;
-
                         tower.GetComponentInChildren<PlayerTower>().TowerID = (int)(i + 10 * player.GetComponent<NetworkIdentity>().netId);
 
                         NetworkServer.Spawn(tower);
@@ -71,29 +71,6 @@ namespace Game.Stages
 
                 _TowersSpawned = true;
             }
-
-            /*
-            if (_Loading is false && IsComplete is false)
-            {
-                _Loading = true;
-
-                foreach (var player in Players)
-                {
-                    player.GetComponent<NetworkRoomPlayerV3D>().RpcLoadWorld();
-
-                    for (int i = 0; i < StageManager.TowersPerPlayer; i++)
-                    {
-                        var tower = Instantiate(NetworkRoomManagerV3D.singleton.spawnPrefabs[1]);
-                        tower.GetComponent<OwnedBy>().OwnerID = player.GetComponent<NetworkIdentity>().netId;
-                        tower.GetComponentInChildren<PlayerTower>().TowerID = (int)(i + 10 * player.GetComponent<NetworkIdentity>().netId);
-
-                        NetworkServer.Spawn(tower);
-                    }
-                }
-
-                FindObjectOfType<NetworkRoomPlayerV3D>().CmdInitializePlayers();
-                FindObjectOfType<NetworkRoomPlayerV3D>().RpcFetchPlayerTowers();
-            }*/
 
             if (NetworkRoomManagerV3D.singleton.TowerPositions is not null && _PlayerObjectsReady == Players.Count)
             {

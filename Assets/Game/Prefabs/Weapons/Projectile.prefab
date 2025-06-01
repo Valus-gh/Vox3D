@@ -152,7 +152,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4905a57eadf3a2e479bc64ef42023bc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  syncDirection: 0
+  syncMode: 0
+  syncInterval: 0
   _ProjectileBody: {fileID: 5691520044650881529}
+  _Blast:
+    Radius: 15
+    RadiusOffset: 2
+    Damage: 30
+    Scatter: 0
+    ScatterOnImpact: 0
+    ScatterAngle: 0
+    ScatterAmount: 0
+    ScatterBehaviour: 
+    Child: 
 --- !u!114 &4696604930209983687
 MonoBehaviour:
   m_ObjectHideFlags: 0

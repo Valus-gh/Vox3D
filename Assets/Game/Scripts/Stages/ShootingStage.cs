@@ -60,16 +60,7 @@ namespace Game.Stages
                     // Equip basic projectile for all towers
                     foreach(var tower in player.GetComponent<Player>().Towers)
                     {
-                        var equipped = tower.EquippedWeapon;
-
-                        for (int i = 0; i < _ProjectileTemplates.Projectiles.Length; i++)
-                        {
-                            if (_ProjectileTemplates.Projectiles[i].Name == "Basic")
-                            {
-                                equipped.FromModel(_ProjectileTemplates.Projectiles[i]);
-                                break;
-                            }
-                        }
+                        CmdEquipWeapon(tower.TowerID, "Basic");
                     }
                 }
 
@@ -128,6 +119,30 @@ namespace Game.Stages
             }
         }
 
+        [Command(requiresAuthority = false)]
+        private void CmdEquipWeapon(int towerID, string weaponName)
+        {
+            foreach(var (player, towers) in _TowersByPlayer)
+            {
+                foreach(var tower in towers)
+                {
+                    if(tower.TowerID == towerID)
+                    {
+                        for (int i = 0; i < _ProjectileTemplates.Projectiles.Length; i++)
+                        {
+                            if (_ProjectileTemplates.Projectiles[i].Name == weaponName)
+                            {
+                                tower.WeaponTemplate = _ProjectileTemplates.Projectiles[i];
+                                Debug.Log($"Equipping weapon {weaponName} on Tower {tower.TowerID}");
+                                break;
+                            }
+                        }
+                        break;
+                    }
+                }
+            }
+        }
+
         public void Selectweapon(string weaponName)
         {
             var currentTower = GetComponent<TowerSelector_Click>().SelectedTower;
@@ -138,7 +153,8 @@ namespace Game.Stages
             {
                 if (_ProjectileTemplates.Projectiles[i].Name == weaponName)
                 {
-                    currentTower.EquippedWeapon.FromModel(_ProjectileTemplates.Projectiles[i]);
+                    currentTower.WeaponTemplate = _ProjectileTemplates.Projectiles[i];
+                    CmdEquipWeapon(currentTower.TowerID, weaponName);
                     break;
                 }
             }

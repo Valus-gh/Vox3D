@@ -14,7 +14,7 @@
       "Name": "Nuke",
       "Speed": 15,
       "Blast": {
-        "Radius": 30,
+        "Radius": 15,
         "RadiusOffset": 2,
         "Damage": 30,
         "Scatter": false

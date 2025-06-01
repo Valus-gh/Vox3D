@@ -6,6 +6,7 @@ using Mirror;
 
 using Game.Interaction;
 using Game.Weapons;
+using Game.Resources;
 
 //TODO: extract health into interface
 
@@ -25,13 +26,15 @@ namespace Game
         public bool CanFire = false;
 
         [SerializeField]
-        private Projectile _EquippedWeapon;
+        private Projectile                          _EquippedWeapon;
+        private ProjectileResources.ProjectileModel _WeaponTemplate;
 
-        public Player Player { get => _Player; set => _Player = value; }
-        public TowerControlsMultiplayer TowerControls { get => _TowerControls; private set => _TowerControls = value; }
-        public int BaseHitpoints { get => _BaseHitpoints; set => _BaseHitpoints = value; }
-        public float CurrentHitpoints { get => _CurrentHitpoints; set => _CurrentHitpoints = value; }
-        public Projectile EquippedWeapon { get => _EquippedWeapon; set => _EquippedWeapon = value; }
+        public Player Player                                        { get => _Player; set => _Player = value; }
+        public TowerControlsMultiplayer TowerControls               { get => _TowerControls; private set => _TowerControls = value; }
+        public int BaseHitpoints                                    { get => _BaseHitpoints; set => _BaseHitpoints = value; }
+        public float CurrentHitpoints                               { get => _CurrentHitpoints; set => _CurrentHitpoints = value; }
+        public Projectile EquippedWeapon                            { get => _EquippedWeapon; set => _EquippedWeapon = value; }
+        public ProjectileResources.ProjectileModel WeaponTemplate   { get => _WeaponTemplate; set => _WeaponTemplate = value; }
 
         public void Start()
         {

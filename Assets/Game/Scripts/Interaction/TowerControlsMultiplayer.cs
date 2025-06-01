@@ -18,7 +18,6 @@ namespace Game.Interaction
 
         public KeyCode fireCode = KeyCode.Space;
 
-        // Start is called before the first frame update
         void Start()
         {
             TowerTrajectory.DirectionXZ = Vector3.one;
@@ -35,12 +34,12 @@ namespace Game.Interaction
 
         public void FireProjectileOnAllClients(Trajectory trajectory, uint ownerID)
         {
+            var weaponTemplate = GetComponentInParent<PlayerTower>().WeaponTemplate;
             var currentWeapon = GetComponentInParent<PlayerTower>().EquippedWeapon;
 
-            Debug.Log($"Firing Projectile {currentWeapon.name}");
+            Debug.Log($"Firing Projectile {weaponTemplate.Name} from player {ownerID}");
 
             var instance = Instantiate(currentWeapon, transform.position, transform.rotation, null);
-            instance.Blast = currentWeapon.Blast;
 
             instance.GetComponent<OwnedBy>().OwnerID = ownerID;
 
@@ -49,6 +48,18 @@ namespace Game.Interaction
             instance.Fire();
 
             NetworkServer.Spawn(instance.gameObject);
+
+            instance.RpcSetValuesAfterSpawn(
+                weaponTemplate.Blast.Radius,
+                weaponTemplate.Blast.RadiusOffset,
+                weaponTemplate.Blast.Damage,
+                weaponTemplate.Blast.Scatter,
+                weaponTemplate.Blast.ScatterOnImpact,
+                weaponTemplate.Blast.ScatterAngle,
+                weaponTemplate.Blast.ScatterAmount,
+                weaponTemplate.Blast.ScatterBehaviour,
+                weaponTemplate.Blast.Child
+            );
         }
 
     }

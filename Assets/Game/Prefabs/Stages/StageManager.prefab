@@ -90,6 +90,7 @@ MonoBehaviour:
   IsInitialized: 0
   IsRunning: 0
   IsComplete: 0
+  _ProjectilePrefab: {fileID: 1730608478589156964, guid: 377840d9eb0fe1e468505a2709221a79, type: 3}
 --- !u!114 &5464661084114887398
 MonoBehaviour:
   m_ObjectHideFlags: 0
