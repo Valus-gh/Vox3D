@@ -7,6 +7,7 @@ using Mirror;
 using Game.Interaction;
 using Game.Weapons;
 using Game.Resources;
+using Game.Utilities;
 
 //TODO: extract health into interface
 
@@ -14,11 +15,11 @@ namespace Game
 {
     public class PlayerTower : NetworkBehaviour
     {
-        private Player _Player;
+        private Player  _Player;
         [SyncVar(hook = nameof(OnBaseHitpointsChanged))]
-        private int _BaseHitpoints;
+        private float   _BaseHitpoints;
         [SyncVar(hook = nameof(OnCurrentHitpointsChanged))]
-        private float _CurrentHitpoints;
+        private float   _CurrentHitpoints;
 
         [SyncVar]
         public int TowerID;
@@ -31,7 +32,7 @@ namespace Game
 
         public Player Player                                        { get => _Player; set => _Player = value; }
         public TowerControlsMultiplayer TowerControls               { get => _TowerControls; private set => _TowerControls = value; }
-        public int BaseHitpoints                                    { get => _BaseHitpoints; set => _BaseHitpoints = value; }
+        public float BaseHitpoints                                  { get => _BaseHitpoints; set => _BaseHitpoints = value; }
         public float CurrentHitpoints                               { get => _CurrentHitpoints; set => _CurrentHitpoints = value; }
         public Projectile EquippedWeapon                            { get => _EquippedWeapon; set => _EquippedWeapon = value; }
         public ProjectileResources.ProjectileModel WeaponTemplate   { get => _WeaponTemplate; set => _WeaponTemplate = value; }
@@ -48,18 +49,17 @@ namespace Game
                 TowerControls.enabled = true;
         }
 
-        void OnBaseHitpointsChanged(int oldValue, int newValue)
+        void OnBaseHitpointsChanged(float oldValue, float newValue)
         {
             Debug.Log("BaseHitpoints: " + BaseHitpoints);
         }
         void OnCurrentHitpointsChanged(float oldValue, float newValue)
         {
-            Debug.Log("CurrentHitpoints: " + CurrentHitpoints);
+            Debug.Log($"CurrentHitpoints [tower {TowerID}]: " + CurrentHitpoints);
 
             if (newValue <= 0)
                 Debug.Log("Tower has lost all hitpoints. Send destruction event");
         }
-
     }
 
 }

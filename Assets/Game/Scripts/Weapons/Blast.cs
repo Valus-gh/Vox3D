@@ -65,11 +65,10 @@ namespace Game.Weapons
                 system.Play();
 
             // Test terrain for collisions. Client side.
-            Vox3D.Engine.ChunkCollisionHandler.Instance().CollisionSphere(collision.contacts[0].point, Radius, RadiusOffset);
+            Vox3D.Engine.ChunkDestructionHandler.Instance().CollisionSphere_Destroy(collision.contacts[0].point, Radius, RadiusOffset);
 
             // Test towers for collisions. Server-side.
             Object.FindObjectOfType<ShootingStage>().CmdTestTowerCollision(collision.contacts[0].point, Radius, Damage);
-
         }
         private void DoSpread()
         {

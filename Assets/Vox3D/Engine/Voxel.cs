@@ -18,18 +18,21 @@ namespace Vox3D.Engine
         private VoxelType   _Type;
         private Vector3     _Position;
         private bool        _IsActive;
+        private bool        _Destructible;
 
-        public VoxelType Type   { get => _Type; set => _Type = value; }
-        public Vector3 Position { get => _Position; set => _Position = value; }
-        public bool IsActive    { get => _IsActive; set => _IsActive = value; }
-        public Color32 Color    { get => _Color; set => _Color = value; }
+        public VoxelType Type       { get => _Type; set => _Type = value; }
+        public Vector3 Position     { get => _Position; set => _Position = value; }
+        public bool IsActive        { get => _IsActive; set => _IsActive = value; }
+        public Color32 Color        { get => _Color; set => _Color = value; }
+        public bool Destructible    { get => _Destructible; set => _Destructible = value; }
 
-        public Voxel(VoxelType type, Vector3 position, bool isActive, Color32 color)
+        public Voxel(VoxelType type, Vector3 position, bool isActive, Color32 color, bool Destructible = true)
         {
-            this._Type      = type;
-            this._Position  = position;
-            this._IsActive  = isActive;
-            this._Color     = color;
+            this._Type          = type;
+            this._Position      = position;
+            this._IsActive      = isActive;
+            this._Color         = color;
+            this._Destructible  = Destructible;
         }
 
         public override string ToString()

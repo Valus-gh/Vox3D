@@ -54,6 +54,8 @@ namespace Game.Stages
                         if(player.GetComponent<Player>().netId == towerList.Key)
                         {
                             player.GetComponent<Player>().Towers = towerList.Value;
+                            player.GetComponent<Player>().InitializeTowerHitpoints();
+                            player.GetComponent<Player>().RpcPreserveVoxels(true);
                         }
                     }
 
@@ -115,7 +117,7 @@ namespace Game.Stages
                 var damagedPlayer = Players.Find((p) => p.GetComponent<Player>().netId == ownerID).GetComponent<Player>();
                 damagedPlayer.CurrentHitpoints -= damage;
 
-                damagedPlayer.RpcDamageTowerWithId(c.GetComponentInParent<PlayerTower>().TowerID, damage);
+                damagedPlayer.DamageTowerWithId(c.GetComponentInParent<PlayerTower>().TowerID, damage);
             }
         }
 

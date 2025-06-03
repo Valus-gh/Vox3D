@@ -5,6 +5,8 @@ using UnityEngine;
 using Mirror;
 
 using Game.Resources;
+using Game.Utilities;
+using Game.Stages;
 
 namespace Game
 {
@@ -22,7 +24,7 @@ namespace Game
         #region PlayerAttributes
 
         [SyncVar(hook = nameof(OnBaseHitpointsChanged))]
-        private int    _BaseHitpoints;
+        private float   _BaseHitpoints;
 
         [SyncVar(hook = nameof(OnHitpointMultiplierChanged))]
         private float   _HitpointMultiplier;
@@ -34,13 +36,13 @@ namespace Game
         private float   _CurrentHitpoints;
 
         [SyncVar(hook = nameof(OnBudgetChanged))]
-        private int _Budget;
+        private int     _Budget;
 
-        public int BaseHitpoints { get => _BaseHitpoints; set => _BaseHitpoints = value; }
-        public float    HitpointMultiplier { get => _HitpointMultiplier; set => _HitpointMultiplier = value; }
-        public float    EffectiveHitpoints { get => _EffectiveHitpoints; set => _EffectiveHitpoints = value; }
-        public float    CurrentHitpoints { get => _CurrentHitpoints; set => _CurrentHitpoints = value; }
-        public int Budget { get => _Budget; set => _Budget = value; }
+        public float BaseHitpoints      { get => _BaseHitpoints; set => _BaseHitpoints = value; }
+        public float HitpointMultiplier { get => _HitpointMultiplier; set => _HitpointMultiplier = value; }
+        public float EffectiveHitpoints { get => _EffectiveHitpoints; set => _EffectiveHitpoints = value; }
+        public float CurrentHitpoints   { get => _CurrentHitpoints; set => _CurrentHitpoints = value; }
+        public int Budget               { get => _Budget; set => _Budget = value; }
 
         public void Populate(string name, PlayerResources resources)
         {
@@ -56,7 +58,7 @@ namespace Game
             }
         }
 
-        void OnBaseHitpointsChanged(int oldValue, int newValue)
+        void OnBaseHitpointsChanged(float oldValue, float newValue)
         {
             Debug.Log("BaseHitpoints: " + BaseHitpoints);
         }
@@ -80,10 +82,27 @@ namespace Game
             Debug.Log("Budget: " + Budget);
         }
 
-        [TargetRpc]
-        public void RpcDamageTowerWithId(int towerID, float damage)
+        public void InitializeTowerHitpoints()
+        {
+            foreach(var tower in _Towers)
+            {
+                tower.BaseHitpoints     = BaseHitpoints / StageManager.TowersPerPlayer;
+                tower.CurrentHitpoints  = tower.BaseHitpoints;
+            }
+        }
+
+        public void DamageTowerWithId(int towerID, float damage)
         {
             _Towers.Find((t) => t.TowerID == towerID).CurrentHitpoints -= damage;
+        }
+
+        [TargetRpc]
+        public void RpcPreserveVoxels(bool preserve)
+        {
+            foreach (var tower in _Towers)
+            {
+                tower.GetComponentInChildren<VoxelPreserver>().PreserveVoxels(preserve);
+            }
         }
 
         #endregion

@@ -2,7 +2,7 @@
   "Players": [
     {
       "Name": "Basic",
-      "BaseHitpoints": 100,
+      "BaseHitpoints": 100.0,
       "HitpointMultiplier": 1.0
     }
   ]

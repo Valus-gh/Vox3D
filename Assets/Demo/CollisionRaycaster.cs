@@ -27,7 +27,7 @@ namespace Demo
                     Debug.Log($"Ray hit chunk {hit.collider.GetComponentInParent<Vox3D.Engine.Chunk>().name}");
 
                     float offset = world.Properties.VoxelSize;
-                    Vox3D.Engine.ChunkCollisionHandler.Instance().CollisionSphere(hit.point, radius, offset);
+                    Vox3D.Engine.ChunkDestructionHandler.Instance().CollisionSphere_Destroy(hit.point, radius, offset);
 
                     _hit = hit;
                     _offset = offset;
