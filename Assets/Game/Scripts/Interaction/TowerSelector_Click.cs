@@ -31,7 +31,11 @@ namespace Game.Interaction
                     if (IsTower(hitTransform.gameObject) && IsOwnedByLocalPlayer(hitTransform.gameObject))
                     {
                         HighlightTower(false);
-                        SelectedTower = hitTransform.gameObject.GetComponentInParent<PlayerTower>();
+
+                        var tower = hitTransform.gameObject.GetComponentInParent<PlayerTower>();
+                        if (tower.IsDestroyed) return;
+
+                        SelectedTower = tower;
                         FindObjectOfType<WeaponBarHUDController>().ToggleClickable(true);
                         HighlightTower(true);
                     }

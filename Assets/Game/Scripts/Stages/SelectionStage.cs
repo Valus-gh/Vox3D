@@ -24,7 +24,6 @@ namespace Game.Stages
 
         public override void Initialize()
         {
-
             ReadyToProceed = 0;
 
             if (!IsInitialized)
@@ -53,7 +52,6 @@ namespace Game.Stages
 
             RpcToggleHUD(true);
             GetComponent<StageManager>().RpcToggleAllLoadingScreens(false);
-
         }
 
         public override void Deinitialize()
@@ -86,19 +84,11 @@ namespace Game.Stages
                 {
                     if (cost <= player.GetComponent<Player>().Budget)
                     {
-                        var projectileInventory = player.GetComponent<Player>().Inventory.Projectiles;
+                        var inventory = player.GetComponent<Player>().Inventory;
 
-                        if (!projectileInventory.ContainsKey(weaponName))
-                        {
-                            projectileInventory.Add(weaponName, 1);
-                        }
-                        else
-                        {
-                            var weaponAmmo = projectileInventory[weaponName];
-                            projectileInventory[weaponName] = weaponAmmo + 1;
-                        }
+                        inventory.IncreaseItem(weaponName);
 
-                        Debug.Log("Weapon ammo adjusted for weapon " + weaponName + " on player " + playerID + ". Total ammo of " + projectileInventory[weaponName]);
+                        Debug.Log("Weapon ammo adjusted for weapon " + weaponName + " on player " + playerID + ". Total ammo of " + inventory.GetProjectile(weaponName));
                     }
                 }
             }

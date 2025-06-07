@@ -26,7 +26,12 @@ namespace Game.Interaction
         {
             foreach(var button in _WeaponBarButtons)
             {
-                button.style.opacity = (clickable) ? 1 : 0.5f;
+                var nameLabel = button.Q("ammo-count-label") as Label;
+
+                if(nameLabel.text == "0")
+                    button.style.opacity = 0.5f;
+                else
+                    button.style.opacity = (clickable) ? 1 : 0.5f;
             }
         }
 
@@ -74,7 +79,6 @@ namespace Game.Interaction
                         if(item.Value >= 1 && ammoLabel.text == "0")
                         {
                             button.RegisterCallback<ClickEvent>(OnClickEquipWeapon);
-
                         }else if (item.Value == 0 && ammoLabel.text != "0")
                         {
                             button.UnregisterCallback<ClickEvent>(OnClickEquipWeapon);

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6940923854943900615}
   - component: {fileID: 170366929589001385}
   - component: {fileID: 2873335011606602920}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: WeaponBarHUD
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -8,6 +8,7 @@ using Game.Interaction;
 using Game.Weapons;
 using Game.Resources;
 using Game.Utilities;
+using Game.Stages;
 
 //TODO: extract health into interface
 
@@ -21,14 +22,16 @@ namespace Game
         [SyncVar(hook = nameof(OnCurrentHitpointsChanged))]
         private float   _CurrentHitpoints;
 
-        [SyncVar]
-        public int TowerID;
-        private TowerControlsMultiplayer _TowerControls;
-        public bool CanFire = false;
+        [SyncVar] public int  TowerID;
+        [SyncVar] public bool CanFire;
+        [SyncVar] public bool IsDestroyed;
+
+        [SerializeField] private ParticleSystem _SmokeParticles;
 
         [SerializeField]
         private Projectile                          _EquippedWeapon;
         private ProjectileResources.ProjectileModel _WeaponTemplate;
+        private TowerControlsMultiplayer            _TowerControls;
 
         public Player Player                                        { get => _Player; set => _Player = value; }
         public TowerControlsMultiplayer TowerControls               { get => _TowerControls; private set => _TowerControls = value; }
@@ -39,6 +42,9 @@ namespace Game
 
         public void Start()
         {
+            CanFire = false;
+            IsDestroyed = false;
+
             TowerControls = GetComponentInChildren<TowerControlsMultiplayer>();
             TowerControls.Tower = this;
         }
@@ -58,7 +64,18 @@ namespace Game
             Debug.Log($"CurrentHitpoints [tower {TowerID}]: " + CurrentHitpoints);
 
             if (newValue <= 0)
+            {
+                Destroy();
                 Debug.Log("Tower has lost all hitpoints. Send destruction event");
+            }
+        }
+
+        private void Destroy()
+        {
+            IsDestroyed = true;
+            CanFire = false;
+            FindObjectOfType<ShootingStage>().TowerDestroyed();
+            _SmokeParticles.Play();
         }
     }
 

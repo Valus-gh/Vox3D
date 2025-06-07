@@ -25,6 +25,8 @@ namespace Game.Stages
         private GameObject _WeaponBarHUD;
         private GameObject _WeaponBarHUD_Instance;
 
+        private int _DestroyedTowers;
+
         private bool _Shooting = false;
         public override void Initialize()
         {
@@ -33,6 +35,8 @@ namespace Game.Stages
                 _ProjectileTemplates = Vox3D.JSON.JsonImporter<ProjectileResources>.FromJSON("projectiles");
 
                 _TowersByPlayer = new Dictionary<uint, List<PlayerTower>>();
+                _DestroyedTowers = 0;
+
                 var towersInScene = FindObjectsOfType<PlayerTower>();
 
                 foreach (var tower in towersInScene)
@@ -58,18 +62,22 @@ namespace Game.Stages
                             player.GetComponent<Player>().RpcPreserveVoxels(true);
                         }
                     }
-
-                    // Equip basic projectile for all towers
-                    foreach(var tower in player.GetComponent<Player>().Towers)
-                    {
-                        CmdEquipWeapon(tower.TowerID, "Basic");
-                    }
                 }
 
                 // Instantiate and initialize HUD
                 LoadHUD();
 
                 IsInitialized = true;
+            }
+
+            // Equip basic projectile for all towers
+
+            foreach (var player in Players)
+            {
+                foreach (var tower in player.GetComponent<Player>().Towers)
+                {
+                    CmdEquipWeapon(tower.TowerID, "Basic", true);
+                }
             }
 
             GetComponent<StageManager>().RpcToggleAllLoadingScreens(false);
@@ -122,7 +130,7 @@ namespace Game.Stages
         }
 
         [Command(requiresAuthority = false)]
-        private void CmdEquipWeapon(int towerID, string weaponName)
+        private void CmdEquipWeapon(int towerID, string weaponName, bool isSetup)
         {
             foreach(var (player, towers) in _TowersByPlayer)
             {
@@ -130,11 +138,18 @@ namespace Game.Stages
                 {
                     if(tower.TowerID == towerID)
                     {
+                        var inventory = tower.Player.Inventory;
+
                         for (int i = 0; i < _ProjectileTemplates.Projectiles.Length; i++)
                         {
                             if (_ProjectileTemplates.Projectiles[i].Name == weaponName)
                             {
+                                if(tower.WeaponTemplate != null && !isSetup)
+                                    inventory.IncreaseItem(tower.WeaponTemplate.Name);
+
                                 tower.WeaponTemplate = _ProjectileTemplates.Projectiles[i];
+                                inventory.DecreaseItem(tower.WeaponTemplate.Name);
+
                                 Debug.Log($"Equipping weapon {weaponName} on Tower {tower.TowerID}");
                                 break;
                             }
@@ -151,12 +166,17 @@ namespace Game.Stages
 
             if (currentTower is null) return;
 
+            if (currentTower.Player.Inventory.GetProjectile(weaponName) == 0)
+            {
+                Debug.Log($"Unable to equip {weaponName} on tower {currentTower.TowerID}. Insufficient ammo.");
+                return;
+            }
+
             for (int i = 0; i < _ProjectileTemplates.Projectiles.Length; i++)
             {
                 if (_ProjectileTemplates.Projectiles[i].Name == weaponName)
                 {
-                    currentTower.WeaponTemplate = _ProjectileTemplates.Projectiles[i];
-                    CmdEquipWeapon(currentTower.TowerID, weaponName);
+                    CmdEquipWeapon(currentTower.TowerID, weaponName, false);
                     break;
                 }
             }
@@ -203,7 +223,13 @@ namespace Game.Stages
             foreach(var arrow in arrows)
             {
                 if (arrow.GetComponentInParent<OwnedBy>().OwnerID == NetworkRoomManagerV3D.singleton.PlayerID)
-                    arrow.gameObject.SetActive(!arrow.gameObject.activeSelf);
+                {
+                    if (arrow.GetComponentInParent<PlayerTower>().IsDestroyed)
+                        arrow.gameObject.SetActive(false);
+                    else
+                        arrow.gameObject.SetActive(!arrow.gameObject.activeSelf);
+                }
+
             }
         }
 
@@ -217,7 +243,7 @@ namespace Game.Stages
                 {
                     foreach(var firingSpot in _TowersByPlayer[owner])
                     {
-                        if(firingSpot.TowerID == tower)
+                        if(!firingSpot.IsDestroyed && firingSpot.TowerID == tower)
                         {
                             firingSpot.GetComponentInChildren<TowerControlsMultiplayer>().FireProjectileOnAllClients(trajectory, owner);
                         }
@@ -230,6 +256,11 @@ namespace Game.Stages
             StartCoroutine(CompleteStageInSeconds(10));
         }
        
+        public void TowerDestroyed()
+        {
+            _DestroyedTowers++;
+        }
+
         private IEnumerator CompleteStageInSeconds(float delay)
         {
             yield return new WaitForSeconds(delay);
@@ -251,7 +282,7 @@ namespace Game.Stages
                     confirmedTrajectories += trajectories.Count;
 
                 // if all players confirmed a trajectory, shoot projectiles on all clients
-                if (confirmedTrajectories == Players.Count * StageManager.TowersPerPlayer)
+                if (confirmedTrajectories == Players.Count * StageManager.TowersPerPlayer - _DestroyedTowers)
                 {
                     Debug.Log("ALL PLAYERS CONFIRMED THEIR TRAJECTORY. FIRING PROJECTILES.");
                     FireProjectiles();
