@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4851493396406051301
+--- !u!1 &3575390876844939846
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,24 +8,24 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3322537954491934789}
-  - component: {fileID: -8261468016203132215}
-  - component: {fileID: 859122206479980143}
-  - component: {fileID: 6777337099079815810}
+  - component: {fileID: 5351349273736716048}
+  - component: {fileID: 1259332736617719280}
+  - component: {fileID: 8104010976576822666}
+  - component: {fileID: 2009391837126773907}
   m_Layer: 0
-  m_Name: RoomManager
+  m_Name: RoomManagerVR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3322537954491934789
+--- !u!4 &5351349273736716048
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4851493396406051301}
+  m_GameObject: {fileID: 3575390876844939846}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -34,13 +34,13 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-8261468016203132215
+--- !u!114 &1259332736617719280
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4851493396406051301}
+  m_GameObject: {fileID: 3575390876844939846}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6442dc8070ceb41f094e44de0bf87274, type: 3}
@@ -48,13 +48,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   offsetX: 0
   offsetY: 0
---- !u!114 &859122206479980143
+--- !u!114 &8104010976576822666
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4851493396406051301}
+  m_GameObject: {fileID: 3575390876844939846}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6b0fecffa3f624585964b0d0eb21b18e, type: 3}
@@ -77,13 +77,13 @@ MonoBehaviour:
   debugLog: 0
   statisticsGUI: 0
   statisticsLog: 0
---- !u!114 &6777337099079815810
+--- !u!114 &2009391837126773907
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4851493396406051301}
+  m_GameObject: {fileID: 3575390876844939846}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e3935df002557184285ff63eea90fda4, type: 3}
@@ -97,7 +97,7 @@ MonoBehaviour:
   offlineScene: Assets/Scenes/HomeScene.unity
   onlineScene: Assets/Scenes/ServerStartScene.unity
   offlineSceneLoadDelay: 0
-  transport: {fileID: 859122206479980143}
+  transport: {fileID: 8104010976576822666}
   networkAddress: localhost
   maxConnections: 100
   disconnectInactiveConnections: 0
@@ -127,10 +127,10 @@ MonoBehaviour:
   evaluationInterval: 3
   timeInterpolationGui: 0
   showRoomGUI: 1
-  minPlayers: 1
+  minPlayers: 2
   roomPlayerPrefab: {fileID: 134942649211952732, guid: fe99961614341a64cb936228b5c5057f, type: 3}
-  RoomScene: Assets/Scenes/ServerStartScene.unity
-  GameplayScene: Assets/Scenes/Vox3DSceneMultiplayer.unity
+  RoomScene: Assets/Scenes/VR/ServerStartSceneVR.unity
+  GameplayScene: Assets/Scenes/VR/Vox3DSceneMultiplayerVR.unity
   _allPlayersReady: 0
   clientIndex: 0
   ConfigPath: config

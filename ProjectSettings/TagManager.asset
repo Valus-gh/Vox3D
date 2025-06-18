@@ -6,6 +6,24 @@ TagManager:
   tags:
   - Chunk
   - Tower
+  - QDSUITooltip
+  - QDSUIToggleButton
+  - QDSUIIcon
+  - QDSUITextSecondaryColor
+  - QDSUIToggleBorderlessButton
+  - QDSUIBackplateGradient
+  - Locomotion
+  - PassThroughButton
+  - LocoButton
+  - LocoText
+  - PassThrough
+  - QDSUIToggleSwitch
+  - QDSUISharedThemeColor
+  - QDSUIAccentColor
+  - QDSUIBorderlessButton
+  - QDSUISecondaryButton
+  - SamplesInfoPanel
+  - QDSUISection
   layers:
   - Default
   - TransparentFX
@@ -15,7 +33,7 @@ TagManager:
   - UI
   - ChunkDestructionLayer
   - FogLayer
-  - 
+  - Overlay UI
   - 
   - 
   - 
