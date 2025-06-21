@@ -190,7 +190,7 @@ namespace Game.Stages
             if (_ProjectileTemplates is null)
                 _ProjectileTemplates = Vox3D.JSON.JsonImporter<ProjectileResources>.FromJSON("projectiles");
 
-            _WeaponBarHUD_Instance = Instantiate(_WeaponBarHUD, this.transform);
+            _WeaponBarHUD_Instance = Instantiate(_WeaponBarHUD, UnityEngine.Camera.main.transform);
             _WeaponBarHUD_Instance.GetComponent<WeaponBarHUDController>().InitializeHUD(_ProjectileTemplates);
             _WeaponBarHUD_Instance.GetComponent<WeaponBarHUDController>().ToggleDisplay(false);
         }

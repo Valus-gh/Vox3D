@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1692
     height: 1316
   m_ShowMode: 4
-  m_Title: Inspector
+  m_Title: Console
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -264,7 +264,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: InspectorWindow
+  m_Name: Window
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -273,14 +273,14 @@ MonoBehaviour:
     y: 0
     width: 446
     height: 1266
-  m_MinSize: {x: 276, y: 71}
+  m_MinSize: {x: 101, y: 121}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 18}
+  m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 18}
   - {fileID: 19}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -416,9 +416,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: b6e50000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 88b1ffffe6b3ffffd6d6ffff20fbffff
+      m_ExpandedIDs: 0063ffff20fbfffff4ffffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -969,7 +969,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes/VR
+    - Assets/Game/Scripts/Networking
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -977,15 +977,15 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes/VR
+  - Assets/Game/Scripts/Networking
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 319}
-    m_SelectedIDs: 70e50000
-    m_LastClickedID: 58736
+    scrollPos: {x: 0, y: 199}
+    m_SelectedIDs: c6510100
+    m_LastClickedID: 86470
     m_ExpandedIDs: 0000000022ce000024ce000026ce000028ce00002ace00002cce00002ece000030ce000032ce000034ce000036ce000038ce00003ace00003cce00003ece000040ce000042ce000044ce000046ce000048ce00004ace00004cce00004ece000050ce000052ce000054ce000056ce000058ce00005ace00005cce00005ece000060ce000062ce000064ce000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1039,8 +1039,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: b6e50000
-    m_LastClickedInstanceID: 58806
+    m_SelectedInstanceIDs: 7cd8ffff
+    m_LastClickedInstanceID: -10116
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c623000030720000468300000493000000000000
     m_RenameOverlay:
@@ -1185,16 +1185,16 @@ MonoBehaviour:
     m_LastAppliedPresetName: Default
     m_SaveData: []
     m_OverlaysVisible: 1
-  progressMessageClearTime: 87.57674440000001
+  progressMessageClearTime: -1
   notificationClearTime: -1
   timeSinceLastRotation: -1
   currentBranchAndRemoteHasUpdate: 0
   currentTrackingStatusHasUpdate: 0
-  currentStatusEntriesHasUpdate: 1
-  repositoryProgressHasUpdate: 1
-  appManagerProgressHasUpdate: 1
-  changeTab: 4
-  activeTab: 4
+  currentStatusEntriesHasUpdate: 0
+  repositoryProgressHasUpdate: 0
+  appManagerProgressHasUpdate: 0
+  changeTab: 3
+  activeTab: 3
   initProjectView:
     hasCompletedInitialCheck: 0
     isUserDataPresent: 0
@@ -1501,10 +1501,10 @@ MonoBehaviour:
     disableDelete: 1
     disableCreate: 1
     lastLocalAndRemoteBranchListChangedEvent:
-      updatedTimeString: 2025-06-18T11:35:45.789+02:00
+      updatedTimeString: 2025-06-18T11:49:03.464+02:00
       cacheType: 2
     lastCurrentBranchAndRemoteChange:
-      updatedTimeString: 2025-06-18T11:35:47.405+02:00
+      updatedTimeString: 2025-06-18T11:49:05.017+02:00
       cacheType: 1
     currentBranch:
       name: dev-quest
@@ -1620,13 +1620,13 @@ MonoBehaviour:
     gitStatusEntries: []
     changedFilesText: No changed files
     lastCurrentBranchChangedEvent:
-      updatedTimeString: 2025-06-17T08:56:49.997+02:00
+      updatedTimeString: 2025-06-18T12:16:19.733+02:00
       cacheType: 1
     lastStatusEntriesChangedEvent:
-      updatedTimeString: 2025-06-17T08:56:49.215+02:00
+      updatedTimeString: 2025-06-18T12:16:08.563+02:00
       cacheType: 6
     lastLocksChangedEvent:
-      updatedTimeString: 2025-06-17T08:56:44.652+02:00
+      updatedTimeString: 2025-06-18T12:14:49.866+02:00
       cacheType: 7
   historyView:
     currentLogHasUpdate: 0
@@ -105533,7 +105533,7 @@ MonoBehaviour:
   currentRemoteUrl: https://github.com/Valus-gh/Vox3D
   statusAhead: 0
   statusBehind: 0
-  hasItemsToCommit: 1
+  hasItemsToCommit: 0
   isTrackingRemoteBranch: 1
   currentBranchContent:
     m_Text: dev-quest
@@ -105544,13 +105544,13 @@ MonoBehaviour:
     m_Image: {fileID: 0}
     m_Tooltip: Url of the origin remote
   lastCurrentBranchAndRemoteChangedEvent:
-    updatedTimeString: 2025-06-18T11:07:07.283+02:00
+    updatedTimeString: 2025-06-18T12:16:19.733+02:00
     cacheType: 1
   lastTrackingStatusChangedEvent:
-    updatedTimeString: 2025-06-18T11:06:54.180+02:00
+    updatedTimeString: 2025-06-18T12:16:20.950+02:00
     cacheType: 5
   lastStatusEntriesChangedEvent:
-    updatedTimeString: 2025-06-18T11:10:21.372+02:00
+    updatedTimeString: 2025-06-18T12:16:08.563+02:00
     cacheType: 6
   pullButtonContent:
     m_Text: Pull
@@ -105568,7 +105568,7 @@ MonoBehaviour:
     m_Text: Fetch
     m_Image: {fileID: 0}
     m_Tooltip: 
-  repositoryProgressValue: 1
+  repositoryProgressValue: 0
   repositoryProgressMessage: 
   appManagerProgressValue: 1
   appManagerProgressMessage: 

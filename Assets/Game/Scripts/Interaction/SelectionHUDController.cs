@@ -84,7 +84,7 @@ namespace Game.Interaction
         {
             // Notify server that client is done buying
             FindObjectOfType<SelectionStage>().CmdReadyToProceed();
-            FindObjectOfType<SelectionStage>().ToggleHUD(false);
+            ToggleDisplay(false);
 
             //Display loading screen while waiting for other players
             FindObjectOfType<StageManager>().ToggleLoadingScreen(true, "Waiting for your opponents...");

@@ -8,16 +8,18 @@ namespace Game.Resources
         [System.Serializable]
         public class ProjectileModel
         {
-            public string Name;
-            public float Speed;
-            public Blast Blast;
+            public string   Name;
+            public float    Speed;
+            public Blast    Blast;
+            public uint     Cost;
 
             public ProjectileModel() { }
-            public ProjectileModel(string name, float speed, Blast blast)
+            public ProjectileModel(string name, float speed, Blast blast, uint cost)
             {
-                Name = name;
-                Speed = speed;
-                Blast = blast;
+                Name    = name;
+                Speed   = speed;
+                Blast   = blast;
+                Cost    = cost;
             }
         }
 

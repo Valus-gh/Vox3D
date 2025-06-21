@@ -69,9 +69,8 @@ namespace Game.Stages
             if (_ProjectileTemplates is null)
                 _ProjectileTemplates = Vox3D.JSON.JsonImporter<ProjectileResources>.FromJSON("projectiles");
             
-            _SelectionStageHUD_Instance = Instantiate(_SelectionStageHUD, this.transform);
-            _SelectionStageHUD_Instance.GetComponent<SelectionHUDController>().InitializeHUD(_ProjectileTemplates);
-            _SelectionStageHUD_Instance.GetComponent<SelectionHUDController>().ToggleDisplay(false);
+            _SelectionStageHUD_Instance = Instantiate(_SelectionStageHUD, UnityEngine.Camera.main.transform);
+            _SelectionStageHUD_Instance.GetComponent<SelectionHUDControllerVR>().ToggleDisplay(false);
         }
 
         //TODO add cost to projectiles
@@ -117,7 +116,7 @@ namespace Game.Stages
 
         public void ToggleHUD(bool active)
         {
-            _SelectionStageHUD_Instance.GetComponent<SelectionHUDController>().ToggleDisplay(active);
+            _SelectionStageHUD_Instance.GetComponent<SelectionHUDControllerVR>().ToggleDisplay(active);
         }
     }
 

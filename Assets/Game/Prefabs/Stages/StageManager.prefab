@@ -90,7 +90,6 @@ MonoBehaviour:
   IsInitialized: 0
   IsRunning: 0
   IsComplete: 0
-  _ProjectilePrefab: {fileID: 1730608478589156964, guid: 377840d9eb0fe1e468505a2709221a79, type: 3}
 --- !u!114 &5464661084114887398
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -109,7 +108,7 @@ MonoBehaviour:
   IsInitialized: 0
   IsRunning: 0
   IsComplete: 0
-  _SelectionStageHUD: {fileID: 8763892396544024635, guid: ca10d3e5570333144a339d6eaa965c50, type: 3}
+  _SelectionStageHUD: {fileID: 2314479672326966016, guid: c00b16759352cde45b97fa5c96b60c6c, type: 3}
 --- !u!114 &-5652156399681621843
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -129,7 +128,7 @@ MonoBehaviour:
   IsRunning: 0
   IsComplete: 0
   ExplosionParticles: {fileID: 1040383921737882479, guid: 3f29e8bd643d01f488d2416ba902c8be, type: 3}
-  _WeaponBarHUD: {fileID: 5871634898633904028, guid: e4e57c9b2a86e2b48b795b432a2cd5cc, type: 3}
+  _WeaponBarHUD: {fileID: 6837754694124558730, guid: eb43d697cb8bc874181cada711c58fe4, type: 3}
 --- !u!114 &5791789843061540274
 MonoBehaviour:
   m_ObjectHideFlags: 0

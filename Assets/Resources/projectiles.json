@@ -1,46 +1,50 @@
 {
   "Projectiles": [
     {
-      "Name": "Basic",
+      "Name": "Bomb",
       "Speed": 30,
       "Blast": {
         "Radius": 5,
         "RadiusOffset": 2,
-        "Damage": 30,
+        "Damage": 15,
         "Scatter": false
-      }
+      },
+      "Price": 0
     },
     {
-      "Name": "Nuke",
+      "Name": "Barrel",
       "Speed": 15,
       "Blast": {
-        "Radius": 15,
+        "Radius": 10,
         "RadiusOffset": 2,
         "Damage": 30,
         "Scatter": false
-      }
+      },
+      "Price": 60
     },
     {
-      "Name": "Spread",
+      "Name": "Cluster",
       "Speed": 30,
       "Blast": {
         "Scatter": true,
         "ScatterOnImpact": true,
         "ScatterAngle": 45,
-        "ScatterAmount": 10,
+        "ScatterAmount": 4,
         "ScatterBehaviour": "Regular",
-        "Child": "Tiny"
-      }
+        "Child": "Dynamite"
+      },
+      "Price": 40
     },
     {
-      "Name": "Tiny",
-      "Speed": 50,
+      "Name": "Dynamite",
+      "Speed": 60,
       "Blast": {
         "Radius": 3,
         "RadiusOffset": 2,
-        "Damage": 10,
+        "Damage": 15,
         "Scatter": false
-      }
+      },
+      "Price": 10
     }
   ]
 }
