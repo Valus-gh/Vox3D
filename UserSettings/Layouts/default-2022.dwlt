@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1692
     height: 1316
   m_ShowMode: 4
-  m_Title: Console
+  m_Title: Inspector
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 88
+  controlID: 2457
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 43
+  controlID: 2458
   draggingID: 0
 --- !u!114 &7
 MonoBehaviour:
@@ -171,7 +171,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 44
+  controlID: 43
   draggingID: 0
 --- !u!114 &8
 MonoBehaviour:
@@ -192,8 +192,8 @@ MonoBehaviour:
     y: 0
     width: 375
     height: 906
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -218,8 +218,8 @@ MonoBehaviour:
     y: 0
     width: 871
     height: 906
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -237,7 +237,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ConsoleWindow
+  m_Name: ProjectBrowser
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -246,14 +246,14 @@ MonoBehaviour:
     y: 906
     width: 1246
     height: 360
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 17}
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
+  m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
   - {fileID: 17}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -264,7 +264,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: Window
+  m_Name: InspectorWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -273,14 +273,14 @@ MonoBehaviour:
     y: 0
     width: 446
     height: 1266
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 19}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
   - {fileID: 19}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -348,7 +348,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -416,9 +416,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 0063ffff20fbfffff4ffffff
+      m_SelectedIDs: 7c33fbff
+      m_LastClickedID: -314500
+      m_ExpandedIDs: 8a33fbffcc33fbffd233fbffde33fbff0455fbfffc77fbff66c0fbffcce5fbffc8eefbff0aeffbff10effbff1ceffbff4210fcff3a33fcffc66dfcff086efcff0e6efcff1a6efcff506efcff926efcff986efcffa46efcffca8ffcffc2b2fcff7cfbfcffbefbfcffc4fbfcffd0fbfcff7c02fdffbe02fdffc402fdffd002fdff0603fdff4803fdff4e03fdff5a03fdff8024fdff7847fdffeafcfdff2cfdfdff32fdfdff3efdfdff74fdfdffb6fdfdffbcfdfdffc8fdfdff100ffeffee1efeffe641feff106efeff526efeff586efeff646efeff8a8ffeff82b2feffb2d8ffffb6d8ffffe6d8ffff14fbfffff4ffffff64920000f4b9030006bb0300
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -811,9 +811,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.0018071644, y: 1.6279427, z: 2.5977232}
+    m_Target: {x: 0, y: 0, z: 0.25}
     speed: 2
-    m_Value: {x: 0.0018071644, y: 1.6279427, z: 2.5977232}
+    m_Value: {x: 0, y: 0, z: 0.25}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -859,13 +859,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.020995727, y: 0.016496971, z: -0.00034812454, w: 0.99965626}
+    m_Target: {x: 0.031531822, y: 0.4815927, z: -0.017355233, w: 0.8756745}
     speed: 2
-    m_Value: {x: 0.020995457, y: 0.016496759, z: -0.00034812005, w: 0.9996434}
+    m_Value: {x: 0.031531308, y: 0.48158485, z: -0.01735495, w: 0.8756602}
   m_Size:
-    m_Target: 0.8035301
+    m_Target: 0.5083537
     speed: 2
-    m_Value: 0.8035301
+    m_Value: 0.5083537
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -969,24 +969,24 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Game/Scripts/Networking
+    - Assets/Scenes/VR
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
     m_FilterByTypeIntersection: 0
   m_ViewMode: 1
-  m_StartGridSize: 64
+  m_StartGridSize: 96
   m_LastFolders:
-  - Assets/Game/Scripts/Networking
-  m_LastFoldersGridSize: -1
+  - Assets/Scenes/VR
+  m_LastFoldersGridSize: 96
   m_LastProjectPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 199}
-    m_SelectedIDs: c6510100
-    m_LastClickedID: 86470
-    m_ExpandedIDs: 0000000022ce000024ce000026ce000028ce00002ace00002cce00002ece000030ce000032ce000034ce000036ce000038ce00003ace00003cce00003ece000040ce000042ce000044ce000046ce000048ce00004ace00004cce00004ece000050ce000052ce000054ce000056ce000058ce00005ace00005cce00005ece000060ce000062ce000064ce000000ca9a3b
+    scrollPos: {x: 0, y: 365}
+    m_SelectedIDs: 763e0100
+    m_LastClickedID: 81526
+    m_ExpandedIDs: 0000000004d8000006d8000008d800000ad800000cd800000ed8000010d8000012d8000014d8000016d8000018d800001ad800001cd800001ed8000020d8000022d8000024d8000026d8000028d800002ad800002cd800002ed8000030d8000032d8000034d8000036d8000038d800003ad800003cd800003ed8000040d8000042d8000044d8000046d8000048d80000b2b70300b4b70300b6b7030000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1014,7 +1014,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000022ce000024ce000026ce000028ce00002ace00002cce00002ece000030ce000032ce000034ce000036ce000038ce00003ace00003cce00003ece000040ce000042ce000044ce000046ce000048ce00004ace00004cce00004ece000050ce000052ce000054ce000056ce000058ce00005ace00005cce00005ece000060ce000062ce000064ce0000
+    m_ExpandedIDs: 0000000004d8000006d8000008d800000ad800000cd800000ed8000010d8000012d8000014d8000016d8000018d800001ad800001cd800001ed8000020d8000022d8000024d8000026d8000028d800002ad800002cd800002ed8000030d8000032d8000034d8000036d8000038d800003ad800003cd800003ed8000040d8000042d8000044d8000046d8000048d80000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1039,8 +1039,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 7cd8ffff
-    m_LastClickedInstanceID: -10116
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c623000030720000468300000493000000000000
     m_RenameOverlay:
@@ -1067,7 +1067,7 @@ MonoBehaviour:
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
     m_ScrollPosition: {x: 0, y: 0}
-    m_GridSize: 64
+    m_GridSize: 96
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 207
 --- !u!114 &17
@@ -1192,9 +1192,9 @@ MonoBehaviour:
   currentTrackingStatusHasUpdate: 0
   currentStatusEntriesHasUpdate: 0
   repositoryProgressHasUpdate: 0
-  appManagerProgressHasUpdate: 0
-  changeTab: 3
-  activeTab: 3
+  appManagerProgressHasUpdate: 1
+  changeTab: 2
+  activeTab: 2
   initProjectView:
     hasCompletedInitialCheck: 0
     isUserDataPresent: 0
@@ -1620,18 +1620,660 @@ MonoBehaviour:
     gitStatusEntries: []
     changedFilesText: No changed files
     lastCurrentBranchChangedEvent:
-      updatedTimeString: 2025-06-18T12:16:19.733+02:00
+      updatedTimeString: 2025-06-21T12:53:38.449+02:00
       cacheType: 1
     lastStatusEntriesChangedEvent:
-      updatedTimeString: 2025-06-18T12:16:08.563+02:00
+      updatedTimeString: 2025-06-21T12:53:16.935+02:00
       cacheType: 6
     lastLocksChangedEvent:
-      updatedTimeString: 2025-06-18T12:14:49.866+02:00
+      updatedTimeString: 0001-01-01T00:00:00.000+00:00
       cacheType: 7
   historyView:
-    currentLogHasUpdate: 0
-    currentTrackingStatusHasUpdate: 0
+    currentLogHasUpdate: 1
+    currentTrackingStatusHasUpdate: 1
     logEntries:
+    - commitID: 12a63962be0da514104cbaa1ad1520501ffaff46
+      mergeA: 
+      mergeB: 
+      authorName: Valus-gh
+      authorEmail: simone.belingheri25@gmail.com
+      commitEmail: simone.belingheri25@gmail.com
+      commitName: Valus-gh
+      summary: Added VR version of Ammo purchase Menu & QuickBar.
+      description: 'Added VR version of Ammo purchase Menu & QuickBar. TODO: try
+        with headset, figure out how to select tower, figure out how to aim and fire.'
+      timeString: 2025-06-21T12:53:12.000+02:00
+      commitTimeString: 2025-06-21T12:53:12.000+02:00
+      changes:
+      - path: Assets\Game\Prefabs\Interaction\GridMenuExample3x3 Variant.prefab
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Interaction\GridMenuExample3x3
+          Variant.prefab
+        projectPath: Assets\Game\Prefabs\Interaction\GridMenuExample3x3 Variant.prefab
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: Assets\Game\Prefabs\Interaction\WeaponBarHUDVR.prefab
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Interaction\WeaponBarHUDVR.prefab
+        projectPath: Assets\Game\Prefabs\Interaction\WeaponBarHUDVR.prefab
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Prefabs\Interaction\WeaponBarHUDVR.prefab.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Interaction\WeaponBarHUDVR.prefab.meta
+        projectPath: Assets\Game\Prefabs\Interaction\WeaponBarHUDVR.prefab.meta
+        originalPath: Assets\Game\Prefabs\Interaction\GridMenuExample3x3 Variant.prefab.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Prefabs\Interaction\WeaponSelectionButtonVR.prefab
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Interaction\WeaponSelectionButtonVR.prefab
+        projectPath: Assets\Game\Prefabs\Interaction\WeaponSelectionButtonVR.prefab
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Prefabs\Interaction\WeaponSelectionButtonVR.prefab.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Interaction\WeaponSelectionButtonVR.prefab.meta
+        projectPath: Assets\Game\Prefabs\Interaction\WeaponSelectionButtonVR.prefab.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Prefabs\Interaction\WeaponSelectionMenuVR.prefab
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Interaction\WeaponSelectionMenuVR.prefab
+        projectPath: Assets\Game\Prefabs\Interaction\WeaponSelectionMenuVR.prefab
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Prefabs\Interaction\WeaponSelectionMenuVR.prefab.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Interaction\WeaponSelectionMenuVR.prefab.meta
+        projectPath: Assets\Game\Prefabs\Interaction\WeaponSelectionMenuVR.prefab.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Prefabs\Stages\StageManager.prefab
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Stages\StageManager.prefab
+        projectPath: Assets\Game\Prefabs\Stages\StageManager.prefab
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\GameResources\ProjectileResources.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\GameResources\ProjectileResources.cs
+        projectPath: Assets\Game\Scripts\GameResources\ProjectileResources.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Interaction\SelectionHUDController.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\SelectionHUDController.cs
+        projectPath: Assets\Game\Scripts\Interaction\SelectionHUDController.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Interaction\SelectionHUDControllerVR.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\SelectionHUDControllerVR.cs
+        projectPath: Assets\Game\Scripts\Interaction\SelectionHUDControllerVR.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Interaction\SelectionHUDControllerVR.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\SelectionHUDControllerVR.cs.meta
+        projectPath: Assets\Game\Scripts\Interaction\SelectionHUDControllerVR.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Interaction\WeaponBarHUDControllerVR.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\WeaponBarHUDControllerVR.cs
+        projectPath: Assets\Game\Scripts\Interaction\WeaponBarHUDControllerVR.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Interaction\WeaponBarHUDControllerVR.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\WeaponBarHUDControllerVR.cs.meta
+        projectPath: Assets\Game\Scripts\Interaction\WeaponBarHUDControllerVR.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Stages\SelectionStage.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\SelectionStage.cs
+        projectPath: Assets\Game\Scripts\Stages\SelectionStage.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Stages\ShootingStage.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\ShootingStage.cs
+        projectPath: Assets\Game\Scripts\Stages\ShootingStage.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Utilities\RotatingObject.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Utilities\RotatingObject.cs
+        projectPath: Assets\Game\Scripts\Utilities\RotatingObject.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Utilities\RotatingObject.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Utilities\RotatingObject.cs.meta
+        projectPath: Assets\Game\Scripts\Utilities\RotatingObject.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Mirror\Examples\BenchmarkPrediction\WallMaterial.mat
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Mirror\Examples\BenchmarkPrediction\WallMaterial.mat
+        projectPath: Assets\Mirror\Examples\BenchmarkPrediction\WallMaterial.mat
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Resources\UI\images\Ammo-icon.png
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\images\Ammo-icon.png
+        projectPath: Assets\Resources\UI\images\Ammo-icon.png
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Resources\UI\images\Ammo-icon.png.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\images\Ammo-icon.png.meta
+        projectPath: Assets\Resources\UI\images\Ammo-icon.png.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Resources\UI\images\Blast-icon.png
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\images\Blast-icon.png
+        projectPath: Assets\Resources\UI\images\Blast-icon.png
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Resources\UI\images\Blast-icon.png.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\images\Blast-icon.png.meta
+        projectPath: Assets\Resources\UI\images\Blast-icon.png.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Resources\UI\images\Coin-icon.png
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\images\Coin-icon.png
+        projectPath: Assets\Resources\UI\images\Coin-icon.png
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Resources\UI\images\Coin-icon.png.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\images\Coin-icon.png.meta
+        projectPath: Assets\Resources\UI\images\Coin-icon.png.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Resources\UI\images\Materials.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\images\Materials.meta
+        projectPath: Assets\Resources\UI\images\Materials.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Resources\UI\images\Materials\Bomb-icon.mat
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\images\Materials\Bomb-icon.mat
+        projectPath: Assets\Resources\UI\images\Materials\Bomb-icon.mat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Resources\UI\images\Materials\Bomb-icon.mat.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\images\Materials\Bomb-icon.mat.meta
+        projectPath: Assets\Resources\UI\images\Materials\Bomb-icon.mat.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Resources\projectiles.json
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\projectiles.json
+        projectPath: Assets\Resources\projectiles.json
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Scenes\VR\HomeSceneVR.unity
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\VR\HomeSceneVR.unity
+        projectPath: Assets\Scenes\VR\HomeSceneVR.unity
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Scenes\VR\ServerStartSceneVR.unity
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\VR\ServerStartSceneVR.unity
+        projectPath: Assets\Scenes\VR\ServerStartSceneVR.unity
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Scenes\VR\Vox3DSceneMultiplayerVR.unity
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\VR\Vox3DSceneMultiplayerVR.unity
+        projectPath: Assets\Scenes\VR\Vox3DSceneMultiplayerVR.unity
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: UserSettings\EditorUserSettings.asset
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\EditorUserSettings.asset
+        projectPath: UserSettings\EditorUserSettings.asset
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: UserSettings\Layouts\default-2022.dwlt
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\Layouts\default-2022.dwlt
+        projectPath: UserSettings\Layouts\default-2022.dwlt
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+    - commitID: 94aa1c1f75b02c8da09d26567480c837a37f9898
+      mergeA: 
+      mergeB: 
+      authorName: Valus-gh
+      authorEmail: simone.belingheri25@gmail.com
+      commitEmail: simone.belingheri25@gmail.com
+      commitName: Valus-gh
+      summary: Added Meta XR. Added MenuCanvas.
+      description: Added Meta XR. Added MenuCanvas.
+      timeString: 2025-06-18T12:16:04.000+02:00
+      commitTimeString: 2025-06-18T12:16:04.000+02:00
+      changes:
+      - path: Assets\Game\Prefabs\Interaction\GridMenuExample3x3 Variant.prefab
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Interaction\GridMenuExample3x3
+          Variant.prefab
+        projectPath: Assets\Game\Prefabs\Interaction\GridMenuExample3x3 Variant.prefab
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Prefabs\Interaction\GridMenuExample3x3 Variant.prefab.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Interaction\GridMenuExample3x3
+          Variant.prefab.meta
+        projectPath: Assets\Game\Prefabs\Interaction\GridMenuExample3x3 Variant.prefab.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Prefabs\Interaction\MenuCanvas.prefab
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Interaction\MenuCanvas.prefab
+        projectPath: Assets\Game\Prefabs\Interaction\MenuCanvas.prefab
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Prefabs\Interaction\MenuCanvas.prefab.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Interaction\MenuCanvas.prefab.meta
+        projectPath: Assets\Game\Prefabs\Interaction\MenuCanvas.prefab.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Prefabs\Networking\RoomManager.prefab
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Networking\RoomManager.prefab
+        projectPath: Assets\Game\Prefabs\Networking\RoomManager.prefab
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Game\Prefabs\Networking\RoomManagerVR.prefab
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Networking\RoomManagerVR.prefab
+        projectPath: Assets\Game\Prefabs\Networking\RoomManagerVR.prefab
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Prefabs\Networking\RoomManagerVR.prefab.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Networking\RoomManagerVR.prefab.meta
+        projectPath: Assets\Game\Prefabs\Networking\RoomManagerVR.prefab.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Interaction\HomeMenuControllerVR.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\HomeMenuControllerVR.cs
+        projectPath: Assets\Game\Scripts\Interaction\HomeMenuControllerVR.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Interaction\HomeMenuControllerVR.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\HomeMenuControllerVR.cs.meta
+        projectPath: Assets\Game\Scripts\Interaction\HomeMenuControllerVR.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\MetaXR.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\MetaXR.meta
+        projectPath: Assets\MetaXR.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\MetaXR\MetaXRProjectSettings.asset
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\MetaXR\MetaXRProjectSettings.asset
+        projectPath: Assets\MetaXR\MetaXRProjectSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\MetaXR\MetaXRProjectSettings.asset.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\MetaXR\MetaXRProjectSettings.asset.meta
+        projectPath: Assets\MetaXR\MetaXRProjectSettings.asset.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Oculus.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Oculus.meta
+        projectPath: Assets\Oculus.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Oculus\OculusProjectConfig.asset
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Oculus\OculusProjectConfig.asset
+        projectPath: Assets\Oculus\OculusProjectConfig.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Oculus\OculusProjectConfig.asset.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Oculus\OculusProjectConfig.asset.meta
+        projectPath: Assets\Oculus\OculusProjectConfig.asset.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Plugins.meta
+        projectPath: Assets\Plugins.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\Android.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Plugins\Android.meta
+        projectPath: Assets\Plugins\Android.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\Android\AndroidManifest.xml
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Plugins\Android\AndroidManifest.xml
+        projectPath: Assets\Plugins\Android\AndroidManifest.xml
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\Android\AndroidManifest.xml.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Plugins\Android\AndroidManifest.xml.meta
+        projectPath: Assets\Plugins\Android\AndroidManifest.xml.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Resources\ImmersiveDebuggerSettings.asset
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\ImmersiveDebuggerSettings.asset
+        projectPath: Assets\Resources\ImmersiveDebuggerSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Resources\ImmersiveDebuggerSettings.asset.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\ImmersiveDebuggerSettings.asset.meta
+        projectPath: Assets\Resources\ImmersiveDebuggerSettings.asset.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Resources\InputActions.asset
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\InputActions.asset
+        projectPath: Assets\Resources\InputActions.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Resources\InputActions.asset.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\InputActions.asset.meta
+        projectPath: Assets\Resources\InputActions.asset.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Resources\MetaXRAcousticMaterialMapping.asset
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\MetaXRAcousticMaterialMapping.asset
+        projectPath: Assets\Resources\MetaXRAcousticMaterialMapping.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Resources\MetaXRAcousticMaterialMapping.asset.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\MetaXRAcousticMaterialMapping.asset.meta
+        projectPath: Assets\Resources\MetaXRAcousticMaterialMapping.asset.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Resources\MetaXRAcousticSettings.asset
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\MetaXRAcousticSettings.asset
+        projectPath: Assets\Resources\MetaXRAcousticSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Resources\MetaXRAcousticSettings.asset.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\MetaXRAcousticSettings.asset.meta
+        projectPath: Assets\Resources\MetaXRAcousticSettings.asset.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Resources\MetaXRAudioSettings.asset
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\MetaXRAudioSettings.asset
+        projectPath: Assets\Resources\MetaXRAudioSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Resources\MetaXRAudioSettings.asset.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\MetaXRAudioSettings.asset.meta
+        projectPath: Assets\Resources\MetaXRAudioSettings.asset.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Resources\OVROverlayCanvasSettings.asset
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\OVROverlayCanvasSettings.asset
+        projectPath: Assets\Resources\OVROverlayCanvasSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Resources\OVROverlayCanvasSettings.asset.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\OVROverlayCanvasSettings.asset.meta
+        projectPath: Assets\Resources\OVROverlayCanvasSettings.asset.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Resources\OVRPlatformToolSettings.asset
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\OVRPlatformToolSettings.asset
+        projectPath: Assets\Resources\OVRPlatformToolSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Resources\OVRPlatformToolSettings.asset.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\OVRPlatformToolSettings.asset.meta
+        projectPath: Assets\Resources\OVRPlatformToolSettings.asset.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Resources\OculusRuntimeSettings.asset
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\OculusRuntimeSettings.asset
+        projectPath: Assets\Resources\OculusRuntimeSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Resources\OculusRuntimeSettings.asset.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\OculusRuntimeSettings.asset.meta
+        projectPath: Assets\Resources\OculusRuntimeSettings.asset.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Scenes\HomeScene.unity
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\HomeScene.unity
+        projectPath: Assets\Scenes\HomeScene.unity
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Scenes\VR.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\VR.meta
+        projectPath: Assets\Scenes\VR.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Scenes\VR\HomeSceneVR.unity
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\VR\HomeSceneVR.unity
+        projectPath: Assets\Scenes\VR\HomeSceneVR.unity
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Scenes\VR\HomeSceneVR.unity.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\VR\HomeSceneVR.unity.meta
+        projectPath: Assets\Scenes\VR\HomeSceneVR.unity.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Scenes\VR\ServerStartSceneVR.unity
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\VR\ServerStartSceneVR.unity
+        projectPath: Assets\Scenes\VR\ServerStartSceneVR.unity
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Scenes\VR\ServerStartSceneVR.unity.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\VR\ServerStartSceneVR.unity.meta
+        projectPath: Assets\Scenes\VR\ServerStartSceneVR.unity.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Scenes\VR\Vox3DSceneMultiplayerVR.unity
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\VR\Vox3DSceneMultiplayerVR.unity
+        projectPath: Assets\Scenes\VR\Vox3DSceneMultiplayerVR.unity
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Scenes\VR\Vox3DSceneMultiplayerVR.unity.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\VR\Vox3DSceneMultiplayerVR.unity.meta
+        projectPath: Assets\Scenes\VR\Vox3DSceneMultiplayerVR.unity.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Scenes\Vox3DSceneMultiplayer.unity
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\Vox3DSceneMultiplayer.unity
+        projectPath: Assets\Scenes\Vox3DSceneMultiplayer.unity
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\StreamingAssets.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\StreamingAssets.meta
+        projectPath: Assets\StreamingAssets.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\TextMesh Pro\Resources\Fonts & Materials\LiberationSans SDF.asset
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\TextMesh
+          Pro\Resources\Fonts & Materials\LiberationSans SDF.asset
+        projectPath: Assets\TextMesh Pro\Resources\Fonts & Materials\LiberationSans
+          SDF.asset
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\XR.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\XR.meta
+        projectPath: Assets\XR.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\XR\Loaders.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\XR\Loaders.meta
+        projectPath: Assets\XR\Loaders.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\XR\Loaders\OculusLoader.asset
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\XR\Loaders\OculusLoader.asset
+        projectPath: Assets\XR\Loaders\OculusLoader.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\XR\Loaders\OculusLoader.asset.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\XR\Loaders\OculusLoader.asset.meta
+        projectPath: Assets\XR\Loaders\OculusLoader.asset.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\XR\Settings.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\XR\Settings.meta
+        projectPath: Assets\XR\Settings.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\XR\Settings\OculusSettings.asset
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\XR\Settings\OculusSettings.asset
+        projectPath: Assets\XR\Settings\OculusSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\XR\Settings\OculusSettings.asset.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\XR\Settings\OculusSettings.asset.meta
+        projectPath: Assets\XR\Settings\OculusSettings.asset.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\XR\XRGeneralSettingsPerBuildTarget.asset
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\XR\XRGeneralSettingsPerBuildTarget.asset
+        projectPath: Assets\XR\XRGeneralSettingsPerBuildTarget.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\XR\XRGeneralSettingsPerBuildTarget.asset.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\XR\XRGeneralSettingsPerBuildTarget.asset.meta
+        projectPath: Assets\XR\XRGeneralSettingsPerBuildTarget.asset.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\manifest.json
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\manifest.json
+        projectPath: Packages\manifest.json
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Packages\packages-lock.json
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\packages-lock.json
+        projectPath: Packages\packages-lock.json
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: ProjectSettings\AudioManager.asset
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\ProjectSettings\AudioManager.asset
+        projectPath: ProjectSettings\AudioManager.asset
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: ProjectSettings\EditorBuildSettings.asset
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\ProjectSettings\EditorBuildSettings.asset
+        projectPath: ProjectSettings\EditorBuildSettings.asset
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: ProjectSettings\ProjectSettings.asset
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\ProjectSettings\ProjectSettings.asset
+        projectPath: ProjectSettings\ProjectSettings.asset
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: ProjectSettings\QualitySettings.asset
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\ProjectSettings\QualitySettings.asset
+        projectPath: ProjectSettings\QualitySettings.asset
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: ProjectSettings\TagManager.asset
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\ProjectSettings\TagManager.asset
+        projectPath: ProjectSettings\TagManager.asset
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: ProjectSettings\XRPackageSettings.asset
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\ProjectSettings\XRPackageSettings.asset
+        projectPath: ProjectSettings\XRPackageSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: UserSettings\EditorUserSettings.asset
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\EditorUserSettings.asset
+        projectPath: UserSettings\EditorUserSettings.asset
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: UserSettings\Layouts\default-2022.dwlt
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\Layouts\default-2022.dwlt
+        projectPath: UserSettings\Layouts\default-2022.dwlt
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+    - commitID: 252a0823b17d7d1accb4f314a113ba2ddc2f1ef4
+      mergeA: 
+      mergeB: 
+      authorName: Valus-gh
+      authorEmail: simone.belingheri25@gmail.com
+      commitEmail: simone.belingheri25@gmail.com
+      commitName: Valus-gh
+      summary: Pre-merge commit
+      description: 
+      timeString: 2025-06-17T08:55:30.000+02:00
+      commitTimeString: 2025-06-17T08:55:30.000+02:00
+      changes:
+      - path: UserSettings\Layouts\default-2022.dwlt
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\Layouts\default-2022.dwlt
+        projectPath: UserSettings\Layouts\default-2022.dwlt
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
     - commitID: f1d6e2e6cc1e85e6aea32bed397a455d9545cfbb
       mergeA: 
       mergeB: 
@@ -52369,14 +53011,657 @@ MonoBehaviour:
         workTreeStatus: 0
     statusAhead: 0
     lastLogChangedEvent:
-      updatedTimeString: 2025-06-17T08:54:12.991+02:00
+      updatedTimeString: 0001-01-01T00:00:00.000+00:00
       cacheType: 3
     lastTrackingStatusChangedEvent:
-      updatedTimeString: 2025-06-17T08:54:13.258+02:00
+      updatedTimeString: 0001-01-01T00:00:00.000+00:00
       cacheType: 5
     historyControl:
-      scroll: {x: 0, y: 1830}
+      scroll: {x: 0, y: 0}
       entries:
+      - commitID: 12a63962be0da514104cbaa1ad1520501ffaff46
+        mergeA: 
+        mergeB: 
+        authorName: Valus-gh
+        authorEmail: simone.belingheri25@gmail.com
+        commitEmail: simone.belingheri25@gmail.com
+        commitName: Valus-gh
+        summary: Added VR version of Ammo purchase Menu & QuickBar.
+        description: 'Added VR version of Ammo purchase Menu & QuickBar. TODO: try
+          with headset, figure out how to select tower, figure out how to aim and
+          fire.'
+        timeString: 2025-06-21T12:53:12.000+02:00
+        commitTimeString: 2025-06-21T12:53:12.000+02:00
+        changes:
+        - path: Assets\Game\Prefabs\Interaction\GridMenuExample3x3 Variant.prefab
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Interaction\GridMenuExample3x3
+            Variant.prefab
+          projectPath: Assets\Game\Prefabs\Interaction\GridMenuExample3x3 Variant.prefab
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+        - path: Assets\Game\Prefabs\Interaction\WeaponBarHUDVR.prefab
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Interaction\WeaponBarHUDVR.prefab
+          projectPath: Assets\Game\Prefabs\Interaction\WeaponBarHUDVR.prefab
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\Prefabs\Interaction\WeaponBarHUDVR.prefab.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Interaction\WeaponBarHUDVR.prefab.meta
+          projectPath: Assets\Game\Prefabs\Interaction\WeaponBarHUDVR.prefab.meta
+          originalPath: Assets\Game\Prefabs\Interaction\GridMenuExample3x3 Variant.prefab.meta
+          indexStatus: 6
+          workTreeStatus: 0
+        - path: Assets\Game\Prefabs\Interaction\WeaponSelectionButtonVR.prefab
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Interaction\WeaponSelectionButtonVR.prefab
+          projectPath: Assets\Game\Prefabs\Interaction\WeaponSelectionButtonVR.prefab
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\Prefabs\Interaction\WeaponSelectionButtonVR.prefab.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Interaction\WeaponSelectionButtonVR.prefab.meta
+          projectPath: Assets\Game\Prefabs\Interaction\WeaponSelectionButtonVR.prefab.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\Prefabs\Interaction\WeaponSelectionMenuVR.prefab
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Interaction\WeaponSelectionMenuVR.prefab
+          projectPath: Assets\Game\Prefabs\Interaction\WeaponSelectionMenuVR.prefab
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\Prefabs\Interaction\WeaponSelectionMenuVR.prefab.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Interaction\WeaponSelectionMenuVR.prefab.meta
+          projectPath: Assets\Game\Prefabs\Interaction\WeaponSelectionMenuVR.prefab.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\Prefabs\Stages\StageManager.prefab
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Stages\StageManager.prefab
+          projectPath: Assets\Game\Prefabs\Stages\StageManager.prefab
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\GameResources\ProjectileResources.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\GameResources\ProjectileResources.cs
+          projectPath: Assets\Game\Scripts\GameResources\ProjectileResources.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Interaction\SelectionHUDController.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\SelectionHUDController.cs
+          projectPath: Assets\Game\Scripts\Interaction\SelectionHUDController.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Interaction\SelectionHUDControllerVR.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\SelectionHUDControllerVR.cs
+          projectPath: Assets\Game\Scripts\Interaction\SelectionHUDControllerVR.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Interaction\SelectionHUDControllerVR.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\SelectionHUDControllerVR.cs.meta
+          projectPath: Assets\Game\Scripts\Interaction\SelectionHUDControllerVR.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Interaction\WeaponBarHUDControllerVR.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\WeaponBarHUDControllerVR.cs
+          projectPath: Assets\Game\Scripts\Interaction\WeaponBarHUDControllerVR.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Interaction\WeaponBarHUDControllerVR.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\WeaponBarHUDControllerVR.cs.meta
+          projectPath: Assets\Game\Scripts\Interaction\WeaponBarHUDControllerVR.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Stages\SelectionStage.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\SelectionStage.cs
+          projectPath: Assets\Game\Scripts\Stages\SelectionStage.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Stages\ShootingStage.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\ShootingStage.cs
+          projectPath: Assets\Game\Scripts\Stages\ShootingStage.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Utilities\RotatingObject.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Utilities\RotatingObject.cs
+          projectPath: Assets\Game\Scripts\Utilities\RotatingObject.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Utilities\RotatingObject.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Utilities\RotatingObject.cs.meta
+          projectPath: Assets\Game\Scripts\Utilities\RotatingObject.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Mirror\Examples\BenchmarkPrediction\WallMaterial.mat
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Mirror\Examples\BenchmarkPrediction\WallMaterial.mat
+          projectPath: Assets\Mirror\Examples\BenchmarkPrediction\WallMaterial.mat
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Resources\UI\images\Ammo-icon.png
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\images\Ammo-icon.png
+          projectPath: Assets\Resources\UI\images\Ammo-icon.png
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Resources\UI\images\Ammo-icon.png.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\images\Ammo-icon.png.meta
+          projectPath: Assets\Resources\UI\images\Ammo-icon.png.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Resources\UI\images\Blast-icon.png
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\images\Blast-icon.png
+          projectPath: Assets\Resources\UI\images\Blast-icon.png
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Resources\UI\images\Blast-icon.png.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\images\Blast-icon.png.meta
+          projectPath: Assets\Resources\UI\images\Blast-icon.png.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Resources\UI\images\Coin-icon.png
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\images\Coin-icon.png
+          projectPath: Assets\Resources\UI\images\Coin-icon.png
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Resources\UI\images\Coin-icon.png.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\images\Coin-icon.png.meta
+          projectPath: Assets\Resources\UI\images\Coin-icon.png.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Resources\UI\images\Materials.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\images\Materials.meta
+          projectPath: Assets\Resources\UI\images\Materials.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Resources\UI\images\Materials\Bomb-icon.mat
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\images\Materials\Bomb-icon.mat
+          projectPath: Assets\Resources\UI\images\Materials\Bomb-icon.mat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Resources\UI\images\Materials\Bomb-icon.mat.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\images\Materials\Bomb-icon.mat.meta
+          projectPath: Assets\Resources\UI\images\Materials\Bomb-icon.mat.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Resources\projectiles.json
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\projectiles.json
+          projectPath: Assets\Resources\projectiles.json
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Scenes\VR\HomeSceneVR.unity
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\VR\HomeSceneVR.unity
+          projectPath: Assets\Scenes\VR\HomeSceneVR.unity
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Scenes\VR\ServerStartSceneVR.unity
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\VR\ServerStartSceneVR.unity
+          projectPath: Assets\Scenes\VR\ServerStartSceneVR.unity
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Scenes\VR\Vox3DSceneMultiplayerVR.unity
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\VR\Vox3DSceneMultiplayerVR.unity
+          projectPath: Assets\Scenes\VR\Vox3DSceneMultiplayerVR.unity
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: UserSettings\EditorUserSettings.asset
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\EditorUserSettings.asset
+          projectPath: UserSettings\EditorUserSettings.asset
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: UserSettings\Layouts\default-2022.dwlt
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\Layouts\default-2022.dwlt
+          projectPath: UserSettings\Layouts\default-2022.dwlt
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - commitID: 94aa1c1f75b02c8da09d26567480c837a37f9898
+        mergeA: 
+        mergeB: 
+        authorName: Valus-gh
+        authorEmail: simone.belingheri25@gmail.com
+        commitEmail: simone.belingheri25@gmail.com
+        commitName: Valus-gh
+        summary: Added Meta XR. Added MenuCanvas.
+        description: Added Meta XR. Added MenuCanvas.
+        timeString: 2025-06-18T12:16:04.000+02:00
+        commitTimeString: 2025-06-18T12:16:04.000+02:00
+        changes:
+        - path: Assets\Game\Prefabs\Interaction\GridMenuExample3x3 Variant.prefab
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Interaction\GridMenuExample3x3
+            Variant.prefab
+          projectPath: Assets\Game\Prefabs\Interaction\GridMenuExample3x3 Variant.prefab
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\Prefabs\Interaction\GridMenuExample3x3 Variant.prefab.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Interaction\GridMenuExample3x3
+            Variant.prefab.meta
+          projectPath: Assets\Game\Prefabs\Interaction\GridMenuExample3x3 Variant.prefab.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\Prefabs\Interaction\MenuCanvas.prefab
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Interaction\MenuCanvas.prefab
+          projectPath: Assets\Game\Prefabs\Interaction\MenuCanvas.prefab
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\Prefabs\Interaction\MenuCanvas.prefab.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Interaction\MenuCanvas.prefab.meta
+          projectPath: Assets\Game\Prefabs\Interaction\MenuCanvas.prefab.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\Prefabs\Networking\RoomManager.prefab
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Networking\RoomManager.prefab
+          projectPath: Assets\Game\Prefabs\Networking\RoomManager.prefab
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Game\Prefabs\Networking\RoomManagerVR.prefab
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Networking\RoomManagerVR.prefab
+          projectPath: Assets\Game\Prefabs\Networking\RoomManagerVR.prefab
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\Prefabs\Networking\RoomManagerVR.prefab.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Networking\RoomManagerVR.prefab.meta
+          projectPath: Assets\Game\Prefabs\Networking\RoomManagerVR.prefab.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Interaction\HomeMenuControllerVR.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\HomeMenuControllerVR.cs
+          projectPath: Assets\Game\Scripts\Interaction\HomeMenuControllerVR.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Game\Scripts\Interaction\HomeMenuControllerVR.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\HomeMenuControllerVR.cs.meta
+          projectPath: Assets\Game\Scripts\Interaction\HomeMenuControllerVR.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\MetaXR.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\MetaXR.meta
+          projectPath: Assets\MetaXR.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\MetaXR\MetaXRProjectSettings.asset
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\MetaXR\MetaXRProjectSettings.asset
+          projectPath: Assets\MetaXR\MetaXRProjectSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\MetaXR\MetaXRProjectSettings.asset.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\MetaXR\MetaXRProjectSettings.asset.meta
+          projectPath: Assets\MetaXR\MetaXRProjectSettings.asset.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Oculus.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Oculus.meta
+          projectPath: Assets\Oculus.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Oculus\OculusProjectConfig.asset
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Oculus\OculusProjectConfig.asset
+          projectPath: Assets\Oculus\OculusProjectConfig.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Oculus\OculusProjectConfig.asset.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Oculus\OculusProjectConfig.asset.meta
+          projectPath: Assets\Oculus\OculusProjectConfig.asset.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Plugins.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Plugins.meta
+          projectPath: Assets\Plugins.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Plugins\Android.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Plugins\Android.meta
+          projectPath: Assets\Plugins\Android.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Plugins\Android\AndroidManifest.xml
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Plugins\Android\AndroidManifest.xml
+          projectPath: Assets\Plugins\Android\AndroidManifest.xml
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Plugins\Android\AndroidManifest.xml.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Plugins\Android\AndroidManifest.xml.meta
+          projectPath: Assets\Plugins\Android\AndroidManifest.xml.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Resources\ImmersiveDebuggerSettings.asset
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\ImmersiveDebuggerSettings.asset
+          projectPath: Assets\Resources\ImmersiveDebuggerSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Resources\ImmersiveDebuggerSettings.asset.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\ImmersiveDebuggerSettings.asset.meta
+          projectPath: Assets\Resources\ImmersiveDebuggerSettings.asset.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Resources\InputActions.asset
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\InputActions.asset
+          projectPath: Assets\Resources\InputActions.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Resources\InputActions.asset.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\InputActions.asset.meta
+          projectPath: Assets\Resources\InputActions.asset.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Resources\MetaXRAcousticMaterialMapping.asset
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\MetaXRAcousticMaterialMapping.asset
+          projectPath: Assets\Resources\MetaXRAcousticMaterialMapping.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Resources\MetaXRAcousticMaterialMapping.asset.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\MetaXRAcousticMaterialMapping.asset.meta
+          projectPath: Assets\Resources\MetaXRAcousticMaterialMapping.asset.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Resources\MetaXRAcousticSettings.asset
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\MetaXRAcousticSettings.asset
+          projectPath: Assets\Resources\MetaXRAcousticSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Resources\MetaXRAcousticSettings.asset.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\MetaXRAcousticSettings.asset.meta
+          projectPath: Assets\Resources\MetaXRAcousticSettings.asset.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Resources\MetaXRAudioSettings.asset
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\MetaXRAudioSettings.asset
+          projectPath: Assets\Resources\MetaXRAudioSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Resources\MetaXRAudioSettings.asset.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\MetaXRAudioSettings.asset.meta
+          projectPath: Assets\Resources\MetaXRAudioSettings.asset.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Resources\OVROverlayCanvasSettings.asset
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\OVROverlayCanvasSettings.asset
+          projectPath: Assets\Resources\OVROverlayCanvasSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Resources\OVROverlayCanvasSettings.asset.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\OVROverlayCanvasSettings.asset.meta
+          projectPath: Assets\Resources\OVROverlayCanvasSettings.asset.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Resources\OVRPlatformToolSettings.asset
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\OVRPlatformToolSettings.asset
+          projectPath: Assets\Resources\OVRPlatformToolSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Resources\OVRPlatformToolSettings.asset.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\OVRPlatformToolSettings.asset.meta
+          projectPath: Assets\Resources\OVRPlatformToolSettings.asset.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Resources\OculusRuntimeSettings.asset
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\OculusRuntimeSettings.asset
+          projectPath: Assets\Resources\OculusRuntimeSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Resources\OculusRuntimeSettings.asset.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\OculusRuntimeSettings.asset.meta
+          projectPath: Assets\Resources\OculusRuntimeSettings.asset.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Scenes\HomeScene.unity
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\HomeScene.unity
+          projectPath: Assets\Scenes\HomeScene.unity
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Scenes\VR.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\VR.meta
+          projectPath: Assets\Scenes\VR.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Scenes\VR\HomeSceneVR.unity
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\VR\HomeSceneVR.unity
+          projectPath: Assets\Scenes\VR\HomeSceneVR.unity
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Scenes\VR\HomeSceneVR.unity.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\VR\HomeSceneVR.unity.meta
+          projectPath: Assets\Scenes\VR\HomeSceneVR.unity.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Scenes\VR\ServerStartSceneVR.unity
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\VR\ServerStartSceneVR.unity
+          projectPath: Assets\Scenes\VR\ServerStartSceneVR.unity
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Scenes\VR\ServerStartSceneVR.unity.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\VR\ServerStartSceneVR.unity.meta
+          projectPath: Assets\Scenes\VR\ServerStartSceneVR.unity.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Scenes\VR\Vox3DSceneMultiplayerVR.unity
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\VR\Vox3DSceneMultiplayerVR.unity
+          projectPath: Assets\Scenes\VR\Vox3DSceneMultiplayerVR.unity
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Scenes\VR\Vox3DSceneMultiplayerVR.unity.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\VR\Vox3DSceneMultiplayerVR.unity.meta
+          projectPath: Assets\Scenes\VR\Vox3DSceneMultiplayerVR.unity.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Scenes\Vox3DSceneMultiplayer.unity
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\Vox3DSceneMultiplayer.unity
+          projectPath: Assets\Scenes\Vox3DSceneMultiplayer.unity
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\StreamingAssets.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\StreamingAssets.meta
+          projectPath: Assets\StreamingAssets.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\TextMesh Pro\Resources\Fonts & Materials\LiberationSans SDF.asset
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\TextMesh
+            Pro\Resources\Fonts & Materials\LiberationSans SDF.asset
+          projectPath: Assets\TextMesh Pro\Resources\Fonts & Materials\LiberationSans
+            SDF.asset
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\XR.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\XR.meta
+          projectPath: Assets\XR.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\XR\Loaders.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\XR\Loaders.meta
+          projectPath: Assets\XR\Loaders.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\XR\Loaders\OculusLoader.asset
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\XR\Loaders\OculusLoader.asset
+          projectPath: Assets\XR\Loaders\OculusLoader.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\XR\Loaders\OculusLoader.asset.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\XR\Loaders\OculusLoader.asset.meta
+          projectPath: Assets\XR\Loaders\OculusLoader.asset.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\XR\Settings.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\XR\Settings.meta
+          projectPath: Assets\XR\Settings.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\XR\Settings\OculusSettings.asset
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\XR\Settings\OculusSettings.asset
+          projectPath: Assets\XR\Settings\OculusSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\XR\Settings\OculusSettings.asset.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\XR\Settings\OculusSettings.asset.meta
+          projectPath: Assets\XR\Settings\OculusSettings.asset.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\XR\XRGeneralSettingsPerBuildTarget.asset
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\XR\XRGeneralSettingsPerBuildTarget.asset
+          projectPath: Assets\XR\XRGeneralSettingsPerBuildTarget.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\XR\XRGeneralSettingsPerBuildTarget.asset.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\XR\XRGeneralSettingsPerBuildTarget.asset.meta
+          projectPath: Assets\XR\XRGeneralSettingsPerBuildTarget.asset.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\manifest.json
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\manifest.json
+          projectPath: Packages\manifest.json
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Packages\packages-lock.json
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Packages\packages-lock.json
+          projectPath: Packages\packages-lock.json
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: ProjectSettings\AudioManager.asset
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\ProjectSettings\AudioManager.asset
+          projectPath: ProjectSettings\AudioManager.asset
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: ProjectSettings\EditorBuildSettings.asset
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\ProjectSettings\EditorBuildSettings.asset
+          projectPath: ProjectSettings\EditorBuildSettings.asset
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: ProjectSettings\ProjectSettings.asset
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\ProjectSettings\ProjectSettings.asset
+          projectPath: ProjectSettings\ProjectSettings.asset
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: ProjectSettings\QualitySettings.asset
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\ProjectSettings\QualitySettings.asset
+          projectPath: ProjectSettings\QualitySettings.asset
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: ProjectSettings\TagManager.asset
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\ProjectSettings\TagManager.asset
+          projectPath: ProjectSettings\TagManager.asset
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: ProjectSettings\XRPackageSettings.asset
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\ProjectSettings\XRPackageSettings.asset
+          projectPath: ProjectSettings\XRPackageSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: UserSettings\EditorUserSettings.asset
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\EditorUserSettings.asset
+          projectPath: UserSettings\EditorUserSettings.asset
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: UserSettings\Layouts\default-2022.dwlt
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\Layouts\default-2022.dwlt
+          projectPath: UserSettings\Layouts\default-2022.dwlt
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - commitID: 252a0823b17d7d1accb4f314a113ba2ddc2f1ef4
+        mergeA: 
+        mergeB: 
+        authorName: Valus-gh
+        authorEmail: simone.belingheri25@gmail.com
+        commitEmail: simone.belingheri25@gmail.com
+        commitName: Valus-gh
+        summary: Pre-merge commit
+        description: 
+        timeString: 2025-06-17T08:55:30.000+02:00
+        commitTimeString: 2025-06-17T08:55:30.000+02:00
+        changes:
+        - path: UserSettings\Layouts\default-2022.dwlt
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\Layouts\default-2022.dwlt
+          projectPath: UserSettings\Layouts\default-2022.dwlt
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
       - commitID: f1d6e2e6cc1e85e6aea32bed397a455d9545cfbb
         mergeA: 
         mergeB: 
@@ -103131,163 +104416,105 @@ MonoBehaviour:
           indexStatus: 4
           workTreeStatus: 0
       statusAhead: 0
-      selectedIndex: -1
+      selectedIndex: 0
     selectedEntry:
-      commitID: 
+      commitID: 12a63962be0da514104cbaa1ad1520501ffaff46
       mergeA: 
       mergeB: 
-      authorName: 
-      authorEmail: 
-      commitEmail: 
-      commitName: 
-      summary: 
-      description: 
-      timeString: 0001-01-01T00:00:00.000+00:00
-      commitTimeString: 0001-01-01T00:00:00.000+00:00
+      authorName: Valus-gh
+      authorEmail: simone.belingheri25@gmail.com
+      commitEmail: simone.belingheri25@gmail.com
+      commitName: Valus-gh
+      summary: Added VR version of Ammo purchase Menu & QuickBar.
+      description: 'Added VR version of Ammo purchase Menu & QuickBar. TODO: try
+        with headset, figure out how to select tower, figure out how to aim and fire.'
+      timeString: 2025-06-21T12:53:12.000+02:00
+      commitTimeString: 2025-06-21T12:53:12.000+02:00
       changes:
-      - path: Assets\Game\Imports\ProjectileData\Dynamite.mtl
-        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Imports\ProjectileData\Dynamite.mtl
-        projectPath: Assets\Game\Imports\ProjectileData\Dynamite.mtl
+      - path: Assets\Game\Prefabs\Interaction\GridMenuExample3x3 Variant.prefab
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Interaction\GridMenuExample3x3
+          Variant.prefab
+        projectPath: Assets\Game\Prefabs\Interaction\GridMenuExample3x3 Variant.prefab
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: Assets\Game\Prefabs\Interaction\WeaponBarHUDVR.prefab
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Interaction\WeaponBarHUDVR.prefab
+        projectPath: Assets\Game\Prefabs\Interaction\WeaponBarHUDVR.prefab
         originalPath: 
         indexStatus: 4
         workTreeStatus: 0
-      - path: Assets\Game\Imports\ProjectileData\Dynamite.mtl.meta
-        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Imports\ProjectileData\Dynamite.mtl.meta
-        projectPath: Assets\Game\Imports\ProjectileData\Dynamite.mtl.meta
+      - path: Assets\Game\Prefabs\Interaction\WeaponBarHUDVR.prefab.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Interaction\WeaponBarHUDVR.prefab.meta
+        projectPath: Assets\Game\Prefabs\Interaction\WeaponBarHUDVR.prefab.meta
+        originalPath: Assets\Game\Prefabs\Interaction\GridMenuExample3x3 Variant.prefab.meta
+        indexStatus: 6
+        workTreeStatus: 0
+      - path: Assets\Game\Prefabs\Interaction\WeaponSelectionButtonVR.prefab
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Interaction\WeaponSelectionButtonVR.prefab
+        projectPath: Assets\Game\Prefabs\Interaction\WeaponSelectionButtonVR.prefab
         originalPath: 
         indexStatus: 4
         workTreeStatus: 0
-      - path: Assets\Game\Imports\ProjectileData\Dynamite.obj
-        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Imports\ProjectileData\Dynamite.obj
-        projectPath: Assets\Game\Imports\ProjectileData\Dynamite.obj
+      - path: Assets\Game\Prefabs\Interaction\WeaponSelectionButtonVR.prefab.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Interaction\WeaponSelectionButtonVR.prefab.meta
+        projectPath: Assets\Game\Prefabs\Interaction\WeaponSelectionButtonVR.prefab.meta
         originalPath: 
         indexStatus: 4
         workTreeStatus: 0
-      - path: Assets\Game\Imports\ProjectileData\Dynamite.obj.meta
-        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Imports\ProjectileData\Dynamite.obj.meta
-        projectPath: Assets\Game\Imports\ProjectileData\Dynamite.obj.meta
+      - path: Assets\Game\Prefabs\Interaction\WeaponSelectionMenuVR.prefab
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Interaction\WeaponSelectionMenuVR.prefab
+        projectPath: Assets\Game\Prefabs\Interaction\WeaponSelectionMenuVR.prefab
         originalPath: 
         indexStatus: 4
         workTreeStatus: 0
-      - path: Assets\Game\Imports\ProjectileData\Dynamite.png
-        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Imports\ProjectileData\Dynamite.png
-        projectPath: Assets\Game\Imports\ProjectileData\Dynamite.png
+      - path: Assets\Game\Prefabs\Interaction\WeaponSelectionMenuVR.prefab.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Interaction\WeaponSelectionMenuVR.prefab.meta
+        projectPath: Assets\Game\Prefabs\Interaction\WeaponSelectionMenuVR.prefab.meta
         originalPath: 
         indexStatus: 4
         workTreeStatus: 0
-      - path: Assets\Game\Imports\ProjectileData\Dynamite.png.meta
-        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Imports\ProjectileData\Dynamite.png.meta
-        projectPath: Assets\Game\Imports\ProjectileData\Dynamite.png.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Game\Imports\ProjectileData\DynamiteBundle.mtl
-        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Imports\ProjectileData\DynamiteBundle.mtl
-        projectPath: Assets\Game\Imports\ProjectileData\DynamiteBundle.mtl
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Game\Imports\ProjectileData\DynamiteBundle.mtl.meta
-        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Imports\ProjectileData\DynamiteBundle.mtl.meta
-        projectPath: Assets\Game\Imports\ProjectileData\DynamiteBundle.mtl.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Game\Imports\ProjectileData\DynamiteBundle.obj
-        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Imports\ProjectileData\DynamiteBundle.obj
-        projectPath: Assets\Game\Imports\ProjectileData\DynamiteBundle.obj
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Game\Imports\ProjectileData\DynamiteBundle.obj.meta
-        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Imports\ProjectileData\DynamiteBundle.obj.meta
-        projectPath: Assets\Game\Imports\ProjectileData\DynamiteBundle.obj.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Game\Imports\ProjectileData\DynamiteBundle.png
-        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Imports\ProjectileData\DynamiteBundle.png
-        projectPath: Assets\Game\Imports\ProjectileData\DynamiteBundle.png
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Game\Imports\ProjectileData\DynamiteBundle.png.meta
-        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Imports\ProjectileData\DynamiteBundle.png.meta
-        projectPath: Assets\Game\Imports\ProjectileData\DynamiteBundle.png.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Game\Imports\ProjectileData\RevealingEye.mtl
-        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Imports\ProjectileData\RevealingEye.mtl
-        projectPath: Assets\Game\Imports\ProjectileData\RevealingEye.mtl
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Game\Imports\ProjectileData\RevealingEye.mtl.meta
-        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Imports\ProjectileData\RevealingEye.mtl.meta
-        projectPath: Assets\Game\Imports\ProjectileData\RevealingEye.mtl.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Game\Imports\ProjectileData\RevealingEye.obj
-        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Imports\ProjectileData\RevealingEye.obj
-        projectPath: Assets\Game\Imports\ProjectileData\RevealingEye.obj
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Game\Imports\ProjectileData\RevealingEye.obj.meta
-        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Imports\ProjectileData\RevealingEye.obj.meta
-        projectPath: Assets\Game\Imports\ProjectileData\RevealingEye.obj.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Game\Imports\ProjectileData\RevealingEye.png
-        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Imports\ProjectileData\RevealingEye.png
-        projectPath: Assets\Game\Imports\ProjectileData\RevealingEye.png
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Game\Imports\ProjectileData\RevealingEye.png.meta
-        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Imports\ProjectileData\RevealingEye.png.meta
-        projectPath: Assets\Game\Imports\ProjectileData\RevealingEye.png.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\Game\Prefabs\Interaction\WeaponBarHUD.prefab
-        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Interaction\WeaponBarHUD.prefab
-        projectPath: Assets\Game\Prefabs\Interaction\WeaponBarHUD.prefab
+      - path: Assets\Game\Prefabs\Stages\StageManager.prefab
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Stages\StageManager.prefab
+        projectPath: Assets\Game\Prefabs\Stages\StageManager.prefab
         originalPath: 
         indexStatus: 3
         workTreeStatus: 0
-      - path: Assets\Game\Prefabs\PlayerTower.prefab
-        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\PlayerTower.prefab
-        projectPath: Assets\Game\Prefabs\PlayerTower.prefab
+      - path: Assets\Game\Scripts\GameResources\ProjectileResources.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\GameResources\ProjectileResources.cs
+        projectPath: Assets\Game\Scripts\GameResources\ProjectileResources.cs
         originalPath: 
         indexStatus: 3
         workTreeStatus: 0
-      - path: Assets\Game\Scripts\Interaction\TowerSelector_Click.cs
-        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\TowerSelector_Click.cs
-        projectPath: Assets\Game\Scripts\Interaction\TowerSelector_Click.cs
+      - path: Assets\Game\Scripts\Interaction\SelectionHUDController.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\SelectionHUDController.cs
+        projectPath: Assets\Game\Scripts\Interaction\SelectionHUDController.cs
         originalPath: 
         indexStatus: 3
         workTreeStatus: 0
-      - path: Assets\Game\Scripts\Interaction\WeaponBarHUDController.cs
-        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\WeaponBarHUDController.cs
-        projectPath: Assets\Game\Scripts\Interaction\WeaponBarHUDController.cs
+      - path: Assets\Game\Scripts\Interaction\SelectionHUDControllerVR.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\SelectionHUDControllerVR.cs
+        projectPath: Assets\Game\Scripts\Interaction\SelectionHUDControllerVR.cs
         originalPath: 
-        indexStatus: 3
+        indexStatus: 4
         workTreeStatus: 0
-      - path: Assets\Game\Scripts\Inventory.cs
-        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Inventory.cs
-        projectPath: Assets\Game\Scripts\Inventory.cs
+      - path: Assets\Game\Scripts\Interaction\SelectionHUDControllerVR.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\SelectionHUDControllerVR.cs.meta
+        projectPath: Assets\Game\Scripts\Interaction\SelectionHUDControllerVR.cs.meta
         originalPath: 
-        indexStatus: 3
+        indexStatus: 4
         workTreeStatus: 0
-      - path: Assets\Game\Scripts\PlayerTower.cs
-        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\PlayerTower.cs
-        projectPath: Assets\Game\Scripts\PlayerTower.cs
+      - path: Assets\Game\Scripts\Interaction\WeaponBarHUDControllerVR.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\WeaponBarHUDControllerVR.cs
+        projectPath: Assets\Game\Scripts\Interaction\WeaponBarHUDControllerVR.cs
         originalPath: 
-        indexStatus: 3
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Game\Scripts\Interaction\WeaponBarHUDControllerVR.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\WeaponBarHUDControllerVR.cs.meta
+        projectPath: Assets\Game\Scripts\Interaction\WeaponBarHUDControllerVR.cs.meta
+        originalPath: 
+        indexStatus: 4
         workTreeStatus: 0
       - path: Assets\Game\Scripts\Stages\SelectionStage.cs
         fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\SelectionStage.cs
@@ -103301,250 +104528,107 @@ MonoBehaviour:
         originalPath: 
         indexStatus: 3
         workTreeStatus: 0
-      - path: Assets\Resources\UI\images\Dynamite-icon.png
-        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\images\Dynamite-icon.png
-        projectPath: Assets\Resources\UI\images\Dynamite-icon.png
+      - path: Assets\Game\Scripts\Utilities\RotatingObject.cs
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Utilities\RotatingObject.cs
+        projectPath: Assets\Game\Scripts\Utilities\RotatingObject.cs
         originalPath: 
         indexStatus: 4
         workTreeStatus: 0
-      - path: Assets\Resources\UI\images\Dynamite-icon.png.meta
-        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\images\Dynamite-icon.png.meta
-        projectPath: Assets\Resources\UI\images\Dynamite-icon.png.meta
+      - path: Assets\Game\Scripts\Utilities\RotatingObject.cs.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Utilities\RotatingObject.cs.meta
+        projectPath: Assets\Game\Scripts\Utilities\RotatingObject.cs.meta
         originalPath: 
         indexStatus: 4
         workTreeStatus: 0
-      - path: Assets\Resources\UI\images\DynamiteBundle-icon.png
-        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\images\DynamiteBundle-icon.png
-        projectPath: Assets\Resources\UI\images\DynamiteBundle-icon.png
+      - path: Assets\Mirror\Examples\BenchmarkPrediction\WallMaterial.mat
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Mirror\Examples\BenchmarkPrediction\WallMaterial.mat
+        projectPath: Assets\Mirror\Examples\BenchmarkPrediction\WallMaterial.mat
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Resources\UI\images\Ammo-icon.png
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\images\Ammo-icon.png
+        projectPath: Assets\Resources\UI\images\Ammo-icon.png
         originalPath: 
         indexStatus: 4
         workTreeStatus: 0
-      - path: Assets\Resources\UI\images\DynamiteBundle-icon.png.meta
-        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\images\DynamiteBundle-icon.png.meta
-        projectPath: Assets\Resources\UI\images\DynamiteBundle-icon.png.meta
+      - path: Assets\Resources\UI\images\Ammo-icon.png.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\images\Ammo-icon.png.meta
+        projectPath: Assets\Resources\UI\images\Ammo-icon.png.meta
         originalPath: 
         indexStatus: 4
         workTreeStatus: 0
-      - path: Assets\Resources\UI\images\RevealingEye-icon.png
-        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\images\RevealingEye-icon.png
-        projectPath: Assets\Resources\UI\images\RevealingEye-icon.png
+      - path: Assets\Resources\UI\images\Blast-icon.png
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\images\Blast-icon.png
+        projectPath: Assets\Resources\UI\images\Blast-icon.png
         originalPath: 
         indexStatus: 4
         workTreeStatus: 0
-      - path: Assets\Resources\UI\images\RevealingEye-icon.png.meta
-        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\images\RevealingEye-icon.png.meta
-        projectPath: Assets\Resources\UI\images\RevealingEye-icon.png.meta
+      - path: Assets\Resources\UI\images\Blast-icon.png.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\images\Blast-icon.png.meta
+        projectPath: Assets\Resources\UI\images\Blast-icon.png.meta
         originalPath: 
         indexStatus: 4
         workTreeStatus: 0
-      - path: Assets\msVFX_Free Smoke Effects Pack.meta
-        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\msVFX_Free
-          Smoke Effects Pack.meta
-        projectPath: Assets\msVFX_Free Smoke Effects Pack.meta
+      - path: Assets\Resources\UI\images\Coin-icon.png
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\images\Coin-icon.png
+        projectPath: Assets\Resources\UI\images\Coin-icon.png
         originalPath: 
         indexStatus: 4
         workTreeStatus: 0
-      - path: Assets\msVFX_Free Smoke Effects Pack\Demo.meta
-        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\msVFX_Free
-          Smoke Effects Pack\Demo.meta
-        projectPath: Assets\msVFX_Free Smoke Effects Pack\Demo.meta
+      - path: Assets\Resources\UI\images\Coin-icon.png.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\images\Coin-icon.png.meta
+        projectPath: Assets\Resources\UI\images\Coin-icon.png.meta
         originalPath: 
         indexStatus: 4
         workTreeStatus: 0
-      - path: Assets\msVFX_Free Smoke Effects Pack\Demo\DemoScene.unity
-        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\msVFX_Free
-          Smoke Effects Pack\Demo\DemoScene.unity
-        projectPath: Assets\msVFX_Free Smoke Effects Pack\Demo\DemoScene.unity
+      - path: Assets\Resources\UI\images\Materials.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\images\Materials.meta
+        projectPath: Assets\Resources\UI\images\Materials.meta
         originalPath: 
         indexStatus: 4
         workTreeStatus: 0
-      - path: Assets\msVFX_Free Smoke Effects Pack\Demo\DemoScene.unity.meta
-        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\msVFX_Free
-          Smoke Effects Pack\Demo\DemoScene.unity.meta
-        projectPath: Assets\msVFX_Free Smoke Effects Pack\Demo\DemoScene.unity.meta
+      - path: Assets\Resources\UI\images\Materials\Bomb-icon.mat
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\images\Materials\Bomb-icon.mat
+        projectPath: Assets\Resources\UI\images\Materials\Bomb-icon.mat
         originalPath: 
         indexStatus: 4
         workTreeStatus: 0
-      - path: Assets\msVFX_Free Smoke Effects Pack\Demo\Ground Material.mat
-        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\msVFX_Free
-          Smoke Effects Pack\Demo\Ground Material.mat
-        projectPath: Assets\msVFX_Free Smoke Effects Pack\Demo\Ground Material.mat
+      - path: Assets\Resources\UI\images\Materials\Bomb-icon.mat.meta
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\images\Materials\Bomb-icon.mat.meta
+        projectPath: Assets\Resources\UI\images\Materials\Bomb-icon.mat.meta
         originalPath: 
         indexStatus: 4
         workTreeStatus: 0
-      - path: Assets\msVFX_Free Smoke Effects Pack\Demo\Ground Material.mat.meta
-        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\msVFX_Free
-          Smoke Effects Pack\Demo\Ground Material.mat.meta
-        projectPath: Assets\msVFX_Free Smoke Effects Pack\Demo\Ground Material.mat.meta
+      - path: Assets\Resources\projectiles.json
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\projectiles.json
+        projectPath: Assets\Resources\projectiles.json
         originalPath: 
-        indexStatus: 4
+        indexStatus: 3
         workTreeStatus: 0
-      - path: Assets\msVFX_Free Smoke Effects Pack\Demo\MAIAMI STUDIO rOUND.png
-        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\msVFX_Free
-          Smoke Effects Pack\Demo\MAIAMI STUDIO rOUND.png
-        projectPath: Assets\msVFX_Free Smoke Effects Pack\Demo\MAIAMI STUDIO rOUND.png
+      - path: Assets\Scenes\VR\HomeSceneVR.unity
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\VR\HomeSceneVR.unity
+        projectPath: Assets\Scenes\VR\HomeSceneVR.unity
         originalPath: 
-        indexStatus: 4
+        indexStatus: 3
         workTreeStatus: 0
-      - path: Assets\msVFX_Free Smoke Effects Pack\Demo\MAIAMI STUDIO rOUND.png.meta
-        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\msVFX_Free
-          Smoke Effects Pack\Demo\MAIAMI STUDIO rOUND.png.meta
-        projectPath: Assets\msVFX_Free Smoke Effects Pack\Demo\MAIAMI STUDIO rOUND.png.meta
+      - path: Assets\Scenes\VR\ServerStartSceneVR.unity
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\VR\ServerStartSceneVR.unity
+        projectPath: Assets\Scenes\VR\ServerStartSceneVR.unity
         originalPath: 
-        indexStatus: 4
+        indexStatus: 3
         workTreeStatus: 0
-      - path: Assets\msVFX_Free Smoke Effects Pack\Demo\Skybox.mat
-        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\msVFX_Free
-          Smoke Effects Pack\Demo\Skybox.mat
-        projectPath: Assets\msVFX_Free Smoke Effects Pack\Demo\Skybox.mat
+      - path: Assets\Scenes\VR\Vox3DSceneMultiplayerVR.unity
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\VR\Vox3DSceneMultiplayerVR.unity
+        projectPath: Assets\Scenes\VR\Vox3DSceneMultiplayerVR.unity
         originalPath: 
-        indexStatus: 4
+        indexStatus: 3
         workTreeStatus: 0
-      - path: Assets\msVFX_Free Smoke Effects Pack\Demo\Skybox.mat.meta
-        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\msVFX_Free
-          Smoke Effects Pack\Demo\Skybox.mat.meta
-        projectPath: Assets\msVFX_Free Smoke Effects Pack\Demo\Skybox.mat.meta
+      - path: UserSettings\EditorUserSettings.asset
+        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\EditorUserSettings.asset
+        projectPath: UserSettings\EditorUserSettings.asset
         originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\msVFX_Free Smoke Effects Pack\Materials.meta
-        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\msVFX_Free
-          Smoke Effects Pack\Materials.meta
-        projectPath: Assets\msVFX_Free Smoke Effects Pack\Materials.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\msVFX_Free Smoke Effects Pack\Materials\msVFX_Stylized Smoke
-          1_Material.mat
-        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\msVFX_Free
-          Smoke Effects Pack\Materials\msVFX_Stylized Smoke 1_Material.mat
-        projectPath: Assets\msVFX_Free Smoke Effects Pack\Materials\msVFX_Stylized
-          Smoke 1_Material.mat
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\msVFX_Free Smoke Effects Pack\Materials\msVFX_Stylized Smoke
-          1_Material.mat.meta
-        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\msVFX_Free
-          Smoke Effects Pack\Materials\msVFX_Stylized Smoke 1_Material.mat.meta
-        projectPath: Assets\msVFX_Free Smoke Effects Pack\Materials\msVFX_Stylized
-          Smoke 1_Material.mat.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\msVFX_Free Smoke Effects Pack\Prefabs.meta
-        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\msVFX_Free
-          Smoke Effects Pack\Prefabs.meta
-        projectPath: Assets\msVFX_Free Smoke Effects Pack\Prefabs.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\msVFX_Free Smoke Effects Pack\Prefabs\msVFX_Stylized Smoke 1.prefab
-        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\msVFX_Free
-          Smoke Effects Pack\Prefabs\msVFX_Stylized Smoke 1.prefab
-        projectPath: Assets\msVFX_Free Smoke Effects Pack\Prefabs\msVFX_Stylized
-          Smoke 1.prefab
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\msVFX_Free Smoke Effects Pack\Prefabs\msVFX_Stylized Smoke 1.prefab.meta
-        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\msVFX_Free
-          Smoke Effects Pack\Prefabs\msVFX_Stylized Smoke 1.prefab.meta
-        projectPath: Assets\msVFX_Free Smoke Effects Pack\Prefabs\msVFX_Stylized
-          Smoke 1.prefab.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\msVFX_Free Smoke Effects Pack\Prefabs\msVFX_Stylized Smoke 2.prefab
-        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\msVFX_Free
-          Smoke Effects Pack\Prefabs\msVFX_Stylized Smoke 2.prefab
-        projectPath: Assets\msVFX_Free Smoke Effects Pack\Prefabs\msVFX_Stylized
-          Smoke 2.prefab
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\msVFX_Free Smoke Effects Pack\Prefabs\msVFX_Stylized Smoke 2.prefab.meta
-        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\msVFX_Free
-          Smoke Effects Pack\Prefabs\msVFX_Stylized Smoke 2.prefab.meta
-        projectPath: Assets\msVFX_Free Smoke Effects Pack\Prefabs\msVFX_Stylized
-          Smoke 2.prefab.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\msVFX_Free Smoke Effects Pack\Prefabs\msVFX_Stylized Smoke 3.prefab
-        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\msVFX_Free
-          Smoke Effects Pack\Prefabs\msVFX_Stylized Smoke 3.prefab
-        projectPath: Assets\msVFX_Free Smoke Effects Pack\Prefabs\msVFX_Stylized
-          Smoke 3.prefab
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\msVFX_Free Smoke Effects Pack\Prefabs\msVFX_Stylized Smoke 3.prefab.meta
-        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\msVFX_Free
-          Smoke Effects Pack\Prefabs\msVFX_Stylized Smoke 3.prefab.meta
-        projectPath: Assets\msVFX_Free Smoke Effects Pack\Prefabs\msVFX_Stylized
-          Smoke 3.prefab.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\msVFX_Free Smoke Effects Pack\Prefabs\msVFX_Stylized Smoke 4.prefab
-        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\msVFX_Free
-          Smoke Effects Pack\Prefabs\msVFX_Stylized Smoke 4.prefab
-        projectPath: Assets\msVFX_Free Smoke Effects Pack\Prefabs\msVFX_Stylized
-          Smoke 4.prefab
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\msVFX_Free Smoke Effects Pack\Prefabs\msVFX_Stylized Smoke 4.prefab.meta
-        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\msVFX_Free
-          Smoke Effects Pack\Prefabs\msVFX_Stylized Smoke 4.prefab.meta
-        projectPath: Assets\msVFX_Free Smoke Effects Pack\Prefabs\msVFX_Stylized
-          Smoke 4.prefab.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\msVFX_Free Smoke Effects Pack\Textures.meta
-        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\msVFX_Free
-          Smoke Effects Pack\Textures.meta
-        projectPath: Assets\msVFX_Free Smoke Effects Pack\Textures.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\msVFX_Free Smoke Effects Pack\Textures\msVFX_Stylized Smoke
-          1_Texture.png
-        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\msVFX_Free
-          Smoke Effects Pack\Textures\msVFX_Stylized Smoke 1_Texture.png
-        projectPath: Assets\msVFX_Free Smoke Effects Pack\Textures\msVFX_Stylized
-          Smoke 1_Texture.png
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\msVFX_Free Smoke Effects Pack\Textures\msVFX_Stylized Smoke
-          1_Texture.png.meta
-        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\msVFX_Free
-          Smoke Effects Pack\Textures\msVFX_Stylized Smoke 1_Texture.png.meta
-        projectPath: Assets\msVFX_Free Smoke Effects Pack\Textures\msVFX_Stylized
-          Smoke 1_Texture.png.meta
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\msVFX_Free Smoke Effects Pack\Textures\msVFX_Stylized Smoke
-          1_Texture_Dark.png
-        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\msVFX_Free
-          Smoke Effects Pack\Textures\msVFX_Stylized Smoke 1_Texture_Dark.png
-        projectPath: Assets\msVFX_Free Smoke Effects Pack\Textures\msVFX_Stylized
-          Smoke 1_Texture_Dark.png
-        originalPath: 
-        indexStatus: 4
-        workTreeStatus: 0
-      - path: Assets\msVFX_Free Smoke Effects Pack\Textures\msVFX_Stylized Smoke
-          1_Texture_Dark.png.meta
-        fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\msVFX_Free
-          Smoke Effects Pack\Textures\msVFX_Stylized Smoke 1_Texture_Dark.png.meta
-        projectPath: Assets\msVFX_Free Smoke Effects Pack\Textures\msVFX_Stylized
-          Smoke 1_Texture_Dark.png.meta
-        originalPath: 
-        indexStatus: 4
+        indexStatus: 3
         workTreeStatus: 0
       - path: UserSettings\Layouts\default-2022.dwlt
         fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\Layouts\default-2022.dwlt
@@ -103560,21 +104644,23 @@ MonoBehaviour:
         keys:
         - Assets
         - Assets\Game
-        - Assets\Game\Imports
-        - Assets\Game\Imports\ProjectileData
         - Assets\Game\Prefabs
         - Assets\Game\Prefabs\Interaction
+        - Assets\Game\Prefabs\Stages
         - Assets\Game\Scripts
+        - Assets\Game\Scripts\GameResources
         - Assets\Game\Scripts\Interaction
         - Assets\Game\Scripts\Stages
+        - Assets\Game\Scripts\Utilities
+        - Assets\Mirror
+        - Assets\Mirror\Examples
+        - Assets\Mirror\Examples\BenchmarkPrediction
         - Assets\Resources
         - Assets\Resources\UI
         - Assets\Resources\UI\images
-        - Assets\msVFX_Free Smoke Effects Pack
-        - Assets\msVFX_Free Smoke Effects Pack\Demo
-        - Assets\msVFX_Free Smoke Effects Pack\Materials
-        - Assets\msVFX_Free Smoke Effects Pack\Prefabs
-        - Assets\msVFX_Free Smoke Effects Pack\Textures
+        - Assets\Resources\UI\images\Materials
+        - Assets\Scenes
+        - Assets\Scenes\VR
         - UserSettings
         - UserSettings\Layouts
         values:
@@ -103599,42 +104685,6 @@ MonoBehaviour:
         - path: Assets\Game
           label: Game
           level: 1
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 0
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Game\Imports
-          label: Imports
-          level: 2
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 0
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Game\Imports\ProjectileData
-          label: ProjectileData
-          level: 3
           isFolder: 1
           isContainer: 0
           isCollapsed: 0
@@ -103686,9 +104736,45 @@ MonoBehaviour:
             originalPath: 
             indexStatus: 0
             workTreeStatus: 0
+        - path: Assets\Game\Prefabs\Stages
+          label: Stages
+          level: 3
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 0
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
         - path: Assets\Game\Scripts
           label: Scripts
           level: 2
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 0
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Game\Scripts\GameResources
+          label: GameResources
+          level: 3
           isFolder: 1
           isContainer: 0
           isCollapsed: 0
@@ -103724,6 +104810,78 @@ MonoBehaviour:
             workTreeStatus: 0
         - path: Assets\Game\Scripts\Stages
           label: Stages
+          level: 3
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 0
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Game\Scripts\Utilities
+          label: Utilities
+          level: 3
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 0
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Mirror
+          label: Mirror
+          level: 1
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 0
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Mirror\Examples
+          label: Examples
+          level: 2
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 0
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Mirror\Examples\BenchmarkPrediction
+          label: BenchmarkPrediction
           level: 3
           isFolder: 1
           isContainer: 0
@@ -103794,8 +104952,26 @@ MonoBehaviour:
             originalPath: 
             indexStatus: 0
             workTreeStatus: 0
-        - path: Assets\msVFX_Free Smoke Effects Pack
-          label: msVFX_Free Smoke Effects Pack
+        - path: Assets\Resources\UI\images\Materials
+          label: Materials
+          level: 4
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 0
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets\Scenes
+          label: Scenes
           level: 1
           isFolder: 1
           isContainer: 0
@@ -103812,62 +104988,8 @@ MonoBehaviour:
             originalPath: 
             indexStatus: 0
             workTreeStatus: 0
-        - path: Assets\msVFX_Free Smoke Effects Pack\Demo
-          label: Demo
-          level: 2
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 0
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\msVFX_Free Smoke Effects Pack\Materials
-          label: Materials
-          level: 2
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 0
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\msVFX_Free Smoke Effects Pack\Prefabs
-          label: Prefabs
-          level: 2
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 0
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\msVFX_Free Smoke Effects Pack\Textures
-          label: Textures
+        - path: Assets\Scenes\VR
+          label: VR
           level: 2
           isFolder: 1
           isContainer: 0
@@ -103984,366 +105106,6 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
-      - path: Assets\Game\Imports
-        label: Imports
-        level: 2
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets\Game\Imports\ProjectileData
-        label: ProjectileData
-        level: 3
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets\Game\Imports\ProjectileData\Dynamite.mtl
-        label: Dynamite.mtl
-        level: 4
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Game\Imports\ProjectileData\Dynamite.mtl
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Imports\ProjectileData\Dynamite.mtl
-          projectPath: Assets\Game\Imports\ProjectileData\Dynamite.mtl
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-      - path: Assets\Game\Imports\ProjectileData\Dynamite.mtl.meta
-        label: Dynamite.mtl.meta
-        level: 5
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Game\Imports\ProjectileData\Dynamite.mtl.meta
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Imports\ProjectileData\Dynamite.mtl.meta
-          projectPath: Assets\Game\Imports\ProjectileData\Dynamite.mtl.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-      - path: Assets\Game\Imports\ProjectileData\Dynamite.obj
-        label: Dynamite.obj
-        level: 4
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Game\Imports\ProjectileData\Dynamite.obj
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Imports\ProjectileData\Dynamite.obj
-          projectPath: Assets\Game\Imports\ProjectileData\Dynamite.obj
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-      - path: Assets\Game\Imports\ProjectileData\Dynamite.obj.meta
-        label: Dynamite.obj.meta
-        level: 5
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Game\Imports\ProjectileData\Dynamite.obj.meta
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Imports\ProjectileData\Dynamite.obj.meta
-          projectPath: Assets\Game\Imports\ProjectileData\Dynamite.obj.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-      - path: Assets\Game\Imports\ProjectileData\Dynamite.png
-        label: Dynamite.png
-        level: 4
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Game\Imports\ProjectileData\Dynamite.png
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Imports\ProjectileData\Dynamite.png
-          projectPath: Assets\Game\Imports\ProjectileData\Dynamite.png
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-      - path: Assets\Game\Imports\ProjectileData\Dynamite.png.meta
-        label: Dynamite.png.meta
-        level: 5
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Game\Imports\ProjectileData\Dynamite.png.meta
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Imports\ProjectileData\Dynamite.png.meta
-          projectPath: Assets\Game\Imports\ProjectileData\Dynamite.png.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-      - path: Assets\Game\Imports\ProjectileData\DynamiteBundle.mtl
-        label: DynamiteBundle.mtl
-        level: 4
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Game\Imports\ProjectileData\DynamiteBundle.mtl
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Imports\ProjectileData\DynamiteBundle.mtl
-          projectPath: Assets\Game\Imports\ProjectileData\DynamiteBundle.mtl
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-      - path: Assets\Game\Imports\ProjectileData\DynamiteBundle.mtl.meta
-        label: DynamiteBundle.mtl.meta
-        level: 5
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Game\Imports\ProjectileData\DynamiteBundle.mtl.meta
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Imports\ProjectileData\DynamiteBundle.mtl.meta
-          projectPath: Assets\Game\Imports\ProjectileData\DynamiteBundle.mtl.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-      - path: Assets\Game\Imports\ProjectileData\DynamiteBundle.obj
-        label: DynamiteBundle.obj
-        level: 4
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Game\Imports\ProjectileData\DynamiteBundle.obj
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Imports\ProjectileData\DynamiteBundle.obj
-          projectPath: Assets\Game\Imports\ProjectileData\DynamiteBundle.obj
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-      - path: Assets\Game\Imports\ProjectileData\DynamiteBundle.obj.meta
-        label: DynamiteBundle.obj.meta
-        level: 5
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Game\Imports\ProjectileData\DynamiteBundle.obj.meta
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Imports\ProjectileData\DynamiteBundle.obj.meta
-          projectPath: Assets\Game\Imports\ProjectileData\DynamiteBundle.obj.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-      - path: Assets\Game\Imports\ProjectileData\DynamiteBundle.png
-        label: DynamiteBundle.png
-        level: 4
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Game\Imports\ProjectileData\DynamiteBundle.png
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Imports\ProjectileData\DynamiteBundle.png
-          projectPath: Assets\Game\Imports\ProjectileData\DynamiteBundle.png
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-      - path: Assets\Game\Imports\ProjectileData\DynamiteBundle.png.meta
-        label: DynamiteBundle.png.meta
-        level: 5
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Game\Imports\ProjectileData\DynamiteBundle.png.meta
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Imports\ProjectileData\DynamiteBundle.png.meta
-          projectPath: Assets\Game\Imports\ProjectileData\DynamiteBundle.png.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-      - path: Assets\Game\Imports\ProjectileData\RevealingEye.mtl
-        label: RevealingEye.mtl
-        level: 4
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Game\Imports\ProjectileData\RevealingEye.mtl
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Imports\ProjectileData\RevealingEye.mtl
-          projectPath: Assets\Game\Imports\ProjectileData\RevealingEye.mtl
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-      - path: Assets\Game\Imports\ProjectileData\RevealingEye.mtl.meta
-        label: RevealingEye.mtl.meta
-        level: 5
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Game\Imports\ProjectileData\RevealingEye.mtl.meta
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Imports\ProjectileData\RevealingEye.mtl.meta
-          projectPath: Assets\Game\Imports\ProjectileData\RevealingEye.mtl.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-      - path: Assets\Game\Imports\ProjectileData\RevealingEye.obj
-        label: RevealingEye.obj
-        level: 4
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Game\Imports\ProjectileData\RevealingEye.obj
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Imports\ProjectileData\RevealingEye.obj
-          projectPath: Assets\Game\Imports\ProjectileData\RevealingEye.obj
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-      - path: Assets\Game\Imports\ProjectileData\RevealingEye.obj.meta
-        label: RevealingEye.obj.meta
-        level: 5
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Game\Imports\ProjectileData\RevealingEye.obj.meta
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Imports\ProjectileData\RevealingEye.obj.meta
-          projectPath: Assets\Game\Imports\ProjectileData\RevealingEye.obj.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-      - path: Assets\Game\Imports\ProjectileData\RevealingEye.png
-        label: RevealingEye.png
-        level: 4
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Game\Imports\ProjectileData\RevealingEye.png
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Imports\ProjectileData\RevealingEye.png
-          projectPath: Assets\Game\Imports\ProjectileData\RevealingEye.png
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-      - path: Assets\Game\Imports\ProjectileData\RevealingEye.png.meta
-        label: RevealingEye.png.meta
-        level: 5
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Game\Imports\ProjectileData\RevealingEye.png.meta
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Imports\ProjectileData\RevealingEye.png.meta
-          projectPath: Assets\Game\Imports\ProjectileData\RevealingEye.png.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
       - path: Assets\Game\Prefabs
         label: Prefabs
         level: 2
@@ -104380,8 +105142,8 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
-      - path: Assets\Game\Prefabs\Interaction\WeaponBarHUD.prefab
-        label: WeaponBarHUD.prefab
+      - path: Assets\Game\Prefabs\Interaction\GridMenuExample3x3 Variant.prefab
+        label: GridMenuExample3x3 Variant.prefab
         level: 4
         isFolder: 0
         isContainer: 0
@@ -104392,15 +105154,34 @@ MonoBehaviour:
         checkState: 0
         isLocked: 0
         gitStatusEntry:
-          path: Assets\Game\Prefabs\Interaction\WeaponBarHUD.prefab
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Interaction\WeaponBarHUD.prefab
-          projectPath: Assets\Game\Prefabs\Interaction\WeaponBarHUD.prefab
+          path: Assets\Game\Prefabs\Interaction\GridMenuExample3x3 Variant.prefab
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Interaction\GridMenuExample3x3
+            Variant.prefab
+          projectPath: Assets\Game\Prefabs\Interaction\GridMenuExample3x3 Variant.prefab
           originalPath: 
-          indexStatus: 3
+          indexStatus: 5
           workTreeStatus: 0
-      - path: Assets\Game\Prefabs\PlayerTower.prefab
-        label: PlayerTower.prefab
-        level: 3
+      - path: Assets\Game\Prefabs\Interaction\WeaponBarHUDVR.prefab
+        label: WeaponBarHUDVR.prefab
+        level: 4
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Game\Prefabs\Interaction\WeaponBarHUDVR.prefab
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Interaction\WeaponBarHUDVR.prefab
+          projectPath: Assets\Game\Prefabs\Interaction\WeaponBarHUDVR.prefab
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+      - path: Assets\Game\Prefabs\Interaction\WeaponBarHUDVR.prefab.meta
+        label: WeaponBarHUDVR.prefab.meta
+        level: 5
         isFolder: 0
         isContainer: 0
         isCollapsed: 0
@@ -104410,9 +105191,117 @@ MonoBehaviour:
         checkState: 0
         isLocked: 0
         gitStatusEntry:
-          path: Assets\Game\Prefabs\PlayerTower.prefab
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\PlayerTower.prefab
-          projectPath: Assets\Game\Prefabs\PlayerTower.prefab
+          path: Assets\Game\Prefabs\Interaction\WeaponBarHUDVR.prefab.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Interaction\WeaponBarHUDVR.prefab.meta
+          projectPath: Assets\Game\Prefabs\Interaction\WeaponBarHUDVR.prefab.meta
+          originalPath: Assets\Game\Prefabs\Interaction\GridMenuExample3x3 Variant.prefab.meta
+          indexStatus: 6
+          workTreeStatus: 0
+      - path: Assets\Game\Prefabs\Interaction\WeaponSelectionButtonVR.prefab
+        label: WeaponSelectionButtonVR.prefab
+        level: 4
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Game\Prefabs\Interaction\WeaponSelectionButtonVR.prefab
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Interaction\WeaponSelectionButtonVR.prefab
+          projectPath: Assets\Game\Prefabs\Interaction\WeaponSelectionButtonVR.prefab
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+      - path: Assets\Game\Prefabs\Interaction\WeaponSelectionButtonVR.prefab.meta
+        label: WeaponSelectionButtonVR.prefab.meta
+        level: 5
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Game\Prefabs\Interaction\WeaponSelectionButtonVR.prefab.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Interaction\WeaponSelectionButtonVR.prefab.meta
+          projectPath: Assets\Game\Prefabs\Interaction\WeaponSelectionButtonVR.prefab.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+      - path: Assets\Game\Prefabs\Interaction\WeaponSelectionMenuVR.prefab
+        label: WeaponSelectionMenuVR.prefab
+        level: 4
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Game\Prefabs\Interaction\WeaponSelectionMenuVR.prefab
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Interaction\WeaponSelectionMenuVR.prefab
+          projectPath: Assets\Game\Prefabs\Interaction\WeaponSelectionMenuVR.prefab
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+      - path: Assets\Game\Prefabs\Interaction\WeaponSelectionMenuVR.prefab.meta
+        label: WeaponSelectionMenuVR.prefab.meta
+        level: 5
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Game\Prefabs\Interaction\WeaponSelectionMenuVR.prefab.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Interaction\WeaponSelectionMenuVR.prefab.meta
+          projectPath: Assets\Game\Prefabs\Interaction\WeaponSelectionMenuVR.prefab.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+      - path: Assets\Game\Prefabs\Stages
+        label: Stages
+        level: 3
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets\Game\Prefabs\Stages\StageManager.prefab
+        label: StageManager.prefab
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Game\Prefabs\Stages\StageManager.prefab
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Prefabs\Stages\StageManager.prefab
+          projectPath: Assets\Game\Prefabs\Stages\StageManager.prefab
           originalPath: 
           indexStatus: 3
           workTreeStatus: 0
@@ -104434,6 +105323,42 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
+      - path: Assets\Game\Scripts\GameResources
+        label: GameResources
+        level: 3
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets\Game\Scripts\GameResources\ProjectileResources.cs
+        label: ProjectileResources.cs
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Game\Scripts\GameResources\ProjectileResources.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\GameResources\ProjectileResources.cs
+          projectPath: Assets\Game\Scripts\GameResources\ProjectileResources.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
       - path: Assets\Game\Scripts\Interaction
         label: Interaction
         level: 3
@@ -104452,8 +105377,8 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
-      - path: Assets\Game\Scripts\Interaction\TowerSelector_Click.cs
-        label: TowerSelector_Click.cs
+      - path: Assets\Game\Scripts\Interaction\SelectionHUDController.cs
+        label: SelectionHUDController.cs
         level: 4
         isFolder: 0
         isContainer: 0
@@ -104464,17 +105389,17 @@ MonoBehaviour:
         checkState: 0
         isLocked: 0
         gitStatusEntry:
-          path: Assets\Game\Scripts\Interaction\TowerSelector_Click.cs
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\TowerSelector_Click.cs
-          projectPath: Assets\Game\Scripts\Interaction\TowerSelector_Click.cs
+          path: Assets\Game\Scripts\Interaction\SelectionHUDController.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\SelectionHUDController.cs
+          projectPath: Assets\Game\Scripts\Interaction\SelectionHUDController.cs
           originalPath: 
           indexStatus: 3
           workTreeStatus: 0
-      - path: Assets\Game\Scripts\Interaction\WeaponBarHUDController.cs
-        label: WeaponBarHUDController.cs
+      - path: Assets\Game\Scripts\Interaction\SelectionHUDControllerVR.cs
+        label: SelectionHUDControllerVR.cs
         level: 4
         isFolder: 0
-        isContainer: 0
+        isContainer: 1
         isCollapsed: 0
         isHidden: 0
         isActive: 0
@@ -104482,15 +105407,15 @@ MonoBehaviour:
         checkState: 0
         isLocked: 0
         gitStatusEntry:
-          path: Assets\Game\Scripts\Interaction\WeaponBarHUDController.cs
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\WeaponBarHUDController.cs
-          projectPath: Assets\Game\Scripts\Interaction\WeaponBarHUDController.cs
+          path: Assets\Game\Scripts\Interaction\SelectionHUDControllerVR.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\SelectionHUDControllerVR.cs
+          projectPath: Assets\Game\Scripts\Interaction\SelectionHUDControllerVR.cs
           originalPath: 
-          indexStatus: 3
+          indexStatus: 4
           workTreeStatus: 0
-      - path: Assets\Game\Scripts\Inventory.cs
-        label: Inventory.cs
-        level: 3
+      - path: Assets\Game\Scripts\Interaction\SelectionHUDControllerVR.cs.meta
+        label: SelectionHUDControllerVR.cs.meta
+        level: 5
         isFolder: 0
         isContainer: 0
         isCollapsed: 0
@@ -104500,15 +105425,33 @@ MonoBehaviour:
         checkState: 0
         isLocked: 0
         gitStatusEntry:
-          path: Assets\Game\Scripts\Inventory.cs
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Inventory.cs
-          projectPath: Assets\Game\Scripts\Inventory.cs
+          path: Assets\Game\Scripts\Interaction\SelectionHUDControllerVR.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\SelectionHUDControllerVR.cs.meta
+          projectPath: Assets\Game\Scripts\Interaction\SelectionHUDControllerVR.cs.meta
           originalPath: 
-          indexStatus: 3
+          indexStatus: 4
           workTreeStatus: 0
-      - path: Assets\Game\Scripts\PlayerTower.cs
-        label: PlayerTower.cs
-        level: 3
+      - path: Assets\Game\Scripts\Interaction\WeaponBarHUDControllerVR.cs
+        label: WeaponBarHUDControllerVR.cs
+        level: 4
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Game\Scripts\Interaction\WeaponBarHUDControllerVR.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\WeaponBarHUDControllerVR.cs
+          projectPath: Assets\Game\Scripts\Interaction\WeaponBarHUDControllerVR.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+      - path: Assets\Game\Scripts\Interaction\WeaponBarHUDControllerVR.cs.meta
+        label: WeaponBarHUDControllerVR.cs.meta
+        level: 5
         isFolder: 0
         isContainer: 0
         isCollapsed: 0
@@ -104518,11 +105461,11 @@ MonoBehaviour:
         checkState: 0
         isLocked: 0
         gitStatusEntry:
-          path: Assets\Game\Scripts\PlayerTower.cs
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\PlayerTower.cs
-          projectPath: Assets\Game\Scripts\PlayerTower.cs
+          path: Assets\Game\Scripts\Interaction\WeaponBarHUDControllerVR.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Interaction\WeaponBarHUDControllerVR.cs.meta
+          projectPath: Assets\Game\Scripts\Interaction\WeaponBarHUDControllerVR.cs.meta
           originalPath: 
-          indexStatus: 3
+          indexStatus: 4
           workTreeStatus: 0
       - path: Assets\Game\Scripts\Stages
         label: Stages
@@ -104575,6 +105518,132 @@ MonoBehaviour:
           path: Assets\Game\Scripts\Stages\ShootingStage.cs
           fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Stages\ShootingStage.cs
           projectPath: Assets\Game\Scripts\Stages\ShootingStage.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - path: Assets\Game\Scripts\Utilities
+        label: Utilities
+        level: 3
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets\Game\Scripts\Utilities\RotatingObject.cs
+        label: RotatingObject.cs
+        level: 4
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Game\Scripts\Utilities\RotatingObject.cs
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Utilities\RotatingObject.cs
+          projectPath: Assets\Game\Scripts\Utilities\RotatingObject.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+      - path: Assets\Game\Scripts\Utilities\RotatingObject.cs.meta
+        label: RotatingObject.cs.meta
+        level: 5
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Game\Scripts\Utilities\RotatingObject.cs.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Game\Scripts\Utilities\RotatingObject.cs.meta
+          projectPath: Assets\Game\Scripts\Utilities\RotatingObject.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+      - path: Assets\Mirror
+        label: Mirror
+        level: 1
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets\Mirror\Examples
+        label: Examples
+        level: 2
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets\Mirror\Examples\BenchmarkPrediction
+        label: BenchmarkPrediction
+        level: 3
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets\Mirror\Examples\BenchmarkPrediction\WallMaterial.mat
+        label: WallMaterial.mat
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Mirror\Examples\BenchmarkPrediction\WallMaterial.mat
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Mirror\Examples\BenchmarkPrediction\WallMaterial.mat
+          projectPath: Assets\Mirror\Examples\BenchmarkPrediction\WallMaterial.mat
           originalPath: 
           indexStatus: 3
           workTreeStatus: 0
@@ -104632,8 +105701,8 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
-      - path: Assets\Resources\UI\images\Dynamite-icon.png
-        label: Dynamite-icon.png
+      - path: Assets\Resources\UI\images\Ammo-icon.png
+        label: Ammo-icon.png
         level: 4
         isFolder: 0
         isContainer: 1
@@ -104644,14 +105713,14 @@ MonoBehaviour:
         checkState: 0
         isLocked: 0
         gitStatusEntry:
-          path: Assets\Resources\UI\images\Dynamite-icon.png
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\images\Dynamite-icon.png
-          projectPath: Assets\Resources\UI\images\Dynamite-icon.png
+          path: Assets\Resources\UI\images\Ammo-icon.png
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\images\Ammo-icon.png
+          projectPath: Assets\Resources\UI\images\Ammo-icon.png
           originalPath: 
           indexStatus: 4
           workTreeStatus: 0
-      - path: Assets\Resources\UI\images\Dynamite-icon.png.meta
-        label: Dynamite-icon.png.meta
+      - path: Assets\Resources\UI\images\Ammo-icon.png.meta
+        label: Ammo-icon.png.meta
         level: 5
         isFolder: 0
         isContainer: 0
@@ -104662,14 +105731,14 @@ MonoBehaviour:
         checkState: 0
         isLocked: 0
         gitStatusEntry:
-          path: Assets\Resources\UI\images\Dynamite-icon.png.meta
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\images\Dynamite-icon.png.meta
-          projectPath: Assets\Resources\UI\images\Dynamite-icon.png.meta
+          path: Assets\Resources\UI\images\Ammo-icon.png.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\images\Ammo-icon.png.meta
+          projectPath: Assets\Resources\UI\images\Ammo-icon.png.meta
           originalPath: 
           indexStatus: 4
           workTreeStatus: 0
-      - path: Assets\Resources\UI\images\DynamiteBundle-icon.png
-        label: DynamiteBundle-icon.png
+      - path: Assets\Resources\UI\images\Blast-icon.png
+        label: Blast-icon.png
         level: 4
         isFolder: 0
         isContainer: 1
@@ -104680,14 +105749,14 @@ MonoBehaviour:
         checkState: 0
         isLocked: 0
         gitStatusEntry:
-          path: Assets\Resources\UI\images\DynamiteBundle-icon.png
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\images\DynamiteBundle-icon.png
-          projectPath: Assets\Resources\UI\images\DynamiteBundle-icon.png
+          path: Assets\Resources\UI\images\Blast-icon.png
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\images\Blast-icon.png
+          projectPath: Assets\Resources\UI\images\Blast-icon.png
           originalPath: 
           indexStatus: 4
           workTreeStatus: 0
-      - path: Assets\Resources\UI\images\DynamiteBundle-icon.png.meta
-        label: DynamiteBundle-icon.png.meta
+      - path: Assets\Resources\UI\images\Blast-icon.png.meta
+        label: Blast-icon.png.meta
         level: 5
         isFolder: 0
         isContainer: 0
@@ -104698,14 +105767,14 @@ MonoBehaviour:
         checkState: 0
         isLocked: 0
         gitStatusEntry:
-          path: Assets\Resources\UI\images\DynamiteBundle-icon.png.meta
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\images\DynamiteBundle-icon.png.meta
-          projectPath: Assets\Resources\UI\images\DynamiteBundle-icon.png.meta
+          path: Assets\Resources\UI\images\Blast-icon.png.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\images\Blast-icon.png.meta
+          projectPath: Assets\Resources\UI\images\Blast-icon.png.meta
           originalPath: 
           indexStatus: 4
           workTreeStatus: 0
-      - path: Assets\Resources\UI\images\RevealingEye-icon.png
-        label: RevealingEye-icon.png
+      - path: Assets\Resources\UI\images\Coin-icon.png
+        label: Coin-icon.png
         level: 4
         isFolder: 0
         isContainer: 1
@@ -104716,14 +105785,14 @@ MonoBehaviour:
         checkState: 0
         isLocked: 0
         gitStatusEntry:
-          path: Assets\Resources\UI\images\RevealingEye-icon.png
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\images\RevealingEye-icon.png
-          projectPath: Assets\Resources\UI\images\RevealingEye-icon.png
+          path: Assets\Resources\UI\images\Coin-icon.png
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\images\Coin-icon.png
+          projectPath: Assets\Resources\UI\images\Coin-icon.png
           originalPath: 
           indexStatus: 4
           workTreeStatus: 0
-      - path: Assets\Resources\UI\images\RevealingEye-icon.png.meta
-        label: RevealingEye-icon.png.meta
+      - path: Assets\Resources\UI\images\Coin-icon.png.meta
+        label: Coin-icon.png.meta
         level: 5
         isFolder: 0
         isContainer: 0
@@ -104734,241 +105803,15 @@ MonoBehaviour:
         checkState: 0
         isLocked: 0
         gitStatusEntry:
-          path: Assets\Resources\UI\images\RevealingEye-icon.png.meta
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\images\RevealingEye-icon.png.meta
-          projectPath: Assets\Resources\UI\images\RevealingEye-icon.png.meta
+          path: Assets\Resources\UI\images\Coin-icon.png.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\images\Coin-icon.png.meta
+          projectPath: Assets\Resources\UI\images\Coin-icon.png.meta
           originalPath: 
           indexStatus: 4
           workTreeStatus: 0
-      - path: Assets\msVFX_Free Smoke Effects Pack.meta
-        label: msVFX_Free Smoke Effects Pack.meta
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\msVFX_Free Smoke Effects Pack.meta
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\msVFX_Free
-            Smoke Effects Pack.meta
-          projectPath: Assets\msVFX_Free Smoke Effects Pack.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-      - path: Assets\msVFX_Free Smoke Effects Pack
-        label: msVFX_Free Smoke Effects Pack
-        level: 1
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets\msVFX_Free Smoke Effects Pack\Demo.meta
-        label: Demo.meta
-        level: 2
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\msVFX_Free Smoke Effects Pack\Demo.meta
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\msVFX_Free
-            Smoke Effects Pack\Demo.meta
-          projectPath: Assets\msVFX_Free Smoke Effects Pack\Demo.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-      - path: Assets\msVFX_Free Smoke Effects Pack\Demo
-        label: Demo
-        level: 2
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets\msVFX_Free Smoke Effects Pack\Demo\DemoScene.unity
-        label: DemoScene.unity
-        level: 3
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\msVFX_Free Smoke Effects Pack\Demo\DemoScene.unity
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\msVFX_Free
-            Smoke Effects Pack\Demo\DemoScene.unity
-          projectPath: Assets\msVFX_Free Smoke Effects Pack\Demo\DemoScene.unity
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-      - path: Assets\msVFX_Free Smoke Effects Pack\Demo\DemoScene.unity.meta
-        label: DemoScene.unity.meta
-        level: 4
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\msVFX_Free Smoke Effects Pack\Demo\DemoScene.unity.meta
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\msVFX_Free
-            Smoke Effects Pack\Demo\DemoScene.unity.meta
-          projectPath: Assets\msVFX_Free Smoke Effects Pack\Demo\DemoScene.unity.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-      - path: Assets\msVFX_Free Smoke Effects Pack\Demo\Ground Material.mat
-        label: Ground Material.mat
-        level: 3
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\msVFX_Free Smoke Effects Pack\Demo\Ground Material.mat
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\msVFX_Free
-            Smoke Effects Pack\Demo\Ground Material.mat
-          projectPath: Assets\msVFX_Free Smoke Effects Pack\Demo\Ground Material.mat
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-      - path: Assets\msVFX_Free Smoke Effects Pack\Demo\Ground Material.mat.meta
-        label: Ground Material.mat.meta
-        level: 4
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\msVFX_Free Smoke Effects Pack\Demo\Ground Material.mat.meta
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\msVFX_Free
-            Smoke Effects Pack\Demo\Ground Material.mat.meta
-          projectPath: Assets\msVFX_Free Smoke Effects Pack\Demo\Ground Material.mat.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-      - path: Assets\msVFX_Free Smoke Effects Pack\Demo\MAIAMI STUDIO rOUND.png
-        label: MAIAMI STUDIO rOUND.png
-        level: 3
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\msVFX_Free Smoke Effects Pack\Demo\MAIAMI STUDIO rOUND.png
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\msVFX_Free
-            Smoke Effects Pack\Demo\MAIAMI STUDIO rOUND.png
-          projectPath: Assets\msVFX_Free Smoke Effects Pack\Demo\MAIAMI STUDIO rOUND.png
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-      - path: Assets\msVFX_Free Smoke Effects Pack\Demo\MAIAMI STUDIO rOUND.png.meta
-        label: MAIAMI STUDIO rOUND.png.meta
-        level: 4
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\msVFX_Free Smoke Effects Pack\Demo\MAIAMI STUDIO rOUND.png.meta
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\msVFX_Free
-            Smoke Effects Pack\Demo\MAIAMI STUDIO rOUND.png.meta
-          projectPath: Assets\msVFX_Free Smoke Effects Pack\Demo\MAIAMI STUDIO rOUND.png.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-      - path: Assets\msVFX_Free Smoke Effects Pack\Demo\Skybox.mat
-        label: Skybox.mat
-        level: 3
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\msVFX_Free Smoke Effects Pack\Demo\Skybox.mat
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\msVFX_Free
-            Smoke Effects Pack\Demo\Skybox.mat
-          projectPath: Assets\msVFX_Free Smoke Effects Pack\Demo\Skybox.mat
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-      - path: Assets\msVFX_Free Smoke Effects Pack\Demo\Skybox.mat.meta
-        label: Skybox.mat.meta
-        level: 4
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\msVFX_Free Smoke Effects Pack\Demo\Skybox.mat.meta
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\msVFX_Free
-            Smoke Effects Pack\Demo\Skybox.mat.meta
-          projectPath: Assets\msVFX_Free Smoke Effects Pack\Demo\Skybox.mat.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-      - path: Assets\msVFX_Free Smoke Effects Pack\Materials.meta
+      - path: Assets\Resources\UI\images\Materials.meta
         label: Materials.meta
-        level: 2
+        level: 4
         isFolder: 0
         isContainer: 0
         isCollapsed: 0
@@ -104978,15 +105821,104 @@ MonoBehaviour:
         checkState: 0
         isLocked: 0
         gitStatusEntry:
-          path: Assets\msVFX_Free Smoke Effects Pack\Materials.meta
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\msVFX_Free
-            Smoke Effects Pack\Materials.meta
-          projectPath: Assets\msVFX_Free Smoke Effects Pack\Materials.meta
+          path: Assets\Resources\UI\images\Materials.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\images\Materials.meta
+          projectPath: Assets\Resources\UI\images\Materials.meta
           originalPath: 
           indexStatus: 4
           workTreeStatus: 0
-      - path: Assets\msVFX_Free Smoke Effects Pack\Materials
+      - path: Assets\Resources\UI\images\Materials
         label: Materials
+        level: 4
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets\Resources\UI\images\Materials\Bomb-icon.mat
+        label: Bomb-icon.mat
+        level: 5
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Resources\UI\images\Materials\Bomb-icon.mat
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\images\Materials\Bomb-icon.mat
+          projectPath: Assets\Resources\UI\images\Materials\Bomb-icon.mat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+      - path: Assets\Resources\UI\images\Materials\Bomb-icon.mat.meta
+        label: Bomb-icon.mat.meta
+        level: 6
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Resources\UI\images\Materials\Bomb-icon.mat.meta
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\UI\images\Materials\Bomb-icon.mat.meta
+          projectPath: Assets\Resources\UI\images\Materials\Bomb-icon.mat.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+      - path: Assets\Resources\projectiles.json
+        label: projectiles.json
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\Resources\projectiles.json
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Resources\projectiles.json
+          projectPath: Assets\Resources\projectiles.json
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - path: Assets\Scenes
+        label: Scenes
+        level: 1
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets\Scenes\VR
+        label: VR
         level: 2
         isFolder: 1
         isContainer: 0
@@ -105003,33 +105935,10 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
-      - path: Assets\msVFX_Free Smoke Effects Pack\Materials\msVFX_Stylized Smoke
-          1_Material.mat
-        label: msVFX_Stylized Smoke 1_Material.mat
+      - path: Assets\Scenes\VR\HomeSceneVR.unity
+        label: HomeSceneVR.unity
         level: 3
         isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\msVFX_Free Smoke Effects Pack\Materials\msVFX_Stylized Smoke
-            1_Material.mat
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\msVFX_Free
-            Smoke Effects Pack\Materials\msVFX_Stylized Smoke 1_Material.mat
-          projectPath: Assets\msVFX_Free Smoke Effects Pack\Materials\msVFX_Stylized
-            Smoke 1_Material.mat
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-      - path: Assets\msVFX_Free Smoke Effects Pack\Materials\msVFX_Stylized Smoke
-          1_Material.mat.meta
-        label: msVFX_Stylized Smoke 1_Material.mat.meta
-        level: 4
-        isFolder: 0
         isContainer: 0
         isCollapsed: 0
         isHidden: 0
@@ -105038,77 +105947,16 @@ MonoBehaviour:
         checkState: 0
         isLocked: 0
         gitStatusEntry:
-          path: Assets\msVFX_Free Smoke Effects Pack\Materials\msVFX_Stylized Smoke
-            1_Material.mat.meta
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\msVFX_Free
-            Smoke Effects Pack\Materials\msVFX_Stylized Smoke 1_Material.mat.meta
-          projectPath: Assets\msVFX_Free Smoke Effects Pack\Materials\msVFX_Stylized
-            Smoke 1_Material.mat.meta
+          path: Assets\Scenes\VR\HomeSceneVR.unity
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\VR\HomeSceneVR.unity
+          projectPath: Assets\Scenes\VR\HomeSceneVR.unity
           originalPath: 
-          indexStatus: 4
+          indexStatus: 3
           workTreeStatus: 0
-      - path: Assets\msVFX_Free Smoke Effects Pack\Prefabs.meta
-        label: Prefabs.meta
-        level: 2
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\msVFX_Free Smoke Effects Pack\Prefabs.meta
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\msVFX_Free
-            Smoke Effects Pack\Prefabs.meta
-          projectPath: Assets\msVFX_Free Smoke Effects Pack\Prefabs.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-      - path: Assets\msVFX_Free Smoke Effects Pack\Prefabs
-        label: Prefabs
-        level: 2
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets\msVFX_Free Smoke Effects Pack\Prefabs\msVFX_Stylized Smoke 1.prefab
-        label: msVFX_Stylized Smoke 1.prefab
+      - path: Assets\Scenes\VR\ServerStartSceneVR.unity
+        label: ServerStartSceneVR.unity
         level: 3
         isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\msVFX_Free Smoke Effects Pack\Prefabs\msVFX_Stylized Smoke
-            1.prefab
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\msVFX_Free
-            Smoke Effects Pack\Prefabs\msVFX_Stylized Smoke 1.prefab
-          projectPath: Assets\msVFX_Free Smoke Effects Pack\Prefabs\msVFX_Stylized
-            Smoke 1.prefab
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-      - path: Assets\msVFX_Free Smoke Effects Pack\Prefabs\msVFX_Stylized Smoke 1.prefab.meta
-        label: msVFX_Stylized Smoke 1.prefab.meta
-        level: 4
-        isFolder: 0
         isContainer: 0
         isCollapsed: 0
         isHidden: 0
@@ -105117,40 +105965,16 @@ MonoBehaviour:
         checkState: 0
         isLocked: 0
         gitStatusEntry:
-          path: Assets\msVFX_Free Smoke Effects Pack\Prefabs\msVFX_Stylized Smoke
-            1.prefab.meta
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\msVFX_Free
-            Smoke Effects Pack\Prefabs\msVFX_Stylized Smoke 1.prefab.meta
-          projectPath: Assets\msVFX_Free Smoke Effects Pack\Prefabs\msVFX_Stylized
-            Smoke 1.prefab.meta
+          path: Assets\Scenes\VR\ServerStartSceneVR.unity
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\VR\ServerStartSceneVR.unity
+          projectPath: Assets\Scenes\VR\ServerStartSceneVR.unity
           originalPath: 
-          indexStatus: 4
+          indexStatus: 3
           workTreeStatus: 0
-      - path: Assets\msVFX_Free Smoke Effects Pack\Prefabs\msVFX_Stylized Smoke 2.prefab
-        label: msVFX_Stylized Smoke 2.prefab
+      - path: Assets\Scenes\VR\Vox3DSceneMultiplayerVR.unity
+        label: Vox3DSceneMultiplayerVR.unity
         level: 3
         isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\msVFX_Free Smoke Effects Pack\Prefabs\msVFX_Stylized Smoke
-            2.prefab
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\msVFX_Free
-            Smoke Effects Pack\Prefabs\msVFX_Stylized Smoke 2.prefab
-          projectPath: Assets\msVFX_Free Smoke Effects Pack\Prefabs\msVFX_Stylized
-            Smoke 2.prefab
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-      - path: Assets\msVFX_Free Smoke Effects Pack\Prefabs\msVFX_Stylized Smoke 2.prefab.meta
-        label: msVFX_Stylized Smoke 2.prefab.meta
-        level: 4
-        isFolder: 0
         isContainer: 0
         isCollapsed: 0
         isHidden: 0
@@ -105159,223 +105983,11 @@ MonoBehaviour:
         checkState: 0
         isLocked: 0
         gitStatusEntry:
-          path: Assets\msVFX_Free Smoke Effects Pack\Prefabs\msVFX_Stylized Smoke
-            2.prefab.meta
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\msVFX_Free
-            Smoke Effects Pack\Prefabs\msVFX_Stylized Smoke 2.prefab.meta
-          projectPath: Assets\msVFX_Free Smoke Effects Pack\Prefabs\msVFX_Stylized
-            Smoke 2.prefab.meta
+          path: Assets\Scenes\VR\Vox3DSceneMultiplayerVR.unity
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\Scenes\VR\Vox3DSceneMultiplayerVR.unity
+          projectPath: Assets\Scenes\VR\Vox3DSceneMultiplayerVR.unity
           originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-      - path: Assets\msVFX_Free Smoke Effects Pack\Prefabs\msVFX_Stylized Smoke 3.prefab
-        label: msVFX_Stylized Smoke 3.prefab
-        level: 3
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\msVFX_Free Smoke Effects Pack\Prefabs\msVFX_Stylized Smoke
-            3.prefab
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\msVFX_Free
-            Smoke Effects Pack\Prefabs\msVFX_Stylized Smoke 3.prefab
-          projectPath: Assets\msVFX_Free Smoke Effects Pack\Prefabs\msVFX_Stylized
-            Smoke 3.prefab
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-      - path: Assets\msVFX_Free Smoke Effects Pack\Prefabs\msVFX_Stylized Smoke 3.prefab.meta
-        label: msVFX_Stylized Smoke 3.prefab.meta
-        level: 4
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\msVFX_Free Smoke Effects Pack\Prefabs\msVFX_Stylized Smoke
-            3.prefab.meta
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\msVFX_Free
-            Smoke Effects Pack\Prefabs\msVFX_Stylized Smoke 3.prefab.meta
-          projectPath: Assets\msVFX_Free Smoke Effects Pack\Prefabs\msVFX_Stylized
-            Smoke 3.prefab.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-      - path: Assets\msVFX_Free Smoke Effects Pack\Prefabs\msVFX_Stylized Smoke 4.prefab
-        label: msVFX_Stylized Smoke 4.prefab
-        level: 3
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\msVFX_Free Smoke Effects Pack\Prefabs\msVFX_Stylized Smoke
-            4.prefab
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\msVFX_Free
-            Smoke Effects Pack\Prefabs\msVFX_Stylized Smoke 4.prefab
-          projectPath: Assets\msVFX_Free Smoke Effects Pack\Prefabs\msVFX_Stylized
-            Smoke 4.prefab
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-      - path: Assets\msVFX_Free Smoke Effects Pack\Prefabs\msVFX_Stylized Smoke 4.prefab.meta
-        label: msVFX_Stylized Smoke 4.prefab.meta
-        level: 4
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\msVFX_Free Smoke Effects Pack\Prefabs\msVFX_Stylized Smoke
-            4.prefab.meta
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\msVFX_Free
-            Smoke Effects Pack\Prefabs\msVFX_Stylized Smoke 4.prefab.meta
-          projectPath: Assets\msVFX_Free Smoke Effects Pack\Prefabs\msVFX_Stylized
-            Smoke 4.prefab.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-      - path: Assets\msVFX_Free Smoke Effects Pack\Textures.meta
-        label: Textures.meta
-        level: 2
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\msVFX_Free Smoke Effects Pack\Textures.meta
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\msVFX_Free
-            Smoke Effects Pack\Textures.meta
-          projectPath: Assets\msVFX_Free Smoke Effects Pack\Textures.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-      - path: Assets\msVFX_Free Smoke Effects Pack\Textures
-        label: Textures
-        level: 2
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets\msVFX_Free Smoke Effects Pack\Textures\msVFX_Stylized Smoke
-          1_Texture.png
-        label: msVFX_Stylized Smoke 1_Texture.png
-        level: 3
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\msVFX_Free Smoke Effects Pack\Textures\msVFX_Stylized Smoke
-            1_Texture.png
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\msVFX_Free
-            Smoke Effects Pack\Textures\msVFX_Stylized Smoke 1_Texture.png
-          projectPath: Assets\msVFX_Free Smoke Effects Pack\Textures\msVFX_Stylized
-            Smoke 1_Texture.png
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-      - path: Assets\msVFX_Free Smoke Effects Pack\Textures\msVFX_Stylized Smoke
-          1_Texture.png.meta
-        label: msVFX_Stylized Smoke 1_Texture.png.meta
-        level: 4
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\msVFX_Free Smoke Effects Pack\Textures\msVFX_Stylized Smoke
-            1_Texture.png.meta
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\msVFX_Free
-            Smoke Effects Pack\Textures\msVFX_Stylized Smoke 1_Texture.png.meta
-          projectPath: Assets\msVFX_Free Smoke Effects Pack\Textures\msVFX_Stylized
-            Smoke 1_Texture.png.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-      - path: Assets\msVFX_Free Smoke Effects Pack\Textures\msVFX_Stylized Smoke
-          1_Texture_Dark.png
-        label: msVFX_Stylized Smoke 1_Texture_Dark.png
-        level: 3
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\msVFX_Free Smoke Effects Pack\Textures\msVFX_Stylized Smoke
-            1_Texture_Dark.png
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\msVFX_Free
-            Smoke Effects Pack\Textures\msVFX_Stylized Smoke 1_Texture_Dark.png
-          projectPath: Assets\msVFX_Free Smoke Effects Pack\Textures\msVFX_Stylized
-            Smoke 1_Texture_Dark.png
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-      - path: Assets\msVFX_Free Smoke Effects Pack\Textures\msVFX_Stylized Smoke
-          1_Texture_Dark.png.meta
-        label: msVFX_Stylized Smoke 1_Texture_Dark.png.meta
-        level: 4
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\msVFX_Free Smoke Effects Pack\Textures\msVFX_Stylized Smoke
-            1_Texture_Dark.png.meta
-          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\Assets\msVFX_Free
-            Smoke Effects Pack\Textures\msVFX_Stylized Smoke 1_Texture_Dark.png.meta
-          projectPath: Assets\msVFX_Free Smoke Effects Pack\Textures\msVFX_Stylized
-            Smoke 1_Texture_Dark.png.meta
-          originalPath: 
-          indexStatus: 4
+          indexStatus: 3
           workTreeStatus: 0
       - path: UserSettings
         label: UserSettings
@@ -105394,6 +106006,24 @@ MonoBehaviour:
           projectPath: 
           originalPath: 
           indexStatus: 0
+          workTreeStatus: 0
+      - path: UserSettings\EditorUserSettings.asset
+        label: EditorUserSettings.asset
+        level: 1
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: UserSettings\EditorUserSettings.asset
+          fullPath: C:\Main\School\MSE\MSE_Projects\MSEThesis\Vox3D\UserSettings\EditorUserSettings.asset
+          projectPath: UserSettings\EditorUserSettings.asset
+          originalPath: 
+          indexStatus: 3
           workTreeStatus: 0
       - path: UserSettings\Layouts
         label: Layouts
@@ -105533,7 +106163,7 @@ MonoBehaviour:
   currentRemoteUrl: https://github.com/Valus-gh/Vox3D
   statusAhead: 0
   statusBehind: 0
-  hasItemsToCommit: 0
+  hasItemsToCommit: 1
   isTrackingRemoteBranch: 1
   currentBranchContent:
     m_Text: dev-quest
@@ -105544,13 +106174,13 @@ MonoBehaviour:
     m_Image: {fileID: 0}
     m_Tooltip: Url of the origin remote
   lastCurrentBranchAndRemoteChangedEvent:
-    updatedTimeString: 2025-06-18T12:16:19.733+02:00
+    updatedTimeString: 2025-07-07T11:00:15.671+02:00
     cacheType: 1
   lastTrackingStatusChangedEvent:
-    updatedTimeString: 2025-06-18T12:16:20.950+02:00
+    updatedTimeString: 2025-07-07T11:00:17.072+02:00
     cacheType: 5
   lastStatusEntriesChangedEvent:
-    updatedTimeString: 2025-06-18T12:16:08.563+02:00
+    updatedTimeString: 2025-07-07T11:06:37.701+02:00
     cacheType: 6
   pullButtonContent:
     m_Text: Pull

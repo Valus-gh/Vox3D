@@ -13,10 +13,8 @@ namespace Game.Interaction
 
     public class TowerControlsMultiplayer : NetworkBehaviour
     {
-        protected Trajectory TowerTrajectory;
+        public Trajectory TowerTrajectory;
         public PlayerTower Tower;
-
-        public KeyCode fireCode = KeyCode.Space;
 
         void Start()
         {

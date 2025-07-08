@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5464661084114887398}
   - component: {fileID: -5652156399681621843}
   - component: {fileID: 5791789843061540274}
-  - component: {fileID: 4828080692567637255}
+  - component: {fileID: 4028893792831408077}
   m_Layer: 0
   m_Name: StageManager
   m_TagString: Untagged
@@ -147,7 +147,7 @@ MonoBehaviour:
   IsInitialized: 0
   IsRunning: 0
   IsComplete: 0
---- !u!114 &4828080692567637255
+--- !u!114 &4028893792831408077
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -156,7 +156,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6827980584035153928}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d798ed7e62c1f9459f623dae71110d0, type: 3}
+  m_Script: {fileID: 11500000, guid: 1ccfc6eaea41a9b45b0977ea0317cbeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _OutlineResources: {fileID: 11400000, guid: d28e70f030b1a634db9a6a6d5478ef19, type: 2}

@@ -7,6 +7,7 @@ using Mirror;
 using Game.Resources;
 using Game.Interaction;
 using Game.Utilities;
+using Vox3D.Engine;
 
 namespace Game.Stages
 {
@@ -52,6 +53,8 @@ namespace Game.Stages
 
             RpcToggleHUD(true);
             GetComponent<StageManager>().RpcToggleAllLoadingScreens(false);
+            RpcDeactivateDestructionColliders();
+
         }
 
         public override void Deinitialize()
@@ -60,17 +63,26 @@ namespace Game.Stages
         }
         protected override void Run()
         {
-   
+
         }
 
         [ClientRpc]
-        private void RpcLoadHUD() 
+        private void RpcLoadHUD()
         {
             if (_ProjectileTemplates is null)
                 _ProjectileTemplates = Vox3D.JSON.JsonImporter<ProjectileResources>.FromJSON("projectiles");
-            
+
             _SelectionStageHUD_Instance = Instantiate(_SelectionStageHUD, UnityEngine.Camera.main.transform);
             _SelectionStageHUD_Instance.GetComponent<SelectionHUDControllerVR>().ToggleDisplay(false);
+        }
+
+        [ClientRpc]
+        private void RpcDeactivateDestructionColliders()
+        {
+            foreach(var chunk in FindObjectOfType<World>().Chunks.Values)
+            {
+                chunk.ToggleDestructionCollider(false);
+            }
         }
 
         //TODO add cost to projectiles

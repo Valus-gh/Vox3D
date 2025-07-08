@@ -10,6 +10,7 @@ namespace Game.Interaction
 {
     public class TowerControlsMultiplayerKeyboard : TowerControlsMultiplayer
     {
+        public KeyCode fireCode = KeyCode.Space;
 
         // Update is called once per frame
         void Update()

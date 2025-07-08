@@ -9,6 +9,7 @@ using Game.Weapons;
 using Game.Utilities;
 using Game.Networking;
 using Game.Resources;
+using Vox3D.Engine;
 
 //TODO tidy up order of RPCS AND CMDS
 
@@ -162,7 +163,7 @@ namespace Game.Stages
 
         public void Selectweapon(string weaponName)
         {
-            var currentTower = GetComponent<TowerSelector_Click>().SelectedTower;
+            var currentTower = GetComponent<TowerSelector_Quest>().SelectedTower;
 
             if (currentTower is null) return;
 
@@ -184,7 +185,7 @@ namespace Game.Stages
 
         private void LoadHUD()
         {
-            GetComponent<TowerSelector_Click>().enabled = true;
+            GetComponent<TowerSelector_Quest>().enabled = true;
 
             if (_WeaponBarHUD_Instance is not null) return;
             if (_ProjectileTemplates is null)
@@ -233,9 +234,20 @@ namespace Game.Stages
             }
         }
 
+        [ClientRpc]
+        private void RpcActivateDestructionColliders()
+        {
+            foreach (var chunk in FindObjectOfType<World>().Chunks.Values)
+            {
+                chunk.ToggleDestructionCollider(true);
+            }
+        }
+
         private void FireProjectiles()
         {
             _Shooting = true;
+
+            RpcActivateDestructionColliders();
 
             foreach(var (owner, trajectories) in _ConfirmedTrajectories)
             {
@@ -290,7 +302,7 @@ namespace Game.Stages
                     RpcToggleAimingArrows();
                     RpcToggleHUD(false);
 
-                    GetComponent<TowerSelector_Click>().enabled = false;
+                    GetComponent<TowerSelector_Quest>().enabled = false;
                 }
             }
         }

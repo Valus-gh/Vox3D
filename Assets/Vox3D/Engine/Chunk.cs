@@ -251,6 +251,11 @@ namespace Vox3D.Engine
             return mesh;
         }
 
+        public void ToggleDestructionCollider(bool active)
+        {
+            _ChunkDestructionCollider.gameObject.SetActive(active);
+        }
+
         /*public void OnCollisionEnter(Collision collision)
         {
             ContactPoint[] points = new ContactPoint[1];

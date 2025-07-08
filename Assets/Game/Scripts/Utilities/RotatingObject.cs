@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+using OVR.Input;
+
 namespace Game.Utilities
 {
     public class RotatingObject : MonoBehaviour
@@ -18,7 +20,7 @@ namespace Game.Utilities
         // Update is called once per frame
         void Update()
         {
-            transform.RotateAround(transform.position, Vector3.up, _Speed);
+            transform.RotateAround(transform.position, transform.up, _Speed);
         }
     }
 
