@@ -54,6 +54,7 @@ namespace Game.Stages
             RpcToggleHUD(true);
             GetComponent<StageManager>().RpcToggleAllLoadingScreens(false);
             RpcDeactivateDestructionColliders();
+            RpcScaleWorld();
 
         }
 
@@ -64,6 +65,14 @@ namespace Game.Stages
         protected override void Run()
         {
 
+        }
+
+        [ClientRpc]
+        private void RpcScaleWorld()
+        {
+            var world = FindObjectOfType<World>();
+
+           // world.transform.position = UnityEngine.Camera.main.transform.position + new Vector3(-4.0f, -6f, 4.0f);
         }
 
         [ClientRpc]

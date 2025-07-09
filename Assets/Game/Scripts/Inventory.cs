@@ -71,7 +71,7 @@ namespace Game
 
         void OnItemChanged(string key, uint oldValue)
         {
-            var weaponBar = FindObjectOfType<WeaponBarHUDController>();
+            var weaponBar = FindObjectOfType<WeaponBarHUDControllerVR>();
 
             if(weaponBar is not null)
                 weaponBar.UpdateHUD(this);

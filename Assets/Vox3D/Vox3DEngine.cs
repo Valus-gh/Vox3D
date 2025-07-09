@@ -20,11 +20,11 @@ namespace Vox3D {
             return Worlds.ContainsKey(ID) ? Worlds[ID] : null;
         }
 
-        public static World FromJSON(string path, bool generateMaps = false)
+        public static World FromJSON(string path, Vector3 origin, bool generateMaps = false)
         {
             var model = Vox3D.JSON.JsonImporter<JSON.Vox3DModel>.FromJSON(path);       
 
-            return FromModel(model, generateMaps);
+            return FromModel(model, origin, generateMaps);
         }
 
         /// <summary>
@@ -35,7 +35,7 @@ namespace Vox3D {
         /// </summary>
         /// <param name="model"></param>
         /// <returns></returns>
-        public static World FromModel(JSON.Vox3DModel model, bool generateMaps = false)
+        public static World FromModel(JSON.Vox3DModel model, Vector3 origin, bool generateMaps = false)
         {
             var properties = new Vox3DProperties(model.World.WorldSize, model.World.ChunkSize, model.World.VoxelSize);
 
@@ -73,6 +73,7 @@ namespace Vox3D {
             string worldID = System.Guid.NewGuid().ToString();
 
             GameObject worldObject = new GameObject($"World_{worldID}_{properties.WorldSize}_{properties.ChunkSize}_{properties.VoxelSize}");
+            //worldObject.transform.localPosition = origin;
 
             World world         = worldObject.AddComponent<World>();
             world.ID            = worldID;

@@ -192,8 +192,8 @@ namespace Game.Stages
                 _ProjectileTemplates = Vox3D.JSON.JsonImporter<ProjectileResources>.FromJSON("projectiles");
 
             _WeaponBarHUD_Instance = Instantiate(_WeaponBarHUD, UnityEngine.Camera.main.transform);
-            _WeaponBarHUD_Instance.GetComponent<WeaponBarHUDController>().InitializeHUD(_ProjectileTemplates);
-            _WeaponBarHUD_Instance.GetComponent<WeaponBarHUDController>().ToggleDisplay(false);
+            _WeaponBarHUD_Instance.GetComponent<WeaponBarHUDControllerVR>().InitializeHUD(_ProjectileTemplates);
+            _WeaponBarHUD_Instance.GetComponent<WeaponBarHUDControllerVR>().ToggleDisplay(false);
         }
 
         [ClientRpc]
@@ -205,7 +205,7 @@ namespace Game.Stages
             {
                 if(player.netId == NetworkRoomManagerV3D.singleton.PlayerID)
                 {
-                    _WeaponBarHUD_Instance.GetComponent<WeaponBarHUDController>().UpdateHUD(player.Inventory);
+                    _WeaponBarHUD_Instance.GetComponent<WeaponBarHUDControllerVR>().UpdateHUD(player.Inventory);
                 }
             }
         }
@@ -213,7 +213,7 @@ namespace Game.Stages
         [ClientRpc]
         private void RpcToggleHUD(bool active)
         {
-            _WeaponBarHUD_Instance.GetComponent<WeaponBarHUDController>().ToggleDisplay(active);
+            _WeaponBarHUD_Instance.GetComponent<WeaponBarHUDControllerVR>().ToggleDisplay(active);
         }
 
         [ClientRpc]

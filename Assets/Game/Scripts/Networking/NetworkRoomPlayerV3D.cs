@@ -49,7 +49,7 @@ namespace Game.Networking
             NetworkRoomManagerV3D.singleton.PlayerID = netId;
 
             Model = FindObjectOfType<ModelHolder>().Model;
-            World = Vox3DEngine.FromModel(Model);
+            World = Vox3DEngine.FromModel(Model, Vector3.zero);
 
             World.PopulateWorld();
             World.PopulateChunks();
@@ -64,6 +64,7 @@ namespace Game.Networking
             if (World.Loaded) 
             {
                 _LoadingConfirmed = true;
+                World.transform.position = new Vector3(-64, -80, -64);
                 FindObjectOfType<ConnectionStage>().CmdConfirmWorldLoaded();
             }
         }

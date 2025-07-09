@@ -10945,7 +10945,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3979115116853310849, guid: 57398f153e565e7439c450b2c2804294, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 1.706
+      value: 1.7
       objectReference: {fileID: 0}
     - target: {fileID: 3979115116853310849, guid: 57398f153e565e7439c450b2c2804294, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -10963,18 +10963,6 @@ PrefabInstance:
       propertyPath: _Manager
       value: 
       objectReference: {fileID: 933011378}
-    - target: {fileID: 6475126975000244144, guid: 57398f153e565e7439c450b2c2804294, type: 3}
-      propertyPath: m_Type
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6475126975000244144, guid: 57398f153e565e7439c450b2c2804294, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 6475126975000244144, guid: 57398f153e565e7439c450b2c2804294, type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 6527478835546334418, guid: 57398f153e565e7439c450b2c2804294, type: 3}
       propertyPath: m_Name
       value: MenuCanvas

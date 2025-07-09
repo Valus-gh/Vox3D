@@ -20,7 +20,7 @@ namespace Demo
 
             //######################## IMPORT FROM JSON ########################//
 
-            var world = Vox3D.Vox3DEngine.FromJSON("config", true);
+            var world = Vox3D.Vox3DEngine.FromJSON("config", Vector3.zero, true);
 
             world.HeightMap.BakeTexture("Elevation");
             world.MoistureMap.BakeTexture("Moisture");

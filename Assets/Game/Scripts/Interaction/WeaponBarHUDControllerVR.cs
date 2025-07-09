@@ -20,18 +20,19 @@ namespace Game.Interaction
         {
             foreach (var button in _WeaponBarButtons)
             {
-                var nameLabel = button.transform.Find("Label-Ammo").GetComponent<TMPro.TextMeshProUGUI>();
+                var label = button.transform.Find("Content/Background/Elements/Ammo-row/Label-Ammo");
+                var nameLabel = label.GetComponent<TMPro.TextMeshProUGUI>();
 
                 if (nameLabel.text == "0")
-                    button.transform.Find("Background").GetComponent<Image>().color = Color.red;
+                    button.transform.Find("Content/Background").GetComponent<Image>().color = Color.red;
                 else
-                    button.transform.Find("Background").GetComponent<Image>().color = (clickable) ? Color.white : Color.red;
+                    button.transform.Find("Content/Background").GetComponent<Image>().color = (clickable) ? Color.white : Color.red;
             }
         }
 
         public void ToggleClickable(Button control, bool clickable)
         {
-            control.transform.Find("Background").GetComponent<Image>().color = (clickable) ? Color.white : Color.red;
+            control.transform.Find("Content/Background").GetComponent<Image>().color = (clickable) ? Color.white : Color.red;
         }
 
         public void InitializeHUD(ProjectileResources resources)
@@ -45,13 +46,13 @@ namespace Game.Interaction
         {
             foreach (var button in _WeaponBarButtons)
             {
-                var nameLabel = button.transform.Find("Label").GetComponent<TMPro.TextMeshProUGUI>();
+                var nameLabel = button.transform.Find("Content/Background/Elements/Label").GetComponent<TMPro.TextMeshProUGUI>();
 
                 foreach (var item in inventory.Projectiles)
                 {
                     if (nameLabel.text == item.Key)
                     {
-                        var ammoLabel = button.transform.Find("Label-Ammo").GetComponent<TMPro.TextMeshProUGUI>();
+                        var ammoLabel = button.transform.Find("Content/Background/Elements/Ammo-row/Label-Ammo").GetComponent<TMPro.TextMeshProUGUI>();
 
                         // If the player bought ammo for this weapon, register callback
                         // If the player has run out of ammo for this weapon, unregister callback

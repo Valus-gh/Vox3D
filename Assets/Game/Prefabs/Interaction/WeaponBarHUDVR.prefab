@@ -1810,6 +1810,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6837754694124558723}
     m_Modifications:
+    - target: {fileID: 1902055100626839078, guid: 5bb57195e8c805547affc2be132538d0, type: 3}
+      propertyPath: _AngleLabel
+      value: 
+      objectReference: {fileID: 4070257347216959171}
+    - target: {fileID: 1902055100626839078, guid: 5bb57195e8c805547affc2be132538d0, type: 3}
+      propertyPath: _RotationLabel
+      value: 
+      objectReference: {fileID: 2207709902087585808}
     - target: {fileID: 2269817091792684671, guid: 5bb57195e8c805547affc2be132538d0, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -2022,11 +2030,34 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5209294863245621667, guid: 5bb57195e8c805547affc2be132538d0, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bb57195e8c805547affc2be132538d0, type: 3}
+--- !u!114 &2207709902087585808 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4387266296736818613, guid: 5bb57195e8c805547affc2be132538d0, type: 3}
+  m_PrefabInstance: {fileID: 2468516880915211685}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4070257347216959171 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1890837274796213094, guid: 5bb57195e8c805547affc2be132538d0, type: 3}
+  m_PrefabInstance: {fileID: 2468516880915211685}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &8640231726495882350 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6172653865051716043, guid: 5bb57195e8c805547affc2be132538d0, type: 3}
