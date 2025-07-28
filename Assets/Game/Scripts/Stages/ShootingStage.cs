@@ -77,7 +77,7 @@ namespace Game.Stages
             {
                 foreach (var tower in player.GetComponent<Player>().Towers)
                 {
-                    CmdEquipWeapon(tower.TowerID, "Basic", true);
+                    CmdEquipWeapon(tower.TowerID, "Bomb", true);
                 }
             }
 
@@ -240,6 +240,49 @@ namespace Game.Stages
             foreach (var chunk in FindObjectOfType<World>().Chunks.Values)
             {
                 chunk.ToggleDestructionCollider(true);
+            }
+        }
+
+        [Command(requiresAuthority = false)]
+        public void CmdScatterProjectiles(string template, List<Trajectory> trajectories, Vector3 scatterOrigin, uint ownerID)
+        {
+            foreach(var pTemplate in _ProjectileTemplates.Projectiles)
+            {
+                if(pTemplate.Name == template)
+                {
+                    foreach (var tower in _TowersByPlayer[ownerID])
+                    {
+                        var projectile = tower.EquippedWeapon;
+
+                        foreach(var trajectory in trajectories)
+                        {
+                            var instance = Instantiate(projectile, scatterOrigin, Quaternion.identity, null);
+
+                            var projectileTrajectory = new Trajectory();
+                            projectileTrajectory.DirectionXZ = trajectory.DirectionXZ;
+                            projectileTrajectory.Angle = trajectory.Angle;
+
+                            instance.GetComponent<OwnedBy>().OwnerID = ownerID;
+                            instance.Trajectory = projectileTrajectory;
+                            instance.Aim();
+                            instance.Fire();
+
+                            NetworkServer.Spawn(instance.gameObject);
+
+                            instance.RpcSetValuesAfterSpawn(
+                                pTemplate.Blast.Radius,
+                                pTemplate.Blast.RadiusOffset,
+                                pTemplate.Blast.Damage,
+                                pTemplate.Blast.Scatter,
+                                pTemplate.Blast.ScatterOnImpact,
+                                pTemplate.Blast.ScatterAngle,
+                                pTemplate.Blast.ScatterAmount,
+                                pTemplate.Blast.ScatterBehaviour,
+                                pTemplate.Blast.Child
+                            );
+                        }
+                    }
+                }
             }
         }
 

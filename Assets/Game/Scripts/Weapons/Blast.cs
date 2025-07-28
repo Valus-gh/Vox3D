@@ -1,6 +1,8 @@
 using UnityEngine;
 
 using Game.Stages;
+using Game.Resources;
+using System.Collections.Generic;
 
 namespace Game.Weapons
 {
@@ -44,13 +46,13 @@ namespace Game.Weapons
             Child = child;
         }
 
-        public void Trigger(Collision collision)
+        public void Trigger(Collision collision, uint ownerID)
         {
             //TODO change logic to spawn additional projectiles when blast is of scatter type
 
             if (Scatter)
             {
-                DoSpread();
+                DoScatter(collision, ownerID);
                 return;
             }
 
@@ -70,9 +72,25 @@ namespace Game.Weapons
             // Test towers for collisions. Server-side.
             Object.FindObjectOfType<ShootingStage>().CmdTestTowerCollision(collision.contacts[0].point, Radius, Damage);
         }
-        private void DoSpread()
+        private void DoScatter(Collision collision, uint ownerID)
         {
+            List<Trajectory> trajectories = new List<Trajectory>();
 
+            float angleStep = 360f / ScatterAmount;
+
+            for (int i = 0; i < ScatterAmount; i++)
+            {
+                float sphereSlice = angleStep * i * Mathf.Deg2Rad;
+                Vector3 horizontalDir = new Vector3(Mathf.Cos(sphereSlice), 0f, Mathf.Sin(sphereSlice)).normalized;
+
+                Trajectory trajectory = new Trajectory();
+                trajectory.Angle = ScatterAngle;
+                trajectory.DirectionXZ = horizontalDir;
+
+                trajectories[i] = trajectory;
+            }
+
+            Object.FindObjectOfType<ShootingStage>().CmdScatterProjectiles(Child, trajectories, collision.contacts[0].point, ownerID);
         }
     }
 

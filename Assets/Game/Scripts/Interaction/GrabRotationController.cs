@@ -64,7 +64,6 @@ namespace Game.Interaction {
         private void RotateViaStick()
         {
             Vector2 stickAxis = OVRInput.Get(OVRInput.Axis2D.PrimaryThumbstick, _Controller);
-
             _GrabbedObject.RotateAround(_GrabbedObject.position, Vector3.up, stickAxis.x * 0.5f);
         }
 

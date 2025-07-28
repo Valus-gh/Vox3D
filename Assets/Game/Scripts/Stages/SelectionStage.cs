@@ -47,9 +47,13 @@ namespace Game.Stages
                 }
 
                 IsInitialized = true;
+                
+                CmdModifyBudget_All(+50);
 
                 RpcLoadHUD();
             }
+
+            CmdModifyBudget_All(+50);
 
             RpcToggleHUD(true);
             GetComponent<StageManager>().RpcToggleAllLoadingScreens(false);
@@ -112,6 +116,21 @@ namespace Game.Stages
                     }
                 }
             }
+        }
+
+        [Command(requiresAuthority = false)]
+        public void CmdModifyBudget_All(int amount)
+        {
+            foreach(var player in Players)
+            {
+                CmdModifyBudget_Player(amount, player.GetComponent<Player>());
+            }
+        }
+
+        [Command(requiresAuthority = false)]
+        public void CmdModifyBudget_Player(int amount, Player player)
+        {
+            player.Budget += amount;
         }
 
         [Command(requiresAuthority = false)]

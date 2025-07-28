@@ -5,6 +5,7 @@ using UnityEngine;
 using Mirror;
 
 using Game.Networking;
+using UnityEngine.UI;
 
 namespace Game.Interaction
 {
@@ -12,13 +13,24 @@ namespace Game.Interaction
     public class HomeMenuControllerVR : MonoBehaviour
     {
 
-        [SerializeField] private NetworkManager _Manager;
+        [SerializeField] private NetworkManager         _Manager;
 
-        [SerializeField] private GameObject     _MainSection;
-        [SerializeField] private GameObject     _ReadySection;
+        [SerializeField] private GameObject             _MainSection;
+        [SerializeField] private GameObject             _ReadySection;
+
+        [SerializeField] private InputField             _AddressInput;
+        [SerializeField] private TMPro.TextMeshProUGUI  _AddressLabel;
 
         public void Awake()
         {
+        }
+
+        public void Start()
+        {
+            if(_Manager is null)
+                _Manager = FindObjectOfType<NetworkManager>();
+
+            _AddressLabel.text = _Manager.networkAddress;
         }
 
         public void StartHost()
@@ -28,6 +40,7 @@ namespace Game.Interaction
 
         public void ConnectClient()
         {
+            _Manager.networkAddress = _AddressInput.text;
             _Manager.StartClient(); 
         }
 
