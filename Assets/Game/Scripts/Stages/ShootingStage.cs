@@ -112,7 +112,7 @@ namespace Game.Stages
         }
 
         [Command(requiresAuthority = false)]
-        public void CmdTestTowerCollision(Vector3 center, float radius, float damage, uint shooterID)
+        public void CmdTestTowerCollision(Vector3 center, float radius, float damage)
         {
             Collider[] colliders = Physics.OverlapSphere(center, radius, LayerMask.GetMask("Player"));
 
@@ -127,15 +127,6 @@ namespace Game.Stages
                 damagedPlayer.CurrentHitpoints -= damage;
 
                 damagedPlayer.DamageTowerWithId(c.GetComponentInParent<PlayerTower>().TowerID, damage);
-
-                GetComponent<ReportStage>().GetPlayerData(shooterID).Data[ReportStage.ReportData.Ammo_Hit]++;
-
-                GetComponent<ReportStage>().GetPlayerData(shooterID).Damage_Dealt += damage;
-                GetComponent<ReportStage>().GetPlayerData(damagedPlayer).Damage_Taken += damage;
-
-                if (damagedPlayer.CurrentHitpoints <= 0)
-                    GetComponent<ReportStage>().GetPlayerData(shooterID).Data[ReportStage.ReportData.Players_Eliminated]++;
-
             }
         }
 
@@ -267,8 +258,6 @@ namespace Game.Stages
                         if(!firingSpot.IsDestroyed && firingSpot.TowerID == tower)
                         {
                             firingSpot.GetComponentInChildren<TowerControlsMultiplayer>().FireProjectileOnAllClients(trajectory, owner);
-
-                            GetComponent<ReportStage>().GetPlayerData(owner).Data[ReportStage.ReportData.Ammo_Shot]++;
                         }
                     }
                 }
@@ -315,33 +304,6 @@ namespace Game.Stages
 
                     GetComponent<TowerSelector_Quest>().enabled = false;
                 }
-
-                foreach(var (player, towers) in _TowersByPlayer)
-                {
-                    bool eliminated = true;
-
-                    foreach(var tower in towers)
-                    {
-                        if(!tower.IsDestroyed)
-                            eliminated = false;
-                    }
-
-                    if (eliminated)
-                    {
-                        foreach(var playerObject in Players)
-                        {
-                            if(playerObject.GetComponent<OwnedBy>().OwnerID == player && !playerObject.GetComponent<Player>().Eliminated)
-                            {
-                                playerObject.GetComponent<Player>().Eliminated = true;
-
-                                GetComponent<ReportStage>().EliminatePlayer(playerObject.GetComponent<Player>());
-                                break;
-                            }
-                        }
-
-                    }
-                }
-
             }
         }
 

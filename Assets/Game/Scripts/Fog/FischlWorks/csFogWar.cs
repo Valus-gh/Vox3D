@@ -288,11 +288,9 @@ namespace Game.Fog.FischlWorks
             levelDimensionX = levelSize;
             levelDimensionY = levelSize;
 
-            //unitScale = 0.25f;
             unitScale = World.Properties.VoxelSize;
 
             var midPoint = (World.Properties.WorldSize * World.Properties.ChunkSize * World.Properties.VoxelSize) / 2.0f;
-            //var midPoint = (World.Properties.WorldSize * World.Properties.ChunkSize * World.Properties.VoxelSize) / 2.0f / 4;
             _LevelMidPoint.transform.position = World.transform.position + new Vector3(midPoint, 0.0f, midPoint);
 
             CheckProperties();

@@ -42,7 +42,7 @@ Shader "Custom/FogVertexColor_NoGraph"
 
                 float2 posXZ = IN.worldPos.xz;
                 float2 minXZ = _MinPosition.xz;
-                float2 worldSpan = (_WorldSize * _ChunkSize) * _VoxelSize/* / 4*/;
+                float2 worldSpan = (_WorldSize * _ChunkSize) * _VoxelSize;
 
                 float2 uv = (posXZ - minXZ) / worldSpan;
                 uv = 1.0 - uv; // Invert for sampling

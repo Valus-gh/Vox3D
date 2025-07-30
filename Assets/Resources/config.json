@@ -2,7 +2,7 @@
   "World": {
     "WorldSize": 8,
     "ChunkSize": 16,
-    "VoxelSize": 0.1,
+    "VoxelSize": 1,
     "TerrainHeight": 50.0,
     "WaterHeight": 0.1
   },

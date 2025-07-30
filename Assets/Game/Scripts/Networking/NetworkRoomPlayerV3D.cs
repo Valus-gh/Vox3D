@@ -64,10 +64,7 @@ namespace Game.Networking
             if (World.Loaded) 
             {
                 _LoadingConfirmed = true;
-                World.transform.position = new Vector3(-50, -45f, -50);
-               // World.transform.position = new Vector3(-25, -22.5f, -25);
-                World.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
-               // World.transform.localScale = new Vector3(0.25f, 0.25f, 0.25f);
+                World.transform.position = new Vector3(-64, -80, -64);
                 FindObjectOfType<ConnectionStage>().CmdConfirmWorldLoaded();
             }
         }
@@ -106,7 +103,7 @@ namespace Game.Networking
 
                     tower.CanFire = true;
 
-                    tower.gameObject.AddComponent<FoWRevealer>().Radius = 4;
+                    tower.gameObject.AddComponent<FoWRevealer>().Radius = 7;
                 }
             }
 

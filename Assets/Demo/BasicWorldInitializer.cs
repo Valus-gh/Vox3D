@@ -25,8 +25,6 @@ namespace Demo
             world.HeightMap.BakeTexture("Elevation");
             world.MoistureMap.BakeTexture("Moisture");
 
-            Debug.Log(Application.persistentDataPath);
-
             //######################## IMPORT FROM JSON ########################//
 
             //######################## INSTANTIATE WORLD ########################//
@@ -34,13 +32,13 @@ namespace Demo
             world.PopulateWorld();
             world.PopulateChunks();
             PriorityCallStack.Instance().Push(() => world.GenerateGeometry(), 60);
-            /*
+            
             PriorityCallStack.Instance().Push(() => {
                 List<Vector3> locations = new List<Vector3>();
                 locations = TowerLocator.GenerateTowerLocations(world, 4);
                 locations.ForEach((l) => Instantiate(tower, l, Quaternion.identity, this.transform));
             }, 300);
-            */
+
             //######################## INSTANTIATE WORLD ########################//
 
             //######################## INSTANTIATE FOG ########################//
