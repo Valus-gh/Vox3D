@@ -2,8 +2,6 @@ using UnityEngine;
 using static Game.Resources.ProjectileResources;
 using Mirror;
 
-using Game.Utilities;
-
 namespace Game.Weapons
 {
 
@@ -52,7 +50,7 @@ namespace Game.Weapons
 
         public void OnCollisionEnter(Collision collision)
         {
-             _Blast.Trigger(collision, GetComponent<OwnedBy>().OwnerID);
+             _Blast.Trigger(collision);
             Destroy(gameObject);
         }
 
