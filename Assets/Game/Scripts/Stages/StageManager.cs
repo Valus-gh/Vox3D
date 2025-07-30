@@ -40,9 +40,10 @@ namespace Game.Stages
 
         void Start()
         {
-            _Stages = new StageQueue(2);
+            _Stages = new StageQueue(3);
             _Stages.Enqueue(GetComponent<SelectionStage>());
             _Stages.Enqueue(GetComponent<ShootingStage>());
+            _Stages.Enqueue(GetComponent<ReportStage>());
         }
 
         // Update is called once per frame

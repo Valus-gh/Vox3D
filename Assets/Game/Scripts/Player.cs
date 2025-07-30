@@ -21,6 +21,9 @@ namespace Game
         private Inventory _Inventory;
         public Inventory Inventory { get => _Inventory; set => _Inventory = value; }
 
+        [SyncVar]
+        public bool Eliminated = false;
+
         #region PlayerAttributes
 
         [SyncVar(hook = nameof(OnBaseHitpointsChanged))]
@@ -103,6 +106,12 @@ namespace Game
             {
                 tower.GetComponentInChildren<VoxelPreserver>().PreserveVoxels(preserve);
             }
+        }
+
+        [TargetRpc]
+        public void RpcEliminateSelf(ReportStage.ReportData data)
+        {
+            // spawn hud
         }
 
         #endregion

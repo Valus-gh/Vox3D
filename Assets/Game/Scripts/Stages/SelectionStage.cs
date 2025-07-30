@@ -113,6 +113,10 @@ namespace Game.Stages
                         inventory.IncreaseItem(weaponName);
 
                         Debug.Log("Weapon ammo adjusted for weapon " + weaponName + " on player " + playerID + ". Total ammo of " + inventory.GetProjectile(weaponName));
+
+                        GetComponent<ReportStage>().GetPlayerData(playerID).Data[ReportStage.ReportData.Budget_Spent] += cost;
+                        GetComponent<ReportStage>().GetPlayerData(playerID).Data[ReportStage.ReportData.Ammo_Purchased] ++;
+
                     }
                 }
             }

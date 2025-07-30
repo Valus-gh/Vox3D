@@ -40,7 +40,7 @@ namespace Game.Interaction
 
         public void ConnectClient()
         {
-            _Manager.networkAddress = _AddressInput.text;
+            _Manager.networkAddress = Game.Utilities.KeyboardHandler.Input;
             _Manager.StartClient(); 
         }
 

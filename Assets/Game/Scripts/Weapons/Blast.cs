@@ -20,7 +20,7 @@ namespace Game.Weapons
         public float    ScatterAmount;
         public string   ScatterBehaviour;
 
-        public string Child;
+        public string   Child;
 
         public Blast() { }
 
@@ -70,7 +70,7 @@ namespace Game.Weapons
             Vox3D.Engine.ChunkDestructionHandler.Instance().CollisionSphere_Destroy(collision.contacts[0].point, Radius, RadiusOffset);
 
             // Test towers for collisions. Server-side.
-            Object.FindObjectOfType<ShootingStage>().CmdTestTowerCollision(collision.contacts[0].point, Radius, Damage);
+            Object.FindObjectOfType<ShootingStage>().CmdTestTowerCollision(collision.contacts[0].point, Radius, Damage, ownerID);
         }
         private void DoScatter(Collision collision, uint ownerID)
         {
