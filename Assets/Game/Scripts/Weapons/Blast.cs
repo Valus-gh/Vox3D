@@ -74,7 +74,10 @@ namespace Game.Weapons
         }
         private void DoScatter(Collision collision, uint ownerID)
         {
-            List<Trajectory> trajectories = new List<Trajectory>();
+
+            float offset = 10.0f;
+            
+            var particleSystemParent = GameObject.FindObjectOfType<ShootingStage>().ExplosionParticles;
 
             float angleStep = 360f / ScatterAmount;
 
@@ -83,14 +86,20 @@ namespace Game.Weapons
                 float sphereSlice = angleStep * i * Mathf.Deg2Rad;
                 Vector3 horizontalDir = new Vector3(Mathf.Cos(sphereSlice), 0f, Mathf.Sin(sphereSlice)).normalized;
 
-                Trajectory trajectory = new Trajectory();
-                trajectory.Angle = ScatterAngle;
-                trajectory.DirectionXZ = horizontalDir;
+                var newCollisionPoint = collision.contacts[0].point + (horizontalDir * offset);
+                Object.Instantiate(particleSystemParent, newCollisionPoint, Quaternion.identity, null);
 
-                trajectories[i] = trajectory;
+                // Test terrain for collisions. Client side.
+                Vox3D.Engine.ChunkDestructionHandler.Instance().CollisionSphere_Destroy(newCollisionPoint, Radius, RadiusOffset);
+
+                // Test towers for collisions. Server-side.
+                Object.FindObjectOfType<ShootingStage>().CmdTestTowerCollision(newCollisionPoint, Radius, Damage, ownerID);
             }
 
-            Object.FindObjectOfType<ShootingStage>().CmdScatterProjectiles(Child, trajectories, collision.contacts[0].point, ownerID);
+            var particleSystems = particleSystemParent.GetComponentsInChildren<ParticleSystem>();
+
+            foreach (var system in particleSystems)
+                system.Play();
         }
     }
 

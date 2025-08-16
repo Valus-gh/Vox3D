@@ -4,47 +4,47 @@
       "Name": "Bomb",
       "Speed": 30,
       "Blast": {
-        "Radius": 5,
+        "Radius": 3,
         "RadiusOffset": 2,
-        "Damage": 15,
+        "Damage": 10,
         "Scatter": false
       },
-      "Price": 0
+      "Cost": 0
     },
     {
       "Name": "Barrel",
-      "Speed": 15,
+      "Speed": 30,
       "Blast": {
-        "Radius": 10,
+        "Radius": 8,
         "RadiusOffset": 2,
         "Damage": 30,
         "Scatter": false
       },
-      "Price": 60
+      "Cost": 60
     },
     {
-      "Name": "Cluster",
+      "Name": "DynamiteBundle",
       "Speed": 30,
       "Blast": {
         "Scatter": true,
         "ScatterOnImpact": true,
         "ScatterAngle": 45,
-        "ScatterAmount": 4,
+        "ScatterAmount": 3,
         "ScatterBehaviour": "Regular",
         "Child": "Dynamite"
       },
-      "Price": 40
+      "Cost": 35
     },
     {
       "Name": "Dynamite",
-      "Speed": 60,
+      "Speed": 45,
       "Blast": {
         "Radius": 3,
         "RadiusOffset": 2,
         "Damage": 15,
         "Scatter": false
       },
-      "Price": 10
+      "Cost": 10
     }
   ]
 }

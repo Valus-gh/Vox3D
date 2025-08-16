@@ -922,15 +922,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6819193313045645197, guid: d20e5167c9cb0324ca767fde91f2f10f, type: 3}
       propertyPath: m_LocalScale.x
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6819193313045645197, guid: d20e5167c9cb0324ca767fde91f2f10f, type: 3}
       propertyPath: m_LocalScale.y
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6819193313045645197, guid: d20e5167c9cb0324ca767fde91f2f10f, type: 3}
       propertyPath: m_LocalScale.z
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6819193313045645197, guid: d20e5167c9cb0324ca767fde91f2f10f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1479,7 +1479,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6629091558642796707, guid: 49b3b1dbe52ac9647abc0af3572b3112, type: 3}
       propertyPath: m_text
-      value: Cluster
+      value: DynamiteBundle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6629091558642796707, guid: 49b3b1dbe52ac9647abc0af3572b3112, type: 3}
+      propertyPath: m_fontSize
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6629091558642796707, guid: 49b3b1dbe52ac9647abc0af3572b3112, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6629091558642796707, guid: 49b3b1dbe52ac9647abc0af3572b3112, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7450097387934871665, guid: 49b3b1dbe52ac9647abc0af3572b3112, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1539,7 +1551,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9205868652841742234, guid: 49b3b1dbe52ac9647abc0af3572b3112, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Cluster
+      value: DynamiteBundle
       objectReference: {fileID: 0}
     - target: {fileID: 9205868652841742234, guid: 49b3b1dbe52ac9647abc0af3572b3112, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -1912,7 +1924,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6172653865051716043, guid: 5bb57195e8c805547affc2be132538d0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.25
+      value: 0.2631
       objectReference: {fileID: 0}
     - target: {fileID: 6172653865051716043, guid: 5bb57195e8c805547affc2be132538d0, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2009,6 +2021,10 @@ PrefabInstance:
     - target: {fileID: 8727064308173279801, guid: 5bb57195e8c805547affc2be132538d0, type: 3}
       propertyPath: m_Name
       value: AngleRotationMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 8727064308173279801, guid: 5bb57195e8c805547affc2be132538d0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8750638242159834092, guid: 5bb57195e8c805547affc2be132538d0, type: 3}
       propertyPath: m_AnchorMax.y

@@ -147,6 +147,7 @@ MonoBehaviour:
   IsInitialized: 0
   IsRunning: 0
   IsComplete: 0
+  _ReportCardHUD: {fileID: 2756138702360153330, guid: 16beb199593b7e646b5a56ac947e42b3, type: 3}
 --- !u!114 &4028893792831408077
 MonoBehaviour:
   m_ObjectHideFlags: 0

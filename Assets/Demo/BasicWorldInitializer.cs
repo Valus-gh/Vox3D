@@ -45,18 +45,18 @@ namespace Demo
 
             //######################## INSTANTIATE FOG ########################//
             
-          /*  PriorityCallStack.Instance().Push(() => {
-
+            PriorityCallStack.Instance().Push(() => {
+                /*
                 var tower = GameObject.Find("Tower_Simple");
-                var towers = GameObject.FindObjectsByType<TowerControlsKeyboard>(FindObjectsSortMode.None);
+                var towers = GameObject.FindObjectsByType<Game.Interaction.PlayerControlsKeyboard>(FindObjectsSortMode.None);
                 foreach(var t in towers)
                 {
                     t.transform.parent.localScale = Vector3.one * (0.5f * world.Properties.VoxelSize);
-                }
+                }*/
 
-                GameObject.Find("FogManager").GetComponent<FogManager>().AttachFoW(world);
+                GameObject.Find("FogManager").GetComponent<Game.Fog.FogManager>().AttachFoW(world);
 
-            }, 350);*/
+            }, 350);
             
             //######################## INSTANTIATE FOG ########################//
 

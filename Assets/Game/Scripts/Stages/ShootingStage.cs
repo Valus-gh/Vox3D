@@ -251,7 +251,7 @@ namespace Game.Stages
                 chunk.ToggleDestructionCollider(true);
             }
         }
-
+        /*
         [Command(requiresAuthority = false)]
         public void CmdScatterProjectiles(string template, List<Trajectory> trajectories, Vector3 scatterOrigin, uint ownerID)
         {
@@ -279,6 +279,7 @@ namespace Game.Stages
                             NetworkServer.Spawn(instance.gameObject);
 
                             instance.RpcSetValuesAfterSpawn(
+                                pTemplate.Name,
                                 pTemplate.Blast.Radius,
                                 pTemplate.Blast.RadiusOffset,
                                 pTemplate.Blast.Damage,
@@ -294,7 +295,7 @@ namespace Game.Stages
                 }
             }
         }
-
+        */
         private void FireProjectiles()
         {
             _Shooting = true;
@@ -371,6 +372,7 @@ namespace Game.Stages
 
                     if (eliminated)
                     {
+
                         foreach(var playerObject in Players)
                         {
                             if(playerObject.GetComponent<OwnedBy>().OwnerID == player && !playerObject.GetComponent<Player>().Eliminated)
@@ -383,6 +385,28 @@ namespace Game.Stages
                         }
 
                     }
+                }
+
+                // Check if there is more than one player.
+
+                int playersLeft = 0;
+                Player winner = null;
+
+                foreach (var player in Players) 
+                {
+                    if (!player.GetComponent<Player>().Eliminated)
+                    {
+                        playersLeft++;
+                        winner = player.GetComponent<Player>();
+                    }
+                }
+
+                // If only one remains, flag as winner and end game.
+
+                if(playersLeft <= 1)
+                {
+                    ReportStage.GameEnded = true;
+                    winner.Winner = true;
                 }
 
             }

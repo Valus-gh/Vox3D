@@ -13,7 +13,7 @@ namespace Game.Stages
     public class StageManager : NetworkBehaviour
     {
 
-        public static int TowersPerPlayer = 2;
+        [SerializeField] public static int TowersPerPlayer = 1;
 
         [SerializeReference]
         private List<GameObject> _Players = new List<GameObject>();

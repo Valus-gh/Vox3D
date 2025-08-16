@@ -8,6 +8,7 @@ using Game.Resources;
 using Game.Interaction;
 using Game.Utilities;
 using Vox3D.Engine;
+using System;
 
 namespace Game.Stages
 {
@@ -48,18 +49,21 @@ namespace Game.Stages
 
                 IsInitialized = true;
                 
-                CmdModifyBudget_All(+50);
+                CmdModifyBudget_All(+30);
 
                 RpcLoadHUD();
             }
 
-            CmdModifyBudget_All(+50);
+            CmdModifyBudget_All(+30);
 
-            RpcToggleHUD(true);
-            GetComponent<StageManager>().RpcToggleAllLoadingScreens(false);
-            RpcDeactivateDestructionColliders();
-            RpcScaleWorld();
+            if (!ReportStage.GameEnded)
+            {
 
+                RpcToggleHUD(true);
+                GetComponent<StageManager>().RpcToggleAllLoadingScreens(false);
+                RpcDeactivateDestructionColliders();
+                RpcScaleWorld();
+            }
         }
 
         public override void Deinitialize()
@@ -106,6 +110,9 @@ namespace Game.Stages
             {
                 if(player.GetComponent<NetworkRoomPlayer>().netId == playerID)
                 {
+                    Debug.Log("Attempting to purchase " + weaponName);
+                    Debug.Log("Budget: " + player.GetComponent<Player>().Budget + " - cost:  " + cost);
+
                     if (cost <= player.GetComponent<Player>().Budget)
                     {
                         var inventory = player.GetComponent<Player>().Inventory;
@@ -113,6 +120,8 @@ namespace Game.Stages
                         inventory.IncreaseItem(weaponName);
 
                         Debug.Log("Weapon ammo adjusted for weapon " + weaponName + " on player " + playerID + ". Total ammo of " + inventory.GetProjectile(weaponName));
+
+                        CmdModifyBudget_Player(-Convert.ToInt32(cost), player.GetComponent<Player>());
 
                         GetComponent<ReportStage>().GetPlayerData(playerID).Data[ReportStage.ReportData.Budget_Spent] += cost;
                         GetComponent<ReportStage>().GetPlayerData(playerID).Data[ReportStage.ReportData.Ammo_Purchased] ++;

@@ -17,14 +17,14 @@ namespace Game.Interaction
             {
                 Vector2 stickAxisXUpDown = OVRInput.Get(OVRInput.Axis2D.PrimaryThumbstick, OVRInput.GetActiveController());
 
-                if (OVRInput.Get(OVRInput.Button.SecondaryIndexTrigger))
-                {
+                //if (OVRInput.Get(OVRInput.Button.SecondaryIndexTrigger))
+                //{
                     transform.Rotate(new Vector3(0.0f, 0.0f, stickAxisXUpDown.y * 0.5f));
                     TowerTrajectory.Angle += stickAxisXUpDown.y * 0.5f;
                     Debug.Log(stickAxisXUpDown.y);
 
                     TowerTrajectory.DirectionXZ = new Vector2(transform.right.x, transform.right.z);
-                }
+                //}
 
                 if(OVRInput.Get(OVRInput.Button.One) || OVRInput.Get(OVRInput.Button.Three))
                 {

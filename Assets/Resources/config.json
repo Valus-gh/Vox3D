@@ -2,17 +2,17 @@
   "World": {
     "WorldSize": 8,
     "ChunkSize": 16,
-    "VoxelSize": 0.1,
-    "TerrainHeight": 50.0,
+    "VoxelSize": 1,
+    "TerrainHeight": 45.0,
     "WaterHeight": 0.1
   },
   "HeightMap": {
     "NoiseType": "Simplex",
-    "Seed": 1111,
-    "Gain": 0.5,
+    "Seed": 4321,
+    "Gain": 0.6,
     "Redistribution": 3.0,
     "Reshape": true,
-    "ReshapeFactor": 0.3
+    "ReshapeFactor": 0.2
   },
   "MoistureMap": {
     "NoiseType": "Simplex",

@@ -33,6 +33,11 @@ namespace Game.Interaction
             _AddressLabel.text = _Manager.networkAddress;
         }
 
+        public void Update()
+        {
+            _AddressInput.text = Vox3DKeyboard.Text;
+        }
+
         public void StartHost()
         {
             _Manager.StartHost();
@@ -40,7 +45,8 @@ namespace Game.Interaction
 
         public void ConnectClient()
         {
-            _Manager.networkAddress = Game.Utilities.KeyboardHandler.Input;
+            _Manager.networkAddress = _AddressInput.text;
+            Vox3DKeyboard.Clear();
             _Manager.StartClient(); 
         }
 

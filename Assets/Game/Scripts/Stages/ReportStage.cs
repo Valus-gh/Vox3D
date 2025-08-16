@@ -5,6 +5,7 @@ using UnityEngine;
 using Mirror;
 using Game.Utilities;
 using Game.Networking;
+using Game.Interaction;
 
 namespace Game.Stages
 {
@@ -28,13 +29,19 @@ namespace Game.Stages
 
         public static int Round = 0;
         public static bool GameEnded;
-        private static Dictionary<Player, ReportData> PlayerData = new Dictionary<Player, ReportData>();
+        private static Dictionary<Player, ReportData> _PlayerData = new Dictionary<Player, ReportData>();
+
+        [SerializeField] 
+        private GameObject _ReportCardHUD;
+        private GameObject _ReportCardHUD_Instance;
 
         public override void Initialize()
         {
             Round++;
             IsInitialized = true;
-            IsComplete = true;
+
+            if(!GameEnded) IsComplete = true;
+
         }
 
         public override void Deinitialize()
@@ -43,18 +50,45 @@ namespace Game.Stages
 
         protected override void Run()
         {
+
+            if (IsComplete) return;
+
+            if (GameEnded)
+            {
+
+                foreach (var player in Players)
+                {
+                    if (player.GetComponent<Player>().Winner)
+                    {
+                        WinGame(player.GetComponent<Player>());
+                        IsComplete = true;
+                    }
+                }
+
+            }
         }
 
         [Command]
         public void EliminatePlayer(Player player)
         {
-            player.RpcEliminateSelf(PlayerData[player]);
+            player.RpcShowReport(_PlayerData[player], false);
+        }
+
+        public void WinGame(Player player)
+        {
+            player.RpcShowReport(_PlayerData[player], true);
+        }
+
+        public void LoadHUD(ReportData playerData, bool winner)
+        {
+            _ReportCardHUD_Instance = Instantiate(_ReportCardHUD, UnityEngine.Camera.main.transform);
+            _ReportCardHUD_Instance.GetComponent<ReportCardHUDController>().SetupLabels(playerData, winner);
         }
 
         public ReportData GetPlayerData(uint id)
         {
             CheckPlayerData();
-            foreach (var (player, data) in PlayerData)
+            foreach (var (player, data) in _PlayerData)
             {
                 if (player.GetComponent<NetworkRoomPlayerV3D>().netId == id)
                     return data;
@@ -66,37 +100,26 @@ namespace Game.Stages
         public List<ReportData> GetPlayerData()
         {
             CheckPlayerData();
-            return new List<ReportData>(PlayerData.Values);
+            return new List<ReportData>(_PlayerData.Values);
         }
 
         public ReportData GetPlayerData(Player player)
         {
             CheckPlayerData();
-            return PlayerData[player];
+            return _PlayerData[player];
         }
 
         private void CheckPlayerData()
         {
-            if (PlayerData.Count == 0)
+            if (_PlayerData.Count == 0)
             {
                 foreach (var player in Players)
                 {
-                    PlayerData.Add(player.GetComponent<Player>(), new ReportData());
+                    _PlayerData.Add(player.GetComponent<Player>(), new ReportData());
                 }
             }
         }
 
-        // Start is called before the first frame update
-        void Start()
-        {
-
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-
-        }
     }
 
 }

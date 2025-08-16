@@ -23,6 +23,7 @@ namespace Game
 
         [SyncVar]
         public bool Eliminated = false;
+        public bool Winner = false;
 
         #region PlayerAttributes
 
@@ -109,9 +110,9 @@ namespace Game
         }
 
         [TargetRpc]
-        public void RpcEliminateSelf(ReportStage.ReportData data)
+        public void RpcShowReport(ReportStage.ReportData data, bool winner)
         {
-            // spawn hud
+            FindObjectOfType<ReportStage>().LoadHUD(data, winner);
         }
 
         #endregion

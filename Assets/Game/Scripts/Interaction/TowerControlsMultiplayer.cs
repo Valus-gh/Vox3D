@@ -41,13 +41,19 @@ namespace Game.Interaction
 
             instance.GetComponent<OwnedBy>().OwnerID = ownerID;
 
-            instance.Trajectory = trajectory;
+            Trajectory shootingTrajectory = new Trajectory();
+            shootingTrajectory.Speed        = weaponTemplate.Speed;
+            shootingTrajectory.DirectionXZ  = trajectory.DirectionXZ;
+            shootingTrajectory.Angle        = trajectory.Angle;
+
+            instance.Trajectory = shootingTrajectory;
             instance.Aim();
             instance.Fire();
 
             NetworkServer.Spawn(instance.gameObject);
 
             instance.RpcSetValuesAfterSpawn(
+                weaponTemplate.Name,
                 weaponTemplate.Blast.Radius,
                 weaponTemplate.Blast.RadiusOffset,
                 weaponTemplate.Blast.Damage,

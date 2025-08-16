@@ -17,7 +17,6 @@ GameObject:
   - component: {fileID: 4696604930209983687}
   - component: {fileID: 5388004442457216665}
   - component: {fileID: 5981874646278424725}
-  - component: {fileID: 1468012540386780969}
   - component: {fileID: 5668876967443590142}
   - component: {fileID: -545278380332438176}
   m_Layer: 0
@@ -57,7 +56,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1730608478589156964}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -157,7 +156,7 @@ MonoBehaviour:
   syncInterval: 0
   _ProjectileBody: {fileID: 5691520044650881529}
   _Blast:
-    Radius: 15
+    Radius: 10
     RadiusOffset: 2
     Damage: 30
     Scatter: 0
@@ -230,21 +229,6 @@ MonoBehaviour:
   serverOnly: 0
   visibility: 0
   hasSpawned: 0
---- !u!114 &1468012540386780969
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1730608478589156964}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fe3a05bf7d28444f8542f0efe33d823, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ID: 0
-  Radius: 5
-  Revealing: 0
 --- !u!114 &5668876967443590142
 MonoBehaviour:
   m_ObjectHideFlags: 0

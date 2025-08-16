@@ -238,19 +238,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7450097387934871665, guid: 49b3b1dbe52ac9647abc0af3572b3112, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7450097387934871665, guid: 49b3b1dbe52ac9647abc0af3572b3112, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7450097387934871665, guid: 49b3b1dbe52ac9647abc0af3572b3112, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 152
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7450097387934871665, guid: 49b3b1dbe52ac9647abc0af3572b3112, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 76
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7450097387934871665, guid: 49b3b1dbe52ac9647abc0af3572b3112, type: 3}
       propertyPath: m_LocalScale.y
@@ -262,11 +262,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7450097387934871665, guid: 49b3b1dbe52ac9647abc0af3572b3112, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 88
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7450097387934871665, guid: 49b3b1dbe52ac9647abc0af3572b3112, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -50
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8604119928549194969, guid: 49b3b1dbe52ac9647abc0af3572b3112, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1224,7 +1224,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9205868652841742234, guid: 49b3b1dbe52ac9647abc0af3572b3112, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Cluster
+      value: DynamiteBundle
       objectReference: {fileID: 0}
     - target: {fileID: 9205868652841742234, guid: 49b3b1dbe52ac9647abc0af3572b3112, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName

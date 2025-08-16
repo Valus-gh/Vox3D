@@ -3,6 +3,9 @@ using static Game.Resources.ProjectileResources;
 using Mirror;
 
 using Game.Utilities;
+using Game.Fog;
+using Game.Networking;
+using Game.Fog.FischlWorks;
 
 namespace Game.Weapons
 {
@@ -57,9 +60,29 @@ namespace Game.Weapons
         }
 
         [ClientRpc]
-        public void RpcSetValuesAfterSpawn(float radius, float radiusOffset, float damage, bool scatter, bool scatterOnImpact, float scatterAngle, float scatterAmount, string scatterBehaviour, string child)
+        public void RpcSetValuesAfterSpawn(string name, float radius, float radiusOffset, float damage, bool scatter, bool scatterOnImpact, float scatterAngle, float scatterAmount, string scatterBehaviour, string child)
         {
+            Debug.Log($"Attempting to instantiate projectile model {name}.obj");
+            var projectileModel = UnityEngine.Resources.Load($"ProjectileData/{name}");
+
+            var model = Instantiate(projectileModel, this.transform) as GameObject;
+            model.transform.localScale = new Vector3(0.7f, 0.7f, 0.7f);
+
+            var rotObject = model.AddComponent<RotatingObject>();
+            rotObject.Speed = 120.0f;
+            rotObject.Axis = new Vector3(Vector2.Perpendicular(Trajectory.DirectionXZ).x, 0, Vector2.Perpendicular(Trajectory.DirectionXZ).y);
+            rotObject.ForUI = false;
+
             if (_Blast is null) _Blast = new Blast();
+
+            if(GetComponent<OwnedBy>().OwnerID == NetworkRoomManagerV3D.singleton.PlayerID)
+            {
+                Destroy(gameObject.GetComponent<csFogVisibilityAgent>());
+                if (name != "Bomb")
+                {
+                    gameObject.AddComponent<FoWRevealer>();
+                }
+            }
 
             _Blast.Radius = radius;
             _Blast.RadiusOffset = radiusOffset;
@@ -68,6 +91,7 @@ namespace Game.Weapons
             _Blast.ScatterOnImpact = scatterOnImpact;
             _Blast.ScatterAngle = scatterAngle;
             _Blast.ScatterAmount = scatterAmount;
+            _Blast.ScatterBehaviour = scatterBehaviour;
             _Blast.Child = child;
         }
 

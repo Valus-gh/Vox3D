@@ -32,8 +32,10 @@ namespace Game.Interaction
 
             if(grabbable.Tower.IsDestroyed) return;
 
+            HighlightTower(false);
             SelectedTower = grabbable.Tower;
-            FindObjectOfType<WeaponBarHUDControllerVR>().ToggleClickable(true);
+            var wbar = FindObjectOfType<WeaponBarHUDControllerVR>();
+            if(wbar != null) wbar.ToggleClickable(true);
             HighlightTower(true);
         }
 
