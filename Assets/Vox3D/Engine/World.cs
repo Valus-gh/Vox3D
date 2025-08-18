@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -46,6 +45,11 @@ namespace Vox3D.Engine
             MoistureMap.Normalize();
 
         }
+
+        /// <summary>
+        /// Generates chunks to populate the world in the 3 axi.
+        /// Only generates chunk objects, not voxels
+        /// </summary>
         public void PopulateWorld()
         {
 
@@ -98,6 +102,10 @@ namespace Vox3D.Engine
             }
 
         }
+
+        /// <summary>
+        /// For each chunk, generates the necessary voxels
+        /// </summary>
         public void PopulateChunks()
         {
             foreach (KeyValuePair<Vector3, Chunk> pair in Chunks)
@@ -107,6 +115,10 @@ namespace Vox3D.Engine
                 }, 0);
             }
         }
+
+        /// <summary>
+        /// For each chunk, generates the voxel geometry with the greedy method
+        /// </summary>
         public void GenerateGeometry()
         {
             foreach (KeyValuePair<Vector3, Chunk> pair in Chunks)

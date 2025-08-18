@@ -6,7 +6,13 @@ using System.Collections.Generic;
 
 namespace Game.Fog
 {
-
+    /// <summary>
+    /// This class is used to "inject" the fog onto a loaded world. 
+    /// It uses a custom-built shader/material to take data from the 2D fogplane and applying it to the 3D terrain. 
+    /// NOTE: The shader used for the material was originally made in ShaderGraph, then ported to normal shader.
+    /// The reason is that in VR, ShaderGraphs do not seem to be supported, and I required additional parameters and flags in order to render to both eyes.
+    /// See Assets -> Game -> Prefabs - Fog -> FogVertexColorShader_NoGraph.shader
+    /// </summary>
     [RequireComponent(typeof(csFogWar))]
     [RequireComponent(typeof(Material))]
     public class FogInjector : MonoBehaviour
@@ -19,7 +25,6 @@ namespace Game.Fog
         [SerializeField]
         private Material FogVertexColorMaterial;
 
-        // Start is called before the first frame update
         void Start()
         {
             World = transform.parent.GetComponent<World>();
@@ -36,7 +41,6 @@ namespace Game.Fog
             RefreshVertexColors();
         }
 
-        // Update is called once per frame
         void Update()
         {
             FogVertexColorMaterial.SetVector("_MinPosition", World.transform.position);

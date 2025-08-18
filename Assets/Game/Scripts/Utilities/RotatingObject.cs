@@ -24,14 +24,14 @@ namespace Game.Utilities
         void Start()
         {
             Speed = Speed * Time.deltaTime;
-            _AxisUI = transform.up;
+            _AxisUI = Vector3.up;
         }
 
         // Update is called once per frame
         void Update()
         {
-            if(ForUI) transform.RotateAround(transform.position, _AxisUI, Speed);
-            else transform.RotateAround(transform.position, Axis, Speed);
+            if(ForUI) transform.Rotate(_AxisUI * Speed, Space.Self);
+            else transform.Rotate(Axis * Speed, Space.Self);
         }
 
     }

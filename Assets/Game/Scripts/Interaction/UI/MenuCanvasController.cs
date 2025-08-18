@@ -10,7 +10,7 @@ using UnityEngine.UI;
 namespace Game.Interaction
 {
 
-    public class HomeMenuControllerVR : MonoBehaviour
+    public class MenuCanvasController : MonoBehaviour
     {
 
         [SerializeField] private NetworkManager         _Manager;

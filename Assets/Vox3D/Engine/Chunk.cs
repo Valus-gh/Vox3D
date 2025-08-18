@@ -18,7 +18,7 @@ namespace Vox3D.Engine
         private List<Vector3>   _Vertices;      // Holds the geometry vertices for this chunk
         private List<int>       _Indices;       // Holds the indices for both triangles of each voxel face
         private List<Vector2>   _Uvs;           // Holds uv coordinates for each voxel face
-        private List<Color32>   _Colors;        // Holds uv coordinates for each voxel face
+        private List<Color32>   _Colors;        // Holds Color data for each voxel face
 
         private MeshFilter      _MeshFilter;
         private MeshCollider    _MeshCollider;
@@ -42,6 +42,9 @@ namespace Vox3D.Engine
         public World ParentWorld                        { get => _ParentWorld; set => _ParentWorld = value; }
         public bool Loaded                              { get => _Loaded; set => _Loaded = value; }
 
+        /// <summary>
+        /// Initiates the voxel building progress for this chunk
+        /// </summary>
         public void PopulateChunk()
         {
             // If the chunk is above the world's maximum height, there is no need to keep it in memory

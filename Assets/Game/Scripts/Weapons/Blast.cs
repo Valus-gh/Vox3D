@@ -74,8 +74,25 @@ namespace Game.Weapons
         }
         private void DoScatter(Collision collision, uint ownerID)
         {
+            var projectiles = StageManager.ProjectileTemplates;
 
-            float offset = 10.0f;
+            var childRadius         = Radius;
+            var childRadiusOffset   = RadiusOffset;
+            var childDamage         = Damage;
+
+            foreach(var projectile in projectiles.Projectiles)
+            {
+                if (projectile.Name == Child) 
+                {
+                    childRadius         = projectile.Blast.Radius;
+                    childRadiusOffset   = projectile.Blast.RadiusOffset;
+                    childDamage         = projectile.Blast.Damage;
+                }
+            }
+
+            Debug.Log($"Scattering {ScatterAmount} {Child} - Radius: {childRadius} Damage: {childDamage}");
+
+            float offset = 3.0f;
             
             var particleSystemParent = GameObject.FindObjectOfType<ShootingStage>().ExplosionParticles;
 
@@ -90,10 +107,10 @@ namespace Game.Weapons
                 Object.Instantiate(particleSystemParent, newCollisionPoint, Quaternion.identity, null);
 
                 // Test terrain for collisions. Client side.
-                Vox3D.Engine.ChunkDestructionHandler.Instance().CollisionSphere_Destroy(newCollisionPoint, Radius, RadiusOffset);
+                Vox3D.Engine.ChunkDestructionHandler.Instance().CollisionSphere_Destroy(newCollisionPoint, childRadius, childRadiusOffset);
 
                 // Test towers for collisions. Server-side.
-                Object.FindObjectOfType<ShootingStage>().CmdTestTowerCollision(newCollisionPoint, Radius, Damage, ownerID);
+                Object.FindObjectOfType<ShootingStage>().CmdTestTowerCollision(newCollisionPoint, childRadius, childDamage, ownerID);
             }
 
             var particleSystems = particleSystemParent.GetComponentsInChildren<ParticleSystem>();

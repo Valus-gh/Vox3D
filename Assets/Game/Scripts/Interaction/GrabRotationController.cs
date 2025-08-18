@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 using Oculus.Interaction;
@@ -7,6 +5,9 @@ using UnityEngine.Events;
 
 namespace Game.Interaction {
 
+    /// <summary>
+    /// Class to enable "Grabbing" the towers and horizontal rotation via stick
+    /// </summary>
     public class GrabRotationController : MonoBehaviour, ITransformer
     {
         private OVRInput.Controller _Controller;
@@ -48,13 +49,9 @@ namespace Game.Interaction {
             _RotationAxis = _GrabbedObject.up;
         }
 
-
-        // Start is called before the first frame update
         void Start()
         {
         }
-
-        // Update is called once per frame
         void Update()
         {
             if (_IsGrabbed)

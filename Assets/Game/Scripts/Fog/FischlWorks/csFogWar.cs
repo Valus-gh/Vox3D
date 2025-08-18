@@ -17,6 +17,10 @@ using UnityEngine;                  // Monobehaviour
 using UnityEditor;                  // Handles
 
 
+/** CHANGES MADE TO THE LIBRARY
+ *  Updated several fields to make public, in an attempt to bypass restrictions on changing level dimensions.
+ *  Under Start(), added lines to adapt the level dimension to the world's size
+  */
 
 namespace Game.Fog.FischlWorks
 {

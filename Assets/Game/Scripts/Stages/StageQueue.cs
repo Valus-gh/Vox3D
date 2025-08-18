@@ -17,6 +17,7 @@ namespace Game.Stages
 
             _CurrentStage = (_CurrentStage == _Back) ? _CurrentStage = _Front : ++_CurrentStage;
 
+            // The Initialize() method present in each GameStage is not a one-time thing. It is called once per round.
             _Items[_CurrentStage].Initialize();
             _Items[_CurrentStage].IsRunning = true;
 
@@ -48,7 +49,7 @@ namespace Game.Stages
 
         public void Initialize(List<GameObject> players)
         {
-            //Initialize all stages. Not sure if possible yet
+            //Initialize all stages. Not sure if possible yet. For now, just populate players
             for(int i = 0; i < _Count; i++)
             {
                 _Items[i].Players = players;
@@ -58,7 +59,7 @@ namespace Game.Stages
 
         public void Deinitialize()
         {
-            //Initialize all stages. Not sure if possible yet
+            //Deinitialize all stages. Not sure if possible yet
         }
     }
 }

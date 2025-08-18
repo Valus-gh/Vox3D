@@ -64,10 +64,7 @@ namespace Game.Networking
             if (World.Loaded) 
             {
                 _LoadingConfirmed = true;
-               // World.transform.position = new Vector3(-50, -45f, -50);
-               // World.transform.position = new Vector3(-25, -22.5f, -25);
-               // World.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
-               // World.transform.localScale = new Vector3(0.25f, 0.25f, 0.25f);
+
                 FindObjectOfType<ConnectionStage>().CmdConfirmWorldLoaded();
             }
         }
@@ -103,6 +100,8 @@ namespace Game.Networking
                 {
                     Player.Towers.Add(tower);
                     tower.Player = Player;
+
+                    Debug.Log($"Assigning towers to player and viceversa: tower {tower.TowerID} player {netId}");
 
                     tower.CanFire = true;
 

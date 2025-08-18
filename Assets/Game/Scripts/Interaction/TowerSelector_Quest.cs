@@ -1,11 +1,12 @@
-using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 
 using System.Linq;
 
 namespace Game.Interaction
 {
+    /// <summary>
+    /// When a tower is grabbed via GrabRotationController, this class ensures it is highlighted
+    /// </summary>
     public class TowerSelector_Quest : TowerSelector
     {
         private List<GrabRotationController> _Grabbables;

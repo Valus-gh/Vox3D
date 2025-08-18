@@ -1,16 +1,17 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 using Mirror;
-using Game.Utilities;
-using Game.Networking;
 using Game.Interaction;
 
 namespace Game.Stages
 {
     public class ReportStage : GameStage
     {
+        [SerializeField]
+        private GameObject _ReportCardHUD;
+        private GameObject _ReportCardHUD_Instance;
+
         public class ReportData
         {
             public float Damage_Dealt;
@@ -31,26 +32,23 @@ namespace Game.Stages
         public static bool GameEnded;
         private static Dictionary<Player, ReportData> _PlayerData = new Dictionary<Player, ReportData>();
 
-        [SerializeField] 
-        private GameObject _ReportCardHUD;
-        private GameObject _ReportCardHUD_Instance;
-
         public override void Initialize()
         {
+            Debug.Log("Initializing ReportStage");
+
             Round++;
             IsInitialized = true;
 
             if(!GameEnded) IsComplete = true;
-
         }
 
         public override void Deinitialize()
         {
+            Debug.Log("Deinitializing ReportStage");
         }
 
         protected override void Run()
         {
-
             if (IsComplete) return;
 
             if (GameEnded)
@@ -81,7 +79,7 @@ namespace Game.Stages
 
         public void LoadHUD(ReportData playerData, bool winner)
         {
-            _ReportCardHUD_Instance = Instantiate(_ReportCardHUD, UnityEngine.Camera.main.transform);
+            _ReportCardHUD_Instance = Instantiate(_ReportCardHUD, Camera.main.transform);
             _ReportCardHUD_Instance.GetComponent<ReportCardHUDController>().SetupLabels(playerData, winner);
         }
 
@@ -90,23 +88,22 @@ namespace Game.Stages
             CheckPlayerData();
             foreach (var (player, data) in _PlayerData)
             {
-                if (player.GetComponent<NetworkRoomPlayerV3D>().netId == id)
+                if (player.GetComponent<Player>().netId == id)
                     return data;
             }
 
             return null;
+        }
+        public ReportData GetPlayerData(Player player)
+        {
+            CheckPlayerData();
+            return _PlayerData[player];
         }
 
         public List<ReportData> GetPlayerData()
         {
             CheckPlayerData();
             return new List<ReportData>(_PlayerData.Values);
-        }
-
-        public ReportData GetPlayerData(Player player)
-        {
-            CheckPlayerData();
-            return _PlayerData[player];
         }
 
         private void CheckPlayerData()

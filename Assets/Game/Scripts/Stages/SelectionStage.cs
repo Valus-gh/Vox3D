@@ -1,10 +1,8 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 using Mirror;
 
-using Game.Resources;
 using Game.Interaction;
 using Game.Utilities;
 using Vox3D.Engine;
@@ -19,18 +17,25 @@ namespace Game.Stages
         private GameObject _SelectionStageHUD;
         private GameObject _SelectionStageHUD_Instance;
 
-        private ProjectileResources _ProjectileTemplates;
         private Dictionary<uint, List<PlayerTower>> _TowersByPlayer;
 
-        private int ReadyToProceed;
+        private int _ReadyToProceed;
 
+        /// <summary>
+        /// Set up the initial data needed to run the stage.
+        /// Add the initial budget to each player, as well as additional budget at the start of each round
+        /// </summary>
         public override void Initialize()
         {
-            ReadyToProceed = 0;
+            Debug.Log("Initializing SelectionStage");
+
+            _ReadyToProceed = 0;
+
+            #region One-time operations
 
             if (!IsInitialized)
             {
-                _ProjectileTemplates = Vox3D.JSON.JsonImporter<ProjectileResources>.FromJSON("projectiles");
+                // Add each tower to a list based on its owner
 
                 _TowersByPlayer = new Dictionary<uint, List<PlayerTower>>();
                 var towersInScene = FindObjectsOfType<PlayerTower>();
@@ -40,9 +45,7 @@ namespace Game.Stages
                     var ownerID = tower.GetComponent<OwnedBy>().OwnerID;
 
                     if (!_TowersByPlayer.ContainsKey(ownerID))
-                    {
                         _TowersByPlayer.Add(ownerID, new List<PlayerTower>());
-                    }
 
                     _TowersByPlayer[ownerID].Add(tower);
                 }
@@ -54,64 +57,46 @@ namespace Game.Stages
                 RpcLoadHUD();
             }
 
+            #endregion
+
+            #region Each round
+
             CmdModifyBudget_All(+30);
 
             if (!ReportStage.GameEnded)
             {
-
                 RpcToggleHUD(true);
                 GetComponent<StageManager>().RpcToggleAllLoadingScreens(false);
                 RpcDeactivateDestructionColliders();
-                RpcScaleWorld();
             }
+            #endregion
         }
 
         public override void Deinitialize()
         {
-            throw new System.NotImplementedException();
+            Debug.Log("Deinitializing SelectionStage");
         }
         protected override void Run()
         {
 
         }
 
-        [ClientRpc]
-        private void RpcScaleWorld()
-        {
-            var world = FindObjectOfType<World>();
-
-           // world.transform.position = UnityEngine.Camera.main.transform.position + new Vector3(-4.0f, -6f, 4.0f);
-        }
-
-        [ClientRpc]
-        private void RpcLoadHUD()
-        {
-            if (_ProjectileTemplates is null)
-                _ProjectileTemplates = Vox3D.JSON.JsonImporter<ProjectileResources>.FromJSON("projectiles");
-
-            _SelectionStageHUD_Instance = Instantiate(_SelectionStageHUD, UnityEngine.Camera.main.transform);
-            _SelectionStageHUD_Instance.GetComponent<SelectionHUDControllerVR>().ToggleDisplay(false);
-        }
-
-        [ClientRpc]
-        private void RpcDeactivateDestructionColliders()
-        {
-            foreach(var chunk in FindObjectOfType<World>().Chunks.Values)
-            {
-                chunk.ToggleDestructionCollider(false);
-            }
-        }
-
-        //TODO add cost to projectiles
+        /// <summary>
+        /// Called by clients when attempting to make a purchase. 
+        /// Verifies there is enough budget, and adjusts players' inventories accordingly.
+        /// </summary>
+        /// <param name="playerID"></param>
+        /// <param name="weaponName"></param>
+        /// <param name="cost"></param>
         [Command(requiresAuthority = false)]
         public void CmdConfirmPurchase(uint playerID, string weaponName, uint cost)
         {
             foreach(var player in Players)
             {
-                if(player.GetComponent<NetworkRoomPlayer>().netId == playerID)
+                if(player.GetComponent<Player>().netId == playerID)
                 {
-                    Debug.Log("Attempting to purchase " + weaponName);
-                    Debug.Log("Budget: " + player.GetComponent<Player>().Budget + " - cost:  " + cost);
+                    Debug.Log($"Player {playerID} attempting to purchase " + weaponName);
+                    Debug.Log($"Budget: {player.GetComponent<Player>().Budget} - cost: {cost}");
 
                     if (cost <= player.GetComponent<Player>().Budget)
                     {
@@ -119,7 +104,7 @@ namespace Game.Stages
 
                         inventory.IncreaseItem(weaponName);
 
-                        Debug.Log("Weapon ammo adjusted for weapon " + weaponName + " on player " + playerID + ". Total ammo of " + inventory.GetProjectile(weaponName));
+                        Debug.Log($"Weapon ammo adjusted for weapon {weaponName} on player {playerID}. Total ammo of {inventory.GetProjectile(weaponName)}");
 
                         CmdModifyBudget_Player(-Convert.ToInt32(cost), player.GetComponent<Player>());
 
@@ -149,9 +134,9 @@ namespace Game.Stages
         [Command(requiresAuthority = false)]
         public void CmdReadyToProceed()
         {
-            ReadyToProceed++;
+            _ReadyToProceed++;
 
-            if (ReadyToProceed >= Players.Count)
+            if (_ReadyToProceed >= Players.Count)
             {
                 RpcToggleHUD(false);
 
@@ -159,6 +144,22 @@ namespace Game.Stages
 
                 GetComponent<StageManager>().RpcToggleAllLoadingScreens(true);
             }
+        }
+
+        [ClientRpc]
+        private void RpcDeactivateDestructionColliders()
+        {
+            foreach (var chunk in FindObjectOfType<World>().Chunks.Values)
+            {
+                chunk.ToggleDestructionCollider(false);
+            }
+        }
+
+        [ClientRpc]
+        private void RpcLoadHUD()
+        {
+            _SelectionStageHUD_Instance = Instantiate(_SelectionStageHUD, Camera.main.transform);
+            _SelectionStageHUD_Instance.GetComponent<SelectionHUDControllerVR>().ToggleDisplay(false);
         }
 
         [ClientRpc]

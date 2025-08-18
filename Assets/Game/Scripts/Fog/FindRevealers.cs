@@ -1,8 +1,5 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-using Mirror;
 
 using Game.Fog.FischlWorks;
 using Game.Networking;
@@ -11,6 +8,9 @@ using Game.Utilities;
 namespace Game.Fog
 {
 
+    /// <summary>
+    /// Looks for FoWRevelers in the scene and adds them to the fog of war calculations, or removes them when destroyed.
+    /// </summary>
     [RequireComponent(typeof(FogInjector))]
     public class FindRevealers : MonoBehaviour
     {

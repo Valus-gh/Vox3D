@@ -25,11 +25,21 @@ namespace Game.Interaction
             transform.Rotate(new Vector3(0.0f, 0.0f, TowerTrajectory.Angle));
         }
 
+        /// <summary>
+        /// Call server method in ShootingStage to confirm tower's trajectory
+        /// </summary>
+        /// <param name="trajectory"></param>
+        /// <param name="ownerID"></param>
         public void RelayTrajectory(Trajectory trajectory, uint ownerID)
         {
             FindObjectOfType<ShootingStage>().CmdConfirmTrajectory(trajectory, Tower.TowerID, ownerID);
         }
 
+        /// <summary>
+        /// Spawns a projectile instance of the given type on all clients.
+        /// </summary>
+        /// <param name="trajectory"></param>
+        /// <param name="ownerID"></param>
         public void FireProjectileOnAllClients(Trajectory trajectory, uint ownerID)
         {
             var weaponTemplate = GetComponentInParent<PlayerTower>().WeaponTemplate;

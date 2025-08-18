@@ -4,6 +4,10 @@ using Vox3D.Engine;
 
 namespace Game.Fog
 {
+    /// <summary>
+    /// Utility class to attach a FogInjector to the given world.
+    /// Originally held the contents of Foginjector
+    /// </summary>
     public class FogManager : MonoBehaviour
     {
         [SerializeField]

@@ -23,7 +23,7 @@ namespace Game.Interaction
         {
             Debug.Log("Ammo Purchased");
 
-            var ProjectileTemplates = Vox3D.JSON.JsonImporter<ProjectileResources>.FromJSON("projectiles");
+            var ProjectileTemplates = StageManager.ProjectileTemplates;
 
             foreach (var template in ProjectileTemplates.Projectiles)
             {

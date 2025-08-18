@@ -97,7 +97,7 @@ namespace Game.Interaction
 
             var nameLabel = (evt.target as Button).Q("weapon-name-label") as Label;
 
-            FindObjectOfType<ShootingStage>().Selectweapon(nameLabel.text);
+            FindObjectOfType<ShootingStage>().EquipWeapon(nameLabel.text);
         }
     }
 }

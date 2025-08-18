@@ -59,6 +59,21 @@ namespace Game.Weapons
             Destroy(gameObject);
         }
 
+        /// <summary>
+        /// Needed to properly apply Blast and Projectile values after it has been spawned.
+        /// Loads the 3D model for the projectile, scaling it accordingly.
+        /// Adds the projectiles as fog revealers, unless they are of the Bomb type.
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="radius"></param>
+        /// <param name="radiusOffset"></param>
+        /// <param name="damage"></param>
+        /// <param name="scatter"></param>
+        /// <param name="scatterOnImpact"></param>
+        /// <param name="scatterAngle"></param>
+        /// <param name="scatterAmount"></param>
+        /// <param name="scatterBehaviour"></param>
+        /// <param name="child"></param>
         [ClientRpc]
         public void RpcSetValuesAfterSpawn(string name, float radius, float radiusOffset, float damage, bool scatter, bool scatterOnImpact, float scatterAngle, float scatterAmount, string scatterBehaviour, string child)
         {

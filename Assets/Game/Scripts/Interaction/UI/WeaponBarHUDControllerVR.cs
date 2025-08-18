@@ -54,8 +54,6 @@ namespace Game.Interaction
                     {
                         var ammoLabel = button.transform.Find("Content/Background/Elements/Ammo-row/Label-Ammo").GetComponent<TMPro.TextMeshProUGUI>();
 
-                        // If the player bought ammo for this weapon, register callback
-                        // If the player has run out of ammo for this weapon, unregister callback
                         if (item.Value >= 1 && ammoLabel.text == "0")
                         {
                             button.interactable = true;
@@ -76,7 +74,7 @@ namespace Game.Interaction
             // Equip weapon on given tower
             Debug.Log("Clicked on weapon picker - " + name);
 
-            FindObjectOfType<ShootingStage>().Selectweapon(name);
+            FindObjectOfType<ShootingStage>().EquipWeapon(name);
         }
     }
 }

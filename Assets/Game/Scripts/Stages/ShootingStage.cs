@@ -8,36 +8,43 @@ using Game.Interaction;
 using Game.Weapons;
 using Game.Utilities;
 using Game.Networking;
-using Game.Resources;
 using Vox3D.Engine;
-
-//TODO tidy up order of RPCS AND CMDS
 
 namespace Game.Stages 
 {
     public class ShootingStage : GameStage
     {
-        [SerializeField] public GameObject ExplosionParticles;
-
-        private Dictionary<uint, List<PlayerTower>> _TowersByPlayer;
-        private ProjectileResources _ProjectileTemplates;
 
         [SerializeField]
         private GameObject _WeaponBarHUD;
         private GameObject _WeaponBarHUD_Instance;
 
-        private int _DestroyedTowers;
+        [SerializeField] public GameObject ExplosionParticles;
 
-        private bool _Shooting = false;
+        private Dictionary<uint, List<PlayerTower>> _TowersByPlayer;
+
+        private int     _DestroyedTowers;
+        private bool    _Shooting = false;
+
+        /// <summary>
+        /// Set up the initial data needed to run the stage.
+        /// Initializes tower data for each player.
+        /// Equips basic projectile to each player.
+        /// </summary>
         public override void Initialize()
         {
+
+            Debug.Log("Initializing ShootingStage");
+
+            #region One-time operations
+
             if (!IsInitialized)
             {
-                _ProjectileTemplates = Vox3D.JSON.JsonImporter<ProjectileResources>.FromJSON("projectiles");
-
-                _TowersByPlayer = new Dictionary<uint, List<PlayerTower>>();
                 _DestroyedTowers = 0;
 
+                // Add each tower to a list based on its owner
+
+                _TowersByPlayer = new Dictionary<uint, List<PlayerTower>>();
                 var towersInScene = FindObjectsOfType<PlayerTower>();
 
                 foreach (var tower in towersInScene)
@@ -45,12 +52,12 @@ namespace Game.Stages
                     var ownerID = tower.GetComponent<OwnedBy>().OwnerID;
 
                     if (!_TowersByPlayer.ContainsKey(ownerID))
-                    {
                         _TowersByPlayer.Add(ownerID, new List<PlayerTower>());
-                    }
 
                     _TowersByPlayer[ownerID].Add(tower);
                 }
+
+                // Assign each tower to their respective player, then initialize their stats
 
                 foreach (var player in Players)
                 {
@@ -65,11 +72,14 @@ namespace Game.Stages
                     }
                 }
 
-                // Instantiate and initialize HUD
                 LoadHUD();
 
                 IsInitialized = true;
             }
+
+            #endregion
+
+            #region Each round
 
             // Equip basic projectile for all towers
 
@@ -84,15 +94,24 @@ namespace Game.Stages
             GetComponent<StageManager>().RpcToggleAllLoadingScreens(false);
 
             RpcToggleAimingArrows();
+
+            #endregion
         }
 
         public override void Deinitialize()
         {
-            throw new System.NotImplementedException();
+            Debug.Log("Deinitializing ShootingStage");
         }
 
         private Dictionary<uint, List<(int, Trajectory)>> _ConfirmedTrajectories = new Dictionary<uint, List<(int, Trajectory)>>();
 
+        /// <summary>
+        /// Called by clients when they take the "shoot" action. The highlighted tower's trajectory is passed to the server.
+        /// If that same client has yet to confirm a trajectory for the tower, it is added.
+        /// </summary>
+        /// <param name="trajectory"></param>
+        /// <param name="towerID"></param>
+        /// <param name="ownerID"></param>
         [Command(requiresAuthority = false)]
         public void CmdConfirmTrajectory(Trajectory trajectory, int towerID, uint ownerID)
         {
@@ -103,14 +122,28 @@ namespace Game.Stages
 
             if (_ConfirmedTrajectories[ownerID].Count < StageManager.TowersPerPlayer)
             {
-                // Check if towerID is already present
-                foreach(var element in _ConfirmedTrajectories[ownerID])
-                    if (element.Item1 == towerID) return;
+                foreach (var element in _ConfirmedTrajectories[ownerID])
+                    if (element.Item1 == towerID)
+                    {
+                        _ConfirmedTrajectories[ownerID][_ConfirmedTrajectories[ownerID].IndexOf(element)] = (towerID, trajectory);
+                        Debug.Log($"So far, we have confirmed {_ConfirmedTrajectories[ownerID].Count} trajectories for owner {ownerID}.");
+                        return;
+                    }
 
                 _ConfirmedTrajectories[ownerID].Add((towerID, trajectory));
+
+                Debug.Log($"So far, we have confirmed {_ConfirmedTrajectories[ownerID].Count} trajectories for owner {ownerID}.");
             }
         }
 
+        /// <summary>
+        /// Checks whether any tower was within the blast radius of a given projectile. Called by Blast.cs, on clients.
+        /// If a tower was hit, it takes the according amount of damage.
+        /// </summary>
+        /// <param name="center"></param>
+        /// <param name="radius"></param>
+        /// <param name="damage"></param>
+        /// <param name="shooterID"></param>
         [Command(requiresAuthority = false)]
         public void CmdTestTowerCollision(Vector3 center, float radius, float damage, uint shooterID)
         {
@@ -122,23 +155,28 @@ namespace Game.Stages
             foreach (var c in colliders)
             {
                 var ownerID = c.GetComponentInParent<OwnedBy>().OwnerID;
+                var damagedPlayer = StageManager.GetPlayerByID(ownerID);
 
-                var damagedPlayer = Players.Find((p) => p.GetComponent<Player>().netId == ownerID).GetComponent<Player>();
+                //var damagedPlayer = Players.Find((p) => p.GetComponent<Player>().netId == ownerID).GetComponent<Player>();
+
                 damagedPlayer.CurrentHitpoints -= damage;
-
                 damagedPlayer.DamageTowerWithId(c.GetComponentInParent<PlayerTower>().TowerID, damage);
 
                 GetComponent<ReportStage>().GetPlayerData(shooterID).Data[ReportStage.ReportData.Ammo_Hit]++;
-
                 GetComponent<ReportStage>().GetPlayerData(shooterID).Damage_Dealt += damage;
                 GetComponent<ReportStage>().GetPlayerData(damagedPlayer).Damage_Taken += damage;
-
                 if (damagedPlayer.CurrentHitpoints <= 0)
                     GetComponent<ReportStage>().GetPlayerData(shooterID).Data[ReportStage.ReportData.Players_Eliminated]++;
-
             }
         }
 
+        /// <summary>
+        /// Called by clients to attempt to equip a weapon to a specified tower.
+        /// Checks whether there is enough ammo in their inventory, and acts accordingly
+        /// </summary>
+        /// <param name="towerID"></param>
+        /// <param name="weaponName"></param>
+        /// <param name="isSetup"></param>
         [Command(requiresAuthority = false)]
         private void CmdEquipWeapon(int towerID, string weaponName, bool isSetup)
         {
@@ -148,16 +186,17 @@ namespace Game.Stages
                 {
                     if(tower.TowerID == towerID)
                     {
-                        var inventory = tower.Player.Inventory;
+                        var towerOwner = StageManager.GetPlayerByID(player);
+                        var inventory = towerOwner.Inventory;
 
-                        for (int i = 0; i < _ProjectileTemplates.Projectiles.Length; i++)
+                        for (int i = 0; i < StageManager.ProjectileTemplates.Projectiles.Length; i++)
                         {
-                            if (_ProjectileTemplates.Projectiles[i].Name == weaponName)
+                            if (StageManager.ProjectileTemplates.Projectiles[i].Name == weaponName)
                             {
                                 if(tower.WeaponTemplate != null && !isSetup)
                                     inventory.IncreaseItem(tower.WeaponTemplate.Name);
 
-                                tower.WeaponTemplate = _ProjectileTemplates.Projectiles[i];
+                                tower.WeaponTemplate = StageManager.ProjectileTemplates.Projectiles[i];
                                 inventory.DecreaseItem(tower.WeaponTemplate.Name);
 
                                 Debug.Log($"Equipping weapon {weaponName} on Tower {tower.TowerID}");
@@ -170,7 +209,11 @@ namespace Game.Stages
             }
         }
 
-        public void Selectweapon(string weaponName)
+        /// <summary>
+        /// Client-side method called by UI components to pass the request forward to the server.
+        /// </summary>
+        /// <param name="weaponName"></param>
+        public void EquipWeapon(string weaponName)
         {
             var currentTower = GetComponent<TowerSelector_Quest>().SelectedTower;
 
@@ -182,27 +225,14 @@ namespace Game.Stages
                 return;
             }
 
-            for (int i = 0; i < _ProjectileTemplates.Projectiles.Length; i++)
+            for (int i = 0; i < StageManager.ProjectileTemplates.Projectiles.Length; i++)
             {
-                if (_ProjectileTemplates.Projectiles[i].Name == weaponName)
+                if (StageManager.ProjectileTemplates.Projectiles[i].Name == weaponName)
                 {
                     CmdEquipWeapon(currentTower.TowerID, weaponName, false);
                     break;
                 }
             }
-        }
-
-        private void LoadHUD()
-        {
-            GetComponent<TowerSelector_Quest>().enabled = true;
-
-            if (_WeaponBarHUD_Instance is not null) return;
-            if (_ProjectileTemplates is null)
-                _ProjectileTemplates = Vox3D.JSON.JsonImporter<ProjectileResources>.FromJSON("projectiles");
-
-            _WeaponBarHUD_Instance = Instantiate(_WeaponBarHUD, UnityEngine.Camera.main.transform);
-            _WeaponBarHUD_Instance.GetComponent<WeaponBarHUDControllerVR>().InitializeHUD(_ProjectileTemplates);
-            _WeaponBarHUD_Instance.GetComponent<WeaponBarHUDControllerVR>().ToggleDisplay(false);
         }
 
         [ClientRpc]
@@ -223,6 +253,16 @@ namespace Game.Stages
         private void RpcToggleHUD(bool active)
         {
             _WeaponBarHUD_Instance.GetComponent<WeaponBarHUDControllerVR>().ToggleDisplay(active);
+        }
+        private void LoadHUD()
+        {
+            GetComponent<TowerSelector_Quest>().enabled = true;
+
+            if (_WeaponBarHUD_Instance is not null) return;
+
+            _WeaponBarHUD_Instance = Instantiate(_WeaponBarHUD, Camera.main.transform);
+            _WeaponBarHUD_Instance.GetComponent<WeaponBarHUDControllerVR>().InitializeHUD(StageManager.ProjectileTemplates);
+            _WeaponBarHUD_Instance.GetComponent<WeaponBarHUDControllerVR>().ToggleDisplay(false);
         }
 
         [ClientRpc]
@@ -251,51 +291,11 @@ namespace Game.Stages
                 chunk.ToggleDestructionCollider(true);
             }
         }
-        /*
-        [Command(requiresAuthority = false)]
-        public void CmdScatterProjectiles(string template, List<Trajectory> trajectories, Vector3 scatterOrigin, uint ownerID)
-        {
-            foreach(var pTemplate in _ProjectileTemplates.Projectiles)
-            {
-                if(pTemplate.Name == template)
-                {
-                    foreach (var tower in _TowersByPlayer[ownerID])
-                    {
-                        var projectile = tower.EquippedWeapon;
 
-                        foreach(var trajectory in trajectories)
-                        {
-                            var instance = Instantiate(projectile, scatterOrigin, Quaternion.identity, null);
-
-                            var projectileTrajectory = new Trajectory();
-                            projectileTrajectory.DirectionXZ = trajectory.DirectionXZ;
-                            projectileTrajectory.Angle = trajectory.Angle;
-
-                            instance.GetComponent<OwnedBy>().OwnerID = ownerID;
-                            instance.Trajectory = projectileTrajectory;
-                            instance.Aim();
-                            instance.Fire();
-
-                            NetworkServer.Spawn(instance.gameObject);
-
-                            instance.RpcSetValuesAfterSpawn(
-                                pTemplate.Name,
-                                pTemplate.Blast.Radius,
-                                pTemplate.Blast.RadiusOffset,
-                                pTemplate.Blast.Damage,
-                                pTemplate.Blast.Scatter,
-                                pTemplate.Blast.ScatterOnImpact,
-                                pTemplate.Blast.ScatterAngle,
-                                pTemplate.Blast.ScatterAmount,
-                                pTemplate.Blast.ScatterBehaviour,
-                                pTemplate.Blast.Child
-                            );
-                        }
-                    }
-                }
-            }
-        }
-        */
+        /// <summary>
+        /// Called in Run() once all players have confirmed all trajectories.
+        /// Fires projectiles on all clients via the apposite method, as long a tower is not destroyed.
+        /// </summary>
         private void FireProjectiles()
         {
             _Shooting = true;
@@ -322,11 +322,6 @@ namespace Game.Stages
 
             StartCoroutine(CompleteStageInSeconds(10));
         }
-       
-        public void TowerDestroyed()
-        {
-            _DestroyedTowers++;
-        }
 
         private IEnumerator CompleteStageInSeconds(float delay)
         {
@@ -334,6 +329,10 @@ namespace Game.Stages
 
             _Shooting = false;
             IsComplete = true;
+        }
+        public void TowerDestroyed()
+        {
+            _DestroyedTowers++;
         }
 
         protected override void Run()
@@ -347,6 +346,8 @@ namespace Game.Stages
 
                 foreach(var (owner, trajectories) in _ConfirmedTrajectories)
                     confirmedTrajectories += trajectories.Count;
+
+                Debug.Log($"Confirmed Trajectories: {confirmedTrajectories}");
 
                 // if all players confirmed a trajectory, shoot projectiles on all clients
                 if (confirmedTrajectories == Players.Count * StageManager.TowersPerPlayer - _DestroyedTowers)
@@ -387,7 +388,7 @@ namespace Game.Stages
                     }
                 }
 
-                // Check if there is more than one player.
+                // Check if there is still more than one player
 
                 int playersLeft = 0;
                 Player winner = null;
